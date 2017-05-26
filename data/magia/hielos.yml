@@ -1,0 +1,323 @@
+-
+  id:       0
+  alcance:  0
+  duracion: "Escudo negro"
+  name:     "Carámbano"
+  tipo:     "Invocación"
+  efecto:
+            "Una daga de hielo mágico que puede ser empleada como arma
+             de empuñadura. Tirará 1 dado de Escarcha
+             cuya potencia es el nivel del hechicero."
+  potencia: "+1 dado de hielo."
+  maestría: "+1 fuerza de la daga"
+  diablura: "Se puede lanzar como una daga y recuperar con 1 PM."
+  ardid:    "Matar con la daga recupera una magia de agua aleatoria."
+- 
+  id:       1
+  alcance:  1
+  duracion: "M"
+  name:     "Puente de hielo"
+  tipo:     "Superchería"
+  efecto:
+            "1 carga de hielo: Fabricas un puente de hielo
+             (se destruye por fuego) que deshabilita temporalmente un foso."
+  potencia: "+1 carga de hielo"
+  maestría: "1PM/maestría: Añade una carga de hielo"
+  diablura: "Puedes destruir el puente mientras un enemigo lo cruza"
+  ardid:    "Las cargas de hielo no empleadas permiten ejecutar: Chuzo de frío"
+- 
+  id:       2
+  alcance:  2
+  duracion: "∞"
+  name:     "Espejo mágico"
+  tipo:     "superchería"
+  efecto:
+            "1 carga de hielo: Mientras no haya enemigos visibles,
+             puedes colocar un espejo de hielo en un muro vertical.
+             En cualquier momento puedes gastar una acción,
+             para que al atravesar cualquier puerta,
+             salgas por el espejo en su lugar. (Cesando el efecto)"
+  potencia: "+1 1 carga de hielo, para colocar en el mapa.
+             Podrás elegir por cuál cruzar."
+  diablura: "Podrás ejecutar hechizos desde el espejo, una vez cruzado,
+             cuyo alcance será la puerta."
+  ardid:    "2PM: El efecto no cesa una vez atravesado el espejo."
+- 
+  id:       3
+  alcance:  0
+  duracion: "D"
+  name:     "Aura de escarcha"
+  tipo:     "aura"
+  efecto:   "+1 empujar, +1 potencia a las magias de hielo"
+  potencia: "+1 alcance"
+  maestría: "+1 empujar"
+  diablura: "Puedes lanzarlo como bendición"
+  ardid:    "Añade el efecto del ardid a las magias de hielo."
+- 
+  id:       4
+  alcance:  "V"
+  duracion: 1
+  name:     "Helada"
+  tipo:     "Evocación - Sala"
+  efecto:
+            "Hiela el suelo de la sala. Todos los ataques serán aullantes,
+             Todas las miniaturas que se desplacen moverán 1d6 adicional
+             (obligatoriamente), pudiendo colisionar. En el caso de la colisión
+             entre miniaturas y paredes, el daño será por frío."
+  potencia: "+1 sala colindante afectada"
+  maestría: "+1 potencia de colisión de los enemigos"
+  diablura: "Cualquier daño por frío en la sala, suma tanta fuerza
+             como tu potencia de frío."
+  ardid:    "Tus aliados pueden renunciar al movimiento adicional"
+- 
+  id:       5
+  alcance:  "M"
+  duracion: 0
+  name:     "Chuzo de frío"
+  tipo:     "Conjuro - Misil"
+  efecto:   "Una esquirla de hielo puro golpea a un objetivo,
+             con 2 dados de hielo."
+  potencia: "+1 dado de hielo de ataque"
+  maestría: "+1 enemigo colindante afectado"
+  diablura: "Las águilas de los dados, dañan además de congelar"
+  ardid:    "1PM: Si este hechizo es recuperado o lanzado por una habilidad,
+             puedes ejecutarlo inmediatamente contra otro enemigo."
+# Nivel 2
+- 
+  id:       6
+  alcance:  "M"
+  duracion: 0
+  name:     "Orbe helado"
+  tipo:     "Conjuro - Bola"
+  efecto:   "2 dados de combate de daño de frío directo a lo largo de su recorrido. Al matar aumenta la fuerza para la siguiente casilla"
+  diablura: "Recuperas X(PM) por cada enemigo congelado. X = la potencia del hechizo"
+  potencia: "+1 dado de frío"
+  ardid:    "Los enemigos congelados pierden su resistencia a la escarcha"
+- 
+  id:       7
+  alcance:  "∞"
+  duracion: 0
+  name:     "Ira de escarcha"
+  tipo:     "Maldición"
+  efecto:   "Causa 1 dado de frío de ataque directo a un enemigo del tablero. Si muere, inmediatamente lanzas una copia de Ira de escarcha."
+  diablura: "Recupera el hechizo al causar daño con él."
+  potencia: "+1 fuerza"
+  ardid:    "Odias al objetivo"
+-
+  id:       8
+  alcance:  "V"
+  duracion: "∞"
+  name:     "Muro de hielo"
+  tipo:     "Muro"
+  efecto:   "1-5 casillas (a elección del lanzador) lineales desocupadas se convertiran en bloques de hielo."
+  diablura: "1PM: El muro persiste a pesar de ser destruido"
+  potencia: "+1 grosor del muro."
+  ardid:    "Al romperse una casilla del muro, se lanza gratuitamente: Helada (con diablura)"
+-
+  id:       9
+  alcance:  0
+  duracion: 1
+  name:     "Toque helado"
+  tipo:     "Maldición - Toque"
+  efecto:   "Congela al objetivo. Si recibe daño contundente, será destruido."
+  potencia: "+1 duración"
+  maestría: "-1 para resistir este hechizo"
+  diablura: "El objetivo tirará un daño de congelación al inicio de su turno"
+  ardid:    "El efecto se propaga a las miniaturas colindantes."
+-
+  id:       10
+  alcance:  "V"
+  duracion: 1
+  name:     "Bendición de escarcha"
+  tipo:     "Bendición"
+  efecto:   "Insinto: El objetivo puede reununciar a su próximo movimiento
+             para duplicar sus dados de defensa como azules."
+  potencia: "+1 potencia a los dados duplicados."
+  maestría: "+1 duración"
+  diablura: "Girar no supondrá una fase movimiento"
+  ardid:    "El objetivo podrá conservar la bendición
+             aunque no la declare en fase de instintos."
+-
+  id:       11
+  alcance:  0
+  duracion: "X"
+  name:     "Calavera de runas"
+  tipo:     "Aura"
+  efecto:   "1 carga de calavera tallada flota a tu alrededor:<br/>
+             - Se pierde 1 carga/turno.<br/>
+             - Ganas 1 carga al matar con magia de hielo
+             - 1 carga: (Instinto) añade un dado azul de defensa verdadera<br/>
+             - 1 carga: Recupera un hechizo consumido de frío<br/>
+             - 1 carga: +1 dado de frío a tu siguiente ataque/conjuro<br/>"
+  potencia: "+1 carga"
+  maestría: "+1 carga al matar con hielo"
+  diablura: "Ganas cargas simplemente con dañar, sin necesidad de matar."
+  ardid:    "1PM (instinto): +1 resistencia mágica por cada carga."
+# nivel 3
+-
+  id:       12
+  alcance:  0
+  duracion: "E"
+  name:     "Núcleo helado"
+  tipo:     "Invocación"
+  efecto:   "Invocas un orbe que puedes usar como arma
+             para lanzar orbes helados o chuzos de frío por 1PM (hechizar)"
+  potencia: "+1 potencia a los hechizos del orbe"
+  maestría: "+1 maestría a los hechizos del orbe"
+  diablura: "Los aliados pueden donar 1PM para pagar el coste"
+  ardid:    "Si el orbe matara con sus hechizos recupera un hechizo de frío"
+-
+  id:       13
+  alcance:  0
+  duracion: 4
+  name:     "Sello de frío"
+  tipo:     "Dádiva"
+  efecto:
+            "El objetivo es inmune al sangrado, obtiene +2 vs Fuego
+             y los enemigos que le ataquen sin éxito quedan congelados."
+  potencia: "+2 turnos de duración"
+  maestría: "+1 empujar del objetivo"
+  diablura: "Reinicia la duración al cuando el sello congele a un enemigo"
+  ardid:    "Puedes lanzarlo como aura, obteniendo además +1 potencia de frío."
+-
+  id:       14
+  alcance:  "V"
+  duracion: "E"
+  name:     "Congelar"
+  tipo:     "Maldición"
+  efecto:   "-X al movimiento del objetivo. (X es la minusmitad de tu mente)"
+  potencia: "+1 duración"
+  maestría: "+1 Fuerza de los golpes contra el objetivo"
+  diablura: "Si el objetivo pierde su movimiento completo, perderá su turno."
+  ardid:    "Si el objetivo muere, además es destruido"
+-
+  id:       15
+  alcance:  "V"
+  duracion: 1
+  name:     "Tumba helada"
+  tipo:     "Muro"
+  efecto:
+            "Un inmenso bloque de hielo cubre al objetivo, formando un muro.
+             Todo el daño físico será directo. Perderá su movimiento."
+  diablura: "Los golpes con potencia podrán sumar fuerza en su lugar."
+  potencia: "+1 duración"
+  maestría: "+1 objetivo (siempre que sea colindante)"
+  ardid:    "Si el objetivo muere, recupera Tumba helada"
+-
+  id:       16
+  alcance:  "V"
+  duracion: 0
+  name:     "Dentellada glacial"
+  tipo:     "Evocación - Área"
+  efecto:
+            "Unas enormes cuchillas de hielo afilado brotan del suelo,
+             causando 6 dados de ataque y 2 dados de frío a la víctima."
+  diablura: "El daño por frío es directo"
+  potencia: "+1 potencia a todos los dados"
+  maestría: "+1 fuerza a todos los dados"
+  ardid:    "Si obtienes un águila al atacar, repite este hechizo."
+-
+  id:       17
+  alcance:  "V"
+  duracion: "∞"
+  name:     "Tortura helada"
+  tipo:     "Maldición"
+  efecto:
+            "Todas las criaturas de la sala quedan malditas.
+             Recibirán 1 dado de ataque por hielo durante la fase de instintos.
+             Un resultado nulo, cancela la maldición"
+  diablura: "El daño es directo"
+  potencia: "+1 dado"
+  maestría: "-1 de defensa para resistir"
+  ardid:    "Las miniaturas dañadas quedarán congeladas"
+# Nivel 4
+-
+  id:       18
+  alcance:  "V"
+  duracion: 0
+  name:     "Cataclismo gélido"
+  tipo:     "Evocación - Sala"
+  efecto:
+            "Todas las criaturas de la sala reciben un ataque de un dado
+             de frío de fuerza igual a tu mente y potencia igual a los
+             hechizos de hielo utilizados hasta el momento en el Reto."
+  diablura: "Los aliados recuperan 1PM en lugar de recibir daño"
+  potencia: "+1 duración"
+  maestría: "+1 dado"
+  ardid:    "El ataque se ejecuta con Odio"
+-
+  id:       19
+  alcance:  6
+  duracion: 0
+  name:     "Brecha glaciar"
+  tipo:     "Conjuro - Rayo"
+  efecto:
+            "El rayo se propaga siempre diagonalmente, a lo largo de 6 casillas
+             causando un ataque a cada enemigo afectado igual
+             a tus PM actuales. (Daño por frío, dados de combate normales
+             de potencia igual a las magias de hielo disponibles y fuerza 2)"
+  diablura: "Recupera un hechizo de hielo de nivel N (enemigos eliminados)"
+  potencia: "+1 alcance"
+  maestría: "+1 rayo (puede repetir recorrido)"
+  ardid:    "Las miniaturas multiplican el daño por cada esquina afectada."
+-
+  id:       20
+  alcance:  1
+  duracion: "E"
+  name:     "Venganza fría"
+  tipo:     "Bendición"
+  efecto:
+            "El objetivo sanará 1PM al lanzador cada vez que sufra daños.
+             En ese momento, el lanzador podrá conjurar un hechizo de hielo
+             de nivel N, que tenga disponible, desde el objetivo con coste
+             N Puntos de Mente."
+  diablura: "No necesitas pagar el coste."
+  potencia: "+1 PM recuperado"
+  maestría: "+1 hechizo para ser ejecutado"
+  ardid:    "No necesitas descartar el hechizo"
+-
+  id:       21
+  alcance:  0
+  duracion: 4
+  name:     "Trono de hielo"
+  tipo:     "Invocación"
+  efecto:
+            "Mientras esté sentado en el trono de hielo, el lanzador tendrá
+             +1 maestría al hielo, +2 potencia al hielo y renunciará a su
+             movimiento, a cambio de poder ejecutar 1 magia extra por turno,
+             siempre y cuando sea de hielo. Aumenta su defensa a tantos dados
+             como magias de hielo tenga disponibles (azules)."
+  diablura: "El trono levita y puedes mover la minusmitad"
+  potencia: "+1 potencia de hielo"
+  maestría: "+1 maestría de hielo"
+  ardid:    "Todo enemigo que te ataque quedará congelado si no saca 4+"
+-
+  id:       22
+  alcance:  0
+  duracion: 3
+  name:     "Muerte Helada"
+  tipo:     "Abjuración"
+  efecto:
+            "Una espada de hielo mágico que puede ser empleada
+             como arma de empuñadura. Tirará 2 dados de Escarcha y
+             3 dados azules cuya potencia es el nivel del hechicero.
+             y cuya fuerza es igual al número de magias de hielo disponibles"
+  diablura: "Se puede usar telekinéticamente por 1 PM/turno."
+  potencia: "+1 dado azul."
+  maestría: "+1 ataque por turno"
+  ardid:    "5+, matar: recupera el hechizo: Muerte Helada"
+-
+  id:       23
+  alcance:  0
+  duracion: 3
+  name:     "Escudo de cristal"
+  tipo:     "Abjuración"
+  efecto:
+            "Un escudo de hielo cristalino y resistente que reduce en X
+             los puntos de daño sufridos por ataques frontales, y aumenta
+             en X la resistencia a la magia. (X es el número de magias
+             de hielo disponibles). +1 Defensa."
+  diablura: "El escudo no ocupa mano."
+  potencia: "+1 X"
+  maestría: "+2 duración"
+  ardid:    "Recupera un hechizo de hielo aleatorio al defender exitosamente."

@@ -1,0 +1,33 @@
+<% h = hero(params[:param].to_i) %>
+<table>
+	<thead>
+		<tr>
+			<th>Jugador</th>
+			<th>Nivel</th>
+			<th>Reputación</th>
+			<% if h.descendientes %>
+				<th>Descendientes</th>
+			<% end %>
+			<th>Raza</th>
+			<% if h.profesion %>
+				<th>Profesión</th>
+			<% end %>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><%= h.jugador %></td>
+			<td><h2><%= h.nivel %></h2></td>
+			<td style="background-image:url(../images/ficha/star.png); 
+				background-repeat: no-repeat; background-position:center;">
+				<%= h.repu || 0 %></td>
+			<% if h.descendientes %>
+				<td><%= erb :'ficha/descendientes' %></td>
+			<% end %>
+			<td><a href='/raza/<%= h.raza %>s'><%= h.raza.capitalize %></a></td>
+			<% if h.profesion %>
+				<td><%= erb :'ficha/profesion', locals: { prof: h.gremio } %></td>
+			<% end %>
+		</tr>
+	</tbody>
+</table>

@@ -1,0 +1,12 @@
+<header>
+	<h2>Registro de Crónica</h2>
+</header>
+<a href=<%= '/biblioteca' %> class='feature-image'>
+	<img src='../images/nav/registro.png' alt='Registro'/>
+</a>
+<ul>
+	<% retos.each do |reto| %>
+		<li><a href='/reto/<%= reto.id %>'><%= reto.name %></a></li>
+	<% end %>
+</ul>
+</p>

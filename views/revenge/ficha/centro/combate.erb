@@ -1,0 +1,23 @@
+<% r = renegado(params[:param].to_i) %>
+<table>
+	<thead>
+		<tr>
+			<th width='16%'>Melee</th>
+			<th width='16%'>Rango</th>
+			<th width='16'>Defensa</th>
+			<th width='16%'>Cuerpo</th>
+			<th width='16%'>Mente</th>
+			<th width='16%'>Mov.</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><%= r.ataque %></td>
+			<td><%= r.rango %></td>
+			<td><%= r.defensa %></td>
+			<td><%= r.cuerpo %></td>
+			<td><%= r.mente  %></td>
+			<td><%= r.movimiento %></td>
+		</tr>
+	</tbody>
+</table>

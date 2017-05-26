@@ -1,0 +1,153 @@
+-
+  id: 0
+  pregunta: "¿De qué material vas a construir tu nueva morada?"
+  respuestas:
+     - ["Estalagmitas", { drow: 3, goblin: 1 }]
+     - ["Adobe", { orco: 2, ungor: 1, goblin: 1 }]
+     - ["Tierra húmeda", { nomuerto: 3 }]
+     - ["Plomo", { skaven: 3 }]
+     - ["Cuero", { ungor: 2, orco: 1, goblin: 1 }]
+-
+  id: 1
+  pregunta: "¿Qué bebida te gusta tomar?"
+  respuestas:
+     - ["Sangre", { nomuerto: 3, ungor: 1 }]
+     - ["Grog", { orco: 2 }]
+     - ["Mojito de Setas", { goblin: 3, orco: 1 }]
+     - ["Vino dulce", { drow: 3 }]
+     - ["Leche agria", { orco: 1, skaven: 2, ungor: 2 }]
+-
+  id: 2
+  pregunta: "¿Qué es lo más verde de ti?"
+  respuestas:
+     - ["Mi pulmón", { nomuerto: 2 }]
+     - ["Mi piel", { orco: 3, goblin: 2 }]
+     - ["La sangre de mis esclavos", { drow: 3 }]
+     - ["Mi almuerzo", { ungor: 3, skaven: 2 }]
+     - ["Soy daltónico", { nomuerto: 1, skaven: 1 }]
+-
+  id: 3
+  pregunta: "¿A quién prestarías mil piezas de oro?"
+  respuestas:
+     - ["A cualquiera con capacidad de devolvérmelo", { ungor: 1, nomuerto: 1 }]
+     - ["Al proveedor de zetaz", { goblin: 2 }]
+     - ["Por ese precio se vendía mi madre", { orco: 1, goblin: 1 }]
+     - ["A cualquiera de mis camaradas", { orco: 1, ungor: 1 }]
+     - ["A Jacyx, el prestamista, con un 20% de comisión", { goblin: 1, drow: 3, nomuerto: 2 }]
+     - ["A mi señor de clan", { orco: 1, ungor: 1 }]
+
+-
+  id: 4
+  pregunta: "¿Qué te pedirías de menú en la posada de Khark?"
+  respuestas:
+     - ["Cordero asado con nabos y grasa de cerdo", { orco: 3, ungor: 1 }]
+     - ["Lenguados en salsa de ostras", { drow: 3 }]
+     - ["Boletus rebozados con ali-oli", { goblin: 3 }]
+     - ["Sesos aliñados con guindillas", { nomuerto: 3 }]
+     - ["Hígados con acelgas al pesto", { ungor: 2 }]
+     - ["Provoleta de queso de cabrales", { skaven: 3 }]
+-
+  id: 5
+  pregunta: "¿Qué pasó en tu última reyerta tabernaria?"
+  respuestas:
+     - ["Todos, incluido yo, hospitalizados", { bárbaro: 2, enano: 2 }]
+     - ["Solo yo hospitalizado", { mago: 2 }]
+     - ["Los demás, hospitalizados, por arma blanca", { ladrón: 2 }]
+     - ["Todos los malhechores en comisaría", { clérigo: 3 }]
+     - ["La justicia exigía sangre", { ladrón: 1, tiefling: 3 }]
+     - ["Desaparecí, sin que me vieran", { mago: 1, ladrón: 3 }]
+     - ["Les convertí en rana", { mago: 3, elfo: 1 }]
+     - ["Bañé las calles con su sangre", { bárbaro: 2, tiefling: 2 }]
+-
+  id: 6
+  pregunta: "¿Qué procuce un brillo intenso en tus ojos?"
+  respuestas:
+     - ["El recuerdo de mi madre", {}]
+     - ["El oro, el oro, el oro!", { goblin: 2, orco: 1 }]
+     - ["Mi alma y mi honor", { clérigo: 2, enano: 2 }]
+     - ["Mi corazón es un pozo de miseria", { tiefling: 3, ladrón: 2 }]
+     - ["La gloria", { bárbaro: 3, enano: 1 }]
+     - ["Yo, mi propio ser", { mago: 2, ladrón: 1 }]
+     - ["La sabiduría", { mago: 2, clérigo: 2, elfo: 1 }]
+     - ["Mi amada", { elfo: 3 }]
+-
+  id: 7
+  pregunta: "¿Qué harías con un ejemplar manuscrito del pergamino Necrocódice?"
+  respuestas:
+     - ["Cogerlo, divertirme con los dibujitos, ignorarlo", { orco: 2 }]
+     - ["Fundar una nueva secta en torno a él.", { nomuerto: 2, drow: 1, skaven: 1 }]
+     - ["Usarlo de papel higiénico", { orco: 1, ungor: 1 }]
+     - ["Esconderlo y venderlo en el mercado negro", { drow: 1, skaven: 2, goblin: 2 }]
+     - ["Leerlo, aprenderlo y ocultarlo", { drow: 1, goblin: 1, nomuerto: 1 }]
+     - ["Quemarlo como sacrificio", { ungor: 2 }]
+-
+  id: 8
+  pregunta: "¿Cuál de éstas llaves has usado más?"
+  respuestas:
+     - ["La llave de la cerradura de tu casa", { clérigo: 3 }]
+     - ["La llave de la cerradura de tu taquilla de la biblioteca", { mago: 3, clérigo: 1 }]
+     - ["La llave del cuarto de escobas de la taberna", { enano: +3 }]
+     - ["La llave inglesa", { enano: +3 }]
+     - ["La llave de mi cofre secreto", { enano: +3, ladrón: 2 }]
+     - ["Yo no uso llaves, tengo palanca", { bárbaro: 3, ladrón: 2 }]
+     - ["La llave de la verja del jardín", { elfo: 3 }]
+     - ["La llave del corazón de mi enamorada", { elfo: 3 }]
+     - ["La llave de las mazmorras", { tiefling: 2, ladrón: 2 }]
+-
+  id: 9
+  pregunta: "Un renegado jamás debería…"
+  respuestas:
+     - ["Avanzar en el pasillo sin buscar trampas", { enano: 2 }]
+     - ["Entrar en la vanguardia", { mago: 3 }]
+     - ["Quedarse en la retaguardia", { bárbaro: 3 }]
+     - ["Compartir el tesoro", { ladrón: 3 }]
+     - ["Salvar su vida antes que a sus compañeros", { clérigo: 3, elfo: 1 }]
+     - ["Tocar la palanca con la calavera", { mago: 2 }]
+     - ["Ponerse delante del enano", { enano: +3 }]
+-
+  id: 10
+  pregunta: "¿Qué música te gusta más?"
+  respuestas:
+     - ["La música del barroco",    { mago: 2, elfo: 2 }]
+     - ["Death metal",        { tiefling: 2 }]
+     - ["La flauta dulce",      { elfo: 2 }]
+     - ["La música celta",      { elfo: 2, enano: 2, bárbaro: 2 }]
+     - ["El canto gregoriano",    { clérigo: 2 }]
+     - ["Estoy sordo, no oigo bien",  { enano: 2, mago: 2 }]
+     - ["Tambores",           { bárbaro: 2 }]
+     - ["La que se pueda bailar",   { elfo: 2 }]
+     - ["Música tecno de saxofón",  { ladrón: 2 }]
+
+-
+  id: 11
+  pregunta: "¿Qué montura prefieres?"
+  respuestas:
+     - ["Mis pies harán el camino", { clérigo: 1, ladrón: 1 }]
+     - ["Me gusta teletransportarme", { mago: 3, elfo: 2 }]
+     - ["Una jaca gorda y que no refunfuñe", { enano: +3 }]
+     - ["Un caballo de guerra alto y fuerte", { bárbaro: 2 }]
+     - ["Un dragón", {}]
+     - ["Un caballo de pesadilla", { tiefling: 3, mago: 1 }]
+     - ["Un unicornio rosa", { elfo: 3 }]
+     - ["Emma, la posadera", { enano: 2, bárbaro: 2 }]
+-
+  id: 12
+  pregunta: "¿Cuántos bárbaros hacen falta para cambiar una bombilla?"
+  respuestas:
+     - ["¿Qué es una bombilla?", { bárbaro: 2 }]
+     - ["1, siempre que les eduques", { ladrón: 2 }]
+     - ["Solo Sigmar me ilumina", { clérigo: 2 }]
+     - ["Espero poder cambiar yo mismo la bombilla", { enano: 2 }]
+     - ["Por lo menos 2, para que se zurren a tortas mientras la cambio", { elfo: 2 }]
+     - ["Yo puedo ver en la oscuridad", { tiefling: 2 }]
+     - ["Yo no necesito bombillas, puedo crear antorchas", { mago: 2 }]
+-
+  id: 13
+  pregunta: "¿Qué harías con el familiar de tu compañero de aventuras?"
+  respuestas:
+     - ["Respetarlo, como lo respeto a él", { clérigo: 3, elfo: 2 }]
+     - ["Comérmelo si se pone a tiro", { enano: +3, tiefling: 1 }]
+     - ["Ignorarlo", { mago: 1, bárbaro: 1, ladrón: 1 }]
+     - ["Adorarlo y dedicarle sonrisas de complicidad", { elfo: 3, bárbaro: 1 }]
+     - ["Liberarlo, defendiendo sus derechos civiles", { elfo: 2 }]
+     - ["Someterlo para que me rinda pleitesía", { tiefling: 2, mago: 2, ladrón: 2 }]

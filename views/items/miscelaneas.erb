@@ -1,0 +1,22 @@
+<table>
+	<thead>
+		<tr>
+			<th colspan=2>Bisutería</th>
+			<th>Pieza</th>
+			<th>Ranuras</th>
+			<th>Precio</th>
+		</tr>	
+	</thead>
+	<tbody>
+		<% miscelaneas.sort_by {|m| m['fits']}.each do |misc| %>
+		<% m = Miscelanea.new(misc)%>
+			<tr>
+				<td><%= erb :'display/item', locals: { item: m } %></td>
+				<td><%= m.name %></td>
+				<td><%= m.fits %></td>
+				<td><%= m.max %></td>
+				<td><%= m.precio %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>

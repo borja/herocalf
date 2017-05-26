@@ -1,0 +1,10 @@
+name:         "Asshai"
+personaje:    "asesino"
+jugador:      "Cristina"
+status:       "reserva"
+progenitores: [7]
+cuerpo:    5
+mente:     6
+mov:       7
+armadura:  2
+armas:     [3, 2]

@@ -1,0 +1,20 @@
+<% spells.each do |s|%>
+	<% if params[:param].to_i == s.nivel %>
+		<% if (params[:view] == s.elemento) || params[:view] == 'hechizos' %>
+			<% magic = spell(s.id) %>
+			<tr style=<%= magic.color %>>
+				<td><%= erb :'display/spell', locals: { spell: magic } %></td>
+				<% if params[:view] == 'hechizos' %>
+					<td><%= magic.elemento.capitalize %></td>
+				<% end %>
+				<td>
+					<a href="/hechizo/<%= magic.name %>" target="_blank">
+						<%= magic.name.capitalize %>
+					</a>
+				</td>
+				<td><%= magic.efecto %></td>
+				<td><%= magic.potencia %></td>
+			</tr>
+		<% end %>
+	<% end %>
+<% end %>

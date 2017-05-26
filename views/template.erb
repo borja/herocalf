@@ -1,0 +1,39 @@
+<div class="container-fluid text-center">
+	<% if defined? template %>
+		<div class="row content">
+			<% if template['left'] %>
+				<div class="col-sm-3 sidenav">
+					<%= load_partial(template['left']) %>
+					<% if template['left2'] %>
+						<%= load_partial(template['left2']) %>
+					<% end %>
+				</div>
+			<% end %>
+			<div class='<%= get_center(template) %>'>
+				<%= load_partial(template['main']) %>
+			</div>
+			<% if template['right'] %>
+				<div class="col-sm-3 sidenav">
+					<%= load_partial(template['right']) %>
+					<% if template['right2'] %>
+						<%= load_partial(template['right2']) %>
+					<% end %>
+				</div>
+			<% end %>
+		</div>
+
+		<% if template['row2'] %>
+			<div class="row content">
+				<%= load_partial(template['row2']) %>
+			</div>
+		<% end %>
+
+	<% else # template is not defined %>
+		<div class="row content">
+			<div class="col-sm-12 text-left">
+				<p>La ruta seleccionada, no existe en esta web</p>
+			</div>
+		</div>
+	<% end %>
+
+</div>

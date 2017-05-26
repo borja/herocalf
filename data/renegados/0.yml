@@ -1,0 +1,13 @@
+name:      "Dragor"
+jugador:   "Daniel de Haro"
+titulo:    "Jefe Tribal"
+raza:      "orco"
+clase:     "kaudillo"
+repu:      1
+cuerpo:    9
+mente:     2
+mov:       8
+armadura:  2
+armas:     { id: 32 }
+protecciones:
+  - { id: 1, gemas: [13] }

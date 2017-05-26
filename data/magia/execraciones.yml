@@ -1,0 +1,87 @@
+-
+  id:       0
+  duracion: 0
+  potencia: 4
+  alcance:  "V"
+  name:     "Mal de ojo"
+  tipo:     "Maldición"
+  efecto:   "Ataca con 4 dados de combate a un enemigo,
+             o con 2 a todos los personajes de la S/P"
+  summun:   "Realiza ambos ataques"
+  chakra:   "Recupera 1PM por cada daño causado a enemigos
+             y 1PC por daño causado a aliados."
+-
+  id:       1
+  duracion: 0
+  potencia: 4
+  alcance:  3
+  name:     "Cono de oscuridad"
+  tipo:     "Conjuro - Cono"
+  efecto:   "Un cono de oscuridad daña a los enemigos,
+             con 4 dados negros de daño defendible."
+  summun:   "Cada escudo negro aumenta la potencia en 1"
+  chakra:   "Ciega a los objetivos dañados. Recupera 1PM por cada daño causado."
+-
+  id:       2
+  duracion: "A"
+  potencia: 2
+  alcance:  1
+  name:     "Círculo de dolor"
+  tipo:     "Evocación - Área"
+  efecto:   "Las casillas contiguas causan 2 daños defendibles a los enemigos.
+             El lanzador no podrá moverse."
+  summun:   "El lanzador podrá moverse y hechizar durante el efecto."
+  chakra:   "El hechizo pasa a ser un aura y la duración: M."
+-
+  id:       3
+  duracion: "D"
+  potencia: 1
+  alcance:  "V"
+  name:     "Bendición de los impíos"
+  tipo:     "Bendición"
+  efecto:   "+1 defensa y ataque a todos los aliados"
+  summun:   "El dado añadido es profano. +2 vs Psiónica"
+  chakra:   "Hechizar durante la bendición restaura 1PC."
+-
+  id:       4
+  duracion: 1
+  potencia: 3
+  alcance:  "V"
+  name:     "Guardián demoníaco"
+  tipo:     "Invocación"
+  efecto:   "Un demonio ataca con 3 dados a un enemigo frontalmente.
+             Tú (objetivo) recibes: +3 ataque y recuperas 1PC."
+  summun:   "Recupera la execración si el demonio mata."
+  chakra:   "Se puede escoger como objetivo a un aliado."
+-
+  id:       5
+  duracion: "D"
+  potencia: 4
+  alcance:  0
+  name:     "Guadaña negra"
+  tipo:     "maldición"
+  efecto:   "El objetivo no podrá atacar ni mover hasta que sea atacado.
+             Podrá defender y empujará de la forma habitual."
+  summun:   "El objetivo golpeará a melé (siempre que pueda)
+             cuando tú seas atacado como acción de interrupción."
+  chakra:   "Al ser sanado, el objetivo luchará a tu favor, durante ese turno"
+-
+  id:       6
+  duracion: "E"
+  potencia: 1
+  alcance:  "V"
+  name:     "Lágrimas del verdugo"
+  tipo:     "Aura"
+  efecto:   "Al recibir daños sanas 1PC a un aliado."
+  summun:   "La sanación es a todos los demás aliados."
+  chakra:   "La sanación es equivalente a todos los daños recibidos"
+-
+  id:       7
+  duracion: "E"
+  potencia: 1
+  alcance:  "V"
+  name:     "Himno infernal"
+  tipo:     "Aura"
+  efecto:   "+1 defensa. Cada turno puedes sanar 1PC a un aliado"
+  summun:   "+2 vs Tenebro. +1 de ataque"
+  chakra:   "1PM a cualquier aliado que defienda con éxito."

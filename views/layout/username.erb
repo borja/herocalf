@@ -1,0 +1,6 @@
+<span class="glyphicon glyphicon-user"></span>
+<% if session[:identity] %>
+  <%= session[:identity] %>
+<% else %>
+  Inicia sesión
+<% end %>

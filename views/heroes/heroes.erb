@@ -1,0 +1,38 @@
+<%= erb :'heroes/busca_heroes' %>
+	<div class="table-responsive">
+	<table class="table table-striped table-bordered table-hover table-condensed">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th colspan=3>Héroe</th>
+				<th>Nivel</th>
+				<th><a href=/familiares>Familiar</a></th>
+				<th><a href=/profesiones>Profesión</a></th>
+				<th><a href=/armas>Armas</a></th>
+				<th><a href=/armaduras>Armadura</a></th>
+				<th>Reputación</th>
+			</tr>
+		</thead>
+		<tbody>
+			<% if (params[:nombre].to_s.empty? && params[:criteria].to_s.empty?) %>
+				<% if params[:param] %>
+					<% filtered_heros = heros.select {|h| h.empadronado == params[:param] } %>
+				<% else %>
+					<% filtered_heros = heros.select {|h| (h.estado || 'ausente' ) == h.lista_status(request.path_info.gsub('/','')) } %>
+				<% end %>
+			<% else %>
+				<% palabra = params[:nombre].to_s.downcase %>
+				<% case params[:criteria].to_s
+					   when 'heroe'   %><% filtered_heros = heros.select {|h|    h.name.downcase.include?(palabra) } %>
+					<% when 'jugador' %><% filtered_heros = heros.select {|h| h.jugador.downcase.include?(palabra) } %>
+					<% when 'raza'    %><% filtered_heros = heros.select {|h|    h.raza.downcase.include?(palabra) } %>
+					<% when 'mascota' %><% filtered_heros = (heros.reject {|h| h.pet.nil? }).select {|h| h.pet.name.downcase.include?(palabra)} %>
+				<% end %>
+			<% end %>
+	
+			<% filtered_heros.sort_by { |h| [h.nivel,h.reputacion] }.reverse.each_with_index do |hero,i| %>
+				<%= erb :'heroes/hero', locals: { hero: hero, index: i } %>
+			<% end %>
+		</tbody>
+	</table>
+</div>

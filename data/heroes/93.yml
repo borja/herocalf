@@ -1,0 +1,13 @@
+name:      "Sarabi"
+personaje: "chamán"
+jugador:   "Iris"
+gender:    "female"
+status:    "reserva"
+xp:        2
+cuerpo:    7
+mente:     3
+mov:       7
+armadura:  0
+protecciones:
+  - { id: 14 }
+armas:     [31]

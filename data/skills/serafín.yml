@@ -1,0 +1,42 @@
+-
+  id:          0
+  nivel:       2
+  name:        "Piedad"
+  type:        "reactiva"
+  description: "Al sanar con un hechizo o habilidad, recuperas 1PM"
+-
+  id:          1
+  nivel:       2
+  name:        "Lágrimas desde el Cielo"
+  type:        "activa"
+  coste:       "2PM"
+  description: "Lanza una réplica de un hechizo de agua consumido"
+-
+  id:          2
+  nivel:       2
+  name:        "Escudo empíreo"
+  type:        "activa"
+  coste:       "1 hechizo de agua"
+  description: "Instinto, Elige: +2 dados azules de defensa para ti o +1 dado a un aliado"
+-
+  id:          3
+  nivel:       2
+  rangos:      2
+  name:        "Catalizador de lluvia"
+  type:        "pasiva"
+  description: "Añade un set de magias de agua"
+-
+  id:          4
+  nivel:       3
+  name:        "Aunar ruegos"
+  type:        "única"
+  description: 
+               "Cualquier aliado puede pagar 1 acción: Todos recuperarán 1PM,
+                y tú recuperarás 1 plegaria por cada 3 acciones invertidas."
+-
+  id:          5
+  nivel:       3
+  requisitos:  [2]
+  name:        "Templanza"
+  type:        "reactiva"
+  description: "+1 PM al defender con éxito"

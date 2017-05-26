@@ -1,0 +1,26 @@
+name:      "Aldara"
+personaje: "hechicero"
+jugador:   "Aldara"
+gender:    "female"
+status:    "activo"
+nivel:     2
+xp:        7
+familiar:  { id: 9, name: "Liante"}
+profesion: { id: 8, aprendiz: [0] }
+cuerpo:    5
+mente:     6
+mov:       7
+oro:       18
+armadura:  {id: 1}
+armas:
+  - {id: 34}
+  - {id: 20, enchants: [127]}
+protecciones:
+  - { id: 4, enchants: [125, 126], ranuras: 3 }
+pociones:  [5]
+skills:    [0, 1]
+master:    [11]
+hechizos:  [0, 1, 2, 12, 13, 14, 18, 19, 20]
+ice:    []
+tesoro:
+  gemas: [38]

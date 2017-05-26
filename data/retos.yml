@@ -1,0 +1,72 @@
+-
+  id:     0
+  name:   "La Guerra de la Montaña I"
+  pjs:    [1, 2, 5, 7, 8]
+  pnjs:   ["Luria Battleaxe", "Cejohierro", "Borin"]
+  evil:   "Daikinon, el Esclavista"
+  lugar:  "La Montaña Svärd"
+  type:   "Fortaleza"
+  reward: "Sin otorgar"
+  target: "Limpiar la ofensa"
+  desc:
+          "La guerra se ha iniciado. Los Enanos del clan Battleaxe, liderados por Luria,
+           han tomado la montaña Svärd en nombre de la legión de Obsidiana duergar.
+           El Emperador, Ultrajado, envía a su príncipe Fuckencio, para limpiar la ofensa" 
+-
+  id:     1
+  name:   "El despertar de los Rakshasa"
+  pjs:    [50, 90, 80, 61, 57, 78, 89]
+  pnjs:   ["Rakshasa"]
+  evil:   "Magisters"
+  lugar:  "La ciudad perdida"
+  type:   "Fortaleza"
+  reward: "Sin otorgar"
+  target: "Despertar a los Rakshasa"
+  desc:
+          "Una nueva ciudad ha aparecido en el desierto prohibido. 
+          ¿Será la tan buscada ciudad perdida de donde proceden los Magisters? 
+          La leyenda de los Rakshasa emerge de nuevo" 
+-
+  id:     2
+  name:   "El tomo arcano"
+  pjs:    [96, 97]
+  pnjs:   ["Guardias de la biblioteca"]
+  evil:   "Guerreros del caos"
+  lugar:  "La gran biblioteca"
+  type:   "Fortaleza"
+  reward: "Sin otorgar"
+  target: "Recuperar el tomo arcano"
+  desc:
+          "La magia del caos se ha apoderado de una antigua biblioteca.
+          Los guardias se han convertido y el gran libro ha sido corrompido.
+          La maga Aldara hace su aparición para retornar tan ansiado tomo." 
+-
+  id:     3
+  name:   "Sangre y hambre"
+  pjs:    [43,50,61,69,98]
+  pnjs:   []
+  evil:   "Mercenarios"
+  lugar:  "Ruinas del Axcebs"
+  type:   "Ruinas"
+  reward: "400 piezas de oro"
+  target: "Matar a Garmehx"
+  desc:
+          "A 20 leguas de Jadessvärd, la realidad es terrible.
+           Una banda de mercenarios ha asolado las poblaciones cercanas.
+           Liderados por Garmehx, un ettin vengativo y cobarde,
+           han saqueado las aldeas vecinas. Los héroes deberán matarle y recuperar los alimentos." 
+-
+  id:     4
+  name:   "Las Gemas del Caos"
+  pjs:    [0,36,83,108,109]
+  pnjs:   []
+  evil:   "Seguidores del Caos"
+  lugar:  "Comarca de Nandrei"
+  type:   "Ruinas"
+  reward: "Sin otorgar"
+  target: "Descubrir el misterio tras las Gemas del Caos"
+  desc:
+          "Han empezado a aparecer unas extrañas joyas que laten con el poder de la Disformidad, pero nadie conoce
+          su verdadera naturaleza. Los orfebres dicen que no muestran propiedades mágicas aparentes, no son fragmentos
+          de Piedra Bruja, y sus colores son extraños y misteriosos, como de otro mundo, o incluso otra realidad. ¿Cuál
+          es la verdadera historia que relata el origen de estas piedras?" 

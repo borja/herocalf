@@ -1,0 +1,19 @@
+<header>
+	<h2>Estados de combate</h2>
+</header>
+<table>
+	<thead>
+		<tr>
+			<th>Estado</th>
+			<th>Efecto</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% estados.each do |e| %>
+			<tr>
+				<td><%= e['nombre'] %></td>
+				<td><%= e['efecto'] %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>

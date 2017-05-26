@@ -1,0 +1,16 @@
+<table>
+	<thead>
+		<th colspan='2'>Pieza</th>
+		<th>Uso</th>
+	</thead>
+	<tbody>
+		<% piezas.each do |pieza| %>
+		<% p = Pieza.new(pieza) %>
+			<tr>
+				<td><img src=<%= p.img_path%> alt=<%=p.name%>, id='icon' /></td>
+				<td><%= p.name.capitalize %></td>
+				<td><%= p.uso.capitalize %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>

@@ -1,0 +1,14 @@
+<div class="information_popup_container">
+	<div class="information">
+		<% tipo = resultado.split(':').last.strip %>
+		<% img_path = "'../images/utiles/pergaminos/#{tipo}.png'" %>
+		<img src=<%=img_path%> alt=<%= tipo %>, id='icon2' />
+	</div>
+	<div class="popup_information">
+		<center><h3>	
+			Pergamino <%= tipo %><br><br>
+			<img src=<%=img_path%> alt=<%= tipo %>, id='icon3' />
+		</h3></center>
+		Hechizos sin implementar
+	</div>
+</div>

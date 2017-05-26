@@ -1,0 +1,19 @@
+<header>
+	<h2>Posiciones de combate</h2>
+</header>
+<table>
+	<thead>
+		<tr>
+			<th>Posición</th>
+			<th>Efecto</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% posiciones.each do |p| %>
+			<tr>
+				<td><%= p['nombre'] %></td>
+				<td><%= p['efecto'] %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>

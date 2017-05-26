@@ -1,0 +1,20 @@
+<div class="information_popup_container" >
+	<div class="information">
+		<% if paso.first == 'Bloqueado' %>
+			<% img_path = "images/caminos/bloqueado.png" %>
+		<% else %>
+			<% img_path = "images/caminos/#{camino.first}/#{paso.first}.png" %>
+		<% end %>
+		<img src='<%= img_path %>' alt=<%= paso.first %>, id='icon' />
+	</div>
+	<div class="popup_information">
+		<center>
+			<header>
+				<h3><%= paso.first %></h3>
+			</header>
+			<img src='<%= img_path %>' alt='<%= paso.first %>', id='icon3' />
+			<br/>
+			<p><%= paso.last %></p>		
+		</center>
+	</div>
+</div>

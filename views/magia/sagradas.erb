@@ -1,0 +1,23 @@
+<header>
+	<h2>
+		Hechizos de <%= params[:view] %>
+		de nivel <%= params[:param] %>
+	</h2>
+</header>
+
+<p>
+	<table class='tspells'>
+		<thead>
+			<th>Icono</th>
+			<% unless %w(sombra arena hielo sangre).include?(params[:view]) %>
+				<th>Elemento</th>
+			<% end %>
+			<th>Nombre</th>
+			<th>Descripción</th>
+			<th>Potencia</th>
+		</thead>
+		<tbody>
+			<%= erb :'magia/hechizos/sagradas' %>
+		</tbody>
+	</table>
+</p>

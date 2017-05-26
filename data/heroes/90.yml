@@ -1,0 +1,29 @@
+name:      "Estella"
+personaje: "derviche"
+gender:    "female"
+jugador:   "Javier Galindo"
+muerto:    true
+status:    "retirado"
+familiar:  { id: 15, name: "Viviana"}
+profesion: { id: 3, aprendiz: [0, 3] }
+pareja:    { nombre: "Raulph", raza: "pirado", tipo: "pnj" }
+progenitores: 
+  - "Gabrielle"
+  - 59
+nivel:    6
+xp:       1
+repu:     6
+cuerpo:   7
+mente:    4
+mov:      13
+oro:      39
+armadura: 2
+skills:   [0, 1, 2, 3, 4, 6]
+hechizos: [6, 7, 8]
+pociones: [1]
+mounts:   [0]
+armas:    [2, 3]
+protecciones:
+  - { id: 2 }
+  - { id: 3, enchants: [115] }
+  - { id: 4 }

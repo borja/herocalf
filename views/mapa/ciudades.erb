@@ -1,0 +1,35 @@
+<header>
+	<h2>Ciudades</h2>
+</header>
+<a href=<%= '/mapa' %> class='feature-image'>
+	<img src='/images/nav/mapeando.png' alt='mapeando'/>
+</a>
+<table>
+	<thead>
+		<tr>
+			<th>Ciudad</th>
+			<th>MB</th>
+			<th>Héroes</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% cities.each do |c| %>
+			<tr>
+				<td>
+					<a href='/city/<%= c['name'] %>'>
+						<%= c['name'] %></a>
+				</td>
+				<td>
+					<%= c['master'] %>
+				</td>
+				<td>
+						<% if c['name'] == 'Jadessvärd' %>
+							<a href='/heroes'>ver</a>
+						<% else %>
+							<a href='/extranjeros/<%= c['name'] %>'>ver</a>
+						<% end %>
+				</td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>

@@ -1,0 +1,33 @@
+<table>
+	<thead>
+		<tr>
+			<th>Combo</th>
+			<th>Nombre</th>
+			<th>Bonificador</th>
+		</tr>	
+	</thead>
+	<tbody>
+		<% tiers.each do |t| %>
+			<tr>
+				<td>
+					<table>
+						<tbody>
+							<tr>
+								<% t['mix'].keys.each do |familia| %>
+									<% if t['mix'][familia] %>
+										<% t['mix'][familia].each do |id| %>
+											<td><%= erb :'display/gema', locals: { gema: send(familia)[id] } %>
+											</td>
+										<% end %>
+									<% end %>
+								<% end %>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+				<td><%= t['name'].capitalize %></td>
+				<td><%= t['bono'].capitalize %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>

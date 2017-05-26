@@ -1,0 +1,187 @@
+/* 
+Displaying Info as original
+*/
+#icon {
+	padding: 2px;
+	height: 40px;
+}
+#icon2 {
+	padding: 2px;
+	height: 60px;
+}
+#icon3 {
+	padding: 2px;
+	height: 80px;
+}
+#icon4 {
+	padding: 2px;
+	height: 110px;
+}
+#portrait {
+	padding: 2px;
+	height: 321px;
+}
+
+div.information_popup_container {
+	/* Position Information */
+	/* Appearance Information */
+}
+div.information_popup_container > div.information {
+	/* Position Information */
+	/* Appearance Information */
+}
+div.information_popup_container > div.popup_information {
+	position:   absolute;
+	visibility: hidden;
+	line-height: 20px;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size:   14px;
+	color: #CBCBCB;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	background-color: #222;
+	padding: 1em 2em 1em 2em;
+	text-align: left;
+	/* Position Information */
+	/* Appearance Information */
+}
+div.information_popup_container > div.information:hover + div.popup_information {
+	visibility: visible;
+	z-index:    200;
+}
+
+/* 
+Generic Styling, for Desktops/Laptops 
+*/
+table { 
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  width: 100%; 
+  border-collapse: collapse; 
+  margin-left:auto; 
+  margin-right:auto;
+  border: 1px solid #e3e3e3;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  vertical-align: middle;
+}
+
+th { 
+  background: #333; 
+  color: white; 
+  font-weight: bold; 
+}
+td, th { 
+  text-align: center; 
+  vertical-align: middle;
+}
+
+/* 
+concurso de literatura, ribetes de esquina para ganadores
+*/
+.wrapper {
+    margin: 50px auto;
+    position: relative;
+    z-index: 90;
+}
+
+.ribbon-wrapper-silvered {
+  width: 70px;
+  height: 50px;
+  overflow: hidden;
+  position: absolute;
+  top: -3px;
+  right: -3px;
+}
+
+.ribbon-silvered {
+  font: bold 12px Sans-Serif;
+  color: #333;
+  text-align: center;
+  text-shadow: rgba(255,255,255,0.5) 0 1px 0;
+  -webkit-transform: rotate(35deg);
+  -moz-transform:    rotate(35deg);
+  -ms-transform:     rotate(35deg);
+  -o-transform:      rotate(35deg);
+  position: relative;
+  padding: 7px 0;
+  left: -25px;
+  top: 8px;
+  width: 150px;
+  background-color: gold;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(silver), to(#CACACA)); 
+  background-image: -webkit-linear-gradient(top, silver, #CACACA); 
+  background-image:    -moz-linear-gradient(top, silver, #CACACA); 
+  background-image:     -ms-linear-gradient(top, silver, #CACACA); 
+  background-image:      -o-linear-gradient(top, silver, #CACACA); 
+  -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.3);
+  -moz-box-shadow:    0 0 3px rgba(0,0,0,0.3);
+  box-shadow:         0 0 3px rgba(0,0,0,0.3);
+}
+
+.ribbon-silvered:before, .ribbon-silvered:after {
+  content: "";
+  border-top:   3px solid #6e8900;   
+  border-left:  3px solid transparent;
+  border-right: 3px solid transparent;
+  position:absolute;
+  bottom: -3px;
+}
+
+.ribbon-silvered:before {
+  left: 0;
+}
+.ribbon-silvered:after {
+  right: 0;
+}
+
+.ribbon-wrapper-golden {
+  width: 70px;
+  height: 50px;
+  overflow: hidden;
+  position: absolute;
+  top: -3px;
+  right: -3px;
+}
+
+.ribbon-golden {
+  font: bold 12px Sans-Serif;
+  color: #333;
+  text-align: center;
+  text-shadow: rgba(255,255,255,0.5) 0 1px 0;
+  -webkit-transform: rotate(35deg);
+  -moz-transform:    rotate(35deg);
+  -ms-transform:     rotate(35deg);
+  -o-transform:      rotate(35deg);
+  position: relative;
+  padding: 7px 0;
+  left: -25px;
+  top: 8px;
+  width: 150px;
+  background-color: gold;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(gold), to(#ACAC45)); 
+  background-image: -webkit-linear-gradient(top, gold, #ACAC45); 
+  background-image:    -moz-linear-gradient(top, gold, #ACAC45); 
+  background-image:     -ms-linear-gradient(top, gold, #ACAC45); 
+  background-image:      -o-linear-gradient(top, gold, #ACAC45); 
+  -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.3);
+  -moz-box-shadow:    0 0 3px rgba(0,0,0,0.3);
+  box-shadow:         0 0 3px rgba(0,0,0,0.3);
+}
+
+.ribbon-golden:before, .ribbon-golden:after {
+  content: "";
+  border-top:   3px solid #6e8900;   
+  border-left:  3px solid transparent;
+  border-right: 3px solid transparent;
+  position:absolute;
+  bottom: -3px;
+}
+
+.ribbon-golden:before {
+  left: 0;
+}
+.ribbon-golden:after {
+  right: 0;
+}

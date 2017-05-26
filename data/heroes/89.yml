@@ -1,0 +1,21 @@
+name:      "Ahalya"
+personaje: "arquero"
+gender:    "female"
+jugador:   "Rocío"
+status:    "retirado"
+muerto:    "true"
+pareja:    { char: 78, tipo: "pj" }
+profesion: { id: 6, aprendiz: [0] }
+nivel:     5
+xp:        6
+repu:      3
+cuerpo:    6
+mente:     5
+mov:       10
+armadura:  0
+armas:     [0]
+hechizos:  [12, 13, 14]
+shadows:   []
+skills:    [1, 2, 4, 5, 6, 7]
+master:    [12]
+magister:  [0]

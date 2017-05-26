@@ -1,0 +1,22 @@
+<table>
+	<thead>
+		<tr><th colspan='2'>Protección</th>
+			<% %w(Categoría Defensa Precio Ranuras).each do |stat| %>
+				<th><%= stat %></th>
+			<% end %>
+		</tr>	
+	</thead>
+	<tbody>
+		<% proteccions.sort_by {|p| p['categoria']}.each do |prot| %>
+		<% p = Proteccion.new(prot.tap{ |i| i.delete('ranuras') } ) %>
+			<tr>
+				<td><%= erb :'display/item', locals: { item: p } %></td>
+				<td><%= p.name.capitalize %></td>
+				<td><%= p.categoria.capitalize %></td>
+				<td><%= p.defensa %></td>
+				<td><%= p.precio %></td>
+				<td><%= proteccions[p.id]['ranuras'] %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>

@@ -1,0 +1,72 @@
+-
+  id:           0
+  nivel:        2
+  rangos:       3
+  name:         "Despliegue en manada"
+  type:         "pasiva"
+  description:  "Al pasar por la espalda de 1/rango aliados, obtiene +1 sigilo"
+-
+  id:           1
+  nivel:        2
+  rangos:       3
+  name:         "Salto feroz"
+  type:         "única"
+  description:  "Tu próximo ataque se considera en posición elevada"
+-
+  id:           2
+  nivel:        2
+  rangos:       4
+  name:         "Esquiva"
+  type:         "declarativa"
+  description:  "+1 Defensa vs un enemigo declarado hasta tu siguiente turno."
+-
+  id:           3
+  nivel:        2
+  name:         "Apresar"
+  type:         "pasiva"
+  description:  "Al causar daño en un ataque en conjunto, la víctima perderá su movimiento."
+-
+  id:           4
+  nivel:        2
+  name:         "Dos armas"
+  type:         "pasiva"
+  description:  "Permite llevar un arma en la mano torpe de tamaño igual o inferior al rango."
+-
+  id:           5
+  nivel:        3
+  rangos:       2
+  requisitos:   [0]
+  name:         "Al acecho"
+  type:         "pasiva"
+  description:  "+1/rango potencia a los ataques no-frontales estando en sigilo"
+-
+  id:           6
+  nivel:        3
+  name:         "Infalible"
+  type:         "reactiva"
+  description:
+                "Tras matar un enemigo cuerpo a cuerpo, podrás arrojar un arma como acción gratuita<br/>
+                 (Podrá arrojar incluso armas que no sean arrojadizas)"
+-
+  id:           7
+  nivel:        3
+  requisitos:   [3]
+  name:         "Dentellada"
+  type:         "pasiva"
+  description:  "Añade dos veces tu ataque sin armas, cuando ataques a enemigos con movimiento reducido."
+-
+  id:           8
+  nivel:        3
+  requisitos:   [0,1]
+  name:         "Emboscada súbita"
+  type:         "reactiva"
+  description:  "Recupera salto feroz si todos los enemigos de la fase trepidante han sido eliminados ese turno."
+-
+  id:           9
+  nivel:        4
+  requisitos:   [0]
+  name:         "Hoja de la manada"
+  type:         "instinto"
+  description:
+                "Estando en sigilo, podrá hacer un ataque con su arma principal, cuerpo a cuerpo,<br/>
+                 a cualquier enemigo que ataque a un aliado. (Instinto)"

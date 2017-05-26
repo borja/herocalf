@@ -1,0 +1,24 @@
+name:      "Straüss"
+personaje: "matador"
+jugador:   "Daniel de Haro"
+ciudad:    "Xanandra"
+familiar: { id: 17, name: "Pinta"}
+nivel:     3
+repu:      1
+cuerpo:    7
+mente:     4
+mov:       8
+armadura:  3
+armas:
+  - { id: 13, gemas: [26] }
+  - { id: 3}
+protecciones:
+  - { id: 2 }
+pergaminos:
+  - { id: 3 }
+  - { id: 1, spells: [8] }
+  - { id: 1, spells: [8] }
+skills:   [0, 2, 4, 5]
+pociones: [1, 4, 12]
+tesoro:
+  gemas: [3]

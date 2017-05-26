@@ -1,0 +1,30 @@
+<header>
+	<h2>
+		Hechizos
+		<% if params[:view] == 'hechizos' %>
+			elementales
+		<% else %>
+			de <%= params[:view] %>
+		<% end %>
+		de nivel <%= params[:param].to_i || 1 %>
+	</h2>
+</header>
+
+<p>
+	<div class="table-responsive">
+		<table class='table'>
+			<thead>
+				<th>Icono</th>
+				<% unless %w(aire tierra fuego agua).include?(params[:view]) %>
+					<th>Elemento</th>
+				<% end %>
+				<th>Nombre</th>
+				<th>Descripción</th>
+				<th>Potencia</th>
+			</thead>
+			<tbody>
+				<%= erb :'magia/hechizos/elemental' %>
+			</tbody>
+		</table>
+	</div>
+</p>
