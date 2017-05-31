@@ -1,26 +1,27 @@
 <h3>Tabla de Armaduras</h3>
-<table>
-	<thead>
-		<tr>
-			<th colspan=2>Armadura</th>
-			<th>Categoría</th>
-			<th>Defensa</th>
-			<th>Precio</th>
-		</tr>
-	</thead>
-	<tbody>
-		<% armaduras.map{ |arm| Armadura.new(arm) }.each do |a| %>
+<div class="table-responsive">
+	<table class="table">
+		<thead>
 			<tr>
-				<td><%= erb :'display/armadura', locals: { a: a } %></td>
-				<td><%= a.name %></td>
-				<td><%= a.categoria %></td>
-				<td><%= a.defensa %></td>
-				<td><%= a.precio %></td>
-			</tr>	
-		<% end %>
-	</tbody>
-</table>
-<br/>
+				<th colspan=2>Armadura</th>
+				<th>Categoría</th>
+				<th>Defensa</th>
+				<th>Precio</th>
+			</tr>
+		</thead>
+		<tbody>
+			<% armaduras.map{ |arm| Armadura.new(arm) }.each do |a| %>
+				<tr>
+					<td><%= erb :'display/armadura', locals: { a: a } %></td>
+					<td><%= a.name %></td>
+					<td><%= a.categoria %></td>
+					<td><%= a.defensa %></td>
+					<td><%= a.precio %></td>
+				</tr>	
+			<% end %>
+		</tbody>
+	</table>
+</div>
 <h3>Reglas de las armaduras</h3>
 <p>
 	Las armaduras son vestimentas militares que cubren el torso del héroe.

@@ -24,33 +24,17 @@
 <p>
 	En la tirada de tesoro, al obtener un resultado de gema,
 	deberás tirar 2d6 para calcular el calibre de la gema:
-	<table>
-		<thead>
-			<th>2d6</th>
-			<th>Nombre</th>
-			<th>Calibre</th>
-			<th>%</th>
-		</thead>
-		<tbody>
-			<% 6.times do |calibre| %>
-				<tr>
-					<% g = gema_calidades[calibre] %>
-					<td><%= g['2d6'] %></td>
-					<td><a href='/calibre/<%= g['calibre'] %>'><%= g['name'] %></a></td>
-					<td><%= g['calibre'] %></td>
-					<td><%= g['prob'] %></td>
-				</tr>
-			<% end %>
-		</tbody>
-	</table>
+	<%= erb :'items/gemas/tablacalibre' %>
 </p>
 
 <h3>Las gemas insólitas</h3>
 <p>
 	Ciertas gemas han adquirido energías ajenas al conocimiento
 	de los encantadores y magos. Se las conoce como: 
-	<a href='/calibre/0'>Gemas Insólitas</a>. Algunas pueden
-	ser halladas como tesoro de reto, o recompensa. Otras pueden ser fabricadas.
-	Su valor generalmente es de 0 monedas, pues guardan misterios ocultos,
+	<a href='/calibre/0'>Gemas Insólitas</a>.
+	Algunas pueden ser halladas como tesoro de reto, o recompensa. 
+	Otras pueden ser fabricadas.
+	Su valor generalmente es de 0 monedas, 
+	pues guardan misterios ocultos,
 	que la mayor parte de la gente desconoce.
 </p>

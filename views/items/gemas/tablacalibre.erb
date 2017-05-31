@@ -1,0 +1,21 @@
+<div class="table-responsive">
+	<table class="table">
+		<thead>
+			<th>2d6</th>
+			<th>Nombre</th>
+			<th>Calibre</th>
+			<th>%</th>
+		</thead>
+		<tbody>
+			<% 6.times do |calibre| %>
+				<tr>
+					<% g = gema_calidades[calibre] %>
+					<td><%= g['2d6'] %></td>
+					<td><a href='/calibre/<%= g['calibre'] %>'><%= g['name'] %></a></td>
+					<td><%= g['calibre'] %></td>
+					<td><%= g['prob'] %></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</div>
