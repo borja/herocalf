@@ -1,0 +1,25 @@
+-
+  id:         0
+  name:       "viejomundano"
+  personajes: "todos"
+  desc:       ""
+-
+  id:         1
+  name:       "élfico"
+  personajes: ["elfo"]
+  desc:       ""
+-
+  id:         2
+  name:       "khuzdul"
+  personajes: ["enano"]
+  desc:       ""
+-
+  id:         3
+  name:       "daevanagari"
+  personajes: ["daeva","rakshasa"]
+  desc:       ""
+-
+  id:         4
+  name:       "daevanagari"
+  personajes: ["daeva","rakshasa"]
+  desc:       ""

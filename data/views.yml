@@ -99,6 +99,11 @@
     right:  "personaje/pets"
     right2: "heroes/sidebar"
 -
+  ruta:  "lenguas"
+  template:
+    main: "personaje/lenguas"
+    right: "heroes/sidebar"
+-
   ruta:  "habs"
   template:
     main: "personaje/habilidades/casillero"

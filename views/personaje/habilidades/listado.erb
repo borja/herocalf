@@ -1,38 +1,40 @@
 <% char = nomalize_pj(request.path_info.split('/').last) %>
 <% char.gsub!('se%C3%B1or%20de%20las%20bestias', 'beastslord') %>
-<table>
-	<thead>
-		<tr><th>Nivel</th>
-			<th colspan='2'>Habilidad</th>
-			<th>Requisitos</th>
-			<th>Descripción</th>
-		</tr>
-	</thead>
-	<tbody>
-		<% send(char+"s").count.times do |i| %>
-			<% c = Habilidad.new(send(char,i)) %>
-			<tr><td width='9%'><h2><%= c.nivel %></h2></td>
-				<td><%= erb :'display/skill', locals: { skill: c} %></td>
-				<td><%= c.name %></td>
-				<td><% if c.requisitos %>
-						<table>
-							<tr>
-								<% c.requisitos.each do |r| %>
-									<% if r.is_a? Fixnum %>
-										<% req = Habilidad.new(send(char,r)) %>
-										<td><%= erb :'display/skill', locals: { skill: req } %></td>
-									<% else %>
-										<td><%= r %></td>
-									<% end %>
-								<% end %>
-							</tr>
-						</table>
-					<% else %>
-						-
-					<% end %>
-				</td>
-				<td><i><%= c.description %></i></td>
+<div class="table-responsive">
+	<table class="table">
+		<thead>
+			<tr><th>Nivel</th>
+				<th colspan='2'>Habilidad</th>
+				<th>Requisitos</th>
+				<th>Descripción</th>
 			</tr>
-		<% end %>
-	</tbody>
-</table>
+		</thead>
+		<tbody>
+			<% send(char+"s").count.times do |i| %>
+				<% c = Habilidad.new(send(char,i)) %>
+				<tr><td width='9%'><h2><%= c.nivel %></h2></td>
+					<td><%= erb :'display/skill', locals: { skill: c} %></td>
+					<td><%= c.name %></td>
+					<td><% if c.requisitos %>
+							<table>
+								<tr>
+									<% c.requisitos.each do |r| %>
+										<% if r.is_a? Fixnum %>
+											<% req = Habilidad.new(send(char,r)) %>
+											<td><%= erb :'display/skill', locals: { skill: req } %></td>
+										<% else %>
+											<td><%= r %></td>
+										<% end %>
+									<% end %>
+								</tr>
+							</table>
+						<% else %>
+							-
+						<% end %>
+					</td>
+					<td><i><%= c.description %></i></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</div>
