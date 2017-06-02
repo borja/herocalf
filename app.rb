@@ -22,7 +22,10 @@ class App < Sinatra::Base
   
   # GET methods
   # Home website
-  get('/') { erb :home }
+  get '/' do
+    @carousel = true
+    erb :home
+  end
   
   get('/login/form') { erb :login_form }
   get '/logout' do
