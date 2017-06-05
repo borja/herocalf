@@ -1,57 +1,12 @@
-<!-- Brand and toggle get grouped for better mobile display -->
-<div class="navbar-header">
-		<button type="button" class="navbar-toggle"
-		 data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-		</button>
-		<a class="navbar-brand" href="/"><%= title %></a>
-</div>
+<%= erb :'layout/nav/navbar-header', locals: { title: title } %>
 
 <!-- Main website links -->
 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	<ul class="nav navbar-nav">
-		<li>
-			<a href="/heroes">
-				<i class="fa fa-users" aria-hidden="true"></i>
-				Héroes
-			</a>
-		</li>
-		<li>
-			<a href="/objetos">
-				<i class="fa fa-shield" aria-hidden="true"></i>
-				Objetos
-			</a>
-		</li>
+		<li><%= erb :'layout/nav/heroes' %></li>
+		<li><%= erb :'layout/nav/objetos' %></li>
 		<li class="dropdown">
-			<a href="/magia" class="dropdown-toggle" data-toggle="dropdown">
-				<span class="glyphicon glyphicon-fire"></span>
-				Magia
-				<b class="caret"></b>
-			</a>
-			<ul class="dropdown-menu">
-				<li>
-						<a href="portfolio-1-col.html">1 Column Portfolio</a>
-				</li>
-				<li class="divider"></li>
-				<li>
-						<a href="portfolio-2-col.html">2 Column Portfolio</a>
-				</li>
-				<li class="divider"></li>
-				<li>
-						<a href="portfolio-3-col.html">3 Column Portfolio</a>
-				</li>
-				<li class="divider"></li>
-				<li>
-						<a href="portfolio-4-col.html">4 Column Portfolio</a>
-				</li>
-				<li class="divider"></li>
-				<li>
-						<a href="portfolio-item.html">Single Portfolio Item</a>
-				</li>
-			</ul>
+			<%= erb :'layout/nav/magia' %>
 		</li>
 		<li>
 			<a href="/manuales">

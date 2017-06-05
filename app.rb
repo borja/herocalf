@@ -11,30 +11,31 @@ class App < Sinatra::Base
       erb :'layout/username'
     end
   end
-  
+
+  # TODO: Error must be ERB (as posible)
   before '/secure/*' do
     unless session[:identity]
       session[:previous_url] = request.path
-      @error = 'Disculpa, necesitas acceder para visitar esta página' + request.path
+      @error = print_error(request.path)
       halt erb(:login_form)
     end
   end
-  
+
   # GET methods
   # Home website
+  # TODO: Oneliner. @carousel var is a pain. Load it in ERB template
   get '/' do
     @carousel = true
     erb :home
   end
-  
+
+  # Private Zone
+  get('/secure/place') { erb :'private/secreto' }
   get('/login/form') { erb :login_form }
   get '/logout' do
     session.delete(:identity)
     erb :'alerts/logout'
   end
-  
-  # Private Zone
-  get('/secure/place') { erb :'private/secreto' }
   
   # Templates with double-routing
   get '/:view/:param' do |view, _param|
@@ -61,11 +62,9 @@ class App < Sinatra::Base
   end
   
   # POST Routing views
-   post('/calculador') { preview('calculador') }
-   post('/buscar')     { preview('heroes') }
-  
-  # GET methods
-  
+  post('/calculador') { preview('calculador') }
+  post('/buscar')     { preview('heroes') }
+    
   post '/login/attempt' do
     session[:identity] = params['username']
     where_user_came_from = session[:previous_url] || '/'
