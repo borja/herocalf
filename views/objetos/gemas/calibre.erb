@@ -8,9 +8,10 @@
 
 <p><h3>Precio de mercado: <%= precio.to_s %></h3></p>
 
-<p>
-	<h3>Listado de <%= calibre['name'] %></h3>
-	<table>
+<h3>Listado de <%= calibre['name'] %></h3>
+
+<div class="table-responsive">
+	<table class="table">
 		<thead>
 			<tr>
 				<th>ID</th>
@@ -29,17 +30,13 @@
 							item_id: g.id, 
 							engarce: 'gemas' } %>
 						</td>
-						<td>
-							<a href='/gema/<%= g.id %>'>
-								<%= g.name %>
-							</a>
-						</td>
+						<td><a href='/gema/<%= g.id %>'><%= g.name %></a></td>
 					</tr>
 				<% end %>
 			<% end %>
 		</tbody>
 	</table>
-</p>
+</div>
 
 <p>
 	<h3>Estadísticas</h3>
