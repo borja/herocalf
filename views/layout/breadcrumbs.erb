@@ -5,7 +5,7 @@
 				</h1>
 				<ol class="breadcrumb">
 						<li>
-							<a href="/<%= breadcrumb(params[:view])[:bc].first.capitalize %>">
+							<a href="/<%= breadcrumb(params[:view])[:bc].first.downcase %>">
 								<%= breadcrumb(params[:view])[:bc].first.capitalize %>
 							</a>
 						</li>

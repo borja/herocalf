@@ -23,7 +23,9 @@
 			<% end %>
 
 			<!-- Page Heading/Breadcrumbs -->
-			<%= erb :'layout/breadcrumbs', locals: { title: title } %>
+			<% unless @carousel %>
+				<%= erb :'layout/breadcrumbs', locals: { title: title } %>
+			<% end %>
 
 			<!-- Main Content -->
 			<%= yield %>

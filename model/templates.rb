@@ -40,8 +40,9 @@ end
 
 def breadcrumb(ruta)
   {
-    title: view(ruta)['ruta'],
-    path:  view(ruta)['template']['main'],
-    bc:    view(ruta)['template']['main'].split('/')
+    title:   view(ruta)['ruta'],
+    path:    view(ruta)['template']['main'],
+    bc:      view(ruta)['template']['main'].split('/'),
+    display: view(ruta)['template']['main'].split('/').count > 1
   }
 end
