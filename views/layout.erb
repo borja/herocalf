@@ -1,12 +1,13 @@
 <!DOCTYPE html>
+<% title = "HeroQuest" %>
 <html lang="es">
-	<head><%= erb :'layout/head', locals: { title: "HeroQuest" } %></head>
+	<head><%= erb :'layout/head', locals: { title: title } %></head>
 	<body>
 
 		<!-- Navigation -->
 		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 			<div class="container">
-				<%= erb :'layout/nav', locals: { title: "HeroQuest" } %>
+				<%= erb :'layout/nav', locals: { title: title } %>
 			</div>
 		</nav>
 
@@ -20,7 +21,10 @@
 			<% if @error then %>
 				<%= erb :'layout/error' %>
 			<% end %>
-			
+
+			<!-- Page Heading/Breadcrumbs -->
+			<%= erb :'layout/breadcrumbs', locals: { title: title } %>
+
 			<!-- Main Content -->
 			<%= yield %>
 

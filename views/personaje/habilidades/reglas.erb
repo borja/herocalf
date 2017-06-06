@@ -17,12 +17,38 @@
 	más información sobre los personajes y las especializaciones.
 </p>
 
-<p>
-	<h3>Tipos de habilidades (según su mecánica)</h3>
-	<%= erb :'personaje/habilidades/tipos' %>
-</p>
+<!-- Skill Tabs -->
+<div class="row">
+	<div class="col-lg-12">
+			<h2 class="page-header">Tipos de habilidades</h2>
+	</div>
+	<div class="col-lg-12">
 
-<p>
-	<h3>Clases de habilidades (según su adquisición)</h3>
-	<%= erb :'personaje/habilidades/clases' %>
-</p>
+		<ul id="myTab" class="nav nav-tabs nav-justified">
+				<li class="active">
+					<a href="#mec" data-toggle="tab">
+						<i class="fa fa-sitemap" aria-hidden="true"></i>
+						Por Mecánica
+					</a>
+				</li>
+				<li class="">
+					<a href="#adq" data-toggle="tab">
+						<i class="fa fa-cogs" aria-hidden="true"></i>
+						Por Adquisición
+					</a>
+				</li>
+		</ul>
+
+		<div id="myTabContent" class="tab-content">
+			<div class="tab-pane fade active in" id="mec">
+				<h4>Por Mecánica</h4>
+				<p><%= erb :'personaje/habilidades/tipos' %></p>
+			</div>
+			<div class="tab-pane fade" id="adq">
+				<h4>Por Adquisición</h4>
+				<p><%= erb :'personaje/habilidades/clases' %></p>
+			</div>
+		</div>
+
+	</div>
+</div>

@@ -136,29 +136,29 @@
   title: "Tarot Maligno"
   template:
     left:  "objetos/right/artefactos"
-    main:  "items/tarot/tarot"
-    right: "items/tarot/left"
+    main:  "objetos/tarot/tarot"
+    right: "objetos/tarot/left"
 -
   ruta:  "espadaroja"
   title: "Espada Roja"
   template:
     left:  "objetos/right/artefactos"
-    main:  "items/espadaroja/adivinanza"
-    right: "items/espadaroja/right"
+    main:  "objetos/espadaroja/adivinanza"
+    right: "objetos/espadaroja/right"
 -
   ruta:  "solve"
   title: "Espada Roja"
   template:
     left:  "objetos/right/artefactos"
-    main:  "items/espadaroja/solucion"
-    right: "items/espadaroja/right"
+    main:  "objetos/espadaroja/solucion"
+    right: "objetos/espadaroja/right"
 -
   ruta:  "listanegra"
   title: "Lista Negra"
   template:
     left:  "objetos/right/artefactos"
-    main:  "items/listanegra/main"
-    right: "items/listanegra/listado"
+    main:  "objetos/listanegra/main"
+    right: "objetos/listanegra/listado"
 -
   ruta:  "caminos"
   template:
@@ -174,13 +174,13 @@
   ruta:  "materiales"
   template:
     left: "objetos/right/contenedores"
-    main: "items/materiales"
+    main: "objetos/materiales"
 -
   ruta:  "calculador"
   template:
     left: "objetos/left/content2"
     main: "objetos/calculador"
-    right: "items/gemas/listado"
+    right: "objetos/gemas/listado"
 -
   ruta:  "monturas"
   template:
@@ -190,55 +190,55 @@
   ruta:  "joyas"
   template:
     left: "objetos/left/content2"
-    main: "items/joyas"
+    main: "objetos/joyas"
     right: "objetos/left/joyas"
 -
   ruta:  "joyasespeciales"
   template:
     left: "objetos/left/content2"
-    main: "items/joyas/especiales"
+    main: "objetos/joyas/especiales"
     right: "objetos/left/joyas"
 -
   ruta:  "joya"
   template:
     left:  "objetos/left/joyas"
-    main:  "items/joyas/main"
+    main:  "objetos/joyas/main"
 -
   ruta:  "runas"
   template:
     left:  "objetos/left/content2"
-    main:  "items/runas"
+    main:  "objetos/runas"
     right: "objetos/left/runas"
 -
   ruta:  "runa"
   title: "view"
   template:
     left:  "objetos/left/runas"
-    main:  "items/runas/main"
-    right: "items/runas/runa"
+    main:  "objetos/runas/main"
+    right: "objetos/runas/runa"
 -
   ruta:  "gemas"
   template:
     left:  "objetos/left/content2"
-    main:  "items/gemas/gemas"
-    right: "items/gemas/listado"
+    main:  "objetos/gemas/gemas"
+    right: "objetos/gemas/listado"
 -
   ruta:  "gema"
   template:
-    left: "items/gemas/listado"
-    main:  "items/gemas/main"
+    left: "objetos/gemas/listado"
+    main:  "objetos/gemas/main"
 -
   ruta:  "calibre"
   title: "Gemas"
   template:
     left:  "objetos/left/content2"
-    main:  "items/gemas/calibre"
-    right: "items/gemas/listado"
+    main:  "objetos/gemas/calibre"
+    right: "objetos/gemas/listado"
 -
   ruta:  "tiers"
   template:
     left: "objetos/left/content2"
-    main: "items/tiers"
+    main: "objetos/tiers"
 -
   ruta:  "profesiones"
   template:
@@ -303,39 +303,39 @@
   template:
     left: "objetos/left/content1"
     left2: "objetos/left/content2"
-    main: "items/armaduras"
+    main: "objetos/armaduras"
 -
   ruta:  "armas"
   template:
     left: "objetos/left/content1"
     left2: "objetos/left/content2"
-    main: "items/armas"
+    main: "objetos/armas"
 -
   ruta:  "protecciones"
   template:
     left: "objetos/left/content1"
     left2: "objetos/left/content2"
-    main: "items/protecciones"
+    main: "objetos/protecciones"
 -
   ruta:  "miscelaneas"
   template:
     left: "objetos/left/content2"
-    main: "items/miscelaneas"
+    main: "objetos/miscelaneas"
 -
   ruta:  "piezas"
   template:
     left: "objetos/right/contenedores"
-    main: "items/piezas"
+    main: "objetos/piezas"
 -
   ruta:  "pociones"
   template:
     left: "objetos/right/contenedores"
-    main: "items/pociones"
+    main: "objetos/pociones"
 -
   ruta:  "abalorios"
   template:
     left: "objetos/right/contenedores"
-    main: "items/abalorios"
+    main: "objetos/abalorios"
 -
   ruta:  "maestrodearmas"
   title: "Maestro de Armas"

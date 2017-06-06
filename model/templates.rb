@@ -37,3 +37,11 @@ def load_partial(position)
   partial = position.gsub(':param', params[:param].to_s)
   erb :"#{partial}"
 end
+
+def breadcrumb(ruta)
+  {
+    title: view(ruta)['ruta'],
+    path:  view(ruta)['template']['main'],
+    bc:    view(ruta)['template']['main'].split('/')
+  }
+end

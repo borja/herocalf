@@ -1,11 +1,14 @@
-<header><h2>Lista de joyas de engarce</h2></header>
-<p>
-	<table>
+<header>
+	<h2>Lista de joyas de engarce</h2>
+</header>
+
+<div class="table-responsive">
+	<table class="table">
 		<thead>
 			<tr>
 				<th>#</th>
 				<th colspan='2'>Joya</th>
-				<th width='20%'>Disponibles</th>
+				<th>Disponibles</th>
 			</tr>	
 		</thead>
 		<tbody>
@@ -18,13 +21,13 @@
 							<%= 'Joya ' + j.name %>
 						</a>
 					</td>
-					<td><%= erb :'display/bazar', locals: { 
-						bazar:   j.disponibles, 
-						engarce: 'joyas', 
+					<td><%= erb :'display/bazar', locals: {
+						bazar:   j.disponibles,
+						engarce: 'joyas',
 						item_id: j.id } %>
-					</td>						
+					</td>
 				</tr>
 			<% end %>
 		</tbody>
 	</table>
-</p>
+</div>
