@@ -22,30 +22,30 @@
   ruta:  "dado"
   title: "Combate"
   template:
-    main: "reglamento/dado"
-    right: "reglamento/derecha/combate"
+    main: "manuales/dado"
+    right: "manuales/derecha/combate"
 -
   ruta:  "sigilo"
   template:
-    main: "reglamento/combate/sigilo/main"
-    right: "reglamento/derecha/combate"
+    main: "manuales/combate/sigilo/main"
+    right: "manuales/derecha/combate"
 -
   ruta:  "locura"
   template:
-    main: "reglamento/combate/locura"
-    right: "reglamento/derecha/combate"
+    main: "manuales/combate/locura"
+    right: "manuales/derecha/combate"
 -
   ruta:  "fases"
   title: "Fases"
   template:
-    left:  "reglamento/derecha/combate"
-    main:  "reglamento/fases"
-    right: "reglamento/derecha/dados"
+    left:  "manuales/derecha/combate"
+    main:  "manuales/fases"
+    right: "manuales/derecha/dados"
 -
   ruta:  "historias"
   title: "Leyendas"
   template:
-    left: "personaje/razas/left/links"
+    left: "personajes/razas/left/links"
     main: "lore/centro"
     right: "lore/derecha"
 -
@@ -65,15 +65,15 @@
   ruta:  "personaje"
   title: "view"
   template:
-    left:  "personaje/principal/menu"
-    main:  "personaje/clases/clase"
-    right: "personaje/principal/specific"
+    left:  "personajes/principal/menu"
+    main:  "personajes/clases/clase"
+    right: "personajes/principal/specific"
 -
   ruta:  "especial"
   title: "view"
   template:
-    left:  "personaje/principal/menu"
-    main:  "personaje/especializaciones/:param"
+    left:  "personajes/principal/menu"
+    main:  "personajes/especializaciones/:param"
 -
   ruta:  "mapa"
   template:
@@ -89,30 +89,30 @@
   ruta:  "familiar"
   title: "view"
   template:
-    main: "personaje/familiares/description/description"
-    left:  "personaje/pets"
+    main: "personajes/familiares/description/description"
+    left:  "personajes/pets"
     right: "heroes/sidebar"
 -
   ruta:  "familiares"
   template:
-    main: "personaje/familiares"
-    right:  "personaje/pets"
+    main: "personajes/familiares"
+    right:  "personajes/pets"
     right2: "heroes/sidebar"
 -
   ruta:  "lenguas"
   template:
-    main: "personaje/lenguas"
+    main: "personajes/lenguas"
     right: "heroes/sidebar"
 -
   ruta:  "habs"
   template:
-    main: "personaje/habilidades/casillero"
+    main: "personajes/habilidades/casillero"
 -
   ruta:  "habilidades"
   template:
-    left:  "personaje/principal/menu"
-    main:  "personaje/habilidades/reglas"
-    right: "reglamento/derecha/personajes"
+    left:  "personajes/principal/menu"
+    main:  "personajes/habilidades/reglas"
+    right: "manuales/derecha/personajes"
 -
   ruta:  "dones"
   template:
@@ -121,16 +121,16 @@
   ruta:  "habilidad"
   title: "view"
   template:
-    left: "personaje/left/logo"
-    left2: "personaje/left/personajes"
-    main: "personaje/habilidades/listado"
+    left: "personajes/left/logo"
+    left2: "personajes/left/personajes"
+    main: "personajes/habilidades/listado"
 -
   ruta:  "don"
   title: "view"
   template:
-    left:  "personaje/left/logo"
-    #left2: "revenge/personaje/left/personajes"
-    main:  "revenge/personaje/dones"
+    left:  "personajes/left/logo"
+    #left2: "revenge/personajes/left/personajes"
+    main:  "revenge/personajes/dones"
 -
   ruta:  "tarot"
   title: "Tarot Maligno"
@@ -162,14 +162,14 @@
 -
   ruta:  "caminos"
   template:
-    main: "personaje/caminos/lista"
+    main: "personajes/caminos/lista"
     right: "heroes/sidebar"
 -
   ruta:  "camino"
   template:
-    left:  "personaje/caminos/miniature"
-    left2: "reglamento/derecha/personajes"
-    main:  "personaje/caminos/manual"
+    left:  "personajes/caminos/miniature"
+    left2: "manuales/derecha/personajes"
+    main:  "personajes/caminos/manual"
 -
   ruta:  "materiales"
   template:
@@ -242,49 +242,49 @@
 -
   ruta:  "profesiones"
   template:
-    main: "personaje/profesiones"
-    right: "reglamento/derecha/personajes"
+    main: "personajes/profesiones"
+    right: "manuales/derecha/personajes"
 -
   ruta:  "profesion"
   title: "view"
   template:
     main: "ciudad/profesiones"
-    right: "personaje/profesiones/index"
-    right2: "reglamento/derecha/personajes"
+    right: "personajes/profesiones/index"
+    right2: "manuales/derecha/personajes"
 -
   ruta:  "personajes"
   template:
-    left:  "personaje/principal/menu"
-    main: "personaje/personajes"
-    right: "personaje/razas/right/stats"
+    left:  "personajes/principal/menu"
+    main: "personajes/personajes"
+    right: "personajes/razas/right/stats"
 -
   ruta:  "descendientes"
   template:
-    left: "personaje/razas/left/links"
-    main: "personaje/razas/center/descendientes"
-    right: "personaje/razas/right/stats"
+    left: "personajes/razas/left/links"
+    main: "personajes/razas/center/descendientes"
+    right: "personajes/razas/right/stats"
 -
   ruta:  "razas"
   template:
-    left: "personaje/razas/left/links"
-    main: "personaje/razas/center/main"
-    right: "personaje/razas/right/stats"
+    left: "personajes/razas/left/links"
+    main: "personajes/razas/center/main"
+    right: "personajes/razas/right/stats"
 -
   ruta:  "raza"
   title: "view"
   template:
-    left: "personaje/razas/left/links"
-    main: "personaje/razas/center/:param"
-    right: "personaje/razas/right/special"
+    left: "personajes/razas/left/links"
+    main: "personajes/razas/center/:param"
+    right: "personajes/razas/right/special"
 -
   ruta:  "manuales"
-  title: "Reglamento"
+  title: "manuales"
   template:
-    left:  "reglamento/izquierda/bestiariocompact"
-    left2: "reglamento/derecha/personajes"
-    main:  "reglamento/principal"
-    right: "reglamento/derecha/combate"
-    right2: "reglamento/derecha/dados"
+    left:  "manuales/izquierda/bestiariocompact"
+    left2: "manuales/derecha/personajes"
+    main:  "manuales/principal"
+    right: "manuales/derecha/combate"
+    right2: "manuales/derecha/dados"
 -
   ruta:  "objetos"
   template:
@@ -296,8 +296,8 @@
 -
   ruta:  "tesoro"
   template:
-    main: "reglamento/tesoro"
-    right: "reglamento/derecha/combate"
+    main: "manuales/tesoro"
+    right: "manuales/derecha/combate"
 -
   ruta:  "armaduras"
   template:
@@ -341,12 +341,12 @@
   title: "Maestro de Armas"
   template:
     main: "ciudad/maestrodearmas"
-    right: "reglamento/derecha/personajes"
+    right: "manuales/derecha/personajes"
 -
   ruta:  "magister"
   title: "Magister"
   template:
-    left: "reglamento/derecha/personajes"
+    left: "manuales/derecha/personajes"
     main: "ciudad/magister"
     right: "torre/right/menu"
 -
@@ -425,7 +425,7 @@
 -
   ruta:  "jugadores"
   template:
-    main: "personaje/jugadores"
+    main: "personajes/jugadores"
     right: "heroes/sidebar"
 -
   ruta:  "heroes"
@@ -455,22 +455,22 @@
   ruta:  "estados"
   title: "Estados de Combate"
   template:
-    main: "reglamento/combate/estados"
-    right: "reglamento/derecha/combate"
-    right2: "reglamento/derecha/dados"
+    main: "manuales/combate/estados"
+    right: "manuales/derecha/combate"
+    right2: "manuales/derecha/dados"
 -
   ruta:  "posiciones"
   title: "Posiciones de Combate"
   template:
-    main: "reglamento/combate/posiciones"
-    right: "reglamento/derecha/combate"
-    right2: "reglamento/derecha/dados"
+    main: "manuales/combate/posiciones"
+    right: "manuales/derecha/combate"
+    right2: "manuales/derecha/dados"
 -
   ruta:  "resistencias"
   template:
-    main: "reglamento/combate/resistencias"
-    right: "reglamento/derecha/combate"
-    right2: "reglamento/derecha/dados"
+    main: "manuales/combate/resistencias"
+    right: "manuales/derecha/combate"
+    right2: "manuales/derecha/dados"
 -
   ruta:  "torre"
   title: "Torre de Magia"
@@ -509,19 +509,19 @@
 -
   ruta:  "criaturas"
   template:
-    main: "reglamento/criaturas"
+    main: "manuales/criaturas"
 -
   ruta:  "criatura"
   title: "view"
   template:
-    left: "reglamento/izquierda/bestiario"
-    main: "reglamento/criature"
+    left: "manuales/izquierda/bestiario"
+    main: "manuales/criature"
 -
   ruta:  "test"
   template:
-    left: "personaje/razas/left/links"
+    left: "personajes/razas/left/links"
     main: "test/test"
-    right: "personaje/razas/right/stats"
+    right: "personajes/razas/right/stats"
 -
   ruta:  "escuelas"
   template:
@@ -532,5 +532,5 @@
 -
   ruta:  "mazmorra"
   template:
-    right: "reglamento/derecha/combate"
-    main:  "reglamento/mazmorra"
+    right: "manuales/derecha/combate"
+    main:  "manuales/mazmorra"

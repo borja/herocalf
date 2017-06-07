@@ -1,0 +1,34 @@
+<div class="table-responsive">
+	<table class='table'>
+		<thead>
+			<tr>
+				<th colspan='2'>Camino</th>
+				<th>En curso</td>
+				<% 7.times do |i| %>
+					<th><%= i+1 %></th>
+				<% end %>
+			</tr>
+		</thead>
+		<tbody>
+			<% caminos.each do |cam| %>
+				<% c = Camino.new(cam) %>
+				<tr>
+					<td>
+						<img src=<%= c.img_path %>.png alt='<%= c.name %>' id='icon' />
+					</td>
+					<td><%= c.first %></td>
+					<td>
+						<%= erb :'display/bazarcaminos', locals: {
+							bazar:   c.conocidos,
+							item_id: c.name } %>
+					</td>
+					<% c.last.each do |paso| %>
+						<td>
+							<%= erb :'display/camino', locals: { camino: c, paso: paso} %>
+						</td>
+					<% end %>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</div>

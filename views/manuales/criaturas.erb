@@ -5,7 +5,7 @@
 				<header>
 					<h2 align='center'><%= criatura %></h2>
 				</header>	
-				<a href=/criatura/<%= criatura %> class='city-image' >
+				<a href=/criatura/<%= criatura %>  >
 					<% img_path = "'../images/criaturas/#{criatura}.png'" %>
 					<img src=<%=img_path%> alt=<%= criatura %> />
 				</a>
@@ -13,6 +13,7 @@
 		</div>
 	<% end %>
 </div>
+
 <div class="row">
 	<% criaturas[4..8].each do |criatura| %>
 		<div class="3u">
@@ -20,7 +21,7 @@
 				<header>
 					<h2 align='center'><%= criatura %></h2>
 				</header>					
-				<a href=/criatura/<%= criatura %> class='city-image' >
+				<a href=/criatura/<%= criatura %>  >
 					<% img_path = "'../images/criaturas/#{criatura}.png'" %>
 					<img src=<%=img_path%> alt=<%= criatura %> />
 				</a>

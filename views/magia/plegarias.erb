@@ -1,12 +1,9 @@
-<header>
-	<h2>
-		<%= params[:view].capitalize %>
-		de nivel <%= params[:param].to_i %>
-	</h2>
-</header>
+<h2>
+	<%= params[:view].capitalize %> de nivel <%= params[:param].to_i %>
+</h2>
 
-<p>
-	<table>
+<div class="table-responsive">
+	<table class='table'>
 		<thead>
 			<th colspan='2'>Plegaria</th>
 			<th>Efecto</th>
@@ -17,4 +14,4 @@
 			<%= erb :'magia/hechizos/plegarias' %>
 		</tbody>
 	</table>
-</p>
+</div>

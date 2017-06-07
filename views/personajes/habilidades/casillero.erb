@@ -1,0 +1,48 @@
+<!-- Pestañas de habilidad -->
+<div class="row">
+	<div class="col-lg-12">
+
+		<ul id="myTab" class="nav nav-tabs nav-justified">
+			<!-- Make first tab active, via index method (i=0) -->
+			<% clases.keys.each_with_index do |pj,i| %>
+				<li class="<%= i == 0 ? 'active' : '' %>">
+					<a href="#<%= pj %>" data-toggle="tab">
+							<img src="/images/personajes/<%= pj %>.png"
+									 alt=<%= pj %>
+									 id='icon'>
+						<%= pj.capitalize %>
+					</a>
+				</li>
+			<% end %>
+		</ul>
+
+		<!-- Especializaciones -->
+		<div id="myTabContent" class="tab-content">
+			<% clases.keys.each_with_index do |pj,i| %>
+				<div class="tab-pane fade <%= i == 0 ? 'active in' : '' %>"
+						 id="<%= pj %>">
+					<div class="table-responsive">
+						<table class="table">
+							<tbody>
+								<!-- Escudo de armas -->
+								<tr>
+									<% clases[pj].each do |clase| %>
+										<td width=33%>
+											<a href="/habilidad/<%= clase %>">
+												<h3><%= clase %></h3>
+												<img src="/images/clases/<%= clase %>.png"
+														 alt=<%= clase %>
+														 id='icon4'>
+											</a>
+										</td>
+									<% end %>
+								</tr>	
+							</tbody>
+						</table>
+					</div>
+				</div>
+			<% end %>
+		</div>
+
+	</div>
+</div>

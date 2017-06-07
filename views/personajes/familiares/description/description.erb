@@ -13,11 +13,11 @@
 <p><%= f.lacra %>.</p>
 
 <h3>Descripción</h3>
-<p><%= erb :"personaje/familiares/description/lista/#{f.bicho}" %></p>
+<p><%= erb :"personajes/familiares/description/lista/#{f.bicho}" %></p>
 
 <p>
 	<h3>Tabla de características</h3>
-	<%= erb :'personaje/familiares/description/tabla' %></p>
+	<%= erb :'personajes/familiares/description/tabla' %></p>
 </p>
 
 <p>
@@ -25,6 +25,6 @@
 	<% if f.conocidos.empty? %>
 		Desgraciadamente no hay ningún espécimen conocido.
 	<% else %>
-		<%= erb :'personaje/familiares/description/conocidos' %></p>
+		<%= erb :'personajes/familiares/description/conocidos' %></p>
 	<% end %>
 </p>
