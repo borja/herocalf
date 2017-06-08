@@ -95,7 +95,7 @@
 -
   ruta:  "familiares"
   template:
-    main: "personajes/familiares"
+    main:   "personajes/familiares"
     right:  "personajes/pets"
     right2: "heroes/sidebar"
 -
