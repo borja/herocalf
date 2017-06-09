@@ -1,12 +1,12 @@
-# encoding: UTF-8
 def criaturas # plural
   # TODO: This must list /data/criaturas/* instead of hardcode
-  %w(bestias pielverdes nomuertos dragones
+  %w(bestias pielverdes nomuertos dragones fragmentados
      elementales caóticos guardianes humanoides)
 end
 
 def criaturae # singular
-  %w(bestia pielverde nomuerto dragon elemental caótico guardian humanoide)
+  %w(bestia pielverde nomuerto dragon fragmentado
+     elemental caótico guardian humanoide)
 end
 
 # Define criatures using YML

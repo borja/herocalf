@@ -1,0 +1,12 @@
+-
+  id:         0
+  nombre:     "metálico"
+  especial:   "Es un constructo, no tiene capacidades especiales"
+-
+  id:         1
+  nombre:     "robusto"
+  especial:   "+1 PC a todos los fragmentados"
+-
+  id:         2
+  nombre:     "astado"
+  especial:   "+1 ataque a todos los fragmentados"

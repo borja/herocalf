@@ -1,31 +1,10 @@
-<div class="row">
-	<% criaturas[0..3].each do |criatura| %>
-		<div class="3u">
-			<section>
-				<header>
-					<h2 align='center'><%= criatura %></h2>
-				</header>	
-				<a href=/criatura/<%= criatura %>  >
-					<% img_path = "'../images/criaturas/#{criatura}.png'" %>
-					<img src=<%=img_path%> alt=<%= criatura %> />
-				</a>
-			</section>
-		</div>
-	<% end %>
-</div>
-
-<div class="row">
-	<% criaturas[4..8].each do |criatura| %>
-		<div class="3u">
-			<section>
-				<header>
-					<h2 align='center'><%= criatura %></h2>
-				</header>					
-				<a href=/criatura/<%= criatura %>  >
-					<% img_path = "'../images/criaturas/#{criatura}.png'" %>
-					<img src=<%=img_path%> alt=<%= criatura %> />
-				</a>
-			</section>
-		</div>
-	<% end %>
-</div>
+<% criaturas.each do |criatura| %>
+	<div class="col-md-4 col-sm-6">
+		<h2 class='text-center'><%= criatura %></h2>	
+		<a href="/criatura/<%= criatura %>">
+			<img src="/images/criaturas/<%= criatura %>.png"
+					 alt="<%= criatura %>"
+					 class="img-responsive" />
+		</a>
+	</div>
+<% end %>
