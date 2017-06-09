@@ -1,12 +1,22 @@
 <h2>Tirada de dados de combate</h2>
 
+<% calaveras = 0 ; defensas = 0; negros = 0; resultados = [] %>
+<% caras = ['attack','attack','attack','defend','defend','black']%>
+
+<% params[:param].to_i.times do %>
+	<% resultado = caras[rand(6)] %>
+	<% calaveras += 1 if resultado == 'attack' %>
+	<% defensas  += 1 if resultado == 'defend' %>
+	<% negros    += 1 if resultado == 'black' %>
+	<% resultados << resultado %>
+<% end %>
+
 <div class="table-responsive">
 	<table class='table'>
 		<thead>
 			<tr>
 				<th class="text-center">Repite</th>
 				<th class="text-center">Tirada</th>
-				<th class="text-center">Resultado</th>
 				<th class="text-center">Calaveras</th>
 				<th class="text-center">Defensas</th>
 				<th class="text-center">Negros</th>
@@ -23,19 +33,6 @@
 					</a>
 				</td>
 				<td><%= params[:param] %> dados</td>
-				<td>
-					<% calaveras = 0 ; defensas = 0; negros = 0 %>
-					<% caras = ['attack','attack','attack','defend','defend','black']%>
-	
-					<% params[:param].to_i.times do %>
-						<% resultado = caras[rand(6)] %>
-							<% calaveras += 1 if resultado == 'attack' %>
-							<% defensas  += 1 if resultado == 'defend' %>
-							<% negros    += 1 if resultado == 'black' %>
-						<% img_path  = "../images/dado/#{resultado}.png"%>
-						<img src=<%=img_path%> alt=<%= resultado %>, id='icon' />
-					<% end %>
-				</td>
 				<td><%= calaveras %></td>
 				<td><%= defensas  %></td>
 				<td><%= negros    %></td>
@@ -43,3 +40,10 @@
 		</tbody>
 	</table>
 </div>
+
+<h3>Resultados</h3>
+<p>
+	<% resultados.each do |r| %>
+		<img src="/images/dado/<%= r %>.png" id='icon' />
+	<% end %>
+</p>
