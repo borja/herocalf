@@ -24,10 +24,7 @@ class App < Sinatra::Base
   # GET methods
   # Home website
   # TODO: Oneliner. @carousel var is a pain. Load it in ERB template
-  get '/' do
-    @carousel = true
-    erb :home
-  end
+  get('/') {redirect '/inicio' }
 
   # Private Zone
   get('/secure/place') { erb :'private/secreto' }
@@ -54,17 +51,17 @@ class App < Sinatra::Base
       else preview(view)
     end
   end
-  
+
   # Templates with simple root-viewer
   get '/:view' do |view|
     campeones = %w(reservistas ausentes licenciados).include?(view)
     campeones ? preview('heroes') : preview(view)
   end
-  
+
   # POST Routing views
   post('/calculador') { preview('calculador') }
   post('/buscar')     { preview('heroes') }
-    
+
   post '/login/attempt' do
     session[:identity] = params['username']
     where_user_came_from = session[:previous_url] || '/'

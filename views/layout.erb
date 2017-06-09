@@ -11,9 +11,9 @@
 			</div>
 		</nav>
 
-		<!-- Carousel (only in home)-->
-		<% if @carousel %>
-			<%= erb :'home/carrousel' %>
+		<!-- Carousel (only in '/', /inicio)-->
+		<% if params[:view] == 'inicio' %>
+			<%= erb :'inicio/carrousel' %>
 		<% end %>
 
 		<div class="container">
@@ -23,7 +23,7 @@
 			<% end %>
 
 			<!-- Page Heading/Breadcrumbs -->
-			<% unless @carousel %>
+			<% unless params[:view] == 'inicio' %>
 				<%= erb :'layout/breadcrumbs', locals: { title: title } %>
 			<% end %>
 

@@ -1,4 +1,8 @@
 -
+  ruta:  "inicio"
+  template:
+    main: "inicio"
+-
   ruta:  "error"
   template:
     main: "error"
