@@ -1,23 +1,24 @@
-<header>
-	<h2>Lista de profesiones</h2>
-</header>
-<table>
-	<thead>
-		<tr>
-			<th>#</th>
-			<th>Profesión</th>
-		</tr>
-	</thead>
-	<tbody>
-		<% profesions.each do |p| %>
+<h2>Lista de profesiones</h2>
+
+<div class="table-responsive">
+	<table class='table'>
+		<thead>
 			<tr>
-				<td><a href=<%="/profesion/#{p.name}"%>>
-					<img src=<%= p.img_path %> alt='<%= p.name %>' id='icon' />
-				</a></td>
-				<td>
-					<a href=<%="/profesion/#{p.name}"%>><%= p.name %></a>
-				</td>
+				<th>#</th>
+				<th>Profesión</th>
 			</tr>
-		<% end %>
-	</tbody>
-</table>
+		</thead>
+		<tbody>
+			<% profesions.each do |p| %>
+				<tr>
+					<td><a href=<%="/profesion/#{p.name}"%>>
+						<img src=<%= p.img_path %> alt='<%= p.name %>' id='icon' />
+					</a></td>
+					<td>
+						<a href=<%="/profesion/#{p.name}"%>><%= p.name %></a>
+					</td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</div>

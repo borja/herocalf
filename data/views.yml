@@ -101,8 +101,8 @@
 -
   ruta:  "lenguas"
   template:
+    left: "personajes/principal/menu"
     main: "personajes/lenguas"
-    right: "heroes/sidebar"
 -
   ruta:  "habs"
   template:

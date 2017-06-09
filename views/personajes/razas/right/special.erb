@@ -1,14 +1,15 @@
-<header>
-	<h2>Especializaciones</h2>
-</header>
-<a href='/raza/<%= params[:param] %>' class="img-responsive">
+<h2>Especializaciones</h2>
+
+<a href='/raza/<%= params[:param] %>'>
 	<img
 		src='/images/razas/<%= params[:param] %>.jpg' 
 		alt='<%= params[:param] %>'
 	/>
 </a>
+
 <h3>Tipos de <%= pj = params[:param] %></h3>
-<ul class="link-list">
+
+<ul>
 	<% case pj
 	   when 'humanos'%>
 				<li><a href="/personaje/bárbaro">Bárbaro</a></li>

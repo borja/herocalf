@@ -1,58 +1,61 @@
-<header>
-	<h2>Estadísticas</h2>
-</header>
-<h3>Iniciales de cada raza</h3>
-<table>
-	<thead>
-		<tr>
-			<th>Raza</th>
-			<th>PC</th>
-			<th>PM</th>
-			<th>Mov</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td><a href='/raza/humanos'>humano</a></td>
-			<td>5</td>
-			<td>5</td>
-			<td>7</td>
-		</tr>
-		<% razas.each do |raza| %>
-			<% next if raza.last.last == 'parangón' %>
-			<% next if raza.last.last == 'humano' %>
+<h2>Estadísticas</h2>
+<p>Iniciales de cada raza</p>
+
+<div class="table-responsive">
+	<table class='table'>
+		<thead>
 			<tr>
-				<td><a href='/raza/<%= raza.first %>s'><%= raza.first %></a></td>
-				<td><%= raza.last[0] %></td>
-				<td><%= raza.last[1] %></td>
-				<td><%= raza.last[2] %></td>
+				<th>Raza</th>
+				<th>PC</th>
+				<th>PM</th>
+				<th>Mov</th>
 			</tr>
-		<% end %> 
-	</tbody>
-</table>
+		</thead>
+		<tbody>
+			<tr>
+				<td><a href='/raza/humanos'>humano</a></td>
+				<td>5</td>
+				<td>5</td>
+				<td>7</td>
+			</tr>
+			<% razas.each do |raza| %>
+				<% next if raza.last.last == 'parangón' %>
+				<% next if raza.last.last == 'humano' %>
+				<tr>
+					<td><a href='/raza/<%= raza.first %>s'><%= raza.first %></a></td>
+					<td><%= raza.last[0] %></td>
+					<td><%= raza.last[1] %></td>
+					<td><%= raza.last[2] %></td>
+				</tr>
+			<% end %> 
+		</tbody>
+	</table>
+</div>
 
 <h3>Humanos sin parangón</h3>
-<table>
-	<thead>
-		<tr>
-			<th>Clase</th>
-			<th>PC</th>
-			<th>PM</th>
-			<th>Mov</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>Mago</td>
-			<td>4</td>
-			<td>6</td>
-			<td>7</td>
-		</tr>
-		<tr>
-			<td>Bárbaro</td>
-			<td>8</td>
-			<td>2</td>
-			<td>7</td>
-		</tr>
-	</tbody>
-</table>
+<div class="table-responsive">
+	<table class='table'>
+		<thead>
+			<tr>
+				<th>Clase</th>
+				<th>PC</th>
+				<th>PM</th>
+				<th>Mov</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Mago</td>
+				<td>4</td>
+				<td>6</td>
+				<td>7</td>
+			</tr>
+			<tr>
+				<td>Bárbaro</td>
+				<td>8</td>
+				<td>2</td>
+				<td>7</td>
+			</tr>
+		</tbody>
+	</table>
+</div>

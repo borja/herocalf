@@ -1,27 +1,28 @@
-<header>
-	<h2>Archivo del Cronista</h2>
-</header>
-<table>
-	<thead>
-		<tr>
-			<th>Reto</th>
-			<th>Héroes</th>
-			<th>Descripción</th>
-			<th>Recompensa</th>
-		</tr>	
-	</thead>
-	<tbody>
-		<% retos.each do |r| %>
+<h2>Archivo del Cronista</h2>
+
+<div class="table-responsive">
+	<table class='table'>
+		<thead>
 			<tr>
-				<td><%= r.name %></td>
-				<td>
-					<% r.pjs.each do |h| %>
-						<%= erb :'display/portrait', locals: { h: hero(h) } %>
-					<% end %>
-				</td>
-				<td><%= r.desc %></td>
-				<td><%= r.reward %></td>
-			</tr>
-		<% end %>
-	</tbody>
-</table>
+				<th>Reto</th>
+				<th>Héroes</th>
+				<th>Descripción</th>
+				<th>Recompensa</th>
+			</tr>	
+		</thead>
+		<tbody>
+			<% retos.each do |r| %>
+				<tr>
+					<td><%= r.name %></td>
+					<td>
+						<% r.pjs.each do |h| %>
+							<%= erb :'display/portrait', locals: { h: hero(h) } %>
+						<% end %>
+					</td>
+					<td><%= r.desc %></td>
+					<td><%= r.reward %></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</div>
