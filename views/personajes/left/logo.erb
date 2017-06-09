@@ -1,8 +1,6 @@
-<a href='<%= "/habilidad/#{params[:param]}"%>'
-   class="feature-image">
+<a href="/habilidad/<%= params[:param] %>">
 	<img src="/images/clases/<%= params[:param] %>.png" 
-	     alt='<%= params[:param] %>'
-		 id='box'
-	/>
+			 alt='<%= params[:param] %>'
+			 class="img-responsive"	/>
 </a>
-<%= erb :'personajes/left/fama', :locals => { :pj => params[:param] } %>
+<%= erb :'personajes/left/fama', locals: { pj: params[:param] } %>
