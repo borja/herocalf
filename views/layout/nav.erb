@@ -5,9 +5,7 @@
 	<!-- Main website topics -->
 	<ul class="nav navbar-nav">
 		<% %w(heroes objetos magia manuales ciudad habilidades).each do |topic| %>
-			<li class="dropdown">
-				<%= erb :"layout/nav/#{topic}" %>
-			</li>
+			<li class="dropdown"><%= erb :"layout/nav/#{topic}" %></li>
 		<% end %>
 	</ul>
 
