@@ -1,19 +1,18 @@
-<header>
-	<h2>Estados de combate</h2>
-</header>
-<table>
-	<thead>
-		<tr>
-			<th>Estado</th>
-			<th>Efecto</th>
-		</tr>
-	</thead>
-	<tbody>
-		<% estados.each do |e| %>
+<div class="table-responsive">
+	<table class='table'>
+		<thead>
 			<tr>
-				<td><%= e['nombre'] %></td>
-				<td><%= e['efecto'] %></td>
+				<th class="text-center">Estado</th>
+				<th class="text-center">Efecto</th>
 			</tr>
-		<% end %>
-	</tbody>
-</table>
+		</thead>
+		<tbody>
+			<% estados.each do |e| %>
+				<tr>
+					<td><%= e['nombre'] %></td>
+					<td><%= e['efecto'] %></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</div>

@@ -1,0 +1,66 @@
+<!-- Skill Tabs -->
+<div class="row">
+	<div class="col-lg-12">
+
+		<ul id="myTab" class="nav nav-tabs nav-justified">
+				<li class="active">
+					<a href="#main" data-toggle="tab">
+						<i class="fa fa-bookmark fa-fw" aria-hidden="true"></i>
+						Principal
+					</a>
+				</li>
+				<li class="">
+					<a href="#posiciones" data-toggle="tab">
+						<i class="fa fa-reply-all fa-fw fa-rotate-270" aria-hidden="true"></i>
+						Posiciones
+					</a>
+				</li>
+				<li class="">
+					<a href="#res" data-toggle="tab">
+						<i class="fa fa-bolt fa-fw" aria-hidden="true"></i>
+						Resistencias
+					</a>
+				</li>
+				<li class="">
+					<a href="#estados" data-toggle="tab">
+						<i class="fa fa-tint fa-fw" aria-hidden="true"></i>
+						Estados
+					</a>
+				</li>
+				<li class="">
+					<a href="#sigilo" data-toggle="tab">
+						<i class="fa fa-eye-slash fa-fw" aria-hidden="true"></i>
+						Sigilo
+					</a>
+				</li>
+				<li class="">
+					<a href="#locura" data-toggle="tab">
+						<i class="fa fa-moon-o fa-fw" aria-hidden="true"></i>
+						Locura
+					</a>
+				</li>
+		</ul>
+
+		<div id="myTabContent" class="tab-content">
+			<div class="tab-pane fade active in" id="main">
+				<p><%= erb :'manuales/combate/principal' %></p>
+			</div>
+			<div class="tab-pane fade" id="posiciones">
+				<p><%= erb :'manuales/combate/posiciones' %></p>
+			</div>
+			<div class="tab-pane fade" id="res">
+				<p><%= erb :'manuales/combate/resistencias' %></p>
+			</div>
+			<div class="tab-pane fade" id="estados">
+				<p><%= erb :'manuales/combate/estados' %></p>
+			</div>
+			<div class="tab-pane fade" id="sigilo">
+				<p><%= erb :'manuales/combate/sigilo/main' %></p>
+			</div>
+			<div class="tab-pane fade" id="locura">
+				<p><%= erb :'manuales/combate/locura' %></p>
+			</div>
+		</div>
+
+	</div>
+</div>

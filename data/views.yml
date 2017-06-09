@@ -25,6 +25,12 @@
     main: "manuales/dado"
     right: "manuales/derecha/combate"
 -
+  ruta:  "combate"
+  title: "Combate"
+  template:
+    main: "manuales/combate"
+    right: "manuales/derecha/combate"
+-
   ruta:  "sigilo"
   template:
     main: "manuales/combate/sigilo/main"

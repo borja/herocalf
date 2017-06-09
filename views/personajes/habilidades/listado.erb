@@ -21,7 +21,9 @@
 									<% c.requisitos.each do |r| %>
 										<% if r.is_a? Fixnum %>
 											<% req = Habilidad.new(send(char,r)) %>
-											<td><%= erb :'display/skill', locals: { skill: req } %></td>
+											<td>
+												<%= erb :'display/skill', locals: { skill: req } %>
+											</td>
 										<% else %>
 											<td><%= r %></td>
 										<% end %>
