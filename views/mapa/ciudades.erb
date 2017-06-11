@@ -1,35 +1,39 @@
-<header>
-	<h2>Ciudades</h2>
-</header>
-<a href=<%= '/mapa' %> class="img-responsive">
-	<img src='/images/nav/mapeando.png' alt='mapeando'/>
+<h2>Ciudades</h2>
+
+<a href="/mapa">
+	<img src="/images/nav/mapeando.png"
+			 alt="Consultando el mapa"
+			 class="img-responsive" />
 </a>
-<table>
-	<thead>
-		<tr>
-			<th>Ciudad</th>
-			<th>MB</th>
-			<th>Héroes</th>
-		</tr>
-	</thead>
-	<tbody>
-		<% cities.each do |c| %>
+
+<div class="table-responsive">
+	<table class="table">
+		<thead>
 			<tr>
-				<td>
-					<a href='/city/<%= c['name'] %>'>
-						<%= c['name'] %></a>
-				</td>
-				<td>
-					<%= c['master'] %>
-				</td>
-				<td>
-						<% if c['name'] == 'Jadessvärd' %>
-							<a href='/heroes'>ver</a>
-						<% else %>
-							<a href='/extranjeros/<%= c['name'] %>'>ver</a>
-						<% end %>
-				</td>
+				<th class="text-center">Ciudad</th>
+				<th class="text-center">MB</th>
+				<th class="text-center">Héroes</th>
 			</tr>
-		<% end %>
-	</tbody>
-</table>
+		</thead>
+		<tbody>
+			<% cities.each do |c| %>
+				<tr>
+					<td>
+						<a href='/city/<%= c['name'] %>'>
+							<%= c['name'] %></a>
+					</td>
+					<td>
+						<%= c['master'] %>
+					</td>
+					<td>
+							<% if c['name'] == 'Jadessvärd' %>
+								<a href='/heroes'>ver</a>
+							<% else %>
+								<a href='/extranjeros/<%= c['name'] %>'>ver</a>
+							<% end %>
+					</td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</div>

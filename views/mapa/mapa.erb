@@ -1,43 +1,54 @@
-<header>
-	<h2>Mapa del Viejo Mundo</h2>
-</header>
-<div class="mapa_imagen">
-	<link rel="stylesheet" href="css/map.css" />
-	<img src="/images/mapa.png" class='mapamundi'>
-	<ul class="notas">
-		<li class="nota1"><p>El Gran Lago</p></li>
-		<li class="nota2"><p>La temible costa de los piratas</p></li>
-		<li class="nota3"><p>Altdorf, capital del Imperio</p></li>
-		<li class="nota4"><p>El Desierto prohibido</p></li>	
-		<% cities.each do |c| %>
-		<a href='/city/<%= c['name'] %>'>
-			<li style='<%= c['style'] %>'><p><%= c['name'] %></p></li>
-		</a>
-		<% end %>
-	</ul>
+<div class="row">
+	<div class="col-lg-12">
+			<h2 class="page-header">Mapa del Viejo Mundo</h2>
+	</div>
+	
+	<div class="col-lg-12">
+
+		<ul id="myTab" class="nav nav-tabs nav-justified">
+				<li class="active">
+					<a href="#geo" data-toggle="tab">
+						<i class="fa fa-map-signs fa-fw" aria-hidden="true"></i>
+						Geografía
+					</a>
+				</li>
+				<li class="">
+					<a href="#reinos" data-toggle="tab">
+						<i class="fa fa-fort-awesome" aria-hidden="true"></i>
+						Principales Reinos
+					</a>
+				</li>
+				<li class="">
+					<a href="#monturas" data-toggle="tab">
+						<span class="glyphicon glyphicon-knight"></span>
+						Monturas
+					</a>
+				</li>
+				<li class="">
+					<a href="#mapa" data-toggle="tab">
+						<i class="fa fa-map-o" aria-hidden="true"></i>
+						Ver Mapa
+					</a>
+				</li>
+		</ul>
+
+		<div id="myTabContent" class="tab-content">
+			<div class="tab-pane fade active in" id="geo">
+				<h4>Geografía</h4>
+				<%= erb :"mapa/tabs/geo" %>
+			</div>
+			<div class="tab-pane fade" id="reinos">
+				<h4>Principales Reinos</h4>
+				<%= erb :"mapa/tabs/reinos" %>
+			</div>
+			<div class="tab-pane fade" id="monturas">
+				<h4>Monturas</h4>
+				<p>Por hacer...</p>
+			</div>
+			<div class="tab-pane fade" id="mapa">
+				<%= erb :"mapa/tabs/mapa" %>
+			</div>
+		</div>
+
+	</div>
 </div>
-<h3>Geografía</h3>
-<p>
-	Geográficamente, está limitado por el Gran Océano tanto al Oeste como el Sur, 
-	y el Rio Sangre es la frontera que separa los Reinos Fronterizos de las Tierras Yermas. 
-	Al Norte la frontera se encuentra con el Territorio Troll,
-	y sus fronteras orientales son delineadas por las Montañas del Fin del Mundo. 
-</p>
-<h3>Principales Reinos</h3>
-<p>
-	Los principales reinos humanos del Viejo Mundo son el Imperio, Bretonia y Kislev. 
-	Al sur se encuentran los reinos de Estalia y las ciudades-estado de Tilea, 
-	los cuales carecen de una autoridad y un gobierno central, 
-	así como una amalgama anárquica de pequeños reinos conocidos como los Reinos Fronterizos, 
-	en las fronteras del sudeste del Viejo Mundo.
-</p>
-<p>
-	Técnicamente Norsca no forma parte del Viejo Mundo, aunque comparte similitudes culturales con ella, 
-	y está más cerca del viejo mundo en términos de distancia. 
-	Lo mismo ocurre con la isla de Albión, que está frente a las costas del Viejo Mundo, 
-	que no forma parte del Viejo Mundo pero no está completamente separada de él.
-</p>
-<p>
-	El Viejo Mundo es también el hogar de otras razas, como los Enanos y los Elfos Silvanos.
-	Dentro de los límites del Imperio es la zona administrada por Halflings conocida como la Asamblea.
-</p>
