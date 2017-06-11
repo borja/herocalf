@@ -1,7 +1,7 @@
 require 'sinatra'
 
 class App < Sinatra::Base
-  # TODO: Configure and helpers to a folder. Clean up!
+# TODO: Configure and helpers to a folder. Clean up!
   configure do
     enable :sessions
   end
@@ -21,10 +21,9 @@ class App < Sinatra::Base
     end
   end
 
-  # GET methods
-  # Home website
-  # TODO: Oneliner. @carousel var is a pain. Load it in ERB template
-  get('/') {redirect '/inicio' }
+# GET methods
+
+  get('/') {redirect '/inicio' } # Home website
 
   # Private Zone
   get('/secure/place') { erb :'private/secreto' }
@@ -58,7 +57,8 @@ class App < Sinatra::Base
     campeones ? preview('heroes') : preview(view)
   end
 
-  # POST Routing views
+# POST methods
+
   post('/calculador') { preview('calculador') }
   post('/buscar')     { preview('heroes') }
 
