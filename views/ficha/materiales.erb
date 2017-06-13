@@ -1,8 +1,13 @@
 <% h = hero(params[:param].to_i) %>
-<section>
-	<table>
+
+<div class="table-responsive">
+	<table class="table">
 		<theader>
-			<tr><th colspan='<%= h.materiales.count if h.materiales %>'>Materiales</th></tr>
+			<tr>
+				<th colspan='<%= h.materiales.count if h.materiales %>' class="text-center">
+					Materiales
+				</th>
+			</tr>
 		</theadr>
 		<tbody>
 			<tr>
@@ -16,4 +21,4 @@
 			</tr>
 		</tbody>
 	</table>
-</section>
+</div>

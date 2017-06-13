@@ -1,8 +1,12 @@
-<% h = hero(params[:param].to_i) %>
-<header>
-	<h2><center>El <%= h.clase %> <%= h.personaje %></center></h2>
-</header>
-<a href=<%= "/habilidad/#{h.personaje.gsub('señor de las bestias','beastslord') }" %> class="feature-image">
-	<img src='/images/clases/<%= h.personaje %>.png' alt=<%= h.personaje %> /, id='box'>
+<% h  = hero(params[:param].to_i) %>
+<% pj = h.personaje %>
+
+<h2>El <%= h.clase %> <%= pj %></h2>
+
+<a href="/habilidad/<%= pj.gsub('señor de las bestias','beastslord') %>"%>
+	<img src="/images/clases/<%= pj %>.png"
+			 alt="<%= pj %>"
+			 class="img-responsive" />
 </a>
+
 <%= erb :'ficha/hechizos' unless h.elementos.empty? %>

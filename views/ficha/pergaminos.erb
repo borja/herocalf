@@ -1,5 +1,6 @@
 <% h = hero(params[:param].to_i) %>
-<section>
+<div class="table-responsive">
+	<table class="table">
 	<table>
 		<theader>
 			<tr><th colspan='<%= h.pergaminos.count if h.pergaminos %>'>Pergaminos</th></tr>
@@ -16,4 +17,4 @@
 			</tr>
 		</tbody>
 	</table>
-</section>
+</div>

@@ -1,21 +1,24 @@
-<section>
-	<table>
+<div class="table-responsive">
+	<table class="table">
 		<thead>
 			<tr>
-				<th colspan='2'>Habilidad</th>
-				<th>Descripción</th>
+				<th></th>
+				<th class="text-center">Habilidad</th>
+				<th class="text-center">Descripción</th>
 			</tr>
 		</thead>
 		<tbody>
 			<% heroe.hab_base.each do |hab| %>
-				<tr><td><%= erb :'display/skillbase', locals: { skill: hab} %></td>
+				<tr>
+					<td><%= erb :'display/skillbase', locals: { skill: hab} %></td>
 					<td><%= hab.name %></td>
 					<td><%= hab.description %></td>
 				</tr>			
 			<% end %>
 			<% if heroe.skills %>
 				<% heroe.habilidades.each do |hab| %>
-					<tr><td><%= erb :'display/skill', locals: { skill: hab} %></td>
+					<tr>
+						<td><%= erb :'display/skill', locals: { skill: hab} %></td>
 						<td><%= hab.name %></td>
 						<td><%= hab.description %></td>
 					</tr>
@@ -23,4 +26,4 @@
 			<% end %>
 		</tbody>
 	</table>
-</section>
+</div>

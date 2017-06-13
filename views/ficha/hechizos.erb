@@ -1,26 +1,25 @@
-<table>
-	<% h = hero(params[:param].to_i) %>
-	<thead>
-		<tr><th><a href=../spells/<%= h.id %>>Lista de hechizos</a></th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr><td>
-				<link rel="stylesheet" href="/css/bravo.css" />
-				<table>
-					<tbody>
-						<tr>
-							<% h.elementos.each do |e| %>	
-								<td><%= erb :'display/display', locals: {
-									title:       e,
-									path:        "'../images/elements/#{e}.png'",
-									description: '' } %>
-								</td>
-							<% end %>
-						</tr>
-					</tbody>
-				</table>
-			</td>
-		</tr>
-	</tbody>
-</table>
+<% h = hero(params[:param].to_i) %>
+
+<div class="table-responsive">
+	<table class="table">
+		<thead>
+			<tr>
+				<th class="text-center" colspan="<%= h.elementos.count %>">
+					<a href="/spells/<%= h.id %>">Lista de hechizos</a>
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<% h.elementos.each do |e| %>	
+					<td>
+						<%= erb :'display/display', locals: {
+						title:       e,
+						path:        "'../images/elements/#{e}.png'",
+						description: '' } %>
+					</td>
+				<% end %>
+			</tr>
+		</tbody>
+	</table>
+</div>
