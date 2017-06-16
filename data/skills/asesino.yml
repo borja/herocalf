@@ -1,180 +1,236 @@
+# nivel 2
 -
   id:           0
   nivel:        2
-  rangos:       3
-  name:         "Sigilo"
-  type:         "Reactiva"
-  description:
-    "Si no hay objetivos visibles el asesino entra en sigilo. Ciertos objetivos son inmunes al sigilo. 
-     El efecto de esta habilidad cesará cuando el asesino realice una acción distinta a movimiento. 
-     <li>Rango I: los enemigos no empujan al asesino.</li>
-     <li>Rango II: Los enemigos dejan de ver al asesino pero su movimiento será la minus-mitad.</li> 
-     <li>Rango III: No hay penalización al movimiento y permite atravesar unidades.</li>"
+  name:         "Dos armas"
+  type:         "Pasiva"
+  description:  "Permite llevar un arma de tipo daga en la mano torpe."
 -
   id:           1
   nivel:        2
-  name:         "Dos armas"
-  type:         "Pasiva"
-  description:  "Permite llevar un arma de dimensión 1 (tipo daga) en la mano torpe."
+  name:         "Puñalada trapera"
+  type:         "única"
+  description:  "Requiere daga. Si tras haber declarado un ataque
+                 contra un aliado el enemigo se desplaza por la zona
+                 de combate del asesino, se podrá realizar un ataque.
+                 Se puede emplear más de 1 puñalada trapera por turno."
 -
   id:           2
   nivel:        2
-  name:         "Puñalada trapera"
-  type:         "única"
-  description:  
-    "Requiere daga. Si tras haber declarado un ataque contra un aliado el enemigo se desplaza por la zona de combate del asesino, 
-	éste podrá realizar un ataque. Se puede emplear más de 1 puñalada trapera por turno."
--
-  id:           3
-  nivel:        3
-  requisitos:   [0]
   name:         "Emboscada"
   type:         "Activa"
-  description:  
-    "Requiere daga. Añade 2 dados de combate a la tirada de ataque. 
-	<li>Rango I: Cuesta 5 MOV/emboscada.</li>
-	<li>Rango II: Cuesta 3 MOV/emboscada.</li>"
+  description:  "Requiere daga. Añade 2 dados de combate a la tirada de ataque. 
+                 <li>Rango I: Cuesta 5 MOV/emboscada.</li>
+                 <li>Rango II: Cuesta 3 MOV/emboscada.</li>"
+-
+  id:           3
+  nivel:        2
+  rangos:       4
+  name:         "Dagas voladoras"
+  type:         "Pasiva"
+  description:  "Requiere mecanismo de muñeca o dominio de puñales.
+                 Permite arrojar, 1 ataque extra con dagas, por cada rango."
 -
   id:           4
-  nivel:        3
-  requisitos:   [2]
+  nivel:        2
+  rangos:       2
   name:         "Formado entre asesinos"
-  type:         "única"
-  description:  "Antes de ejecutar un ataque contra el asesino giras la miniatura para encarar a tu agresor."
+  type:         "Instinto"
+  coste:        "1 PM"
+  description:  "Gira 90º/rango tu miniatura, este insinto no tiene sobrecoste."
+# nivel 3
 -
   id:           5
   nivel:        3
-  rangos:       4
-  requisitos:   [2]
-  name:         "Dagas voladoras"
-  type:         "Pasiva"
-  description:  
-    "Requiere mecanismo de muñeca o dominio de puñales. El asesino es capaz de realizar ataques extra con dagas. 
-	Cada rango en esta habilidad permite lanzar una daga extra. Alcance: 5."
--
-  id:           6
-  nivel:        4
   rangos:       2
   name:         "Venenos"
   type:         "Pasiva"
-  description:  
-    "El asesino recubre sus armas con venenos. Estos venenos pueden resistirse.
-	<li>Rango I: añade un dado especial blanco a tus ataques.</li>
-	<li>Rango II: añade un dado especial negro a tus ataques.</li>"
+  description:  "El asesino recubre sus armas con veneno.
+                <li>Rango I: añade un dado especial blanco a tus ataques.</li>
+                <li>Rango II: añade un dado especial negro a tus ataques.</li>"
 -
-  id:           7
-  nivel:        4
+  id:           6
+  nivel:        3
   rangos:       2
-  requisitos:   [4]
-  name:         "Honor entre ladrones"
-  type:         "Pasiva"
-  description:
-    "El asesino y sus aliados cercanos duplican sus bonificaciones de daño por la espalda. Alcance: Sala ó Pasillo. 
-    <li>Rango II: +1 potencia adicionalmente al atacar por la espalda.</li>"
--
-  id:           8
-  nivel:        5
-  requisitos:   [5]
-  name:         "Lanzamiento preciso"
-  type:         "Pasiva"
-  description:  
-    "Permite al asesino lanzar sus dagas en diagonal y con desplazamientos laterales. 
-	Las dagas no pueden retroceder sus movimientos y siempre salen del frente del asesino."
--
-  id:           9
-  nivel:        5
-  rangos:       2
-  requisitos:   [0]
   name:         "Paso de sombras"
   type:         "Activa"
   coste:        "3PM - 1PM/rango"
-  description:  "añade +1 rango de sigilo al asesino."
+  description:  "+1/rango sigilo hasta tu próximo turno."
 -
-  id:           10
-  nivel:        6
+  id:           7
+  nivel:        3
   requisitos:   [3]
-  name:         "Golpe a la carótida"
-  type:         "única"
-  description:  "Requiere dagas. No utilizable en ciertos enemigos. El objetivo debe defenderse con defensa verdadera."
+  name:         "Lanzamiento preciso"
+  type:         "Pasiva"
+  description:  "Permite arrojar dagas en diagonal y con desplazamientos
+                 laterales. No pueden retroceder en su trayectoria
+                 y siempre salen del frente del asesino."
 -
-  id:           11
-  nivel:        6
-  requisitos:   [0]
-  name:         "Subterfugio"
+  id:           8
+  nivel:        3
+  name:         "Acechar"
+  requisitos:   [1]
   type:         "Reactiva"
-  description:  "Otorga al asesino +1 rango de sigilo al matar cuerpo a cuerpo. No funciona con todos los enemigos."
+  description:  "Requiere daga. Recupera puñalada trapera tras matar en sigilo."
+# nivel 4
 -
-  id:           12
-  nivel:        6
-  requisitos:   [0,3]
+  id:           9
+  nivel:        4
+  requisitos:   [2]
   name:         "Siempre al acecho"
   type:         "Reactiva"
-  description:  "Otorga +1 rango de sigilo al atravesar una puerta."
+  description:  "+1 sigilo al atravesar una puerta la primera vez."
 -
-  id:           13
-  nivel:        7
-  requisitos:   [9]
+  id:           10
+  nivel:        4
+  requisitos:   [6]
   name:         "Paso en falso"
   type:         "Activa"
-  coste:        "4 Movimiento/casilla"
-  description:  "Permite al asesino desplazarse casillas extra tras haber realizado la acción de MOV."
+  coste:        "4 Movimiento"
+  description:  "Permite desplazarse 1 casilla extra tras haber realizado
+                 la acción de movimiento."
+-
+  id:           11
+  nivel:        4
+  requisitos:   [0]
+  name:         "Fintar"
+  type:         "Reactiva"
+  description:  "+1 punto de finta al fallar un ataque"
+-
+  id:           12
+  nivel:        4
+  requisitos:   [11]
+  name:         "Golpe engañoso"
+  type:         "Activa"
+  coste:        "1 punto finta"
+  description:  "+1 potencia a tu siguiente ataque"
+# nivel 5
+-
+  id:           13
+  nivel:        5
+  requisitos:   [2]
+  name:         "Subterfugio"
+  type:         "Reactiva"
+  description:  "+1 sigilo al matar cuerpo a cuerpo"
 -
   id:           14
+  nivel:        5
+  requisitos:   [5]
+  name:         "Toxina de Elmut"
+  type:         "Pasiva"
+  description:  "Todos tus aliados pueden hechizar a los objetivos
+                 que hayas envenenado como si estuvieran cuerpo a cuerpo."
+-
+  id:           15
+  nivel:        5
+  requisitos:   [0]
+  name:         "Abusar"
+  type:         "Reactiva"
+  description:  "+1 punto de abuso al matar en sigilo"
+-
+  id:           16
+  nivel:        5
+  requisitos:   [15]
+  name:         "Golpe abusivo"
+  type:         "Activa"
+  coste:        "1 punto abuso"
+  description:  "+1 fuerza a tu siguiente ataque"
+# nivel 6
+
+-
+  id:           17
+  nivel:        6
+  rangos:       2
+  requisitos:   [4]
+  name:         "Código de honor"
+  type:         "Pasiva"
+  description:  "El asesino y sus aliados en su rango de visión,
+                 duplican bonificaciones de daño por la espalda.
+                 <li>Rango II: +1 potencia adicionalmente.</li>"
+-
+  id:           18
+  nivel:        6
+  requisitos:   [2]
+  name:         "Golpe a la carótida"
+  type:         "única"
+  description:  "Requiere dagas. No utilizable en ciertos enemigos.
+                 El objetivo debe defenderse con defensa verdadera."
+# nivel 7
+-
+  id:           19
   nivel:        7
   requisitos:   [2,9]
   name:         "Sombras gemelas"
   type:         "Declarativa"
-  description:  
-    "Confiere la sombra del asesino a la sombra de un aliado. 
-    La sombra del asesino puede actuar como el propio asesino salvo en desplazamientos y ataques básicos."
--
-  id:           15
-  nivel:        7
-  rangos:       4
-  requisitos:   [10]
-  name:         "Intimidar"
-  type:         "Reactiva"
-  description:  
-    "Tras matar cuerpo a cuerpo el asesino puede intimidar a los enemigos causándoles ()+1/rango) miedo. 
-	Alcance: S/P y Visión en campo abierto."
--
-  id:           16
-  nivel:        8
-  requisitos:   [6]
-  name:         "Toxina de Elmut"
-  type:         "Pasiva"
-  description:  "Todos tus aliados pueden lanzar magias a los objetivos que hayas envenenado como si estuvieran cuerpo a cuerpo."
--
-  id:           17
-  nivel:        8
-  name:         "Puñal de sombras"
-  requisitos:   [0,2]
-  type:         "Reactiva"
-  description:  "Requiere daga. El asesino recupera 1 puñalada trapera tras matar en sigilo."
--
-  id:           18
-  nivel:        9
-  requisitos:   [5]
-  name:         "Acribillar"
-  type:         "Activa"
-  description:  
-    "Esta habilidad no se puede utilizar si ya se ha lanzado alguna daga voladora. 
-     Permite al asesino lanzar 3 dagas en conjunto. Si se emplea esta habilidad,
-     no se podrán lanzar más dagas el resto del turno."
--
-  id:           19
-  nivel:        10
-  requisitos:   [14]
-  name:         "Viaje umbral"
-  type:         "Definitiva"
-  description:  "1 vez por turno el asesino puede aparecer detrás de su sombra gemela. Coste: acción de MOV."
+  description:  "La sombra del asesino sustituye a la sombra de un aliado.
+                 Permitiendo al asesino actuar desde su sombra,
+                 salvo para desplazamientos y ataques básicos."
 -
   id:           20
+  nivel:        7
+  requisitos:   [3]
+  name:         "Acribillar"
+  type:         "Activa"
+  coste:        "Acción de ataque completo"
+  description:  "Arroja 3 dagas en conjunto"
+# nivel 8
+-
+  id:           21
+  nivel:        8
+  requisitos:   [6, 19]
+  name:         "Forma siniestra"
+  type:         "Pasiva"
+  description:  "En sigilo, eres inmune al miedo convencional"
+-
+  id:           22
+  nivel:        8
+  requisitos:   [12, 17, 18]
+  name:         "Dawa"
+  type:         "Reactiva"
+  description:  "Recupera golpe a la carótida al fallar usando golpe engañoso"
+# nivel 9
+-
+  id:           23
+  nivel:        9
+  rangos:       2
+  requisitos:   [15]
+  name:         "Intimidar"
+  type:         "Activa"
+  coste:        "Perder sigilo"
+  description:  "+1/rango causar miedo hasta tu próximo turno
+                 por cada enemigo asesinado cuerpo a cuerpo."
+-
+  id:           24
+  nivel:        9
+  requisitos:   [19]
+  name:         "Destino ligado"
+  type:         "Reactiva"
+  description:  "+1 potencia sombras por cada rango de sigilo.
+                 +1 potencia sangre por cada asesinato de tu sombra gemela."
+# nivel 10 - Habilidades finales
+-
+  id:           25
   nivel:        10
-  requisitos:   [7]
+  requisitos:   [10, 19]
+  name:         "Viaje umbral"
+  type:         "Definitiva"
+  coste:        "Acción de movimiento"
+  description:  "1/turno permite aparecer detrás de su sombra gemela."
+-
+  id:           26
+  nivel:        10
+  requisitos:   [17, 19]
   name:         "Culto a Elmut"
   type:         "Definitiva"
-  description:  
-    "Tras sesgar tu decimotercera vida, estarás bendecido por Elmut:<br/>
-     Cobrarás todas las piezas que mates en conjunto, y podrás después de matar, bien recuperar 1 hechizo,<br/>
-     bien disponer de una acción de hechizar adicional. (Una única vez por turno)"
+  description:  "Tras sesgar su decimotercera vida, Elmut te bendice:<br/>
+                 Cobrarás todas las piezas que mates en conjunto,
+                 y podrás después de matar, bien recuperar 1 hechizo,
+                 bien disponer de una acción de hechizar adicional.
+                 (Una única vez por turno)"
+-
+  id:           27
+  nivel:        10
+  name:         "Mil rostros"
+  type:         "Definitiva"
+  description:  "Puedes cobrar cualquier pieza no reclamada en tu visión.<br/>
+                 Debes decir simplemente: <b>Valar Morghulis</b>"

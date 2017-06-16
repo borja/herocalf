@@ -1,8 +1,9 @@
 mago:
   -
     name:        "Hechizar"
-    description: "Permite coger 3 sets de magia elemental al inicio del reto."
-elfo: 
+    description: "Permite coger 3 sets de magia elemental
+                  al inicio del reto."
+elfo:
   -
     name:        "Hechizar"
     description: "Permite coger 1 set de magia elemental al inicio del reto."
@@ -25,11 +26,22 @@ enano:
 bárbaro:
   -
     name:        "Furia"
-    description: "1PM: +1 dado de ataque hasta final del turno. Además eres inmune a psicología."
+    description: "1PM: +1 de ataque hasta final del turno.
+                  Además eres inmune a psicología."
 ladrón:
   -
     name:        "Robar"
-    description: "La tirada de tesoros se efectúa de forma independiente al grupo."
+    description: "La tirada de tesoros se efectúa
+                  de forma independiente al grupo."
+  -
+    name:        "Senda torcida"
+    description:
+                 "Permite coger 3 hechizos entre las magias de sombras
+                  o sangre al inicio del reto."
+  -
+    name:         "Sigilo"
+    description:  "Si no hay objetivos visibles el asesino entra en sigilo.
+                   El efecto cesa al realizar una acción distinta a movimiento."
 clérigo:
   -
     name:        "Rezar"
