@@ -127,7 +127,7 @@
   requisitos:   [0]
   name:         "Abusar"
   type:         "Reactiva"
-  description:  "+1 punto de abuso al matar en sigilo"
+  description:  "+1 punto de abuso al matar en sigilo por la espalda"
 -
   id:           16
   nivel:        5
