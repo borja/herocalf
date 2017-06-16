@@ -163,7 +163,8 @@
   requisitos:   [2,9]
   name:         "Sombras gemelas"
   type:         "Declarativa"
-  description:  "La sombra del asesino sustituye a la sombra de un aliado.
+  foco:         "un aliado"
+  description:  "La sombra del asesino sustituye a la sombra de su foco.
                  Permitiendo al asesino actuar desde su sombra,
                  salvo para desplazamientos y ataques básicos."
 -
@@ -208,7 +209,7 @@
   type:         "Reactiva"
   description:  "+1 potencia sombras por cada rango de sigilo.
                  +1 potencia sangre por cada asesinato de tu sombra gemela."
-# nivel 10 - Habilidades finales
+# nivel 10 - Habilidades definitivas
 -
   id:           25
   nivel:        10
