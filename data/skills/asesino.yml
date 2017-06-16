@@ -19,6 +19,7 @@
   nivel:        2
   name:         "Emboscada"
   type:         "Activa"
+  coste:        "Perder sigilo"
   description:  "Requiere daga. Añade 2 dados de combate a la tirada de ataque. 
                  <li>Rango I: Cuesta 5 MOV/emboscada.</li>
                  <li>Rango II: Cuesta 3 MOV/emboscada.</li>"
