@@ -41,7 +41,7 @@
   rangos:       3
   name:         "represalias"
   type:         "Reactiva"
-  description:  "Devuelve a tu atacante (pontecia 1/rango)
+  description:  "Devuelve a tu atacante (potencia 1/rango)
                  un ataque con el exceso de tu defensa"
 -
   id:           6
@@ -114,7 +114,8 @@
   id:           14
   nivel:        5
   name:         "Empecinado"
-  type:         "Pasiva"
+  type:         "Activa"
+  coste:        "1PM"
   description:  "+1 vs Miedo por cada PM actual."
 -
   id:           15
