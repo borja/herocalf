@@ -45,7 +45,7 @@
   foco:         "un aliado"
   description:  "Puedes hechizar gratuitamente cuando tu foco mate.
                  Debes indicar la escuela y se lanzará un hechizo aleatorio
-                 de la misma escuela y de nivel 1 + 1/rango muertes logradas.
+                 de la misma escuela y de nivel 0 + 1/rango muertes logradas.
                  El hechizo se ejecutará desde el foco establecido."
 -
   id:           6
@@ -83,7 +83,7 @@
   name:         "Conjuro deseado"
   type:         "Activa"
   coste:        "3 PM"
-  description:  "+1 conjuro a elegir de nivel 1/rango"
+  description:  "Acción: Añade un conjuro a elegir de nivel 1/rango"
 -
   id:           10
   nivel:        4

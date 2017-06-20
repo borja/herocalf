@@ -1,103 +1,175 @@
+# nivel 2
 -
   id:           0
   nivel:        2
   rangos:       2
   name:         "empujar"
   type:         "Pasiva"
-  description:  "Los enemigos suman +1 punto al multiplicador de proximidad del falangista cuando se desplacen a su alrededor."
+  description:  "+1/rango empujar"
 -
   id:           1
   nivel:        2
   name:         "doble escudo"
   type:         "Pasiva"
-  description:  "permite llevar dos escudos a la vez. Se puede atacar y defender con ellos."
+  description:  "Permite llevar dos escudos a la vez; para atacar y defender"
 -
   id:           2
   nivel:        2
   name:         "tortuga"
   type:         "Pasiva"
-  description:  "+1 potencia en la defensa por cada aliado que este a su lado cuerpo a cuerpo. (Expcepto las 3 casillas de la espalda)."
+  description:  "+1 potencia defensiva por cada aliado colindante.
+                 (Expcepto las 3 casillas de la espalda)."
 -
   id:           3
   nivel:        2
-  name:         "represalias"
-  type:         "Pasiva"
-  description:  "El atacante recibe el exceso de defensa como ataque defendible."
--
-  id:           4
-  nivel:        3
   name:         "¡A salvo!"
   type:         "Activa"
   coste:        "Su próximo movimiento" 
-  description:  "Otorga tu defensa a un aliado adyacente."
+  description:  "Instinto: otorga tu defensa a un aliado adyacente."
+-
+  id:           4
+  nivel:        2
+  name:         "Aguantar posición"
+  type:         "Pasiva"
+  description:  "Si el falangista renuncia a su movimiento voluntariamente
+                 (o por cualquier otro motivo voluntario)
+                 no podrá ser desplazado por habilidades o efectos"
+# nivel 3
 -
   id:           5
-  name:         "honorable"
-  type:         "Reactiva"
   nivel:        3
-  description:  "+1 punto de honor (PH) al recibir una herida"
+  rangos:       3
+  name:         "represalias"
+  type:         "Reactiva"
+  description:  "Devuelve a tu atacante (pontecia 1/rango)
+                 un ataque con el exceso de tu defensa"
 -
   id:           6
-  nivel:        4
+  nivel:        3
+  name:         "honorable"
+  type:         "Reactiva"
+  description:  "+1 punto de honor (PH) al recibir daño"
+-
+  id:           7
+  nivel:        3
   rangos:       3
+  requisitos:   [6]
   name:         "bastión"
   type:         "Activa"
   coste:        "1 PH"
-  description:  "+1 potencia en un dado de defensa durante 1/rango turnos."
--
-  id:           7
-  nivel:        4
-  name:         "Aguantar posición"
-  type:         "Reactiva"
-  description:  "Si el falangista renuncia a su movimiento voluntariamente (o por cualquier otro motivo voluntario)  no podrá ser desplazado por habilidades o efectos"
+  description:  "Instinto: +1/rango potencia en un dado de defensa"
+
 -
   id:           8
-  nivel:        4
+  nivel:        3
+  requisitos:   [1]
   name:         "zona de combate"
   type:         "Pasiva"
   description:  "permite golpear a cualquier enemigo en 180º con escudos."
+# nivel 4
 -
   id:           9
-  nivel:        5
+  nivel:        4
   rangos:       2
   name:         "provocar"
-  type:         "activa"
+  type:         "Declarativa"
+  foco:         "1 enemigo"
   description:  "Incita a un enemigo/rango en concreto a atacarle. (psicología)"
 -
   id:           10
-  nivel:        6
-  rangos:       3
-  name:         "bandeja"
-  type:         "activa"
-  coste:        "1 acción"
-  description:  "Porta sobre 1/rango escudo a un aliado  otorgándole su defensa, pero moverás la minus-mitad."
--
-  id:           11
-  nivel:        7
-  requisitos:   [1]
+  nivel:        4
+  rangos:       2
+  requisitos:   [8]
   name:         "rompedientes"
   type:         "Pasiva"
-  description:  "+1 fuerza al atacar con escudos"
+  description:  "+1/rango fuerza al atacar con escudos"
 -
-  id:           12
-  requisitos:   [5]
+  id:           11
+  nivel:        4
+  rangos:       2
+  requisitos:   [6]
   name:         "sangramos todos"
   type:         "Activa"
   coste:        "1PH"
-  rangos:       2
-  nivel:        7
-  description:  "Redirige 1/rango daño inflingido a cada aliado durante el turno del Malvado Brujo. Se declara durante la fase trepidante"
+  description:  "Instinto: Redirige hacia el falangista,
+                 1/rango del daño inflingido a cada aliado."
 -
-  id:           13
-  nivel:        8
+  id:           12
+  nivel:        4
   rangos:       2
+  requisitos:   [4]
   name:         "Defensor templado"
   type:         "Reactiva"
-  description:  "+1PM/rango al defender con éxito"
+  description:  "+1/rango PM al defender con éxito"
+# nivel 5
+-
+  id:           13
+  nivel:        5
+  requisitos:   [3,11]
+  name:         "Runa blanca"
+  type:         "Declarativa"
+  foco:         "Un aliado"
+  description:  "Cuando el aliado defienda con éxito, recupera 1PC"
 -
   id:           14
-  nivel:        10
-  requisitos:   [1]
-  name:         "Escudo de espalda"
+  nivel:        5
+  name:         "Empecinado"
   type:         "Pasiva"
-  description:  "Permite llevar un tercer escudo. (Los ataques por la espalda se consideran flanco)"
+  description:  "+1 vs Miedo por cada PM actual."
+-
+  id:           15
+  nivel:        5
+  name:         "Orgullo"
+  type:         "Reactiva"
+  description:  "+1 punto de Orgullo (PO) al ser el único héroe atacado."
+-
+  id:           16
+  nivel:        5
+  name:         "Ego"
+  type:         "Activa"
+  coste:        "1 PO"
+  description:  "Puedes tirar 1/rango defensa por separado
+                 en un ataque en conjunto"
+# nivel 6
+# TBD
+# nivel 7
+# TBD
+# nivel 8
+-
+  id:           21
+  nivel:        8
+  rangos:       2
+  name:         "bandeja"
+  type:         "activa"
+  coste:        "1 acción"
+  description:  "Porta sobre 1/rango escudo a un aliado otorgándole tu defensa,
+                 pero moverás la minus-mitad."
+# nivel 10 - Habilidades definitivas
+-
+  id:           25
+  nivel:        10
+  requisitos:   [8,12]
+  name:         "Escudo de espalda"
+  type:         "Definitiva"
+  description:  "Permite llevar un tercer escudo.
+                 (Los ataques por la espalda se consideran flanco)"
+-
+  id:           26
+  nivel:        10
+  requisitos:   [6,9,15]
+  name:         "Escudero real"
+  type:         "Definitiva"
+  description:  "Cuando un aliado se desplaza en tu dirección no es empujado.
+                 +1 vs Resistencias por cada punto de Honor.
+                 +1 potencia a las bendiciones y efectos de cura sobre ti."
+-
+  id:           27
+  nivel:        10
+  name:         "Alzhak reger"
+  type:         "Definitiva"
+  description:  "El MB siempre tendrá que resolver en primer lugar
+                 los ataques hacia el falangista. Si logró defender con éxito,
+                 reduce en 1 el daño recibido por los aliados por cada
+                 ataque recibido. Si además mató, añade 1 dado azul a la
+                 defensa de los aliados. Si murió, el cuerpo de los aliados
+                 no podrá bajar de 0"
