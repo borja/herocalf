@@ -19,7 +19,7 @@
   name:         "Levitar"
   type:         "Activa"
   coste:        "1PM" 
-  description:  "Levitas por encima de 1 casilla/ PM."
+  description:  "Levitas por encima de 1 casilla (puede ser un foso)"
 -
   id:           3
   nivel:        2
@@ -54,7 +54,7 @@
   name:         "Insuflar maná"
   type:         "Activa"
   coste:        "X PM"
-  description:  "El conjurador le puede ceder X PM a un aliado."
+  description:  "El conjurador le puede ceder X-1 PM a un aliado."
 -
   id:           7
   nivel:        3
@@ -113,27 +113,104 @@
 -
   id:           13
   nivel:        5
-  requisitos:   [8] 
+  requisitos:   [10] 
   name:         "Falla"
   type:         "Reactiva"
   description:  "Recuperas Teleportarse al fallar un hechizo"
 -
-  id:           13
-  nivel:        5
-  requisitos:   [6,7]
-  name:         "Perseverancia"
-  type:         "Activa"
-  coste:        "Todos los PM"
-  description:  "Es equivalente a Gloria del Héroe"
-
--
   id:           14
+  nivel:        5
+  requisitos:   [11,12]
+  name:         "Perseverancia"
+  type:         "única"
+  description:  "Reduce en X el daño sufrido, siendo X tus PM actuales"
+-
+  id:           15
   nivel:        7
   rangos:       3
   requisitos:   [0]
   name:         "Conjuro magistral"
   type:         "única"
   description:  "+1 maestría al siguiente hechizo de tipo conjuro."
+-
+  id:           16
+  nivel:        7
+  rangos:       3
+  requisitos:   [5, 8]
+  name:         "Mente sobre la materia"
+  type:         "Pasiva"
+  description:  "+1 potencia en la escuela con más hechizos disponibles"
+# Nivel 6
+-
+  id:           17
+  nivel:        6
+  rangos:       2
+  requisitos:   [1]
+  name:         "Líneas ley"
+  type:         "Reactiva"
+  description:  "Obtienes un punto de vórtice (PV) al ejecutar un hechizo
+                 de la escuela con más hechizos disponibles"
+-
+  id:           18
+  nivel:        6
+  requisitos:   [17]
+  name:         "Ley arcana"
+  type:         "activa"
+  coste:        "1PV"
+  description:  "+1 potencia al siguiente hechizo. Si es un conjuro,
+                 la ley arcana no tiene coste. Si logras la pieza,
+                 puedes lanzar un conjuro disponible como acción inmediata."
+# nivel 7
+-
+  id:           19
+  nivel:        7
+  requisitos:   [10, 17]
+  name:         "Intersección ley"
+  type:         "Reactiva"
+  description:  "Después de teleportarse, puedes lanzar un hechizo disponible
+                 como acción inmediata. Si es una bendición, puedes aplicar
+                 el efecto sobre ti mismo."
+-
+  id:           20
+  nivel:        7
+  name:         "Perspicacia mágica"
+  type:         "Reactiva"
+  description:  "Tras lanzar un hechizo de la escuela con menos hechizos
+                 disponibles, puedes buscar como acción gratuita."
+# nivel 8
+-
+  id:           21
+  nivel:        8
+  rangos:       3
+  requisitos:   [6]
+  name:         "Catalizador arcano"
+  type:         "Reactiva"
+  description:  "Siempre que un aliado invierta PM, tú recuperas 1/rango."
+-
+  id:           22
+  nivel:        8
+  rangos:       3
+  name:         "Doctrina"
+  type:         "Pasiva"
+  description:  "Al principio del reto elige una escuela: +1 potencia"
+# nivel 9
+-
+  id:           23
+  nivel:        9
+  rangos:       2
+  name:         "Camino marcado"
+  type:         "Activa"
+  coste:        "XPM"
+  description:  "+1/rango vs X Resistencias (elegidas por el conjurador)"
+-
+  id:           24
+  nivel:        9
+  rangos:       2
+  requisitos:   [3,23]
+  name:         "Adoctrinar"
+  type:         "Pasiva"
+  description:  "+1/rango potencia cuando tu tutelado esté bajo una bendición
+                 lanzada por ti."
 # nivel 10 - Habilidades definitivas
 -
   id:           25
