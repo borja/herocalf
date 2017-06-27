@@ -9,7 +9,7 @@
   maestría: "+1 miríada de flechas"
   diablura: "+1 PM por cada daño causado"
   ardid:    "lanza un hechizo de sombras aleatorio
-             desde es cadáver de cada pieza lograda."
+             desde el cadáver de cada pieza lograda."
 -
   id:       1
   alcance:  "V"
@@ -63,7 +63,7 @@
   efecto:   "El objetivo recibe un ataque no defendible de un dado,
              con su propia fuerza."
   potencia: "+1 fuerza"
-  maestría: "1 dado negro"
+  maestría: "+1 dado"
   diablura: "Utiliza dados negros para el ataque."
   ardid:    "Al ser ejecutado en sigilo, añade un dado especial negro"
 # Nivel 2
@@ -85,7 +85,8 @@
   duracion: "E"
   name:     "Depravación"
   tipo:     "Maldición"
-  efecto:   "Daña al objetivo con un dado negro (directo) cada vez que mates"
+  efecto:   "Daña al objetivo con un dado negro (directo) cada vez
+             que alguien muera"
   potencia: "+1 objetivo."
   maestría: "+1 dado negro"
   diablura: "Si el objetivo es el único enemigo visible,

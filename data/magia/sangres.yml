@@ -4,10 +4,11 @@
   duracion: "D"
   name:     "vampirismo"
   tipo:     "bendición - Aura"
-  efecto:   "Recupera 1 PC por cada enemigo(vivo que mates."
-  diablura: "Puedes renunciar en cualquier momento a 2 PC para recuperar vampirismo."
+  efecto:   "+1 PC por cada enemigo vivo que mates"
+  potencia: "+1 PC recuperado (la víctima debe tener PC para ser drenados)"
+  maestría: ""
+  diablura: "2 PC: Recupera vampirismo."
   ardid:    "2PC: El aliado objetivo es bendecido con vampirismo (-1 potencia)"
-  potencia: "+1 PC recuperado (Siempre que la víctima tenga al menos esos PC"
 -
   id:       1
   alcance:  1
