@@ -483,7 +483,7 @@
     right2: "manuales/derecha/dados"
 -
   ruta:  "magia"
-  title: "magia de Magia"
+  title: "Torre de Magia"
   template:
     left: "magia/left/elementales"
     left2: "magia/left/sagradas"
