@@ -32,29 +32,15 @@ class App < Sinatra::Base
     session.delete(:identity)
     erb :'alerts/logout'
   end
-  
+
   # Templates with double-routing
-  get '/:view/:param' do |view, _param|
-    # TODO: Clean up this from app.rb
-    es_element  = %w(aire agua fuego tierra).include?(view)
-    es_sagrada  = %w(arena hielo sombra sangre).include?(view)
-    es_plegaria = %w(plegarias execraciones).include?(view)
-    # Custom case for redundant spell lists
-    # TODO: Clean up this stuff
-    case
-      # Magic views
-      when es_element  then preview('hechizos')
-      when es_sagrada  then preview('sagradas')
-      when es_plegaria then preview('plegarias')
-      # Usual rooting
-      else preview(view)
-    end
+  get '/:view/:param' do |view, param|
+    preview(view)
   end
 
   # Templates with simple root-viewer
   get '/:view' do |view|
-    campeones = %w(reservistas ausentes licenciados).include?(view)
-    campeones ? preview('heroes') : preview(view)
+    preview(view)
   end
 
 # POST methods

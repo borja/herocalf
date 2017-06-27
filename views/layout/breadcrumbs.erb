@@ -1,15 +1,20 @@
-<div class="row">
+<% bc = viewinfo(params[:view])[:bc] %>
+
+<% if bc.count > 1 %>
+	<div class="row">
 		<div class="col-lg-12">
-				<h1 class="page-header">
-					<%= breadcrumb(params[:view])[:title].capitalize %>
-				</h1>
-				<ol class="breadcrumb">
-						<li>
-							<a href="/<%= breadcrumb(params[:view])[:bc].first.downcase %>">
-								<%= breadcrumb(params[:view])[:bc].first.capitalize %>
-							</a>
-						</li>
-						<li class="active"><%= params[:view].capitalize %></li>
-				</ol>
+			<h1 class="page-header">
+				<%= params[:view] %>
+			</h1>
+			<ol class="breadcrumb">
+				<% bc.each_with_index do |website, i| %>
+					<% if (i+1) != bc.count %>
+						<li><a href="/<%= website %>"><%= website.capitalize %></a></li>
+					<% else %>
+						<li class='active'><%= website.capitalize %></li>
+					<% end %>
+				<% end %>
+			</ol>
 		</div>
-</div>
+	</div>
+<% end %>
