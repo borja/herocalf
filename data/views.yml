@@ -358,7 +358,7 @@
   template:
     left: "manuales/derecha/personajes"
     main: "ciudad/magister"
-    right: "torre/right/menu"
+    right: "magia/right/menu"
 -
   ruta:  "notaria"
   title: "Notaría"
@@ -389,32 +389,32 @@
 -
   ruta:  "hechizos"
   template:
-    left: "torre/left/elementales"
-    left2: "torre/left/especializaciones"
+    left: "magia/left/elementales"
+    left2: "magia/left/especializaciones"
     main: "magia/hechizos"
 -
   ruta:  "hechizo"
   title: "view"
   template:
-    left:  "torre/left/elementales"
+    left:  "magia/left/elementales"
     main:  "magia/hechizo"
     right: "magia/carta"
 -
   ruta:  "sagradas"
   template:
-    left: "torre/left/sagradas"
+    left: "magia/left/sagradas"
     main: "magia/sagradas"
 -
   ruta:  "plegarias"
   template:
-    left: "torre/left/sagradas"
+    left: "magia/left/sagradas"
     main: "magia/plegarias"
 -
   ruta:  "elficas"
   title: "Magias élficas"
   template:
-    left: "torre/left/elementales"
-    left2: "torre/left/sagradas"
+    left: "magia/left/elementales"
+    left2: "magia/left/sagradas"
     main: "magia/elficas"
 -
   ruta:  "archivo"
@@ -482,40 +482,40 @@
     right: "manuales/derecha/combate"
     right2: "manuales/derecha/dados"
 -
-  ruta:  "torre"
-  title: "Torre de Magia"
+  ruta:  "magia"
+  title: "magia de Magia"
   template:
-    left: "torre/left/elementales"
-    left2: "torre/left/sagradas"
-    main: "torre/main"
-    right: "torre/right/menu"
+    left: "magia/left/elementales"
+    left2: "magia/left/sagradas"
+    main: "magia/principal"
+    right: "magia/right/menu"
 -
   ruta:  "magia"
   title: "Historia arcana"
   template:
-    left: "torre/left/elementales"
-    main: "torre/historia"
-    right: "torre/right/menu"
+    left: "magia/left/elementales"
+    main: "magia/historia"
+    right: "magia/right/menu"
 -
   ruta:  "vientos"
   title: "Poder mágico"
   template:
-    left: "torre/left/elementales"
-    main: "torre/vientos"
-    right: "torre/right/menu"
+    left: "magia/left/elementales"
+    main: "magia/vientos"
+    right: "magia/right/menu"
 -
   ruta:  "tipos"
-  title: "Magia"
+  title: "Tipos de hechizo"
   template:
-    left: "torre/left/elementales"
-    main: "torre/tipos"
-    right: "torre/right/menu"
+    left: "magia/left/elementales"
+    main: "magia/tipos"
+    right: "magia/right/menu"
 -
   ruta:  "magisters"
   template:
-    left: "torre/left/enseñanzas"
-    main: "torre/magisters"
-    right: "torre/right/ancestrales"
+    left: "magia/left/enseñanzas"
+    main: "magia/magisters"
+    right: "magia/right/ancestrales"
 -
   ruta:  "criaturas"
   template:
@@ -535,10 +535,10 @@
 -
   ruta:  "escuelas"
   template:
-    left:  "torre/left/elementales"
-    left2: "torre/left/sagradas"
+    left:  "magia/left/elementales"
+    left2: "magia/left/sagradas"
     main:  "magia/escuelas"
-    right: "torre/right/menu"
+    right: "magia/right/menu"
 -
   ruta:  "mazmorra"
   template:
