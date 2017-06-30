@@ -100,12 +100,11 @@
   duracion: 1
   name:     "ráfaga"
   tipo:     "Bendición"
-  efecto:   "+5 puntos de movimiento."
+  efecto:   "+5 puntos de movimiento, no consume acción de ataque."
   potencia: "+2 puntos de movimiento"
   maestría: "+1 turno de efecto."
   diablura: "Además el objetivo podrá volar."
-  ardid:
-            "Si el movimiento es linear las miniaturas adyacentes
+  ardid:    "Si el movimiento es linear las miniaturas adyacentes
              son empujadas perpendicularmente 1 casilla."
 -
   id:       9
@@ -138,9 +137,9 @@
   name:     "disparo certero"
   tipo:     "Bendición"
   efecto:   "+2 de potencia al siguiente ataque de proyectil del objetivo."
-  potencia: "+1 potencia extra"
-  maestría: "El efecto dura un ataque extra."
-  diablura: "1 dado eléctrico extra al ataque."
+  potencia: "+1 potencia"
+  maestría: "+1 duración"
+  diablura: "+1 dado eléctrico al ataque."
   ardid:    "El disparo es aullante."
 # Tierra nivel 1
 -
@@ -149,9 +148,9 @@
   duracion: "D"
   name:     "piel de piedra"
   tipo:     "Bendición"
-  efecto:   "+1 dado de defensa."
-  potencia: "+1 dado extra."
-  maestría: "+1 al número de veces necesario para que el efecto cese."
+  efecto:   "+1 defensa."
+  potencia: "+1 defensa"
+  maestría: "+1 duración"
   diablura: "Permite defender con un escudo negro por dado adicional."
   ardid:    "Los dados son azules."
 -
@@ -163,20 +162,18 @@
   efecto:   "Permite atravesar muros."
   potencia: "+1 turno de duración"
   maestría: "+1 objetivo"
-  diablura: "Permite atravesar enemigos también."
-  ardid:
-            "Ataque (imparable) sin armas igual a la potencia
-             al atravesar enemigos."
+  diablura: "Permite atravesar enemigos también"
+  ardid:    "Daño (sin armas) igual a la potencia al atravesar enemigos."
 -
   id:       14
   alcance:  0
   duracion: 0
   name:     "cura corporal"
   tipo:     "Sanación"
-  efecto:   "Restaura 4 PC."
-  potencia: "+1 PC extra"
+  efecto:   "+4 PC"
+  potencia: "+1 PC"
   maestría: "+1 objetivo"
-  diablura: "Permite curar PM en lugar de cuerpo."
+  diablura: "Permite curar PM"
   ardid:    "Se recupera con X+ (X es la sanación sobrante)"
 -
   id:       15
@@ -184,45 +181,38 @@
   duracion: 1
   name:     "manos de piedra"
   tipo:     "Maldición"
-  efecto:   
-            "El objetivo es inmovilizado por dos grandes manos de piedra
+  efecto:   "El objetivo es inmovilizado por dos grandes manos de piedra
              que surgen del suelo. Se puede resistir si obtiene
              menos de su movimiento con 2d6."
-  potencia: "+1 a la tirada del objetivo."
-  maestría: "+1 turno"
-  ardid:
-            "Si el objetivo obtiene el mismo número (N) con ambos dados,
-             la potencia de hechizos de piedra contra él, aumenta en N."
+  potencia: "+1d6"
+  maestría: "+1 duración"
   diablura: "Si falla la tirada recibe el exceso como daño defendible."
+  ardid:    "Si el objetivo obtiene el mismo número (N) con algún dado,
+             la potencia de hechizos de piedra contra él, aumenta en N."
 -
   id:       16
   alcance:  "V"
   duracion: "A"
   name:     "obelisco"
-  tipo:     "Bendición"
-  efecto:
-            "El objetivo amistoso queda convertido en un obelisco
-             (no podrá combatir ni moverse)
-             cuya defensa es igual a la mente del conjurador."
-  potencia:
-            "El lanzador puede incrementar en 1
-             la potencia defensiva del objetivo."
+  tipo:     "Bendición - Dádiva"
+  efecto:   "Convierte al objetivo en un obelisco. No podrá combatir ni moverse.
+             Su defensa será la mente total del conjurador."
+  potencia: "+1 potencia defensiva del objetivo (opcional)"
   maestría: "+1 muro de piedra alrededor del objetivo durante el efecto."
   diablura: "Puede ser lanzado como maldición."
-  ardid:
-            "5+: Los hechizos dirigidos contra el objetivo
-             pueden ser redireccionados por el lanzador."
+  ardid:    "5+: Puedes redireccionar los hechizos contra el objetivo"
 -
   id:       17
   alcance:  0
   duracion: "X"
   name:     "restituir"
   tipo:     "Sanación"
-  efecto:   "El objetivo restaura 1PC por turno hasta quedar totalmente curado (X)."
-  potencia: "+1 turno de duración"
-  maestría: "+ 1PC por turno"
-  diablura: "- 1 al empuje de los enemigos sobre el objetivo."
-  ardid:    "Cuando el objetivo restaura su último PC obtiene Piel de Piedra (del lanzador)."
+  efecto:   "El objetivo restaura 1PC por turno
+             hasta quedar totalmente curado (X)."
+  potencia: "+1 duración"
+  maestría: "+1PC"
+  diablura: "-1 al efecto de empuje de los enemigos"
+  ardid:    "Al cesar el efecto, ejecutas Piel de Piedra sobre el objetivo."
 # Agua nivel 1"
 -
   id:       18
@@ -231,29 +221,29 @@
   name:     "niebla"
   tipo:     "Bendición"
   efecto:   "Permite moverse sin ser visto."
-  potencia: "+1 turno de duración"
+  potencia: "+1 duración"
   maestría: "+1 objetivo (colindante)"
-  diablura: "Los enemigos colindantes reciben un ataque de frío"
-  ardid:    "El objetivo obtiene +2 vs Magia Veneno y Peste."
+  diablura: "Los enemigos colindantes reciben un ataque de frío en su turno"
+  ardid:    "+P vs Magia Veneno y Peste (P = potencia de agua)"
 -
   id:       19
   alcance:  "V"
   duracion: 0
   name:     "agua que cura"
   tipo:     "Sanación"
-  efecto:   "Restaura 4 PC."
+  efecto:   "+4 PC."
   potencia: "+1 PC"
-  maestría: "+ turno extra de efecto."
+  maestría: "+1 duración"
   diablura: "La sanación se puede repartir entre objetivos"
-  ardid:    "Durante el efecto el objetivo es inmune a veneno y peste."
+  ardid:    "El objetivo es inmune a veneno y peste"
 -
   id:       20
   alcance:  "V"
   duracion: 0
   name:     "dormir"
   tipo:     "Maldición"
-  efecto:   "Duerme al objetivo."
-  potencia: "+1 a la tirada del objetivo para despertarse."
+  efecto:   "Duerme al objetivo. Despertará con un 1 al inicio de su turno."
+  potencia: "-1 resistencia del objetivo"
   maestría: "+1 objetivo"
   diablura: "El objetivo queda envenenado. (No despertará por este daño)"
   ardid:    "En caso de despertar el objetivo despertará en locura."
@@ -263,7 +253,8 @@
   duracion: 0
   name:     "choque de agua"
   tipo:     "Evocación - Toque"
-  efecto:   "Un golpe de agua proyecta 2 casillas hacia atrás a un enemigo."
+  efecto:   "Un golpe de agua proyecta 1d6 casillas hacia atrás a un enemigo.
+             Si el objetivo no colisiona, pasará a estar tumbado"
   potencia: "+1 casilla, +1 alcance"
   maestría: "+1 dado de daño sin armas (no defendible)"
   diablura: "Desarma al objetivo. Si muere, recupera choque de agua."
@@ -453,23 +444,42 @@
 # Tierra nivel 2
 -
   id:       36
+  alcance:  "V"
+  duracion: "N"
   name:     "maldición de piedra"
   tipo:     "Maldición"
-  efecto:   "El objetivo se convierte en una estatua de piedra. Su defensa son +5 dados. Con una herida muere. Hechizo permanente salvo que el objetivo obtenga 1 escudo negro en su primera defensa."
-  potencia: "El objetivo necesita 1 escudo extra."
+  efecto:   "El objetivo se convierte en una estatua de piedra (+5 defensa).
+             Cualquier daño recibido es mortal. El efecto cesa cuando el
+             objetivo obtenga 1 escudo negro al defender, o muera."
+  potencia: "El objetivo necesita 1 escudo negro extra."
+  maestría: "-1 defensa del objetivo"
+  diablura: "Recuperas 1 hechizo de tierra de nivel 1 cuando el objetivo
+             defiende con éxito"
+  ardid:    "Si se lanza sobre un aliado el daño no es mortal"
 -
   id:       37
+  alcance:  "V"
+  duracion: "M"
   name:     "muro de piedra"
   tipo:     "Evocación - Muro"
-  efecto:   "1-5 casillas (a elección del lanzador) lineales desocupadas se convertiran en bloques de piedra."
-  duracion: "mente del hechicero."
-  potencia: "+1 grosor del muro."
+  efecto:   "1-5 casillas (a elección del lanzador) lineales desocupadas
+             se convertiran en bloques de piedra."
+  potencia: "+1 casilla"
+  maestría: "+1 grosor"
+  diablura: "Puedes crear una puerta mágica en una casilla. Tú decides
+             cuándo se abre y cuándo se cierra"
+  ardid:    "Puedes atravesar el muro, siempre que termines fuera de él"
 -
   id:       38
+  alcance:  "V"
+  duracion: 0
   tipo:     "Evocación - Sala"
   name:     "tromba de meteoros"
   efecto:   "Las miniaturas sufren un ataque de 2 dados que podran defender."
   potencia: "+1 dado de ataque."
+  maestría: "+1 radio de efecto"
+  diablura: "Tira dados especiales blancos. Las águilas son daño directo"
+  ardid:    "Recupera hecatombe si has masacrado a las criaturas de la sala"
 -
   id:       39
   name:     "hecatombe"
