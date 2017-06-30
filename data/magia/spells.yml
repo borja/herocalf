@@ -374,44 +374,82 @@
 # Aire nivel 2
 -
   id:       30
+  alcance:  "M"
+  duracion: 0
   name:     "rayo destructor"
   tipo:     "Conjuro - Rayo"
-  efecto:   "1 dado de ataque eléctrico."
+  efecto:   "1 dado de ataque eléctrico en su recorrido."
   potencia: "+1 fuerza del ataque."
+  maestría: "+1 dado adicional"
+  diablura: "Al morir las criaturas adyacentes se ven afectadas por el efecto"
+  ardid:    "El daño (martillos) es directo"
 -
   id:       31
+  alcance:  "M"
+  duracion: 0
   name:     "rayo prismático"
   tipo:     "Conjuro - Rayo"
-  efecto:   "3 dados de ataque de un primer rayo. Después brotan rayos adicionales a objetivos extra disminuyendo el ataque en 1. Cesa al llegar a 0."
-  potencia: "El lanzador puede añadir +1 dado de ataque"
+  efecto:   "3 dados de ataque de un primer rayo.
+             Después brotan rayos adicionales a objetivos diferentes
+             disminuyendo el ataque en 1. Cesa al llegar a 0."
+  potencia: "+1 dado de ataque"
+  maestría: "+1 potencia de ataque"
+  diablura: "Si los objetivos son colindantes, los rayos atacan en conjunto"
+  ardid:    "E = exceso de rayos no usados. Se recupera con E-"
 -
   id:       32
+  alcance:  "V"
+  duracion: "D/Mov/R"
   name:     "tornado"
   tipo:     "Conjuro - Área"
-  efecto:   "4 dados de ataque en una casilla. El tornado se puede mover a otra casilla con un dado a eleccion del mago (1-4) o del master (5-6)."
-  duracion: "Si el hechicero se mueve sufre una herida o el tornado repite la casilla."
+  efecto:   "PM/2 (minusmitad) dados de ataque en una casilla. Tira 1d6:<br/>
+             (1-4): Se desplazará otra casilla contigua a eleccion del mago<br/>
+             (5-6): A elección del Malvado Brujo<br/>
+             Cesa el efecto, si el hechicero se mueve, sufre una herida o
+             el tornado repite la casilla. Afecta a todo su recorrido."
   potencia: "+1 potencia del ataque."
+  maestría: "+1 casilla de tornado"
+  diablura: "1PM: Libra a un aliado del efecto"
+  ardid:    "El efecto no cesa al repetir casillas"
 -
   id:       33
+  alcance:  "M"
+  duracion: 0
   name:     "relámpago"
-  tipo:     "Conjuro - Rayo"
-  efecto:   "3 dados de ataque electrico defendibles por el objetivo con dados de combate. 1 escudo de su categoria defiende 2 ataques."
+  tipo:     "Conjuro - Área"
+  efecto:   "3 dados de daño. El objetivo defenderá con 3 dados
+             salvando 2 daños por cada éxito de su categoría"
   potencia: "+1 Fuerza del daño."
+  maestría: "+2 dados de ataque y defensa"
+  diablura: "Odio"
+  ardid:    "El objetivo solo salva 1 daño por éxito"
 -
   id:       34
+  alcance:  1
   duracion: "D"
   name:     "aura de la tormenta"
   tipo:     "Bendición - Aura"
   efecto:   "Defensa: +1. Las miniaturas que se acerquen a melee
-             sufren 1 ataque electrico y al final de su turno
+             sufren 1 ataque electrico. Al final de su turno
              deben retroceder una casilla hacia atras pudiendo sufrir colisión."
   potencia: "+1 de defensa +1 dado de ataque eléctrico y +1 casilla desplazada."
+  maestría: "+1 alcance"
+  diablura: "Al defender con éxito recupera 1 hechizo de aire de nivel 1"
+  ardid:    "Los aliados son inmunes"
 -
   id:       35
+  alcance:  "V"
+  duracion: "C"
   tipo:     "Conjuro - Área"
   name:     "área de vacío"
-  efecto:   "El mago elige 3 casillas contiguas y no lineales. El objetivo dentro de esas casillas sufre un ataque de 1 dado. Si el objetivo sale de las casillas el ataque sera de 3 pero el efecto desaparecera en las casillas anteriores."
-  potencia: "+1 casilla ó +1 ataque en todas las tiradas del efecto a elección del lanzador."
+  efecto:   "El mago elige 3 casillas contiguas y no lineales.
+             Cualquier objetivo dentro de esas casillas sufre 1 dado de ataque.
+             Cualquiera que las abandonelas sufre 3 dados de ataque desactivando
+             el efecto (C) en esa casilla"
+  potencia: "+1 casilla o +1 ataque en todas las tiradas del efecto."
+  maestría: "+1 potencia y fuerza de ataque"
+  diablura: "Si matas no cesa el efecto al abandonar"
+  ardid:    "Añade 1 dado especial blanco a las tiradas de ataque"
 # Tierra nivel 2
 -
   id:       36
