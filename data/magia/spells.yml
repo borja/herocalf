@@ -926,10 +926,17 @@
 # Agua nivel 4
 -
   id:       90
+  alcance:  "1-3-5"
+  duración: 0
   name:     "cono de frío"
-  tipo:     "Conjuro"
-  efecto:   "La casilla frontal al lanzador sufrirá un ataque indefendible de 5 dados por frío los 3 siguientes podrán defenderse y las 5 siguientes también aunque el golpe será de 2 dados. Todas las miniaturas que sufran daños perderán su próximo movimiento.Si mueren su miniatura no se retirará hasta que alguien rompa su estatua que tendrá los mismos PC y defensa que el original."
-  potencia: "+1 fuerza a los ataques realizados."
+  tipo:     "Conjuro - Cono"
+  efecto:   "Daño directo por frío de 5-3-2 dados.
+             Todas las miniaturas que sufran daños perderán su movimiento.
+             Si mueren su miniatura no se retirará hasta que alguien la rompa"
+  potencia: "+1 fuerza a los dados de frío"
+  maestría: "+1 alcance de 1 dado"
+  diablura: "Las miniaturas congeladas sufren daño verdadero"
+  ardid:    "Odias al atacar"
 -
   id:       91
   alcance:  "V"
@@ -955,18 +962,16 @@
   ardid:    "El objetivo pierde todos los efectos perjudiciales"
 -
   id:       93
+  alcance:  0
+  duración: "-2PM"
   name:     "globo de agua"
-  tipo:     "Invocación"
-  efecto:
-            "Seguirá al mago y sanará todos los turnos 1 PC
-             a un aliado adyacente. El globo no ocupa espacio y desaparecerá
-             cuando el mago pierda 2PM simultáneos.
-             El mago puede gastar 1PM para hacer que el globo sane PM
-             en lugar de PC y viceversa."
-  potencia: "+1 PC/sanación"
-  diablura: "Puedes explotar el globo y lanzar aleatoriamente un hechizo
-             de agua de nivel 1 a todas las miniaturas adyacentes.
-             (Incluido tú)"
+  tipo:     "Bendición - Glifo"
+  efecto:   "Seguirá al mago sin ocupar espacio. +1 PC a un aliado adyacente.
+             Desaparecerá cuando el mago pierda 2PM simultáneos.
+             1PM: a partir de ahora, sana PM en lugar de PC, o viceversa."
+  potencia: "+1 sanación"
+  diablura: "Explotar el globo: lanzaa aleatoriamente un hechizo de agua
+             de nivel 1 a ti y todas las miniaturas adyacentes."
   ardid:    "Podrá absorber la primera maldición que recibas, desapareciendo."
 -
   id:       94
