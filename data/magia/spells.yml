@@ -723,43 +723,75 @@
   potencia: "+1 potencia del ataque y +1 potencia extra en la sala."
 -
   id:       63
+  alcance:  1
+  duracion: 0
   name:     "restitución corporal"
   tipo:     "Sanación"
-  efecto:   "El objetivo recupera toda su salud."
-  potencia: "-1 efecto de estado del objetivo (veneno sangrado aturdimiento...)"
+  efecto:   "Recupera todos los PC"
+  potencia: "-1 efecto de estado"
+  maestría: "+1 S/P de alcance"
+  diablura: "Si es el siguiente jugador, tendrá una acción de ataque adicional"
+  ardid:    "1 hechizo: Puedes lanzártelo a ti mismo al final del turno del MB"
 -
   id:       64
+  alcance:  1
+  duracion: "1d6"
   name:     "atravesar muros"
   tipo:     "Bendición"
-  efecto:   "El efecto dura 1d6 turnos. El objetivo atraversará muros e ignorará ataques físicos si supera una tirada de mente."
+  efecto:   "El objetivo atraversará muros e ignorará ataques físicos,
+             si supera una tirada de mente de dificultad igual al ataque."
   potencia: "+1 turno."
+  maestría: "-1 dificultad"
+  diablura: "Aura: +1PM al ignorar un ataque físico"
+  ardid:    "1PM, al atravesar un muro: puedes elegir dejar una puerta."
 -
   id:       65
+  alcance:  0
+  duracion: "∞"
   name:     "maza de piedra rúnica"
-  tipo:     "Invocación"
-  efecto:   "La maza golpea con magia térrea y disipa efectos beneficiosos. Duplica su daño contra no-muertos y dura hasta el final del reto."
+  tipo:     "Evocación - Fetiche"
+  efecto:   "La maza golpea con magia térrea y disipa efectos beneficiosos.
+             Ataque: 2 dados blancos, cuya fuerza es igual a tus magias
+             de tierra disponibles. Duplica su daño contra no-muertos."
   potencia: "+1 potencia / fuerza de la maza."
+  maestría: "+2 blancos de ataque"
+  diablura: "Si rompe una bendición, la absorbes"
+  ardid:    "Tus esbirros/seguidores pueden esgrimir este arma"
 # Agua nivel 3
 -
   id:       66
+  alcance:  "V"
+  duración: "Muerte"
   name:     "glifo de agua"
   tipo:     "Bendición - Glifo"
-  efecto:
-            "Sigue al objetivo hasta que muera. En ese momento el objetivo resucitará,
-            en estado de dormido con tantos puntos de cuerpo como tenga su mente."
+  efecto:   "Sigue al objetivo hasta que muera, resucitándolo,
+            en estado de dormido. Sus PC serán igualados a sus PM."
   potencia: "+1 PM y +1 PC al objetivo cuando resucita."
+  maestría: "+1 objetivo. Al resucitar, rompe todos los glifos activos."
+  diablura: "Recupera 1d6 PM al objetivo, si murió loco"
+  ardid:    "Si el objetivo murió con todos su PM, elige un nuevo objetivo."
 -
   id:       67
+  alcance:  3
+  duración: "M"
   name:     "el cáliz sagrado"
   tipo:     "Sanación"
-  efecto:   "Dura tantos turnos como los puntos de mente del invocador. Reestablecerá 1PC y 1PM por turno a todos los que beban de él. Contará como acción gratuita."
-  potencia: "+1 al alcance para beber del cáliz."
+  efecto:   "+1PC y +1PM por turno a los que beban (acción gratuita)"
+  potencia: "+1 al alcance"
+  maestría: "+1PC y +1PM"
+  diablura: "Lavar heridas (1 acción): Purga 1 veneno/enfermedad"
+  ardid:    "Si se ejecuta en combate, puedes cambiar la duración a: M"
 -
   id:       68
+  alcance:  "V"
+  duracion: "D"
   name:     "escudo de agua"
-  tipo:     "Bendición"
-  efecto:   "El personaje recibirá 3+ de resistencia vs el fuego y desviará cualquier sortilegio de tipo Rayo. Su defensa aumenta en +1 y dura hasta que el objetivo reciba un daño."
+  tipo:     "Evocación - Fetiche"
+  efecto:   "+4 vs Calor. Desviará hechizos de tipo Rayo. +1 defensa"
   potencia: "+1 de defensa y +1 al daño necesario para cesar el efecto."
+  maestría: "+1 objetivo adyacente"
+  diablura: "Los hechizos absorbidos/desviados son redireccionados a voluntad"
+  ardid:    "El dado de defensa es azul, y su potencia será los PM del objetivo"
 -
   id:       69
   name:     "helar"
