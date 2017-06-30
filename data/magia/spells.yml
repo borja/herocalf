@@ -100,11 +100,11 @@
   duracion: 1
   name:     "ráfaga"
   tipo:     "Bendición"
-  efecto:   "+5 puntos de movimiento, no consume acción de ataque."
+  efecto:   "+5 puntos de movimiento. Aura: no consume acción de ataque."
   potencia: "+2 puntos de movimiento"
   maestría: "+1 turno de efecto."
   diablura: "Además el objetivo podrá volar."
-  ardid:    "Si el movimiento es linear las miniaturas adyacentes
+  ardid:    "Si el movimiento es linear, las miniaturas adyacentes
              son empujadas perpendicularmente 1 casilla."
 -
   id:       9
@@ -280,11 +280,11 @@
   duracion: 0
   name:     "esperanza"
   tipo:     "Sanación"
-  efecto:   "Todos aliados del lanzador recuperan a su elección: 1PC ó 1PM"
-  potencia: "+1 punto del mismo tipo escogido."
-  maestría: "+1 turno de efecto."
+  efecto:   "+1PC o +1PM a todos aliados"
+  potencia: "+1 punto del mismo tipo"
+  maestría: "+1 duración"
   diablura: "Se recuperan ambos puntos."
-  ardid:    "Se eliminan además, venenos peste y enfermedades."
+  ardid:    "Se eliminan además, venenos, peste y enfermedades."
 # Fuego nivel 2
 -
   id:       24
@@ -294,6 +294,7 @@
   tipo:     "Conjuro - Cono"
   efecto:   "2 dados rojos de ataque."
   potencia: "+1 potencia"
+  maestría: "+1 alcance y fuerza"
   diablura: "Calaveras directas: +1 alcance de esa casilla"
   ardid:    "Aullante. Además, los efectos de arder se propagan al colisionar."
 -
@@ -302,12 +303,11 @@
   duracion: 0
   name:     "rayo ígneo"
   tipo:     "Conjuro - Rayo"
-  efecto:   
-            "3 dados de ataque. 2 dados defendibles por cada herida causada.
-             El rayo avanza a más victimas y se defienden con 1 dado adicional               a la victima anterior."
-  potencia: "+1 ataque."
+  efecto:   "3 dados de ataque. El objetivo defiende con 2 dados por cada éxito.
+             Al matar, ataca al siguiente objetivo que defenderá con +1 dado"
+  potencia: "+1 potencia de ataque."
   maestría: "+1 fuerza"
-  diablura: "Los objetivos dañados pierden su escudo"
+  diablura: "Los objetivos dañados pierden su escudo. (Ataque flanqueando)"
   ardid:    "Las objetivos en llamas tirarán resistencia al miedo: 1/efecto"
 -
   id:       26
@@ -326,8 +326,7 @@
   duracion: 4
   name:     "muro de fuego"
   tipo:     "Evocación - Muro"
-  efecto:
-            "En 5 casillas lineales brota un muro de llamas.
+  efecto:   "En 5 casillas lineales brota un muro de llamas.
              Si se atraviesan atacará con 3 dados de fuego.
              1PM: Se pueden reducir N casillas aumentando el ataque en N"
   potencia: "+1 ataque"
@@ -340,8 +339,7 @@
   duracion: 0
   name:     "lluvia de fuego"
   tipo:     "Evocación - Sala"
-  efecto:
-            "Ataque de 1 dado de fuego. Todo objeto mundano es destruido.
+  efecto:   "Ataque de 1 dado de fuego. Todo objeto mundano es destruido.
              Los enemigos se defienden con 1 solo dado."
   potencia: "+1 fuerza del ataque."
   maestría: "+1 dado de fuego"
@@ -353,15 +351,13 @@
   duracion: 0
   name:     "infierno"
   tipo:     "Conjuro - Área"
-  efecto:
-            "En 1 casilla: ataque ígneo de la minusmitad
-             de la mente del conjurador y 2 dados a las casillas contiguas.
+  efecto:   "En 1 casilla: ataque ígneo de la minusmitad de la mente y
+             2 dados a las casillas contiguas.
              +1 casilla de área contigua por cada magia elemental sacrificada."
-  potencia: "+1 potencia del atauqe"
-  maestría: "+1 casilla (debe ser contigua)"
+  potencia: "+1 potencia"
+  maestría: "+1 casilla contigua"
   diablura: "Si la casilla central muere, puedes ocupar su posición"
-  ardid:    "N piezas: Invoca un elemental de fuego en la casilla de nivel N"
-
+  ardid:    "N piezas: Invoca un elemental de fuego de nivel N en la casilla"
 # Aire nivel 2
 -
   id:       30
@@ -563,45 +559,65 @@
 # Fuego nivel 3
 -
   id:       48
+  alcance:  1
   duracion: 0
   name:     "deflagración"
-  tipo:     "Conjuro"
-  efecto:   "Todas las casillas adyacentes al lanzador sufren un Fuego de Ira. Es repetible al turno siguiente si se sacrifican 2 PC."
-  potencia: "El área se extiende a las adyacentes de las adyacentes."
+  tipo:     "Conjuro - Explosión"
+  efecto:   "Todas las casillas adyacentes al lanzador sufren un Fuego de Ira.
+             <br/>2 PC: +1 duración"
+  potencia: "+1 alcance"
+  maestría: "+1 fuerza al daño"
+  diablura: "Al dañar a aliados ejecuta un Fuego de Ira gratuito"
+  ardid:    "Consumir Fuego de Ira: Lanza deflagración como instinto"
 -
   id:       49
+  alcance:  "V"
+  duración: 0
   name:     "bailar con las llamas"
   tipo:     "Superchería"
-  efecto:   "El mago creará una llama en su posición y otra en una casilla en su línea de visión donde desee teletransportarse. La criatura situada en la línea de visión recibirá 1 daño de fuego. "
-  potencia: "1 casilla extra."
+  efecto:   "El mago creará una llama en su posición (P) y otra en una casilla
+             en su línea de visión (T). Lanza un hechizo gratuito de fuego en P.
+             Si muere el objetivo, puedes teletransportarte a T."
+  potencia: "+1 casilla"
+  maestría: "+1 potencia de fuego"
+  diablura: "Puedes arder, a cambio de ejecutarlo como instinto"
+  ardid:    "Puedes teletransportarte a T, siempre que mates con fuego"
 -
   id:       50
+  alcance:  "M"
   duracion: 0
   name:     "gran bola de fuego"
   tipo:     "Conjuro - bola"
-  efecto:   "El objetivo recibe 6 daños de fuego. Se defenderá con 5 dados de combate."
+  efecto:   "Causa 6 daños de fuego, defendibles con 5 dados de combate."
   potencia: "+2 daños de fuego extra."
+  maestría: "+1 de área"
+  diablura: "Aullante"
+  ardid:    "Al impactar, causa el hechizo deflagración."
 -
   id:       51
+  alcance:  "V"
   duracion: "1d6"
   alcance:  "V"
   name:     "recinto ígneo"
   tipo:     "Conjuro - Área"
-  efecto:   "El mago elige 4 casillas no contiguas y paralelas entre sí, de las que brotarán 4 rayos ígneos."
+  efecto:   "El mago elige 4 casillas no contiguas y paralelas entre sí.
+             De ellas brotarán 4 rayos ígneos."
   potencia: "+1 turno extra."
+  maestría: "+2 casillas (paralelas)"
+  diablura: "Dentro del recinto, no se consume Fuego de Ira"
+  ardid:    "Los rayos ígneos tienen ardid"
 -
   id:       52
   alcance:  "V"
   duracion: 1
   name:     "ifrit"
   tipo:     "Invocación"
-  efecto:   "Ataca con 5 dados de fuego y puede golpear a 2 enemigos/turno
-             repartiendo su ataque. El invocador puede ofrecerle su sangre (1PC)
-             para que obtenga 1 dado más de ataque."
+  efecto:   "(2) Ataque: 5 dados de fuego, repartibles.<br/>
+             1PC: ataque +1 (sacrificio)"
   potencia: "+1 enemigo/turno +1 dado de ataque"
   maestría: "+1 duración"
   diablura: "El ifrit tiene: Odio"
-  ardid:    "El invocador puede ofrecer mente en lugar de sangre"
+  ardid:    "El invocador puede sacrificar mente"
 -
   id:       53
   alcance:  "V"
@@ -888,17 +904,20 @@
   duración: 1
   name:     "maestro genio"
   tipo:     "Invocación"
-  efecto:   "Ataca con 10 dados y puede golpear a 3 enemigos distintos repartiendo su ataque. Si el mago invierte 2PM podrá en lugar de atacar absorber la energía del genio recuperando sus PC la carta de hechizo Genio y ganando una resistencia al viente de 2+."
-  potencia: "+1 potencia de ataque y +1 enemigo atacable."
+  efecto:   "Ataque: 10, pudiendo repartirlo a 3 enemigos distintos.<br/>
+             2PM: En lugar de atacar, puedes absorber la energía del genio,
+             recuperando 2d6 PC, el hechizo Genio y ganando +2 vs Rayo"
+  potencia: "+1 potencia de ataque, +1 enemigo atacable, +1d6 PC"
+  maestría: "+1 duración"
+  diablura: "Puedes recuperar/atacar mente, en lugar de cuerpo"
+  ardid:    "1d6 (elegibles entre PC y PM): Puedes ejecutarlo como instinto"
 -
   id:       92
   name:     "reposición"
   tipo:     "Sanación"
-  efecto:
-            "El objetivo recupera sus PM y PC.
-             El objetivo puede invertir 3 PM para que el lanzador
-             recupere este hechizo. No se puede usar 2 veces
-             sobre la misma miniatura."
+  efecto:   "El objetivo recupera sus PM y PC totales.<br/>
+             3 PM del objetivo: El lanzador recupera este hechizo.
+             No se puede usar 2 veces sobre la misma miniatura"
   potencia: "+1 repetición posible sobre el mismo objetivo."
   diablura: "El objetivo pierde una maldición"
   ardid:    "El objetivo pierde todos los efectos perjudiciales"
@@ -913,8 +932,7 @@
              El mago puede gastar 1PM para hacer que el globo sane PM
              en lugar de PC y viceversa."
   potencia: "+1 PC/sanación"
-  diablura:
-            "Puedes explotar el globo y lanzar aleatoriamente un hechizo
+  diablura: "Puedes explotar el globo y lanzar aleatoriamente un hechizo
              de agua de nivel 1 a todas las miniaturas adyacentes.
              (Incluido tú)"
   ardid:    "Podrá absorber la primera maldición que recibas, desapareciendo."
@@ -924,8 +942,7 @@
   duracion: 0
   name:     "deshidratación abrasiva"
   tipo:     "Maldición"
-  efecto:
-            "La víctima sufre 2d6 dados de combate de daño no defendible,
+  efecto:   "La víctima sufre 2d6 dados de combate de daño no defendible,
              aunque sólo le harán efecto los escudos negros."
   potencia: "+1 dado de ataque y +1 fuerza."
   maestría: "+1 duración, +1 fuerza"
@@ -937,16 +954,13 @@
   duracion: "D / 1PM"
   name:     "bruma mística"
   tipo:     "Conjuro"
-  efecto:
-            "Solo se podrá combatir cuerpo a cuerpo y las miniaturas
+  efecto:   "Solo se podrá combatir cuerpo a cuerpo y las miniaturas
              defenderán con la mitad redondeada hacia arriba de su defensa.
              Cualquier magia conjurada deberá superar una tirada de mente
              para que tenga éxito. El efecto dura mientras el mago
              invierta 1PM al principio de su turno y no reciba daño."
-  potencia:
-            "+1 al daño necesario para que cese el efecto.
+  potencia: "+1 al daño necesario para que cese el efecto.
              +1 PM para el lanzador."
   diablura: "1PM: 1 proyectil de un aliado, ignorará la bruma."
-  ardid:
-            "Las magias de efecto conjuradas previas al hechizo,
+  ardid:    "Las magias de efecto conjuradas previas al hechizo,
              afectarán solo a los objetivos elegidos por el conjurador"
