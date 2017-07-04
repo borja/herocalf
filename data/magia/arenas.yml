@@ -1,135 +1,146 @@
-- 
+-
   id:       0
   alcance:  "V"
   duracion: 1
   name:     "Tormenta de arena"
-  tipo:     "Evocación - Área"
-  efecto:   "Todas las miniaturas en la sala están cegadas y silenciadas."
-  diablura: "Desplaza a las miniaturas 2 casillas hacia una misma dirección a tu elección"
-  ardid:    "Solo afectará a los enemigos."
+  tipo:     "Evocación - Sala"
+  efecto:   "Ciega y silencia a las miniaturas de la sala."
   potencia: "+1 duración"
-- 
+  maestría: "+1 dado de daño directo amarillo"
+  diablura: "Desplázalas 2 casillas hacia una misma dirección a tu elección"
+  ardid:    "Solo afectará a los enemigos."
+-
   id:       1
   alcance:  0
   duracion: 0
   name:     "Golpe de arena"
   tipo:     "Evocación - Toque"
   efecto:   "Golpea con 3 dados de combate a una miniatura. (Aullante)"
-  ardid:    "Si provoca daños, el objetivo quedará cegado"
-  diablura: "El golpe de arena puede ser ejecutado en conjunto"
   potencia: "+1 potencia al ataque"
-- 
+  maestría: "+1 objetivo (adyacente)"
+  diablura: "El golpe de arena puede ser ejecutado en conjunto"
+  ardid:    "Si provoca daños, el objetivo quedará cegado"
+-
   id:       2
   alcance:  2
   duracion: "E"
   name:     "Forma de arena"
-  tipo:     "bendición"
+  tipo:     "Bendición"
   efecto:   "El objetivo puede pasar por puertas cerradas,
              no es empujado y puede elegir defensa verdadera al defender."
+  potencia: "+1 duración"
+  maestría: "+1 sigilo al objetivo"
   diablura: "El objetivo es inmune a los hechizos dañinos de arena y tierra"
   ardid:    "Durante el sprint, el objetivo podrá lanzar magias de arena."
-  potencia: "+1 duración"
-- 
+-
   id:       3
   alcance:  0
   duracion: 0
   name:     "Arenas del tiempo"
-  tipo:     "Aura"
+  tipo:     "Bendición - Aura"
   efecto:   "Puedes usar esta magia como instinto.
-             Dispones de un turno adicional.<br/>
+             Dispones de un turno adicional.
              Si en este turno vuelves a modificar el tiempo,
              la entropía te lanzará al olvido eterno."
+  potencia: "+1 acción durante tu turno extra."
+  maestría: "+1 límite de este hechizo, por entropía"
   diablura: "Al inicio de tu turno puedes regresar del olvido eterno con 5+"
   ardid:    "Puedes lanzar magias desde el olvido eterno,
              desde la casilla en la que desapareciste."
-  potencia: "+1 acción durante tu turno extra."
-- 
+-
   id:       4
   alcance:  "V"
   duracion: "∞"
   name:     "Arenas movedizas"
   tipo:     "Evocación"
   efecto:   "Elige 3 casillas de la sala pudiendo anotarlas
-             en secreto al MB.<br/>
-             Las miniaturas que caigan, quedarán atrapados
-             si no superan una TS de movimiento (2d6).<br/>
-             Al inicio del turno perderán 3 dados de combate de daño mental.
+             en secreto al MB. Las miniaturas que caigan, quedarán atrapadas
+             si no superan una TS de movimiento (2d6). Al inicio del turno
+             sufrirán 3 dados de combate de daño mental.
              Si no disponen, cuerpo."
-  diablura: "Al matar una miniatura en las arenas,
-             recupera un hechizo de arena."
-  ardid:    "Puedes elegir daño físico en lugar de mental."
   potencia: "+1 ataque del efecto"
-- 
+  maestría: "+1d6"
+  diablura: "Recupera 1 hechizo de arena al matar con este hechizo"
+  ardid:    "Puedes elegir daño físico en lugar de mental."
+-
   id:       5
   alcance:  3
   duracion: 0
   name:     "Gusano de arena"
   tipo:     "Invocación"
   efecto:   "Un gusano de las arenas, emerge del suelo y golpea al objetivo
-             con 3 dados.<br/>Si lo mata, lo engullirá. En ese caso,
+             con 3 dados. Si lo mata, lo engullirá. En ese caso,
              recupera este hechizo y cualquier botín de la víctima."
+  potencia: "+1 dado de ataque"
+  maestría: "+1 ataque de gusano"
   diablura: "Si recuperas el hechizo puedes volver a lanzarlo inmediatamente."
   ardid:    "El gusano ataca por la espalda"
-  potencia: "+1 dado de ataque"
-- 
+# Nivel 2
+-
   id:       6
   alcance:  "V"
   duracion: 1
   name:     "Arma del desierto"
-  tipo:     "Bendición"
+  tipo:     "Bendición - Encantamiento"
   efecto:   "El siguiente golpe del arma requiere defensa verdadera"
+  potencia: "+1 duración"
+  maestría: "+1 golpe de efecto"
   diablura: "Si el arma es contundente, duplica sus dados de ataque"
   ardid:    "El arma es aullante y silencia al causar daño."
-  potencia: "+1 duración"
-- 
+-
   id:       7
   alcance:  "V"
   duracion: 0
   name:     "Erradicar"
   tipo:     "Evocación - Sala"
   efecto:   "Las miniaturas de la sala reciben 2 dados de ataque"
-  ardid:    "El daño es verdadero"
-  diablura: "Usa dados negros al atacar"
   potencia: "+1 potencia"
-- 
+  maestría: "-1 defensa de los objetivos (mínimo 0)"
+  diablura: "Usa dados negros al atacar"
+  ardid:    "El daño es verdadero"
+-
   id:       8
   alcance:  0
   duracion: "M"
   name:     "Escudo de arena"
   tipo:     "Bendición - Aura"
-  efecto:   "El objetivo añade 2 dados amarillos a su defensa."
+  efecto:   "+2 dados amarillos a tu defensa"
+  potencia: "+1 dado amarillo"
+  maestría: "+1 potencia en todos los dados"
   diablura: "Las calaveras en los dados, se tiran como represalias."
   ardid:    "2 escudos blancos en los dados amarillos bloquean el ataque."
-  potencia: "+1 dado"
-- 
+-
   id:       9
   alcance:  0
   duracion: 4
   name:     "Puñal de arena"
-  tipo:     "Invocación"
+  tipo:     "Evocación - Arma"
   efecto:   "Invoca una daga intransferible de fuerza igual a tus PM actuales."
+  potencia: "+1 potencia"
+  maestría: "+1 dado de ataque"
   diablura: "Arrojarlo es acción gratuita"
   ardid:    "Recupera un hechizo de arena al Matar con el puñal."
-  potencia: "+1 potencia"
-- 
+-
   id:       10
   alcance:  "V"
-  duracion: "X"
+  duracion: "A"
   name:     "Glifo de Arena"
   tipo:     "Bendición - Glifo"
   efecto:   "Sigue al objetivo hasta que cause daños. En ese momento,
-            recuperarás una magia de arena, y tantos PM como heridas causó el objetivo."
-  diablura: "En lugar de recuperar la magia, puedes lanzarla desde el objetivo."
-  ardid:    "La magia recuperada tendrá diablura."
+            recuperarás una magia de arena y tantos PM como daños causó"
   potencia: "+1 magia recuperada"
-- 
+  maestría: "+1 glifo"
+  diablura: "En lugar de recuperar la magia, puedes lanzarla desde el objetivo"
+  ardid:    "La magia recuperada tendrá diablura"
+-
   id:       11
-  alcance:  "V"
+  alcance:  "1-3"
   duracion: 0
   name:     "Sepultar"
-  tipo:     "Evocación - Área"
-  efecto:   "Una cantidad descomunal de lodo y arena sepulta un área 2x2.
+  tipo:     "Conjuro - Cono"
+  efecto:   "Una cantidad descomunal de lodo y arena sepulta un área.
              Ataca con la plusmitad de dados igual a tus PM a los objetivos."
+  potencia: "+1 potencia"
+  maestría: "+1 alcance, +1 fuerza"
   diablura: "1PM: +1 fuerza"
   ardid:    "Las miniaturas colindantes estarán cegadas y silenciadas"
-  potencia: "+1 potencia"
