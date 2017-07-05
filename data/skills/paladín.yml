@@ -1,3 +1,4 @@
+# nivel 2
 -
   id:          0
   nivel:       2
@@ -17,43 +18,47 @@
   nivel:       2
   name:        "Sello de Valor"
   type:        "única"
-  description:
-               "Mientras tenga este sello activo, reducirá en 1 el daño recibido,
-                por cada enemigo en el conjunto del ataque. Solo se puede tener 1 único sello activo."
+  description: "Mientras tenga este sello activo: -1 el daño recibido,
+                por cada enemigo en el conjunto del ataque.
+                (Solo se puede tener 1 único sello activo)"
 -
   id:          3
   nivel:       2
   name:        "Sello de Justicia"
   type:        "única"
-  description:
-               "Mientras tenga el sello activo, podrá realizar golpes santificados sin coste,
-                a enemigos que hayan dañado a cualquier aliado. Solo se puede tener un único sello activo."
+  description: "Mientras tenga el sello activo,: permite realizar
+                golpes santificados sin coste, a enemigos que hayan causado
+                daños. (Solo se puede tener un único sello activo)"
 -
   id:          4
   nivel:       2
   name:        "Sello de Santidad"
   type:        "única"
-  description:
-               "Mientras tenga el sello activo, podrá invertir 1PM, para redirigir hacia sí mismo
-                un golpe de un aliado en S/P. Solo se puede tener un único sello activo."
+  description: "Mientras tenga el sello activo: 1PM: redirige hacia ti mismo
+                un golpe de un aliado en S/P. (Solo se puede tener un
+                único sello activo)"
+# nivel 3
 -
   id:          5
   nivel:       3
   requisitos:  ["1 sello"]
   name:        "Sentenciar"
   type:        "activa"
-  description:
-               "Elimina el sello activo; infiriendo a su siguiente ataque (que podrá ser a distancia)
-                la siguiente propiedad: según el sello:<br/>
+  description: "Elimina el sello activo; infiriendo a su siguiente ataque
+                (que podrá ser a distancia) la siguiente propiedad,
+                según el sello:<br/>
                 Valor: +1 de potencia por cada daño recbido<br/>
-                Justicia: Si el objetivo no muere, recupera el sello invertido<br/>
-                Santidad: Se puede intercambiar el daño que causaría el golpe en sanación de puntos de mente a cualquier aliado."
+                Justicia: Si el objetivo no muere,
+                recupera el sello invertido<br/>
+                Santidad: Se puede intercambiar el daño que causaría
+                el golpe en sanación de puntos de mente a cualquier aliado."
 -
   id:          6
   nivel:       3
   name:        "Escudo divino"
   type:        "única"
-  description: "Anula la siguiente fuente de daño. No se puede usar esta habilidad si hay enemigos visibles."
+  description: "Anula la siguiente fuente de daño.
+                No se puede usar esta habilidad si hay enemigos visibles."
 -
   id:          7
   nivel:       3
@@ -62,54 +67,96 @@
   description: "Cualquier aliado que entre modo locura: autista, puede recuperar mente hasta tus PM actuales."
 -
   id:          8
-  nivel:       4
+  nivel:       3
   name:        "Escudo de la fe"
   type:        "Instinto"
   coste:       "1 plegaria"
   description: "+1 potencia defensiva hasta tu siguiente turno"
+# nivel 4
 -
   id:          9
   nivel:       4
   name:        "Riqueza de espíritu"
   type:        "pasiva"
-  description:
-               "Durante la fase trepidante puedes realizar las tiradas de tesoros
+  description: "Trepidante: puedes realizar las tiradas de tesoros,
                 sin perder la acción de combate; siempre que renuncies al botín
                 (aunque puedes cederlo al grupo)."
 -
   id:          10
+  nivel:       4
+  requisitos:  ["1 sello"]
+  name:        "Legítima defensa"
+  type:        "Reactiva"
+  description: "Recupera 1 sello al sufrir daños en combate singular"
+# nivel 5
+-
+  id:          13
   nivel:       5
   requisitos:  [9]
   name:        "Elegido de Sigmar"
-  type:        "pasiva"
-  description: "Cada vez que por renuncias a un botín en favor del grupo, recuperas 1 plegaria."
+  type:        "Reactiva"
+  description: "+1 plegaria al renunciar a un botín en favor del grupo"
 -
-  id:          11
+  id:          14
   nivel:       5
   requisitos:  [0]
   name:        "Golpe definitivo"
   type:        "única"
-  description: "+1 de potencia en tu siguiente ataque por cada PC de tu objetivo."
+  description: "+1 de potencia en tu siguiente ataque
+                por cada PC de tu objetivo."
+# nivel 6
 -
-  id:          12
+  id:          17
   nivel:       6
-  requisitos:  [10]
+  requisitos:  [13]
   name:        "Encomendarse a Sigmar"
   type:        "reactiva"
-  description: "Cada vez que defiendes con éxito recuperas 1 plegaria"
+  description: "+1 plegaria al defiender con éxito"
 -
-  id:          13
+  id:          18
   nivel:       6
-  requisitos:  [5]
+  requisitos:  [0, 5]
   name:        "Arrojar juramento"
   type:        "activa"
   coste:       "1 plegaria"
-  description: "Tu próximo golpe santificado afecta a las casillas colindantes al impacto"
+  description: "Tu próximo golpe santificado afecta a las casillas
+                colindantes al impacto"
+# nivel 7
 -
-  id:          14
-  nivel:       6
-  requisitos:  [10, 11]
+  id:          19
+  nivel:       7
+  requisitos:  [13, 14]
   name:        "Ira de Sigmar"
   type:        "activa"
   coste:       "1 plegaria"
-  description: "Tu próximo golpe santificado afecta a las casillas colindantes al impacto"
+  description: "Ejecuta golpe definitivo contra todas las miniaturas
+                colindantes a aliados que estén adyacentes a ti"
+# nivel 10 - Habilidades definitivas
+-
+  id:           25
+  nivel:        10
+  name:         "Warhammer"
+  type:         "Definitiva"
+  description:  "Puedes usar águilas imperiales en dados blancos como
+                 daños directos. -1 daño recibido por cada enemigo aturdido."
+-
+  id:           26
+  nivel:        10
+  name:         "Sommerswerd"
+  type:         "Definitiva"
+  description:  "Has retirado la espada del sol de la piedra de Sigmar.
+                 Ataca con 6 dados amarillos + dado de Sigmar. La potencia
+                 es igual a las plegarias disponibles. Duplica el daño
+                 contra no-muertos y demonios. Duplica el efecto de habilidades
+                 de tipo: Golpe. Al sentenciar, puedes inferir los otros 2
+                 sellos en lugar del original activo. +2 detectar sigilo"
+-
+  id:           27
+  nivel:        10
+  requisitos:   [5, 6]
+  name:         "Azote"
+  type:         "Definitiva"
+  description:  "Recupera escudo divino al matar empleando puntos de plegaria.
+                 Cuando estás bajo una bendición, recuperas una plegaria
+                 al sentenciar. Cuando seas sanado, puedes activar un sello
+                 distinto disponible o ejecutar una plegaria gratuitamente."
