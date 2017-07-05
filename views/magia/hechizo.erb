@@ -1,25 +1,16 @@
 <% h = spells.find {|s| s.name == params[:param] } %>
-<header>
-	<h2>Hechizo: <%= h.name %></h2>
-	<%= h.tipo %> de <%= h.elemento %> de nivel <%= h.nivel %>
-</header>
+<h2><%= h.name.capitalize %></h2>
+
 <p>
-	<h3>Efecto</h3>
-	<%= h.efecto %>
-</p>
-<p>
-	<h3>Potencia</h3>
-	<%= h.potencia %>
-</p>
-<p>
-	<h3>Maestría</h3>
-	<%= h.maestría %>
-</p>
-<p>
-	<h3>Diablura</h3>
-	<%= h.diablura %>
-</p>
-<p>
-	<h3>Ardid</h3>
-	<%= h.ardid %>
+	<ul>
+		<li><strong>Efecto:</strong> <%= h.efecto %></li>
+		<li>
+			<strong>Tipo:</strong> <%= h.tipo %>
+			de <%= h.elemento %> de nivel <%= h.nivel %>
+		</li>
+		<li><strong>Potencia</strong>: <%= h.potencia %></li>
+		<li><strong>Maestría</strong>: <%= h.maestría %></li>
+		<li><strong>Diablura</strong>: <%= h.diablura %></li>
+		<li><strong>Ardid</strong>: <%= h.ardid %></li>
+	</ul>
 </p>
