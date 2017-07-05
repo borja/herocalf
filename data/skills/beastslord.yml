@@ -3,11 +3,8 @@
   nivel:        2
   name:         "Atraer a las bestias"
   type:         "Pasiva"
-  description:
-                "Aparece un animal cuando el señor de las bestias realice una búsqueda
-                 en una sala con 1 dado de combate. Esto implica que agotará la posibilidad
-                 de buscar tesoros en esa misma sala por parte de otros jugadores.
-                 Los otros jugadores además tampoco podrán pasar a través de las bestias."
+  description:  "Aparece un animal cuando el señor de las bestias realice una búsqueda en una sala con 1 dado de combate. Esto implica que agotará la posibilidad de buscar tesoros en esa misma sala por parte de otros jugadores.
+ Los otros jugadores además tampoco podrán pasar a través de las bestias."
 -
   id:           1
   nivel:        2
@@ -20,9 +17,7 @@
   nivel:        2
   name:         "Ira poderosa"
   type:         "Pasiva"
-  description:
-                "+1 potencia a todas las miniaturas que golpeen (melee) al mismo objetivo
-                 que el Señor de las Bestias, mientras esté enfurecido."
+  description:  "+1 potencia a todas las miniaturas que golpeen (melee) al mismo objetivo que el Señor de las Bestias, mientras esté enfurecido."
 -
   id:           3
   nivel:        2

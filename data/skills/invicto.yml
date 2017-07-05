@@ -11,19 +11,22 @@
   rangos:       3
   name:         "Corazón de león"
   type:         "reactiva"
-  description:  "-1/rango daño sufrido por golpes físicos si has matado en tu turno."
+  description:  "-1/rango daño sufrido por golpes físicos
+                 si has matado en tu turno."
 -
   id:           2
   nivel:        2
   name:         "Honor de la victoria"
   type:         "reactiva"
-  description:  "+1 PM al salir indemne de todos los ataques (debe haber al menos 1) en el turno del MB."
+  description:  "+1 PM al salir indemne de todos los ataques
+                 (debe haber al menos 1) en el turno del MB."
 -
   id:           3
   nivel:        2
   name:         "Devastador"
   type:         "pasiva"
-  description:  "Cuando el ataque se produce antes que el movimiento, los golpes son aullantes"
+  description:  "Cuando el ataque se produce antes que el movimiento,
+                 los golpes son aullantes"
 -
   id:           4
   nivel:        3
@@ -36,7 +39,8 @@
   requisitos:   [0]
   name:         "Ferocidad"
   type:         "reactiva"
-  description:  "Recupera golpe feroz al matar en combate frontal cuerpo a cuerpo"
+  description:  "Recupera golpe feroz al matar frontalmente
+                 en combate cuerpo a cuerpo"
 -
   id:           6
   nivel:        3
@@ -44,12 +48,14 @@
   requisitos:   [1]
   name:         "Rugido de orden"
   type:         "única"
-  description:  "Todos los aliados de la sala obtienen la bonificación del corazón de león. En rango 2 se activa siempre que se ejecute rugido."
+  description:  "Todos los aliados de la sala obtienen la bonificación
+                 del corazón de león. En rango 2 se activa siempre
+                 que se ejecute rugido."
 -
   id:           7
   nivel:        4
   name:         "Alpha"
   type:         "pasiva"
-  description:  
-                "Solo puede haber un alpha en el grupo.<br/>
-                 Cada vez que el invicto ejecute rugido, podrá lanzar una plegaria como acción gratuita."
+  description:  "Solo puede haber un alpha en el grupo.<br/>
+                 Cada vez que el invicto ejecute rugido,
+                 se podrá lanzar una plegaria como acción gratuita."

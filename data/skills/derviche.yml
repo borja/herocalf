@@ -1,38 +1,40 @@
+# nivel 2
 -
   id:          0
   nivel:       2
   rangos:      3
   name:        "danza de la luna"
-  type:        "activa"
+  type:        "Activa"
   coste:       "6 movimiento - 1/rango"
-  description: "+1 dado de Ataque hasta final del turno."
+  description: "+1 de ataque hasta final del turno."
 -
   id:          1
   nivel:       2
   rangos:      4
   name:        "esquiva"
-  type:        "declarativa"
-  description: "+1 Defensa vs un enemigo declarado hasta tu siguiente turno."
+  type:        "Declarativa"
+  description: "+1/rango defensa frente a un enemigo, hasta tu siguiente turno"
 -
   id:          2
   nivel:       2
   rangos:      3
   name:        "dos armas"
-  type:        "pasiva"
-  description: "Permite llevar un arma en la mano torpe de tamaño igual o inferior al rango"
+  type:        "Pasiva"
+  description: "Permite esgrimir en la mano torpe, un arma de tamaño: 1/rango"
 -
   id:          3
   nivel:       2
   rangos:      3
   name:        "baile de combate"
-  type:        "pasiva"
+  type:        "Pasiva"
   description: "Permite atacar desde diferentes ángulos según el rango (diagonal, flancos, y diagonales traseras)"
 -
   id:          4
   nivel:       3
   name:        "agilidad felina"
-  type:        "pasiva"
+  type:        "Pasiva"
   description: "Los enemigos no empujan al derviche en casillas colindantes a paredes"
+# nivel 3
 -
   id:          5
   nivel:       3
@@ -45,7 +47,7 @@
   rangos:      3
   name:        "paso de combate"
   description: "Permite dar 1 paso extra"
-  type:        "activa"
+  type:        "Activa"
   coste:       "3 movimiento"
 -
   id:          7
@@ -60,7 +62,7 @@
   rangos:      2
   requisitos:  [2, 3]
   name:        "Hoja relampagueante"
-  type:        "pasiva"
+  type:        "Pasiva"
   description: "+1 de potencia/rango al atacar a múltiples enemigos en el mismo ángulo."
 -
   id:          9
@@ -87,13 +89,40 @@
   id:          12
   nivel:       6
   name:        "Golpe de muñeca"
-  type:        "activa"
+  type:        "Activa"
   coste:       "-1 potencia hasta final de turno"
   description: "+1 fuerza en tu siguiente ataque"
 -
   id:          13
   nivel:       7
   name:        "Filo súbito"
-  type:        "activa"
+  type:        "Activa"
   coste:       ""
   description: "Durante la fase trepidante"
+# nivel 10 - Habilidades definitivas
+-
+  id:           25
+  nivel:        10
+  requisitos:   [2]
+  name:         "Flor de lis"
+  type:         "Definitiva"
+  description:  "3 Armas"
+-
+  id:           26
+  nivel:        10
+  requisitos:   [7]
+  name:         "El tango de la muerte"
+  type:         "Definitiva"
+  description:  "Elige un compañero voluntario. Ambos bailáis el tango.
+                 Tira un dado. Si sale escudo negro, reduce a -1 sus PC.
+                 Si no, ignora el primer coste de movimiento de todas
+                 las habilidades activas de este turno. Si el compañero
+                 es compatible, tendréis descendencia al final del reto."
+-
+  id:           27
+  nivel:        10
+  name:         "Fiebre de la noche"
+  type:         "Definitiva"
+  description:  "Al inicio del turno siguiente de ejecutar danza de la luna,
+                 podrás atacar (daño mental) a todas las miniaturas adyacentes
+                 con tu arma principal. +1 potencia si es sábado"

@@ -1,80 +1,85 @@
+# nivel 2
 -
-  id:           0 
-  name:         "represalias" 
-  description:  "Devuelve como ataque el exceso de defensa" 
-  type:         "reactiva" 
-  nivel:        2 
+  id:           0
+  nivel:        2
+  name:         "represalias"
+  type:         "reactiva"
+  description:  "Devuelve como ataque el exceso de defensa"
 -
-  id:           1 
-  name:         "cargar" 
-  description:  "Invirtiendo 3 de movimiento como mínimo  en línea recta  suma +1 potencia/movimiento invertido en el ataque" 
-  type:         "declarativa" 
-  nivel:        2 
+  id:           1
+  nivel:        2
+  name:         "cargar"
+  type:         "declarativa"
+  description:  "Invirtiendo 3 de movimiento como mínimo y en línea recta:
+                 +1 potencia en tu siguiente ataque por movimiento recorrido"
+# nivel 3
 -
-  id:           2 
-  name:         "competencia con escudo" 
-  description:  "+1 potencia defensiva del escudo" 
-  type:         "pasiva" 
-  nivel:        3 
+  id:           2
+  nivel:        3
+  name:         "competencia con escudo"
+  description:  "+1 potencia defensiva del escudo"
+  type:         "pasiva"
 -
-  id:           3 
-  name:         "senda de la pradera" 
-  description:  "Permite realizar la secuencia: ataque-movimiento-ataque (sin realizar giros en el movimiento)" 
-  type:         "pasiva" 
-  nivel:        3 
+  id:           3
+  nivel:        3
+  name:         "senda de la pradera"
+  type:         "pasiva"
+  description:  "Permite realizar la secuencia: ataque-movimiento-ataque
+                 (sin realizar giros en el movimiento)"
 -
-  id:           4 
-  name:         "golpe al corazón" 
-  description:  "El hoplita golpea con la lanza obteniendo en ese ataque +1 fuerza y +1 potencia" 
-  type:         "única" 
-  nivel:        3 
+  id:           4
+  nivel:        3
+  name:         "golpe al corazón"
+  type:         "única"
+  description:  "+1 fuerza y +1 potencia en tu siguiente golpe con la lanza"
 -
-  id:           5 
-  name:         "empalar" 
-  description:  "El daño excesivo realizado por la lanza a un enemigo  lo atraviesa y lo causa en la siguiente casilla frontal" 
-  type:         "pasiva" 
-  nivel:        4 
-  requisitos:   [4] 
+  id:           5
+  nivel:        4
+  requisitos:   [4]
+  name:         "empalar"
+  type:         "pasiva"
+  description:  "El daño excesivo realizado por la lanza a un enemigo,
+                 lo atraviesa y lo causa en la siguiente casilla frontal"
 -
-  id:           6 
-  name:         "empujar" 
-  description:  "+1 empujar" 
-  type:         "pasiva" 
-  rangos:       2 
-  nivel:        3 
+  id:           6
+  nivel:        3
+  rangos:       2
+  name:         "empujar"
+  type:         "pasiva"
+  description:  "+1 empujar"
 -
-  id:           7 
-  name:         "arrojar escudo" 
-  description:  "El escudo se puede lanzar a un enemigo como un arma. Es recuperable" 
-  type:         "pasiva" 
-  nivel:        4 
-  requisitos:   [2] 
+  id:           7
+  nivel:        4
+  requisitos:   [2]
+  name:         "arrojar escudo"
+  type:         "pasiva"
+  description:  "Permite arrojar el escudo como un arma arrojadiza"
 -
-  id:           8 
-  name:         "experto en asta" 
-  description:  "+1 potencia en el ataque al usar lanzas" 
-  type:         "pasiva" 
-  nivel:        4 
-  rangos:       3 
+  id:           8
+  nivel:        4
+  rangos:       3
+  name:         "experto en asta"
+  type:         "pasiva"
+  description:  "+1 potencia en el ataque al usar lanzas"
 -
-  id:           9 
-  name:         "pálpito de la tundra" 
-  description:  "Al matar usando Golpe al corazón  el hoplita recupera un Cargar" 
-  type:         "reactiva" 
-  nivel:        5 
-  requisitos:   [1,4] 
+  id:           9
+  nivel:        5
+  requisitos:   [1,4]
+  name:         "pálpito de la tundra"
+  type:         "reactiva"
+  description:  "recupera cargar al matar usando Golpe al corazón"
 -
-  id:           10 
-  name:         "baluarte" 
-  description:  "Este turno todos los dados de defensa son azules" 
-  type:         "declarativa" 
-  coste:        "movimiento" 
-  requisitos:   [2] 
-  nivel:        5 
+  id:           10
+  nivel:        5
+  requisitos:   [2]
+  name:         "baluarte"
+  type:         "declarativa"
+  coste:        "movimiento"
+  description:  "Este turno todos los dados de defensa son azules"
 -
-  id:           11 
-  name:         "baño de sangre" 
-  description:  "Al matar con una espada  el hoplita recupera Golpe al corazón" 
-  type:         "reactiva" 
-  requisitos:   [4] 
+  id:           11
   nivel:        7 
+  requisitos:   [4]
+  name:         "baño de sangre"
+  description:  "Recupera Golpe al corazón al matar con espada"
+  type:         "reactiva"
