@@ -6,7 +6,7 @@
   tipo:     "bendición - Aura"
   efecto:   "+1 PC por cada enemigo vivo que mates"
   potencia: "+1 PC recuperado (la víctima debe tener PC para ser drenados)"
-  maestría: ""
+  maestría: "+1 duración"
   diablura: "2 PC: Recupera vampirismo."
   ardid:    "2PC: El aliado objetivo es bendecido con vampirismo (-1 potencia)"
 -
@@ -15,80 +15,130 @@
   duracion: 0
   name:     "coagular"
   tipo:     "Sanación"
-  efecto:   "El objetivo recupera todos los PC perdidos en una única herida."
-  diablura: "Elimina la penalización de sangrado del objetivo."
+  efecto:   "El objetivo recupera todos los PC perdidos en la última herida"
   potencia: "+1 PC"
+  maestría: "+1 objetivo"
+  diablura: "Elimina estados de sangrado del objetivo."
+  ardid:    "Recupera coagular si la sanación no excede tus PC actuales"
 -
   id:       2
   alcance:  1
   duracion: "∞"
   name:     "pacto de sangre"
-  tipo:     "Superchería"
-  efecto:
-            "El lanzador del hechizo recibe dividido a la minusmitad,
-            el próximo daño que fuera a recibir el objetivo"
+  tipo:     "Bendición - Dádiva"
+  efecto:   "El lanzador recibe dividido a la minusmitad,
+             el próximo daño que fuera a recibir el objetivo"
+  potencia: "+1 o -1 al daño recibido (a elegir)"
+  maestría: "+1 fuente de daño redireccionada"
   diablura: "El hechizo puede funcionar en sentido contrario."
-  potencia: "+1 ó -1 al daño recibido (a elegir)"
+  ardid:    "Puedes utilizar ardid al hechizar al objetivo con magia de sangre"
 -
   id:       3
   alcance:  "V"
   duracion: "E"
   name:     "ansia de sangre"
   tipo:     "Bendición"
-  efecto:   "El objetivo gana +1 ATQ."
+  efecto:   "+1 dado de ataque"
+  potencia: "+1 fuerza al dado de bonificación"
+  maestría: "+1 potencia al dado por cada enemigo visible"
   diablura: "El objetivo se considera furioso."
   ardid:    "El objetivo obtiene: 1PM: +1 turno de duración"
-  potencia: "+1 fuerza al dado de bonificación"
 -
   id:       4
   alcance:  "V"
-  duracion: "E"
+  duracion: "*"
   name:     "caldero de sangre"
   tipo:     "Superchería"
-  efecto:
-            "Cada vez que muere una criatura viva añade 1 PC al caldero.
-             Un aliado puede renunciando a una acción beberse todo el caldero.
-             El hechizo concluye al llegar a 6 PC al ser bebido
+  efecto:   "Cada vez que muere una criatura viva añade 1 PC al caldero.
+             Un aliado puede renunciando a una acción, beberse todo el caldero.
+             (*) El hechizo concluye al llegar a 6 PC, al ser bebido
              o si el caldero no es alimentado en 1 turno."
-  diablura: "Su portador da miedo +1 miedo por cada punto del caldero"
   potencia: "+1 turno sin ser alimentado"
+  maestría: "+1 PC/víctima"
+  diablura: "Causas +1 miedo por cada punto del caldero"
+  ardid:    "Si tú bebes del caldero, obtienes +1 potencia sangre (duración: D)"
 -
   id:       5
-  name:     "anemia"
   alcance:  "V"
   duracion: 0
+  name:     "anemia"
   tipo:     "Maldición"
-  efecto:   "El objetivo recibe un daño defendible igual a tus heridas."
-  diablura: "Puedes perder tantos PC como heridas para recuperar anemia."
-  ardid:    "Si el objetivo no muere en estado anémico, recupera anemia."
+  efecto:   "Inflinge X daños defendibles, igual a tus heridas"
   potencia: "+1 duración"
+  maestría: "+1 objetivo"
+  diablura: "X PC: Recuperas anemia"
+  ardid:    "Si el objetivo no muere en estado anémico, recupera anemia."
+# Nivel 2
 -
   id:       6
+  alcance:  0
+  duracion: "A"
   name:     "tablilla de sangre"
-  efecto:   "Una tablilla de sangre goteante rodea al lanzador. Añade un contador de sangre cada vez que se reciba daño. Los hechizos de sangre aumentan su potencia por cada contador. Dura hasta recibir daño mental."
+  tipo:     "Bendición - Glifo"
+  efecto:   "Una tablilla de sangre goteante rodea al lanzador.
+             +1 contador de sangre cada vez que se reciba daño.
+             -1 contador de sangre al hechizar magia de sangre
+             +1 potencia en hechizos de sangre por cada contador
+             Cesa cuando el lanzador realiza un ataque no-mágico"
   potencia: "+1 contador incial"
+  maestría: "+1 contador por fuente de daño"
+  diablura: "Puedes ejecutar la tablilla como instinto"
+  ardid:    "No restas contadores al hechizar magia de sangre"
 -
   id:       7
+  alcance:  "V"
+  duracion: 0
   name:     "explosión sanguinolenta"
-  efecto:   "El cadáver objetivo lanza <anemia> a las casillas colindantes."
+  tipo:     "Conjuro - Área"
+  efecto:   "El cadáver objetivo lanza: anemia (a las casillas colindantes)"
   potencia: "+1 objetivo cadáver"
+  maestría: "+1 alcance desde el cadáver"
+  diablura: "Funciona con no-muertos activos. (Se consideran cadáveres)"
+  ardid:    "Los aliados reciben ansia de sangre en lugar de anemia"
 -
   id:       8
+  alcance:  "V"
+  duracion: "D"
   name:     "sanguinis"
-  efecto:   "Aura. Obtienes +1 fuerza por cada aliado herido en tu línea de visión hasta recibir un daño."
-  potencia: "-1 al considerar el daño recibido que detiene el hechizo"
+  tipo:     "Bendición - Aura"
+  efecto:   "+1 fuerza por cada aliado herido"
+  potencia: "+1 duración"
+  maestría: "+1 fuerza/aliado"
+  diablura: "Incluye a los enemigos, si estás bajo el efecto de vampirismo"
+  ardid:    "Te sanas el exceso de daño al matar"
 -
   id:       9
+  alcance:  "PC actuales"
+  duracion: 0
   name:     "hemorragia"
+  tipo:     "Maldición"
   efecto:   "El objetivo obtiene 4 efectos de sangrado."
   potencia: "+1 efecto de sangrado"
+  maestría: "+1 fuerza/efecto de sangrado"
+  diablura: "La inmunidad al sangrado, causa daño mental"
+  ardid:    "2PC: Si estás bajo el efecto de vampirismo:
+             controlas a las víctimas 1 turno adicional"
 -
   id:       10
+  alcance:  0
+  duracion: "H"
   name:     "rosae"
-  efecto:   "Dura mientras hayas provocado heridas durante tu turno. Todos los aliados heridos recuperan 1PC."
-  potencia: "Duración +1"
+  tipo:     "Bendición - Aura"
+  efecto:   "+1PC a todos los aliados del tablero (excepto tú).
+             Dura mientras hayas provocado heridas durante tu turno"
+  potencia: "+1 Duración"
+  maestría: "+1 sanación"
+  diablura: "Los aliados pueden renunciar a la sanación en tu favor"
+  ardid:    "Bajo el efecto de vampirismo: puedes elegir sanar mente"
 -
   id:       11
+  alcance:  0
+  duracion: "E"
   name:     "necrullea"
-  efecto:   "Causas miedo verdadero 6+. Además tus ataques desangran y no puedes ser objetivos de hechizos de sangre o efectos de sangrado."
+  efecto:   "Causas miedo verdadero 6+. Además tus ataques desangran y
+             no puedes ser objetivos de hechizos o efectos de sangrado"
   potencia: "+1 fuerza del sangrado"
+  maestría: "+1 causar miedo"
+  diablura: "Hechizar a los enemigos que huyen no consume el hechizo"
+  ardid:    "Puedes ejecutar explosión sanguinolenta en los enemigos
+             muertos por sangrado sin consumir hechizo ni acción"
