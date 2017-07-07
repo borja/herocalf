@@ -31,14 +31,14 @@
   duracion: "∞"
   name:     "Espejo mágico"
   tipo:     "superchería"
-  efecto:
-            "1 carga de hielo: Mientras no haya enemigos visibles,
+  efecto:   "1 carga de hielo: Mientras no haya enemigos visibles,
              puedes colocar un espejo de hielo en un muro vertical.
              En cualquier momento puedes gastar una acción,
              para que al atravesar cualquier puerta,
              salgas por el espejo en su lugar. (Cesando el efecto)"
-  potencia: "+1 1 carga de hielo, para colocar en el mapa.
+  potencia: "+1 carga de hielo, para colocar en el mapa.
              Podrás elegir por cuál cruzar."
+  maestría: "Coloca +1 espejo por cada carga"
   diablura: "Podrás ejecutar hechizos desde el espejo, una vez cruzado,
              cuyo alcance será la puerta."
   ardid:    "2PM: El efecto no cesa una vez atravesado el espejo."
@@ -89,9 +89,12 @@
   duracion: 0
   name:     "Orbe helado"
   tipo:     "Conjuro - Bola"
-  efecto:   "2 dados de combate de daño de frío directo a lo largo de su recorrido. Al matar aumenta la fuerza para la siguiente casilla"
-  diablura: "Recuperas X(PM) por cada enemigo congelado. X = la potencia del hechizo"
+  efecto:   "2 dados de daño de frío a lo largo de su recorrido.
+             Al matar aumenta la fuerza para la siguiente casilla"
   potencia: "+1 dado de frío"
+  maestría: "+1 fuerza de daño"
+  diablura: "Recuperas X(PM) por cada enemigo congelado.
+             X = la potencia del hechizo"
   ardid:    "Los enemigos congelados pierden su resistencia a la escarcha"
 - 
   id:       7
@@ -99,9 +102,11 @@
   duracion: 0
   name:     "Ira de escarcha"
   tipo:     "Maldición"
-  efecto:   "Causa 1 dado de frío de ataque directo a un enemigo del tablero. Si muere, inmediatamente lanzas una copia de Ira de escarcha."
-  diablura: "Recupera el hechizo al causar daño con él."
+  efecto:   "1 dado de daño por frío a un enemigo del tablero.
+             Si muere, inmediatamente lanzas una copia de Ira de escarcha."
   potencia: "+1 fuerza"
+  maestría: "+1 duración"
+  diablura: "Recupera el hechizo al causar daño con él."
   ardid:    "Odias al objetivo"
 -
   id:       8
@@ -109,10 +114,13 @@
   duracion: "∞"
   name:     "Muro de hielo"
   tipo:     "Muro"
-  efecto:   "1-5 casillas (a elección del lanzador) lineales desocupadas se convertiran en bloques de hielo."
-  diablura: "1PM: El muro persiste a pesar de ser destruido"
+  efecto:   "1-5 casillas (a elección del lanzador) lineales desocupadas
+             se convertiran en bloques de hielo. (PC: 1, defensa: 4 azules)"
   potencia: "+1 grosor del muro."
-  ardid:    "Al romperse una casilla del muro, se lanza gratuitamente: Helada (con diablura)"
+  maestría: "+2 PC, + 2 azules de defensa extra"
+  diablura: "1PM: El muro persiste a pesar de ser destruido"
+  ardid:    "Al romperse 1 casilla del muro, se lanza gratuitamente:
+             Helada (con diablura) desde la casilla"
 -
   id:       9
   alcance:  0
