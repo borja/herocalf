@@ -1158,12 +1158,15 @@
   ardid:    "1d6 (elegibles entre PC y PM): Puedes ejecutarlo como instinto"
 -
   id:       92
+  alcance:  "V"
+  duracion: 0
   name:     "reposición"
   tipo:     "Sanación"
   efecto:   "El objetivo recupera sus PM y PC totales.<br/>
-             3 PM del objetivo: El lanzador recupera este hechizo.
+             3PM del objetivo: El lanzador recupera este hechizo.
              No se puede usar 2 veces sobre la misma miniatura"
   potencia: "+1 repetición posible sobre el mismo objetivo."
+  maestría: "+1 objetivo. (Todos deben pagar el coste para recuperar)"
   diablura: "El objetivo pierde una maldición"
   ardid:    "El objetivo pierde todos los efectos perjudiciales"
 -
@@ -1173,9 +1176,10 @@
   name:     "globo de agua"
   tipo:     "Bendición - Glifo"
   efecto:   "Seguirá al mago sin ocupar espacio. +1 PC a un aliado adyacente.
-             Desaparecerá cuando el mago pierda 2PM simultáneos.
+             Cesará cuando el mago reduzca 2PM o más, en el mismo turno.
              1PM: a partir de ahora, sana PM en lugar de PC, o viceversa."
   potencia: "+1 sanación"
+  maestría: "+1 aliado y +1 alcance de sanación"
   diablura: "Explotar el globo: lanzaa aleatoriamente un hechizo de agua
              de nivel 1 a ti y todas las miniaturas adyacentes."
   ardid:    "Podrá absorber la primera maldición que recibas, desapareciendo."
@@ -1194,16 +1198,15 @@
 -
   id:       95
   alcance:  "V"
-  duracion: "D / 1PM"
+  duracion: "D y 1PM"
   name:     "bruma mística"
-  tipo:     "Conjuro"
+  tipo:     "Conjuro - Sala"
   efecto:   "Solo se podrá combatir cuerpo a cuerpo y las miniaturas
-             defenderán con la mitad redondeada hacia arriba de su defensa.
-             Cualquier magia conjurada deberá superar una tirada de mente
-             para que tenga éxito. El efecto dura mientras el mago
-             invierta 1PM al principio de su turno y no reciba daño."
-  potencia: "+1 al daño necesario para que cese el efecto.
-             +1 PM para el lanzador."
+             defenderán con la plusmitad de su defensa.
+             Cualquier magia deberá superar una TS de mente.
+             El efecto dura mientras el mago invierta 1PM al inicio de su turno              y no reciba daño."
+  potencia: "+1 al duración (daño)"
+  maestría: "+1 aliado inmune a la bruma"
   diablura: "1PM: 1 proyectil de un aliado, ignorará la bruma."
-  ardid:    "Las magias de efecto conjuradas previas al hechizo,
+  ardid:    "Las magias de efecto previas al hechizo,
              afectarán solo a los objetivos elegidos por el conjurador"
