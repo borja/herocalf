@@ -127,6 +127,7 @@
              Todos los enemigos que no resistan vs Tenebro,
              serán provocados por el símbolo, y tendrán que atacarlo."
   potencia: "+1 penetración mágica"
+  maestría: "+1 glifo"
   diablura: "Puedes usarlo como Bendición (si el objetivo acepta)"
   ardid:    "Puedes usarlo como Maldición (aunque el objetivo decline)"
 -
