@@ -7,6 +7,10 @@
   template:
     main: "error"
 -
+  ruta:  "prueba"
+  template:
+    main: "prueba"
+-
   ruta:  "hero"
   title: "view"
   template:
