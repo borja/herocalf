@@ -3,26 +3,41 @@
 <% total = (dado1 + dado2)%>
 <% resultado = tesoro(sigmar, dado1, dado2)%>
 
-<table>
-	<thead>
-		<tr><th colspan=2>Tirada</th>
-			<th colspan=2>Interpretación</th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr><td width="10%"><a href="/tesoro">
-				<img style="vertical-align:middle" src="/images/refresh.png" alt="reload", id='icon2'/></a>
-			</td>
-			<td width="15%"><h1><%= total.to_s %><% img_path  = "../images/tesoro/#{sigmar}.png"%>
-				<img style="vertical-align:middle" src=<%=img_path%> alt=<%= sigmar %>, id='icon2' /></h1>
-			<td><%= resultado %></td>
-			<td><%= erb :"manuales/tesoro/#{total}", locals: { 
-					dado1:     dado1 , 
-					dado2:     dado2, 
-					sigmar:    sigmar, 
-					resultado: resultado 
-				} %>
-			</td>
-		</tr>
-	</tbody>
-</table>
+<div class="table-responsive">
+	<table class='table'>
+		<thead>
+			<tr>
+				<th class="text-center">Repetir</th>
+				<th class="text-center">Tirada</th>
+				<th class="text-center">Descripción</th>
+				<th class="text-center">Icono</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<a href="/tesoro">
+						<span class="fa-stack fa-lg">
+						  <i class="fa fa-cube fa-stack-1x fa-pulse" aria-hidden="true"></i>
+						  <i class="fa fa-repeat fa-stack-2x fa-spin" aria-hidden="true"></i>
+						</span>
+					</a>
+				</td>
+				<td>
+					<%= total %><% img_path  = "/images/tesoro/#{sigmar}.png" %>
+					<img style="vertical-align:middle" src="<%=img_path%>"
+							 alt="<%= sigmar %>" id='icon' />
+				</td>
+				<td><%= resultado %></td>
+				<td>
+					<%= erb :"manuales/tesoro/#{total}", locals: { 
+						dado1:     dado1,
+						dado2:     dado2,
+						sigmar:    sigmar,
+						resultado: resultado
+					} %>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
