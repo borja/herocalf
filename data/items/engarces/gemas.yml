@@ -1,3 +1,4 @@
+# Gemas comunes (nivel 1)
 -
   id: 0
   name: "halita"
@@ -17,7 +18,7 @@
     cintura:  ""
     muñecas:  "" 
     pies:     "(fase de movimiento) 1/reto: +2 movimiento"
-    abalorio: ""
+    abalorio: "Puedes repetir el d12 en la primera maldición del tesoro"
 -
   id: 1
   name: "antracita"
@@ -35,7 +36,7 @@
     cintura:  ""
     muñecas:  "" 
     pies:     "1PC: -1 al empuje de los no-muertos, hasta el final de turno."
-    abalorio: ""
+    abalorio: "1/Reto: Aturde al no-muerto objetivo (solo tropas básicas)"
 -
   id: 2
   name: "pirita"
@@ -56,7 +57,7 @@
     muñecas:  "" 
     pies:     "1/reto: Si has encontrado ¡Oro! en la búsqueda de tesoros,
                dispones de tu fase de movimiento"
-    abalorio: ""
+    abalorio: "1/reto: Repite el d12 al obtener ¡Oro! en el tesoro"
 -
   id: 3
   name: "serpentina"
@@ -76,7 +77,7 @@
     cintura:  ""
     muñecas:  ""
     pies:     "+2 movimiento mientras estés envenenado"
-    abalorio: ""
+    abalorio: "1/reto: Repite una tirada de veneno"
 -
   id: 4
   name: "ojo de tigre"
@@ -94,7 +95,7 @@
     cintura:  ""
     muñecas:  ""
     pies:     "1/reto: +90º de giro en cualquier momento."
-    abalorio: ""
+    abalorio: "1/reto: Puedes repetir una tirada de Buscar"
 -
   id: 5
   name: "hematites"
@@ -115,7 +116,7 @@
     muñecas:  ""
     pies:     "1/reto: +1 movimiento por cada hechizo lanzado en S/P.
                (Solo puede usarse durante la fase de movimiento)"
-    abalorio: ""
+    abalorio: "1/reto: Puedes pedirle al MB repetir un dato olvidado"
 -
   id: 6
   name: "piedra pómez"
@@ -134,7 +135,7 @@
     cintura:  ""
     muñecas:  ""
     pies:     "1/reto: +1 saltar fosos. Si tienes éxito, 1PM: se recupera"
-    abalorio: ""
+    abalorio: "1/reto: Puedes repetir una tirada de saltar foso"
 -
   id: 7
   name: "cuarzo"
@@ -156,8 +157,8 @@
     muñecas:  ""
     pies:     "+3 PC ó 2PM (a elegir) al cruzar por primera vez
                una puerta secreta."
-    abalorio: ""
-  ## Gemas Infrecuentes (nivel 2)
+    abalorio: "1/reto: Repite una tirada de resistencia mágica"
+# Gemas Infrecuentes (nivel 2)
 -
   id: 8
   name: "almandino"
@@ -182,7 +183,7 @@
     cintura:  ""
     muñecas:  ""
     pies:     "-1 al empuje vs bestias"
-    abalorio: ""
+    abalorio: "1/reto: Repite una tirada de sangrado (ofensiva o defensiva)"
 -
   id: 9
   name: "heliotropo"
@@ -208,14 +209,15 @@
     cintura:  ""
     muñecas:  ""
     pies:     "-1 al empuje vs elementales"
-    abalorio: ""
+    abalorio: "1/reto: Redirige 1 hechizo (maldición) a 1 miniatura colindante"
 -
   id: 10
   name: "turquesa"
   fits:
     cabeza:   ""
     cadena:   ""
-    hombros:  "+1 galardón al resistir vs Psiónica. Activa, 3G: +5 vs Psiónica hasta final del turno."
+    hombros:  "+1 galardón al resistir vs Psiónica.
+               Activa, 3G: +5 vs Psiónica hasta final del turno."
     espalda:  ""
     pecho:    "+1 vs Psiónica"
     aro:      "1/reto: El aliado objetivo recupera el hechizo de agua: dormir"
@@ -228,9 +230,10 @@
     escudo:   "Durante la niebla: -2 a todo el daño mental que sufras."
     cintura:  ""
     muñecas:  ""
-    manos:    "1PM, acción de ataque: congelas una puerta durante 2 turnos. (Solo puede ser abierta con magia)"
+    manos:    "1PM, acción de ataque: congelas una puerta durante 2 turnos.
+              (Solo puede ser abierta con magia)"
     pies:     "-1 al empuje vs caóticos"
-    abalorio: ""
+    abalorio: "1/reto: Elimina un efecto de veneno o aturdimiento en ti"
 -
   id: 11
   name: "lapislázuli"
@@ -240,7 +243,8 @@
     espalda:  ""
     pecho:    "+1 vs Escarcha"
     aro:      "1/reto: Añade un dado de frío a tu próximo ataque/hechizo"
-    arma:     "Añade un dado de escarcha tras ser objetivo de una bendición o efecto de sanación."
+    arma:     "Añade un dado de escarcha tras ser objetivo de
+               una bendición o efecto de sanación."
     orbe:     "Imbuye el orbe con magia de agua:
                <li>Trance calmado no provoca pérdida de turno</li>
                <li>1PM: Puedes atacar a distancia con +1 dado azul</li>
@@ -249,12 +253,13 @@
     escudo:   "+1 dado de defensa azul vs magias y efectos de agua y escarcha."
     cintura:  ""
     muñecas:  ""
-    manos:    "1PM, acción de ataque: Un aliado que haya defendido con éxito el turno anterior, recupera 1PM."
+    manos:    "1PM, acción de ataque: Un aliado que haya
+               defendido con éxito el turno anterior, recupera 1PM."
     hombros:  "+1 galardón al hechizar agua en la fase trepidante.<br/>
-              Activa, 3G: Lanzas un hechizo aleatorio de agua de nivel 1.
-              (Se puede usar durante la fase trepidante)"
+               Activa, 3G: Lanzas un hechizo aleatorio de agua de nivel 1.
+               (Se puede usar durante la fase trepidante)"
     pies:     "-1 al empuje vs humanoides"
-    abalorio: ""
+    abalorio: "1/reto: +2 dados escarcha en tu siguiente ataque sin armas"
 -
   id: 12
   name: "espinela"
@@ -278,7 +283,7 @@
     hombros:  "+1 galardón al resistir vs Calor.
                Activa, 3G: +5 vs Calor hasta final del turno."
     pies:     "-1 al empuje vs demonios"
-    abalorio: ""
+    abalorio: "1/reto: Recuperas 1PC si solo tienes 1 daño"
 -
   id: 13
   name: "hessonita"
@@ -303,7 +308,7 @@
     hombros:  "+1 galardón al resistir vs Escarcha.
                Activa, 3G: +5 vs Escarcha hasta final del turno."
     pies:     "-1 al empuje vs constructos"
-    abalorio: ""
+    abalorio: "1/reto: Puedes realizar una tirada de tesoros adicional"
 -
   id: 14
   name: "malaquita"
@@ -326,9 +331,10 @@
                trampa venenosa de tipo área en la sala/pasillo."
     cintura:  ""
     muñecas:  ""
-    hombros:  "+1 galardón al lanzar el hechizo: Cura Corporal. Activa, 3G: +5 vs Peste hasta final del turno."
+    hombros:  "+1 galardón al lanzar el hechizo: Cura Corporal.
+               Activa, 3G: +5 vs Peste hasta final del turno."
     pies:     "-1 al empuje vs pieles-verdes"
-    abalorio: ""
+    abalorio: "1/reto: Tu próximo veneno es mortal (solo contra tropas básicas)"
 -
   id: 15
   name: "obsidiana"
@@ -352,44 +358,62 @@
     hombros:  "+1 galardón al resistir vs Tenebro.
                Activa, 3G: +5 vs Tenebro hasta final del turno."
     pies:     "-1 al empuje vs no-muertos"
-    abalorio: ""
-## Gemas Valiosas (nivel 3)
+    abalorio: "1/reto: Recupera el hechizo pesadillas"
+# Gemas Valiosas (nivel 3)
 -
   id: 16
   name: "jade"
   fits:
     cabeza:   "1/reto: 1 demonio atacado deberá defender con defensa verdadera."
-    cadena:  "+1 magia de tierra de nivel 1 a elegir al inicio del reto."
+    cadena:   "+1 magia de tierra de nivel 1 a elegir al inicio del reto."
     espalda:  ""
     pecho:    "+2 vs Peste"
-    aro:      "1/reto: El piel-verde objetivo debe resistirse vs Psiónica: Puedes gobernarlo hasta que sufra un daño."
+    aro:      "1/reto: El piel-verde objetivo debe resistirse vs Psiónica:
+               Puedes gobernarlo hasta que sufra un daño."
     arma:     "Sustituye un dado de ataque por uno de veneno."
-    orbe:     ""
+    orbe:     "Imbuye el orbe con magia de tierra:
+               <li>Tras ejecutar hecatombe: -1 daño recibido (1 turno)</li>
+               <li>2PM: Puedes ejecutar Escudo torreón en el lado del orbe</li>
+               <li>1 aliado al inicio del reto: Cura Corporal, sin alcance</li>
+               <li>1/reto, acción: Lanza 1 hechizo de tierra de nivel 2</li>"
     escudo:   "+1 PC al defender con éxito un ataque por el flanco del escudo"
-    manos:    "1PM, acción de movimiento: Una nube venenosa de +1 casilla, permanece en tu casilla inicial."
-    hombros:  "+1 galardón al sanar completamente a un aliado. Activa, 3G: Elimina un efecto de Peste de un aliado (no puedes ser tú mismo)"
+    manos:    "1PM, acción de movimiento: Una nube venenosa de +1 casilla,
+               permanece en tu casilla inicial."
+    hombros:  "+1 galardón al sanar completamente a un aliado.
+               Activa, 3G: Elimina un efecto de Peste de un aliado
+               (no puedes ser tú mismo)"
     cintura:  ""
-    muñecas:  "+1 opresión al ser atacado por pieles verdes. Activa, 3o.: +1 dado verde a tu siguiente tirada de defensa (instinto)"
-    pies:     "+1 movimiento bajo los ejectos de cualquier bendición/aura de tierra."
+    muñecas:  "+1 opresión al ser atacado por pieles verdes.
+               Activa, 3o.: +1 dado verde a tu siguiente
+               tirada de defensa (instinto)"
+    pies:     "+1 movimiento bajo los ejectos de cualquier
+               bendición/aura de tierra."
     abalorio: ""
 -
   id: 17
   name: "aguamarina"
   fits:
     cabeza:   "+1 PM si tu puntuación de cuerpo es superior."
-    cadena:  "+1 magia de agua de nivel 1 a elegir al inicio del reto."
+    cadena:   "+1 magia de agua de nivel 1 a elegir al inicio del reto."
     espalda:  ""
     pecho:    "+2 vs Escarcha"
     aro:      "1/reto: Tú y tus aliados en S/P recuperaáis 1PM."
     arma:     "Si el arma hiere al enemigo, lo congelará."
-    orbe:     ""
+    orbe:     "Imbuye el orbe con magia de agua:
+               <li>Puedes arrojar el orbe y ejecutar cono de ácido así</li>
+               <li>2PM: Puedes ejecutar Contrarrestar</li>
+               <li>Puedes teleportarte a la sala tras usar Tsunami</li>
+               <li>1/reto, acción: Lanza 1 hechizo de agua de nivel 2</li>"
     escudo:   "+1 PM al defender con éxito un ataque por el flanco del escudo"
     manos:    "1PM: Hasta el final de turno, si empuñas un carámbano,
                añade un dado de frío al ataque."
-    hombros:  "+1 galardón al matar con hechizos/efectos de escarcha/agua. Activa, 3G: Ignora tu siguiente herida mental"
+    hombros:  "+1 galardón al matar con hechizos/efectos de escarcha/agua.
+               Activa, 3G: Ignora tu siguiente herida mental"
     cintura:  ""
-    muñecas:  "+1 opresión al fallar el hechizo: Dormir. Activa, 3o.: Recupera un hechizo aleatorio de agua (de nivel 1)"
-    pies:     "+1 movimiento bajo los ejectos de cualquier bendición/aura de agua."
+    muñecas:  "+1 opresión al fallar el hechizo: Dormir.
+               Activa, 3o.: Recupera un hechizo aleatorio de agua (de nivel 1)"
+    pies:     "+1 movimiento bajo los ejectos de cualquier
+               bendición/aura de agua."
     abalorio: ""
 -
   id: 18
@@ -397,13 +421,17 @@
   fits:
     cabeza:   "1/reto: Lanzará Tempestad con potencia igual al número
               de apariciones de: ¡Monstruo Errante!."
-    cadena:  "+1 magia de aire de nivel 1 a elegir al inicio del reto."
+    cadena:   "+1 magia de aire de nivel 1 a elegir al inicio del reto."
     espalda:  ""
     pecho:    "+2 vs Rayo"
     aro:      "1/reto: Ataca con un dado eléctrico a todas las miniaturas
                a tu alrededor. Por cada 2PM invertidos: +1 Fuerza"
     arma:     "Sustituye un dado de ataque por uno eléctrico"
-    orbe:     ""
+    orbe:     "Imbuye el orbe con magia de aire:
+               <li>Puedes arrojar el orbe y ejecutar rayos así</li>
+               <li>2PM: +1 potencia al siguiente Rayo</li>
+               <li>Puedes teleportarte a la casilla al matar con Relámpago</li>
+               <li>1/reto, acción: Lanza 1 hechizo de aire de nivel 2</li>"
     escudo:   "+1 Mov (se acumula) mientras haya enemigos visibles,
                al defender con éxito un ataque por el flanco del escudo"
     manos:    "2PM, tras obtener un 6 en una tirada de tesoro:
@@ -420,39 +448,58 @@
   id: 19
   name: "piropo"
   fits:
-    cabeza:   "1/reto: Lanzará aliento de dragón con potencia igual a tu dado de mayor fuerza."
-    cadena:  "+1 magia de fuego de nivel 1 a elegir al inicio del reto."
+    cabeza:   "1/reto: Lanzará aliento de dragón con potencia
+               igual a tu dado de mayor fuerza."
+    cadena:   "+1 magia de fuego de nivel 1 a elegir al inicio del reto."
     espalda:  ""
     pecho:    "+2 vs Calor"
-    aro:      "1/reto: Lanzará una Bola de Fuego (esta carga se puede recuperar con las habilidades pertinentes)"
+    aro:      "1/reto: Lanzará una Bola de Fuego (esta carga se puede
+               recuperar con las habilidades pertinentes)"
     arma:     "Los objetivos heridos por el piropo sufrirán: +1 ardiendo."
-    orbe:     ""
+    orbe:     "Imbuye el orbe con magia de fuego:
+               <li>Bajo el efecto de aura de calor, -1 ser empujado</li>
+               <li>2PM, acción magia: Ejecuta bola de fuego</li>
+               <li>Puedes teleportarte a la casilla al matar con Infierno</li>
+               <li>1/reto, acción: Lanza 1 hechizo de fuego de nivel 2</li>"
     manos:    "+1 dado naranja de ataque defendible en las bolas de fuego."
-    hombros:  "+1 galardón al matar con hechizos/efectos de fuego. Activa, 3G: +1 PM (Si estuvieras al máximo, puedes recuperar Bola de Fuego)"
+    hombros:  "+1 galardón al matar con hechizos/efectos de fuego.
+               Activa, 3G: +1 PM (Si estuvieras al máximo,
+               puedes recuperar Bola de Fuego)"
     cintura:  ""
-    muñecas:  "+1 opresión al fallar Fuego de Ira. Activa, 3o.: Tu próximo hechizo de fuego tiene +1 potencia"
-    pies:     "+1 movimiento bajo los ejectos de cualquier bendición/aura de fuego."
-    escudo:   "Tu escudo lanza el hechizo bola de fuego, al ser dañado por ataques de proyectil"
+    muñecas:  "+1 opresión al fallar Fuego de Ira.
+               Activa, 3o.: Tu próximo hechizo de fuego tiene +1 potencia"
+    pies:     "+1 movimiento bajo los ejectos de cualquier
+               bendición/aura de fuego."
+    escudo:   "Tu escudo lanza el hechizo bola de fuego,
+               al ser dañado por ataques de proyectil"
     abalorio: ""
 -
   id: 20
   name: "olivino"
   fits:
     cabeza:   "1/reto: Absorberá un veneno de tu organismo."
-    cadena:  "+1 magia de sombras de nivel 1 a elegir al inicio del reto."
+    cadena:   "+1 magia de sombras de nivel 1 a elegir al inicio del reto."
     espalda:  ""
     pecho:    "+2 vs Tenebro"
     aro:      "1/reto: El demonio objetivo debe resistirse vs Tenebro:
               Puedes gobernarlo este turno."
     arma:     "Sustituye un dado de ataque por uno de fuego"
-    orbe:     ""
+    orbe:     "Imbuye el orbe con magia de sombras:
+               <li>Bajo el efecto de vigor siniestro, -1 ser empujado</li>
+               <li>2PM, acción magia: Ejecuta Flechas de la Noche</li>
+               <li>-1 daño recibido al matar el Ente Oscuro</li>
+               <li>1/reto, acción: Lanza 1 hechizo de sombras de nivel 2</li>"
     manos:    "1PM, al matar con Fuego de Ira: +1 PM a todos
               los aliados del escenario. (salvo tú)"
-    hombros:  "+1 galardón ser objetivo de una bendición de tierra. Activa, 3G: Tu siguiente ataque envenena con potencia 2."
+    hombros:  "+1 galardón ser objetivo de una bendición de tierra.
+               Activa, 3G: Tu siguiente ataque envenena con potencia 2."
     cintura:  ""
-    muñecas:  "+1 opresión al ser atacado por demonios. Activa, 3o.: Lanzas el hechizo: Restituir"
-    pies:     "+1 movimiento bajo los ejectos de cualquier bendición/aura de sombras."
-    escudo:   "Tu escudo lanza el hechizo flechas de la noche, al ser dañado por ataques cuerpo a cuerpo"
+    muñecas:  "+1 opresión al ser atacado por demonios.
+               Activa, 3o.: Lanzas el hechizo: Restituir"
+    escudo:   "Tu escudo lanza el hechizo flechas de la noche,
+               al ser dañado por ataques cuerpo a cuerpo"
+    pies:     "+1 movimiento bajo los ejectos de cualquier
+               bendición/aura de sombras."
     abalorio: ""
 -
   id: 21
@@ -460,65 +507,84 @@
   fits:
     cabeza:   "1/reto: El ataque se considera sagrado
               (causa daño verdadero a ciertas unidades)."
-    cadena:  "+1 plegaria"
+    cadena:   "+1 plegaria"
     espalda:  ""
     pecho:    "+2 vs Miedo"
     aro:      "1/reto: Añade un dado de Sigmar de +2 Fuerza,
                a tu siguiente ataque contra un No-muerto."
     arma:     "+1 dado sagrado al ataque si atacas después
                de la fase de movimiento."
-    orbe:     ""
+    orbe:     "Imbuye el orbe con bendición de Sigmar:
+               <li>Bajo el efecto de consagración, -1 ser empujado</li>
+               <li>2PM, acción magia: Ejecuta Ángel Guardián</li>
+               <li>-1 daño recibido al matar el Arcángel</li>
+               <li>1/reto, acción: Lanza 1 plegaria de nivel 2</li>"
     manos:    "1PM (Instinto): +1 vs Tenebro hasta final de turno.
                Si el efecto te afectara, recupera +1PC igualmente."
     hombros:  "+1 galardón al aturdir a un enemigo. Activa, 3G: +1 PM ó +1PC"
     cintura:  ""
     muñecas:  "+1 opresión al recibir daño por Tenebro.
                Activa, 3o.: +1 Fuerza a un ataque vs No-muertos o demonios."
-    pies:     "+1 movimiento bajo los ejectos de cualquier
-               bendición/aura sagrada."
     escudo:   "Cuando un aliado cuerpo a cuerpo en el flanco del escudo
                sufra una herida: el escudo lanza una plegaria"
+    pies:     "+1 movimiento bajo los ejectos de cualquier
+               bendición/aura sagrada."
     abalorio: ""
 -
   id: 22
   name: "jaspe"
   fits:
-    cabeza:   "1/reto: Puedes aplicar robo de vida a un ataque, una vez haya sido tirado (antes de la defensa)."
-    cadena:  "+1 magia de sangre de nivel 1 a elegir al inicio del reto."
+    cabeza:   "1/reto: Puedes aplicar robo de vida a un ataque,
+               una vez haya sido tirado (antes de la defensa)."
+    cadena:   "+1 magia de sangre de nivel 1 a elegir al inicio del reto."
     espalda:  ""
-    pecho:
-             "+1 carga al sufrir una herida cuerpo a cuerpo.<br/>
-              3 cargas: +1 fuerza en tu siguiente ataque.<br/>
-              4 cargas: +2 de fuerza en tu siguiente ataque."
+    pecho:    "+1 carga al sufrir una herida cuerpo a cuerpo.<br/>
+               3 cargas: +1 fuerza en tu siguiente ataque.<br/>
+               4 cargas: +2 de fuerza en tu siguiente ataque."
     aro:      "1/reto: Sana a un aliado envenenado, que recuperará hasta 2PC"
     arma:     "+1 PC al matar criaturas con menos cuerpo que tus heridas"
-    orbe:     ""
-    manos:    "+1 dado verde de defensa mientras estés bajo el hechizo: restituir."
-    hombros:  "+1 galardón al causar críticos de sangrado. Activa, 3G: Eres bendecido con vampirismo"
+    orbe:     "Imbuye el orbe con magia de sangre:
+               <li>Bajo el efecto de rosea, +1 a todas las resistencias</li>
+               <li>2PM, acción magia: Ejecuta anemia</li>
+               <li>+1 explosión sanguinolienta al matar con la explosión</li>
+               <li>1/reto, acción: Lanza 1 hechizo de sangre de nivel 2</li>"
+    manos:    "+1 dado verde defensivo al estar bajo el hechizo: restituir"
+    hombros:  "+1 galardón al causar críticos de sangrado.
+               Activa, 3G: Eres bendecido con vampirismo"
     cintura:  ""
-    muñecas:  "+1 opresión al ser envenenado por trampas. Activa, 3o.: Si estás envenenado replicas el efecto en un enemigo a melé."
-    pies:     "+1 movimiento bajo los ejectos de cualquier maldición."
+    muñecas:  "+1 opresión al ser envenenado por trampas.
+               Activa, 3o.: Si estás envenenado replicas
+               el efecto en un enemigo a melé."
     escudo:   ""
+    pies:     "+1 movimiento bajo los ejectos de cualquier maldición."
     abalorio: ""
 -
   id: 23
   name: "coral"
   fits:
     cabeza:   "+1 PC si tu puntuación de mente es superior."
-    cadena:  "+1 PC. El portador obtiene un punto de vida adicional al ser sanado con el hechizo: agua que cura."
+    cadena:   "+1 PC. Obtienes +1PC adicional al ser sanado con: agua que cura."
     espalda:  ""
     pecho:    "+2 vs Psiónica"
     aro:      "1/reto: Sana a un aliado en llamas, que recuperará hasta 2PC"
     arma:     "+1 dado de escarcha en los ataques por el flanco"
-    orbe:     ""
+    orbe:     "Imbuye el orbe con magia del tiempo. Podrás modificar el tiempo:
+               <li>Bajo el efecto niebla, +5 movimiento</li>
+               <li>2PM, acción magia: un aliado obtiene un ataque extra</li>
+               <li>+1 acción de hechizar en la fase trepidante</li>
+               <li>2/reto, acción: Lanza 1 hechizo de arena de nivel 1</li>"
     manos:    "2PM: Puedes nadar/bucear/levitar, al doble de tu velocidad."
-    hombros:  "+1 galardón al matar con hechizos de agua. Activa, 3G: Lanzas choque de agua"
+    hombros:  "+1 galardón al matar con hechizos de agua.
+               Activa, 3G: Lanzas choque de agua"
     cintura:  ""
-    muñecas:  "+1 opresión al ser congelado. Activa, 3o.: Lanzas el hechizo: Pacto de Sangre"
-    pies:     "+1 movimiento bajo los ejectos de cualquier bendición/aura de sangre."
-    escudo:   "Los aliados en tu flanco de escudo obtienen +2 de resistencia al calor y a la escarcha."
+    muñecas:  "+1 opresión al ser congelado.
+               Activa, 3o.: Lanzas el hechizo: Pacto de Sangre"
+    escudo:   "Los aliados en tu flanco de escudo obtienen
+               +2 vs calor y +2 vs escarcha."
+    pies:     "+1 movimiento bajo los ejectos de cualquier
+               bendición/aura de sangre."
     abalorio: ""
-## Piedras Preciosas
+# Piedras Preciosas
 -
   id: 24
   name: "amatista"
@@ -530,14 +596,19 @@
                Pasiva (5G): +1 causar miedo."
     espalda:  "Al huir invocas un espectro en tu espalda."
     pecho:    "+3 vs Tenebro"
-    manos:    "Tus no-muertos y demonios invocados tienen un ataque extra si no mueven."
+    manos:    "Tus no-muertos y demonios invocados tienen
+               1 ataque extra si no mueven."
     aro:      "+1 potencia a las magias de sombras."
     arma:     "+1 dado profano al ataque."
     orbe:     ""
-    cintura:  "El primer ataque después de un turno de reposo (sin enemigos visibles) puede ser con dados negros."
-    muñecas:  "+1 opresión al sufrir daño por Tenebro o maldiciones. Activa, 3o.: Lanza caricia de Nagash. Pasiva (5o.): +3 vs Tenebro"
+    cintura:  "El primer ataque después de un turno de reposo
+               (sin enemigos visibles) puede ser con dados negros."
+    muñecas:  "+1 opresión al sufrir daño por Tenebro o maldiciones.
+               Activa, 3o.: Lanza caricia de Nagash.
+               Pasiva (5o.): +3 vs Tenebro"
     pies:     "Puedes atravesar +1 no-muerto durante la fase trepidante"
-    escudo:   "+1 infundir miedo (Duración: E) al defender con éxito un ataque frontal o por el lado del escudo."
+    escudo:   "+1 infundir miedo (Duración: E) al defender con éxito
+               un ataque frontal o por el lado del escudo."
     abalorio: "1/reto: Un ataque en conjunto en el que participes tiene Odio."
 -
   id: 25
@@ -550,16 +621,20 @@
     aro:      "+1 potencia a las magias de tierra."
     arma:     "+1 dado de peste al ataque."
     orbe:     ""
-    manos:    "Los esbirros a tu servicio, tienen un ataque extra si están cuerpo a cuerpo contigo."
+    manos:    "Los esbirros a tu servicio, tienen un ataque extra
+               si están cuerpo a cuerpo contigo."
     cadena:   "+1 magia élfica"
-    cintura:  "+1 dado de peste al primer ataque después de un turno de reposo (sin enemigos visibles)"
-    hombros:  "+1 galardón al matar con esbirros. Activa, 3G: +2 PC al portador. Pasiva (5G): esbirros defienden con dados verdes"
-    muñecas:
-              "+1 opresión al recibir daño por peste.<br/>
+    cintura:  "+1 dado de peste al primer ataque después de 1 turno
+               de reposo (sin enemigos visibles)"
+    hombros:  "+1 galardón al matar con esbirros.
+               Activa, 3G: Recuperas 2 PC.
+               Pasiva (5G): Tus esbirros defienden con dados verdes"
+    muñecas:  "+1 opresión al recibir daño por peste.<br/>
                Activa, 3o.: Elimina un estado de peste.<br/>
                Pasiva (5o.): +1PC y +1PM/turno mientras haya enemigos visibles."
+    escudo:   "+2 PC al defender con éxito un ataque frontal
+               o por el lado del escudo"
     pies:     "-1 empuje de enemigos en casillas colindantes con paredes."
-    escudo:   "+2 PC al defender con éxito un ataque frontal o por el lado del escudo"
     abalorio: "1/reto: Absorbe un veneno a otra miniatura (cesa el efecto) y aplícaselo a su arma principal."
 -
   id: 26
@@ -598,14 +673,16 @@
     orbe:     ""
     manos:    "Permite +1 búsqueda de tesoros adicional,
                cuando encuentras víveres, oro o pergaminos."
-    cintura:  "+1 dado de rayo al primer ataque después de un turno de reposo (sin enemigos visibles)"
+    cintura:  "+1 dado de rayo al primer ataque después de 1 turno
+               de reposo (sin enemigos visibles)"
     muñecas:  "+1 opresión al obtener tesoros perjudiciales.<br/>
                Activa, 3o.: Repite una tirada de tesoro.<br/>
-               Pasiva (5o.): En los tesoros de piezas de engarces + 1 dado a repetir."
+               Pasiva (5o.): En los engarces del tesoro: + 1 dado a repetir."
+    escudo:   "+5 oro al defender con éxito un ataque frontal
+               o por el lado del escudo"
     pies:     "+1 movimiento"
-    abalorio: "1/reto: Arrojas un arma a 2 manos como acción gratuita ó +1 potencia a tu siguiente hechizo de aire."
-    escudo:   "+5 oro al defender con éxito un ataque frontal o por el lado del escudo"
-    abalorio: ""
+    abalorio: "1/reto: Arrojas un arma a 2 manos como acción gratuita ó
+               +1 potencia a tu siguiente hechizo de aire."
 -
   id: 28
   name: "rubí"
@@ -618,20 +695,22 @@
     espalda:  "+1 turno ardiendo de tu agresor por la espalda."
     pecho:    "+3 vs Calor"
     aro:      "+1 potencia a las magias de fuego."
-    arma:     "Tus hechizos de cono y bola, añaden un dado de fuego de nivel equivalente a los demás."
+    arma:     "Tus hechizos de cono y bola, añaden un dado de fuego
+               de nivel equivalente a los demás."
     orbe:     ""
     manos:    "Tus no-muertos invocados tienen un ataque extra si no mueven."
     cintura:  "+1 dado de fuego al primer ataque después de un turno de reposo (sin enemigos visibles)"
     muñecas:  "+1 opresión al fallar recibir daño físico. Activa, 3o.: +2PC. Pasiva (5o.): Tu/s arma/s ganan: Prender Arma"
+    escudo:   "+1 dado de fuego a tu próximo ataque, al defender con éxito
+               1 ataque frontal o por el lado del escudo"
     pies:     "5 movimiento: Reduce -1 efecto de ardiendo."
-    abalorio: "1/reto: La siguiente herida que recibas sanará (la misma cantidad) en lugar de dañar"
-    escudo:   "+1 dado de fuego a tu próximo ataque, al defender con éxito un ataque frontal o por el lado del escudo"
-    abalorio: ""
+    abalorio: "1/reto: La siguiente herida que recibas sanará
+               (la misma cantidad) en lugar de dañar"
 -
   id: 29
   name: "diamante"
   fits:
-    cadena:   "1/reto: No puedes ser objetivo de hechizos ni habilidades (Instinto)"
+    cadena:   "1/reto: Inmune a hechizos & habilidades (Instinto)"
     cabeza:   "+1 reputación"
     hombros:  "+1 galardón al bloquear ataques.
                Activa, 3G: Elimina aturdimientos.
@@ -645,11 +724,14 @@
     orbe:     ""
     manos:    "Puedes ignorar +1 maldición de un objeto de portador."
     cintura:  "+1 habilidad única de tu especialización de personaje."
-    muñecas:  "+1 opresión al recibir ataques en conjunto. Activa, 3o.: Lanzas obelisco con/sin diablura. Pasiva (5o.): +1 empujar"
+    muñecas:  "+1 opresión al recibir ataques en conjunto.
+               Activa, 3o.: Lanzas obelisco con/sin diablura.
+               Pasiva (5o.): +1 empujar"
+    escudo:   "-1 daño recibido en ataques cuerpo a cuerpo frontales
+               o por el lado del escudo."
     pies:     "1PM: Puedes girar +90º durante la fase de instintos"
-    abalorio: "1/reto: (Instinto) Tirarás defensa por separado en los ataques en conjunto."
-    escudo:   "-1 daño recibido en ataques cuerpo a cuerpo frontales o por el lado del escudo."
-    abalorio: ""
+    abalorio: "1/reto: (Instinto) Tirarás defensa por separado
+               en los ataques en conjunto."
 -
   id: 30
   name: "jacinto"
@@ -664,16 +746,18 @@
     aro:      "+1 potencia a las magias de sangre."
     arma:     "+1 dado desangrador al ataque."
     orbe:     ""
-    manos:    "Al ejecutar deflagración, recuperas +1PC por cada enemigo que mates."
-    cintura:  "+1 dado de desangrador al primer ataque después de un turno de reposo (sin enemigos visibles)"
+    manos:    "Al ejecutar deflagración, +1PC por cada enemigo que mates."
+    cintura:  "+1 dado de desangrador al primer ataque después de 1 turno
+               de reposo (sin enemigos visibles)"
     muñecas:  "+1 opresión al ser el único héroe en recibir daño
                durante el turno del MB.<br/>
                Activa, 3o.: Lanzas anemia.<br/>
                Pasiva (5o.): obtienes la plegaria: lágrimas del mártir"
+    escudo:   "+1 dado desangrador a tu próximo ataque, al defender con éxito
+               un ataque frontal o por el lado del escudo"
     pies:     "Puedes retroceder +1 casilla cada vez que recibas daño físico."
-    abalorio: "1/reto: Invoca un espíritu guardián murciélago, a tu servicio. (Solo se puede tener un espíritu invocado)"
-    escudo:   "+1 dado desangrador a tu próximo ataque, al defender con éxito un ataque frontal o por el lado del escudo"
-    abalorio: ""
+    abalorio: "1/reto: Invoca un espíritu guardián murciélago, a tu servicio.
+               (Solo se puede tener un espíritu invocado)"
 -
   id: 31
   name: "ágata"
@@ -695,19 +779,18 @@
     muñecas:  "+1 opresión al ser penalizado en movimiento/turno.<br/>
                Activa, 3o.: Lanzas ráfaga como aura.<br/> 
                Pasiva (5o.): Tus instintos interrumpen"
+    escudo:   "+1 dado eléctrico a tu próximo ataque, al defender con éxito
+               un ataque frontal o por el lado del escudo"
     pies:     "Puedes ignorar +1 interrupción causada
                por acciones reactivas a tu movimiento."
     abalorio: "1/reto: Añade una fase de movimiento al final de tu turno."
-    escudo:   "+1 dado eléctrico a tu próximo ataque, al defender con éxito
-               un ataque frontal o por el lado del escudo"
-    abalorio: ""
-  ## Piedras de Poder
+  # Piedras de Poder
 -
   id: 32
   name: "cráneo"
   fits:
     cabeza:   "+1 vs Miedo. +1 infundir miedo."
-    cadena:  "+1 infundir miedo. Si un enemigo huye a causa del miedo:
+    cadena:   "+1 infundir miedo. Si un enemigo huye a causa del miedo:
               ejecuta sobre él: Caricia de Nagash.
               Si muere, invoca un esqueleto a tu servicio."
     hombros:  ""
@@ -733,7 +816,7 @@
   name: "piedra lunar"
   fits:
     cabeza:   "+1 Movimiento. Mientras tengas la bendición ráfaga, +1 fuerza de ataque."
-    cadena:  "+1 Movimiento. Mientras tengas la bendición: niebla, todos tus ataques son por la espalda."
+    cadena:   "+1 Movimiento. Mientras tengas la bendición: niebla, todos tus ataques son por la espalda."
     hombros:  ""
     espalda:  ""
     pecho:    "+2 vs Psiónica. Hasta +1 enemigo que ataque en conjunto al portador debe disgregar el ataque si no resiste vs Psiónica."
@@ -757,7 +840,7 @@
     cabeza:
       "+2 vs Psiónica. +1 dado blanco a tu ataque principal, cuya potencia es el número de esbirros que controles
        y cuya fuerza el número de enemigos en S/P."
-    cadena:  "+1 maestría a los hechizos de tierra"
+    cadena:   "+1 maestría a los hechizos de tierra"
     hombros:  ""
     espalda:  ""
     pecho:    "Los dados de defensa que aporte la armadura serán verdes. +2 vs Peste"
@@ -778,7 +861,7 @@
   name: "glicerita"
   fits:
     cabeza:   "+1 vs Calor. Los críticos de fuego recuperan +1PM. +1 fuerza en los ataques del dado de fuego"
-    cadena:  "+1 maestría a los hechizos de fuego"
+    cadena:   "+1 maestría a los hechizos de fuego"
     hombros:  ""
     espalda:  ""
     pecho:    "Al recibir daño cuerpo a cuerpo, el agresor debe defenderse de un ataque de un dado de fuego."
@@ -796,7 +879,7 @@
   name: "diestra"
   fits:
     cabeza:   "+1 Protección por cada aliado en el reto."
-    cadena:  "1/reto: Tienes una acción extra, después de tu acción de movimiento."
+    cadena:   "1/reto: Tienes una acción extra, después de tu acción de movimiento."
     hombros:  ""
     espalda:  ""
     pecho:    "No puede ser objetivo de un ataque en conjunto."
@@ -814,7 +897,7 @@
   name: "siniestra"
   fits:
     cabeza:   "+1 Protección por cada dado de defensa de tu armadura"
-    cadena:  "1/reto: Tienes +1 acción extra, antes de tu acción de movimiento."
+    cadena:   "1/reto: Tienes +1 acción extra, antes de tu acción de movimiento."
     hombros:  ""
     espalda:  ""
     pecho:    "Solo puede ser atacado una vez por turno."
@@ -834,51 +917,75 @@
   id: 38
   name: "ónice"
   fits:
-    cabeza:   "+1 PM al matar con hechizos. +1 PC al matar con armas. Si excedes tu puntuación de mente/cuerpo por esta sanación, pierdes 1d6 puntos de mente/cuerpo."
-    cadena:  "1/reto: durante la fase trepidante elige una casilla libre: Creas sobre ella un pozo de oscuridad. (Los aliados deben saltar) Cada miniatura que muera en la sala otorga una carga. En cualquier momento puedes disolver el pozo y recuperar X hechizos de nivel Y, siendo X+Y las cargas acumuladas."
+    cabeza:  "+1 PM al matar con hechizos. +1 PC al matar con armas.
+              Si excedes tu puntuación de mente/cuerpo por esta sanación,
+              pierdes 1d6 puntos de mente/cuerpo."
+    cadena:   "1/reto: durante la fase trepidante elige una casilla libre:
+              Creas sobre ella un pozo de oscuridad. (Los aliados deben saltar)
+              Cada miniatura que muera en la sala otorga +1 carga.
+              En cualquier momento puedes disolver el pozo y recuperar
+              X hechizos de nivel Y, siendo X+Y las cargas acumuladas."
     hombros:  ""
     espalda:  ""
-    pecho:    "Al defender tira el dado negro especial. Con una calavera, si el agresor falla el ataque, muere. (Se resiste por tenebro)"
-    aro:      "+1 fuerza por cada escudo negro al lanzar dados negros de combate en magias o ataques."
-    arma:     "+1 dado negro de combate al ataque. Súmale tu bonificador de miedo a la fuerza de este dado."
+    pecho:    "Al defender tira el dado negro especial.
+               Con una calavera, si el agresor falla el ataque, muere.
+               (Se resiste por tenebro)"
+    aro:      "+1 fuerza por cada escudo negro al lanzar dados negros
+               de combate en magias o ataques."
+    arma:     "+1 dado negro de combate al ataque.
+               Súmale tu bonificador de miedo a la fuerza de este dado."
     orbe:     ""
-    manos:    "(Solo tieflings:) Añade +1 dado negro especial a tus ataques (que no usen armas). La calavera les arranca el corazón. (+6 PC)"
+    manos:    "(Solo tieflings:) Añade +1 dado negro especial a tus ataques
+               (que no usen armas). La calavera les arranca el corazón. (+6 PC)"
     cintura:  ""
     muñecas:  ""
-    escudo:   "Al defender con éxito, las 3 casillas del lado del escudo sufren un ataque de daño directo (Sombras)
-             de tantos dados como dados del ataque defendido y fuerza 2"
+    escudo:   "Al defender con éxito, las 3 casillas del lado del escudo
+               sufren un ataque de daño directo (Sombras)
+               de tantos dados como dados del ataque defendido y fuerza 2"
     pies:     "+1 sigilo al sprintar"
     abalorio: ""
 -
   id: 39
   name: "sigmarita"
   fits:
-    cabeza:   "+1 ataque extra a todos los ángeles invocados. +1 de sanación a todas las plegarias. +1PC al lanzar una plegaria en chakra."
-    cadena:  "1/reto: Resucitas a un aliado muerto, que volverá a la vida con un único punto de cuerpo y de mente. (Conservando sus hechizos y habilidades tal y como los tuviera)"
+    cabeza:   "+1 ataque extra a todos los ángeles invocados.
+               +1 de sanación a todas las plegarias.
+               +1PC al lanzar una plegaria en chakra."
+    cadena:   "1/reto: Resucitas a un aliado muerto, que volverá a la vida
+               con +1 único PC y PM. (Conservando sus hechizos
+               y habilidades tal y como los tuviera)"
     hombros:  ""
     espalda:  ""
-    pecho:    "Los efectos de bendición de duración: daño, requieren +1 daño para cesar su efecto. +1 vs Tenebro"
-    aro:    "2 cargas: Puedes realizar +1 acción de plegaria tras una plegaria chakra/summum.<br/>
-             Cuando obtengas un cometa en el dado de sigmar, recupera 1 carga."
-    arma:     "+1 dado de combate amarillo. Los escudos blancos restauran 1 PC si golpeas frontalmente."
+    pecho:    "Los efectos de bendición de duración: daño,
+               requieren +1 daño para cesar su efecto. +1 vs Tenebro"
+    aro:      "2 cargas: Puedes realizar +1 acción de plegaria
+               tras una plegaria chakra/summum.<br/>
+               Cuando obtengas un cometa en el dado de sigmar,
+               recupera 1 carga."
+    arma:     "+1 dado de combate amarillo. Los escudos blancos
+               restauran 1 PC si golpeas frontalmente."
     orbe:     ""
-    manos:    "(Solo enanos:) +1 sigilo en las casillas colindantes a los muros y puertas de piedra."
-    escudo:  "+1 carga de Sigmar al defender con éxito de ataques realizados por criaturas malvadas.<br/>
-             (1): +1 PC a un aliado que no puedes ser tú.<br/>
-             (2): +1 PM a todos los aliados S/P<br/>
-             (N): +1 dado de sigmar a tu siguiente ataque. (Fuerza = N)
-             (6): Resucita a un aliado caído. La Sigmarita se vuelve un diamante en el escudo hasta final del reto."
+    manos:    "(Solo enanos:) +1 sigilo en las casillas colindantes
+               a los muros y puertas de piedra."
+    escudo:   "+1 carga de Sigmar al defender con éxito de ataques
+               realizados por criaturas malvadas.<br/>
+               (1): +1 PC a un aliado que no puedes ser tú.<br/>
+               (2): +1 PM a todos los aliados S/P<br/>
+               (N): +1 dado de sigmar a tu siguiente ataque. (Fuerza = N)
+               (6): Resucita a un aliado caído.
+               La Sigmarita se vuelve un diamante en el escudo
+               hasta final del reto."
     cintura:  ""
     muñecas:  ""
     pies:     "Sprintar: Lanzas una plegaria de nivel +1 (no consume contador)"
     abalorio: ""
-  ## Gemas Legendarias
+  # Gemas Legendarias
 -
   id: 40
   name: "perla negra"
   fits:
     cabeza:   "Trepidante: los no-muertos que no superen una tirada de miedo lucharán a tu servicio. +1 causar miedo."
-    cadena:  "Otorga el legendario navío: La perla negra. El objetivo causa miedo +1. +20 al oro del tesoro, por nivel del tesoro."
+    cadena:   "Otorga el legendario navío: La perla negra. El objetivo causa miedo +1. +20 al oro del tesoro, por nivel del tesoro."
     hombros:  ""
     espalda:  "3/reto: Al recibir un ataque por la espalda puedes mover tu miniatura como respuesta a la espalda de tu agresor. 
               Esto podría interrumpir su ataque. +2 protección. +1 vs Tenebro."
@@ -900,7 +1007,7 @@
   name: "infernalita"
   fits:
     cabeza:   "Al fallar un hechizo/ataque con fuego recuperas una carga. 2 cargas: Lanzas derretir la piedra. 3 cargas: Recibes sangre ígnea."
-    cadena:  "+1 maestría y potencia a los hechizos de fuego, sangre y sombras."
+    cadena:   "+1 maestría y potencia a los hechizos de fuego, sangre y sombras."
     hombros:  ""
     espalda:  "+2 vs Calor. La capa cubre al poseedor y le confiere el aspecto de príncipe demoníaco (+1 causar miedo). 3/reto: Todos los demonios que no superen 5+ servirán al portador incondicionalmente."
     pecho:    "Al inicio de tu turno obtienes el aura de llamas. Además, los críticos de fuego contra ti, en su lugar te sanan 1PC."
@@ -918,7 +1025,7 @@
   name: "rosa de cristal"
   fits:
     cabeza:   "+2 esquivar."
-    cadena:  "+1 a la habilidad: Dos Armas"
+    cadena:   "+1 a la habilidad: Dos Armas"
     hombros:  ""
     espalda:  "-1 al consumo de movimiento todas las habilidades activas y efectos que consuman movimiento. (Mínimo 1)"
     pecho:    "+2 vs Psiónica. 3PC: El corazón del portador abandona su pecho en forma de esfera de relámpagos.
@@ -937,7 +1044,7 @@
   name: "pendril"
   fits:
     cabeza:   "Durante la fase trepidante si no combates puedes percibir a todos los enemigos en sigilo. 1/reto: Puedes contrar 1d6 pieles verdes durante 2 turnos."
-    cadena:  "Puedes lanzar conjuros y arrojar armas desde tu espalda. 2/reto: Puedes desvelar dos salas del mapa. 1/reto: Puedes convocar 1d6 pieles verdes."
+    cadena:   "Puedes lanzar conjuros y arrojar armas desde tu espalda. 2/reto: Puedes desvelar dos salas del mapa. 1/reto: Puedes convocar 1d6 pieles verdes."
     hombros:  ""
     espalda:  "El portador obtiene el aura de la tormenta al inicio de su turno. Los aliados desplazados recuperan 1PM. Si el aura de la tormenta matara a un enemigo, invoca una momia a tu servicio."
     pecho:    "+1 potencia defensiva por cada aliado en tu línea de visión. Durante la fase trepidante si hubiera más enemigos visibles que aliados en el tablero, lanza gratuitamente dormir sobre tus enemigos."
@@ -1024,7 +1131,7 @@
   id: 46
   name: "piedra fénix"
   fits:
-    cadena:  "Al morir por un efecto de fuego resucitas con todo tu cuerpo
+    cadena:   "Al morir por un efecto de fuego resucitas con todo tu cuerpo
               y mente. Tus aliados y tú podéis conjurar fuego contra ti
               mismo para provocar este efecto."
     cabeza:   "Iluminas la sala (-1 sigilo de los enemigos).
@@ -1056,7 +1163,7 @@
   id: 47
   name: "dragonita"
   fits:
-    cadena:  "+2 maestría a efectos de fuego. +3 potencia defensiva."
+    cadena:   "+2 maestría a efectos de fuego. +3 potencia defensiva."
     cabeza:   "+1 potencia en hechizos de tierra por cada aliado herido cercano.
               Si compartes o renuncias al tesoro, sufrirás una maldición.
               Si estás maldito: +1 maestría a los hechizos de tierra."
@@ -1085,7 +1192,7 @@
 
 
 
-## Gemas Insólitas
+# Gemas Insólitas
 -
   id: 48
   name: 'serpentina del dragón'

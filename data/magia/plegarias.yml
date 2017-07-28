@@ -150,7 +150,7 @@
   potencia: 1
   alcance:  1
   name:     "Dádiva"
-  tipo:     "Bendición"
+  tipo:     "Bendición - dádiva"
   efecto:   "El objetivo recibe: Gloria del Héroe (Puedes declarar en secreto)"
   summun:   "El daño no recibido se torna en sanación de cuerpo."
   chakra:   "El objetivo restaura +1PM a todos los aliados en (V),
