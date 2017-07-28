@@ -4,8 +4,7 @@
   duracion: "Escudo negro"
   name:     "Carámbano"
   tipo:     "Invocación"
-  efecto:
-            "Una daga de hielo mágico que puede ser empleada como arma
+  efecto:   "Una daga de hielo mágico que puede ser empleada como arma
              de empuñadura. Tirará 1 dado de Escarcha
              cuya potencia es el nivel del hechicero."
   potencia: "+1 dado de hielo."
@@ -18,8 +17,7 @@
   duracion: "M"
   name:     "Puente de hielo"
   tipo:     "Superchería"
-  efecto:
-            "1 carga de hielo: Fabricas un puente de hielo
+  efecto:   "1 carga de hielo: Fabricas un puente de hielo
              (se destruye por fuego) que deshabilita temporalmente un foso."
   potencia: "+1 carga de hielo"
   maestría: "1PM/maestría: Añade una carga de hielo"

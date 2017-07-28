@@ -268,11 +268,9 @@
   efecto:   "El objetivo amistoso pierde su próximo turno y recupera 4PM"
   potencia: "+1 PM"
   maestría: "-1 daño recibido por el objetivo mientras dure el efecto"
-  diablura:
-            "El objetivo podrá recuperar un hechizo en lugar de PM,
+  diablura: "El objetivo podrá recuperar un hechizo en lugar de PM,
              si no hay enemigos visibles."
-  ardid:
-            "Mientras estén relajados el lanzador y el objetivo,
+  ardid:    "Mientras estén relajados el lanzador y el objetivo,
              éste no morirá."
 -
   id:       23

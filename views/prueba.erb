@@ -1,0 +1,31 @@
+<% total_problemas = 0 %>
+<div class='row'>
+	<div class='container'>
+		<ul>
+			<% gemas.each do |g| %>
+				
+				<% unless g.calidad['name'] == "Gemas Insólitas" %>
+					<li><%= g.calidad['name'] %> - <%= g.name %></li>
+					<% f = ['cabeza','cadena','hombros','espalda','pecho','manos','aro',
+					'arma','orbe','escudo','cintura','muñecas','pies','abalorio'] %>
+					<ul>
+						<% f.each do |fi| %>	
+							<% if g.fits[fi].nil? %>
+								<% total_problemas += 1 %>
+								<li><b>Sin registro</b>: <%= fi %></li>
+							<% end %>
+							<% if g.fits[fi] == "" %>
+								<% total_problemas += 1 %>
+								<li>Sin completar: <%= fi %></li>
+							<% end %>
+						<% end %>
+					</ul>
+				
+				<% end %>
+				
+			<% end %>
+		</ul>
+		
+		<p>Problemas encontrados: <%= total_problemas %></p>
+	</div>
+</div>
