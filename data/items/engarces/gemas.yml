@@ -609,9 +609,12 @@
                1 ataque extra si no mueven."
     aro:      "+1 potencia a las magias de sombras."
     arma:     "+1 dado profano al ataque."
-    orbe:     ""
-    cintura:  "El primer ataque después de un turno de reposo
-               (sin enemigos visibles) puede ser con dados negros."
+    orbe:     "Imbuye (inicio del reto) el orbe con sombras o execraciones:
+               <li>+1 potencia sombras ó al efecto de las execraciones</li>
+               <li>1PM: diablura (sombras) ó summun (execraciones)</li>
+               <li>Ataque de orbe: +1 dado especial morado</li>
+               <li>2/reto, acción: 1 hechizo(sombra)/execración de nivel 2</li>"
+    cintura:  "Reposo (1): ataque con dados negros."
     muñecas:  "+1 opresión al sufrir daño por Tenebro o maldiciones.
                Activa, 3o.: Lanza caricia de Nagash.
                Pasiva (5o.): +3 vs Tenebro"
@@ -632,12 +635,15 @@
     espalda:  "+1 turno de envenamiento a tu agresor por la espalda."
     aro:      "+1 potencia a las magias de tierra."
     arma:     "+1 dado de peste al ataque."
-    orbe:     ""
+    orbe:     "Imbuye (inicio del reto) el orbe con magia de tierra o arena:
+               <li>+1 potencia con el elemento elegido hasta final de reto</li>
+               <li>1PM: diablura en el siguiente hechizo del elemento</li>
+               <li>Ataque de orbe: +1 dado de veneno</li>
+               <li>1/reto, acción: Lanza 1 hechizo del elemento de nivel 3</li>"
     manos:    "Los esbirros a tu servicio, tienen un ataque extra
                si están cuerpo a cuerpo contigo."
     cadena:   "+1 magia élfica"
-    cintura:  "+1 dado de peste al primer ataque después de 1 turno
-               de reposo (sin enemigos visibles)"
+    cintura:  "Reposo (1): +1 dado de peste al ataque"
     muñecas:  "+1 opresión al recibir daño por peste.<br/>
                Activa, 3o.: Elimina un estado de peste.<br/>
                Pasiva (5o.): +1PC y +1PM/turno mientras haya enemigos visibles."
@@ -659,11 +665,14 @@
     pecho:    "+3 vs Escarcha"
     aro:      "+1 potencia a las magias de agua."
     arma:     "+1 dado de escarcha al ataque."
-    orbe:     ""
+    orbe:     "Imbuye (inicio del reto) el orbe con magia de aire, hielo o agua:
+               <li>+1 potencia con el elemento elegido hasta final de reto</li>
+               <li>1PM: diablura en el siguiente hechizo del elemento</li>
+               <li>Ataque de orbe: +1 dado de escarcha</li>
+               <li>1/reto, acción: Lanza 1 hechizo del elemento de nivel 3</li>"
     manos:    "Tras fallar un hechizo: +1 dado azul de potencia
                igual al nivel del hechizo, a tu defensa."
-    cintura:  "+1 dado de escarcha al primer ataque después
-               de un turno de reposo (sin enemigos visibles)"
+    cintura:  "Reposo (1): +1 dado de escarcha al ataque"
     muñecas:  "+1 opresión al fallar hechizos de nivel 1.
                Activa, 3o.: Lanzas niebla como aura.
                Pasiva (5o.): +1 vs todos los hechizos."
@@ -687,11 +696,14 @@
     aro:      "+1 px al obtener un resultado doble en el tesoro
                (máximo 1 por topacio)"
     arma:     "+1 dado de rayo al ataque."
-    orbe:     ""
+    orbe:     "Imbuye (inicio del reto) el orbe con magia de aire o arena:
+               <li>+1 potencia con el elemento elegido hasta final de reto</li>
+               <li>1PM: diablura en el siguiente hechizo del elemento</li>
+               <li>Ataque de orbe: +1 dado eléctrico</li>
+               <li>1/reto, acción: Lanza 1 hechizo del elemento de nivel 3</li>"
     manos:    "Permite +1 búsqueda de tesoros adicional,
                cuando encuentras víveres, oro o pergaminos."
-    cintura:  "+1 dado de rayo al primer ataque después de 1 turno
-               de reposo (sin enemigos visibles)"
+    cintura:  "Reposo (1): +1 dado eléctrico al ataque"
     muñecas:  "+1 opresión al obtener tesoros perjudiciales.<br/>
                Activa, 3o.: Repite una tirada de tesoro.<br/>
                Pasiva (5o.): En los engarces del tesoro: + 1 dado a repetir."
@@ -714,10 +726,16 @@
     aro:      "+1 potencia a las magias de fuego."
     arma:     "Tus hechizos de cono y bola, añaden un dado de fuego
                de nivel equivalente a los demás."
-    orbe:     ""
+    orbe:     "Imbuye (inicio del reto) el orbe con magia de fuego o sangre:
+               <li>+1 potencia con el elemento elegido hasta final de reto</li>
+               <li>1PM: diablura en el siguiente hechizo del elemento</li>
+               <li>Ataque de orbe: +1 dado fuego ó desangrador</li>
+               <li>1/reto, acción: Lanza 1 hechizo del elemento de nivel 3</li>"
     manos:    "Tus no-muertos invocados tienen un ataque extra si no mueven."
-    cintura:  "+1 dado de fuego al primer ataque después de un turno de reposo (sin enemigos visibles)"
-    muñecas:  "+1 opresión al fallar recibir daño físico. Activa, 3o.: +2PC. Pasiva (5o.): Tu/s arma/s ganan: Prender Arma"
+    cintura:  "Reposo (1): +1 dado de fuego al ataque"
+    muñecas:  "+1 opresión al fallar recibir daño físico.
+               Activa, 3o.: +2PC.
+               Pasiva (5o.): Tu/s arma/s ganan: Prender Arma"
     escudo:   "+1 dado de fuego a tu próximo ataque, al defender con éxito
                1 ataque frontal o por el lado del escudo"
     pies:     "5 movimiento: Reduce -1 efecto de ardiendo."
@@ -738,7 +756,11 @@
     aro:      "-1 potencia a las magias enemigas"
     cadena:   "+1 potencia defensiva"
     arma:     "+1 dado sagrado al ataque."
-    orbe:     ""
+    orbe:     "Imbuye (inicio del reto) el orbe con el poder de Sigmar:
+               <li>+1 al efecto de las plegarias ejecutadas</li>
+               <li>1PM: chakra en la siguiente plegaria</li>
+               <li>Ataque de orbe: +1 dado sagrado</li>
+               <li>2/reto, acción: Lanza 1 plegaria de nivel 2</li>"
     manos:    "Puedes ignorar +1 maldición de un objeto de portador."
     cintura:  "+1 habilidad única de tu especialización de personaje."
     muñecas:  "+1 opresión al recibir ataques en conjunto.
@@ -762,10 +784,13 @@
     pecho:    "-1 fuerza de un dado del atacante."
     aro:      "+1 potencia a las magias de sangre."
     arma:     "+1 dado desangrador al ataque."
-    orbe:     ""
+    orbe:     "Imbuye (inicio del reto) el orbe con magia de sombra o sangre:
+               <li>+1 potencia con el elemento elegido hasta final de reto</li>
+               <li>1PM: diablura en el siguiente hechizo del elemento</li>
+               <li>Ataque de orbe: +1 dado desangrador</li>
+               <li>1/reto, acción: Lanza 1 hechizo del elemento de nivel 3</li>"
     manos:    "Al ejecutar deflagración, +1PC por cada enemigo que mates."
-    cintura:  "+1 dado de desangrador al primer ataque después de 1 turno
-               de reposo (sin enemigos visibles)"
+    cintura:  "Reposo (1): +1 dado desangrador al ataque"
     muñecas:  "+1 opresión al ser el único héroe en recibir daño
                durante el turno del MB.<br/>
                Activa, 3o.: Lanzas anemia.<br/>
@@ -788,7 +813,11 @@
     pecho:    "+3 vs Psiónico"
     aro:      "+1 potencia a las magias de aire."
     arma:     "-1 al calibre del arma al ser empuñada."
-    orbe:     ""
+    orbe:     "Imbuye (inicio del reto) el orbe con magia de sombra o aire:
+               <li>+1 potencia con el elemento elegido hasta final de reto</li>
+               <li>1PM: diablura en el siguiente hechizo del elemento</li>
+               <li>Ataque de orbe: +1 dado eléctrico</li>
+               <li>1/reto, acción: Lanza 1 hechizo del elemento de nivel 3</li>"
     manos:    "+1 ataque de combate cuerpo a cuerpo durante la fase trepidante,
                si tienes más PM que PC."
     cintura:  "-1 al empuje de los enemigos durante el turno posterior
@@ -812,19 +841,26 @@
               Si muere, invoca un esqueleto a tu servicio."
     hombros:  ""
     espalda:  ""
-    pecho:    "Los dados de defensa que aporte la armadura tienen éxito con escudo negro, y se consideran con +1 potencia. +1 vs Miedo"
+    pecho:    "Los dados de defensa que aporte la armadura tienen éxito
+               con escudo negro, y se consideran con +1 potencia. +1 vs Miedo"
     aro:      "1/reto: Encierras a un no-muerto en el anillo,
                o invocas a uno encerrado previamente.<br/>
-      (Se resiste con Tenebro, nivel 2). +1 penetración mágica vs Tenebro."
+              (Se resiste con Tenebro, nivel 2).
+               +1 penetración mágica vs Tenebro."
     arma:     "Los dados de ataque que aporte el arma tienen éxito
                con escudo negro, y se consideran con +1 potencia y +1 fuerza."
-    orbe:     ""
+    orbe:     "Imbuye el orbe con magia negra (tenebro):
+               <li>Inicio del reto: Elige: +1 potencia en sombras o sangre</li>
+               <li>Robo de vida en execraciones y hechizos de sombras</li>
+               <li>2PC: ardid en hechizos de sangre y de sombras</li>
+               <li>Ataque de orbe: +1 dado de combate negro (fuerza 2)</li>
+               <li>1PC, 5+: +1 maestría en tu siguiente magia tenebrosa</li>"
     manos:    "Los no-muertos bajo tu control tienen +1 ataque,
                +1 potencia, +1 fuerza, +1 defensa y +1 PC."
     escudo:   "Añade un dado negro especial.<br/>
                Espadas: +1 éxito de potencia base<br/>
                Calavera: +1 daño (Tenebro) directo al atacante"
-    cintura:  ""
+    cintura:  "Reposo (1): +1 infundir miedo"
     muñecas:  ""
     pies:     "+1 casilla de avance por cada escudo negro durante la defensa."
     abalorio: ""
@@ -832,21 +868,32 @@
   id: 33
   name: "piedra lunar"
   fits:
-    cabeza:   "+1 Movimiento. Mientras tengas la bendición ráfaga, +1 fuerza de ataque."
-    cadena:   "+1 Movimiento. Mientras tengas la bendición: niebla, todos tus ataques son por la espalda."
+    cabeza:   "+1 Movimiento. Mientras tengas la bendición ráfaga,
+               +1 fuerza de ataque."
+    cadena:   "+1 Movimiento. Mientras tengas la bendición: niebla,
+               todos tus ataques son por la espalda."
     hombros:  ""
     espalda:  ""
-    pecho:    "+2 vs Psiónica. Hasta +1 enemigo que ataque en conjunto al portador debe disgregar el ataque si no resiste vs Psiónica."
-    aro:      "+1 potencia a las magias de agua y de aire. +1 sigilo tras atacar frontalmente a enemigos."
-    arma:     "+1 Fuerza en las armas que no golpean en diagonal. +1 Potencia en las demás."
-    orbe:     ""
-    manos:    "(Solo elfos:) Comienzas el reto con +1 punto en todas las habilidades de clase."
-    escudo: 
-            "Al defender con éxito, todos los aliados cuerpo a cuerpo recuperan 1PM. El exceso de esta sanación permite:<br/>
+    pecho:    "+2 vs Psiónica. Hasta +1 enemigo que ataque en conjunto
+               al portador debe disgregar el ataque si no resiste vs Psiónica."
+    aro:      "+1 potencia a las magias de agua y de aire.
+               +1 sigilo tras atacar frontalmente a enemigos."
+    arma:     "+1 Fuerza en las armas que no golpean en diagonal.
+               +1 Potencia en las demás."
+    orbe:     "Imbuye al inicio del reto el orbe con magia lunar (aire ó agua):
+               <li>Elige: +1 potencia en el elemento</li>
+               <li>+3 movimiento bajo efecto de una bendición del elemento</li>
+               <li>2PM: ardid en hechizos del elemento</li>
+               <li>Ataque de orbe: +2 dados de combate azules</li>
+               <li>1PM, 5+: +1 maestría en tu siguiente magia del elemento</li>"
+    manos:    "(Solo elfos:) Comienzas el reto con +1 punto
+               en todas las habilidades de clase."
+    escudo:   "Al defender con éxito, todos los aliados cuerpo a cuerpo
+               recuperan 1PM. El exceso de esta sanación permite:<br/>
              (2): Recuperas un hechizo, plegaria, grito de batalla ó 1PC<br/>
              (3): Invocas un elemental de aire a tu servicio<br/>
              (4): Entras en gloria del héroe"
-    cintura:  ""
+    cintura:  "Reposo (1): -1 daño mental recibido"
     muñecas:  ""
     pies:     "5 movimiento: Reduce -1 turno de aturdimiento."
     abalorio: ""
@@ -854,41 +901,69 @@
   id: 34
   name: "rama de olivo"
   fits:
-    cabeza:
-      "+2 vs Psiónica. +1 dado blanco a tu ataque principal, cuya potencia es el número de esbirros que controles
-       y cuya fuerza el número de enemigos en S/P."
+    cabeza:   "+2 vs Psiónica. +1 dado blanco a tu ataque principal,
+               cuya potencia es el número de esbirros que controles
+               y cuya fuerza el número de enemigos en S/P."
     cadena:   "+1 maestría a los hechizos de tierra"
     hombros:  ""
     espalda:  ""
-    pecho:    "Los dados de defensa que aporte la armadura serán verdes. +2 vs Peste"
-    aro:      "+1 potencia a las magias de tierra que realices y que realicen sobre ti. 1/reto: obtienes 'pasar a través de la roca'"
-    arma:     "Las águilas imperiales al atacar te restauran +1PC a ti y a los aliados cuerpo a cuerpo. +1 Dado blanco al ataque."
-    orbe:     ""
-    manos:    "(Solo humanos:) 1/reto: puedes perder un turno para estar en Gloria del Héroe hasta tu próximo turno."
-    escudo: 
-            "Al defender con éxito por el frente o el flanco del escudo, puedes elegir:<br/>
-             (1): Ese agresor siempre estará provocado por ti. Recuperas 1PC<br/>
-             (2): Serás siempre la última prioridad de ese agresor. Recuperas 1PM"
-    cintura:  ""
+    pecho:    "Los dados de defensa que aporte la armadura serán verdes.
+               +2 vs Peste"
+    aro:      "+1 potencia a las magias de tierra que realices
+               y que realicen sobre ti. 1/reto: obtienes:
+               pasar a través de la roca"
+    arma:     "Las águilas imperiales al atacar te restauran +1PC a ti y
+               a los aliados cuerpo a cuerpo. +1 Dado blanco al ataque."
+    orbe:     "Imbuye al inicio del reto el orbe con magia de tierra o agua:
+               <li>Elige: +1 potencia en el elemento</li>
+               <li>+3 movimiento bajo efecto de una bendición del elemento</li>
+               <li>2PM: ardid en hechizos del elemento</li>
+               <li>Ataque de orbe: +2 dados de combate verdes</li>
+               <li>1PM, 5+: +1 maestría en tu siguiente magia del elemento</li>"
+    manos:    "(Solo humanos:) 1/reto: puedes perder un turno para estar
+               en Gloria del Héroe hasta tu próximo turno."
+    escudo:   "Al defender con éxito por el frente o el flanco del escudo,
+               puedes elegir:<br/>
+               (1): Ese agresor siempre estará provocado por ti. 
+               Recuperas 1PC<br/>
+               (2): Serás siempre la última prioridad de ese agresor.
+               Recuperas 1PM"
+    cintura:  "Reposo (1): Solo puedes ser atacado por un enemigo"
     muñecas:  ""
-    pies:     "Renuncar a tu movimiento: +1 objetivo visible pierde la minus-mitad de su movimiento. (maldición psiónica)"
+    pies:     "Renuncar a tu movimiento: +1 objetivo visible pierde
+               la minus-mitad de su movimiento. (maldición psiónica)"
     abalorio: ""
 -
   id: 35
   name: "glicerita"
   fits:
-    cabeza:   "+1 vs Calor. Los críticos de fuego recuperan +1PM. +1 fuerza en los ataques del dado de fuego"
+    cabeza:   "+1 vs Calor. Los críticos de fuego recuperan +1PM.
+               +1 fuerza en los ataques del dado de fuego"
     cadena:   "+1 maestría a los hechizos de fuego"
     hombros:  ""
     espalda:  ""
-    pecho:    "Al recibir daño cuerpo a cuerpo, el agresor debe defenderse de un ataque de un dado de fuego."
-    aro:      "+1 potencia a las magias de fuego, +1 fuerza a los demás efectos de fuego."
-    arma:     "+1 dado explosivo (fuego y aullador) al ataque cuya potencia es igual al número de enemigos colindantes"
-    orbe:     ""
-    manos:    "Al causar daño con efectos y hechizos de fuego, añade +1 potencia al siguiente."
-    pies:     "Al sprintar: puedes conjurar un muero de fuego de +1 potencia por las casillas recorridas siempre que cumplas el requisito."
-    escudo:   "Al recibir daños de un ataque (de cualquier naturaleza) por el frontal o el lado del escudo, generas un cono explosivo (aullante) desde tu escudo (alcance 2), de 2 dados de fuego, cuya potencia y fuerza es igual al ataque recibido."
-    cintura:  ""
+    pecho:    "Al recibir daño cuerpo a cuerpo, el agresor debe defenderse
+               de un ataque de un dado de fuego."
+    aro:      "+1 potencia a las magias de fuego, +1 fuerza a los demás
+               efectos de fuego."
+    arma:     "+1 dado explosivo (fuego y aullador) al ataque cuya potencia
+               es igual al número de enemigos colindantes"
+    orbe:     "Imbuye al inicio del reto el orbe con magia de fuego:
+               <li>+1 potencia fuego</li>
+               <li>+1 alcance en conos, rayos y bolas de la magia fuego</li>
+               <li>2PM: ardid en hechizos de fuego</li>
+               <li>Ataque de orbe: +1 dado explosivo de fuego (aullante)</li>
+               <li>1PM, 4+: +1 maestría en tu siguiente magia de fuego</li>"
+    manos:    "Al causar daño con efectos y hechizos de fuego:
+               +1 potencia al siguiente."
+    pies:     "Al sprintar: puedes conjurar un muero de fuego de
+               +1 potencia por las casillas recorridas siempre que
+               cumplas el requisito."
+    escudo:   "Al recibir daños de un ataque (de cualquier naturaleza)
+               por el frontal o el lado del escudo, generas un cono explosivo
+               (aullante) desde tu escudo (alcance 2), de 2 dados de fuego,
+               cuya potencia y fuerza es igual al ataque recibido."
+    cintura:  "Reposo (1): +1 dado explosivo (aullante)"
     muñecas:  ""
     abalorio: ""
 -
@@ -896,17 +971,27 @@
   name: "diestra"
   fits:
     cabeza:   "+1 Protección por cada aliado en el reto."
-    cadena:   "1/reto: Tienes una acción extra, después de tu acción de movimiento."
+    cadena:   "1/reto: Tienes una acción extra,
+               después de tu acción de movimiento."
     hombros:  ""
     espalda:  ""
     pecho:    "No puede ser objetivo de un ataque en conjunto."
     aro:      "+1 potencia al arma/escudo equipado en esta mano. +1 vs Psiónica"
     arma:     "+1 potencia"
-    orbe:     ""
-    manos:    "Al teletransportarte por un hechizo o efecto, puedes lanzar un hechizo aleatorio disponible. (Consumiéndolo)"
-    pies:     "-1 al empuje enemigo a tus aliados, en las casillas colindantes a tu miniatura"
-    escudo:   "+2 potencia defensiva si el escudo se lleva en la mano derecha. +1 empuje a las casillas de este lado."
-    cintura:  ""
+    orbe:     "Imbuye al inicio del reto el orbe con magia meridional:
+               <li>+1 potencia al siguiente hechizo de la nueva escuela
+               si el hechizo anterior que ejecutaste era de vieja escuela</li>
+               <li>+1PM al matar con hechizos</li>
+               <li>Ataque de orbe: +2 potencia si tienes toda tu mente</li>
+               <li>1PM, 5+: +1 maestría al siguiente hechizo de la nueva escuela
+               si el hechizo anterior que ejecutaste era de vieja escuela</li>"
+    manos:    "Al teletransportarte por un hechizo o efecto, puedes lanzar
+               un hechizo aleatorio disponible. (Consumiéndolo)"
+    pies:     "-1 al empuje enemigo a tus aliados, en las casillas
+               colindantes a tu miniatura"
+    escudo:   "+2 potencia defensiva si el escudo se lleva en la mano derecha.
+               +1 empuje a las casillas de este lado."
+    cintura:  "Reposo (1): +1 ataque a armas empuñadas con la derecha/ambas"
     muñecas:  ""
     abalorio: ""
 -
@@ -914,18 +999,25 @@
   name: "siniestra"
   fits:
     cabeza:   "+1 Protección por cada dado de defensa de tu armadura"
-    cadena:   "1/reto: Tienes +1 acción extra, antes de tu acción de movimiento."
+    cadena:   "1/reto: Tienes +1 acción extra, antes de tu acción
+               de movimiento."
     hombros:  ""
     espalda:  ""
     pecho:    "Solo puede ser atacado una vez por turno."
     aro:      "+1 fuerza al arma/escudo equipado en esta mano. +1 vs Rayo"
     arma:     "+1 Fuerza"
-    orbe:     ""
+    orbe:     "Imbuye al inicio del reto el orbe con magia septentrional:
+               <li>+1 potencia al siguiente hechizo de la vieja escuela
+               si el hechizo anterior que ejecutaste era de nueva escuela</li>
+               <li>-1 al daño recibido al matar con hechizos (1 turno)</li>
+               <li>Ataque de orbe: +1 fuerza si tienes toda tu mente</li>
+               <li>1PM, 5+: +1 maestría al siguiente hechizo de la vieja escuela
+               si el hechizo anterior que ejecutaste era de nueva escuela</li>"
     manos:    "Al causar daños a un aliado durante tu turno,
                le permites +1 instinto gratuito."
     escudo:   "+2 potencia defensiva si el escudo se esgrime en la izquierda.
                +1 empuje a las casillas de este lado."
-    cintura:  ""
+    cintura:  "Reposo (1): +1 ataque a armas empuñadas con la izquierda/ambas"
     muñecas:  ""
     pies:     "-1 al empuje de tus enemigos, en las casillas
                colindantes a tus aliados"
@@ -951,11 +1043,16 @@
                de combate en magias o ataques."
     arma:     "+1 dado negro de combate al ataque.
                Súmale tu bonificador de miedo a la fuerza de este dado."
-    orbe:     ""
+    orbe:     "Imbuye al inicio del reto el orbe con magia negra:
+               <li>+1 efecto de execraciones</li>
+               <li>+1 alcance en conos, rayos y bolas de tenebro</li>
+               <li>2PM: +1 sigilo</li>
+               <li>Ataque de orbe: +1 dado de combate negro</li>
+               <li>1PM, 3+: +1 maestría en tu siguiente magia de sombras</li>"
     manos:    "(Solo tieflings:) Añade +1 dado negro especial a tus ataques
                (que no usen armas). La calavera les arranca el corazón. (+6 PC)"
     cintura:  ""
-    muñecas:  ""
+    cintura:  "Reposo (1): +1 dado especial negro"
     escudo:   "Al defender con éxito, las 3 casillas del lado del escudo
                sufren un ataque de daño directo (Sombras)
                de tantos dados como dados del ataque defendido y fuerza 2"
@@ -981,7 +1078,12 @@
                recupera 1 carga."
     arma:     "+1 dado de combate amarillo. Los escudos blancos
                restauran 1 PC si golpeas frontalmente."
-    orbe:     ""
+    orbe:     "Imbuye al inicio del reto el orbe con magia sagrada:
+               <li>+1 efecto de plegarias</li>
+               <li>+1PM tras sanar un aliado con plegarias</li>
+               <li>2PM: Añade chakra a tu siguiente plegaria</li>
+               <li>Ataque de orbe: +1 dado sagrado</li>
+               <li>1PM, 3+: +1 summun en tu siguiente plegaria</li>"
     manos:    "(Solo enanos:) +1 sigilo en las casillas colindantes
                a los muros y puertas de piedra."
     escudo:   "+1 carga de Sigmar al defender con éxito de ataques
@@ -992,29 +1094,35 @@
                (6): Resucita a un aliado caído.
                La Sigmarita se vuelve un diamante en el escudo
                hasta final del reto."
-    cintura:  ""
+    cintura:  "Reposo (1): Puedes realizar 2 plegarias como 1 acción"
     muñecas:  ""
     pies:     "Sprintar: Lanzas una plegaria de nivel +1 (no consume contador)"
     abalorio: ""
-  # Gemas Legendarias
+# Gemas Legendarias
 -
   id: 40
   name: "perla negra"
   fits:
-    cabeza:   "Trepidante: los no-muertos que no superen una tirada de miedo lucharán a tu servicio. +1 causar miedo."
-    cadena:   "Otorga el legendario navío: La perla negra. El objetivo causa miedo +1. +20 al oro del tesoro, por nivel del tesoro."
+    cabeza:   "Trepidante: los no-muertos que no superen una tirada de miedo
+               lucharán a tu servicio. +1 causar miedo."
+    cadena:   "Otorga el legendario navío: La perla negra. 
+               +1 a causar miedo. +20 al oro del tesoro, por nivel del tesoro."
     hombros:  ""
-    espalda:  "3/reto: Al recibir un ataque por la espalda puedes mover tu miniatura como respuesta a la espalda de tu agresor. 
-              Esto podría interrumpir su ataque. +2 protección. +1 vs Tenebro."
-    pecho:    "Obtienes un punto de alma al matar. N cargas: +N de resistencia a Tenebro o +N puntos de Mente."
-    aro:     "+1 habilidad única de tu personaje al iniciar el reto. 
-              Si un hechizo o efecto mágico reduce tus PC por debajo de 0, 
-              comenzarás tu turno como esqueleto (misma armadura y ataque de arma principal).<br/>
-              El efecto se puede revertir con una misa."
-    arma:     "+1 potencia. Si el turno anterior no causó heridas, atacará con dados negros. +1 de fuerza al atacar por la espalda."
+    espalda:  "3/reto: Al recibir un ataque por la espalda puedes mover
+               tu miniatura como respuesta a la espalda de tu agresor. 
+               Esto podría interrumpir su ataque. +2 protección. +1 vs Tenebro."
+    pecho:    "Obtienes un punto de alma al matar.
+               N cargas: +N de resistencia a Tenebro o +N PM."
+    aro:      "+1 habilidad única de tu personaje al iniciar el reto. 
+               Si un hechizo o efecto mágico reduce tus PC por debajo de 0, 
+               comenzarás tu turno como esqueleto (misma armadura y
+               ataque de arma principal).<br/>
+               El efecto se puede revertir con una misa."
+    arma:     "+1 potencia. Si el turno anterior no causó heridas,
+               atacará con dados negros. +1 de fuerza al atacar por la espalda."
     orbe:     ""
     escudo:   ""
-    cintura:  ""
+    cintura:  "Reposo (1): El daño es letal (solo tropas base)"
     muñecas:  ""
     manos:    "Añade el hechizo: deshidratación abrasiva. +2 vs Tenebro."
     pies:     ""
@@ -1023,16 +1131,26 @@
   id: 41
   name: "infernalita"
   fits:
-    cabeza:   "Al fallar un hechizo/ataque con fuego recuperas una carga. 2 cargas: Lanzas derretir la piedra. 3 cargas: Recibes sangre ígnea."
-    cadena:   "+1 maestría y potencia a los hechizos de fuego, sangre y sombras."
+    cabeza:   "Al fallar un hechizo/ataque con fuego recuperas una carga.
+               2 cargas: Lanzas derretir la piedra.
+               3 cargas: Recibes sangre ígnea."
+    cadena:   "+1 maestría y potencia en hechizos de fuego, sangre y sombras."
     hombros:  ""
-    espalda:  "+2 vs Calor. La capa cubre al poseedor y le confiere el aspecto de príncipe demoníaco (+1 causar miedo). 3/reto: Todos los demonios que no superen 5+ servirán al portador incondicionalmente."
-    pecho:    "Al inicio de tu turno obtienes el aura de llamas. Además, los críticos de fuego contra ti, en su lugar te sanan 1PC."
-    aro:      "Al matar con efectos/hechizos de fuego obtienes una carga. N cargas: Recupera un hechizo de fuego o sangre de nivel N. 3 cargas: Lanzas gratuitamente juego de sombras contra un objetivo."
-    arma:     "+2 dados de fuego al ataque. Si el turno anterior causó heridas, atacará con dados negros. Si causó heridas con dados negros, drena mente."
+    espalda:  "+2 vs Calor. La capa cubre al poseedor y le confiere
+               el aspecto de príncipe demoníaco (+1 causar miedo).
+               3/reto: Todos los demonios (tropas básicas) que no superen 5+,
+               servirán al portador incondicionalmente."
+    pecho:    "Al inicio de tu turno obtienes el aura de llamas.
+               Además, los críticos de fuego contra ti, en su lugar, +1PC."
+    aro:      "Al matar con efectos/hechizos de fuego obtienes una carga.
+               N cargas: Recupera un hechizo de fuego o sangre de nivel N.
+               3 cargas: Lanzas gratuitamente juego de sombras"
+    arma:     "+2 dados de fuego al ataque. Si el turno anterior causó heridas,
+               atacará con dados negros. Si causó heridas con dados negros,
+               drena mente."
     orbe:     ""
     escudo:   ""
-    cintura:  ""
+    cintura:  "Reposo (1): Recupera un hechizo al matar"
     muñecas:  ""
     manos:    "Añade el hechizo: sangre ígnea. +2 vs Escarcha."
     pies:     ""
@@ -1044,16 +1162,22 @@
     cabeza:   "+2 esquivar."
     cadena:   "+1 a la habilidad: Dos Armas"
     hombros:  ""
-    espalda:  "-1 al consumo de movimiento todas las habilidades activas y efectos que consuman movimiento. (Mínimo 1)"
-    pecho:    "+2 vs Psiónica. 3PC: El corazón del portador abandona su pecho en forma de esfera de relámpagos.
-       Si fuera destruído, obtiene +1 vs Psiónica hasta el final del reto y perdería 2 PM."
-    aro:      "-1 a la dimensión del arma de la mano que la empuña. Si blandes sin empuñarla, congela y es disruptora.)"
-    arma:     "5 movimiento: El arma puede realizar un único ataque extra al mismo objetivo"
+    espalda:  "-1 al consumo de movimiento todas las habilidades activas
+               y efectos que consuman movimiento. (Mínimo 1)"
+    pecho:    "+2 vs Psiónica. 3PC: El corazón del portador abandona
+                su pecho en forma de esfera de relámpagos.
+                Si fuera destruído, obtiene +1 vs Psiónica
+                hasta el final del reto y perdería 2 PM."
+    aro:      "-1 a la dimensión del arma de la mano que la empuña.
+               Si blandes sin empuñarla, congela y es disruptora.)"
+    arma:     "5 movimiento: El arma puede realizar 1 único ataque extra
+               al mismo objetivo"
     orbe:     ""
     escudo:   ""
-    cintura:  ""
+    cintura:  "Reposo (1): +1 ataque extra con la mano principal"
     muñecas:  ""
-    manos:    "1/reto: Absorbes una magia de tipo rayo o maldición y se la retornas a su lanzador. (Se resiste vs Psiónica, Nivel 3)"
+    manos:    "1/reto: Absorbes una magia de tipo rayo o maldición y
+               se la retornas a su lanzador. (Se resiste vs Psiónica, Nivel 3)"
     pies:     ""
     abalorio: ""
 -
@@ -1071,7 +1195,7 @@
        Si estás bajo los efectos de un aura, puede golpear en diagonal."
     orbe:     ""
     escudo:   ""
-    cintura:  ""
+    cintura:  "Reposo (1): Dispones de +1 acción extra, si decides buscar"
     muñecas:  ""
     manos:    "Añade el hechizo: invisibilidad mágica. +2 vs Psiónica."
     pies:     ""
@@ -1105,7 +1229,7 @@
                Al fallar un ataque lanza bola de fuego"
     orbe:     ""
     escudo:   ""
-    cintura:  ""
+    cintura:  "Reposo (1): Puedes ejecutar +1 hechizo no dañino como 1 acción"
     muñecas:  ""
     manos:    "+1 maestría en los hechizos de aire.<br/>
                +2 Fuerza en todos los hechizos y efectos de congelación."
@@ -1136,7 +1260,7 @@
                volará, +3 movimiento, +3 vs Miedo y + 1 de potencia."
     orbe:     ""
     escudo:   ""
-    cintura:  ""
+    cintura:  "Reposo (1): Puedes realizar +1 plegaria extra (consume contador)"
     muñecas:  ""
     manos:    "+1 Un cometa solar (con una trayectoria diferente,
                incluye diagonales) en: Cometa Solar de Sigmar<br/>
@@ -1171,7 +1295,7 @@
                volará, +3 movimiento, +2 vs Escarcha."
     orbe:     ""
     escudo:   ""
-    cintura:  ""
+    cintura:  "Reposo (1): Si murieras este turno, resucitas en un: Infierno"
     muñecas:  ""
     manos:    "Añade el hechizo: espiritismo ígneo. +2 vs Calor."
     pies:     ""
@@ -1201,7 +1325,7 @@
               1/reto: Rayo dracónico."
     orbe:     ""
     escudo:   ""
-    cintura:  ""
+    cintura:  "Reposo (1): +1 causar miedo (dracónico)"
     muñecas:  ""
     manos:    "Añade el hechizo: la boca del lobo. +2 vs Miedo."
     pies:     ""
