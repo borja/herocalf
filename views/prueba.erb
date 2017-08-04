@@ -1,28 +1,30 @@
-<% total_problemas = 0 %>
 <div class='row'>
 	<div class='container'>
 		<ul>
+			<% total_problemas = 0 %>
 			<% gemas.each do |g| %>
 				
 				<% unless g.calidad['name'] == "Gemas Insólitas" %>
 					<li><%= g.calidad['name'] %> - <%= g.name %></li>
 					<% f = ['cabeza','cadena','hombros','espalda','pecho','manos','aro',
 					'arma','orbe','escudo','cintura','muñecas','pies','abalorio'] %>
-					<ul>
-						<% f.each do |fi| %>	
 
+					<ul>
+						<% f.each do |fi| %>
 							<% if g.fits[fi] == "" %>
 								<% total_problemas += 1 %>
 								<li><%= fi %></li>
 							<% end %>
 						<% end %>
 					</ul>
-				
+
 				<% end %>
-				
+
 			<% end %>
 		</ul>
 		
 		<p>Problemas encontrados: <%= total_problemas %></p>
+		<% progreso = (672.0 - total_problemas) / 672 %>
+		<p>Progreso: <%= "%.2f" % (progreso * 100) %>%</p>
 	</div>
 </div>

@@ -7,7 +7,7 @@
     cadena:   "1/reto: +1 PC a un aliado (no puede ser sobre ti mismo)"
     hombros:  "+1 galardón cuando algún aliado encuentre un monstruo errante
                Activa, 2G: +1PC"
-    espalda:  ""
+    espalda:  "Si tu atacante te drena PC: recibe +1 efecto de veneno"
     pecho:    "+1 defensa vs elementales."
     manos:    "Ignora la primera trampa que te afecte en un pasillo."
     aro:      "1/reto: Puedes deshacer una maldición de un objetivo
@@ -28,7 +28,7 @@
     cadena:   "Recuperas 1PM cuando un aliado sufre miedo."
     hombros:  "+1 galardón cuando algún aliado sufra daños de no-muertos
                Activa, 2G: +1 Sigilo ó +1 causar miedo hasta final de turno"
-    espalda:  ""
+    espalda:  "Ser atacado por la espalda: +1 sigilo en tu siguiente turno"
     pecho:    "+1 defensa vs no-muertos."
     manos:    "+1 potencia al hechizo: caricia de Nagash"
     aro:      "1/reto: +2 Sigilo si has causado daño a un aliado este turno."
@@ -48,7 +48,7 @@
                3 cargas: Lanzas un genio (obligatoriamente en fase trepidante)"
     hombros:  "+1 galardón cuando obtengáis ¡Oro! en una tirada de tesoro
                Activa, 2G: Añade el d12 al total de oro de una tirada de tesoro"
-    espalda:  ""
+    espalda:  "+3 al oro del tesoro por cada pirita engarzada"
     pecho:    "+1 vs hechizos de Aire."
     manos:    "Cuando repitas una tirada de tesoro: +10 de oro al resultado."
     aro:      "1/reto: Sustituye la comida de un tesoro por: carpa dorada
@@ -70,7 +70,7 @@
                2 cargas de áspid: +2 de movimiento."
     hombros:  "+1 galardón cuando algún aliado quede envenenado
                Activa, 2G: Ignora el efecto de 1 veneno durante 1 turno"
-    espalda:  ""
+    espalda:  "1/reto: Te transformas en serpiente y puedes atravesar 1 puerta"
     pecho:    "+1 defensa vs pieles verdes."
     manos:    "El hechizo esperanza sana adicionalmente 1 veneno a +1 aliado."
     aro:      "1/reto: Enroscas una serpiente a tu mano.
@@ -90,7 +90,7 @@
     cadena:   "+1 a las tiradas de buscar puertas secretas."
     hombros:  "+1 galardón cuando un aliado descubre una puerta secreta
                Activa, 2G: +1 acción en tu siguiente puerta secreta"
-    espalda:  ""
+    espalda:  "1PM, turno completo: Desvela a enemigos en sigilo de tu espalda"
     pecho:    "Los ataques por uno de los flancos, se consideran frontales."
     manos:    "+1 Buscar durante la fase trepidante."
     aro:      "1/reto: Puedes añadir +4 tras realizar 1 tirada de búsqueda"
@@ -110,7 +110,7 @@
                Si matara, puedes invertir 2PM en recuperar esta habilidad."
     hombros:  "+1 galardón cuando un aliado es objetivo de un hechizo hostil
                Activa, 2G: Ignora el efecto de una hechizo hostil (1 turno)"
-    espalda:  ""
+    espalda:  "+1 PM si eres atacado por la espalda"
     pecho:    "+1 defensa vs constructos."
     manos:    "+1 casilla de rango al arrojar armas"
     aro:      "1/reto: Puedes des/envainar gratuitamente armas y objetos."
@@ -131,7 +131,7 @@
     cadena:   "1/reto: +1 saltar fosos. Si tuvieras éxito, 1PM: se recupera"
     hombros:  "+1 galardón cuando un aliado activa una trampa
                Activa, 2G: Ignora el efecto de una trampa durante 1 turno"
-    espalda:  ""
+    espalda:  "+1 espacio de inventario"
     pecho:    "-2 penalizador de movimiento de la armadura."
     manos:    "+1 potencia al hechizo: manos de piedra"
     aro:      "1/reto: Puedes repetir una tirada fallida de desactivar trampas."
@@ -151,7 +151,7 @@
     cadena:   "1/reto: +1 potencia a un hechizo no-dañino."
     hombros:  "+1 galardón cuando un aliado sufre una maldición
                Activa, 2G: Ignora el efecto de una maldición durante 1 turno"
-    espalda:  ""
+    espalda:  "+1 vs magias que provengan desde la espalda"
     pecho:    "1/reto: duplica el efecto de una habilidad otorgada
                por una gema engarzada en la pieza del pecho."
     manos:    "+1 potencia al hechizo: choque de agua"
@@ -176,7 +176,7 @@
                3+: Se recupera si tras la sanación sus PM superan sus PC"
     hombros:  "+1 galardón al matar con ataques sin armas.
                Activa, 3G: +2 de fuerza en tu siguiente ataque sin armas."
-    espalda:  ""
+    espalda:  "1PC: Puedes atacar desde tu espalda como si fuera frontal"
     pecho:    "+1 vs Miedo"
     manos:    "1PM, acción de ataque: ataca con 1 (+ potencia de fuego)
                dado de fuego a un enemigo cuerpo a cuerpo."
@@ -202,7 +202,7 @@
                3+: Se recupera si tras la sanación sus PC superan sus PM"
     hombros:  "+1 galardón al resistir vs Miedo.
                Activa, 3G: +5 vs Miedo hasta final del turno."
-    espalda:  ""
+    espalda:  "+1 vs efectos psiónicos que provengan desde la espalda"
     pecho:    "+1 todas las resistencias durante 1d6 turnos cuando un aliado te
                lance una bendición."
     manos:    "1PM, acción de movimiento: Desarma a un enemigo
@@ -229,7 +229,7 @@
                3+: Se recupera si el objetivo quedó congelado sin morir"
     hombros:  "+1 galardón al resistir vs Psiónica.
                Activa, 3G: +5 vs Psiónica hasta final del turno."
-    espalda:  ""
+    espalda:  "1/reto: Ignora un efecto/magia de hielo"
     pecho:    "+1 vs Psiónica"
     aro:      "1/reto: El aliado objetivo recupera el hechizo de agua: dormir"
     arma:     "+1 Fuerza contra enemigos congelados y dormidos"
@@ -255,7 +255,7 @@
     hombros:  "+1 galardón al hechizar agua en la fase trepidante.<br/>
                Activa, 3G: Lanzas un hechizo aleatorio de agua de nivel 1.
                (Se puede usar durante la fase trepidante)"
-    espalda:  ""
+    espalda:  "+1 saltar fosos si tus PM están intactos"
     pecho:    "+1 vs Escarcha"
     aro:      "1/reto: Añade un dado de frío a tu próximo ataque/hechizo"
     arma:     "Añade un dado de escarcha tras ser objetivo de
@@ -281,7 +281,7 @@
                3+: Se recupera si el objetivo muere antes de su turno."
     hombros:  "+1 galardón al resistir vs Calor.
                Activa, 3G: +5 vs Calor hasta final del turno."
-    espalda:  ""
+    espalda:  "+1 vs efectos de fuego que provengan desde la espalda"
     pecho:    "+1 vs Calor"
     aro:      "1/reto: Recupera tantos PC como exceso de defensa este turno."
     arma:     "Robo de vida si superas los PC de tu víctima"
@@ -307,7 +307,7 @@
                3+: Teletransporta a un aliado que no esté herido (PC y PM)"
     hombros:  "+1 galardón al resistir vs Escarcha.
                Activa, 3G: +5 vs Escarcha hasta final del turno."
-    espalda:  ""
+    espalda:  "+1 vs efectos de rayo que provengan desde la espalda"
     pecho:    "+1 vs Rayo"
     aro:      "1/reto: Recupera 1PM a un aliado (no puedes ser tú). +1PM"
     arma:     "+1PM al matar frontalmente, sin atacar en conjunto."
@@ -333,7 +333,7 @@
                3+: Se recupera si el objetivo aún tiene efectos perjudiciales"
     hombros:  "+1 galardón al lanzar el hechizo: Cura Corporal.
                Activa, 3G: +5 vs Peste hasta final del turno."
-    espalda:  ""
+    espalda:  "+1 vs efectos de peste que provengan desde la espalda"
     pecho:    "+1 vs Peste"
     aro:      "1/reto: Añade un dado de peste a tu próximo ataque/hechizo"
     arma:     "Sustituye un dado de ataque por uno de veneno
@@ -360,7 +360,7 @@
                3+: Se recupera si es destruido antes de su turno"
     hombros:  "+1 galardón al resistir vs Tenebro.
                Activa, 3G: +5 vs Tenebro hasta final del turno."
-    espalda:  ""
+    espalda:  "+1 vs efectos de tenebro que provengan desde la espalda"
     pecho:    "+1 vs Tenebro"
     aro:      "1/reto: +2 sigilo hasta el final del turno."
     arma:     "Los ataques por la espalda, bonificarán con dados negros."
@@ -386,7 +386,7 @@
     hombros:  "+1 galardón al sanar completamente a un aliado.
                Activa, 3G: Elimina un efecto de Peste de un aliado
                (no puedes ser tú mismo)"
-    espalda:  ""
+    espalda:  "+2 vs efectos de veneno que provengan desde la espalda"
     pecho:    "+2 vs Peste"
     aro:      "1/reto: El piel-verde objetivo debe resistirse vs Psiónica:
                Puedes gobernarlo hasta que sufra un daño."
@@ -414,7 +414,7 @@
     cadena:   "+1 magia de agua de nivel 1 a elegir al inicio del reto."
     hombros:  "+1 galardón al matar con hechizos/efectos de escarcha/agua.
                Activa, 3G: Ignora tu siguiente herida mental"
-    espalda:  ""
+    espalda:  "+2 vs efectos de escarcha que provengan desde la espalda"
     pecho:    "+2 vs Escarcha"
     aro:      "1/reto: Tú y tus aliados en S/P recuperaáis 1PM."
     arma:     "Si el arma hiere al enemigo, lo congelará."
@@ -441,7 +441,7 @@
     cadena:   "+1 magia de aire de nivel 1 a elegir al inicio del reto."
     hombros:  "+1 galardón al matar con hechizos/efectos de aire/rayo.
                Activa, 3G: +4 movimiento hasta el final del turno."
-    espalda:  ""
+    espalda:  "+2 vs efectos de rayo que provengan desde la espalda"
     pecho:    "+2 vs Rayo"
     aro:      "1/reto: Ataca con un dado eléctrico a todas las miniaturas
                a tu alrededor. Por cada 2PM invertidos: +1 Fuerza"
@@ -471,7 +471,7 @@
     hombros:  "+1 galardón al matar con hechizos/efectos de fuego.
                Activa, 3G: +1 PM (Si estuvieras al máximo,
                puedes recuperar Bola de Fuego)"
-    espalda:  ""
+    espalda:  "+2 vs efectos de fuego que provengan desde la espalda"
     pecho:    "+2 vs Calor"
     aro:      "1/reto: Lanzará una Bola de Fuego (esta carga se puede
                recuperar con las habilidades pertinentes)"
@@ -498,7 +498,7 @@
     cadena:   "+1 magia de sombras de nivel 1 a elegir al inicio del reto."
     hombros:  "+1 galardón ser objetivo de una bendición de tierra.
                Activa, 3G: Tu siguiente ataque envenena con potencia 2."
-    espalda:  ""
+    espalda:  "-1 ataque de bestias por la espalda"
     pecho:    "+2 vs Tenebro"
     aro:      "1/reto: El demonio objetivo debe resistirse vs Tenebro:
               Puedes gobernarlo este turno."
@@ -526,7 +526,7 @@
               (causa daño verdadero a ciertas unidades)."
     cadena:   "+1 plegaria"
     hombros:  "+1 galardón al aturdir a un enemigo. Activa, 3G: +1 PM ó +1PC"
-    espalda:  ""
+    espalda:  "-1 ataque de no-muertos por la espalda"
     pecho:    "+2 vs Miedo"
     aro:      "1/reto: Añade un dado de Sigmar de +2 Fuerza,
                a tu siguiente ataque contra un No-muerto."
@@ -556,7 +556,7 @@
     cadena:   "+1 magia de sangre de nivel 1 a elegir al inicio del reto."
     hombros:  "+1 galardón al causar críticos de sangrado.
                Activa, 3G: Eres bendecido con vampirismo"
-    espalda:  ""
+    espalda:  "-1 ataque de demonios por la espalda"
     pecho:    "+1 carga al sufrir una herida cuerpo a cuerpo.<br/>
                3 cargas: +1 fuerza en tu siguiente ataque.<br/>
                4 cargas: +2 de fuerza en tu siguiente ataque."
@@ -583,7 +583,7 @@
     cadena:   "+1 PC. Obtienes +1PC adicional al ser sanado con: agua que cura."
     hombros:  "+1 galardón al matar con hechizos de agua.
                Activa, 3G: Lanzas choque de agua"
-    espalda:  ""
+    espalda:  "+1 potencia en las bendiciones de agua sobre ti"
     pecho:    "+2 vs Psiónica"
     aro:      "1/reto: Sana a un aliado en llamas, que recuperará hasta 2PC"
     arma:     "+1 dado de escarcha en los ataques por el flanco"
