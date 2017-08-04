@@ -1,0 +1,89 @@
+<form action="/calculador" method="POST" class="form">
+
+	<div class="form-group">
+		<label for="example-text-input" class="col-2 col-form-label">
+			Propiedades mágicas
+		</label>
+		<select name="objeto">
+			<option value="0">0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+		</select>
+		<button type="button" class="btn btn-link" data-toggle="collapse" data-target="#demo">
+			<i class="fa fa-question-circle" aria-hidden="true"></i> explicación
+		</button>
+	</div>
+	<div id="demo" class="collapse">
+		<div class="alert alert-info alert-dismissable fade in">
+			<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+			<i class="fa fa-info-circle" aria-hidden="true"></i>
+			Cada propiedad mágica <strong>incrementa</strong> el precio del engarce
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label for="example-text-input" class="col-2 col-form-label">
+			Ranuras vacías
+		</label>
+		<select name="ranuras">
+			<option value="0">0</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+		</select>
+		<button type="button" class="btn btn-link" data-toggle="collapse"
+						data-target="#info_ranura">
+			<i class="fa fa-question-circle" aria-hidden="true"></i> explicación
+		</button>
+	</div>	
+
+	<div id="info_ranura" class="collapse">
+		<div class="alert alert-info alert-dismissable fade in">
+			<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+			<i class="fa fa-info-circle" aria-hidden="true"></i>
+			Si ya tiene ranuras vacías,
+			<strong>disminuye</strong> el precio de engarce
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label for="example-text-input" class="col-2 col-form-label">
+			Reputación
+		</label>
+		<div class="input-group">
+			<span class="input-group-addon">
+				<i class="fa fa-star" aria-hidden="true"></i>
+			</span>
+			<input type="text" class="form-control" id="inputGroupSuccess2"
+			aria-describedby="inputGroupSuccess2Status" name="repu">
+		</div>
+	</div>
+	
+	<div class="form-group">
+		<label for="example-text-input" class="col-2 col-form-label">
+			Calibre de gemas
+		</label>
+		<div class="input-group">
+			<span class="input-group-addon">
+				<i class="fa fa-diamond" aria-hidden="true"></i>
+			</span>
+			<input type="text" class="form-control" id="inputGroupSuccess2"
+			aria-describedby="inputGroupSuccess2Status" name="engarces">
+		</div>
+	</div>
+	<div class="alert alert-warning alert-dismissable fade in">
+		<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+		<div class="form-group">
+			<i class="fa fa-warning" aria-hidden="true"></i>
+			Escribe los calibres (números), separados por comas:<br>
+			<strong>Ejemplo</strong>: "1,6,6"
+		</div>
+	</div>
+	
+	<input type="submit" class="btn btn-primary">
+</form>

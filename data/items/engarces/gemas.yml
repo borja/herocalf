@@ -224,7 +224,7 @@
   id: 10
   name: "turquesa"
   fits:
-    cabeza:   ""
+    cabeza:   "+1PM si esgrimes un arma a 2 manos o un escudo"
     cadena:   "1/reto, antes de tirar: +2 fuerza a una tirada de hielo
                3+: Se recupera si el objetivo quedó congelado sin morir"
     hombros:  "+1 galardón al resistir vs Psiónica.
@@ -249,7 +249,7 @@
   id: 11
   name: "lapislázuli"
   fits:
-    cabeza:   ""
+    cabeza:   "+1PM si puedes lanzar hechizos de Aire"
     cadena:   "1/reto: Lanza inmediatamente una réplica de un hechizo de agua
                3+: Se recupera si el objetivo renuncia a su siguiente turno"
     hombros:  "+1 galardón al hechizar agua en la fase trepidante.<br/>
@@ -276,7 +276,7 @@
   id: 12
   name: "espinela"
   fits:
-    cabeza:   ""
+    cabeza:   "+1PC si eres el aliado con más PC"
     cadena:   "1/reto: Un objetivo dañado queda envenenado o en llamas
                3+: Se recupera si el objetivo muere antes de su turno."
     hombros:  "+1 galardón al resistir vs Calor.
@@ -302,7 +302,7 @@
   id: 13
   name: "hessonita"
   fits:
-    cabeza:   ""
+    cabeza:   "+1 PM si eres el aliado con más hechizos"
     cadena:   "1/reto,turno: Teletranspórtate a la sala de la escalera/inicial
                3+: Teletransporta a un aliado que no esté herido (PC y PM)"
     hombros:  "+1 galardón al resistir vs Escarcha.
@@ -328,7 +328,7 @@
   id: 14
   name: "malaquita"
   fits:
-    cabeza:   ""
+    cabeza:   "+1PM si puedes lanzar magias de Tierra"
     cadena:   "1/reto: Purga 1 veneno/enfermedad a un aliado (no puedes ser tú)
                3+: Se recupera si el objetivo aún tiene efectos perjudiciales"
     hombros:  "+1 galardón al lanzar el hechizo: Cura Corporal.
@@ -355,7 +355,7 @@
   id: 15
   name: "obsidiana"
   fits:
-    cabeza:   ""
+    cabeza:   "+1 PC si puedes lanzar execraciones"
     cadena:   "1/reto: Controla 1 turno a un no-muerto (debe ser básico)
                3+: Se recupera si es destruido antes de su turno"
     hombros:  "+1 galardón al resistir vs Tenebro.
