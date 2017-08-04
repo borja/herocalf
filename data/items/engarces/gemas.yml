@@ -5,7 +5,8 @@
   fits:
     cabeza:   "+1 detectar sigilo."
     cadena:   "1/reto: +1 PC a un aliado (no puede ser sobre ti mismo)"
-    hombros:  ""
+    hombros:  "+1 galardón cuando algún aliado encuentre un monstruo errante
+               Activa, 2G: +1PC"
     espalda:  ""
     pecho:    "+1 defensa vs elementales."
     manos:    "Ignora la primera trampa que te afecte en un pasillo."
@@ -16,7 +17,7 @@
     orbe:     "+1 hechizo de hielo de nivel 1, a elegir al inicio del Reto"
     escudo:   "Girar hacia el lado del escudo, no consume fase de movimiento"
     cintura:  ""
-    muñecas:  "" 
+    muñecas:  ""
     pies:     "(fase de movimiento) 1/reto: +2 movimiento"
     abalorio: "Puedes repetir el d12 en la primera maldición del tesoro"
 -
@@ -25,16 +26,17 @@
   fits:
     cabeza:   "No-muertos gobernados tienen +1 protección"
     cadena:   "Recuperas 1PM cuando un aliado sufre miedo."
-    hombros:  ""
+    hombros:  "+1 galardón cuando algún aliado sufra daños de no-muertos
+               Activa, 2G: +1 Sigilo ó +1 causar miedo hasta final de turno"
     espalda:  ""
     pecho:    "+1 defensa vs no-muertos."
-    manos:    "+1 potencia al hechizo: caricia de Nagash"	
+    manos:    "+1 potencia al hechizo: caricia de Nagash"
     aro:      "1/reto: +2 Sigilo si has causado daño a un aliado este turno."
     arma:     "+1 potencia en un dado vs No-Muertos"
     orbe:     "+1 hechizo de sombras de nivel 1, a elegir al inicio del Reto"
     escudo:   "+1 causar miedo a no-muertos que golpeen el lado del escudo"
     cintura:  ""
-    muñecas:  "" 
+    muñecas:  ""
     pies:     "1PC: -1 al empuje de los no-muertos, hasta el final de turno."
     abalorio: "1/Reto: Aturde al no-muerto objetivo (solo tropas básicas)"
 -
@@ -44,17 +46,18 @@
     cabeza:   "Ilumina"
     cadena:   "Si eres objetivo de un hechizo de Aire acumulas 1 carga.
                3 cargas: Lanzas un genio (obligatoriamente en fase trepidante)"
-    hombros:  ""
+    hombros:  "+1 galardón cuando obtengáis ¡Oro! en una tirada de tesoro
+               Activa, 2G: Añade el d12 al total de oro de una tirada de tesoro"
     espalda:  ""
     pecho:    "+1 vs hechizos de Aire."
-    manos:    "Cuando repitas una tirada de tesoro: +10 de oro al resultado."	
+    manos:    "Cuando repitas una tirada de tesoro: +10 de oro al resultado."
     aro:      "1/reto: Sustituye la comida de un tesoro por: carpa dorada
                (Elegir: +2 PM, +2PC, recupera 1 hechizo, elimina 1 maldición)"
     arma:     "(ornamental) El portador se considera desarmado "
     orbe:     "+1 plegaria de nivel 1, al inicio del Reto"
     escudo:   "+1 oro al recibir daño por el lado del escudo"
     cintura:  ""
-    muñecas:  "" 
+    muñecas:  ""
     pies:     "1/reto: Si has encontrado ¡Oro! en la búsqueda de tesoros,
                dispones de tu fase de movimiento"
     abalorio: "1/reto: Repite el d12 al obtener ¡Oro! en el tesoro"
@@ -65,7 +68,8 @@
     cabeza:   "Si tu familiar es una serpiente, duplica su efecto."
     cadena:   "+1 carga de áspid al causar daño por veneno.
                2 cargas de áspid: +2 de movimiento."
-    hombros:  ""
+    hombros:  "+1 galardón cuando algún aliado quede envenenado
+               Activa, 2G: Ignora el efecto de 1 veneno durante 1 turno"
     espalda:  ""
     pecho:    "+1 defensa vs pieles verdes."
     manos:    "El hechizo esperanza sana adicionalmente 1 veneno a +1 aliado."
@@ -84,7 +88,8 @@
   fits:
     cabeza:   "1/reto: Puedes desvelar todas las trampas de tu sala o pasillo."
     cadena:   "+1 a las tiradas de buscar puertas secretas."
-    hombros:  ""
+    hombros:  "+1 galardón cuando un aliado descubre una puerta secreta
+               Activa, 2G: +1 acción en tu siguiente puerta secreta"
     espalda:  ""
     pecho:    "Los ataques por uno de los flancos, se consideran frontales."
     manos:    "+1 Buscar durante la fase trepidante."
@@ -103,7 +108,8 @@
     cabeza:   "+1 PM si no puedes lanzar hechizos."
     cadena:   "1/reto: +1 potencia en un hechizo de nivel 1.
                Si matara, puedes invertir 2PM en recuperar esta habilidad."
-    hombros:  ""
+    hombros:  "+1 galardón cuando un aliado es objetivo de un hechizo hostil
+               Activa, 2G: Ignora el efecto de una hechizo hostil (1 turno)"
     espalda:  ""
     pecho:    "+1 defensa vs constructos."
     manos:    "+1 casilla de rango al arrojar armas"
@@ -123,10 +129,11 @@
   fits:
     cabeza:   "+1 vs hechizos de Tierra"
     cadena:   "1/reto: +1 saltar fosos. Si tuvieras éxito, 1PM: se recupera"
-    hombros:  ""
+    hombros:  "+1 galardón cuando un aliado activa una trampa
+               Activa, 2G: Ignora el efecto de una trampa durante 1 turno"
     espalda:  ""
     pecho:    "-2 penalizador de movimiento de la armadura."
-    manos:    "+1 potencia al hechizo: manos de piedra"	
+    manos:    "+1 potencia al hechizo: manos de piedra"
     aro:      "1/reto: Puedes repetir una tirada fallida de desactivar trampas."
     arma:     "Al pifiar una tirada de ataque, puedes repetir 1 dado."
     orbe:     "+1 hechizo de tierra de nivel 1, a elegir al inicio del Reto"
@@ -142,11 +149,12 @@
   fits:
     cabeza:   "+1 vs hechizos de Agua"
     cadena:   "1/reto: +1 potencia a un hechizo no-dañino."
-    hombros:  ""
+    hombros:  "+1 galardón cuando un aliado sufre una maldición
+               Activa, 2G: Ignora el efecto de una maldición durante 1 turno"
     espalda:  ""
     pecho:    "1/reto: duplica el efecto de una habilidad otorgada
                por una gema engarzada en la pieza del pecho."
-    manos:    "+1 potencia al hechizo: choque de agua"	
+    manos:    "+1 potencia al hechizo: choque de agua"
     aro:      "1/reto: Las calaveras y escudos blancos serán éxitos
                en los dados blancos de combate.
                Los escudos negros serán siempre fallos."
@@ -242,7 +250,7 @@
   name: "lapislázuli"
   fits:
     cabeza:   ""
-    cadena:   "1/reto: Lanza inmediatamente una réplica de un hechizo de agua 
+    cadena:   "1/reto: Lanza inmediatamente una réplica de un hechizo de agua
                3+: Se recupera si el objetivo renuncia a su siguiente turno"
     hombros:  "+1 galardón al hechizar agua en la fase trepidante.<br/>
                Activa, 3G: Lanzas un hechizo aleatorio de agua de nivel 1.
@@ -321,7 +329,7 @@
   name: "malaquita"
   fits:
     cabeza:   ""
-    cadena:   "1/reto: Purga 1 veneno/enfermedad a un aliado (no puedes ser tú) 
+    cadena:   "1/reto: Purga 1 veneno/enfermedad a un aliado (no puedes ser tú)
                3+: Se recupera si el objetivo aún tiene efectos perjudiciales"
     hombros:  "+1 galardón al lanzar el hechizo: Cura Corporal.
                Activa, 3G: +5 vs Peste hasta final del turno."
@@ -680,7 +688,7 @@
     escudo:   "+2 PM al defender con éxito un ataque frontal o
                por el lado del escudo"
     pies:     "3PM - N : Levitar. N es el número de zafiros engarzados."
-    abalorio: ""
+    abalorio: "1/reto: Ignora el siguiente daño mental que recibas"
 -
   id: 27
   name: "topacio"
@@ -823,7 +831,7 @@
     cintura:  "-1 al empuje de los enemigos durante el turno posterior
                a una fase trepidante."
     muñecas:  "+1 opresión al ser penalizado en movimiento/turno.<br/>
-               Activa, 3o.: Lanzas ráfaga como aura.<br/> 
+               Activa, 3o.: Lanzas ráfaga como aura.<br/>
                Pasiva (5o.): Tus instintos interrumpen"
     escudo:   "+1 dado eléctrico a tu próximo ataque, al defender con éxito
                un ataque frontal o por el lado del escudo"
@@ -924,7 +932,7 @@
                en Gloria del Héroe hasta tu próximo turno."
     escudo:   "Al defender con éxito por el frente o el flanco del escudo,
                puedes elegir:<br/>
-               (1): Ese agresor siempre estará provocado por ti. 
+               (1): Ese agresor siempre estará provocado por ti.
                Recuperas 1PC<br/>
                (2): Serás siempre la última prioridad de ese agresor.
                Recuperas 1PM"
@@ -1105,28 +1113,34 @@
   fits:
     cabeza:   "Trepidante: los no-muertos que no superen una tirada de miedo
                lucharán a tu servicio. +1 causar miedo."
-    cadena:   "Otorga el legendario navío: La perla negra. 
+    cadena:   "Otorga el legendario navío: La perla negra.
                +1 a causar miedo. +20 al oro del tesoro, por nivel del tesoro."
     hombros:  ""
     espalda:  "3/reto: Al recibir un ataque por la espalda puedes mover
-               tu miniatura como respuesta a la espalda de tu agresor. 
+               tu miniatura como respuesta a la espalda de tu agresor.
                Esto podría interrumpir su ataque. +2 protección. +1 vs Tenebro."
     pecho:    "Obtienes un punto de alma al matar.
                N cargas: +N de resistencia a Tenebro o +N PM."
-    aro:      "+1 habilidad única de tu personaje al iniciar el reto. 
-               Si un hechizo o efecto mágico reduce tus PC por debajo de 0, 
+    aro:      "+1 habilidad única de tu personaje al iniciar el reto.
+               Si un hechizo o efecto mágico reduce tus PC por debajo de 0,
                comenzarás tu turno como esqueleto (misma armadura y
                ataque de arma principal).<br/>
                El efecto se puede revertir con una misa."
     arma:     "+1 potencia. Si el turno anterior no causó heridas,
                atacará con dados negros. +1 de fuerza al atacar por la espalda."
-    orbe:     ""
+    orbe:     "Imbuye al inicio del reto el orbe con la magia del corsario:
+               <li>+1 potencia agua y arena (corsarios)</li>
+               <li>Si ejecutaste un hechizo corsario de otro elemento:
+               el siguiente hechizo será con ardid</li>
+               <li>2PM: Recupera 1 magia corsario sacando ¡Oro! en tesoros</li>
+               <li>Ataque de orbe: +1 dado negro (potencia = p. de agua)</li>
+               <li>1PM, 4+: +1 maestría en tu siguiente magia de arena</li>"
     escudo:   ""
     cintura:  "Reposo (1): El daño es letal (solo tropas base)"
     muñecas:  ""
     manos:    "Añade el hechizo: deshidratación abrasiva. +2 vs Tenebro."
     pies:     ""
-    abalorio: ""
+    abalorio: "1/reto: Invoca a Jack el Muerto (1d6 turnos)"
 -
   id: 41
   name: "infernalita"
@@ -1148,13 +1162,19 @@
     arma:     "+2 dados de fuego al ataque. Si el turno anterior causó heridas,
                atacará con dados negros. Si causó heridas con dados negros,
                drena mente."
-    orbe:     ""
+    orbe:     "Imbuye al inicio del reto el orbe con la magia del infierno:
+               <li>+1 potencia fuego y sombras (infernal)</li>
+               <li>Si ejecutaste un hechizo infernal de otro elemento:
+               el siguiente hechizo será con ardid</li>
+               <li>2PM: Recupera 1 magia infernal sacando monstruo errante</li>
+               <li>Ataque de orbe: +1 dado ígneo (potencia = p. de fuego)</li>
+               <li>1PM, 4+: +1 maestría en tu siguiente magia de sombras</li>"
     escudo:   ""
     cintura:  "Reposo (1): Recupera un hechizo al matar"
     muñecas:  ""
     manos:    "Añade el hechizo: sangre ígnea. +2 vs Escarcha."
     pies:     ""
-    abalorio: ""
+    abalorio: "1/reto: Invoca un maestro demonio (1d6 turnos)"
 -
   id: 42
   name: "rosa de cristal"
@@ -1172,34 +1192,58 @@
                Si blandes sin empuñarla, congela y es disruptora.)"
     arma:     "5 movimiento: El arma puede realizar 1 único ataque extra
                al mismo objetivo"
-    orbe:     ""
+    orbe:     "Imbuye al inicio del reto el orbe con la magia de Bretania:
+               <li>+1 potencia hielo y sangre (Bretona)</li>
+               <li>Si ejecutaste un hechizo bretón de otro elemento:
+               el siguiente hechizo será con ardid</li>
+               <li>2PM: Recupera 1 magia bretona en tesoro: Poción</li>
+               <li>Ataque de orbe: +1 escarcha (potencia = p. de sangre)</li>
+               <li>1PM, 4+: +1 maestría en tu siguiente magia de hielo</li>"
     escudo:   ""
     cintura:  "Reposo (1): +1 ataque extra con la mano principal"
     muñecas:  ""
     manos:    "1/reto: Absorbes una magia de tipo rayo o maldición y
                se la retornas a su lanzador. (Se resiste vs Psiónica, Nivel 3)"
     pies:     ""
-    abalorio: ""
+    abalorio: "1/reto: Invoca un golem de diamante (1d6 turnos)"
 -
   id: 43
   name: "pendril"
   fits:
-    cabeza:   "Durante la fase trepidante si no combates puedes percibir a todos los enemigos en sigilo. 1/reto: Puedes contrar 1d6 pieles verdes durante 2 turnos."
-    cadena:   "Puedes lanzar conjuros y arrojar armas desde tu espalda. 2/reto: Puedes desvelar dos salas del mapa. 1/reto: Puedes convocar 1d6 pieles verdes."
+    cabeza:   "Durante la fase trepidante si no combates puedes percibir
+               a todos los enemigos en sigilo.
+               1/reto: Puedes contrar 1d6 pieles verdes durante 2 turnos."
+    cadena:   "Puedes lanzar conjuros y arrojar armas desde tu espalda.
+               2/reto: Puedes desvelar dos salas del mapa.
+               1/reto: Puedes convocar 1d6 pieles verdes."
     hombros:  ""
-    espalda:  "El portador obtiene el aura de la tormenta al inicio de su turno. Los aliados desplazados recuperan 1PM. Si el aura de la tormenta matara a un enemigo, invoca una momia a tu servicio."
-    pecho:    "+1 potencia defensiva por cada aliado en tu línea de visión. Durante la fase trepidante si hubiera más enemigos visibles que aliados en el tablero, lanza gratuitamente dormir sobre tus enemigos."
-    aro:      "En la fase trepidante al buscar con éxito, lanzas gratuitamente 1 rayo dracónico de potencia igual a tu dado más bajo."
-    arma: "+1 potencia por cada potencia extra en magia de agua.<br/>
-       +1 fuerza por cada maestría extra en magia de aire.<br/>
-       Si estás bajo los efectos de un aura, puede golpear en diagonal."
-    orbe:     ""
+    espalda:  "El portador obtiene el aura de la tormenta al inicio
+               de su turno. Los aliados desplazados recuperan 1PM.
+               Si el aura de la tormenta matara a un enemigo,
+               invoca una momia a tu servicio."
+    pecho:    "+1 potencia defensiva por cada aliado en tu línea de visión.
+               Durante la fase trepidante si hubiera más enemigos visibles
+               que aliados en el tablero, lanza gratuitamente dormir
+               sobre todos tus enemigos."
+    aro:      "En la fase trepidante al buscar con éxito,
+               lanzas gratuitamente +1 rayo dracónico de potencia igual
+               a tu dado más bajo."
+    arma:     "+1 potencia por cada potencia extra en magia de agua.<br/>
+               +1 fuerza por cada maestría extra en magia de aire.<br/>
+               Bajo los efectos de un aura: puede golpear en diagonal."
+    orbe:     "Imbuye al inicio del reto el orbe con la magia del archimago:
+               <li>Elegir al inicio del Reto: +2 habilidades únicas de mago</li>
+               <li>Las diabluras dañinas tienen robo de vida.</li>
+               <li>2PM: Revela a los enemigos en sigilo</li>
+               <li>Ataque de orbe: +N dados negros (N=total de potencias),
+               El ataque tiene radio R. (R=total de maestrías)</li>
+               <li>1PM, 6+: Revela una sala del tablero</li>"
     escudo:   ""
     cintura:  "Reposo (1): Dispones de +1 acción extra, si decides buscar"
     muñecas:  ""
     manos:    "Añade el hechizo: invisibilidad mágica. +2 vs Psiónica."
     pies:     ""
-    abalorio: ""
+    abalorio: "1/reto: Invoca un contemplador (1d6 turnos)"
 -
   id: 44
   name: "zelfama"
@@ -1227,14 +1271,21 @@
                (Vuela alrededor sin consumir una mano)
                +1 potencia en ataques en conjunto.
                Al fallar un ataque lanza bola de fuego"
-    orbe:     ""
+    orbe:     "Imbuye al inicio del reto el orbe con la magia del Prisionero:
+               <li>+1 potencia tierra y aire (prisionero)</li>
+               <li>Si ejecutaste un hechizo prisión de otro elemento:
+               el siguiente hechizo será con ardid</li>
+               <li>2PM: Recupera 1 magia prisión al sacar trampa en tesoro</li>
+               <li>Ataque de orbe: +1 dado de de fuerza y potencia igual
+               a los hechizos prisión consumidos</li>
+               <li>1PM, 4+: +1 maestría en tu siguiente magia prisión</li>"
     escudo:   ""
     cintura:  "Reposo (1): Puedes ejecutar +1 hechizo no dañino como 1 acción"
     muñecas:  ""
     manos:    "+1 maestría en los hechizos de aire.<br/>
                +2 Fuerza en todos los hechizos y efectos de congelación."
     pies:     ""
-    abalorio: ""
+    abalorio: "1/reto: Invoca a Zelfama (1d6 turnos)"
 -
   id: 45
   name: "celestita"
@@ -1258,7 +1309,12 @@
     arma:     "El arma puede ser utilizada por el clero.
                Si el portador está bendecido, brotarán alas de ángel:
                volará, +3 movimiento, +3 vs Miedo y + 1 de potencia."
-    orbe:     ""
+    orbe:     "Imbuye al inicio del reto el orbe con magia del Profeta:
+               <li>+1 efecto de plegarias. +3 alcance de todas las auras</li>
+               <li>+2PM tras sanar un aliado con plegarias</li>
+               <li>2PM: Añade chakra y summum a tu siguiente plegaria</li>
+               <li>Ataque de orbe: +1 sagrado (p = plegarias disponibles)</li>
+               <li>1d6 plegarias, 5+: Resucita a un aliado caído</li>"
     escudo:   ""
     cintura:  "Reposo (1): Puedes realizar +1 plegaria extra (consume contador)"
     muñecas:  ""
@@ -1267,7 +1323,7 @@
                Durante la consagración, los demonios y no-muertos de la sala,
                recibirán +1 dado amarillo de daño."
     pies:     ""
-    abalorio: ""
+    abalorio: "1/reto: Invoca un Adalid de Sigmar (1d6 turnos)"
 -
   id: 46
   name: "piedra fénix"
@@ -1288,18 +1344,23 @@
     aro:      "+2 maestría a hechizos de fuego. Al dañar con fuego
                a un enemigo obtienes +3 vs Calor hasta tu siguiente turno."
     arma:     "+2 dados de fuego. +1 de fuerza. Los dados nulos de fuego
-               generan cargas fénix. 
+               generan cargas fénix.
                2 cargas fénix: +1 fuerza.
                3 cargas fénix: +5 vs Calor
                4 cargas fénix: brotarán alas de fuego hasta el final del reto:
                volará, +3 movimiento, +2 vs Escarcha."
-    orbe:     ""
+    orbe:     "Imbuye al inicio del reto el orbe con la magia del fénix:
+               <li>+1 maestría en hechizos de fuego</li>
+               <li>Bajo valentía: Tus hechizos de fuego tienen ardid</li>
+               <li>NPC: Recupera 1 magia de fuego de nivel N</li>
+               <li>Ataque de orbe: +2 dados ígneos, potencia = p. de fuego</li>
+               <li>2PM, 4+: Ejecuta +1 hechizo de fuego como acción extra</li>"
     escudo:   ""
     cintura:  "Reposo (1): Si murieras este turno, resucitas en un: Infierno"
     muñecas:  ""
     manos:    "Añade el hechizo: espiritismo ígneo. +2 vs Calor."
     pies:     ""
-    abalorio: ""
+    abalorio: "1/reto: Invoca un fénix (1d6 turnos)"
 -
   id: 47
   name: "dragonita"
@@ -1311,10 +1372,10 @@
     hombros:  ""
     espalda:  "+1 potencia defensiva. +1 carga de baluarte Al defenderun ataque.
               <br/>3 cargas: +2 PC.
-              <br/>4 cargas: +4 dados azules (pot.3) defensa durante 1 ataque 
+              <br/>4 cargas: +4 dados azules (pot.3) defensa durante 1 ataque
               <br/>5 cargas: Te transformas en dragón verde 1d6 turnos."
     pecho:    "+3 vs Psiónico. Al inicio del reto puedes compartir
-              un fragmento de tu corazón con un aliado. 
+              un fragmento de tu corazón con un aliado.
               Ambos compartiréis maldiciones, sanaciones y +1 vs Calor."
     aro:      "+2 maestría a hechizos de tierra. Al renunciar a tu movimiento,
               recuperas hechizos de tierra de nivel 1
@@ -1323,13 +1384,19 @@
               +1 causar miedo dracónico.<br/>
               2/reto: Aliento de dragón.<br/>
               1/reto: Rayo dracónico."
-    orbe:     ""
+    orbe:     "Imbuye al inicio del reto el orbe con la magia del dragón:
+               <li>+1 maestría en una escuela elemental (dragón)</li>
+               <li>Si ejecutaste un hechizo dragón: el siguiente hechizo
+               no-dragón será lanzado con ardid</li>
+               <li>2PM: Recupera 1 magia dragón sacando engarces en tesoros</li>
+               <li>Ataque de orbe: +1 dado (potencia = p. de dragón)</li>
+               <li>2PM, 4+: Tu siguiente hechizo con ardid tiene diablura</li>"
     escudo:   ""
     cintura:  "Reposo (1): +1 causar miedo (dracónico)"
     muñecas:  ""
     manos:    "Añade el hechizo: la boca del lobo. +2 vs Miedo."
     pies:     ""
-    abalorio: ""
+    abalorio: "1/reto: Invoca un dragón de Jade (1d6 turnos)"
 
 
 
@@ -1353,12 +1420,12 @@
   id: 51
   name: 'jacinto de sangre'
   fits:
-    pecho: '+1 PC'  
+    pecho: '+1 PC' 
 -
   id: 52
   name: 'piedra de alma'
   fits:
-    colgante: 'contiene un alma encerrada'  
+    colgante: 'contiene un alma encerrada' 
 -
   id: 53
   name: 'felmar'
@@ -1368,7 +1435,7 @@
   id: 54
   name: 'trigema'
   fits:
-    abalorio: '3 gemas en una'  
+    abalorio: '3 gemas en una' 
 -
   id: 55
   name: 'rubí encantado'

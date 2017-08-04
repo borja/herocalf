@@ -10,13 +10,10 @@
 					'arma','orbe','escudo','cintura','muñecas','pies','abalorio'] %>
 					<ul>
 						<% f.each do |fi| %>	
-							<% if g.fits[fi].nil? %>
-								<% total_problemas += 1 %>
-								<li><b>Sin registro</b>: <%= fi %></li>
-							<% end %>
+
 							<% if g.fits[fi] == "" %>
 								<% total_problemas += 1 %>
-								<li>Sin completar: <%= fi %></li>
+								<li><%= fi %></li>
 							<% end %>
 						<% end %>
 					</ul>

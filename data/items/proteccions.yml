@@ -76,7 +76,7 @@
   categoria: 'cuero'
   defensa:   1
   ranuras:   2
-  fits:      'pechera'
+  fits:      'pecho'
   precio:	 250
 -
   id:        10
@@ -116,7 +116,7 @@
   categoria: 'cuero'
   defensa:   1
   ranuras:   2
-  fits:      'pechera'
+  fits:      'pecho'
   precio:    250
 -
   id:         15
