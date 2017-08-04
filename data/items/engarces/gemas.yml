@@ -17,7 +17,8 @@
     orbe:     "+1 hechizo de hielo de nivel 1, a elegir al inicio del Reto"
     escudo:   "Girar hacia el lado del escudo, no consume fase de movimiento"
     cintura:  ""
-    muñecas:  ""
+    muñecas:  "+1 opresión al sacar ¡Maldición! en el tesoro.
+               Activa, 2o.: +1PC a un aliado"
     pies:     "(fase de movimiento) 1/reto: +2 movimiento"
     abalorio: "Puedes repetir el d12 en la primera maldición del tesoro"
 -
@@ -36,7 +37,8 @@
     orbe:     "+1 hechizo de sombras de nivel 1, a elegir al inicio del Reto"
     escudo:   "+1 causar miedo a no-muertos que golpeen el lado del escudo"
     cintura:  ""
-    muñecas:  ""
+    muñecas:  "+1 opresión al ser atacado por enemigos malditos.
+               Activa, 2o.: +1 vs Tenebro hasta final del turno"
     pies:     "1PC: -1 al empuje de los no-muertos, hasta el final de turno."
     abalorio: "1/Reto: Aturde al no-muerto objetivo (solo tropas básicas)"
 -
@@ -57,7 +59,8 @@
     orbe:     "+1 plegaria de nivel 1, al inicio del Reto"
     escudo:   "+1 oro al recibir daño por el lado del escudo"
     cintura:  ""
-    muñecas:  ""
+    muñecas:  "+1 opresión al obtener menos oro que 20 veces tu reputación.
+               Activa, 2o.: Realiza una tirada de tesoro si hay enemigos"
     pies:     "1/reto: Si has encontrado ¡Oro! en la búsqueda de tesoros,
                dispones de tu fase de movimiento"
     abalorio: "1/reto: Repite el d12 al obtener ¡Oro! en el tesoro"
@@ -79,7 +82,8 @@
     orbe:     "+1 hechizo de arena de nivel 1, a elegir al inicio del Reto"
     escudo:   "Renunciar a tu próximo movimiento: Inmune al cono de ácido."
     cintura:  ""
-    muñecas:  ""
+    muñecas:  "+1 opresión al ser atacados por objetivos en posición elevada.
+               Activa, 2o.: +1 veneno a tu siguiente ataque"
     pies:     "+2 movimiento mientras estés envenenado"
     abalorio: "1/reto: Repite una tirada de veneno"
 -
@@ -98,7 +102,8 @@
     orbe:     "+1 hechizo de fuego de nivel 1, a elegir al inicio del Reto"
     escudo:   "La diagonal de espalda del lado del escudo se considera frontal."
     cintura:  ""
-    muñecas:  ""
+    muñecas:  "+1 opresión al ser atacado por enemigos en sigilo
+               Activa, 2o.: +1 buscar hasta final del turno"
     pies:     "1/reto: +90º de giro en cualquier momento."
     abalorio: "1/reto: Puedes repetir una tirada de Buscar"
 -
@@ -119,7 +124,8 @@
     escudo:   "Defender con éxito por el lado de este escudo otorga:
                +1 resistencia mágica en la misma S/P"
     cintura:  ""
-    muñecas:  ""
+    muñecas:  "+1 opresión al recibir daño mental.
+               Activa, 2o.: +1PM"
     pies:     "1/reto: +1 movimiento por cada hechizo lanzado en S/P.
                (Solo puede usarse durante la fase de movimiento)"
     abalorio: "1/reto: Puedes pedirle al MB repetir un dato olvidado"
@@ -140,7 +146,8 @@
     escudo:   "+1PC si al defender sacas más calaveras que éxitosm,
                al ser golpeado por el lado del escudo."
     cintura:  ""
-    muñecas:  ""
+    muñecas:  "+1 opresión al sufrir daños en fosos trampa.
+               Activa, 2o.: +1 saltar fosos hasta final de turno"
     pies:     "1/reto: +1 saltar fosos. Si tienes éxito, 1PM: se recupera"
     abalorio: "1/reto: Puedes repetir una tirada de saltar foso"
 -
@@ -162,7 +169,8 @@
     orbe:     "+1 hechizo de agua de nivel 1, a elegir al inicio del Reto"
     escudo:   "+1 a la tirada para redirigir al lanzador 1 magia de tipo rayo."
     cintura:  ""
-    muñecas:  ""
+    muñecas:  "+1 opresión al ser objetivo de hechizos hostiles.
+               Activa, 2o.: +1 resistencia mágica hasta final de turno"
     pies:     "+3 PC ó 2PM (a elegir) al cruzar por primera vez
                una puerta secreta."
     abalorio: "1/reto: Repite una tirada de resistencia mágica"
@@ -190,7 +198,8 @@
     escudo:   "Puedes atacar sin armas a los enemigos que pasen
                por la casilla de flanco de tu escudo."
     cintura:  ""
-    muñecas:  ""
+    muñecas:  "+1 opresión al recibir daño de fuego.
+               Activa, 2o.: +1 vs Calor hasta final de turno"
     pies:     "-1 al empuje vs bestias"
     abalorio: "1/reto: Repite una tirada de sangrado (ofensiva o defensiva)"
 -
@@ -217,7 +226,8 @@
                <li>1/reto, acción: Lanza 1 execración de nivel 1</li>"
     escudo:   "Girar 90º, no consume fase de movimiento"
     cintura:  ""
-    muñecas:  ""
+    muñecas:  "+1 opresión al recibir daño de escarcha.
+               Activa, 2o.: +1 vs Escarcha hasta final de turno"
     pies:     "-1 al empuje vs elementales"
     abalorio: "1/reto: Redirige 1 hechizo (maldición) a 1 miniatura colindante"
 -
@@ -240,7 +250,8 @@
                <li>1/reto, acción: Lanza 1 hechizo de hielo de nivel 1</li>"
     escudo:   "Durante la niebla: -2 a todo el daño mental que sufras."
     cintura:  ""
-    muñecas:  ""
+    muñecas:  "+1 opresión al recibir daño de Peste.
+               Activa, 2o.: +1 vs Peste hasta final de turno"
     manos:    "1PM, acción de ataque: congelas una puerta durante 2 turnos.
               (Solo puede ser abierta con magia)"
     pies:     "-1 al empuje vs caóticos"
@@ -267,7 +278,8 @@
                <li>1/reto, acción: Lanza 1 hechizo de agua de nivel 1</li>"
     escudo:   "+1 dado de defensa azul vs magias y efectos de agua y escarcha."
     cintura:  ""
-    muñecas:  ""
+    muñecas:  "+1 opresión al recibir daño de Escarcha.
+               Activa, 2o.: El siguiente hechizo de agua será con diablura"
     manos:    "1PM, acción de ataque: Un aliado que haya
                defendido con éxito el turno anterior, recupera 1PM."
     pies:     "-1 al empuje vs humanoides"
@@ -293,7 +305,8 @@
     escudo:   "+1 dado de defensa verde vs magias y efectos de fuego y calor."
     manos:    "1PM, pierde tu próximo turno: +4 vs Calor"
     cintura:  ""
-    muñecas:  ""
+    muñecas:  "+1 opresión al recibir daño de fuego.
+               Activa, 2o.: El siguiente hechizo de Tierra será con diablura"
     hombros:  "+1 galardón al resistir vs Calor.
                Activa, 3G: +5 vs Calor hasta final del turno."
     pies:     "-1 al empuje vs demonios"
@@ -321,7 +334,8 @@
     manos:    "2PM, 1 acción de turno: Puedes atravesar muros con las manos,
                para interactuar con objetos de otra sala, cuerpo a cuerpo."
     cintura:  ""
-    muñecas:  ""
+    muñecas:  "+1 opresión al recibir daño de no-muertos.
+               Activa, 2o.: El siguiente hechizo de Aire será con diablura"
     pies:     "-1 al empuje vs constructos"
     abalorio: "1/reto: Puedes realizar una tirada de tesoros adicional"
 -
@@ -348,7 +362,8 @@
     manos:    "1PM, acción de ataque: Puedes disolver cualquier
                trampa venenosa de tipo área en la sala/pasillo."
     cintura:  ""
-    muñecas:  ""
+    muñecas:  "+1 opresión al recibir daño de pielesverdes.
+               Activa, 2o.: +1PC"
     pies:     "-1 al empuje vs pieles-verdes"
     abalorio: "1/reto: Tu próximo veneno es mortal (solo contra tropas básicas)"
 -
@@ -373,7 +388,8 @@
     manos:    "1PM, acción de ataque: Maldices al objetivo (Tenebro),
                que perderá sus habilidades excepcionales."
     cintura:  ""
-    muñecas:  ""
+    muñecas:  "+1 opresión al recibir daño de Tenebro.
+               Activa, 2o.: El siguiente hechizo de Sombras será con diablura"
     pies:     "-1 al empuje vs no-muertos"
     abalorio: "1/reto: Recupera el hechizo pesadillas"
 # Gemas Valiosas (nivel 3)
@@ -400,8 +416,8 @@
     manos:    "1PM, acción de movimiento: Una nube venenosa de +1 casilla,
                permanece en tu casilla inicial."
     cintura:  ""
-    muñecas:  "+1 opresión al ser atacado por pieles verdes.
-               Activa, 3o.: +1 dado verde a tu siguiente
+    muñecas:  "+1 opresión al ser atacado por pielverdes.
+               Activa, 2o.: +1 dado verde a tu siguiente
                tirada de defensa (instinto)"
     pies:     "+1 movimiento bajo los ejectos de cualquier
                bendición/aura de tierra."
@@ -427,8 +443,8 @@
     manos:    "1PM: Hasta el final de turno, si empuñas un carámbano,
                añade un dado de frío al ataque."
     cintura:  ""
-    muñecas:  "+1 opresión al fallar el hechizo: Dormir.
-               Activa, 3o.: Recupera un hechizo aleatorio de agua (de nivel 1)"
+    muñecas:  "+1 opresión al fallar hechizos de agua
+               Activa, 2o.: Recupera un hechizo aleatorio de agua de nivel 1"
     pies:     "+1 movimiento bajo los ejectos de cualquier
                bendición/aura de agua."
     abalorio: ""
@@ -456,7 +472,7 @@
     manos:    "2PM, tras obtener un 6 en una tirada de tesoro:
                Añade un turno extra después de éste."
     cintura:  ""
-    muñecas:  "+1 opresión al fallar Genio.
+    muñecas:  "+1 opresión al fallar hechizos de aire
                Activa, 3o.: Tu próximo hechizo de aire tiene +1 potencia"
     pies:     "+1 movimiento bajo los ejectos de cualquier bendición/aura
                de aire."
@@ -512,7 +528,7 @@
               los aliados del escenario. (salvo tú)"
     cintura:  ""
     muñecas:  "+1 opresión al ser atacado por demonios.
-               Activa, 3o.: Lanzas el hechizo: Restituir"
+               Activa, 2o.: Lanzas el hechizo: Restituir"
     escudo:   "Tu escudo lanza el hechizo flechas de la noche,
                al ser dañado por ataques cuerpo a cuerpo"
     pies:     "+1 movimiento bajo los ejectos de cualquier
@@ -570,8 +586,7 @@
     manos:    "+1 dado verde defensivo al estar bajo el hechizo: restituir"
     cintura:  ""
     muñecas:  "+1 opresión al ser envenenado por trampas.
-               Activa, 3o.: Si estás envenenado replicas
-               el efecto en un enemigo a melé."
+               Activa, envenenado, 3o.: replicas el efecto a +1 enemigo a melé."
     escudo:   ""
     pies:     "+1 movimiento bajo los ejectos de cualquier maldición."
     abalorio: ""
@@ -595,7 +610,7 @@
     manos:    "2PM: Puedes nadar/bucear/levitar, al doble de tu velocidad."
     cintura:  ""
     muñecas:  "+1 opresión al ser congelado.
-               Activa, 3o.: Lanzas el hechizo: Pacto de Sangre"
+               Activa, 2o.: Lanzas el hechizo: Pacto de Sangre"
     escudo:   "Los aliados en tu flanco de escudo obtienen
                +2 vs calor y +2 vs escarcha."
     pies:     "+1 movimiento bajo los ejectos de cualquier

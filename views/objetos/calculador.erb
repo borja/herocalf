@@ -3,10 +3,17 @@
 <hr>
 <% if params[:engarces] %>
 	<div class="alert alert-success">
+		Con las siguientes <strong>características</strong>:
+		<ul>
+			<li><strong>Encantamientos</strong>: <%= params[:objeto] %></li>
+			<li><strong>Reputación</strong>: <%= params[:repu] %></li>
+			<li><strong>Ranuras</strong>: <%= params[:ranuras] %></li>
+			<li><strong>Engarces</strong>: <%= params[:engarces] %></li>
+		</ul>
 		<i class="fa fa-check" aria-hidden="true"></i>
 		<strong>Coste de engarzar el objeto</strong>:
 		<%= calcular_coste(params) %>
 		<i class="fa fa-database" aria-hidden="true"></i>
-		piezas de oro 
+		piezas de oro
 	</div>
 <% end %>
