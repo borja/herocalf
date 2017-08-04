@@ -421,7 +421,7 @@
                tirada de defensa (instinto)"
     pies:     "+1 movimiento bajo los ejectos de cualquier
                bendición/aura de tierra."
-    abalorio: ""
+    abalorio: "1/reto: Ignora 1 ataque de un demonio"
 -
   id: 17
   name: "aguamarina"
@@ -447,7 +447,7 @@
                Activa, 2o.: Recupera un hechizo aleatorio de agua de nivel 1"
     pies:     "+1 movimiento bajo los ejectos de cualquier
                bendición/aura de agua."
-    abalorio: ""
+    abalorio: "1/reto: Puedes lanzar agua que cura sin descartar el hechizo"
 -
   id: 18
   name: "ámbar"
@@ -476,7 +476,7 @@
                Activa, 3o.: Tu próximo hechizo de aire tiene +1 potencia"
     pies:     "+1 movimiento bajo los ejectos de cualquier bendición/aura
                de aire."
-    abalorio: ""
+    abalorio: "1/reto: Puedes lanzar tempestad sin descartar el hechizo"
 -
   id: 19
   name: "piropo"
@@ -505,7 +505,7 @@
                bendición/aura de fuego."
     escudo:   "Tu escudo lanza el hechizo bola de fuego,
                al ser dañado por ataques de proyectil"
-    abalorio: ""
+    abalorio: "1/reto: Todos las miniaturas colindantes prenden en llamas"
 -
   id: 20
   name: "olivino"
@@ -533,7 +533,7 @@
                al ser dañado por ataques cuerpo a cuerpo"
     pies:     "+1 movimiento bajo los ejectos de cualquier
                bendición/aura de sombras."
-    abalorio: ""
+    abalorio: "1/reto: Añade 2 dados (fuego y veneno) a tu próximo ataque"
 -
   id: 21
   name: "perla"
@@ -562,7 +562,7 @@
                sufra una herida: el escudo lanza una plegaria"
     pies:     "+1 movimiento bajo los ejectos de cualquier
                bendición/aura sagrada."
-    abalorio: ""
+    abalorio: "1/reto: Los no-muertos de la sala (básicos) quedan aturdidos"
 -
   id: 22
   name: "jaspe"
@@ -587,9 +587,10 @@
     cintura:  ""
     muñecas:  "+1 opresión al ser envenenado por trampas.
                Activa, envenenado, 3o.: replicas el efecto a +1 enemigo a melé."
-    escudo:   ""
+    escudo:   "Los aliados en tu flanco de escudo obtienen
+               +2 vs Psiónica y +2 vs Calor."
     pies:     "+1 movimiento bajo los ejectos de cualquier maldición."
-    abalorio: ""
+    abalorio: "1/reto: Un hechizo de duración D, no cesa el efecto al dañarte"
 -
   id: 23
   name: "coral"
@@ -615,7 +616,7 @@
                +2 vs calor y +2 vs escarcha."
     pies:     "+1 movimiento bajo los ejectos de cualquier
                bendición/aura de sangre."
-    abalorio: ""
+    abalorio: "1/reto: +2 (PC o PM) al recibir cualquier tipo de sanación"
 # Piedras Preciosas
 -
   id: 24
