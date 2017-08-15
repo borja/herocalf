@@ -5,7 +5,7 @@ class App < Sinatra::Base
   configure do
     enable :sessions
   end
-  
+
   helpers do
     def username
       erb :'layout/username'
