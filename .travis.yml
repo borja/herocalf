@@ -1,0 +1,35 @@
+# Default permission
+sudo: false
+
+# Ruby configuration, using RVM
+language: ruby
+rvm:
+  - 2.4.1
+before_install:
+  - gem install bundler --no-document -v '~> 1.13.3'
+  # Sinatra gem is loaded from github, instead of rubygems:
+  - bundle config github.https true
+
+# Main test usging bundler (not working)
+script:
+  - bundle install --path vendor/bundle
+  - bundle exec rspec test.rb
+
+# Code Metrics tokens
+addons:
+  code_climate:
+    repo_token: 21daec0460198a2112bd481550dfc6f9a9d37da9f21e357ebcdf0cb77c4d4635
+
+# Git properties
+git:
+  depth: 2
+
+# Whitelisted (Safe)
+branches:
+  only:
+    - master
+
+# Excluded (Block)
+branches:
+  except:
+    - gh-pages
