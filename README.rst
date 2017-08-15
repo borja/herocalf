@@ -7,7 +7,8 @@ This project was created as an amateur idea, a group of friends willing to gathe
 The Herosheet is written in Ruby on Sinatra with a fake-DB in YAML, using Bootstrap as HTML web framework.
 
 * [Sinatra](http://www.sinatrarb.com/)
-* [Twitter Bootstrap](http://getbootstrap.com/). 
+* [Twitter Bootstrap](http://getbootstrap.com/)
+* [YAML](http://yaml.org/)
 
 QA Dashboard
 ============
@@ -40,16 +41,16 @@ Build Status
 | Semaphore    | |Semaphore|       |
 +--------------+-------------------+
 
-.. |Travis Status| image:: https://travis-ci.org/borja/herobravo.svg?branch=master
-   :target: https://travis-ci.org/borja/herobravo
-.. |Scrut Status| image:: https://scrutinizer-ci.com/g/borja/herobravo/badges/build.png?b=master
-   :target: https://scrutinizer-ci.com/g/borja/herobravo
-.. |CircleCi Status| image:: https://circleci.com/gh/borja/herobravo.svg?style=shield
-   :target: https://circleci.com/gh/borja/herobravo
+.. |Travis Status| image:: https://travis-ci.org/borja/herocalf.svg?branch=master
+   :target: https://travis-ci.org/borja/herocalf
+.. |Scrut Status| image:: https://scrutinizer-ci.com/g/borja/herocalf/badges/build.png?b=master
+   :target: https://scrutinizer-ci.com/g/borja/herocalf
+.. |CircleCi Status| image:: https://circleci.com/gh/borja/herocalf.svg?style=shield
+   :target: https://circleci.com/gh/borja/herocalf
 .. |CodeShip| image:: https://codeship.com/projects/52ab60f0-1e7d-0134-4772-3632048523f1/status?branch=master
    :target: https://codeship.com/projects/160114
-.. |Semaphore| image:: https://semaphoreci.com/api/v1/borja/herobravo/branches/master/shields_badge.svg
-   :target: https://semaphoreci.com/borja/herobravo
+.. |Semaphore| image:: https://semaphoreci.com/api/v1/borja/herocalf/branches/master/shields_badge.svg
+   :target: https://semaphoreci.com/borja/herocalf
 
 Deployment Status
 -----------------
@@ -59,8 +60,8 @@ Deployment Status
 | **Project model**      | |Gemnasium|     |
 +------------------------+-----------------+
 
-.. |Gemnasium| image:: https://gemnasium.com/borja/herobravo.svg
-   :target: https://gemnasium.com/borja/herobravo
+.. |Gemnasium| image:: https://gemnasium.com/borja/herocalf.svg
+   :target: https://gemnasium.com/borja/herocalf
 .. |Heroku Status| image:: http://heroku-badge.herokuapp.com/?app=herosheet&style=flat&svg=1
    :target: http://herosheet.herokuapp.com/
 
@@ -82,24 +83,24 @@ Quality Grades
 | bitHound     | |bitHound|     |                   |
 +--------------+----------------+-------------------+
 
-.. |Code Climate| image:: https://codeclimate.com/github/borja/herobravo/badges/gpa.svg
-   :target: https://codeclimate.com/github/borja/herobravo
+.. |Code Climate| image:: https://codeclimate.com/github/borja/herocalf/badges/gpa.svg
+   :target: https://codeclimate.com/github/borja/herocalf
 .. |Codacy Badge| image:: https://api.codacy.com/project/badge/Grade/f2559f1e733d4a4c854fdcc84804c047
-   :target: https://www.codacy.com/app/borja/herobravo?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=borja/herobravo&amp;utm_campaign=Badge_Grade
-.. |CC Coverage| image:: https://codeclimate.com/github/borja/herobravo/badges/coverage.svg
-   :target: https://codeclimate.com/github/borja/herobravo/coverage
+   :target: https://www.codacy.com/app/borja/herocalf?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=borja/herocalf&amp;utm_campaign=Badge_Grade
+.. |CC Coverage| image:: https://codeclimate.com/github/borja/herocalf/badges/coverage.svg
+   :target: https://codeclimate.com/github/borja/herocalf/coverage
 .. |Codacy Coverage| image:: https://api.codacy.com/project/badge/Coverage/f2559f1e733d4a4c854fdcc84804c047
-   :target: https://www.codacy.com/app/borja/herobravo?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=borja/herobravo&amp;utm_campaign=Badge_Coverage
-.. |Coveralls| image:: https://coveralls.io/repos/github/borja/herobravo/badge.svg?branch=master
-   :target: https://coveralls.io/github/borja/herobravo?branch=master
-.. |CodeCov| image:: https://codecov.io/gh/borja/herobravo/branch/master/graph/badge.svg
-  :target: https://codecov.io/gh/borja/herobravo
-.. |Scrutinizer| image:: https://scrutinizer-ci.com/g/borja/herobravo/badges/quality-score.png?b=master
-  :target: https://scrutinizer-ci.com/g/borja/herobravo/
-.. |ScrutCov| image:: https://scrutinizer-ci.com/g/borja/herobravo/badges/coverage.png?b=master
-  :target: https://scrutinizer-ci.com/g/borja/herobravo/
-.. |bitHound| image:: https://www.bithound.io/github/borja/herobravo/badges/score.svg
-   :target: https://www.bithound.io/github/borja/herobravo
+   :target: https://www.codacy.com/app/borja/herocalf?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=borja/herocalf&amp;utm_campaign=Badge_Coverage
+.. |Coveralls| image:: https://coveralls.io/repos/github/borja/herocalf/badge.svg?branch=master
+   :target: https://coveralls.io/github/borja/herocalf?branch=master
+.. |CodeCov| image:: https://codecov.io/gh/borja/herocalf/branch/master/graph/badge.svg
+  :target: https://codecov.io/gh/borja/herocalf
+.. |Scrutinizer| image:: https://scrutinizer-ci.com/g/borja/herocalf/badges/quality-score.png?b=master
+  :target: https://scrutinizer-ci.com/g/borja/herocalf/
+.. |ScrutCov| image:: https://scrutinizer-ci.com/g/borja/herocalf/badges/coverage.png?b=master
+  :target: https://scrutinizer-ci.com/g/borja/herocalf/
+.. |bitHound| image:: https://www.bithound.io/github/borja/herocalf/badges/score.svg
+   :target: https://www.bithound.io/github/borja/herocalf
 
 Documentation
 -------------
@@ -113,10 +114,10 @@ Documentation
 | **CII Best Practices** | |Best Practices| | *FLOSS Best practices of this project*              |
 +------------------------+------------------+-----------------------------------------------------+
 
-.. |Inline docs| image:: http://inch-ci.org/github/borja/herobravo.svg
-   :target: http://inch-ci.org/github/borja/herobravo
-.. |readthedocs| image:: https://readthedocs.org/projects/herobravo/badge/?version=latest
-   :target: http://herobravo.readthedocs.io/es/latest/?badge=latest
+.. |Inline docs| image:: http://inch-ci.org/github/borja/herocalf.svg
+   :target: http://inch-ci.org/github/borja/herocalf
+.. |readthedocs| image:: https://readthedocs.org/projects/herocalf/badge/?version=latest
+   :target: http://herocalf.readthedocs.io/es/latest/?badge=latest
 .. |Best Practices| image:: https://bestpractices.coreinfrastructure.org/projects/224/badge
    :target: https://bestpractices.coreinfrastructure.org/projects/224
 
@@ -129,7 +130,7 @@ Non-supported building platforms
 +-----------+------------+-----------------------------+
 
 .. |Appveyor| image:: https://ci.appveyor.com/api/projects/status/7lm7txpwnr0cxj6x?svg=true
-   :target: https://ci.appveyor.com/project/borja/herobravo/branch/master
+   :target: https://ci.appveyor.com/project/borja/herocalf/branch/master
 
 DIY & Manual Configuration
 ==========================
@@ -142,8 +143,8 @@ DIY & Manual Configuration
 Just click the heroku button to start a new website.
 (your-app-name.herokuapp.com) Enjoy!
 
-.. |DockerHub| image:: https://img.shields.io/badge/%E2%86%91_DockerHub-borjamartin/herobravo-blue.svg
-   :target: https://hub.docker.com/r/borjamartin/herobravo/
+.. |DockerHub| image:: https://img.shields.io/badge/%E2%86%91_DockerHub-borjamartin/herocalf-blue.svg
+   :target: https://hub.docker.com/r/borjamartin/herocalf/
 .. |Heroku Deploy| image:: https://img.shields.io/badge/%E2%86%91_Deploy_to-Heroku-7056bf.svg
    :target: https://heroku.com/deploy
 
