@@ -1,0 +1,10 @@
+name:      "Jotún"
+personaje: "bersérker"
+jugador:   "JJ"
+nivel:     1
+cuerpo:    8
+mente:     2
+mov:       7
+armadura:  {id: 2}
+armas:
+  - { id: 2 }
