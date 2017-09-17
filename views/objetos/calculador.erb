@@ -1,13 +1,14 @@
-<header><h2>Calculador de engarces</h2></header>
-<%= erb :'objetos/calculadora/form' %>
+<h2>Calculador de engarces</h2>
+<%= erb :'objetos/calculadora/consulta' %>
 <hr>
+
 <% if params[:engarces] %>
 	<div class="alert alert-success">
 		Con las siguientes <strong>características</strong>:
 		<ul>
 			<li><strong>Encantamientos</strong>: <%= params[:objeto] %></li>
-			<li><strong>Reputación</strong>: <%= params[:repu] %></li>
 			<li><strong>Ranuras</strong>: <%= params[:ranuras] %></li>
+			<li><strong>Reputación</strong>: <%= params[:repu] %></li>
 			<li><strong>Engarces</strong>: <%= params[:engarces] %></li>
 		</ul>
 		<i class="fa fa-check" aria-hidden="true"></i>

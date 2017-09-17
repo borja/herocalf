@@ -1,0 +1,12 @@
+name:      "Xenua"
+personaje: "invocador"
+jugador:   "Iris"
+familiar:  { id: 8, name: "Plumoso" }
+nivel:     2
+cuerpo:    4
+mente:     6
+mov:       7
+armadura:  {id: 1}
+armas:
+  - { id: 1 }
+skills:     [0, 1]
