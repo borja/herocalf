@@ -1,60 +1,101 @@
+# nivel 2
 -
   id:           0
   nivel:        2
+  rangos:       3
   name:         "Atraer a las bestias"
-  type:         "Pasiva"
-  description:  "Aparece un animal cuando el señor de las bestias realice una búsqueda en una sala con 1 dado de combate. Esto implica que agotará la posibilidad de buscar tesoros en esa misma sala por parte de otros jugadores.
- Los otros jugadores además tampoco podrán pasar a través de las bestias."
+  type:         "Invocación"
+  coste:        "1 búsqueda de tesoro"
+  description:  "Tira 1 dado de combate para invocar (R) alimañas de nivel 1"
 -
   id:           1
   nivel:        2
-  requisitos:  [0]
+  requisitos:   [0]
   name:         "Moverse entre bestias"
   type:         "Pasiva"
-  description:  "Permite a los otros jugadores poder moverse a través de tus esbirros."
+  description:  "Tus esbirros permiten pasar a los aliados"
 -
   id:           2
   nivel:        2
   name:         "Ira poderosa"
-  type:         "Pasiva"
-  description:  "+1 potencia a todas las miniaturas que golpeen (melee) al mismo objetivo que el Señor de las Bestias, mientras esté enfurecido."
+  type:         "Reactiva"
+  description:  "(Se dispara al declarar Furia) +1 potencia a los ataques
+                 al mismo objetivo que el Señor de las Bestias"
 -
   id:           3
   nivel:        2
-  name:         "Salto poderoso"
+  name:         "Salto de montaraz"
   type:         "Pasiva"
   description:  "No hay penalización al moverse entre diferentes alturas."
 -
   id:           4
-  nivel:        3
-  requisitos:  [0]
-  name:         "Poderío de la naturaleza"
-  type:         "Pasiva"
-  description:  "+1 ataque a las bestias invocadas al atacar en conjunto"
+  nivel:        2
+  requisitos:   [0]
+  name:         "Jauría"
+  type:         "Reactiva"
+  description:  "+1PM cuando tus esbirros maten durante tu Furia"
+# nivel 3
 -
   id:           5
   nivel:        3
-  name:         "Grito de batalla"
-  type:         "Única"
-  description:  "+1 Potencia de ataque a todos los aliados y esbirros en la sala"
+  rangos:       2
+  requisitos:   [4]
+  name:         "Cazar en manada"
+  type:         "Pasiva"
+  description:  "+1 ataque de los esbirros al atacar en conjunto"
 -
   id:           6
-  nivel:        4
-  name:         "Búsqueda exhaustiva"
-  type:         "Pasiva"
-  description:  "Te permite buscar tesoros en pasillos."
+  nivel:        3
+  name:         "Grito de batalla"
+  type:         "Única"
+  description:  "+1 Potencia a los aliados y esbirros en la sala"
 -
   id:           7
-  nivel:        6
-  requisitos:  [0]
-  name:         "Rituales"
-  type:         "Activa"
-  coste:        "2PC"
-  description:  "Obtienes una habilidad pasiva de un esbirro, mientras permanezca con vida."
+  nivel:        3
+  name:         "Búsqueda exhaustiva"
+  type:         "Pasiva"
+  description:  "Permite buscar tesoros en pasillos."
 -
   id:           8
-  nivel:        9
-  requisitos:  [7]
-  name:         "Sangre de la naturaleza"
+  nivel:        3
+  rangos:       3
+  requisitos:   [0]
+  name:         "Rituales"
+  type:         "Activa"
+  coste:        "1PC"
+  description:  "Obtienes una habilidad pasiva de R esbirros,
+                 mientras permanezca con vida."
+# nivel 4
+-
+  id:           9
+  nivel:        2
+  rangos:       3
+  requisitos:   [0]
+  name:         "Atraer a las grandes bestias"
+  type:         "Invocación"
+  coste:        "1 búsqueda de tesoro"
+  description:  "Tira 1 dado de combate para invocar (R) bestias de nivel 2"
+-
+  id:           10
+  nivel:        4
+  rangos:       3
+  requisitos:   [0]
+  name:         "Alfa"
   type:         "Pasiva"
-  description:  "Permite que el señor de las bestias reciba daño en lugar de sus animales (ritualizados)."
+  description:  "+1 fuerza al primer esbirro invocado (será el alfa)"
+-
+  id:           11
+  nivel:        4
+  rangos:       3
+  requisitos:   [0]
+  name:         "Supervivencia"
+  type:         "Pasiva"
+  description:  "+1 PC a los esbirros invocados"
+-
+  id:           12
+  nivel:        4
+  requisitos:   [8]
+  name:         "Adalid de la naturaleza"
+  type:         "Declarativa"
+  description:  "Permite recibir daño en lugar de sus esbirros ritualizados"
+# nivel 5

@@ -179,6 +179,11 @@
     main: "personajes/caminos/lista"
     right: "heroes/sidebar"
 -
+  ruta:  "nivel"
+  template:
+    main: "manuales/nivel"
+    right: "heroes/sidebar"
+-
   ruta:  "camino"
   template:
     left:  "personajes/caminos/miniature"
