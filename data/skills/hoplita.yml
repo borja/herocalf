@@ -8,78 +8,91 @@
 -
   id:           1
   nivel:        2
+  rangos:       2
   name:         "cargar"
-  type:         "declarativa"
+  type:         "Activa"
+  coste:        "3+ movimiento"
   description:  "Invirtiendo 3 de movimiento como mínimo y en línea recta:
-                 +1 potencia en tu siguiente ataque por movimiento recorrido"
-# nivel 3
+                 +1 potencia en tu siguiente ataque por cada casilla recorrida"
 -
   id:           2
-  nivel:        3
-  name:         "competencia con escudo"
-  description:  "+1 potencia defensiva del escudo"
-  type:         "pasiva"
--
-  id:           3
-  nivel:        3
+  nivel:        2
   name:         "senda de la pradera"
   type:         "pasiva"
   description:  "Permite realizar la secuencia: ataque-movimiento-ataque
-                 (sin realizar giros en el movimiento)"
+                 (si no realiza giros durante el movimiento)"
+-
+  id:           3
+  nivel:        2
+  name:         "golpe al corazón"
+  type:         "Única"
+  description:  "[Lanzas] +1 fuerza y potencia en tu siguiente ataque."
 -
   id:           4
-  nivel:        3
-  name:         "golpe al corazón"
-  type:         "única"
-  description:  "+1 fuerza y +1 potencia en tu siguiente golpe con la lanza"
+  nivel:        2
+  rangos:       2
+  name:         "empujar"
+  type:         "Pasiva"
+  description:  "+1 empujar"
+# nivel 3
 -
   id:           5
-  nivel:        4
-  requisitos:   [4]
-  name:         "empalar"
-  type:         "pasiva"
-  description:  "El daño excesivo realizado por la lanza a un enemigo,
-                 lo atraviesa y lo causa en la siguiente casilla frontal"
+  nivel:        3
+  rangos:       2
+  name:         "competencia con escudo"
+  type:         "Pasiva"
+  description:  "+1 potencia defensiva del escudo"
 -
   id:           6
   nivel:        3
-  rangos:       2
-  name:         "empujar"
+  requisitos:   [3]
+  name:         "empalar"
   type:         "pasiva"
-  description:  "+1 empujar"
+  description:  "[Lanzas] El exceso de daño realizado a un enemigo,
+                 lo atraviesa y daña en +1/rango casilla frontal"
 -
   id:           7
-  nivel:        4
+  nivel:        3
   requisitos:   [2]
   name:         "arrojar escudo"
-  type:         "pasiva"
+  type:         "Pasiva"
   description:  "Permite arrojar el escudo como un arma arrojadiza"
 -
   id:           8
+  nivel:        3
+  requisitos:   [2,3]
+  name:         "pálpito de la tundra"
+  type:         "Reactiva"
+  description:  "recupera: Golpe al corazón, al matar durante la carga"
+# nivel 4
+-
+  id:           9
   nivel:        4
   rangos:       3
   name:         "experto en asta"
   type:         "pasiva"
-  description:  "+1 potencia en el ataque al usar lanzas"
--
-  id:           9
-  nivel:        5
-  requisitos:   [1,4]
-  name:         "pálpito de la tundra"
-  type:         "reactiva"
-  description:  "recupera cargar al matar usando Golpe al corazón"
+  description:  "[Lanzas] +1 potencia en el ataque"
+
 -
   id:           10
-  nivel:        5
-  requisitos:   [2]
+  nivel:        4
+  requisitos:   [5]
   name:         "baluarte"
-  type:         "declarativa"
+  type:         "Declarativa"
   coste:        "movimiento"
-  description:  "Este turno todos los dados de defensa son azules"
+  description:  "Este turno todos tus dados de defensa son azules"
 -
   id:           11
-  nivel:        7 
-  requisitos:   [4]
+  nivel:        4 
+  requisitos:   [3]
   name:         "baño de sangre"
-  description:  "Recupera Golpe al corazón al matar con espada"
-  type:         "reactiva"
+  type:         "Reactiva"
+  description:  "[Espada] Recupera Golpe al corazón al matar con espada"
+-
+  id:           12
+  nivel:        4
+  rangos:       2
+  name:         "Maratón"
+  type:         "Pasiva"
+  description:  "+1 movimiento por cada (4-1/rango) heridas"
+# nivel 5
