@@ -62,3 +62,12 @@ elohim:
   -
     name:        "Vínculo místico"
     description: "1PM: +1 hasta final del turno contra cualquier resistencia"
+gólem: 
+  -
+    name:        "Hechizar"
+    description:
+                 "Permite coger 3 hechizos entre las magias de tierra
+                  o arena al inicio del reto."
+  -
+    name:        "Criatura primigenia"
+    description: "+N vs resistencias. N = la mente actual"

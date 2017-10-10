@@ -1,44 +1,46 @@
+# nivel 2
 -
   id:           0
   nivel:        2
-  rangos:       2
   name:         "Golpe feroz"
-  type:         "única"
+  type:         "Única"
   description:  "+1/rango de potencia a tu siguiente ataque"
 -
   id:           1
   nivel:        2
   rangos:       3
   name:         "Corazón de león"
-  type:         "reactiva"
+  type:         "Reactiva"
   description:  "-1/rango daño sufrido por golpes físicos
-                 si has matado en tu turno."
+                 si has matado en tu turno. Si esto reduce el daño a 0,
+                 el ataque se considera defendido con éxito."
 -
   id:           2
   nivel:        2
   name:         "Honor de la victoria"
-  type:         "reactiva"
+  type:         "Reactiva"
   description:  "+1 PM al salir indemne de todos los ataques
                  (debe haber al menos 1) en el turno del MB."
 -
   id:           3
   nivel:        2
   name:         "Devastador"
-  type:         "pasiva"
+  type:         "Pasiva"
   description:  "Cuando el ataque se produce antes que el movimiento,
                  los golpes son aullantes"
 -
   id:           4
-  nivel:        3
+  nivel:        2
   name:         "Soberanía"
-  type:         "activa"
+  type:         "Pasiva"
   description:  "+1 Fuerza al golpear con armas a 2 manos"
+# nivel 3
 -
   id:           5
   nivel:        3
   requisitos:   [0]
   name:         "Ferocidad"
-  type:         "reactiva"
+  type:         "Reactiva"
   description:  "Recupera golpe feroz al matar frontalmente
                  en combate cuerpo a cuerpo"
 -
@@ -47,15 +49,63 @@
   rangos:       2
   requisitos:   [1]
   name:         "Rugido de orden"
-  type:         "única"
+  type:         "Única"
   description:  "Todos los aliados de la sala obtienen la bonificación
                  del corazón de león. En rango 2 se activa siempre
                  que se ejecute rugido."
 -
   id:           7
-  nivel:        4
+  nivel:        3
   name:         "Alpha"
-  type:         "pasiva"
+  type:         "Pasiva"
   description:  "Solo puede haber un alpha en el grupo.<br/>
                  Cada vez que el invicto ejecute rugido,
                  se podrá lanzar una plegaria como acción gratuita."
+-
+  id:           8
+  nivel:        3
+  requisitos:   [0]
+  name:         "Zarpazo de desprecio"
+  type:         "Única"
+  description:  "Se ejecuta tras defenderse de un ataque. El atacante,
+                 (o todos, en caso de un conjunto) reciben un golpe sin armas."
+# nivel 4
+-
+  id:           9
+  nivel:        4
+  rangos:       3
+  requisitos:   [2,7]
+  name:         "Ariel"
+  type:         "Activa"
+  coste:        "1 PC"
+  description:  "El corazón de león se aplica al coste de Ariel. Se puede usar
+                 Ariel para que 1 próxima plegaria tenga 1/rango propiedad:<br/>
+                 <li>Cueste 1PC en lugar de 1 plegaria</li>
+                 <li>No consuma acción</li>
+                 <li>Sea súmmun</li>"
+-
+  id:           10
+  nivel:        4
+  requisitos:   [4]
+  name:         "Aplastar"
+  type:         "Única"
+  description:  "[Requiere arma a 2 manos] Las demás criaturas colindantes
+                 a tu objetivo (melé), sufren 1 ataque equivalente de Fuerza -1"
+-
+  id:           11
+  nivel:        4
+  rangos:       2
+  requisitos:   [8]
+  name:         "León veterano"
+  type:         "Reactiva"
+  description:  "Recupera: Zarpazo de desprecio, al matar fuera de tu
+                 turno (rango 1) o fuera de tu ataque principal (rango 2)"
+-
+  id:           12
+  nivel:        4
+  rangos:       2
+  name:         "Señor del viento"
+  type:         "Pasiva"
+  description:  "Si tu turno termina tras cobrar una pieza, puedes ejecutar
+                 inmediatamente un hechizo de aire. En rango 2, no consume
+                 el hechizo."
