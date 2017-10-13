@@ -1,34 +1,41 @@
+# nivel 2
 -
   id:           0
-  name:         "Robar"
-  description:  "El ladrón tira tesoros en las salas como si fuera un grupo por si mismo."
-  type:         "pasiva"
-  nivel:        1
+  nivel:        2
+  name:         "Caminar suave"
+  type:         "Activa"
+  coste:        "2 movimiento"
+  description:  "+1 sigilo"
 -
   id:           1
-  name:         "Latrocinio"
-  description:  "Cuando otro miembro del grupo encuentra oro, ese miembro obtiene un punto de contrato (contratista)."
-  type:         "reactiva"
   nivel:        2
+  name:         "Latrocinio"
+  type:         "reactiva"
+  description:  "Cuando otro miembro del grupo encuentra oro,
+                 ese miembro obtiene un punto de contrato (contratista).
+                 Los contratistas reciben gratuitamente la habilidad: Robar"
 -
   id:           2
   nivel:        2
   requisitos:   [1]
   name:         "Contrato"
   type:         "activa"
-  description:  "1 punto de contrato: Golpea con tu arma principal al atacante del contratista como acción instantánea. (Interrumpe)"
+  coste:        "1 punto de contrato"
+  description:  "Interrupción: Golpe con tu arma principal al atacante
+                 del contratista"
 -
   id:           3
-  name:         "Escabullirse"
-  description:  "Durante la fase trepidante el ladrón obtiene sigilo automáticamente."
-  type:         "disparada"
   nivel:        2
+  name:         "Escabullirse"
+  type:         "disparada"
+  description:  "[Trepidante] el ladrón obtiene sigilo automáticamente"
 -
   id:           4
-  name:         "Chirlero"
-  description:  "+1 fuerza con armas de tipo daga."
-  type:         "pasiva"
   nivel:        2
+  name:         "Chirlero"
+  type:         "pasiva"
+  description:  "+1 fuerza con dagas"
+# nivel 3
 -
   id:           5
   nivel:        3
@@ -39,20 +46,62 @@
   description:  "+1 potencia a 1/rango dados, al atacar en sigilo"
 -
   id:           6
-  name:         "Rompechapas"
-  description:  "Al desactivar con éxito una trampa, recuperas una acción"
-  type:         "reactiva"
   nivel:        3
+  name:         "Rompechapas"
+  type:         "Pasiva"
+  description:  "Al desactivar con éxito una trampa, recuperas una acción
+                 y 1PM. En locura, siempre intentarás desactivar trampas."
 -
   id:           7
-  name:         "Escondrijo"
-  description:  "Los pasillos con puertas secretas son saqueables por tesoros."
-  type:         "pasiva"
   nivel:        3
+  name:         "Escondrijo"
+  type:         "pasiva"
+  description:  "Los pasillos con puertas secretas son saqueables por tesoros.
+                 Las habitaciones con puertas secretas se pueden saquear
+                 dos veces. Estas tiradas de tesoro, no consumen acción
+                 y las puede efectuar cualquier miembro del grupo"
 -
   id:           8
-  nivel:        4
+  nivel:        3
   rangos:       3
   name:         "Camuflaje"
   type:         "pasiva"
   description:  "Las acciones de turno completo otorgan +1/rango sigilo"
+# nivel 4
+-
+  id:           9
+  nivel:        4
+  requisitos:   [3, 4]
+  name:         "Hurgón y correr"
+  type:         "Única"
+  description:  "[Instinto, daga]: Golpea automáticamente a un enemigo a melé,
+                 después tienes una acción de movimiento de 5 casillas.
+                 (Debes declararlo al ser atacado)"
+-
+  id:           10
+  nivel:        4
+  name:         "Compasivo"
+  type:         "Pasiva"
+  description:  "Puedes usar mazas como si fueran dagas. Cualquier habilidad
+                 aplicable a dagas o mazas es recíproca"
+-
+  id:           11
+  nivel:        4
+  rangos:       3
+  requisitos:   [0]
+  name:         "Salto desesperado"
+  type:         "Pasiva"
+  description:  "+1 saltar/rango fosos cuando hay enemigos visibles.
+                 +1 saltar/rango obstáculos cuando no se ha declarado ataque
+                 Puedes intentar saltar trampas de pinchos para evitarlas"
+-
+  id:           12
+  nivel:        4
+  requisitos:   [0]
+  name:         "Pleitos pobres"
+  type:         "Activa"
+  coste:        "1PM"
+  description:  "+1/rango potencia al atacar miniaturas colindantes a
+                 contratistas. +1PM al matar criaturas colindantes a
+                 contratistas. Siempre puedes compartir pieza con contratistas"
+# nivel 5

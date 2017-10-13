@@ -96,7 +96,7 @@
   description:  "Permite disparar a través de unidades aliadas"
 -
   id:           12
-  nivel:        5
+  nivel:        4
   requisitos:   [5]
   name:         "Cargar disparo"
   type:         "Declarativa"
