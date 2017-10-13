@@ -1,41 +1,45 @@
+# nivel 2
 -
   id:           0
   nivel:        2
   name:         "Tiro de misericordia"
-  type:         "única"
-  description:  "+1 fuerza contra objetivos con más heridas que PC. Al matar con tiro de misericordia recupéralo."
+  type:         "Única"
+  description:  "+1 fuerza contra objetivos con más heridas que PC.
+                 Al matar con tiro de misericordia recupéralo."
 -
   id:           1
   nivel:        2
   name:         "Disparo oblicuo"
-  type:         "pasiva"
+  type:         "Pasiva"
   description:  "Permite disparar en diagonal"
 -
   id:           2
   nivel:        2
   name:         "Disparo a bocajarro"
-  type:         "pasiva"
+  type:         "Pasiva"
   description:  "Permite disparar cuerpo a cuerpo"
 -
   id:           3
   nivel:        2
   rangos:       3
   name:         "Disparo arcano"
-  type:         "activa"
+  type:         "Activa"
   coste:        "1/rango PM"
   description:  "+1/rango potencia de ataque"
 -
   id:           4
   nivel:        2
   name:         "Ataque furtivo"
-  type:         "única"
-  description:  "Si un enemigo ataca a un aliado que este al lado del arquero este puede atacar al monstruo con una daga"
+  type:         "Única"
+  description:  "Permite atacar como interrupción al enemigo colindante,
+                 que ataque ataca a un aliado colindante"
+# nivel 3
 -
   id:           5
   nivel:        2
   rangos:       3
   name:         "Disparo firme"
-  type:         "activa"
+  type:         "Activa"
   coste:        "(6 -1/rango) movimiento"
   description:  "+1 potencia a un dado de ataque"
 -
@@ -43,7 +47,7 @@
   nivel:        3
   rangos:       2
   name:         "Disparo múltiple"
-  type:         "activa"
+  type:         "Activa"
   coste:        "5 movimiento"
   description:  "1 tiro extra/rango"
 -
@@ -51,105 +55,162 @@
   nivel:        3
   requisitos:   [1]
   name:         "Dominio del arco"
-  type:         "pasiva"
-  description:  "Permite disparar sin efectuar líneas rectas. (No puede atravesar enemigos)"
+  type:         "Pasiva"
+  description:  "Permite disparar sin efectuar líneas rectas.
+                 (No puede atravesar enemigos)"
 -
   id:           8
+  nivel:        3
+  requisitos:   [3]
+  name:         "Disparo encantado"
+  type:         "Activa"
+  coste:        "1 magia"
+  description:  "Imbuye un hechizo a una flecha. Si la flecha impacta,
+                 el objetivo recibe el hechizo.
+                 (Puedes declarar que se ignore el daño físico de la flecha)"
+# nivel 4
+-
+  id:           9
   nivel:        4
   rangos:       3
   requisitos:   [1,7]
   name:         "Disparo de rebote"
-  type:         "activa"
+  type:         "Activa"
   coste:        "3 movimiento"
   description:  "Permite disparar hacia un objeto u objetivo con un giro extra de trayectoria por rango"
 -
-  id:           9
+  id:           10
   nivel:        4
   requisitos:   [3]
-  name:         "Disparo encantado"
-  type:         "activa"
-  coste:        "1 magia"
-  description:  "Se imbuye un hechizo a una flecha. Si la flecha impacta el objetivo recibe el hechizo. (Los hechizos benficiosos no inflingen daño)"
--
-  id:           10
-  nivel:        5
-  requisitos:   [3]
   name:         "Lluvia de flechas"
-  type:         "activa"
-  coste:        "4 PM"
-  description:  "1 tiro básico a todas las unidades dentro de la misma sala/pasillo. (excepto el arquero)"
+  type:         "Activa"
+  coste:        "X PM"
+  description:  "1 tiro básico a todas las otras (X) miniaturas dentro de
+                 la misma Sala/Pasillo. (excepto el arquero)"
 -
   id:           11
-  nivel:        5
+  nivel:        4
   requisitos:   [5]
   name:         "Fuego amigo"
-  type:         "pasiva"
-  description:  "Permite disparar a través de unidades amigas"
+  type:         "Pasiva"
+  description:  "Permite disparar a través de unidades aliadas"
 -
   id:           12
   nivel:        5
   requisitos:   [5]
   name:         "Cargar disparo"
-  type:         "declarativa"
-  description:  "Renuncia a su ataque para ganar el doble de potencia en su siguiente disparo"
+  type:         "Declarativa"
+  coste:        "Acción de ataque"
+  description:  "Duplica la potencia del siguiente disparo"
+# nivel 5
 -
   id:           13
+  nivel:        5
+  rangos:       3
   name:         "Tiro certero"
-  type:         "activa"
-  description:  "Por describir"
+  coste:        "1 movimiento"
+  type:         "Activa"
+  description:  "+1 potencia a 1 éxito (tras realizar la tirada de ataque)
+                 Puedes activar tantas veces como aliados hayan jugado
+                 antes que tú en esta ronda +1/rango"
 -
   id:           14
   nivel:        5
-  requisitos:   [9]
+  requisitos:   [8]
   name:         "Arcanismo"
-  type:         "reactiva"
-  description:  "Si dañas con un disparo encantado, recuperas el hechizo"
+  type:         "Reactiva"
+  description:  "Si dañas con un disparo encantado, recuperas el hechizo
+                 Si es un efecto beneficioso, se ejecutará con diablura"
 -
   id:           15
   nivel:        5
   name:         "Temple"
-  type:         "reactiva"
-  description:  "Ganas 1 punto de sosiego (PS) al matar"
+  type:         "Reactiva"
+  description:  "Ganas 1 punto de sosiego (PS) al matar con disparos"
 -
   id:           16
-  nivel:        6
-  requisitos:   [15]
-  name:         "Salvavidas"
-  type:         "reactiva"
-  description:  "Ganas 1PS al matar si hay un aliado a melé"
+  nivel:        5
+  name:         "Enfocar"
+  type:         "Reactiva"
+  description:  "Ganas 1 punto de enfoque (PE) al renunciar al movimiento
+                 habiendo enemigos en tu línea de visión"
+# nivel 6
 -
   id:           17
   nivel:        6
+  requisitos:   [5, 15]
   name:         "Tiro desesperado"
-  type:         "activa"
+  type:         "Activa"
   coste:        "X PS"
-  description:  "Otorga X armadura"
+  description:  "+X armadura si el siguiente disparo cobra 1 pieza"
 -
   id:           18
-  nivel:        4
-  name:         "Enfocar"
-  description:  "Ganas puntos de enfoque (PE) al renunciar al movimiento cuando hay enemigos en línea de visión."
-  type:         "reactiva"
+  nivel:        6
+  requisitos:   [11]
+  rangos:       3
+  name:         "Salvavidas"
+  type:         "Reactiva"
+  description:  "Ganas R(rangos)PS al matar si hay un aliado a melé"
+# nivel 7
 -
   id:           19
+  nivel:        7
+  rangos:       2
+  requisitos:   [5, 16]
   name:         "Tiro al corazón"
-  type:         "activa"
+  type:         "Activa"
   coste:        "1PE"
-  description:  "+1 a la fuerza por cada PS que tengas."
+  description:  "+1/rango a la fuerza por cada PS que tengas."
 -
   id:           20
+  nivel:        7
   name:         "Retroceso"
-  type:         "única"
-  description:  "Puedes retroceder 1 casilla por cada exceso de daño al matar un enemigo pudiendo golpear hacia atrás."
+  type:         "Activa"
+  coste:        "1 movimiento por casilla"
+  description:  "Puedes retroceder 1 casilla por cada exceso de daño
+                 al matar un enemigo. Podrías golpear sin armas al retroceder"
+# nivel 8
 -
   id:           21
+  nivel:        8
+  requisitos:   [4, 20]
+  rangos:       3
   name:         "Retroceder"
-  requisitos:   [20]
-  type:         "reactiva"
-  description:  "Recuperas retroceso al esquivar."
+  type:         "Pasiva"
+  description:  "Al retroceder puedes golpear a R(rango) miniaturas con un
+                 ataque furtivo sin coste"
 -
   id:           22
-  nivel:        7
+  nivel:        8
+  requisitos:   [4, 20]
   name:         "Quemarropa"
-  type:         "reactiva"
-  description:  "Ganas 1 PE al matar a melé."
+  type:         "Reactiva"
+  description:  "Ganas 1 PE al matar a melé"
+# nivel 9
+-
+  id:           23
+  nivel:        9
+  requisitos:   [1, 5]
+  name:         "Sagittarii"
+  type:         "Pasiva"
+  description:  "+1 potencia contra enemigos agrupados,
+                 por cada enemigo colindante al objetivo"
+-
+  id:           24
+  nivel:        9
+  requisitos:   [13]
+  name:         "La Senda del Forestal"
+  type:         "Pasiva"
+  description:  "+1 sigilo al matar con disparos"
+# nivel 10 - Habilidades definitivas
+-
+  id:           25
+  nivel:        10
+  requisitos:   [3, 6, 19]
+  name:         "Taulmaril"
+  type:         "Pasiva"
+  description:  "Tus disparos frontales siempre son Tiros al corazón,
+                 sin necesidad de pagar el coste. Los disparos arcanos
+                 al corazón, no pueden ser defendidos por demonios.
+                 Al efectuar disparo múltiple, cada disparo adicional,
+                 tiene +1 potencia por cada víctima previa"
