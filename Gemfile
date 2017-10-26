@@ -13,7 +13,7 @@ group :test do
   gem 'coveralls', '~> 0.8.21', require: false
   gem 'rack-test'
   gem 'rake', '~> 12.1.0'
-  gem 'rspec', '~> 3.6.0'
+  gem 'rspec', '~> 3.7.0'
   gem 'scrutinizer-ocular', require: false
   gem 'yaml-lint', '~> 0.0.9'
 end
