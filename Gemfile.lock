@@ -1,5 +1,5 @@
 GIT
-  remote: https://github.com/sinatra/sinatra.git
+  remote: git://github.com/sinatra/sinatra.git
   revision: 89cbd96866355729bb347a76ce601b98c3ff579b
   specs:
     rack-protection (2.0.0)
@@ -33,19 +33,19 @@ GEM
       rack (>= 1.0, < 3)
     rake (12.1.0)
     require_all (1.4.0)
-    rspec (3.6.0)
-      rspec-core (~> 3.6.0)
-      rspec-expectations (~> 3.6.0)
-      rspec-mocks (~> 3.6.0)
-    rspec-core (3.6.0)
-      rspec-support (~> 3.6.0)
-    rspec-expectations (3.6.0)
+    rspec (3.7.0)
+      rspec-core (~> 3.7.0)
+      rspec-expectations (~> 3.7.0)
+      rspec-mocks (~> 3.7.0)
+    rspec-core (3.7.0)
+      rspec-support (~> 3.7.0)
+    rspec-expectations (3.7.0)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.6.0)
-    rspec-mocks (3.6.0)
+      rspec-support (~> 3.7.0)
+    rspec-mocks (3.7.0)
       diff-lcs (>= 1.2.0, < 2.0)
-      rspec-support (~> 3.6.0)
-    rspec-support (3.6.0)
+      rspec-support (~> 3.7.0)
+    rspec-support (3.7.0)
     scrutinizer-ocular (1.0.1)
       simplecov (>= 0.7)
     simplecov (0.14.1)
@@ -71,7 +71,7 @@ DEPENDENCIES
   rack-test
   rake (~> 12.1.0)
   require_all (~> 1.4.0)
-  rspec (~> 3.6.0)
+  rspec (~> 3.7.0)
   scrutinizer-ocular
   sinatra!
   tilt (~> 2.0.7)
