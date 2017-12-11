@@ -1,0 +1,113 @@
+# nivel 2
+-
+  id:           0
+  nivel:        2
+  rangos:       4
+  name:         "Muchos trapos"
+  type:         "Pasiva"
+  description:  "Puedes llevar armaduras no-metálicas.
+                 Multiplica su bono de protección por R (rango)"
+-
+  id:           1
+  nivel:        2
+  name:         "Máscara burlona"
+  type:         "Activa"
+  coste:        "1PM"
+  description:  "Recupera un hechizo si un enemigo a melé falló su ataque."
+-
+  id:           2
+  nivel:        2
+  name:         "Máscara diabólica"
+  type:         "Activa"
+  coste:        "1PC"
+  description:  "Recupera un hechizo si un aliado a melé falló su defensa"
+-
+  id:           3
+  nivel:        2
+  name:         "Títere inoportuno"
+  type:         "Única"
+  description:  "Instinto: El enemigo objetivo falla su ataque. En su lugar,
+                 ha golpeado a un títere burlón, que muere entre risas.
+                 Tú te debes desplazar a un casilla colindante a ambos.
+                 En caso de no poder, este poder se considera nulo."
+-
+  id:           4
+  nivel:        2
+  rangos:       2
+  name:         "Tejido sombrío"
+  type:         "Pasiva"
+  description:  "Añade 1/rango set de sombras a tu lista de hechizos conocidos."
+# nivel 3
+-
+  id:           5
+  nivel:        3
+  rangos:       3
+  name:         "Maestro de máscaras"
+  type:         "Pasiva"
+  description:  "Los hechizos recuperados se ejecutan con diablura.
+                 Además, añade +R (rango) de potencia a estos hechizos."
+-
+  id:           6
+  nivel:        3
+  name:         "Espantajo"
+  type:         "Activa"
+  coste:        "1PM"
+  description:  "+1 causar miedo por cada punto de mente que te falte,
+                 hasta tu próximo turno. Los enemigos a melé del objetivo
+                 que huya, romperán a reír. (Si es viable que rían)"
+-
+  id:           7
+  nivel:        3
+  rangos:       2
+  requisitos:   [3, 4]
+  name:         "Chisgarabís"
+  type:         "Reactiva"
+  description:  "Recupera títere inoportuno cada vez que mates con hechizos.
+                 En rango 2, Los títeres inoportunos recuperados, explotan,
+                 ejecutando un hechizo (n.1) aleatorio de sombras al objetivo."
+-
+  id:           8
+  nivel:        3
+  name:         "Zascandil"
+  requisitos:   [0]
+  type:         "Activa"
+  coste:        "-3 movimiento"
+  description:  "+1 sigilo hasta final de turno. Se puede acumular."
+# nivel 4
+-
+  id:           9
+  nivel:        4
+  requisitos:   [6]
+  name:         "Mofarse"
+  type:         "Reactiva"
+  description:  "+1 Contador de Risa cada vez que un objetivo no-aliado ría.
+                 Puedes cambiar 2 CR por 1PM en cualquier momento."
+-
+  id:           10
+  nivel:        4
+  requisitos:   [4]
+  name:         "Cortina de ilusiones"
+  type:         "Única"
+  description:  "Puedes desplazar tu miniatura a una casilla colindante
+                 a un aliado, porque en verdad estabas ahí. Tu siguiente
+                 turno, estarás en locura."
+-
+  id:           11
+  nivel:        4
+  rangos:       3
+  requisitos:   [4]
+  name:         "Ardid del embaucador"
+  type:         "Activa"
+  coste:        "1 CR"
+  description:  "Tu siguiente hechizo se ejecuta con ardid.
+                 En rango 2, el hechizo no se puede contrarrestar (2+),
+                 en rango 3, el hechizo se recupera si causa daños."
+-
+  id:           12
+  nivel:        4
+  rangos:       3
+  requisitos:   [0]
+  name:         "Aguja de calceta"
+  type:         "Pasiva"
+  description:  "+1 fuerza en dagas y espadas"
+# nivel 5

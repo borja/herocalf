@@ -5,7 +5,9 @@ pjs = %w(
   matador falangista ingeniero
   invicto cazadora chamán
   valquiria serafín daeva
+  gárgola custodio títere
 )
+# TODO : This should be less redundant
 
 # Generic clase creator
 pjs.each do |pj|

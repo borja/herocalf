@@ -1,0 +1,38 @@
+# nivel 2
+-
+  id:           0
+  nivel:        2
+  name:         "Guardia eterna"
+  type:         "Reactiva"
+  description:  "+1 PM al defender con éxito"
+-
+  id:           1
+  nivel:        2
+  name:         "Endurecerse"
+  type:         "única"
+  description:  "Hasta tu próximo turno, considera que posees todos tus PCs"
+-
+  id:           2
+  nivel:        2
+  name:         "Agrietar"
+  type:         "Activa"
+  coste:        "1PM"
+  description:  "Los éxitos defensivos en tu siguiente ataque, son éxitos
+                 (podrán ser defendidos) que reducen en 1 la armadura (mín. 0)"
+-
+  id:           3
+  nivel:        2
+  rangos:       2
+  name:         "La montaña no se mueve"
+  type:         "Pasiva"
+  description:  "-1/rango a los efectos de desplazamiento involuntario.
+                 Los daños aullantes, se disipan y desplazarán al atacante"
+-
+  id:           4
+  nivel:        2
+  rangos:       3
+  name:         "Custodia arcana"
+  type:         "Instinto"
+  coste:        "1 PM"
+  description:  "+1/rango potencia de bendiciones de piedra"
+# nivel 3

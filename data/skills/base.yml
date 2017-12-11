@@ -71,3 +71,8 @@ gólem:
   -
     name:        "Criatura primigenia"
     description: "+N vs resistencias. N = la mente actual"
+  -
+    name:        "Criatura mineral"
+    description: "La armadura base será igual a los PC actuales.
+                  Las piezas de armadura, confieren potencia en lugar
+                  de armadura base. Solo puede usar armadura metálica"
