@@ -2,6 +2,133 @@
 -
   id:           0
   nivel:        2
+  rangos:       3
   name:         "Guardián alado"
   type:         "Pasiva"
-  description:  "Tienes unas alas de piedra. Puedes volar"
+  description:  "Tienes unas alas de piedra. Puedes volar.
+                 +1/rango de movimiento adicional"
+-
+  id:           1
+  nivel:        2
+  rangos:       3
+  name:         "Garras de obsidiana"
+  type:         "Activa"
+  coste:        "1PM"
+  description:  "+1 dado negro/rango de ataque sin armas hasta final de turno"
+-
+  id:           2
+  nivel:        2
+  rangos:       2
+  name:         "Piel de mármol"
+  type:         "Activa"
+  coste:        "1PM"
+  description:  "Instinto: +1 potencia defensiva a todos los dados."
+-
+  id:           3
+  nivel:        2
+  requisitos:   [0]
+  name:         "Meteorito"
+  type:         "Única"
+  description:  "Te elevas para caer en picado sobre un objetivo, dentro
+                 de tu alcance de movimiento. El objetivo recibe un ataque
+                 con tu arma principal, y los objetivos colindantes,
+                 reciben un ataque sin armas. (acción de turno completo)"
+-
+  id:           4
+  nivel:        2
+  rangos:       2
+  name:         "gargouiller"
+  type:         "Pasiva"
+  description:  "Añade 1/rango set de agua a tu lista de hechizos conocidos."
+# nivel 3
+-
+  id:           5
+  nivel:        3
+  rangos:       2
+  requisitos:   [0, 1]
+  name:         "Falconiforme"
+  type:         "Pasiva"
+  description:  "Al volar haces pases, por lo que puedes intercalar
+                 tu ataque (sin armas o hechizar) en mitad de tu movimiento.
+                 En el rango 2, los flancos se consideran escudados."
+-
+  id:           6
+  nivel:        3
+  rangos:       4
+  requisitos:   [0]
+  name:         "Caza grotesca"
+  type:         "Reactiva"
+  description:  "Recupera 1/rango PC al matar con ataques sin armas.
+                 En rango 2, puedes recuperar 1 hechizo en su lugar.
+                 En rango 3, puedes recuperar meteorito y en 4, las 3 cosas."
+-
+  id:           7
+  nivel:        3
+  rangos:       4
+  requisitos:   [0, 2]
+  name:         "Geoda"
+  type:         "Activa"
+  coste:        "Tu próximo turno"
+  description:  "Te encapsulas con tus alas en una protección esférica.
+                 Todos los ataques se consideran frontales (lado escudo),
+                 y recipes -1/rango menos de daño este turno. A partir,
+                 del rango 2, puedes añadir a un aliado dentro de la geoda."
+-
+  id:           8
+  nivel:        3
+  rangos:       2
+  name:         "Explayarse"
+  requisitos:   [0, 4]
+  type:         "Activa"
+  coste:        "No puedes volar"
+  description:  "Extiendes las alas. Tu potencia con hechizos aumenta
+                 por cada rango en gargouiller. En el segundo rango,
+                 además el hechizo se ejecuta con diablura."
+# nivel 4
+-
+  id:           9
+  nivel:        4
+  requisitos:   [4]
+  name:         "Defensor de la Fe"
+  type:         "Pasiva"
+  description:  "Tus hechizos sobre aliados con más heridas que tú,
+                 se recuperan con 3+ si habiendo enemigos visibles, el objetivo
+                 se arrodilla y reza (perdiendo su turno completo)"
+-
+  id:           10
+  nivel:        4
+  requisitos:   [3]
+  name:         "Bólido"
+  type:         "Pasiva"
+  description:  "Meteorito no consume acción."
+-
+  id:           10
+  nivel:        4
+  rangos:       3
+  requisitos:   [0, 9]
+  name:         "Forma grifo"
+  type:         "Activa"
+  coste:        "1 hechizo"
+  description:  "Puedes ser la montura de un aliado renunciando a tu ataque,
+                 salvo en rango 2, que podrás atacar (sin armas) y hechizar.
+                 En el tercer rango, podrás lanzar el hechizo gastado,
+                 cada vez que tu jinete cobre una pieza."
+-
+  id:           11
+  nivel:        4
+  requisitos:   [4]
+  name:         "Gárgara de virtud"
+  type:         "Reactiva"
+  description:  "+1 Punto de Gárgara (PG) cada vez que sanes o bendigas
+                 a un aliado superado en número por enemigos. Puedes
+                 gastar 3PG para recuperar un hechizo."
+-
+  id:           12
+  nivel:        4
+  requisitos:   [11]
+  name:         "Gárgara de desafío"
+  type:         "Activa"
+  coste:        "1 PG"
+  description:  "(Psicología): El objetivo, siempre que pueda, intentará
+                 atacarte a ti, frente a otros objetivos."
+# nivel 5
