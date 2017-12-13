@@ -111,3 +111,13 @@
   type:         "Pasiva"
   description:  "+1 fuerza en dagas y espadas"
 # nivel 5
+-
+  id:           13
+  nivel:        5
+  rangos:       3
+  requisitos:   [8, 12]
+  name:         "Vudú entre polichinelas"
+  type:         "Pasiva"
+  description:  "-1/rango detectar sigilo a todos los enemigos de la sala.
+                 los enemigos que fallen la detección quedarán disfrazados
+                 de polichinela. Al morir, dejan un muñeco polichinela inútil."
