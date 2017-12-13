@@ -27,7 +27,7 @@
   id:           3
   nivel:        2
   requisitos:   [0]
-  name:         "Meteorito"
+  name:         "Meteoro"
   type:         "Única"
   description:  "Te elevas para caer en picado sobre un objetivo, dentro
                  de tu alcance de movimiento. El objetivo recibe un ataque
@@ -37,7 +37,7 @@
   id:           4
   nivel:        2
   rangos:       2
-  name:         "gargouiller"
+  name:         "Gargouiller"
   type:         "Pasiva"
   description:  "Añade 1/rango set de agua a tu lista de hechizos conocidos."
 # nivel 3
