@@ -1,13 +1,22 @@
 <div class="row">
+
 	<div class="col-lg-12">
 		<h1 class="page-header">
 			Web amateur del juego de mesa HeroQuest
 		</h1>
 	</div>
-	<%= slim :'inicio/features/torre' %>
-	<%= slim :'inicio/features/habilidades' %>
-	<%= slim :'inicio/features/lore' %>
-	<%= slim :'inicio/features/objetos' %>
+
+	<% %w(torre habilidades lore objetos).each do |feature| %>
+		<%= slim :"inicio/features/#{feature}" %>
+	<% end %>
 </div>
 
-<%= erb :'inicio/content'  %>
+<div class="row">
+	<% %w(ciudad manuales ilustres).each do |lore| %>
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<%= slim :"inicio/lore/#{lore}" %>
+			</div>
+		</div>
+	<% end %>
+</div>
