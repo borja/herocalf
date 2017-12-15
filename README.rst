@@ -32,8 +32,6 @@ Build Status
 +==============+===================+
 | Travis CI    | |Travis Status|   |
 +--------------+-------------------+
-| Scrutinizer  | |Scrut Status|    |
-+--------------+-------------------+
 | Circle CI    | |CircleCi Status| |
 +--------------+-------------------+
 | CodeShip     | |CodeShip|        |
@@ -43,8 +41,6 @@ Build Status
 
 .. |Travis Status| image:: https://travis-ci.org/borja/herocalf.svg?branch=master
    :target: https://travis-ci.org/borja/herocalf
-.. |Scrut Status| image:: https://scrutinizer-ci.com/g/borja/herocalf/badges/build.png?b=master
-   :target: https://scrutinizer-ci.com/g/borja/herocalf
 .. |CircleCi Status| image:: https://circleci.com/gh/borja/herocalf.svg?style=shield
    :target: https://circleci.com/gh/borja/herocalf
 .. |CodeShip| image:: https://codeship.com/projects/52ab60f0-1e7d-0134-4772-3632048523f1/status?branch=master
@@ -123,14 +119,18 @@ Documentation
 
 Non-supported building platforms
 --------------------------------
-+-----------+------------+-----------------------------+
-| Platform  | Badge      | Issue                       |
-+===========+============+=============================+ 
-| Appveyor  | |Appveyor| | *Ruby >2.3.3 not supported* |
-+-----------+------------+-----------------------------+
++-------------+------------+-----------------------------+
+| Platform    | Badge      | Issue                       |
++=============+============+=============================+ 
+| Appveyor    | |Appveyor| | *Ruby >2.3.3 not supported* |
++-------------+------------+-----------------------------+
+| Scrutinizer | |Scrut|    | ruby 2.1.2 detected         |
++-------------+------------+-----------------------------+
 
 .. |Appveyor| image:: https://ci.appveyor.com/api/projects/status/7lm7txpwnr0cxj6x?svg=true
    :target: https://ci.appveyor.com/project/borja/herocalf/branch/master
+.. |Scrut| image:: https://scrutinizer-ci.com/g/borja/herocalf/badges/build.png?b=master
+   :target: https://scrutinizer-ci.com/g/borja/herocalf
 
 DIY & Manual Configuration
 ==========================
