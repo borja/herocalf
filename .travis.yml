@@ -18,7 +18,7 @@ script:
 # Code Metrics tokens
 addons:
   code_climate:
-    repo_token: 21daec0460198a2112bd481550dfc6f9a9d37da9f21e357ebcdf0cb77c4d4635
+    repo_token: 0d489bf5520c78ac08ce9c7925f6c5f477047967bf42ec4fe84fcf2a02be53f4
 
 # Git properties
 git:
