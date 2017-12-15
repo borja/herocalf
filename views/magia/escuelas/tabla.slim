@@ -1,0 +1,19 @@
+.table-responsive
+	table class="table"
+		thead
+			tr
+				th Glifo
+				th Escuela
+				th colspan=4 Listas de Hechizo
+		tbody
+			- %w(Aire Fuego Agua Tierra Sombra Hielo Arena Tenebro Sangre Luz).each do |escuela|
+				tr
+					td
+						- url = escuela.gsub('Luz','plegarias').gsub('Tenebro','execraciones').downcase
+						a href="/#{url}/1"
+							img src="/images/magia/schools/#{escuela}.png" alt="#{escuela}" id="icon3"
+					td == escuela
+					- 4.times do |n|
+						td
+							a href="/#{url}/#{n + 1}"
+								== n + 1 

@@ -1,32 +1,7 @@
-<header>
-	<h2>Escuelas de la magia</h2>
-</header>
+<h2>Escuelas de la magia</h2>
+<p>
+	Por hacer...
+</p>
 
-<div class="table-responsive">
-	<table class="table">
-		<thead>
-			<tr>
-				<th>Glifo</th>
-				<th>Escuela</th>
-				<th colspan=4>Listas de Hechizo</th>
-			</tr>
-		</thead>
-		<tbody>
-			<% %w(Aire Fuego Agua Tierra Sombra Hielo Arena Tenebro Sangre Luz).each do |escuela| %>
-				<tr>
-					<td>
-						<% url = escuela.gsub('Luz','plegarias').gsub('Tenebro','execraciones').downcase %>
-						<a href='<%= "/#{url}/1" %>'>
-						<% img_path = "'../images/magia/schools/#{escuela}.png'" %>
-							<img src=<%=img_path%> alt='<%= escuela %>' id='icon3' />
-						</a>
-					</td>
-					<td><%= escuela %></td>
-					<% 4.times do |n| %>
-						<td><a href='<%= "/#{url}/#{n + 1}" %>'><%= n + 1 %></a></td>
-					<% end %>
-				</tr>
-			<% end %>
-		</tbody>
-	</table>
-</div>
+<h3>Listado de hechizos por escuela</h3>
+<%= slim :'magia/escuelas/tabla' %>

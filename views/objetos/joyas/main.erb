@@ -1,8 +1,6 @@
 <% j = joya(params[:param].to_i) %>
 
-<header>
-	<h2>La joya <%= j.name %></h2>
-</header>
+<h2>La joya <%= j.name %></h2>
 
 <p><%= erb :"objetos/joyas/descripciones/#{ j.name }" %></p>
 <p>

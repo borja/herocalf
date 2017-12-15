@@ -1,0 +1,16 @@
+.table-responsive
+	table class="table"
+		thead
+			tr
+				th colspan=2 Armadura
+				th Categoría
+				th Defensa
+				th Precio
+		tbody
+			- armaduras.map{ |arm| Armadura.new(arm) }.each do |a|
+				tr
+					td == erb :'display/armadura', locals: { a: a }
+					td == a.name
+					td == a.categoria
+					td == a.defensa
+					td == a.precio

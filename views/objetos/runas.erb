@@ -1,35 +1,9 @@
-<header>
-	<h2>Lista de runas básicas</h2>
-</header>
+<h2>Las runas</h2>
+<p>
+	 Las runas mágicas son diferentes en forma y detalle a las runas ordinarias,
+	 pero lo que convierte a una runa en mágica es principalmente cómo y
+	 cuándo fue grabada. 
+</p>
 
-<div class="table-responsive">
-	<table class="table">
-		<thead>
-			<tr>
-				<th colspan='2'>Runa</th>
-				<th>Disponibles</th>
-			</tr>	
-		</thead>
-		<tbody>
-			<% runas.each do |r| %>
-				<tr>
-					<td><a target="_blank" href="/runa/<%= r.id %>">
-							<%= erb :'display/runa', locals: { runa: r } %>
-						</a>
-					</td>
-					<td>
-						<a target="_blank" href="/runa/<%= r.id %>">
-							<%= r.name.upcase %>
-						</a>
-					</td>
-					<td>
-						<%= erb :'display/bazar', locals: {
-							bazar: r.disponibles,
-							engarce: 'runas',
-							item_id: r.id } %>
-					</td>
-				</tr>
-			<% end %>
-		</tbody>
-	</table>
-</div>
+<h3>Lista de runas</h3>
+<%= slim :'objetos/runas/tabla' %>

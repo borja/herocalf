@@ -1,34 +1,6 @@
-<div class="table-responsive">
-	<table class="table">
-		<thead>
-			<tr>
-				<% %w(# Arma Categoría Ataque Ranuras Precio).each do |col| %>
-				<th class="text-center"><%= col %></th>
-				<% end %>
-			</tr>	
-		</thead>
-		<tbody>
-			<% armas.each do |item| %>
-				<% a = Arma.new(item.tap{ |i| i.delete('ranuras') } ) %>
-				<tr>
-					<td>
-						<img src="/images/armas/<%= a.name %>.png" id='icon' />
-					</td>
-					<td><%= a.name %></td>
-					<td><%= a.categoria %></td>
-					<td>
-						<%= a.ataque %>
-						<% if a.diagonal %>
-							<i class="fa fa-expand" aria-hidden="true"></i>
-						<% end %>
-					</td>
-					<td><%= armas[a.id]['ranuras'] %></td>
-					<td><%= a.precio %></td>
-				</tr>
-			<% end %>
-		</tbody>
-	</table>
-</div>
+<h3>Tabla de Armas</h3>
+<%= slim :'objetos/armas/tabla' %>
+
 <p>
 	<i class="fa fa-expand" aria-hidden="true"></i> :
 	Permite atacar en diagonal

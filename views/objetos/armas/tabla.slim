@@ -1,0 +1,22 @@
+.table-responsive
+	table class="table"
+		thead
+			tr
+				th colspan=2 Arma
+				th Categoría
+				th Ataque
+				th Ranuras
+				th Precio
+		tbody
+			- armas.each do |item|
+				- a = Arma.new(item.tap{ |i| i.delete('ranuras') } )
+				tr
+					td
+						img src="/images/armas/#{ a.name }.png" id='icon'
+					td == a.name
+					td == a.categoria
+					td == a.ataque
+						- if a.diagonal
+							i class="fa fa-expand" aria-hidden="true"
+					td == armas[a.id]['ranuras']
+					td == a.precio

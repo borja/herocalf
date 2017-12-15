@@ -1,33 +1,15 @@
-<header>
-	<h2>Lista de joyas de engarce</h2>
-</header>
+<h2>Las joyas</h2>
+<p>
+	Las joyas son piezas maestras de orfebrería que emiten un pulso arcano
+	por sí mismas, canalizando la energía de los vientos de la magia. 
+</p>
+<p>
+	Las joyas pueden aparecer en una tirada de tesoros o como recompensa.
+	Todas las joyas comunes se venden por 50 piezas de oro, que son
+	un recurso muy apreciado por los héroes ya que al ser engarzadas
+	en el equipo confieren propiedades mágicas. Cada joya engarzada
+	ocupa una ranura vacía, exactamente igual que el resto de piezas de engarce.
+</p>
 
-<div class="table-responsive">
-	<table class="table">
-		<thead>
-			<tr>
-				<th>#</th>
-				<th colspan='2'>Joya</th>
-				<th>Disponibles</th>
-			</tr>	
-		</thead>
-		<tbody>
-			<% joyas[0..11].each_with_index do |j, i| %>
-				<tr>
-					<td><%= i + 1 %></td>
-					<td><%= erb :'display/joya', locals: { joya: j } %></td>
-					<td>
-						<a target="_blank" href="/joya/<%= j.id %>">
-							<%= 'Joya ' + j.name %>
-						</a>
-					</td>
-					<td><%= erb :'display/bazar', locals: {
-						bazar:   j.disponibles,
-						engarce: 'joyas',
-						item_id: j.id } %>
-					</td>
-				</tr>
-			<% end %>
-		</tbody>
-	</table>
-</div>
+<h3>Lista de joyas de engarce</h3>
+<%= slim :'objetos/joyas/tabla' %>

@@ -1,10 +1,9 @@
 <% f = familiar params[:param] %>
-<header>
-	<h2>
-		<%= f.sex == 'female' ? 'La' : 'El' %> <%= f.bicho.capitalize %>
-		como familiar	
-	</h2>
-</header>
+
+<h2>
+	<%= f.sex == 'female' ? 'La' : 'El' %> <%= f.bicho.capitalize %>
+	como familiar	
+</h2>
 
 <h3>Bonificador</h3>
 <p><%= f.bono %>.</p>

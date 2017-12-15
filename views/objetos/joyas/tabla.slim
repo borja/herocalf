@@ -1,0 +1,16 @@
+.table-responsive
+	table class="table"
+		thead
+			tr
+				th #
+				th colspan='2' Joya
+				th Disponibles
+		tbody
+			- joyas[0..11].each_with_index do |j, i|
+				tr
+					td = i + 1
+					td == erb :'display/joya', locals: { joya: j }
+					td 
+						a { target="_blank" href="/joya/= j.id" }
+							== 'Joya ' + j.name
+					td == erb :'display/bazar', locals: {	bazar: j.disponibles, engarce: 'joyas', item_id: j.id }

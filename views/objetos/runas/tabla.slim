@@ -1,0 +1,17 @@
+.table-responsive
+	table class="table"
+		thead
+			tr
+				th colspan='2'Runa
+				th Disponibles
+		tbody
+			- runas.each do |r|
+				tr
+					td
+						a target="_blank" href="/runa/#{ r.id }"
+							== erb :'display/runa', locals: { runa: r }
+					td
+						a target="_blank" href="/runa/#{ r.id}"
+							== r.name.upcase
+					td
+						== erb :'display/bazar', locals: { bazar: r.disponibles, engarce: 'runas', item_id: r.id }

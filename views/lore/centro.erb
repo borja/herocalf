@@ -1,7 +1,6 @@
 <% 2.times do |i| %>
-	<header>
-		<h2><%= i+1 %>º Certamen de historias HeroQuest</h2>
-	</header>
+	<h2><%= i+1 %>º Certamen de historias HeroQuest</h2>
+
 	<table>
 		<thead>
 			<tr>
@@ -10,6 +9,7 @@
 				<th>Historia</th>
 			</tr>
 		</thead>
+
 		<tbody>
 			<% narrados(i+1).each do |hero| %>
 			<tr>
@@ -29,5 +29,7 @@
 			</tr>
 			<% end %>
 		</tbody>
-	</table><br/>
+	</table>
+
+	<br/>
 <% end %>
