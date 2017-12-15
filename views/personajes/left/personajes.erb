@@ -1,12 +1,10 @@
-<header>
-	<h2 align='center'>Personajes</h2>
-</header>
-<ul class="link-list">
+<h2>Personajes</h2>
+<ul>
 	<% personajes.each do |p| %>
 		<li>
 			<a href='/habilidad/<%= p.gsub('señor de las bestias','beastslord') %>' >
 				<%= p.capitalize %>
 			</a>
 		</li>
-    <% end %>	
+	<% end %>	
 </ul>
