@@ -4,9 +4,9 @@ sudo: false
 # Ruby configuration, using RVM
 language: ruby
 rvm:
-  - 2.4.2
+  - 2.4.3
 before_install:
-  - gem install bundler --no-document -v '~> 1.13.3'
+  - gem install bundler --no-document -v '~> 1.16.0'
   # Sinatra gem is loaded from github, instead of rubygems:
   - bundle config github.https true
 
