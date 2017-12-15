@@ -1,0 +1,8 @@
+-
+  name:   "Maestro médico"
+  coste:  1000
+  efecto: "Puedes curar a dos objetivos en una acción de curar"
+-
+  name:   "Elaborar antídoto"
+  coste:  400
+  efecto: "Requiere cobrar la pieza que envenena."

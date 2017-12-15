@@ -1,32 +1,10 @@
 <% pj = params[:param] %>
-<header>
-	<h2>El <%= pj %> como personaje</h2>
-</header>
 
-<p>
-	<h3>Habilidades iniciales</h3>
-	<table>
-		<thead>
-			<tr>
-				<th colspan='2'>Habilidad</th>
-				<th>Descripción</th>
-			</tr>
-		</thead>
-		<tbody>
-			<% habilidad_base(pj).each do |hab| %>
-				<tr><td><%= erb :'display/skillbase', locals: { skill: hab} %></td>
-					<td><%= hab.name %></td>
-					<td><%= hab.description %></td>
-				</tr>
-			<% end %>
-		</tbody>
-	</table>
-</p>
+<h2>El <%= pj %> como personaje</h2>
+<%= slim :'personajes/clases/clase/iniciales' %>
 
-<p>
-	<h3>Especializaciones</h3>
-	<%= erb :'personajes/clases/special_table', locals: {pj: pj} %>
-</p>
+<h3>Especializaciones</h3>
+<%= erb :'personajes/clases/special_table', locals: {pj: pj} %>
 
 <p>
 	<h3>Familiares disponibles del <%= pj %></h3>
@@ -36,23 +14,6 @@
 <p>
 	<% prof = profesions.detect {|p| p.imped == pj }%>
 	<h3>Profesión prohibida: <%= prof.name %></h3>
-	<table>
-		<thead>
-			<tr>
-				<th>Icono</th>
-				<th>Justificación</th>
-			</tr>
-		</thead>
-		<tbody>
-			<% profesions.each do |p| %>
-			<% next unless p.imped == pj %>
-				<tr>
-					<td><a href="/profesion/<%= p.name %>">
-						<img src=<%= p.img_path %> alt='<%= p.name %>' id='icon' />
-					</a></td>
-					<td><%= p.why %></td>
-				</tr>
-			<% end %>
-		</tbody>
-	</table>
+	<%= slim :'personajes/clases/clase/profesión' %>
+
 </p>

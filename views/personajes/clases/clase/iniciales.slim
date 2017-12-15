@@ -1,0 +1,14 @@
+h3 Habilidades iniciales
+
+.table-responsive
+	table class="table"
+		thead
+			tr
+				th colspan='2' Habilidad
+				th Descripción
+		tbody
+			- habilidad_base(params[:param]).each do |hab|
+				tr
+					td == erb :'display/skillbase', locals: { skill: hab }
+					td == hab.name
+					td == hab.description

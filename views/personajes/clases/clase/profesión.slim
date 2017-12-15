@@ -1,0 +1,18 @@
+.table-responsive
+	table class="table"
+		thead
+			tr
+				th Icono
+				th Justificación
+		tbody
+			- profesions.each do |p|
+				- next unless p.imped == params[:param]
+				tr
+					td
+						a href="/profesion/#{ p.name }"
+							img {
+								src="/images/profesiones/#{ p.name }.png"
+								alt="#{ p.name }"
+								id='icon'
+							}
+					td == p.why

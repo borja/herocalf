@@ -7,7 +7,7 @@ end
 def profes
   %w(alquimia inscripción taxidermia táctica
      encantamiento orfebrería carpintería
-     política cetrería)
+     política cetrería medicina)
 end
 
 def load_recetas(id, prof)

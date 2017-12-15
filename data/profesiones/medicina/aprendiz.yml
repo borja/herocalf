@@ -1,0 +1,18 @@
+-
+  name:   "Aprendiz de médico"
+  coste:  100
+  efecto: "Puedes curar a un aliado con 0 PC impidiendo que muera.
+           Curar es una acción especial de medicina que consume acción total.
+           Desgraciadamente curar no funciona con gólems."
+-
+  name:   "Cauterizar"
+  coste:  150
+  efecto: "Requiere llamas: Por 1 daño de fuego, elimina un efecto de sangrado."
+-
+  name:   "Enfermero curtido"
+  coste:  100
+  efecto: "Suministrar una poción a un aliado a melé no consume acción"
+-
+  name:   "Vendas sucias"
+  coste:  10
+  efecto: "Destruye un objeto de cuero/tela para disponer de 2 vendas."

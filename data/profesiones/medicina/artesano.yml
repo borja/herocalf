@@ -1,0 +1,17 @@
+-
+  name:   "Artesano médico"
+  coste:  500
+  efecto: "Podrás curar a un aliado por debajo de 0 PC para que no muera
+           inmediatamente. El efecto solamente dura un turno."
+-
+  name:   "Enfermero eficaz"
+  coste:  350
+  efecto: "Puedes invetir tu acción de movimiento en una curación"
+-
+  name:   "Encomendarse a la Dama"
+  coste:  150
+  efecto: "Permite considerar curar, los hechizos de sanación que realices"
+-
+  name:   "Psicología empática"
+  coste:  300
+  efecto: "Toque, 1PM: El aliado objetivo recupera su mente hasta 1 PM."
