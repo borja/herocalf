@@ -1,2 +1,13 @@
-<%= erb :'inicio/features' %>
+<div class="row">
+	<div class="col-lg-12">
+		<h1 class="page-header">
+			Web amateur del juego de mesa HeroQuest
+		</h1>
+	</div>
+	<%= slim :'inicio/features/torre' %>
+	<%= slim :'inicio/features/habilidades' %>
+	<%= slim :'inicio/features/lore' %>
+	<%= slim :'inicio/features/objetos' %>
+</div>
+
 <%= erb :'inicio/content'  %>
