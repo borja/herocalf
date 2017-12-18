@@ -1,0 +1,19 @@
+.table-responsive
+	table
+		thead
+			tr
+				th
+				th class="text-center" Habilidad
+				th class="text-center" Descripción
+		tbody
+			- heroe.hab_base.each do |hab|
+				tr
+					td == erb :'display/skillbase', locals: { skill: hab}
+					td == hab.name
+					td == hab.description
+			- if heroe.skills
+				- heroe.habilidades.each do |hab|
+					tr
+						td == erb :'display/skill', locals: { skill: hab }
+						td == hab.name
+						td == hab.description

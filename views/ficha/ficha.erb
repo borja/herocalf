@@ -30,7 +30,7 @@
 
 		<div id="myTabContent" class="tab-content">
 			<div class="tab-pane fade active in" id="stats">
-				<%= erb :"mapa/tabs/geo" %>
+				TBD
 			</div>
 			<div class="tab-pane fade" id="equipo">
 				<% 3.times do |i| %>
@@ -40,7 +40,7 @@
 				<% end %>
 			</div>
 			<div class="tab-pane fade" id="habs">
-				<%= erb :'ficha/habilidades', locals: { heroe: h } %>
+				<%= slim :'ficha/habilidades', locals: { heroe: h } %>
 			</div>
 		</div>
 
