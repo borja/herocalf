@@ -1,0 +1,15 @@
+.table-responsive
+	table class="table"
+		thead
+			th colspan=2 Pericia
+			th Descripción
+			th Coste
+		tbody
+			- maestrodearmas.each do |m|
+				tr
+					td
+						- img_path = "/images/skills/maestrodearmas/#{m['name']}.png"
+						img src="#{img_path}" alt="#{m['name']}" id='icon'
+					td == m['name']
+					td == m['description']
+					td == m['coste']
