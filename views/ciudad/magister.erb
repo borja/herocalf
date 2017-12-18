@@ -1,21 +1,11 @@
-<div class="table-responsive">
-	<table class="table">
-		<thead>
-			<th colspan=2>Pericia</th>
-			<th>Descripción</th>
-			<th>Coste</th>
-		</thead>
-		<tbody>
-			<% magisters.each do |m| %>
-				<tr>
-					<td><% img_path = "'../images/skills/magisters/#{m['name']}.png'" %>
-						<img src=<%=img_path%> alt=<%=m['name']%>, id='icon' />
-					</td>
-					<td><%= m['name'] %></td>
-					<td><%= m['description'] %></td>
-					<td><%= m['coste'] %></td>
-				</tr>
-			<% end %>
-		</tbody>
-	</table>
-</div>
+<h2>Maestros Arcanos</h2>
+<p>
+	Los maestros arcanos son los nuevos profesores de las artes arcanas,
+	venidos desde los lejanos mundo del Sur, mediante las arenas del tiempo.
+	Debido a esta situación, no queriendo desprenderse de los tesoros
+	traídos de épocas lejanas para pagar sus costes, se ven forzados a enseñar
+	los enigmáticos conocimientos a los usuarios de la magia dispuestos
+	a pagar por sus servicios.
+</p>
+<h3>Tabla de habilidades</h3>
+<%= slim :'ciudad/magister_tabla' %>
