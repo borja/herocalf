@@ -499,7 +499,7 @@
     main: "magia/principal"
     right: "magia/right/menu"
 -
-  ruta:  "magia"
+  ruta:  "historiamagia"
   title: "Historia arcana"
   template:
     left: "magia/left/elementales"
