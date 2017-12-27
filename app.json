@@ -3,5 +3,5 @@
   "description": "Ruby on Sinatra app for HeroQuest charsheets",
   "image": "heroku/ruby",
   "repository": "https://github.com/borja/herocalf",
-  "keywords": ["ruby", "sinatra", "bootstrap" ]
+  "keywords": ["ruby", "sinatra", "bootstrap", "slim"]
 }
