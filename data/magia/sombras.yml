@@ -143,3 +143,41 @@
   diablura: "Puede estar ocupada, en cuyo caso puedes realizar un ataque.
              Si muere, podrás ocupar la casilla."
   ardid:    "Puedes usarlo como instinto, pero pasarás loco tu próximo turno."
+# Nivel 3
+-
+  id:       12
+  alcance:  1
+  duracion: "E"
+  name:     "Sombras hermanas"
+  tipo:     "Bendición - dádiva"
+  efecto:   "El objetivo y tú no sois empujados al moveros el uno hacia el
+             otro. Ambos podéis atacar desde la espalda del otro, ambos
+             sumáis el total de resistencias a las tiradas."
+  potencia: "+1 objetivo"
+  maestría: "+2 duración"
+  diablura: "Ambos odiáis al golpear al mismo objetivo"
+  ardid:    "Podéis dirigir a vosotros los ataques del objetivo y viceversa."
+-
+  id:       13
+  alcance:  "∞"
+  duracion: 0
+  name:     "Incinerar en sombras"
+  tipo:     "Maldición"
+  efecto:   "El objetivo arde envuelto en sombras. Al inicio de su turno,
+             tira 1 dado negro de combate. Si sale calavera, recibe 1 daño,
+             y tira de nuevo inmediatamente."
+  potencia: "+1 fuerza"
+  maestría: "Añade odio en +1 tirada"
+  diablura: "Recuperar 4+, si el objetivo está en rango de visión"
+  ardid:    ""
+-
+  id:       14
+  alcance:  0
+  duracion: "D"
+  name:     "Corazón púrpura"
+  tipo:     "Aura"
+  efecto:   "+1PC cada vez que inflinjas daño con hechizos de sombras"
+  potencia: "+1 PC recuperado"
+  maestría: "+1 escuela además de sombras a elección"
+  diablura: "Puedes eliminar un efecto perjudicial en lugar de sanarte"
+  ardid:    "Puedes recuperar una habilidad única en lugar de sanarte"

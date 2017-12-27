@@ -1,23 +1,28 @@
-﻿-
+﻿# nivel 2
+-
   id:           0
   nivel:        2
+  rangos:       2
   name:         "Espíritu guardián"
   type:         "activa"
   coste:        "1PM + 1/rango"
-  rangos:       2
-  description:  "Invoca un espíritu guardián de rango igual o inferior a la habilidad."
+  description:  "Invoca un espíritu guardián de rango igual o
+                 inferior a la habilidad."
 -
   id:           1
   nivel:        2
   name:         "Eclipse"
   type:         "reactiva"
-  description:  "Obtienes un Punto de Sol (PS) cada vez que defiendes con éxito y un Punto de Luna (PL) al matar con hechizos. Entrarás en estado de eclipse cuando el sol y la luna coincidan y añadirás tu eclipse a la potencia de hechizos."
+  description:  "Obtienes 1 punto de Sol (PS) al defender con éxito.
+                 Obtienes 1 punto de Luna (PL) al matar con hechizos.
+                 Entrarás en estado de eclipse cuando el sol y la luna
+                 coincidan y añadirás tu eclipse a tu potencia de hechizos."
 -
   id:           2
   nivel:        2
+  rangos:       3
   name:         "Magia elemental"
   type:         "pasiva"
-  rangos:       3
   description:  "+1 set de magia elemental."
 -
   id:           3
@@ -25,270 +30,236 @@
   name:         "Espinas"
   type:         "activa"
   coste:        "1PV"
-  requisitos:   [0]
-  description:  "+1 dado verde de defensa (Instintos). El agresor recibe el exceso como daño defendible. Se aplica al druida y al espíritu."
+  description:  "Instinto: +1 dado verde de defensa.
+                 El agresor recibe el exceso como daño defendible.
+                 Se aplica al druida y al espíritu.
+                 En rango 2, Iguala a tu eclipse la potencia defensiva/ofensiva
+                 de tus espinas. Por cada punto de daño causado,
+                 invoca un saprolín."
 -
   id:           4
-  nivel:        3
-  name:         "Salvajismo"
-  type:         "pasiva"
-  requisitos:   [0]
+  nivel:        2
   rangos:       3
-  description:  "+1 potencia de ataque a los espíritus invocados."
+  name:         "Guadaña púrpura"
+  type:         "activa"
+  coste:        "1 PM / rango"
+  description:  "Invoca la guadaña púrpura (2 de ataque + 1/rango morado)
+                 Ataca en diagonal, se usa a 2 manos y sustituye tu arma/s.
+                 A los efectos, atacar con la guadaña se considera hechizar.
+                 La potencia de hechizos (todos) será potencia de ataque,
+                 y la maestría fuerza. +1 PV al matar ó +1 PL"
+# nivel 3
 -
   id:           5
   nivel:        3
+  rangos:       4
   name:         "Bellotas mágicas"
   type:         "activa"
   coste:        "1PV"
-  requisitos:   [0]
-  description:  "Creas 1 bellota que cura 1 PC y 1 PM. (Ocupa el espacio de una poción)"
+  description:  "Creas 1 bellota que cura 1 PC y 1 PM durante R turnos (rango).
+                 (Ocupa el espacio de una poción)"
 -
   id:           6
   nivel:        3
   name:         "Canción del bosque"
   type:         "única"
   requisitos:   [1]
-  description:  "Todos los aliados (V) recuperan 1 PM y 1 PC por cada punto de eclipse. Consume acción de hechizo."
+  description:  "Hechizo, a todos los aliados (V): +1 PM y +1PC por eclipse."
 -
   id:           7
   nivel:        3
+  requisitos:   [0]
   name:         "Vigor elemental"
   type:         "pasiva"
-  requisitos:   [0]
-  description:  "Tus espíritus invocados obtienen +1PC por cada elemento de hechizo disponible en tu biblioteca."
+  description:  "Tus espíritus invocados obtienen +1PC por cada elemento
+                 de hechizo disponible en tu biblioteca."
 -
   id:           8
   nivel:        3
-  name:         "Guadaña púrpura"
-  type:         "activa"
-  coste:        "2PV"
-  requisitos:   [0,1]
-  description:  "Una guadaña púrpura (2 de ataque morado diagonal a dos manos) sustituye tu arma/s. En eclipse su potencia es igual a tu eclipse."
+  rangos:       3
+  requisitos:   [0]
+  name:         "Salvajismo"
+  type:         "pasiva"
+  description:  "+1/rango potencia de ataque a los espíritus invocados."
+# nivel 4
 -
   id:           9
   nivel:        4
+  rangos:       2
+  requisitos:   [1, 4]
   name:         "Espliego nocturno"
   type:         "activa"
-  coste:        "2PL"
-  requisitos:   [1,8]
-  description:  "+1 fuerza a tu guadaña este turno."
+  coste:        "1 PL"
+  description:  "+1 fuerza a tu guadaña este turno.
+                 En el segundo rango, además recupera hechizos al matar."
 -
   id:           10
   nivel:        4
+  requisitos:   [0]
   name:         "Fuerza de Taal"
   type:         "única"
-  requisitos:   [0]
   description:  "+1 a todos los atributos de los espíritus este turno."
 -
   id:           11
   nivel:        4
+  rangos:       2
+  requisitos:   [1]
   name:         "Sol del Alba"
   type:         "activa"
   coste:        "1PS"
-  requisitos:   [1]
-  description:  "+1 potencia en tu siguiente hechizo."
+  description:  "+1/rango potencia en tu siguiente hechizo."
 -
   id:           12
-  nivel:        5
+  nivel:        4
+  requisitos:   [0]
   name:         "Bendición de Gaia"
   type:         "pasiva"
-  requisitos:   [0]
   description:  "Obtienes 1 PV cuando tu espíritu defiende con éxito."
+# nivel 5
 -
   id:           13
   nivel:        5
+  requisitos:   [0]
   name:         "Imbuir arcano"
   type:         "activa"
   coste:        "1 magia"
-  requisitos:   [0]
-  description:  "El espíritu guardián puede ejecutar la magia por 1 PV."
+  description:  "1PV: El espíritu guardián puede ejecutar la magia imbuida"
 -
   id:           14
   nivel:        5
+  requisitos:   [0, 1]
   name:         "Poderío"
   type:         "activa"
   coste:        "1PS ó 1PL"
-  requisitos:   [0,1]
-  description:  "1 Punto de sol: +1 ataque extra para tu espíritu. 1 Punto de Luna: +1 fuerza para tu espíritu."
+  description:  "1 PS: +1 ataque extra para tu espíritu.
+                 1 PL: +1 fuerza para tu espíritu.
+                 Ambos: ambos efectos y además obtienes una acción de hechizo."
 -
   id:           15
   nivel:        5
+  requisitos:   [0]
   name:         "Torsión Espiritual"
   type:         "única"
-  requisitos:   [0]
   description:  "Intercambia tu posición con tu espíritu."
 -
   id:           16
-  nivel:        6
-  name:         "Espíritu guardián II"
-  type:         "activa"
-  coste:        "3PM"
-  requisitos:   [0]
-  description:  "Invoca a elección: un lobo(rabia) una araña(luna) búho (magia) elemental de agua(sol)."
+  nivel:        8
+  requisitos:   [0,10]
+  name:         "Karma"
+  type:         "reactiva"
+  description:  "Al recibir daño: recuperas Fuerza de Taal"
+# nivel 6
 -
   id:           17
   nivel:        6
+  rangos:       2
+  requisitos:   [0, 1, 2]
   name:         "Dádiva de Gaia"
   type:         "declarativa"
-  requisitos:   [0,1,2]
-  description:  "Otorga tu bendición de Gaia a un aliado adicional."
+  description:  "Otorga tu bendición de Gaia a un aliado adicional.
+                 En rango 2, tu aliado puede usar torsión espiritual."
 -
   id:           18
   nivel:        6
+  rangos:       2
+  requisitos:   [1, 1, 1]
   name:         "Sol del Ocaso"
   type:         "activa"
   coste:        "1PV"
-  requisitos:   [1,1,1]
-  description:  "Obtienes un punto de sol si entras en eclipse gracias a él recuperas un hechizo elemental aleatorio."
+  description:  "Instantáneo: +1 PS si te falta 1 PS para entrar en eclipse.
+                 Además, recuperas 1 hechizo elemental aleatorio.
+                 En rango 2, si al sanar con magia si el objetivo recupera
+                 el total de sus puntos de cuerpo: +1 PS"
+# nivel 7
 -
   id:           19
-  nivel:        6
+  nivel:        7
+  requisitos:   [0, 0, 15]
   name:         "Animismo"
   type:         "reactiva"
-  requisitos:   [0,0,1,5]
-  description:  "Se recupera 1 torsión espiritual cuando mata el espíritu."
+  description:  "Recupera 1 torsión espiritual cuando mata el espíritu."
 -
   id:           20
   nivel:        7
+  requisitos:   [0]
   name:         "Posesión espiritual"
   type:         "activa"
   coste:        "1PV"
-  requisitos:   [0,0]
-  description:  "Tu espíritu posee a un objetivo en locura."
+  description:  "Tu espíritu posee a un objetivo en locura.
+                 El objetivo recibe todos los bonificadores del espíritu."
+# nivel 8
 -
   id:           21
-  nivel:        7
+  nivel:        8
+  requisitos:   [0,3]
   name:         "Armadura de roble"
   type:         "única"
-  requisitos:   [0,3]
-  description:  "Tira dados verdes en tu defensa base y la del espíritu guardián."
+  description:  "Instinto: Tira dados verdes en la defensa base y del espíritu.
+                 Recupera al sufrir daño durante el efecto si estás en eclipse"
 -
   id:           22
-  nivel:        7
-  name:         "Druidismo"
-  type:         "pasiva"
+  nivel:        8
+  rangos:       3
   requisitos:   [0,0]
-  description:  "Un espíritu guardián puede ejecutar magias imbuidas por tí."
--
-  id:           23
-  nivel:        7
-  name:         "Bosque tranquilo"
-  type:         "reactiva"
-  requisitos:   [1,6]
-  description:  "Al sanar con magia si el objetivo recupera el total de sus puntos de cuerpo obtienes un punto de sol."
--
-  id:           24
-  nivel:        8
-  name:         "Llanto del sauce"
-  type:         "reactiva"
-  requisitos:   [0,1,3,21]
-  description:  "Si sufres daño durante la armadura del roble en eclipse recuperas la armadura del roble."
--
-  id:           25
-  nivel:        8
-  name:         "Karma"
-  type:         "reactiva"
-  requisitos:   [0,10]
-  description:  "Al recibir daño: recuperas Fuerza de Taal"
--
-  id:           26
-  nivel:        8
-  name:         "Oso furioso"
-  type:         "activa"
-  coste:        "3PM"
-  requisitos:   [0,0,4]
-  description:  "Invoca a un oso furioso."
--
-  id:           27
-  nivel:        8
-  name:         "Transmutación"
-  type:         "activa"
-  coste:        "1 magia"
-  requisitos:   [0,0]
-  description:  "Cambia el espíritu invocado por otro de rango igual o inferior."
--
-  id:           28
-  nivel:        9
-  name:         "Espinas y zarcillos"
-  type:         "pasiva"
-  requisitos:   [0,3]
-  description:  "Iguala a tu eclipse la potencia defensiva/ofensiva  de tus espinas. Por cada punto de daño causado invoca un saprolín."
--
-  id:           29
-  nivel:        9
   name:         "Espíritu ancestral"
   type:         "pasiva"
-  rangos:       2
-  requisitos:   [0,0]
-  description:  "+1 Fuerza a todos los espíritus invocados."
+  description:  "1 magia: Cambia el espíritu invocado por otro,
+                 de rango igual o inferior. En ese momento, +1/rango Fuerza
+                 a todos los espíritus invocados, hasta que muera el espíritu."
+# nivel 9
 -
-  id:           30
+  id:           23
   nivel:        9
-  name:         "Vergel"
-  type:         "única"
-  requisitos:   [1,5]
-  description:  "Las bellotas restauran tu puntuación de eclipse en PM y PC. Al consumir una bellota puedes en su lugar recuperar vergel."
--
-  id:           31
-  nivel:        9
-  name:         "Torsión de Gaia"
-  type:         "activa"
-  coste:        'Torsión Espiritual'
-  requisitos:   [0,1,2,17]
-  description:  "Un aliado con dádiva de Gaia intercambia su posición con tu espíritu."
--
-  id:           32
-  nivel:        10
-  name:         "El dragón verde"
-  type:         "activa"
-  coste:        '5PV'
-  requisitos:   [0,0,3,4,10,22,29]
-  description:  "Invoca a un dragón verde (mantenimiento/turno: 4PV). Podrá ser montura de hasta 2 elfos."
--
-  id:           33
-  nivel:        11
+  requisitos:   [22]
   name:         "Transformación druídica"
   type:         "activa"
   coste:        "El mismo que el del espíritu a invocar"
-  requisitos:   [0,0,22]
-  description:  "El druida se convierte en espíritu guardian copiando su ataque defensa movimiento."
+  description:  "El druida se convierte en espíritu guardian copiando:
+                 su ataque, defensa y movimiento base.
+                 Al transformarse el druida en espíritu le afectan todas
+                 las habilidades pasivas de los espíritus"
 -
-  id:           34
-  nivel:        12
+  id:           24
+  nivel:        9
+  requisitos:   [0,0]
   name:         "Sabiduría espiritual"
   type:         "pasiva"
-  rangos:       2
-  requisitos:   [0,0,26]
-  description:
-                "Los espíritus invocados disponen de habilidades especiales: 
+  description:  "Los espíritus invocados disponen de habilidades especiales: 
                  Araña (Incubar/Tela de araña y gran veneno)<br/>
                  Oso (Desplazar/Aullar y Empujar)<br/>
                  Búho (vista nocturna / Ojos de búho 5+ y huevo de oro)<br/>
-                 Lobo (Cargar/ Mordisco y manada)<br/>
-                 Elemental de agua (Fuente / Riada y escudo de agua)<br/>
-                 Dragón (mantenimiento de 3PV-turno / Estallido de saprolines)."
+                 Lobo (Cargar/Mordisco y manada)<br/>
+                 Elemental de agua (Fuente/Riada y escudo de agua)<br/>"
+# nivel 10 - Habilidades definitivas
 -
-  id:           35
-  nivel:        13
-  name:         "Unión espiritual"
-  type:         "pasiva"
-  requisitos:   [0,0,26,34]
-  description:  "El espíritu guardián puede ofrecer sus habilidades especiales al objetivo poseído por él o al propio druida."
+  id:           25
+  nivel:        10
+  requisitos:   [0, 3, 6]
+  name:         "Dragón esmeralda"
+  type:         "Definitiva"
+  coste:        '5PV'
+  description:  "Invoca a un dragón verde (mantenimiento/turno: 4PV -1/eclipse).
+                 Podrá ser montura de hasta 2 elfos."
 -
-  id:           36
-  nivel:        14
-  name:         "Defensa elemental"
-  type:         "activa"
-  coste:        "1PS"
-  requisitos:   [0,0,26]
-  description:  "(Instinto) El espíritu guardián tiene una potencia defensiva igual al número de sets de magia elemental que el druida tenga en ese momento. No afecta al druida aunque se transforme en espíritu guardián."
+  id:           26
+  nivel:        10
+  requisitos:   [1, 3]
+  name:         "Árbol milenario"
+  type:         "Definitiva"
+  coste:        '5PV, movimiento reducido a 0'
+  description:  "1PL: Podrás mover 1/eclipse casillas.
+                 1PS: Podrás ejecutar un hechizo adicional
+                 Tus hechizos tienen ardid y tu eclipse otorga maestría,
+                 en lugar de potencia. +1 potencia con hechizos.
+                 Tus espinas están activas sin coste.
+                 Además, puedes cambiar cualquier fuente de PL por PS."
 -
-  id:           37
-  nivel:        15
-  name:         "Forma verdadera"
-  type:         "pasiva"
-  requisitos:   [0,0,10,22,33]
-  description:
-                "Al transformarse el druida en espíritu le afectan
-                todas las habilidades pasivas de los espíritus"
+  id:           27
+  nivel:        10
+  requisitos:   [4, 5]
+  name:         "La Cosecha"
+  type:         "Definitiva"
+  coste:        'X+1 PV'
+  description:  "Hechizo: Golpea con tu guadaña a X objetivos en el tablero,
+                 y además a todos los enemigos cuerpo a cuerpo.
+                 Crearás 1 bellota mágica por cada pieza."
