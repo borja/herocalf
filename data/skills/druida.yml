@@ -2,7 +2,7 @@
 -
   id:           0
   nivel:        2
-  rangos:       2
+  rangos:       3
   name:         "Espíritu guardián"
   type:         "activa"
   coste:        "1PM + 1/rango"
@@ -33,7 +33,7 @@
   description:  "Instinto: +1 dado verde de defensa.
                  El agresor recibe el exceso como daño defendible.
                  Se aplica al druida y al espíritu.
-                 En rango 2, Iguala a tu eclipse la potencia defensiva/ofensiva
+                 En rango 2, iguala a tu eclipse la potencia defensiva/ofensiva
                  de tus espinas. Por cada punto de daño causado,
                  invoca un saprolín."
 -
@@ -43,11 +43,12 @@
   name:         "Guadaña púrpura"
   type:         "activa"
   coste:        "1 PM / rango"
-  description:  "Invoca la guadaña púrpura (2 de ataque + 1/rango morado)
+  description:  "Invoca la guadaña púrpura (2 + 1/rango dados de ataque morados)
                  Ataca en diagonal, se usa a 2 manos y sustituye tu arma/s.
                  A los efectos, atacar con la guadaña se considera hechizar.
-                 La potencia de hechizos (todos) será potencia de ataque,
-                 y la maestría fuerza. +1 PV al matar ó +1 PL"
+                 Cualquier bonificador de potencia y maestría con hechizos,
+                 se añade como potencia de ataque y fuerza respectivamente.
+                 +1/rango PV ó PL al matar "
 # nivel 3
 -
   id:           5
@@ -57,14 +58,15 @@
   type:         "activa"
   coste:        "1PV"
   description:  "Creas 1 bellota que cura 1 PC y 1 PM durante R turnos (rango).
-                 (Ocupa el espacio de una poción)"
+                 Ocupa el espacio de una poción."
 -
   id:           6
   nivel:        3
   name:         "Canción del bosque"
   type:         "única"
   requisitos:   [1]
-  description:  "Hechizo, a todos los aliados (V): +1 PM y +1PC por eclipse."
+  description:  "Hechizo, a todos los aliados (V): +1 PM y +1PC por eclipse.
+                 Se recupera al sanar a un aliado dañado durante el eclipse."
 -
   id:           7
   nivel:        3
@@ -119,11 +121,15 @@
 -
   id:           13
   nivel:        5
-  requisitos:   [0]
+  rangos:       2
+  requisitos:   [0, 2]
   name:         "Imbuir arcano"
   type:         "activa"
-  coste:        "1 magia"
-  description:  "1PV: El espíritu guardián puede ejecutar la magia imbuida"
+  coste:        "1 magia (Puedes añadir otra en rango 2)"
+  description:  "Imbuye con energía mágica a un espíritu guardián, otorgándole
+                 las siguientes habilidades:<br>
+                 +P a la fuerza (P = suma de potencias de elementos imbuidos).
+                 1PV: El espíritu guardián ejecutará 1 magia imbuida."
 -
   id:           14
   nivel:        5
@@ -168,7 +174,7 @@
   coste:        "1PV"
   description:  "Instantáneo: +1 PS si te falta 1 PS para entrar en eclipse.
                  Además, recuperas 1 hechizo elemental aleatorio.
-                 En rango 2, si al sanar con magia si el objetivo recupera
+                 En rango 2, si al sanar con magia el objetivo recupera
                  el total de sus puntos de cuerpo: +1 PS"
 # nivel 7
 -
@@ -185,7 +191,7 @@
   name:         "Posesión espiritual"
   type:         "activa"
   coste:        "1PV"
-  description:  "Tu espíritu posee a un objetivo en locura.
+  description:  "Tu espíritu posee a un objetivo en locura o voluntario.
                  El objetivo recibe todos los bonificadores del espíritu."
 # nivel 8
 -
@@ -195,7 +201,8 @@
   name:         "Armadura de roble"
   type:         "única"
   description:  "Instinto: Tira dados verdes en la defensa base y del espíritu.
-                 Recupera al sufrir daño durante el efecto si estás en eclipse"
+                 Recupera al sufrir daño si estás en eclipse.
+                 +1 potencia en los dados verdes que tuvieras de antemano."
 -
   id:           22
   nivel:        8
@@ -204,8 +211,9 @@
   name:         "Espíritu ancestral"
   type:         "pasiva"
   description:  "1 magia: Cambia el espíritu invocado por otro,
-                 de rango igual o inferior. En ese momento, +1/rango Fuerza
-                 a todos los espíritus invocados, hasta que muera el espíritu."
+                 de rango igual o inferior. En ese momento, +1 Fuerza
+                 a todos los espíritus invocados, hasta que muera el espíritu.
+                 Puedes usar esta habilidad un máximo de R veces (rango) desde                   el espíritu original invocado."
 # nivel 9
 -
   id:           23
@@ -247,19 +255,21 @@
   name:         "Árbol milenario"
   type:         "Definitiva"
   coste:        '5PV, movimiento reducido a 0'
-  description:  "1PL: Podrás mover 1/eclipse casillas.
+  description:  "Te transformas en el árbol milenario.
+                 1PL: Podrás mover 1/eclipse casillas.
                  1PS: Podrás ejecutar un hechizo adicional
                  Tus hechizos tienen ardid y tu eclipse otorga maestría,
                  en lugar de potencia. +1 potencia con hechizos.
                  Tus espinas están activas sin coste.
-                 Además, puedes cambiar cualquier fuente de PL por PS."
+                 Elige al transformarte: Siempre poder cambiar cualquier
+                 fuente de PL por PS [pasiva] o viceversa."
 -
   id:           27
   nivel:        10
   requisitos:   [4, 5]
   name:         "La Cosecha"
   type:         "Definitiva"
-  coste:        'X+1 PV'
+  coste:        'X+4 PV'
   description:  "Hechizo: Golpea con tu guadaña a X objetivos en el tablero,
                  y además a todos los enemigos cuerpo a cuerpo.
                  Crearás 1 bellota mágica por cada pieza."
