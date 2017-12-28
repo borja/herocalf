@@ -77,7 +77,7 @@
   requisitos:   [2,7]
   name:         "Ariel"
   type:         "Activa"
-  coste:        "1 PC"
+  coste:        "1/rango PC"
   description:  "El corazón de león se aplica al coste de Ariel. Se puede usar
                  Ariel para que 1 próxima plegaria tenga 1/rango propiedad:<br/>
                  <li>Cueste 1PC en lugar de 1 plegaria</li>
@@ -109,3 +109,29 @@
   description:  "Si tu turno termina tras cobrar una pieza, puedes ejecutar
                  inmediatamente un hechizo de aire. En rango 2, no consume
                  el hechizo."
+# nivel 5
+-
+  id:           13
+  nivel:        5
+  requisitos:   [10]
+  name:         "Mordisco belicoso"
+  type:         "Reactiva"
+  description:  "Recupera aplastar al matar sin armas"
+-
+  id:           14
+  nivel:        5
+  rangos:       3
+  requisitos:   [2, 7]
+  name:         "Poder personal"
+  type:         "Activa"
+  coste:        "1 PM"
+  description:  "Instinto: Lanza 1/rango plegarias sin coste, si has sido
+                 el héroe que más daño ha inflingido esta ronda.
+                 Las plegarias que no te afecten a ti, no tienen efecto."
+-
+  id:           15
+  nivel:        5
+  requisitos:   [10]
+  name:         "Mordisco belicoso"
+  type:         "Reactiva"
+  description:  "Recupera aplastar al matar sin armas"

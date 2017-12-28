@@ -1,3 +1,4 @@
+# nivel 2
 -
   id:           0
   nivel:        2
@@ -8,7 +9,6 @@
 -
   id:           1
   nivel:        2
-  rangos:       3
   name:         "Salto feroz"
   type:         "única"
   description:  "Tu próximo ataque se considera en posición elevada"
@@ -24,13 +24,17 @@
   nivel:        2
   name:         "Apresar"
   type:         "pasiva"
-  description:  "Al causar daño en un ataque en conjunto, la víctima perderá su movimiento."
+  description:  "Al causar daño en un ataque en conjunto,
+                 la víctima perderá su movimiento."
 -
   id:           4
   nivel:        2
+  rangos:       3
   name:         "Dos armas"
   type:         "pasiva"
-  description:  "Permite llevar un arma en la mano torpe de tamaño igual o inferior al rango."
+  description:  "Permite llevar un arma en la mano torpe de tamaño
+                 igual o inferior al rango."
+# nivel 3
 -
   id:           5
   nivel:        3
@@ -44,8 +48,8 @@
   nivel:        3
   name:         "Infalible"
   type:         "reactiva"
-  description:
-                "Tras matar un enemigo cuerpo a cuerpo, podrás arrojar un arma como acción gratuita<br/>
+  description:  "Tras matar un enemigo cuerpo a cuerpo, podrás arrojar
+                 un arma como acción gratuita<br/>
                  (Podrá arrojar incluso armas que no sean arrojadizas)"
 -
   id:           7
@@ -53,20 +57,38 @@
   requisitos:   [3]
   name:         "Dentellada"
   type:         "pasiva"
-  description:  "Añade dos veces tu ataque sin armas, cuando ataques a enemigos con movimiento reducido."
+  description:  "Añade dos veces tu ataque sin armas, cuando ataques
+                 a enemigos con movimiento reducido."
 -
   id:           8
   nivel:        3
-  requisitos:   [0,1]
+  requisitos:   [0, 1]
   name:         "Emboscada súbita"
   type:         "reactiva"
-  description:  "Recupera salto feroz si todos los enemigos de la fase trepidante han sido eliminados ese turno."
+  description:  "Recupera salto feroz si todos los enemigos de la fase
+                 trepidante han sido eliminados ese turno."
+# nivel 4
 -
   id:           9
   nivel:        4
   requisitos:   [0]
   name:         "Hoja de la manada"
   type:         "instinto"
-  description:
-                "Estando en sigilo, podrá hacer un ataque con su arma principal, cuerpo a cuerpo,<br/>
-                 a cualquier enemigo que ataque a un aliado. (Instinto)"
+  description:  "Estando en sigilo: podrá hacer un ataque con su arma principal
+                 cuerpo a cuerpo, a cualquier enemigo que ataque a un aliado."
+-
+  id:           10
+  nivel:        4
+  rangos:       3
+  requisitos:   [5, 9]
+  name:         "Visión de manada"
+  type:         "pasiva"
+  description:  "+1/rango a buscar por cada aliado cuerpo a cuerpo.
+                 Los enemigos en sigilo detectados, recuperan Salto Feroz"
+-
+  id:           11
+  nivel:        4
+  requisitos:   [5]
+  name:         "Amedrentar"
+  type:         "Pasiva"
+  description:  "Puede reugir gratuitamente al salir de sigilo."
