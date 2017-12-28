@@ -17,12 +17,11 @@
 -
   id:           2
   nivel:        2
+  rangos:       2
   name:         "Emboscada"
   type:         "Activa"
-  coste:        "Perder sigilo"
-  description:  "Requiere daga. Añade 2 dados de combate a la tirada de ataque. 
-                 <li>Rango I: Cuesta 5 MOV/emboscada.</li>
-                 <li>Rango II: Cuesta 3 MOV/emboscada.</li>"
+  coste:        "Perder sigilo, 4 MOV - 1/rango"
+  description:  "Requiere daga. +2 dados de combate a la tirada de ataque."
 -
   id:           3
   nivel:        2
@@ -30,7 +29,7 @@
   name:         "Dagas voladoras"
   type:         "Pasiva"
   description:  "Requiere mecanismo de muñeca o dominio de puñales.
-                 Permite arrojar, 1 ataque extra con dagas, por cada rango."
+                 +1 ataque extra por cada rango: arrojar 1 daga."
 -
   id:           4
   nivel:        2
@@ -38,7 +37,7 @@
   name:         "Formado entre asesinos"
   type:         "Instinto"
   coste:        "1 PM"
-  description:  "Gira 90º/rango tu miniatura, este insinto no tiene sobrecoste."
+  description:  "Gira 90º/rango tu miniatura. Este insinto no tiene sobrecoste."
 # nivel 3
 -
   id:           5
@@ -47,8 +46,8 @@
   name:         "Venenos"
   type:         "Pasiva"
   description:  "El asesino recubre sus armas con veneno.
-                <li>Rango I: añade un dado especial blanco a tus ataques.</li>
-                <li>Rango II: añade un dado especial negro a tus ataques.</li>"
+                <li>Rango 1: +1 dado especial blanco a tus ataques.</li>
+                <li>Rango 2: +1 dado especial negro a tus ataques.</li>"
 -
   id:           6
   nivel:        3
@@ -56,7 +55,8 @@
   name:         "Paso de sombras"
   type:         "Activa"
   coste:        "3PM - 1PM/rango"
-  description:  "+1/rango sigilo hasta tu próximo turno."
+  description:  "+1/rango sigilo hasta tu próximo turno.
+                 A los efectos, esta habilidad se considera: magia sin acción"
 -
   id:           7
   nivel:        3
@@ -79,15 +79,15 @@
   nivel:        4
   requisitos:   [2]
   name:         "Siempre al acecho"
-  type:         "Reactiva"
-  description:  "+1 sigilo al atravesar una puerta la primera vez."
+  type:         "Pasiva"
+  description:  "+1 sigilo al atravesar una puerta la primera vez por turno."
 -
   id:           10
   nivel:        4
   requisitos:   [6]
   name:         "Paso en falso"
   type:         "Activa"
-  coste:        "4 Movimiento"
+  coste:        "3 Movimiento"
   description:  "Permite desplazarse 1 casilla extra tras haber realizado
                  la acción de movimiento."
 -
@@ -96,57 +96,62 @@
   requisitos:   [0]
   name:         "Fintar"
   type:         "Reactiva"
-  description:  "+1 punto de finta al fallar un ataque"
+  description:  "+1 punto de finta (PF) al fallar un ataque.
+                 El objetivo tendrá odio contra ti, y tú contra él."
 -
   id:           12
   nivel:        4
-  requisitos:   [11]
-  name:         "Golpe engañoso"
-  type:         "Activa"
-  coste:        "1 punto finta"
-  description:  "+1 potencia a tu siguiente ataque"
-# nivel 5
--
-  id:           13
-  nivel:        5
   requisitos:   [2]
   name:         "Subterfugio"
   type:         "Reactiva"
   description:  "+1 sigilo al matar cuerpo a cuerpo"
+# nivel 5
+-
+  id:           13
+  nivel:        5
+  requisitos:   [11]
+  name:         "Golpe engañoso"
+  type:         "Activa"
+  coste:        "1 PF"
+  description:  "+1 potencia a tu siguiente ataque"
 -
   id:           14
   nivel:        5
+  rangos:       2
   requisitos:   [5]
   name:         "Toxina de Elmut"
   type:         "Pasiva"
   description:  "Todos tus aliados pueden hechizar a los objetivos
-                 que hayas envenenado como si estuvieran cuerpo a cuerpo."
+                 que hayas envenenado como si estuvieran cuerpo a cuerpo.
+                 En rango 2, cualquier daño sufrido de maldiciones será mortal."
 -
   id:           15
   nivel:        5
   requisitos:   [0]
   name:         "Abusar"
   type:         "Reactiva"
-  description:  "+1 punto de abuso al matar en sigilo por la espalda"
+  description:  "+1 punto de abuso (PA) al matar en sigilo por la espalda
+                 Si ha habido exceso de daño, tu siguiente ataque desangra."
 -
   id:           16
   nivel:        5
-  requisitos:   [15]
-  name:         "Golpe abusivo"
-  type:         "Activa"
-  coste:        "1 punto abuso"
-  description:  "+1 fuerza a tu siguiente ataque"
-# nivel 6
--
-  id:           17
-  nivel:        6
   rangos:       2
   requisitos:   [4]
   name:         "Código de honor"
   type:         "Pasiva"
   description:  "El asesino y sus aliados en su rango de visión,
                  duplican bonificaciones de daño por la espalda.
-                 <li>Rango II: +1 potencia adicionalmente.</li>"
+                 En rango 2, +1 potencia adicional."
+# nivel 6
+-
+  id:           17
+  nivel:        6
+  requisitos:   [15]
+  name:         "Golpe abusivo"
+  type:         "Activa"
+  coste:        "1 PA"
+  description:  "+1 fuerza a tu siguiente ataque"
+
 -
   id:           18
   nivel:        6
@@ -159,29 +164,36 @@
 -
   id:           19
   nivel:        7
+  rangos:       2
   requisitos:   [2,9]
   name:         "Sombras gemelas"
   type:         "Declarativa"
   foco:         "un aliado"
   description:  "La sombra del asesino sustituye a la sombra de su foco.
-                 Permitiendo al asesino actuar desde su sombra,
-                 salvo para desplazamientos y ataques básicos."
+                 Permitiendo al asesino actuar desde su sombra como su frente,
+                 salvo en desplazamientos y ataques básicos.
+                 En rango 2, puñalada trapera desde su foco,
+                 se recupera cuando mata al agresor."
 -
   id:           20
   nivel:        7
+  rangos:       2
   requisitos:   [3]
   name:         "Acribillar"
   type:         "Activa"
   coste:        "Acción de ataque completo"
-  description:  "Arroja 3 dagas en conjunto"
+  description:  "Arroja 1/rango andanada de 3 dagas en conjunto. Aplica en
+                 cada andanada los bonificadores individuales de las dagas."
 # nivel 8
 -
   id:           21
   nivel:        8
+  rangos:       2
   requisitos:   [6, 19]
   name:         "Forma siniestra"
   type:         "Pasiva"
-  description:  "En sigilo, eres inmune al miedo convencional"
+  description:  "En sigilo, eres inmune al miedo convencional.
+                 En rango 2, odias a quién cause miedo."
 -
   id:           22
   nivel:        8
@@ -206,8 +218,8 @@
   requisitos:   [19]
   name:         "Destino ligado"
   type:         "Reactiva"
-  description:  "+1 potencia sombras por cada rango de sigilo.
-                 +1 potencia sangre por cada asesinato de tu sombra gemela."
+  description:  "+1 potencia sombras por cada rango de sigilo (turno).
+                 +1 potencia sangre por cada pieza de tu sombra gemela (turno)."
 # nivel 10 - Habilidades definitivas
 -
   id:           25
