@@ -1,0 +1,23 @@
+- h = hero(params[:param].to_i)
+
+h2 Tesoros
+
+.table-responsive
+	table class="table"
+		thead
+			tr
+				- %w(gemas runas joyas).each do |engarce|
+					- if tesoros = h.tesoro[engarce]
+						th class="text-center" colspan="#{h.tesoro[engarce].count}"
+							== engarce.capitalize
+					- else
+						th class="text-center" == engarce.capitalize
+		tbody
+			tr
+				- %w(gemas joyas runas).each do |engarce|
+					- if tesoros = h.tesoro[engarce]
+						- tesoros.each do |t|
+							td 
+								== erb :"display/engarce", locals: { engarce: send(engarce)[t] }
+					- else
+						td El héroe no tiene #{engarce}.
