@@ -1,0 +1,14 @@
+h2 Habilidades del maestro de armas
+.table-responsive
+	table class="table"
+		thead
+			tr
+				th class="text-center" colspan='2' Habilidad
+				th class="text-center" Descripción
+		tbody
+			- if heroe.master
+				- heroe.masters.each do |hab|
+					tr
+						td == erb :'display/skill', locals: { skill: hab }
+						td == hab.name
+						td == hab.description
