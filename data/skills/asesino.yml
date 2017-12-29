@@ -33,11 +33,12 @@
 -
   id:           4
   nivel:        2
-  rangos:       2
+  rangos:       3
   name:         "Formado entre asesinos"
   type:         "Instinto"
   coste:        "1 PM"
-  description:  "Gira 90º/rango tu miniatura. Este insinto no tiene sobrecoste."
+  description:  "Gira 90º/rango tu miniatura. Este insinto no tiene sobrecoste.
+                 En rango 3, añade el set de sangre a tu lista de hechizos."
 # nivel 3
 -
   id:           5
@@ -60,19 +61,23 @@
 -
   id:           7
   nivel:        3
+  rangos:       2
   requisitos:   [3]
   name:         "Lanzamiento preciso"
   type:         "Pasiva"
   description:  "Permite arrojar dagas en diagonal y con desplazamientos
                  laterales. No pueden retroceder en su trayectoria
-                 y siempre salen del frente del asesino."
+                 y siempre salen del frente del asesino. En rango 2,
+                 se arrojan desde cualquier casilla colindante al asesino."
 -
   id:           8
   nivel:        3
+  rangos:       2
   name:         "Acechar"
   requisitos:   [1]
   type:         "Reactiva"
-  description:  "Requiere daga. Recupera puñalada trapera tras matar en sigilo."
+  description:  "Requiere daga. Recupera puñalada trapera tras matar en sigilo.
+                 En rango 2, puedes recuperar un hechizo en su lugar."
 # nivel 4
 -
   id:           9
@@ -84,11 +89,12 @@
 -
   id:           10
   nivel:        4
+  rangos:       3
   requisitos:   [6]
   name:         "Paso en falso"
   type:         "Activa"
   coste:        "3 Movimiento"
-  description:  "Permite desplazarse 1 casilla extra tras haber realizado
+  description:  "Permite desplazarse 1/rango casilla extra tras haber realizado
                  la acción de movimiento."
 -
   id:           11
@@ -101,29 +107,32 @@
 -
   id:           12
   nivel:        4
+  rangos:       3
   requisitos:   [2]
   name:         "Subterfugio"
   type:         "Reactiva"
-  description:  "+1 sigilo al matar cuerpo a cuerpo"
+  description:  "+1 sigilo al matar en casillas a 1/rango de distancia."
 # nivel 5
 -
   id:           13
   nivel:        5
+  rangos:       2
   requisitos:   [11]
   name:         "Golpe engañoso"
   type:         "Activa"
   coste:        "1 PF"
-  description:  "+1 potencia a tu siguiente ataque"
+  description:  "+1 potencia a tus siguiente 1/rango ataques"
 -
   id:           14
   nivel:        5
-  rangos:       2
+  rangos:       3
   requisitos:   [5]
   name:         "Toxina de Elmut"
   type:         "Pasiva"
   description:  "Todos tus aliados pueden hechizar a los objetivos
                  que hayas envenenado como si estuvieran cuerpo a cuerpo.
-                 En rango 2, cualquier daño sufrido de maldiciones será mortal."
+                 En rango 2, cualquier daño sufrido de maldiciones será mortal.
+                 En rango 3, quedará silenciado y no podrá hechizar."
 -
   id:           15
   nivel:        5
@@ -197,10 +206,14 @@
 -
   id:           22
   nivel:        8
+  rangos:       3
   requisitos:   [12, 17, 18]
   name:         "Dawa"
   type:         "Reactiva"
-  description:  "Recupera golpe a la carótida al fallar usando golpe engañoso"
+  description:  "Recupera golpe a la carótida al fallar usando golpe engañoso.
+                 En rango 2, puedes ejecutarla inmediatamente, pero si fallas,
+                 tu siguiente turno estarás en locura. En rango 3, la locura
+                 de tipo Enajenado, eufórico o paranoico, genera lucidez"
 # nivel 9
 -
   id:           23
@@ -228,14 +241,18 @@
   name:         "Viaje umbral"
   type:         "Definitiva"
   coste:        "Acción de movimiento"
-  description:  "1/turno permite aparecer detrás de su sombra gemela."
+  description:  "1/turno permite aparecer detrás de su sombra gemela.
+                 Si con ello termina tu turno, puedes lanzar un hechizo
+                 de sombras como acción gratuita."
 -
   id:           26
   nivel:        10
   requisitos:   [17, 19]
   name:         "Culto a Elmut"
   type:         "Definitiva"
-  description:  "Tras sesgar su decimotercera vida, Elmut te bendice:<br/>
+  description:  "El primer turno del reto elige en un tipo de enemigo.
+                 Elmut ordena su muerte. Matarlo recupera 1PM.
+                 Tras sesgar su 13ª vida (cualquiera), Elmut te bendice:<br/>
                  Cobrarás todas las piezas que mates en conjunto,
                  y podrás después de matar, bien recuperar 1 hechizo,
                  bien disponer de una acción de hechizar adicional.
@@ -246,4 +263,6 @@
   name:         "Mil rostros"
   type:         "Definitiva"
   description:  "Puedes cobrar cualquier pieza no reclamada en tu visión.<br/>
-                 Debes decir simplemente: <b>Valar Morghulis</b>"
+                 Debes decir simplemente: <b>Valar Morghulis</b>
+                 Además los enemigos que te odien, en su lugar te temerán,
+                 con un bonificador igual a su ataque."
