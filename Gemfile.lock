@@ -32,7 +32,7 @@ GEM
     rack-test (0.8.2)
       rack (>= 1.0, < 3)
     rake (12.3.0)
-    require_all (1.4.0)
+    require_all (1.5.0)
     rspec (3.7.0)
       rspec-core (~> 3.7.0)
       rspec-expectations (~> 3.7.0)
@@ -72,7 +72,7 @@ DEPENDENCIES
   minitest (~> 5.10.1)
   rack-test (~> 0.8.2)
   rake (~> 12.3.0)
-  require_all (~> 1.4.0)
+  require_all (~> 1.5.0)
   rspec (~> 3.7.0)
   sinatra!
   slim (~> 3.0.9)
