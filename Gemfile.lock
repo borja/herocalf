@@ -1,5 +1,5 @@
 GIT
-  remote: https://github.com/sinatra/sinatra.git
+  remote: git://github.com/sinatra/sinatra.git
   revision: b4aaf1c43aa87936846a863a51beac6fe27892f6
   specs:
     rack-protection (2.0.0)
@@ -26,7 +26,7 @@ GEM
     diff-lcs (1.3)
     docile (1.1.5)
     json (2.1.0)
-    minitest (5.10.3)
+    minitest (5.11.0)
     mustermann (1.0.1)
     rack (2.0.3)
     rack-test (0.8.2)
@@ -69,7 +69,7 @@ PLATFORMS
 DEPENDENCIES
   codecov (~> 0.1.10)
   coveralls (~> 0.8.21)
-  minitest (~> 5.10.1)
+  minitest (~> 5.11.0)
   rack-test (~> 0.8.2)
   rake (~> 12.3.0)
   require_all (~> 1.5.0)
