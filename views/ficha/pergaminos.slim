@@ -1,0 +1,13 @@
+- h = hero(params[:param].to_i)
+.table-responsive
+	table class="table"
+		theader
+			tr
+				th colspan="#{h.pergaminos.count if h.pergaminos}" Pergaminos
+		tbody
+			tr
+				- if h.pergaminos
+					- h.pergs.each do |perga|
+						td == erb :"display/item", locals: { item: perga }
+				- else
+					td Sin pergaminos

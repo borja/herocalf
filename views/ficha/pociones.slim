@@ -1,0 +1,14 @@
+- h = hero(params[:param].to_i)
+
+.table-responsive
+	table class="table"
+		theader
+			tr
+				th colspan="#{h.pociones.count if h.pociones}" Pociones
+		tbody
+			tr
+				- if h.pociones
+					- h.brebajes.each do |pot|
+						td == erb :"display/item", locals: { item: pot}
+				- else
+					td Sin pociones

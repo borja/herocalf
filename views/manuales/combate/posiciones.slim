@@ -1,0 +1,13 @@
+h2 Posiciones de combate
+
+.table-responsive
+	table class="table"
+		thead
+			tr
+				th class="text-center" Posición
+				th class="text-center" Efecto
+		tbody
+			- posiciones.each do |p|
+				<tr>
+					td == p['nombre']
+					td == p['efecto']
