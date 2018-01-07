@@ -1,0 +1,19 @@
+name:      "Cebrain"
+personaje: "derviche"
+jugador:   "JuanMa"
+status:    "activo"
+profesion: { id: 3, aprendiz: [0] }
+nivel:     3
+cuerpo:    6
+mente:     4
+mov:       9
+armadura:  {id: 2}
+armas:
+  - { id: 2, ranuras: 1, enchants: [128] }
+  - { id: 3 }
+skills:     [0, 1, 2, 3]
+hechizos:   [6, 7, 8]
+pociones:   [12]
+oro:        22
+tesoro:
+  gemas: [10, 33]

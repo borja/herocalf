@@ -663,3 +663,8 @@
   name:         "de hielo arcano"
   descripcion:  "+1 potencia a magias de hielo (Permite usar magia de hielo)"
   tipo:         "hielo"
+-
+  id:           128
+  name:         "espinasombría"
+  descripcion:  "+1 ataque en sigilo"
+  tipo:         "sombras"
