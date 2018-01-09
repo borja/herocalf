@@ -9,10 +9,10 @@
 <div class="row">
   <div class="4u"><%= erb :'ficha/abalorios'  %></div>
   <div class="4u"><%= erb :'ficha/piezas'     %></div>
-  <div class="4u"><%= erb :'ficha/materiales' %></div>
+  <div class="4u"><%= slim :'ficha/materiales' %></div>
 </div>
 <div class="row">
-  <div class="6u"><%= erb :'ficha/pociones'   %></div>
+  <div class="6u"><%= slim :'ficha/pociones'   %></div>
   <div class="6u"><%= slim :'ficha/pergaminos' %></div>
 </div>	
 <%if h.tesoro %>

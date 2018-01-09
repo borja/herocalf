@@ -24,7 +24,7 @@
 					background-repeat: no-repeat; background-position:center;">
 					<%= h.repu || 0 %></td>
 				<% if h.descendientes %>
-					<td><%= erb :'ficha/descendientes' %></td>
+					<td><%= slim :'ficha/descendientes' %></td>
 				<% end %>
 				<td><a href='/raza/<%= h.raza %>s'><%= h.raza.capitalize %></a></td>
 				<% if h.profesion %>
