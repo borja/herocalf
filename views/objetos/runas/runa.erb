@@ -1,8 +1,9 @@
 <% r = runa(params[:param].to_i) %>
-<header>
-	<h2>La runa <%= r.name.upcase %></h2>
-</header>
+
+<h2>La runa <%= r.name.upcase %></h2>
+
 <a href='/runa/<%= r.id %>' class="img-responsive">
 	<img src=<%= r.big_img %> alt='<%= r.name.upcase %>'/>
 </a>
-<p><%= erb :"objetos/runas/lenguaje/#{ r.name }" %></p>
+<hr>
+<%= slim :"objetos/runas/lenguaje/#{ r.name }" %>
