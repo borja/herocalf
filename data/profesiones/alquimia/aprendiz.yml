@@ -5,15 +5,17 @@
 -
   name:   "Mezclar jugos"
   coste:  100
-  efecto: "Permite mezclar 2 pociones iguales y obtener 1 poción del mismo nivel a elección."
+  efecto: "Permite mezclar 2 pociones iguales y obtener 1 poción
+           del mismo nivel a elección."
 -
   name:   "Destilería"
   coste:  100
-  efecto: "Permite mezclar 2 pociones iguales y obtener 1 poción de un nivel superior a elección."
+  efecto: "Permite mezclar 2 pociones iguales y obtener 1 poción
+           de un nivel superior a elección."
 -
   name:   "Poción antídoto"
   coste:  200
-  efecto: "Crea una poción que disipa los efectos de un veneno instantáneamente."
+  efecto: "Crea 1 poción que disipa instantáneamente los efectos de 1 veneno."
   crear:  100
   venta:  50
 -

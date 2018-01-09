@@ -10,7 +10,7 @@ class Profesion < Hash
   end
 
   def img_path
-    "'../../images/profesiones/#{name}.png'"
+    "/images/profesiones/#{name}.png"
   end
 
   def aprendizajes

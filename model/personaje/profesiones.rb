@@ -32,6 +32,7 @@ def prof_impeds
   load_yaml('profesiones/imped')
 end
 
-def profesion(id) # TODO : This is not working
+# TODO : This is not working
+def profesion(id)
   profesions[id]
 end

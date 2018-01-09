@@ -1,7 +1,8 @@
 -
       name:   "Artesano alquimista"
       coste:  500
-      efecto: "Permite consumir hasta 2 pociones por turno siempre que sean distintas."
+      efecto: "Permite consumir hasta 2 pociones por turno,
+               siempre que sean distintas."
 -
       name:   "Piedra filosofal"
       coste:  600

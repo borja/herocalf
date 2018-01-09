@@ -1,0 +1,20 @@
+.table-responsive
+	table class='table'
+		thead
+			tr
+				th colspan="2" Profesión
+				th Hándicap
+				th Justificación
+		tbody
+			- profesions.each do |p|
+				tr
+					td
+						a href="/profesion/#{p.name}"
+							img src="#{p.img_path}" alt="#{p.name}" id='icon2'
+					td
+						a href="/profesion/#{p.name}"
+							== p.name
+					td
+						a href="/personaje/#{p.imped}"
+							img src="/images/personajes/#{p.imped}.png" alt="#{p.imped}" id="icon2"
+					td == p.why
