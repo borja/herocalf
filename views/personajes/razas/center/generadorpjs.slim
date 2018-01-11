@@ -1,0 +1,33 @@
+.table-responsive
+	table class="table"
+		thead
+			tr
+				th d10
+				th colspan="2" class="text-center" Personaje
+		tbody
+			- elegibles = razas.to_a.select{ |pj| pj.last.last != 'humano' }
+			- elegibles.each_with_index do |pj, i|
+				tr
+					td == i+1
+					td
+						img src="/images/personajes/#{pj.first}.png" alt="#{pj.first}" id="icon"
+					td 
+						a href="/personaje/#{pj.first}"
+							== pj.first
+			tr
+				td 8
+				td 
+					img src="/images/personajes/clérigo.png" alt="Clérigo" id="icon"
+				td
+					a href='/personaje/clérigo' clérigo
+			tr
+				td 9
+				td 
+					img src="/images/personajes/ladrón.png" alt="Ladrón" id="icon"
+				td
+					a href="/personaje/ladrón" ladrón
+			tr
+				td class="table-primary" 10
+				td colspan="2" class="table-primary"
+					| Puedes elegir el personaje que desees. Incluyendo 
+					a href="/personaje/gólem" el gólem
