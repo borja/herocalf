@@ -1,0 +1,10 @@
+.table-responsive
+	table class="table"
+		thead
+				th colspan="2" Habilidad
+				th Descripción
+		tbody
+		- personajes.each do |p|
+			tr
+				td == p
+				td El nombre del héroe al que interpretan

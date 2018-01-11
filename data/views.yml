@@ -128,6 +128,12 @@
     main:  "personajes/habilidades/reglas"
     right: "manuales/derecha/personajes"
 -
+  ruta:  "habilidadesbase"
+  template:
+    left:  "personajes/principal/menu"
+    main:  "manuales/habilidadesbase"
+    right: "manuales/derecha/personajes"
+-
   ruta:  "dones"
   template:
     main: "revenge/dones/dones"
