@@ -1,17 +1,19 @@
 <% j = joya(params[:param].to_i) %>
 
 <h2>La joya <%= j.name %></h2>
-
-<p><%= erb :"objetos/joyas/descripciones/#{ j.name }" %></p>
 <p>
-	<h3>Propiedades mágicas</h3>
-	<%= erb :'objetos/joyas/propiedades', locals: { j: j } %>
+	<%= slim :"objetos/joyas/descripciones/#{ j.name }" %>
 </p>
 
+<h3>Propiedades mágicas</h3>
 <p>
-	<h3>Disponibilidad</h3>
+	<%= slim :'objetos/joyas/propiedades', locals: { j: j } %>
+</p>
+
+<h3>Disponibilidad</h3>
+<p>
 	<% unless j.disponibles.empty? %>
-		<%= erb :'objetos/joyas/disponibilidad', locals: { j: j } %>
+		<%= slim :'objetos/joyas/disponibilidad', locals: { j: j } %>
 	<% else %>
 		Ningún héroe posee esta joya.
 	<% end %>
