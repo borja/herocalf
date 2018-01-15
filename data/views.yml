@@ -419,6 +419,7 @@
   template:
     left:  "magia/left/sagradas"
     main:  "magia/sagrada"
+    right: "magia/carta"
 -
   ruta:  "sagradas"
   template:

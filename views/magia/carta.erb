@@ -1,8 +1,19 @@
-<% h = spells.find {|s| s.name == params[:param] } %>
+<% sombra = sombras.find {|s| s.name == params[:param] } %>
+<% hielo =  hielos.find  {|s| s.name == params[:param] } %>
+<% arena =  arenas.find  {|s| s.name == params[:param] } %>
+<% sangre = sangres.find {|s| s.name == params[:param] } %>
+<% spell =  spells.find  {|s| s.name == params[:param] } %>
+
+<% h = spell|| sombra || hielo || arena || sangre %>
+
+
+
+
+
 <h2>Estadísticas</h2>
-<a href="/hechizo/<%= h.name %>" class="feature-image">
+<a href="/hechizo/<%= h.name %>">
 	<img src="/images/magia/ilustraciones/<%= h.name %>.png" 
-			 alt="<%= h.name %>" />
+			 alt="<%= h.name %>" class="img-responsive">
 </a>
 
 <div class="table-responsive">
