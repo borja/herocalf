@@ -1,6 +1,12 @@
-<% h = spells.find {|s| s.name == params[:param] } %>
+<% sombra = sombras.find {|s| s.name == params[:param] } %>
+<% hielo =  hielos.find {|s| s.name == params[:param] } %>
+<% arena =  arenas.find {|s| s.name == params[:param] } %>
+<% sangre = sangres.find {|s| s.name == params[:param] } %>
+
+<% h = sombra || hielo || arena || sangre %>
 
 <h2><%= h.name.capitalize %></h2>
+
 <p>
 	<ul>
 		<li><strong>Efecto:</strong> <%= h.efecto %></li>

@@ -54,7 +54,6 @@
   template:
     left:  "manuales/derecha/combate"
     main:  "manuales/fases"
-    right: "manuales/derecha/dados"
 -
   ruta:  "historias"
   title: "Leyendas"
@@ -414,6 +413,12 @@
     left:  "magia/left/elementales"
     main:  "magia/hechizo"
     right: "magia/carta"
+-
+  ruta:  "sagrada"
+  title: "view"
+  template:
+    left:  "magia/left/sagradas"
+    main:  "magia/sagrada"
 -
   ruta:  "sagradas"
   template:

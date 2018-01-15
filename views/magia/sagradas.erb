@@ -1,12 +1,10 @@
-<header>
-	<h2>
-		Hechizos de <%= params[:view] %>
-		de nivel <%= params[:param] %>
-	</h2>
-</header>
+<h2>
+	Hechizos de <%= params[:view] %>
+	de nivel <%= params[:param] %>
+</h2>
 
-<p>
-	<table class='tspells'>
+<div class="table-responsive">
+	<table class='table'>
 		<thead>
 			<th>Icono</th>
 			<% unless %w(sombra arena hielo sangre).include?(params[:view]) %>
@@ -20,4 +18,4 @@
 			<%= erb :'magia/hechizos/sagradas' %>
 		</tbody>
 	</table>
-</p>
+</div>
