@@ -1,0 +1,12 @@
+<h2>Habilidad</h2>
+<% personajes.each do |pj| %>
+	<% personaje_skills = send(pj.gsub('señor de las bestias','beastslord') + 's') %>
+	<% coincidencia = personaje_skills.find{ |hab| hab['name'].downcase == params[:param] } %>
+	<% if coincidencia %>
+		<a href="/habilidad/<%= pj %>">
+			<img src="/images/clases/<%= pj %>.png" 
+					 alt='<%= pj %>'
+					 class="img-responsive"	/>
+		</a>
+	<% end %>
+<% end %>

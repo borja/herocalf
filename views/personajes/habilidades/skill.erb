@@ -1,0 +1,16 @@
+<h2><%= params[:param].capitalize %></h2>
+<hr>
+
+<% personajes.each do |pj| %>
+	<% personaje_skills = send(pj.gsub('señor de las bestias','beastslord') + 's') %>
+	<% coincidencia = personaje_skills.find{ |hab| hab['name'].downcase == params[:param] } %>
+	<% if coincidencia %>
+		<p><i>Habilidad de <%= pj %> de nivel <%= coincidencia['nivel'] %></i></p>
+		<ul>
+			<li><strong>Nombre:</strong> <%= coincidencia['name'] %></li>
+			<li><strong>Tipo:</strong> <%= coincidencia['type'] %></li>
+			<li><strong>Rangos:</strong> <%= coincidencia['rangos'] %></li>
+		</ul>
+		<p><%= coincidencia['description'] %></p>
+	<% end %>
+<% end %>

@@ -1,5 +1,6 @@
 <% char = nomalize_pj(request.path_info.split('/').last) %>
 <% char.gsub!('se%C3%B1or%20de%20las%20bestias', 'beastslord') %>
+
 <div class="table-responsive">
 	<table class="table">
 		<thead>
@@ -12,9 +13,16 @@
 		<tbody>
 			<% send(char+"s").count.times do |i| %>
 				<% c = Habilidad.new(send(char,i)) %>
-				<tr><td width='9%'><h2><%= c.nivel %></h2></td>
+				<tr>
+					<td width='9%'>
+						<h2><%= c.nivel %></h2>
+					</td>
 					<td><%= erb :'display/skill', locals: { skill: c} %></td>
-					<td><%= c.name %></td>
+					<td>
+						<a href="/skill/<%= c.name.downcase %>" target="_blank">
+							<%= c.name %>
+						</a>
+					</td>
 					<td><% if c.requisitos %>
 							<table>
 								<tr>

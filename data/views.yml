@@ -144,6 +144,12 @@
     left2: "personajes/left/personajes"
     main: "personajes/habilidades/listado"
 -
+  ruta:  "skill"
+  title: "view"
+  template:
+    left: "personajes/left/skill"
+    main: "personajes/habilidades/skill"
+-
   ruta:  "don"
   title: "view"
   template:
