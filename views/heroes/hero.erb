@@ -5,7 +5,9 @@
 		<% if ciudad?(hero.jugador).empty? %>
 			<i><%= hero.jugador %></i>
 		<% else %>
-			<a href='/city/<%= ciudad?(hero.jugador).first["name"] %>'><i><%= hero.jugador %></i></a>
+			<a href='/city/<%= ciudad?(hero.jugador).first["name"] %>'>
+				<i><%= hero.jugador %></i>
+			</a>
 		<% end %>
 	</td>
 	<td><%= hero.genderize.capitalize%><br>
@@ -23,15 +25,18 @@
 	<td>
 		<%= erb :'ficha/profesion', locals: { prof: hero.gremio } if hero.profesion %>
 	</td>
-	<td><table>
-			<tr><% hero.weapons.each do |weapon| %>
-				<td><%= erb :'display/item', locals: {item: weapon } %></td>
-			<% end %></tr>
+	<td>
+		<table>
+			<tr>
+				<% hero.weapons.each do |weapon| %>
+					<td><%= erb :'display/item', locals: { item: weapon } %></td>
+				<% end %>
+			</tr>
 		</table>
 	</td>
 	<td><%= erb :'display/armadura', locals: { a: hero.armour } %></td>
 	<% if hero.reputacion > 0 %>
-		<td style="background-image:url(../images/ficha/star.png); 
+		<td style="background-image:url(/images/ficha/star.png); 
 			background-repeat: no-repeat; background-position:center;">
 			<%= hero.reputacion %>
 		</td>

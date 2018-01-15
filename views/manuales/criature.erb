@@ -31,8 +31,8 @@
 			<% send(params[:param]).each do |c| %>
 				<tr>
 					<td>
-						<% img_path = "'../images/criaturas/#{params[:param]}/#{c['nombre']}.png'" %>
-						<img src=<%=img_path%> alt='icono', id='icon2' />
+						<% img_path = "/images/criaturas/#{params[:param]}/#{c['nombre']}.png" %>
+						<img src="<%=img_path%>" alt='icono', id='icon2' />
 					</td>
 					<% c.keys.each do |att| %>
 						<% unless att == 'id' %>
