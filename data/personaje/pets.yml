@@ -62,7 +62,8 @@
   name:       "búho"
   personajes: ["mago"]
   bono:       "+1 hechizo"
-  lacra:       "Mientras el buho sea visible todos los familiares roedores de los aliados se negaran a salir"
+  lacra:      "Mientras el buho sea visible todos los familiares roedores
+               de los aliados se negaran a salir"
   aumento:    "+1 ardid (nivel 1)"
 -
   id:         9
@@ -99,7 +100,8 @@
   name:       "hada"
   personajes: ["elfo"]
   bono:       "+1 hechizo élfico"
-  lacra:      "Muere inmediatamente si el portador recibe daño de fuego en una zona de efecto"
+  lacra:      "Muere inmediatamente si el portador recibe daño de fuego
+               en una zona de efecto"
   aumento:    "1/reto: Puedes volar"
 -
   id:         14
@@ -114,7 +116,7 @@
   name:       "mariposa"
   personajes: ["elfo"]
   bono:       "+1 resistencia (elementos)"
-  lacra:       "Si muere el personaje ella también muere"
+  lacra:      "Si muere el personaje ella también muere"
   sex:        "female"
   aumento:    "+1 resistencia (elementos)"
 -
@@ -145,14 +147,16 @@
   name:       "pitufo"
   personajes: ["elfo"]
   bono:       "+1 PM"
-  lacra:      "No puedes realizar magia de un elemento aleatorio determinado al inicio de cada partida"
+  lacra:      "No puedes realizar magia de un elemento aleatorio determinado
+               al inicio de cada partida"
   aumento:    "Comienzas el reto con 1 seta mágica"
 -
   id:         20
   name:       "diablillo chillón"
   personajes: ["tiefling"]
   bono:       "+1 Punto de Sombra"
-  lacra:      "1/reto: el Malvado Brujo podra hacer repetir la tirada de locura que le interese"
+  lacra:      "1/reto: el Malvado Brujo podra hacer repetir
+               la tirada de locura que le interese"
   aumento:    "1/reto: Ignora un efecto de silencio"
 -
   id:         21
@@ -166,15 +170,18 @@
   id:         22
   name:       "griemling"
   personajes: ["enano","mago"]
-  bono:       "+1 PC cuando el personaje es objetivo de un hechizo de agua. Además, otro jugador aleatorio obtiene un griemling como familiar"
-  lacra:      "Si la partida es nocturna la comida resta PM en lugar de añadir PC/PM"
-  aumento:    "Si la partida es diurna, ningún enemigo puede odiarte"
+  bono:       "+1 PC cuando el personaje es objetivo de un hechizo de agua.
+               Además, otro jugador aleatorio obtiene un familiar griemling"
+  lacra:      "Partidas nocturnas: la comida resta PM en lugar de añadir PC/PM"
+  aumento:    "Partidas diurnas: ningún enemigo puede odiarte"
 -
   id:         23
   name:       "estorbito"
   personajes: ["bárbaro","mago"]
-  bono:       "Cuando un hechizo fuera a causarte la muerte mata al estorbito en su lugar"
-  lacra:      "Cuando un golpe de arma fuera a causarte la muerte no puedes utilizar gloria del héroe"
+  bono:       "Cuando un hechizo fuera a causarte la muerte
+               mata al estorbito en su lugar"
+  lacra:      "Cuando un golpe de arma fuera a causarte la muerte
+               no puedes utilizar gloria del héroe"
   aumento:    "Obtienes: 5+ : Recuperas Gloria del Héroe (se tira al declarar)"
 -
   id:         24
@@ -186,14 +193,15 @@
   id:         25
   name:       "puercoespín"
   personajes: ["enano","bárbaro"]
-  bono:       "1/reto: Puedes inflingir el exceso de defensa como ataque gratuito"
+  bono:       "1/reto: inflinge el exceso de defensa como ataque gratuito"
   lacra:      "Duplica el daño en fosos trampa"
   aumento:    "Recupera espinas (bono), al fallar una tirada de defensa."
 -
   id:         26
   name:       "wombat"
   personajes: ["enano","bárbaro"]
-  bono:       "Invoca un único guardián del nivel del reto, cada vez que en el tesoro haya ¡Comida!. (Rata / Lobo / Oso)"
+  bono:       "Invoca un único guardián del nivel del reto, cada vez
+               que en el tesoro haya ¡Comida!. (Rata / Lobo / Oso)"
   lacra:      "Entrarás en locura a partir de 1PM"
   aumento:    "El guardián invocado tiene sabiduría espiritual"
 -
@@ -202,42 +210,46 @@
   personajes: ["mago","enano"]
   bono:       "Se puede llevar como objeto a 1 mano: Ilumina"
   lacra:      "Eres más apetecible para las arañas: Te odian"
-  aumento:    "Todas tus sanaciones tienen ardid, siempre que renuncies a tu movimiento"
+  aumento:    "Todas tus sanaciones tienen ardid, siempre que
+               renuncies a tu movimiento"
 -
   id:         28
   name:       "lechúcico"
   personajes: ["elfo","mago"]
   bono:       "1/reto: Te cuenta un secreto"
   lacra:      "1/reto: Te miente"
-  aumento:    "El lechúcico pone 1d6 huevos de paladio, y se marcha para siempre."
+  aumento:    "El lechúcico pone 1d6 huevos de paladio y
+               se marcha para siempre."
 -
   id:         29
   name:       "gallo antipático"
   personajes: ["bárbaro","mago"]
   bono:       "Cuando caes dormido quiquiriquea despertándote: -1PM"
   lacra:      "También quiquiriquea a las demás miniaturas de tu S/P"
-  aumento:    "Si un enemigo te ataca por la espalda, le chillará, atacándole con tu ataque (mental) base. Este daño interrumpe."
+  aumento:    "Si un enemigo te ataca por la espalda, le chillará,
+               atacándole con tu ataque (mental) base. Este daño interrumpe."
 -
   id:         30
   name:       "calabacino siniestro"
   personajes: ["ladrón","tiefling"]
   bono:       "Cuando una magia te causa daños obtienes 15 de oro"
-  lacra:      >
-    Al final del reto tira 1 dado de combate:
-    <p align=left><b>Calavera</b>: Te roba el oro total obtenido<br>
-    <b>Escudo blanco</b>: Te duplica el oro<br>
-    <b>Escudo negro</b>: Se come tu gema menos valiosa</p>
-  aumento:    >
-    Al final del reto tira 1 dado de combate:
-    <p align=left><b>Calavera</b>: Te vomita una gema aleatoria (calidad -3)<br>
-    <b>Escudo blanco</b>: Te vomita un goblin que te atacará en tu siguiente reto<br>
-    <b>Escudo negro</b>: Te vomita una joya aleatoria</p>
+  lacra:      "Al final del reto tira 1 dado de combate:
+               <p align=left><b>Calavera</b>: Te roba el oro total obtenido<br>
+               <b>Escudo blanco</b>: Te duplica el oro<br>
+               <b>Escudo negro</b>: Se come tu gema menos valiosa</p>"
+  aumento:    "Al final del reto tira 1 dado de combate:
+               <p align=left><b>Calavera</b>: Te vomita una gema aleatoria
+               (calidad -3)<br>
+               <b>Escudo blanco</b>: Te vomita un goblin que te atacará
+               en tu siguiente reto<br>
+               <b>Escudo negro</b>: Te vomita una joya aleatoria</p>"
 -
   id:         31
   name:       "águila imperial"
   personajes: "todos"
   bono:       "ataque: 1, defensa: 2, movimiento: 10, PC: 2, PM: 1, vuela"
-  lacra:      "No puede participar en mazmorras cubiertas/ con techo, sin consumir 1 mano"
+  lacra:      "No puede participar en mazmorras cubiertas/ con techo,
+               sin consumir 1 mano"
   aumento:    "Ver profesión: cetrería"
 -
   id:         32
@@ -258,5 +270,15 @@
   name:       "escarabajo dorado"
   personajes: ["rakshasa"]
   bono:       "Ignora la primera maldición del tesoro"
-  lacra:      "El Malvado Brujo podrá repetir el dado de Sigmar en la próxima maldición del grupo"
-  aumento:    "Recuperas amuleto (bono), al obtener un cometa en una tirada de tesoro."
+  lacra:      "El Malvado Brujo podrá repetir el dado de Sigmar en
+               la próxima maldición del grupo"
+  aumento:    "Recuperas amuleto (bono), al obtener un cometa
+               en una tirada de tesoro."
+-
+  id:         35
+  name:       "prole de fragmentado"
+  personajes: "todos"
+  bono:       "Comparte todos los bonus de los demás familiares"
+  lacra:      "Comparte todas las lacras de los demás familiares torpes"
+  sex:        "female"
+  aumento:    "Un familiar objetivo, compartirá su bono/lacra con los demás."
