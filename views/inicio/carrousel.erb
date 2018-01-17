@@ -3,49 +3,23 @@
 
 	<!-- Indicators -->
 	<ol class="carousel-indicators">
-		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-		<li data-target="#myCarousel" data-slide-to="1"></li>
-		<li data-target="#myCarousel" data-slide-to="2"></li>
-		<li data-target="#myCarousel" data-slide-to="3"></li>
+		<% carousel.each_with_index do |c, i| %>
+			<li data-target="#myCarousel" data-slide-to="<%= i %>" <%= 'class="active"' if i == 0 %> ></li>
+		<% end %>
 	</ol>
 
 	<!-- Wrapper for slides -->
 	<div class="carousel-inner">
-		<div class="item active">
-			<div class="fill"
-					 style="background-image:url('/images/inicio/carousel/heroes.png');">
+		<% carousel.each_with_index do |c, i| %>
+			<div class="item <%= 'active' if i == 0 %>">
+				<div class="fill"
+						 style="background-image:url('/images/inicio/carousel/<%= c['name']%>.png');">
+				</div>
+				<div class="carousel-caption">
+					<h2><%= c['title']%></h2>
+				</div>
 			</div>
-			<div class="carousel-caption">
-				<h2>Listas de héroes</h2>
-			</div>
-		</div>
-
-		<div class="item">
-			<div class="fill"
-					 style="background-image:url('/images/inicio/carousel/lore.png');">
-			</div>
-			<div class="carousel-caption">
-				<h2>Lore y ambientación</h2>
-			</div>
-		</div>
-
-		<div class="item">
-			<div class="fill"
-					 style="background-image:url('/images/inicio/carousel/magia.png');">
-			</div>
-			<div class="carousel-caption">
-				<h2>Encantamientos y poderosos hechizos</h2>
-			</div>
-		</div>
-
-		<div class="item">
-			<div class="fill"
-					 style="background-image:url('/images/inicio/carousel/pj.png');">
-			</div>
-			<div class="carousel-caption">
-				<h2>Personalización del personaje</h2>
-			</div>
-		</div>
+		<% end %>
 	</div>
 	
 	<!-- Controls -->
