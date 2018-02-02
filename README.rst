@@ -9,6 +9,7 @@ The Herosheet is written in Ruby on Sinatra with a fake-DB in YAML, using Bootst
 * [Sinatra](http://www.sinatrarb.com/)
 * [Twitter Bootstrap](http://getbootstrap.com/)
 * [YAML](http://yaml.org/)
+* [Slim](http://slim-lang.com/)
 
 QA Dashboard
 ============
