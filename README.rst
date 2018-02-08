@@ -60,8 +60,8 @@ Deployment Status
 
 .. |Gemnasium| image:: https://gemnasium.com/borja/herocalf.svg
    :target: https://gemnasium.com/borja/herocalf
-.. |Heroku Status| image:: http://heroku-badge.herokuapp.com/?app=herosheet&style=flat&svg=1
-   :target: http://herosheet.herokuapp.com/
+.. |Heroku Status| image:: http://heroku-badge.herokuapp.com/?app=heroquest&style=flat&svg=1
+   :target: http://heroquest.herokuapp.com/
 
 Quality Grades
 --------------
