@@ -20,7 +20,7 @@ class Vista < Hash
     ruta == 'inicio'
     # TODO: Renegados
   end
-  
+
   def breadcrumb
     if breadcrumb?
       [] # TODO: This should return an array
