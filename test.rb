@@ -6,7 +6,9 @@ Coveralls.wear!
 # 'codeclimate-test-reporter' was replaced
 require 'simplecov'
 SimpleCov.start do
-  add_filter "/lib/" # Lib methods will be ignored.
+  add_filter "/lib/"      # Lib methods will be ignored.
+  add_filter "/public/js" # javascript will be ignored.
+  add_filter "/data/"     # DB loaders will be ignored.
 end
 
 require 'codecov'
