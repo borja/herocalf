@@ -1,0 +1,16 @@
+- h = hero(params[:param].to_i)
+
+.table-responsive
+	table class="table"
+		theader
+			tr
+				th colspan="{ h.piezas.count if h.piezas }" class="text-center"
+					Piezas
+		tbody
+			tr
+				- if h.piezas
+					- h.cacharros.each do |pieza|
+						td
+							== erb :"display/item", locals: { item: pieza }
+				- else
+					td Sin piezas

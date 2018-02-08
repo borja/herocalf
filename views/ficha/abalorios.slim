@@ -1,0 +1,16 @@
+- h = hero(params[:param].to_i)
+
+.table-responsive
+	table class="table"
+		theader
+			tr
+				th colspan="{ h.abalorios.count if h.abalorios }" class="text-center"
+					Abalorios
+		tbody
+			tr
+				- if h.trinkets
+					- h.trinkets.each do |abalorio|
+						td
+							== erb :"display/item", locals: { item: abalorio }
+				- else
+					td Sin abalorios

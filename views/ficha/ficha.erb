@@ -49,8 +49,8 @@
 
 <% if h.abalorios && h.piezas && h.materiales %>
 	<div class="row">
-	  <div class="col-md-4"><%= erb :'ficha/abalorios'  %></div>
-	  <div class="col-md-4"><%= erb :'ficha/piezas'     %></div>
+	  <div class="col-md-4"><%= slim :'ficha/abalorios'  %></div>
+	  <div class="col-md-4"><%= slim :'ficha/piezas'     %></div>
 	  <div class="col-md-4"><%= slim :'ficha/materiales' %></div>
 	</div>
 <% end %>
