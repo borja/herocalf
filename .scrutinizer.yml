@@ -1,0 +1,10 @@
+build:
+    environment:
+        ruby: '2.5.0'
+filter:
+  excluded_paths:
+    - coverage/*
+    - data/*
+    - public/*
+checks:
+    ruby: true
