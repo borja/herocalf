@@ -126,7 +126,7 @@ Non-supported building platforms
 +=============+============+=============================+ 
 | Appveyor    | |Appveyor| | *Ruby >2.3.3 not supported* |
 +-------------+------------+-----------------------------+
-| Scrutinizer | |Scrut|    | ruby 2.1.2 detected         |
+| Scrutinizer | |Scrut|    | *Ruby >2.4.2 not supported* |
 +-------------+------------+-----------------------------+
 | Semaphore   | |Semaphore|| *Ruby 2.4.3 not supported*  |
 +-------------+------------+-----------------------------+
