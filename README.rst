@@ -116,8 +116,8 @@ Documentation
    :target: http://inch-ci.org/github/borja/herocalf
 .. |readthedocs| image:: https://readthedocs.org/projects/herocalf/badge/?version=latest
    :target: http://herocalf.readthedocs.io/es/latest/?badge=latest
-.. |Best Practices| image:: https://bestpractices.coreinfrastructure.org/projects/224/badge
-   :target: https://bestpractices.coreinfrastructure.org/projects/224
+.. |Best Practices| image:: https://bestpractices.coreinfrastructure.org/projects/1637/badge
+   :target: https://bestpractices.coreinfrastructure.org/projects/1637
 
 Non-supported building platforms
 --------------------------------
