@@ -1,27 +1,40 @@
+# Enano
 matador:    "El menhir de los matadores"
 falangista: "Los salones pretorianos"
 ingeniero:  "Academia de ingeniería"
+# Elfo
 druida:     "El círculo de Gaia"
 arquero:    "La arboleda"
 derviche:   "El árbol de marfil"
+# Ladrón
 asesino:    "La manos negras de Elmut"
 ladrón:     "La cofradía"
 nigromante: "La cripta prohibida"
+# Mago
 conjurador: "El cónclave"
 hechicero:  "El Arcanorium"
 invocador:  "La grieta"
+# Tiefling
 vengador:   "El palacio de las afrentas"
 brujo:      "La sexcentésima sexagésima sexta sala"
 caminante:  "La antesala sombría"
+# Clérigo
 clérigo:    "El altar de Sigmar"
+paladín:    "El presbiterio de Sigmar"
+sacerdote:  "El templo de Sigmar"
+# Bárbaro
 beastslord: "Los túmulos de Taal"
 bersérker:  "Valhalla"
 hoplita:    "Obelisco de escudos"
-paladín:    "El presbiterio de Sigmar"
-sacerdote:  "El templo de Sigmar"
+# Rakshasa
 invicto:    "El pabellón dorado"
 cazadora:   "La cueva de la caza"
 chamán:     "El oasis bajo la arena"
+# Elohim
 valquiria:  "Valhalla"
 serafín:    "Séptimo firmamento"
 daeva:      "La caverna"
+# Gólem
+gárgola:    "La catedral"
+títere:     "La Arlequinoteca"
+custodio:   "La cámara sellada"
