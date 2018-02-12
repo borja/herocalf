@@ -1,89 +1,97 @@
+# nivel 2
 -
   id:           0
   nivel:        2
   name:         "Zen"
-  description:  "Permite repetir una plegaria."
   type:         "única"
+  description:  "Permite repetir una plegaria."
 -
   id:           1
   nivel:        2
   name:         "Rosario"
-  description:  "Hasta el final del turno la próxima plegaria obtiene chakra."
   type:         "activa"
   coste:        "Movimiento"
+  description:  "Hasta el final del turno la próxima plegaria obtiene chakra."
 -
   id:           2
   nivel:        2
   name:         "Última plegaria"
+  type:         "pasiva"
   description:  "La última plegaria se considera summun"
-  type:         "reactiva"
 -
   id:           3
   nivel:        2
   name:         "Baluarte"
-  description:  "Los aliados heridos adyacentes recuperan 1 PC/PM (a elegir) cuando defiendes con éxito."
-  type:         "reactiva"      
+  type:         "reactiva"
+  description:  "Los aliados heridos adyacentes recuperan 1 PC/PM (a elegir)
+                 cuando defiendes con éxito."
 -
   id:           4
-  nivel:        3
+  nivel:        2
   rangos:       2
   name:         "Teocracia"
-  description:  "Mientras tus heridas superen a los enemigos de la sala puedes sumar 1/rango al valor del dado de plegaria."
-  type:         "reactiva"
+  type:         "pasiva"
+  description:  "Mientras tus heridas superen a los enemigos de la sala:
+                 puedes sumar 1/rango al valor del dado de plegaria."
+# nivel 3
 -
   id:           5
   nivel:        3
   rangos:       3
-  name:         "Aura de entusiasmo"
-  description:  "+1 movimiento de todos los aliados de la S/P"
-  type:         "pasiva"
   requisitos:   [0]
+  name:         "Aura de entusiasmo"
+  type:         "pasiva"
+  description:  "+1 movimiento de todos los aliados de la S/P"
 -
   id:           6
   nivel:        3
-  name:         "Suplicar"
-  description:  "Cuando un aliado adyacente sufra daños mientras no tengas más plegarias recupera una."
-  type:         "reactiva"
   requisitos:   [2]
+  name:         "Suplicar"
+  type:         "reactiva"
+  description:  "+1 plegaria cuando un aliado adyacente sufra daños,
+                 y no tengas plegarias disponibles."
 -
   id:           7
   nivel:        3
   rangos:       3
   name:         "Bendecir Arma"
-  description:  "+1 dado sagrado a tu arma, de fuerza igual al rango."
   type:         "activa"
   coste:        "1PM"
+  description:  "+1 dado sagrado a tu arma, de fuerza igual al rango."
 -
   id:           8
-  nivel:        4
+  nivel:        3
   name:         "Rezar con el corazón"
-  description:  "Tira 1d20 en lugar de 1d10 al ejecutar una plegaria. (11-18 plegarias de nivel 2)"
   type:         "pasiva"
+  description:  "Tira 1d20 en lugar de 1d10 al ejecutar una plegaria.
+                 (11-18 plegarias de nivel 2)"
+# nivel 4
 -
   id:           9
   nivel:        4
   rangos:       3
+  requisitos:   [7]
   name:         "El Martillo de Sigmar"
   type:         "pasiva"
-  description:  "+1 fuerza al bendecir tu arma."
-  requisitos:   [7]
+  description:  "+1/rango fuerza al bendecir tu arma."
 -
   id:           10
   nivel:        4
+  requisitos:   [3]
   name:         "Scutum fidei"
-  description:  "Todos los golpes este turno se consideran frontales. +1 a tu potencia defensiva en todos los dados."
   type:         "activa"
   coste:        "1 Plegaria"
-  requisitos:   [3]
+  description:  "Todos los golpes este turno se consideran frontales.
+                 +1 a tu potencia defensiva en todos los dados."
 -
   id:           11
   nivel:        5
+  requisitos:   [0,6,8]
   name:         "Fuente de luz"
   type:         "única"
-  description:  
-    "Hasta tu siguiente turno, no se podrán ejecutar hechizos de sombras en la sala,
-     los enemigos en sigilo serán revelados, y los no-muertos que te ataquen reciben un daño directo sagrado."
-  requisitos:   [0,6,8]
+  description:  "Hasta tu siguiente turno, no se podrán ejecutar hechizos
+                 de sombras en la sala, los enemigos en sigilo serán revelados,
+                 y los no-muertos reciben 1 daño directo sagrado al atacarte."
 -
   id:           12
   nivel:        5
@@ -91,14 +99,17 @@
   name:         "Castigo sagrado"
   type:         "activa"
   coste:        "1 Plegaria"
-  description:  "Tu siguiente ataque de combate podrás hacerlo a distancia si tu arma está bendita."
+  description:  "Si tu arma está bendita: podrás realizar a distancia,
+                 tu siguiente ataque de combate."
+# nivel 5
 -
   id:           13
   nivel:        5
   requisitos:   [4]
   name:         "Escudriñar almas"
   type:         "pasiva"
-  description:  "Mientras estés bajo los efectos de una bendición, obtienes +2 para detectar enemigos emboscados."
+  description:  "Mientras estés bajo los efectos de una bendición:
+                 +2 para detectar enemigos emboscados."
 -
   id:           14
   nivel:        6
@@ -123,3 +134,12 @@
   type:         "activa"
   coste:        "1 Plegaria"
   description:  "(Trepidante) Elige a un aliado: durante su próximo turno se considerará bajo la Gloria del Héroe. La sintonía requiere 1 acción de turno."
+-
+  id:           17
+  nivel:        7
+  requisitos:   [14, 15]
+  name:         "Sintonizar"
+  type:         "activa"
+  coste:        "1 Plegaria"
+  description:  "(Trepidante) Elige a un aliado: durante su próximo turno se considerará bajo la Gloria del Héroe. La sintonía requiere 1 acción de turno."
+# nivel 6
