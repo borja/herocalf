@@ -1,6 +1,7 @@
 <% h = hero(params[:param].to_i) %>
 <head>
-	<%= erb :head, locals: { title: "HeroSheet: historia de #{h.name}" } %>
+	<title>HeroSheet: historia de <%= h.name %></title>
 </head>
 
+<h2>Historia de <%= h.name %></h2>
 <%= erb :"historias/relatos#{h.historia}/#{h.id}" %>	
