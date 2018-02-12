@@ -134,7 +134,7 @@
   defensa:   2
   ranuras:   2
   fits:      'manos'
-  precio:	 600
+  precio:    600
 -
   id:        17
   name:      'yelmo'
@@ -142,4 +142,4 @@
   defensa:   2
   ranuras:   1
   fits:      'cabeza'
-  precio:	 250
+  precio:    250

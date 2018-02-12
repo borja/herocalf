@@ -1,48 +1,48 @@
 -
   id:           0
+  defensa:      0
+  precio:       0
   name:         'sin armadura'
   categoria:    'nada'
-  defensa:      0
-  precio:	    0
 -
   id:           1
+  defensa:      1
+  precio:       20
   name:         'armadura de tela'
   categoria:    'tela'
-  defensa:      1
-  precio:	    20
 -
   id:           2
+  defensa:      2
+  precio:       50
   name:         'armadura de cuero'
   categoria:    'cuero'
-  defensa:      2
-  precio:	    50
 -
   id:           3
+  defensa:      3
+  precio:       500
   name:         'armadura de malla'
   categoria:    'metal'
-  defensa:      3
-  precio:	    500
 -
   id:           4
+  defensa:      3
+  precio:       650
   name:         'armadura de cuero endurecido'
   categoria:    'cuero'
-  defensa:      3
-  precio:	    650
 -
   id:           5
+  defensa:      4
+  precio:       850
   name:         'armadura de placas'
   categoria:    'metal'
-  defensa:      4
-  precio:	    850
 -
   id:           6
+  defensa:      4
+  precio:       1000
   name:         'armadura de Borin'
   categoria:    'mithril'
-  defensa:      4
-  precio:	    1000
 -
   id:           7
+  defensa:      4
+  precio:       1250
   name:         'armadura completa'
   categoria:    'metal'
-  defensa:      4
-  precio:	    1250
