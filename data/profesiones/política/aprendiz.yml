@@ -5,12 +5,23 @@
 -
   name:   "Contabilidad eficiente"
   coste:  50
-  efecto: "Tanto tú como tus aliados tiraréis dados de 10 caras en las rentas por profesión."
+  efecto: "Tanto tú como tus aliados tiraréis dados de 10 caras
+           en las rentas por profesión."
 -
   name:   "Burocracia institucional"
   coste:  50
-  efecto: "Al tirar rentas, cada 1 obtenido otorga tu reputación en oro, en su lugar."
+  efecto: "Al tirar rentas, cada 1 obtenido otorga tu reputación en oro,
+           en su lugar."
 -
   name:   "Abogado defensor"
   coste:  50
-  efecto: "Puedes sacrificar 1 reputación, para librar de un escarnio a un aliado"
+  efecto: "Puedes sacrificar 1 reputación, para librar de un escarnio
+           a un aliado"
+-
+  name:   "Influencia militar"
+  coste:  150
+  efecto: "-1px en coste de reclutamiento de todos los soldados y mercenarios"
+-
+  name:   "Autoridad competente"
+  coste:  100
+  efecto: "Puedes convertir pergaminos en blanco en pergaminos notariales"
