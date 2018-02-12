@@ -1,35 +1,6 @@
 <h2>Las Fases del Juego</h2>
-
-<h3>
-	<i class="fa fa-flag-checkered" aria-hidden="true"></i>
-	Retos y campañas
-</h3>
-<p>
-	Un reto, es una sesión de juego completa. Para que sea satisfactoria,
-	debería durar de media entre 1 y 2 horas. A veces las aventuras se componen
-	de varios retos, y reciben el nombre de <strong>campañas</strong>.
-	Lo importante, es que salvo que el "lore" del reto lo especifique,
-	los héroes al finalizar, pasarán por su <a href='/mapa'>ciudad</a>,
-	recuperando sus puntos gastados, habilidades y accediendo a los mercaderes.
-	El <a href='/archivo'>cronista</a>, guarda un detallado registro de
-	<a href='/archivo'>los retos completados</a>.
-</p>
-
-<h3>
-	<i class="fa fa-history" aria-hidden="true"></i>
-	Rondas y turnos
-</h3>
-<p>
-	La ronda comienza por el jugador de la derecha del "Malvado Brujo" 
-	y sigue en el sentido antihorario hasta finalizar en el "Malvado Brujo".
-	Si no hubiera ningún evento ni enemigo visible que deba ser contabilizado,
-	se considera "ronda libre" (ver más adelante).
-</p>
-<p>
-	Una excepción a esta secuencia de juego es la profesión:
-	<a href='/profesion/táctica' target="_blank">táctica</a>
-</p>
-
+<%= slim :'manuales/fases/retos' %>
+<%= slim :'manuales/fases/rondas' %>
 <%= slim :'manuales/fases/turnojugador' %>
 <%= slim :'manuales/fases/turnomb' %>
 <%= slim :'manuales/fases/trepidante' %>
