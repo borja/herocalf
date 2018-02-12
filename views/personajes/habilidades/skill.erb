@@ -9,6 +9,9 @@
 		<ul>
 			<li><strong>Nombre:</strong> <%= coincidencia['name'] %></li>
 			<li><strong>Tipo:</strong> <%= coincidencia['type'] %></li>
+			<% if coincidencia['type'].downcase == 'activa' %>
+				<li><strong>Coste:</strong> <%= coincidencia['coste'] %></li>
+			<% end %>
 			<li><strong>Rangos:</strong> <%= coincidencia['rangos'] %></li>
 		</ul>
 		<p><%= coincidencia['description'] %></p>
