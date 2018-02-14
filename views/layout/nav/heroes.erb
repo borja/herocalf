@@ -1,17 +1,15 @@
-<a href="/heroes" class="dropdown-toggle" data-toggle="dropdown">
+<a class="nav-link dropdown-toggle" href="/heroes"
+	 id="navbarDropdownPortfolio" data-toggle="dropdown"
+	 aria-haspopup="true" aria-expanded="false">
 	<i class="fa fa-users fa-fw" aria-hidden="true"></i>
 	Héroes
-	<b class="caret"></b>
 </a>
 
-<ul class="dropdown-menu">
-	<li><a href="/heroes">Activos</a></li>
-	<li class="divider"></li>
-	<li><a href="/ausentes">Ermitaños</a></li>
-	<li class="divider"></li>
-	<li><a href="/reservistas">Reservistas</a></li>
-	<li class="divider"></li>
-	<li><a href="/mapa">Extranjeros</a></li>
-	<li class="divider"></li>
-	<li><a href="/licenciados">Licenciados</a></li>
-</ul>
+<div class="dropdown-menu dropdown-menu-right"
+		 aria-labelledby="navbarDropdownPortfolio">
+	<a class="dropdown-item" href="/heroes">Activos</a>
+	<a class="dropdown-item" href="/ausentes">Ermitaños</a>
+	<a class="dropdown-item" href="/reservistas">Reservistas</a>
+	<a class="dropdown-item" href="/mapa">Extranjeros</a>
+	<a class="dropdown-item" href="/licenciados">Licenciados</a>
+</div>
