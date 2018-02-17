@@ -1,0 +1,20 @@
+== slim :'layout/nav/navbar-header', locals: { title: title }
+
+div class="collapse navbar-collapse" id="navbarResponsive"
+
+	/ Main website topics
+	ul class="navbar-nav ml-auto"
+		
+		/ Dropdown menus
+		- %w(heroes objetos magia manuales ciudad).each do |topic|
+			li class="nav-item dropdown"
+				== erb :"layout/nav/#{topic}"
+
+		/ Simple links
+		li class="nav-item"
+			a class="nav-link" href="/habs"
+				i class="fa fa-sitemap fa-fw" aria-hidden="true"
+				| Habilidades
+
+	/ User contents
+	== slim :'layout/nav/usercontent'

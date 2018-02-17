@@ -1,18 +1,8 @@
-.row
-	.col-lg-12
-		.col-lg-3.col-md-6
-			.container
+.container
+	.row
+		- %w(heroquest revengequest amigas contribute).each do |ft|
+			.col-lg-3.col-md-3.col-sm-6.col-xs-12
+				== slim :"layout/footer/#{ft}"
 
-				.col-lg-3
-					== slim :'layout/footer/heroquest'
-				.col-lg-3
-					== slim :'layout/footer/revengequest'
-
-				.col-lg-3.col-md-6
-					== slim :'layout/footer/amigas'
-
-				.col-lg-3.col-md-6
-					== slim :'layout/footer/contribute'
-
-	.col-lg-12
+	p class="m-0 text-center text-white"
 		== slim :'layout/footer/policies'
