@@ -1,0 +1,23 @@
+.table-responsive
+	table class="table table-striped table-bordered table-hover table-sm"
+		thead class="thead-dark"
+			tr
+				th Autor
+				th Héroe
+				th Historia
+
+		tbody
+			- narrados(i+1).each do |hero|
+				tr
+					td == hero.jugador
+					td
+						== erb :'display/portrait', locals: { h: hero }
+					td class='wrapper'
+						a href="/historia/#{hero.id}"
+							== hero.name
+						- if hero.premio
+							- color = hero.premio == 1 ? 'golden' : 'silvered'
+							div class="ribbon-wrapper-#{color}"
+							div class="ribbon-#{color}"
+								== hero.premio
+								| º

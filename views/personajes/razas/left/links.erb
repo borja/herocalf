@@ -1,19 +1,23 @@
 <h2>Las <%= total_razas %> razas</h2>
+<hr>
 
-<a href=<%= '/razas' %>>
-	<img src='../images/nav/razas.png' alt='razas'/>
+<a href="/razas">
+	<img src="/images/nav/razas.png" class="img-fluid" alt="razas">
 </a>
 
 <h3>Razas Iniciales</h3>
-<ul>
-	<li><a href="/raza/enanos">Enanos</a></li>
-	<li><a href="/raza/humanos">Humanos</a></li>
-	<li><a href="/raza/elfos">Elfos</a></li>
-</ul>
+<div class="list-group">
+<a class="list-group-item" href="/raza/enanos">Enanos</a>
+<a class="list-group-item" href="/raza/humanos">Humanos</a>
+<a class="list-group-item" href="/raza/elfos">Elfos</a>
+</div>
+
+<hr>
 
 <h3>Razas Especiales</h3>
-<ul>
-	<li><a href="/raza/tieflings">Tieflings</a></li>
-	<li><a href="/raza/rakshasas">Rakshasas</a></li>
-	<li><a href="/raza/elohims">Elohim</a></li>
-</ul>
+<div class="list-group">
+	<a class="list-group-item" href="/raza/tieflings">Tieflings</a>
+	<a class="list-group-item" href="/raza/rakshasas">Rakshasas</a>
+	<a class="list-group-item" href="/raza/elohims">Elohim</a>
+	<a class="list-group-item" href="/raza/gólems">Gólems</a>
+</div>

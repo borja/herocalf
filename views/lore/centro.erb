@@ -1,35 +1,7 @@
 <% 2.times do |i| %>
 	<h2><%= i+1 %>º Certamen de historias HeroQuest</h2>
-
-	<table>
-		<thead>
-			<tr>
-				<th>Autor</th>
-				<th>Héroe</th>
-				<th>Historia</th>
-			</tr>
-		</thead>
-
-		<tbody>
-			<% narrados(i+1).each do |hero| %>
-			<tr>
-				<td><%= hero.jugador %></td>
-				<td><%= erb :'display/portrait', locals: { h: hero } %></td>
-				<td class='wrapper'>
-					<a href='/historia/<%= hero.id %>'><%= hero.name %></a>
-				    <% if hero.premio %>
-						<% color = hero.premio == 1 ? 'golden' : 'silvered' %>
-						<div class="ribbon-wrapper-<%= color %>">
-							<div class="ribbon-<%= color %>">
-								<%= hero.premio %>º
-							</div>
-						</div>
-					<% end %>
-				</td>
-			</tr>
-			<% end %>
-		</tbody>
-	</table>
+	<hr>
+	<%= slim :'lore/tabla_certamen', locals: { i: i } %>
 
 	<br/>
 <% end %>
