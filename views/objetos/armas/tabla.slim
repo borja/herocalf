@@ -1,6 +1,6 @@
 .table-responsive
-	table class="table"
-		thead
+	table class="table table-striped table-bordered table-hover table-sm"
+		thead class="thead-dark"
 			tr
 				th colspan=2 Arma
 				th Categoría
@@ -15,8 +15,10 @@
 						img src="/images/armas/#{ a.name }.png" id='icon'
 					td == a.name
 					td == a.categoria
-					td == a.ataque
+					td
+						== a.ataque
+						|  
 						- if a.diagonal
-							i class="fa fa-expand" aria-hidden="true"
+							i class="fas fa-location-arrow" aria-hidden="true"
 					td == armas[a.id]['ranuras']
 					td == a.precio
