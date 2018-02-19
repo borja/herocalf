@@ -1,20 +1,21 @@
+<h1 class="my-4">
+	Web amateur del juego de mesa HeroQuest
+</h1>
+
 <div class="row">
-
-	<div class="col-lg-12">
-		<h1 class="page-header">
-			Web amateur del juego de mesa HeroQuest
-		</h1>
-	</div>
-
 	<% %w(torre habilidades lore objetos).each do |feature| %>
-		<%= slim :"inicio/features/#{feature}" %>
+		<div class="col-lg-3 mb-3">
+			<div class="card h-100">
+				<%= slim :"inicio/features/#{feature}" %>
+			</div>
+		</div>
 	<% end %>
 </div>
 
 <div class="row">
 	<% %w(ciudad manuales ilustres).each do |lore| %>
 		<div class="col-md-4">
-			<div class="panel panel-default">
+			<div class="card h-100">
 				<%= slim :"inicio/lore/#{lore}" %>
 			</div>
 		</div>
