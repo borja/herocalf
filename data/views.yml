@@ -317,6 +317,7 @@
     right2: "manuales/derecha/dados"
 -
   ruta:  "objetos"
+  subtitle: "Sobre los objetos"
   template:
     left: "objetos/left/content1"
     left2: "objetos/left/content2"
