@@ -1,13 +1,16 @@
-<header>
-	<h2>Contenedores</h2>
-	<h3>Más es menos</h3>
-</header>
+<h2>Contenedores</h2>
+<hr>
+
+<h3>Más es menos</h3>
 <p>
 	Son objetos que aunque consumen casillas de inventario,
 	permiten llevar en su interior otros objetos.
 </p>
-<ul class="link-list">
+
+<div class="list-group">
 	<% ["pociones","piezas","abalorios","materiales"].each do |obj| %>
-		<li><a href='/<%= obj %>'><%= obj.capitalize %></a></li>
+		<a class="list-group-item" href="/<%= obj %>">
+			<%= obj.capitalize %>
+		</a>
 	<% end %>
-</ul>
+</div>
