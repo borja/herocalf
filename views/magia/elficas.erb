@@ -1,15 +1,29 @@
-<table>
-	<thead>
-		<th colspan='2'>Hechizo</th>
-		<th>Descripción</th>
-	</thead>
-	<tbody>
-		<% elficas.each do |e| %>
-			<tr style=<%= e.color %>>				
-				<td><%= erb :'display/spell', locals: { spell: e } %></td>
-				<td><%= e.name.capitalize %></td>
-				<td><%= e.efecto %></td>
-			</tr>
-		<% end %>
-	</tbody>
-</table>
+<h2>Magias Élficas</h2>
+<hr>
+<p>
+	Estos peculiares hechizos son el legado de tiempos pasados.
+	Su poder está prácticamente en desuso, incluso entre los elfos silvanos,
+	que han tornado sus conocimientos a las <strong>artes druídicas</strong>. 
+</p>
+<p>
+	No obstante, algunos objetos aún conservan el poder de la magia élfica.
+	Aquí puedes consultar sus efectos:
+</p>
+
+<div class="table-responsive">
+	<table class="table table-striped table-bordered table-hover table-sm">
+		<thead class="thead-dark">
+			<th colspan='2'>Hechizo</th>
+			<th>Descripción</th>
+		</thead>
+		<tbody>
+			<% elficas.each do |e| %>
+				<tr style=<%= e.color %>>				
+					<td><%= erb :'display/spell', locals: { spell: e } %></td>
+					<td><%= e.name.capitalize %></td>
+					<td><%= e.efecto %></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</div>
