@@ -1,11 +1,26 @@
-<% mapa = rand(4)  %>
+<% mapa = rand(4) %>
+<% mapa_texto = ["del Norte", "del Sur", "occidental", "oriental"][mapa] %>
 <% tirada = tarot[rand(22)] %>
 <% arcano = tirada.keys.first %>
 <% cardinal = tirada.values.first %>
 
-<header>
-	<h2><%= arcano %>
-		<%= ["del Norte", "del Sur", "Occidental", "Oriental"][mapa] %>
-	</h2>
-</header>
-<h3><%= tirada[arcano][mapa] %></h3>
+<h2><%= arcano %></h2>
+
+<p>
+	Las cartas comienzan a vibrar, la magia comienza a crear remolinos,
+	con el poder <strong><%= mapa_texto %></strong> 
+	fluyendo a su alrededor.
+</p>
+
+<div class="alert alert-secondary" role="alert">
+	<h4 class="alert-heading">
+		<%= arcano %>
+		<%= ["del Norte", "del Sur", "occidental", "oriental"][mapa] %>
+	</h4>
+	<p class="font-italic"><%= tirada[arcano][mapa] %></p>
+	<hr>
+	<p class="mb-0 font-weight-light">
+		Solamente puedes activar el poder del tarot una vez por turno.
+		Recuerda que no siempre juega a tu favor...
+	</p>
+</div>
