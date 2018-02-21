@@ -1,0 +1,19 @@
+- bc = viewinfo(params[:view])[:bc]
+- title = view(params[:view])['title']
+- if title == 'view'
+	- title = params[:param].capitalize
+
+- if bc.count > 1
+
+	ol class="breadcrumb"
+		- bc.each_with_index do |website, i|
+			- if (i+1) != bc.count
+				li class="breadcrumb-item"
+					a href="/#{website}"
+						== website.capitalize
+			- else
+				li class='breadcrumb-item active'
+					- if website == ':param'
+						== params[:param].capitalize
+					- else
+						== website.capitalize

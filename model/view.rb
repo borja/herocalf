@@ -3,7 +3,7 @@
 # Documentation for v.4 https://getbootstrap.com/docs/4.0/examples
 class Vista < Hash
   # TODO: Non default carousel and breadcrumb should be accesor
-  attr_accessor :ruta, :title, :template
+  attr_accessor :ruta, :title, :subtitle, :template
 
   def initialize(args)
     args.each do |k, v|

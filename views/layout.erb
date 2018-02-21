@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<% title = "Hero Quest" %>
+<% vista = view(params['view']) %>
+<% title = "HeroQuest" %>
 <html lang="es">
 	<head><%= slim :'layout/head', locals: { title: title } %></head>
 	<body>
@@ -17,15 +18,18 @@
 		<% end %>
 
 		<div class="container">
+
+			<h1 class="mt-4 mb-3"><%= title %>
+				<small><%= vista.title %></small>
+			</h1>
+
 			<!-- Error Handler -->
 			<% if @error then %>
 				<%= erb :'layout/error' %>
-			<% end %>
+			<% else %>
 
-			<!-- Page Heading/Breadcrumbs -->
-			<!-- % unless params[:view] == 'inicio' -->
-			<% unless true %>
-				<%= erb :'layout/breadcrumbs' %>
+				<!-- Page Heading/Breadcrumbs -->
+				<%= slim :'layout/breadcrumbs'%>
 			<% end %>
 
 			<!-- Main Content -->

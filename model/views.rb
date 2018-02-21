@@ -24,7 +24,9 @@ def view(ruta)
         end
 
   # Return the matching route ('nav') from DB
-  views.find { |v| v['ruta'] == nav }
+  v = views.find { |v| v['ruta'] == nav }
+  # TODO : 404 error...
+  Vista.new(v)
 end
 
 # View meta info for component and layouts
@@ -32,7 +34,7 @@ def viewinfo(ruta)
   {
     title:  view(ruta)['ruta'],
     bc:     breadcrumb(ruta),
-    layout: view(ruta)['template']
+    layout: view(ruta).template
   }
 end
 
@@ -45,8 +47,8 @@ end
 def breadcrumb(ruta)
   bc = []
   if view(ruta)
-    if view(ruta)['template']['main'].split('/').count > 1
-      bc = view(ruta)['template']['main'].split('/')
+    if view(ruta).template['main'].split('/').count > 1
+      bc = view(ruta).template['main'].split('/')
     end
   end
   bc # empty arrays should be treated in ERB
