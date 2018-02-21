@@ -320,7 +320,7 @@
   template:
     left: "objetos/left/content1"
     left2: "objetos/left/content2"
-    main: "objetos/main"
+    main: "objetos/principal"
     right: "objetos/right/contenedores"
     right2: "objetos/right/artefactos"
 -
