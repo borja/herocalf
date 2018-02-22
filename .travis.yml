@@ -1,6 +1,11 @@
 # Default permission
 sudo: false
 
+env:
+  # Code Coverage
+  global:
+    - CC_TEST_REPORTER_ID=0d489bf5520c78ac08ce9c7925f6c5f477047967bf42ec4fe84fcf2a02be53f4
+
 # Ruby configuration, using RVM
 language: ruby
 rvm:

@@ -1,4 +1,6 @@
 test:
+  pre:
+    - ./cc-test-reporter before-build
   override:
     - bundle show yaml-lint
     - $(bundle show yaml-lint)/bin/yaml-lint data/
