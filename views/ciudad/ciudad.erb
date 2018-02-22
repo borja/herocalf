@@ -1,21 +1,19 @@
 <div class="row">
 	<% %w(ayuntamiento biblioteca artesanos cuarteles).each do |plaza| %>
-	<div class="col-md-3 col-sm-6">
-		<div class="panel panel-default">
+		<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
+			<div class="card h-100">
 
-			<div class="panel-heading">
 				<a href="/<%= plaza %>">
-					<img class="img-responsive img-hover center-block"
-							 src='/images/ciudad/<%= plaza %>.png'
-							 alt='<%= plaza %>' />
+					<img class="card-img-top"
+							 src="/images/ciudad/<%= plaza %>.png"
+							 alt="<%= plaza %>" >
 				</a>
-			</div>
 
-			<div class="panel-body">
-				<%= erb :"ciudad/plazas/#{plaza}" %>
-			</div>
+				<div class="card-body">
+					<%= erb :"ciudad/plazas/#{plaza}" %>
+				</div>
 
+			</div>
 		</div>
-	</div>
 	<% end %>
 </div>

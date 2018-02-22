@@ -135,3 +135,33 @@
   name:         "Mordisco belicoso"
   type:         "Reactiva"
   description:  "Recupera aplastar al matar sin armas"
+-
+  id:           16
+  nivel:        5
+  rangos:       2
+  requisitos:   [7]
+  name:         "Luchar con el corazón"
+  type:         "Pasiva"
+  description:  "Las plegarias que no consumen acción, tampoco consumen punto
+                 de plegaria. En el segundo rango, podrás restar 1 al dado
+                 de estas plegarias."
+# nivel 6
+-
+  id:           17
+  nivel:        6
+  name:         "Furor y disciplina"
+  type:         "Reactiva"
+  description:  "Si el turno anterior sufriste daños, puedes rugir aunque
+                 no sea la fase trepidante. Si el turno anterior infligiste
+                 daños, se considera que estás furioso a los efectos
+                 de psicología."
+-
+  id:           18
+  nivel:        6
+  name:         "Enemigo formidable"
+  type:         "Pasiva"
+  description:  "Los enemigos que te odien, deben resistir miedo contra
+                 tus heridas actuales. Los enemigos de menor tamaño, deben
+                 tirar miedo contra tus aliados colindantes. Los enemigos
+                 que te ataquen frontalmente, deben tirar miedo contra tu
+                 armadura base y los enemigos de tipo bestia, contra tu mente."
