@@ -20,6 +20,9 @@ script:
   - bundle install --path vendor/bundle
   - bundle exec rspec test.rb
 
+after_script:
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+
 # Code Metrics tokens
 addons:
   code_climate:
