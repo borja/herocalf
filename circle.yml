@@ -7,4 +7,4 @@ test:
   override:
     - bundle show yaml-lint
     - $(bundle show yaml-lint)/bin/yaml-lint data/
-    - bundle exec rspec test.rb
+    - bundle exec rspec test.rb; ./cc-test-reporter after-build --exit-code $?
