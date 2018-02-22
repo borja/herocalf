@@ -1,16 +1,22 @@
-<table>
-	<thead>
-		<th colspan='2'>Pieza</th>
-		<th>Uso</th>
-	</thead>
-	<tbody>
-		<% piezas.each do |pieza| %>
-		<% p = Pieza.new(pieza) %>
-			<tr>
-				<td><img src=<%= p.img_path%> alt=<%=p.name%>, id='icon' /></td>
-				<td><%= p.name.capitalize %></td>
-				<td><%= p.uso.capitalize %></td>
-			</tr>
-		<% end %>
-	</tbody>
-</table>
+<h2>Tabla de bienes y piezas</h2>
+<hr>
+<div class="table-responsive">
+	<table class="table table-striped table-bordered table-hover table-sm">
+		<thead class="thead-dark">
+			<th colspan='2'>Pieza</th>
+			<th>Uso</th>
+		</thead>
+		<tbody>
+			<% piezas.each do |pieza| %>
+			<% p = Pieza.new(pieza) %>
+				<tr>
+					<td>
+						<img src=<%= p.img_path%> alt=<%=p.name%>, id='icon'>
+					</td>
+					<td><%= p.name.capitalize %></td>
+					<td><%= p.uso.capitalize %></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</div>
