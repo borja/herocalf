@@ -1,6 +1,9 @@
 # CI Engines requirements:
-require 'coveralls'
-Coveralls.wear!
+
+#      coveralls (~> 0.8.21) was resolved to 0.8.21, which depends on
+#      simplecov (~> 0.14.1). Check Gemfile.
+# require 'coveralls'
+# Coveralls.wear!
 
 # https://github.com/codeclimate/ruby-test-reporter/blob/master/README.md
 # 'codeclimate-test-reporter' was replaced

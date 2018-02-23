@@ -17,12 +17,6 @@ GEM
       json
       simplecov
       url
-    coveralls (0.8.21)
-      json (>= 1.8, < 3)
-      simplecov (~> 0.14.1)
-      term-ansicolor (~> 1.3)
-      thor (~> 0.19.4)
-      tins (~> 1.6)
     diff-lcs (1.3)
     docile (1.1.5)
     json (2.1.0)
@@ -46,7 +40,7 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.7.0)
     rspec-support (3.7.1)
-    simplecov (0.14.1)
+    simplecov (0.15.1)
       docile (~> 1.1.0)
       json (>= 1.8, < 3)
       simplecov-html (~> 0.10.0)
@@ -55,11 +49,7 @@ GEM
       temple (>= 0.7.6, < 0.9)
       tilt (>= 1.3.3, < 2.1)
     temple (0.8.0)
-    term-ansicolor (1.6.0)
-      tins (~> 1.0)
-    thor (0.19.4)
     tilt (2.0.8)
-    tins (1.16.3)
     url (0.3.2)
     yaml-lint (0.0.9)
 
@@ -68,13 +58,12 @@ PLATFORMS
 
 DEPENDENCIES
   codecov (~> 0.1.10)
-  coveralls (~> 0.8.21)
   minitest (~> 5.11.1)
   rack-test (~> 0.8.2)
   rake (~> 12.3.0)
   require_all (~> 1.5.0)
   rspec (~> 3.7.0)
-  simplecov
+  simplecov (~> 0.15.1)
   sinatra!
   slim (~> 3.0.9)
   tilt (~> 2.0.7)
