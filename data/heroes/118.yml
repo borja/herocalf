@@ -1,0 +1,11 @@
+name:      "Pietr"
+personaje: "custodio"
+jugador:   "Alberto"
+nivel:     1
+cuerpo:    5
+mente:     5
+mov:       6
+armadura:  {id: 0}
+armas:
+  - { id: 0 }
+oro:        22
