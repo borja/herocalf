@@ -16,3 +16,5 @@ test:
     - bundle show yaml-lint
     - $(bundle show yaml-lint)/bin/yaml-lint data/
     - bundle exec rspec test.rb
+  post:
+    - ./cc-test-reporter after-build --exit-code $EXIT_CODE
