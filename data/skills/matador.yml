@@ -1,120 +1,201 @@
+# nivel 2
 -
-  id: 0
-  name: 'Dos armas'
-  description: 'Permite llevar un arma de 1+1/rango dados de ataque base en la mano torpe'
-  type: 'pasiva'
-  nivel: 2
-  rangos: 4
+  id:          0
+  nivel:       2
+  rangos:      4
+  name:        "Dos armas"
+  type:        "pasiva"
+  description: "Permite llevar un arma de 1+1/rango dados de ataque base
+                en la mano torpe"
 -
-  id: 1
-  name: 'Ataque combinado'
-  description: "Permite usar dos armas simultáneamente en un ataque conjunto."
-  type: "única"
-  requisitos: [0]
-  nivel: 2
+  id:          1
+  nivel:       2
+  name:        "Ataque combinado"
+  type:        "única"
+  requisitos:  [0]
+  description: "Permite usar dos armas simultáneamente como ataque conjunto."
 -
-  id: 2
-  name: 'Arrojar'
-  description: "Permite arrojar un arma como acción gratuita."
-  type: 'pasiva'
-  nivel: 2
-  rangos: 2
+  id:          2
+  nivel:       2
+  rangos:      2
+  name:        "Arrojar"
+  type:        "pasiva"
+  description: "Permite arrojar 1/rango arma como acción gratuita.
+                El arma debe estar desenvainada."
 -
-  id: 3
-  name: 'Bloquear proyectil'
-  description: 'Tira tus dados de ataque de ambas armas adicionalmente en la defensa de un tiro de proyectil. (Solo funciona de frente)'
-  type: 'activa'
-  coste: 'tu siguiente ataque'
-  requisitos: [0]
-  nivel: 2
+  id:          3
+  nivel:       2
+  requisitos:  [0]
+  name:        "Bloquear proyectil"
+  type:        "activa"
+  coste:       "tu siguiente ataque"
+  description: "Reflejo: Tira los dados de ataque de tus armas adicionalmente
+                en la defensa contra un proyectil frontal."
 -
-  id: 4
-  name: 'Sangre por sangre'
-  description: "+1 fuerza / inferioridad numérica en meleé."
-  type: 'reactiva'
-  nivel: 3
+  id:          4
+  nivel:       2
+  name:        "Sangre por sangre"
+  type:         "reactiva"
+  description: "+1 fuerza al estar inferioridad numérica en meleé."
+# nivel 3
 -
-  id: 5
-  name: 'Tenaza del enano'
-  description: '+1 Potencia/rango al golpear por el flanco a enemigos con menos movimiento.'
-  type: 'reactiva'
-  rangos: 3
-  nivel: 3
+  id:          5
+  nivel:       3
+  rangos:      3
+  name:        "Tenaza del enano"
+  type:        "reactiva"
+  description: "+1 Potencia/rango al golpear por el flanco a enemigos
+                después de la fase de movimiento."
 -
-  id: 6
-  name: 'Improperios familiares'
-  description: "Al asesinar a una miniatura podrá provocar a 1/rango enemigos de la misma raza."
-  type: 'reactiva'
-  requisitos: [4]
-  rangos: 3
-  nivel: 3
+  id:          6
+  nivel:       3
+  rangos:      3
+  requisitos:  [4]
+  name:        "Improperios familiares"
+  type:        "reactiva"
+  description: "Al asesinar a una miniatura podrá provocar a
+                1/rango enemigos de la misma raza."
 -
-  id: 7
-  name: "Energúmeno"
-  description: "Al sufrir daño de un enemigo provocado puedes golpearle inmediatamente con tu arma principal."
-  type: 'reactiva'
-  requisitos: [6]
-  nivel: 4
+  id:          7
+  nivel:       3
+  name:        "Himno de la montaña"
+  type:        "única"
+  description: "+1 potencia a todos los aliados que golpean a melé este turno.
+                (Se usa solamente durante la fase trepidante)"
 -
-  id: 8
-  name: 'Escupir con despotismo'
-  description: 'Marcas a un enemigo con 1/rango esputos. Al matarlo recupera 1PM'
-  type: 'activa'
-  coste: '1 ataque'
-  rangos: 3
-  nivel: 4
+  id:          8
+  nivel:       4
+  rangos:      3
+  requisitos:  [4]
+  name:        "Escupir con despotismo"
+  type:        "activa"
+  coste:       "1 ataque"
+  description: "Marcas a 1/rango enemigos colindante con esputos.
+                +1PM al matar a un objetivo marcado."
+# nivel 4
 -
-  id: 9
-  name: "Ímpetu"
-  description: "+1 fuerza/rango a 1 solo éxito después del ataque al golpear después de mover."
-  type: 'pasiva'
-  rangos: 3
-  nivel: 4
+  id:          9
+  nivel:       4
+  rangos:      3
+  name:        "Ímpetu"
+  type:        "pasiva"
+  description: "+1 fuerza/rango a 1 solo éxito después del ataque
+                al golpear después de mover."
 -
-  id: 10
-  name: "Himno de la montaña"
-  description: "+1 potencia a todos los aliados que golpean a melé este turno. (Se usa solamente durante la fase trepidante)"
-  type: "única"
-  nivel: 4
+  id:          10
+  nivel:       4
+  requisitos:  [6]
+  name:        "Energúmeno"
+  type:        "reactiva"
+  description: "Al sufrir daño de un enemigo provocado puedes
+                golpearle inmediatamente con tu arma principal."
 -
-  id: 11
-  name: 'Escupir mientras grita'
-  description: "Al lanzar improperios el matador escupirá también a los enemigos insultados."
-  type: 'reactiva'
-  requisitos: [6,8]
-  nivel: 5
+  id:          11
+  nivel:       4
+  requisitos:  [6,8]
+  name:        "Escupir mientras grita"
+  type:        "reactiva"
+  description: "Al lanzar improperios el matador escupirá también
+                a los enemigos insultados."
 -
-  id: 12
-  name: 'Rajar'
-  description: 'Golpea con tu arma principal a las 3 casillas frontales.'
-  type: "única"
-  requisitos: [5,9]
-  nivel: 5
+  id:          12
+  nivel:       4
+  requisitos:  [5,9]
+  name:        "Rajar"
+  type:        "única"
+  description: "Golpea con tu arma principal a las 3 casillas frontales."
+# nivel 5
 -
-  id: 13
-  name: 'Asestar castigo'
-  description: 'Recuperas rajar al matar con la tenaza del enano.'
-  type: 'reactiva'
-  requisitos: [5,12]
-  nivel: 6
+  id:          13
+  nivel:       5
+  requisitos:  [12]
+  name:        "Asestar castigo"
+  type:        "reactiva"
+  description: "Recuperas rajar al matar con la tenaza del enano.
+                Si cobras alguna pieza, puedes girarte 90º gratuitamente."
 -
-  id: 14
-  name: 'Ensañamiento'
-  description: 'Recuperas ataque combinado al matar tú el último enemigo visible.'
-  type: 'reactiva'
-  requisitos: [1, 7]
-  nivel: 6
+  id:          14
+  nivel:       5
+  requisitos:  [1, 9]
+  name:        "Ensañamiento"
+  type:        "reactiva"
+  description: "Matar tú el último enemigo visible: recupera ataque combinado"
 -
-  id: 15
-  nivel: 6
-  requisitos: [0, 9]
-  name: 'Ferocidad'
-  description: 'La primera vez en el turno que se usa una habilidad única, se considera acción gratuita.'
-  type: 'pasiva'
+  id:          15
+  nivel:       5
+  requisitos:  [0, 9]
+  name:        "Ferocidad"
+  type:        "pasiva"
+  description: "La primera vez en el turno que se usa una habilidad única,
+                se considera acción gratuita (no consume acción)."
 -
-  id: 16
-  nivel: 7
-  requisitos: [9]
-  name: 'Romper la guardia'
-  type: 'única'
-  description: 'Si tu ataque no tiene más dados que la defensa del objetivo, éste tirará defensa verdadera.'
+  id:          16
+  nivel:       5
+  requisitos:  [9]
+  name:        "Romper la guardia"
+  type:        "activa"
+  coste:       "2 movimiento"
+  description: "Si tu ataque no tiene más dados que la defensa del objetivo,
+                éste tirará defensa verdadera."
+# nivel 6
+-
+  id:          17
+  nivel:       6
+  rangos:      2
+  name:        "Sesgo mortal"
+  type:        "activa"
+  coste:       "3 movimiento"
+  description: "[Requiere hacha o maza]: Al asestar un golpe frontal,
+                puedes realizar inmediatamente un golpe a las 2 casillas
+                diagonales contiguas. En rango 2, puedes hacer sesgo mortal
+                desde cualquier casilla lateral que portes un arma."
+-
+  id:          18
+  nivel:       6
+  requisitos:  [0, 15]
+  name:        "Herida cruzada"
+  type:        "activa"
+  coste:       "2 movimiento"
+  description: "Cambia 1 dado de combate por 1 desagrandor cuando ataques
+                portando 2 armas. Si el objetivo estaba sangrando y muere
+                por este ataque, obtienes +1 a causar miedo (duración: E)"
+# nivel 7
+-
+  id:           19
+  nivel:        7
+  requisitos:   [4]
+  name:         "Guerrero incansable"
+  type:         "pasiva"
+  description:  "Siempre que una habilidad consuma movimiento o sea única,
+                 puedes gastar 2PC para ignorar el coste. Reduce 1PC,
+                 el coste de esta habilidad, por cada pieza cobrada este turno."
+-
+  id:           20
+  nivel:        7
+  requisitos:   [2]
+  name:         "Arrojar el alma"
+  type:         "única"
+  description:  "+1 potencia al arrojar el arma. Si el objetivo está más
+                 cerca que tus heridas actuales, imprime +1 Fuerza.
+                 Esta habilidad se recupera al matar a 2 enemigos con el mismo
+                 arma que se arrojó."
+# nivel 8
+-
+  id:           21
+  nivel:        8
+  rangos:       2
+  requisitos:   [5, 19]
+  name:         "Ariete barbudo"
+  type:         "activa"
+  coste:        "2 movimiento por enemigo atravesado"
+  description:  "Puedes avanzar en línea recta ignorando los enemigos
+                 a tu paso. Asesta un golpe con tu arma principal al enemigo
+                 cuando lo atravieses. En rango 2, por cada pieza cobrada,
+                 puedes girar 90º. Cuando choques contra la pared, recibes
+                 N dados contundentes de daño directo (N=enemigos atravesados)"
+-
+  id:           23
+  nivel:        8
+  name:         "El camino del matador"
+  type:         "pasiva"
+  description:  "+1 movimiento por cada pieza cobrada el turno anterior."

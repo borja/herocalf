@@ -1,7 +1,7 @@
 # CI Engines requirements:
 
-#      coveralls (~> 0.8.21) was resolved to 0.8.21, which depends on
-#      simplecov (~> 0.14.1). Check Gemfile.
+# coveralls (~> 0.8.21) was resolved to 0.8.21, which depends on
+# simplecov (~> 0.14.1). Check Gemfile.
 # require 'coveralls'
 # Coveralls.wear!
 

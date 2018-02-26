@@ -3,25 +3,24 @@
   coste:       100
   name:        "Nueva Escuela"
   type:        "Pasiva"
-  description: 
-               "Permite aprender los secretos de los magisters,
-                y girar el sentido del flujo mágico. Podrá escoger los 3 últimos hechizos
+  description: "Permite aprender los secretos de los magisters,
+                y girar el sentido del flujo mágico.
+                Podrá escoger los 3 últimos hechizos
                 de un elemento en lugar de los 3 primeros."
 -
   id:          1
   coste:       1000
   name:        "Maestría"
   type:        "Pasiva"
-  description: 
-               "Gracias a la comprensión fundamental de los vientos de la magia,
-                el aprendiz obtiene +1 de maestría en una única escuela."
+  description: "Gracias a la comprensión fundamental de los vientos
+                de la magia, el aprendiz obtiene +1 de maestría
+                en una única escuela."
 -
   id:          2
   coste:       1200
   name:        "Dominium"
   type:        "Pasiva"
-  description: 
-               "Permite utilizar ambos flujos de los vientos mágicos.
+  description: "Permite utilizar ambos flujos de los vientos mágicos.
                 Podrá escoger 2 sets de magia de la misma escuela."
 -
   id:          3
@@ -34,22 +33,26 @@
   coste:       250
   name:        "Solitudinem"
   type:        "Pasiva"
-  description: "Puedes escoger un set de arenas en lugar de un set de otra escuela."
+  description: "Puedes escoger un set de arenas en lugar
+                de un set de otra escuela."
 -
   id:          5
   coste:       250
   name:        "Sanguinis"
   type:        "Pasiva"
-  description: "Puedes escoger un set de sangre en lugar de un set de otra escuela."
+  description: "Puedes escoger un set de sangre en lugar de un set
+                de otra escuela."
 -
   id:          6
   coste:       250
   name:        "Umbrae"
   type:        "Pasiva"
-  description: "Puedes escoger un set de sombras en lugar de un set de otra escuela."
+  description: "Puedes escoger un set de sombras en lugar de un set
+                de otra escuela."
 -
   id:          7
   coste:       250
   name:        "Glaciem"
   type:        "Pasiva"
-  description: "Puedes escoger un set de hielo en lugar de un set de otra escuela."
+  description: "Puedes escoger un set de hielo en lugar de un set
+                de otra escuela."
