@@ -4,14 +4,14 @@
 	<!-- Indicators -->
 	<ol class="carousel-indicators">
 		<% carousel.each_with_index do |c, i| %>
-			<li data-target="#carouselExampleIndicators" data-slide-to="<%= i %>" <%= 'class="active"' if i == 0 %> ></li>
+			<li data-target="#carouselExampleIndicators" data-slide-to="<%= i %>" <%= 'class="active"' if i == 0 %>></li>
 		<% end %>
 	</ol>
 
 	<!-- Wrapper for slides -->
 	<div class="carousel-inner" role="listbox">
 		<% carousel.each_with_index do |c, i| %>
-			<div class="carousel-item <%= 'active' if i == 0 %>"
+			<div class="carousel-item<%= ' active' if i == 0 %>"
 					 style="background-image: url('/images/inicio/carousel/<%= c['name']%>.png')">
 				<div class="carousel-caption d-none d-md-block">
 					<h3><%= c['title']%></h3>
