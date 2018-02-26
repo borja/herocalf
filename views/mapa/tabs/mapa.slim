@@ -1,0 +1,19 @@
+link rel="stylesheet" href="/css/custom/map.css"
+
+.text-left
+	.mapa_imagen
+		img src="/images/mapa.png" class='mapamundi'
+		ul class="notas"
+			li class="nota1"
+				p El Gran Lago
+			li class="nota2"
+				p La temible costa de los piratas
+			li class="nota3"
+				p Altdorf, capital del Imperio
+			li class="nota4"
+				p El Desierto prohibido
+			- cities.each do |c|
+				a href="/city/#{ c['name'] }"
+					li style="#{ c['style'] }"
+						p
+							== c['name']

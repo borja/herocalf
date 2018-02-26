@@ -13,7 +13,8 @@
 -
   id:     3
   nombre: "dormido"
-  efecto: "Aturdido (mientras dure el efecto) + Dormido. Despertará con : 6+ ó al ser golpeado."
+  efecto: "Aturdido (mientras dure el efecto) + Dormido.
+           Despertará con : 6+ ó al ser golpeado."
 -
   id:     4
   nombre: "silenciado"
@@ -29,8 +30,7 @@
 -
   id:     7
   nombre: "moribundo"
-  efecto:
-          "-1PC al realizar una acción.
+  efecto: "-1PC al realizar una acción.
            Los moribundos tumbados doblan sus turnos de agonía.
            Excepciones: Girar y el paso gratuito de movimiento."
 -
@@ -40,12 +40,15 @@
 -
   id:     9
   nombre: "ardiendo"
-  efecto: "Al inicio de tu turno tirarás 1 dado especial rojo por cada contador de ardiendo sobre ti."
+  efecto: "Al inicio de tu turno tirarás 1 dado especial rojo
+           por cada contador de ardiendo sobre ti."
 -
   id:     10
   nombre: "envenenado"
-  efecto: "Al inicio de tu turno tirarás 1 dado especial verde por cada contador de veneno sobre ti."
+  efecto: "Al inicio de tu turno tirarás 1 dado especial verde
+           por cada contador de veneno sobre ti."
 -
   id:     11
   nombre: "cegado"
-  efecto: "Al atacar, tu defensor esquivará con un solo éxito de defensa. Las miniaturas en sigilo, tendrán rango 3, y no empujas."
+  efecto: "Al atacar, tu defensor esquivará con un solo éxito de defensa.
+           Las miniaturas en sigilo, tendrán rango 3, y no empujas."

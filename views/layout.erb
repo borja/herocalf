@@ -19,7 +19,8 @@
 
 		<div class="container">
 
-			<h1 class="mt-4 mb-3"><%= title %>
+			<h1 class="mt-4 mb-3">
+				<%= title %>
 				<small><%= vista.title %></small>
 			</h1>
 
@@ -33,7 +34,9 @@
 			<% end %>
 
 			<!-- Main Content -->
-			<%= yield %>
+			<div class="container-fluid text-center">
+				<%= yield %>
+			</div>
 		</div>
 
 		<footer class="py-5 bg-dark">

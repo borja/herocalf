@@ -1,4 +1,10 @@
 -
   name:   "Artesano táctico"
   coste:  500
-  efecto: "Al atraversarle, sus aliados ignorar la casilla de movimiento."
+  efecto: "Los aliados pueden declararte como objetivo (declarativa)
+           en tu turno. Originalmente, deben hacerlo en el suyo."
+-
+  name:   "Falange compacta"
+  coste:  400
+  efecto: "Todos los aliados colindantes con escudo, obtienen tus
+           bonificadores por empujar."

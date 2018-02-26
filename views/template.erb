@@ -1,39 +1,36 @@
-<div class="container-fluid text-center">
-	<% if defined? layout %>
-		<div class="row content">
-			<% if layout['left'] %>
-				<div class="col-sm-3 sidenav">
-					<%= load_partial(layout['left']) %>
-					<% if layout['left2'] %>
-						<%= load_partial(layout['left2']) %>
-					<% end %>
-				</div>
-			<% end %>
-			<div class='<%= get_center(layout) %>'>
-				<%= load_partial(layout['main']) %>
-			</div>
-			<% if layout['right'] %>
-				<div class="col-sm-3 sidenav">
-					<%= load_partial(layout['right']) %>
-					<% if layout['right2'] %>
-						<%= load_partial(layout['right2']) %>
-					<% end %>
-				</div>
-			<% end %>
-		</div>
-
-		<% if layout['row2'] %>
-			<div class="row content">
-				<%= load_partial(layout['row2']) %>
+<% if defined? layout %>
+	<div class="row content">
+		<% if layout['left'] %>
+			<div class="col-sm-3 sidenav">
+				<%= load_partial(layout['left']) %>
+				<% if layout['left2'] %>
+					<%= load_partial(layout['left2']) %>
+				<% end %>
 			</div>
 		<% end %>
-
-	<% else %>
-		<div class="row content">
-			<div class="col-sm-12 text-left">
-				<p>La ruta seleccionada, no existe en esta web</p>
+		<div class='<%= get_center(layout) %>'>
+			<%= load_partial(layout['main']) %>
+		</div>
+		<% if layout['right'] %>
+			<div class="col-sm-3 sidenav">
+				<%= load_partial(layout['right']) %>
+				<% if layout['right2'] %>
+					<%= load_partial(layout['right2']) %>
+				<% end %>
 			</div>
+		<% end %>
+	</div>
+
+	<% if layout['row2'] %>
+		<div class="row content">
+			<%= load_partial(layout['row2']) %>
 		</div>
 	<% end %>
 
-</div>
+<% else %>
+	<div class="row content">
+		<div class="col-sm-12 text-left">
+			<p>La ruta seleccionada, no existe en esta web</p>
+		</div>
+	</div>
+<% end %>

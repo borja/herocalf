@@ -4,49 +4,47 @@
 	</div>
 	
 	<div class="col-lg-12">
-
-		<ul id="myTab" class="nav nav-tabs nav-justified">
-				<li class="active">
-					<a href="#geo" data-toggle="tab">
+		<ul class="nav nav-tabs" id="myTab" role="tablist">
+				<li class="nav-item">
+					<a href="#geo" class="nav-link active" data-toggle="tab">
 						<i class="fa fa-map-signs fa-fw" aria-hidden="true"></i>
 						Geografía
 					</a>
 				</li>
-				<li class="">
-					<a href="#reinos" data-toggle="tab">
-						<i class="fa fa-fort-awesome" aria-hidden="true"></i>
+				<li class="nav-item">
+					<a href="#reinos" class="nav-link" data-toggle="tab">
+						<i class="fab fa-fort-awesome" aria-hidden="true"></i>
 						Principales Reinos
 					</a>
 				</li>
-				<li class="">
-					<a href="#monturas" data-toggle="tab">
-						<span class="glyphicon glyphicon-knight"></span>
+				<li class="nav-item">
+					<a href="#monturas" class="nav-link" data-toggle="tab">
+						<i class="fab fa-sticker-mule"></i>
 						Monturas
 					</a>
 				</li>
-				<li class="">
-					<a href="#mapa" data-toggle="tab">
-						<i class="fa fa-map-o" aria-hidden="true"></i>
+				<li class="nav-item">
+					<a href="#mapa" class="nav-link" data-toggle="tab">
+						<i class="fas fa-map" aria-hidden="true"></i>
 						Ver Mapa
 					</a>
 				</li>
 		</ul>
 
-		<div id="myTabContent" class="tab-content">
-			<div class="tab-pane fade active in" id="geo">
-				<h4>Geografía</h4>
-				<%= erb :"mapa/tabs/geo" %>
+		<div class="tab-content" id="myTabContent">
+			<div class="tab-pane fade show active" id="geo"
+					 role="tabpanel" aria-labelledby="geo-tab">
+				<%= slim :"mapa/tabs/geo" %>
 			</div>
-			<div class="tab-pane fade" id="reinos">
-				<h4>Principales Reinos</h4>
-				<%= erb :"mapa/tabs/reinos" %>
+			<div class="tab-pane fade" id="reinos" role="tabpanel" aria-labelledby="reinos-tab">
+				<%= slim :"mapa/tabs/reinos" %>
 			</div>
-			<div class="tab-pane fade" id="monturas">
+			<div class="tab-pane fade" id="monturas" role="tabpanel" aria-labelledby="monturas-tab">
 				<h4>Monturas</h4>
 				<p>Por hacer...</p>
 			</div>
-			<div class="tab-pane fade" id="mapa">
-				<%= erb :"mapa/tabs/mapa" %>
+			<div class="tab-pane fade" id="mapa" role="tabpanel" aria-labelledby="mapa-tab">
+				<%= slim :"mapa/tabs/mapa" %>
 			</div>
 		</div>
 
