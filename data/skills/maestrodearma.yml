@@ -1,102 +1,112 @@
 ﻿-
   id:          0
-  name:        "Empujar"
-  description: "Los enemigos suman un punto al multiplicador de proximidad del personaje cuando se desplacen a su alrededor."
   coste:       "300"
   type:        "Pasiva"
+  name:        "Empujar"
+  description: "Los enemigos suman un punto al multiplicador de proximidad
+                del personaje cuando se desplacen a su alrededor."
 - 
   id:          1
-  name:        "Dominio de la lanza"
-  description: "Permite llevar lanzas en una mano y permite atacar en +1 casilla de distancia de manera frontal"
   coste:       "100"
+  name:        "Dominio de la lanza"
   type:        "Pasiva"
+  description: "Permite llevar lanzas en una mano y permite atacar
+                en +1 casilla de distancia de manera frontal"
 - 
   id:          2
-  name:        "Muro de lanzas"
-  description: "Permite atacar en +1 casilla de distancia y atacar a los enemigos a través de sus compañeros sin ocasionarles daño alguno."
   coste:       "250"
+  name:        "Muro de lanzas"
   type:        "Pasiva"
+  description: "Permite atacar en +1 casilla de distancia y atacar
+                a los enemigos a través de sus compañeros sin dañarles."
 - 
   id:          3
-  name:        "Anticiparse"
-  description: "Al usar armas de asta permite golpear como interrupción a las miniaturas que invadan el alcance frontal. (nunca diagonales)"
   coste:       "250"
+  name:        "Anticiparse"
   type:        "Pasiva"
+  description: "Usar armas de asta permite golpear como interrupción a
+                miniaturas que invadan el alcance frontal. (nunca diagonales)"
 -
   id:          4
-  name:        "Esgrima"
-  description: "El exceso de éxitos de ataque se pueden añadir como éxitos en la defensa. (Al combatir con armas de filo excepto dagas)"
   coste:       "250"
+  name:        "Esgrima"
   type:        "Pasiva"
+  description: "El exceso de éxitos de ataque se pueden añadir como éxitos 
+                en la defensa. (Al combatir con armas de filo excepto dagas)"
 -
   id:          5
-  name:        "Ataque poderoso"
-  description: "+1 fuerza de ataque. Tu defensa deberá ser verdadera durante el turno del Malvado Brujo."
   coste:       "200"
+  name:        "Ataque poderoso"
   type:        "Activa"
+  description: "+1 fuerza de ataque. Tu defensa deberá ser verdadera
+                durante el turno del Malvado Brujo."
 -
   id:          6
-  name:        "Dominio del hacha"
-  description: "Al atacar el flanco del escudo del oponente deja de considerarse frontal por el escudo."
   coste:       "100"
+  name:        "Dominio del hacha"
   type:        "Pasiva"
+  description: "Al atacar el flanco del escudo del oponente deja de
+                considerarse frontal por el escudo."
 -
   id:          7
-  name:        "Hacha voladora"
-  description: "Se pueden arrojar hachas en diagonal"
   coste:       "100"
+  name:        "Hacha voladora"
   type:        "Pasiva"
+  description: "Se pueden arrojar hachas en diagonal"
 -
   id:          8
-  name:        "Dominio de la maza"
-  description: "Las águilas imperiales causan ambos efectos: aturden e inflingen daño."
   coste:       "100"
+  name:        "Dominio de la maza"
   type:        "Pasiva"
+  description: "Las águilas imperiales causan ambos efectos:
+                aturden e inflingen daño."
 -
   id:          9
-  name:        "Dominio de puñales"
-  description: "Desenvainar/Envainar dagas es una acción gratuita."
   coste:       "100"
+  name:        "Dominio de puñales"
   type:        "Pasiva"
+  description: "Desenvainar/Envainar dagas es una acción gratuita."
 -
   id:          10
-  name:        "Pértiga"
-  description: "+1 saltar fosos al estar equipado con un bastón."
   coste:       "50"
+  name:        "Pértiga"
   type:        "Pasiva"
+  description: "+1 saltar fosos al estar equipado con un bastón."
 - 
   id:          11
-  name:        "Dominio del bastón"
-  description: "Permite llevar 1 bastón en la mano principal."
   coste:       "100"
+  name:        "Dominio del bastón"
   type:        "Pasiva"
+  description: "Permite llevar 1 bastón en la mano principal."
 - 
   id:          12
-  name:        "Dominio del arco"
-  description: "Permite añadir un disparo de arco en conjunto con otros ataques."
   coste:       "250"
+  name:        "Dominio del arco"
   type:        "Pasiva"
+  description: "Permite añadir un disparo de arco en conjunto
+                con otros ataques."
 - 
   id:          13
-  name:        "Refugiarse en el escudo"
-  description: "-1 daño recibido de conjuros."
   coste:       "450"
+  name:        "Refugiarse en el escudo"
   type:        "Pasiva"
+  description: "Requiere escudos: -1 daño recibido de conjuros."
 - 
   id:          14
-  name:        "Vigor de combate"
-  description: "+1 de fuerza en armas a 2 manos."
   coste:       "500"
+  name:        "Vigor de combate"
   type:        "Pasiva"
+  description: "+1 de fuerza en armas a 2 manos."
 - 
   id:          15
-  name:        "Combate furioso"
-  description: "+1 potencia si el turno anterior recibiste daño"
   coste:       "350"
+  name:        "Combate furioso"
   type:        "Pasiva"
+  description: "+1 potencia si el turno anterior recibiste daño"
 - 
   id:          16
-  name:        "Escudo de vanguardia"
-  description: "(Requiere escudo) Ignora interrupciones y penalizaciones por movimiento si cargas frontalmente a un enemigo."
   coste:       "150"
+  name:        "Escudo de vanguardia"
   type:        "Pasiva"
+  description: "(Requiere escudo) Ignora interrupciones y penalizaciones
+                por movimiento si cargas frontalmente a un enemigo."
