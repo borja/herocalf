@@ -18,7 +18,7 @@
   type:        "activa"
   coste:       "1 hechizo de aire"
   description: "Trepdiante, Elige: +2 dados rayo de ataque para ti o
-                +1 dado a un aliado"
+                +1 dado a un aliado. Duración: E"
 -
   id:          3
   nivel:       2
