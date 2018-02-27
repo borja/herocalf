@@ -1,3 +1,4 @@
+# nivel 2
 -
   id:          0
   nivel:       2
@@ -5,7 +6,8 @@
   name:        "Levantar muertos"
   type:        "Activa"
   coste:       "2PM"
-  description: "Invoca 1/rango esquelo/s para que luchen bajo tu mando. (Requiere un cadáver visible)"
+  description: "Invoca 1/rango esqueletos para que luchen bajo tu mando.
+                (Consume 1 cadáver visible)"
 -
   id:          1
   nivel:       2
@@ -13,91 +15,166 @@
   name:        "Explotar cadáver"
   type:        "Activa"
   coste:       "1PM x rango"
-  description:
-    "Explota un cadáver (peste + aullador) reciente visible, 
-	 causando 1 dado verde + 1/rango dado de combate (daños por psiónica) a su alrededor.
-	 Estos cadáveres no podrán ser usados para levantarlos, ni pueden estar sometidos a hechizos."
+  description: "Explota 1 cadáver (peste + aullador) reciente visible,
+                causando 1 dado de peste + 1/rango dado de combate
+                (daños por psiónica) a su alrededor.
+                (Consume 1 cadáver visible)"
 -
   id:          2
   nivel:       2
-  rangos:      3
+  rangos:      6
   name:        "Cenizas fúnebres"
   type:        "Pasiva"
-  description: "Añade 2 hechizos adicionales de sombras al iniciar el reto."
+  description: "Añade 1/rango set de sombras al iniciar el reto.
+                el nivel del set aumenta por cada 2 rangos"
 -
   id:          3
   nivel:       2
   rangos:      3
   name:        "Sangre impura"
   type:        "Pasiva"
-  description: "Añade 2 hechizos adicionales de sangre al iniciar el reto."
+  description: "Añade 1/rango set de sangre al iniciar el reto.
+                el nivel del set aumenta por cada 2 rangos"
+# nivel 3
 -
-  id:          4
+  id:          5
   nivel:       3
   requisitos:  [0,2]
   name:        "Taumaturgia"
   type:        "Reactiva"
-  description: "Recupera 1PM al matar con no-muertos a tu servicio. (Esta habilidad no permite Maho)"
+  description: "Recupera 1PM al matar con no-muertos a tu servicio.
+                (Esta habilidad no permite Maho)"
 -
-  id:          5
+  id:          6
   nivel:       3
   requisitos:  [0,3]
   name:        "Maho"
   type:        "Reactiva"
-  description: "Recupera 1PC al matar con no-muertos a tu servicio. (Esta habilidad no permite Taumaturgia)"
+  description: "Recupera 1PC al matar con no-muertos a tu servicio.
+                (Esta habilidad no permite Taumaturgia)"
 -
-  id:          6
+  id:          7
   nivel:       3
   requisitos:  [1]
   name:        "Mortis"
   type:        "Única"
-  description: 
-    "Explota todos los cadáveres de la sala, incluyendo tus propios no-muertos.
-     Multiplica la fuerza de daño en las casillas afectadas por varias explosiones.
-     Los no-muertos enemigos son inmunes a este poder."
+  description: "Explota todos los cadáveres de la sala,
+                incluyendo tus propios no-muertos.
+                Multiplica la fuerza de daño en las casillas afectadas
+                por varias explosiones. 
+                Los no-muertos enemigos no explotarán por este poder"
 -
-  id:          7
-  nivel:       4
+  id:          8
+  nivel:       3
   rangos:      4
   requisitos:  [0]
   name:        "Disciplina tétrica"
   type:        "Pasiva"
-  description: "Los no-muertos a tu servicio permiten pasar a los aliados que tú decidas. +1/rango a su movimiento."
+  description: "Los no-muertos a tu servicio permiten pasar a los aliados
+                que tú decidas. Además obtienen +1/rango movimiento."
+# nivel 4
 -
-  id:          8
+  id:          9
   nivel:       4
   rangos:      2
   requisitos:  [0]
   name:        "Vigor tremens"
   type:        "Pasiva"
-  description: "+1 potencia defensiva de tus no-muertos."
--
-  id:          9
-  nivel:       4
-  requisitos:  [4]
-  name:        "Mortaja de sombras"
-  type:        "Única"
-  description: "Instinto: Si mueres en este turno, resucitarás momificado (-2 movimiento) con 1PC y 1PM."
+  description: "+1/rango potencia defensiva de tus no-muertos."
 -
   id:          10
   nivel:       4
   requisitos:  [5]
+  name:        "Mortaja de sombras"
+  type:        "Única"
+  description: "Instinto: Si mueres en este turno, resucitarás momificado
+                (-2 movimiento hasta final del reto) con 1PC y 1PM."
+-
+  id:          11
+  nivel:       4
+  requisitos:  [6]
   name:        "Sudario de sangre"
   type:        "Activa"
   coste:       "1PC"
-  description: "Instinto: El próximo daño que fueras a recibir, lo recibe un esbirro en tu lugar."
--
-  id:          11
-  nivel:       5
-  rangos:      2
-  requisitos:  [9,10]
-  name:        "Momificar"
-  type:        "Pasiva"
-  description: "Al levantar muertos, puedes levantar 1 momia en lugar de un esqueleto (Máximo 1/rango momias)"
+  description: "Instinto: El próximo daño que fueras a recibir,
+                lo recibe un esbirro no-muerto en tu lugar."
 -
   id:          12
+  nivel:       4
+  rangos:      2
+  requisitos:  [0]
+  name:        "Vibración tétrica"
+  type:        "Reactiva"
+  description: "Cunado los no-muertos cobren una pieza, puedes lanzar 2
+                hechizos en cada acción de magia o bien no consumir hechizo.
+                En rango 2, elegir ambos beneficios consumiendo 1 solo hechizo."
+# nivel 5
+-
+  id:          13
   nivel:       5
-  requisitos:  [0,1]
+  rangos:      2
+  requisitos:  [10, 11]
+  name:        "Momificar"
+  type:        "Pasiva"
+  description: "Al levantar muertos, puedes levantar 1 momia
+                en lugar de 1 esqueleto (Máximo 1/rango momias)"
+-
+  id:          14
+  nivel:       5
+  requisitos:  [0, 1]
   name:        "Ansia"
   type:        "Pasiva"
-  description: "+1 Fuerza a tus esbirros. Este bonificador se aplica al explotar cadáveres."
+  description: "+1 Fuerza a tus esbirros. Este bonificador se aplica
+                al explotar cadáveres."
+-
+  id:          15
+  nivel:       5
+  requisitos:  [0, 7, 10]
+  name:        "Danza macabra"
+  type:        "Reactiva"
+  description: "Puedes explotar tus propios cadáveres andantes.
+                Obtienes un punto de Tenebro (PT) al cobrar piezas explotando.
+                4PT: recupera Mortaja de sombras"
+-
+  id:          16
+  nivel:       5
+  requisitos:  [10, 12]
+  name:        "Requiem"
+  type:        "Activa"
+  coste:       "1PM / turno"
+  description: "Nunca terminas de morir mientras tengas Mortaja de Sombras.
+                Mueres finalmente cunado pierdas además todos tus PM.
+                Puedes gastar 1PM para lanzar 1 hechizo, y tus no-muertos
+                seguirán animados mientras no mueras definitivamente."
+# nivel 6
+-
+  id:          17
+  nivel:       6
+  rangos:      2
+  name:        "Aura siniestra"
+  type:        "Pasiva"
+  description: "+1/rango vs Miedo y +1/rango vs Tenebro a todos los aliados"
+-
+  id:          18
+  requisitos:  [9]
+  nivel:       6
+  name:        "Juramento con la Señora"
+  type:        "Pasiva"
+  description: "+1 protección por cada no-muerto a tu servicio, siempre
+                que tus heridas superen tus esbirros convocados"
+# nivel 7
+-
+  id:          19
+  nivel:       7
+  requisitos:  [7]
+  name:        "Pacto Siniestro"
+  type:        "Reactiva"
+  description: "Recupera Mortis al matar con hechizos. Si mortis causa
+                daño a aliados, causarán miedo +X (heridas causadas)"
+-
+  id:          20
+  nivel:       7
+  requisitos:  [0]
+  name:        "Armas negras"
+  type:        "Pasiva"
+  description: "Tus no-muertos tiran dados negros de ataque y odian a los vivos"
