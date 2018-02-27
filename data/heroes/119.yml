@@ -1,0 +1,15 @@
+name:      "Ferya"
+titulo:    "Shieldmaidn"
+personaje: "matador"
+jugador:   "Iris"
+gender:    "female"
+nivel:     2
+cuerpo:    7
+mente:     3
+mov:       6
+armadura:  2
+armas:
+  - { id: 11 }
+miscelaneas:
+  - { id: 10 }
+skills: [1, 2]

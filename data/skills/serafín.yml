@@ -1,9 +1,10 @@
+# nivel 2
 -
   id:          0
   nivel:       2
   name:        "Piedad"
   type:        "reactiva"
-  description: "Al sanar con un hechizo o habilidad, recuperas 1PM"
+  description: "+1 PM al sanar con un hechizo o habilidad"
 -
   id:          1
   nivel:       2
@@ -17,7 +18,8 @@
   name:        "Escudo empíreo"
   type:        "activa"
   coste:       "1 hechizo de agua"
-  description: "Instinto, Elige: +2 dados azules de defensa para ti o +1 dado a un aliado"
+  description: "Instinto, Elige: +2 dados azules de defensa para ti o 
+                +1 dado azul a 1 aliado"
 -
   id:          3
   nivel:       2
@@ -27,16 +29,71 @@
   description: "Añade un set de magias de agua"
 -
   id:          4
-  nivel:       3
-  name:        "Aunar ruegos"
-  type:        "única"
-  description: 
-               "Cualquier aliado puede pagar 1 acción: Todos recuperarán 1PM,
-                y tú recuperarás 1 plegaria por cada 3 acciones invertidas."
--
-  id:          5
-  nivel:       3
-  requisitos:  [2]
+  nivel:       2
   name:        "Templanza"
   type:        "reactiva"
   description: "+1 PM al defender con éxito"
+# nivel 3
+-
+  id:          5
+  nivel:       3
+  name:        "Aunar ruegos"
+  type:        "única"
+  description: "Cualquier aliado puede pagar 1 acción: Todos recuperarán 1PM,
+                y tú recuperarás 1 plegaria por cada 3 acciones invertidas."
+-
+  id:          6
+  nivel:       3
+  requisitos:  [2]
+  name:        "Paciencia"
+  type:        "reactiva"
+  description: "+1 PM al declarar buscar habiendo enemigos visibles en S/P"
+-
+  id:          7
+  nivel:       3
+  requisitos:  [0]
+  name:        "Manantial en reposo"
+  type:        "única"
+  description: "Lanza el hechizo de agua dormir a X objetivos visibles.
+                (X = tus heridas actuales)"
+-
+  id:          8
+  nivel:       3
+  requisitos:  [0]
+  name:        "Grito de esperanza"
+  type:        "única"
+  description: "Instinto: La siguiente vez que fueras a recibir X daño,
+                sana X PC ó X PM en su lugar a un aliado"
+-
+  id:          9
+  nivel:       4
+  requisitos:  [2,3]
+  name:        "Misericordia dramática"
+  type:        "pasiva"
+  description: "+1 potencia al ataque (acumulable) al haber sanado con
+                éxito el turno anterior"
+-
+  id:          10
+  nivel:       4
+  requisitos:  [5, 9]
+  name:        "Virtud del mártir"
+  type:        "Reactiva"
+  description: "Recupera: aunar ruegos al sufrir daño bajo una bendición"
+-
+  id:          11
+  nivel:       4
+  rangos:      3
+  requisitos:  [2]
+  name:        "Gloria celeste"
+  type:        "pasiva"
+  description: "+1/rango potencia a los efectos defensivos de plegarias"
+-
+  id:          12
+  nivel:       4
+  rangos:      2
+  requisitos:  [1]
+  name:        "Adalid celeste"
+  type:        "pasiva"
+  description: "Añade 2 dados de frío de potencia 1/rango, contra enemigos
+                con más dados de ataque."
+# nivel 5

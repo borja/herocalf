@@ -3,7 +3,7 @@
   nivel:       2
   name:        "Fervor"
   type:        "reactiva"
-  description: "Al dañar con un hechizo o habilidad, recuperas 1PM"
+  description: "+1 PM al dañar con un hechizo o habilidad"
 -
   id:          1
   nivel:       2
@@ -17,7 +17,8 @@
   name:        "Arma entrópica"
   type:        "activa"
   coste:       "1 hechizo de aire"
-  description: "Trepdiante, Elige: +2 dados rayo de ataque para ti o +1 dado a un aliado"
+  description: "Trepdiante, Elige: +2 dados rayo de ataque para ti o
+                +1 dado a un aliado"
 -
   id:          3
   nivel:       2
@@ -27,9 +28,70 @@
   description: "Añade un set de magias de aire"
 -
   id:          4
+  nivel:       2
+  name:        "Coraje"
+  type:        "reactiva"
+  description: "+1 PM al matar con armas arrojadizas"
+# nivel 3
+-
+  id:          5
   nivel:       3
   name:        "Segar almas"
   type:        "única"
-  description: 
-               "Cualquier aliado puede pagar 1 pieza: Recuperas tantos PM como puntos pagados,
-                y un hechizo de aire por cada 3 piezas pagadass."
+  description: "Cualquier aliado puede pagar 1 pieza: Recuperas tantos PM
+                como puntos pagados, y 1 hechizo de aire por cada 3 piezas."
+-
+  id:          6
+  nivel:       3
+  requisitos:  [2]
+  name:        "Arrojo"
+  type:        "reactiva"
+  description: "+1 PM al causar daños en combates singulares con armas a melé."
+-
+  id:          7
+  nivel:       3
+  requisitos:  [0]
+  name:        "Erupción de relámpagos"
+  type:        "única"
+  description: "Ataca con X dados eléctricos a las miniaturas colindantes.
+                (X = los enemigos derrotados en la S/P precedente)"
+-
+  id:          8
+  nivel:       3
+  requisitos:  [0]
+  name:        "Grito atronador"
+  type:        "única"
+  description: "Instinto: La siguiente vez que fueras a recibir X daño,
+                desplaza en su lugar X casillas a tus agresores hacia atrás"
+# nivel 4
+-
+  id:          9
+  nivel:       4
+  requisitos:  [2,3]
+  name:        "Justicia honorable"
+  type:        "pasiva"
+  description: "+1 dado eléctrico (acumulable) al matar en combate singular"
+-
+  id:          10
+  nivel:       4
+  requisitos:  [5, 9]
+  name:        "Alma vacía"
+  type:        "Reactiva"
+  description: "Recupera: Segar almas al matar en combate singular frontalmente"
+-
+  id:          11
+  nivel:       4
+  rangos:      3
+  requisitos:  [2]
+  name:        "Tormenta eterna"
+  type:        "pasiva"
+  description: "+1/rango potencia a los efectos de eléctricos"
+-
+  id:          12
+  nivel:       4
+  rangos:      2
+  requisitos:  [1]
+  name:        "Tormenta primigenia"
+  type:        "pasiva"
+  description: "+1/rango fuerza a los efectos de eléctricos"
+# nivel 5

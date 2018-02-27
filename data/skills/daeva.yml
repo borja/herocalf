@@ -1,9 +1,10 @@
+# nivel 2
 -
   id:          0
   nivel:       2
   name:        "Dolor"
   type:        "reactiva"
-  description: "Al perder PC por una habilidad o magia, recuperas 1PM"
+  description: "+1 PM al perder o consumir PC por una habilidad o magia"
 -
   id:          1
   nivel:       2
@@ -17,7 +18,8 @@
   name:        "Arma sangrienta"
   type:        "activa"
   coste:       "1 hechizo de sangre"
-  description: "Trepdiante, Elige: +2 dados desangradores de ataque para ti o +1 dado a un aliado"
+  description: "Trepdiante, Elige: +2 dados desangradores de ataque para ti
+                o +1 dado desangrador a 1 aliado"
 -
   id:          3
   nivel:       2
@@ -27,60 +29,70 @@
   description: "Añade un set de magias de sangre"
 -
   id:          4
+  nivel:       2
+  name:        "Sadismo"
+  type:        "reactiva"
+  description: "+1 PM al matar fuera de tu turno"
+# nivel 3
+-
+  id:          5
   nivel:       3
   name:        "Cosechar pecados"
   type:        "única"
-  description: 
-               "Cualquier aliado puede pagar 1PM: Recuperas tantos PC como puntos pagados,
-                y un hechizo de sangre por cada 3PM pagados."
+  description: "Cualquier aliado puede pagar 1PM: Recuperas tantos PC como
+                puntos pagados, y 1 hechizo de sangre por cada 3PM pagados."
 -
-  id:          5
+  id:          6
   nivel:       3
   requisitos:  [2]
   name:        "Morbosidad"
   type:        "reactiva"
   description: "+1 PM al causar daños con efectos de sangrado."
 -
-  id:          6
+  id:          7
   nivel:       3
   requisitos:  [0]
   name:        "Manantial de sangre"
   type:        "única"
-  description: "Ataca con X dados desangradores a las miniaturas colindantes. (X = tus heridas)"
+  description: "Ataca con X dados desangradores a las miniaturas colindantes.
+                (X = tus heridas)"
 -
-  id:          7
-  nivel:       4
+  id:          8
+  nivel:       3
   requisitos:  [0]
   name:        "Grito desgarrador"
   type:        "única"
-  description: "Instinto: La siguiente vez que fueras a recibir X daño, inflinge XdC de daño mental a tu agresor"
+  description: "Instinto: La siguiente vez que fueras a recibir X daño,
+                inflinge en su lugar XdC de daño mental a tu agresor"
+# nivel 4
 -
-  id:          8
+  id:          9
   nivel:       4
   requisitos:  [2,3]
   name:        "Mentira criminal"
   type:        "pasiva"
   description: "+1 sigilo (acumulable) al matar un enemigo por la espalda"
 -
-  id:          9
-  nivel:       5
-  requisitos:  [4, 8]
+  id:          10
+  nivel:       4
+  requisitos:  [5, 9]
   name:        "No hay catarsis"
   type:        "Reactiva"
   description: "Recupera: Cosechar pecados al matar en sigilo por la espalda."
 -
-  id:          10
-  nivel:       5
+  id:          11
+  nivel:       4
   rangos:      3
   requisitos:  [2]
   name:        "Sangre antigua"
   type:        "pasiva"
-  description: "+1 potencia a los efectos de sangrado"
+  description: "+1/rango potencia a los efectos de sangrado"
 -
-  id:          11
-  nivel:       6
+  id:          12
+  nivel:       4
   rangos:      2
   requisitos:  [1]
   name:        "Sangre primigenia"
   type:        "pasiva"
-  description: "+1 fuerza a los efectos de sangrado"
+  description: "+1/rango fuerza a los efectos de sangrado"
+# nivel 5
