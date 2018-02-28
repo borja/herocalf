@@ -18,8 +18,8 @@
   name:        "Escudo empíreo"
   type:        "activa"
   coste:       "1 hechizo de agua"
-  description: "Instinto, Elige: +2 dados azules de defensa para ti o 
-                +1 dado azul a 1 aliado"
+  description: "Instinto, hasta tu turno. Elige: +2 dados azules de defensa
+                para ti ó +1 dado azul a 1 aliado"
 -
   id:          3
   nivel:       2

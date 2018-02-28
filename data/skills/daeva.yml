@@ -18,7 +18,7 @@
   name:        "Arma sangrienta"
   type:        "activa"
   coste:       "1 hechizo de sangre"
-  description: "Trepdiante, Elige: +2 dados desangradores de ataque para ti
+  description: "Trepidante, Elige: +2 dados desangradores de ataque para ti
                 o +1 dado desangrador a 1 aliado"
 -
   id:          3
