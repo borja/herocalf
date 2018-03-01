@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/sinatra/sinatra.git
-  revision: fac626da0bf4c24e3ff20e42d30fe103cf0c1f37
+  revision: 894e14fc8c37287e94e5bf6c15788865bc720e49
   specs:
     rack-protection (2.0.1)
       rack
@@ -23,7 +23,7 @@ GEM
     minitest (5.11.3)
     mustermann (1.0.2)
     rack (2.0.4)
-    rack-test (0.8.2)
+    rack-test (0.8.3)
       rack (>= 1.0, < 3)
     rake (12.3.0)
     require_all (1.5.0)
