@@ -1,6 +1,6 @@
 GIT
-  remote: https://github.com/sinatra/sinatra.git
-  revision: 894e14fc8c37287e94e5bf6c15788865bc720e49
+  remote: git://github.com/sinatra/sinatra.git
+  revision: 14f86a89442723b7616acb1b5fe2177d97f5ac0b
   specs:
     rack-protection (2.0.1)
       rack
@@ -26,7 +26,7 @@ GEM
     rack-test (0.8.3)
       rack (>= 1.0, < 3)
     rake (12.3.0)
-    require_all (1.5.0)
+    require_all (2.0.0)
     rspec (3.7.0)
       rspec-core (~> 3.7.0)
       rspec-expectations (~> 3.7.0)
@@ -61,7 +61,7 @@ DEPENDENCIES
   minitest (~> 5.11.1)
   rack-test (~> 0.8.2)
   rake (~> 12.3.0)
-  require_all (~> 1.5.0)
+  require_all (~> 2.0.0)
   rspec (~> 3.7.0)
   simplecov (~> 0.15.1)
   sinatra!
