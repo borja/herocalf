@@ -4,14 +4,14 @@
   nivel:        2
   name:         "Camino sangriento"
   type:         "Reactiva"
-  description:  "Recupera 1PM al matar cuerpo a cuerpo de un único golpe."
+  description:  "+ 1PM al matar cuerpo a cuerpo de un único golpe."
 -
   id:           1
   nivel:        2
   rangos:       6
   name:         "Esquiva"
   type:         "Declarativa"
-  description:  "+1 Defensa vs un enemigo declarado"
+  description:  "+1 Defensa vs 1/rango enemigos declarados"
 -
   id:           2
   nivel:        2
@@ -49,7 +49,7 @@
   rangos:       2
   name:         "Hendedura"
   type:         "Activa"
-  coste:        "(3 -1/rango ataque) por cada enemigo"
+  coste:        "(1 -1/rango ataque) por cada enemigo"
   description:  "El exceso de ataque al primer enemigo,
                  atacará al siguiente enemigo colindante a ambos."
 -
@@ -67,7 +67,7 @@
   requisitos:   [0]
   name:         "Gloria berserker"
   type:         "Pasiva"
-  description:  "+1/rango potencia de ataque si es superado en número"
+  description:  "+1/rango potencia de ataque al ser superado en número"
 # nivel 4
 -
   id:           9
@@ -104,6 +104,13 @@
 # nivel 5
 -
   id:           13
+  nivel:        4
+  name:         "Insaciable"
+  type:         "Pasiva"
+  description:  "Aplica los efectos"
+# nivel 6
+-
+  id:           17
   nivel:        6
   rangos:       2
   requisitos:   [3]
