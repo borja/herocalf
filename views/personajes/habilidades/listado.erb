@@ -2,9 +2,10 @@
 <% char.gsub!('se%C3%B1or%20de%20las%20bestias', 'beastslord') %>
 
 <div class="table-responsive">
-	<table class="table">
-		<thead>
-			<tr><th>Nivel</th>
+	<table class="table table-striped table-bordered table-hover table-sm">
+		<thead class="thead-dark">
+			<tr>
+				<th>Nivel</th>
 				<th colspan='2'>Habilidad</th>
 				<th>Requisitos</th>
 				<th>Descripción</th>
@@ -14,16 +15,15 @@
 			<% send(char+"s").count.times do |i| %>
 				<% c = Habilidad.new(send(char,i)) %>
 				<tr>
-					<td width='9%'>
-						<h2><%= c.nivel %></h2>
-					</td>
+					<td><h2><%= c.nivel %></h2></td>
 					<td><%= erb :'display/skill', locals: { skill: c} %></td>
 					<td>
 						<a href="/skill/<%= c.name.downcase %>" target="_blank">
 							<%= c.name %>
 						</a>
 					</td>
-					<td><% if c.requisitos %>
+					<td>
+						<% if c.requisitos %>
 							<table>
 								<tr>
 									<% c.requisitos.each do |r| %>

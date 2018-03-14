@@ -1,7 +1,7 @@
 # Cada heroe coge 2 poderes al subir de nivel
 # No incluye las de base, esas se definen como Hab.
 class Habilidad < Hash
-  attr_accessor :id, :name, :description,
+  attr_accessor :id, :name, :description, :invocación,
                 :type, :nivel, :requisitos, :foco, :rangos, :coste, :char
 
   def initialize(args)
@@ -11,7 +11,11 @@ class Habilidad < Hash
   end
 
   def ranks
-    type == 'única' ? 6 : rangos
+    if rangos
+      type == 'única' ? 6 : rangos
+    else
+      1
+    end
   end
 
   def img_path

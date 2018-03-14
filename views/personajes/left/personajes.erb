@@ -1,10 +1,13 @@
 <h2>Personajes</h2>
-<ul>
+<hr>
+
+<div class="list-group">
 	<% personajes.each do |p| %>
-		<li>
-			<a href='/habilidad/<%= p.gsub('señor de las bestias','beastslord') %>' >
-				<%= p.capitalize %>
-			</a>
-		</li>
+		<% active = params[:param] == p ? 'active' : '' %>
+		<a  class="list-group-item <%= active %>"
+				href='/habilidad/<%= p.gsub('señor de las bestias','beastslord') %>' >
+			<%= p.capitalize %>
+		</a>
 	<% end %>	
-</ul>
+</div>
+<br>
