@@ -2,9 +2,11 @@
 -
   id:           0
   nivel:        2
+  rangos:       2
   name:         "Zen"
   type:         "única"
-  description:  "Permite repetir una plegaria."
+  description:  "Permite repetir una tirada de plegaria. En rango 2, puedes
+                 conservar la plegaria original y desechar la segunda."
 -
   id:           1
   nivel:        2
@@ -15,9 +17,11 @@
 -
   id:           2
   nivel:        2
+  rangos:       3
   name:         "Última plegaria"
   type:         "pasiva"
-  description:  "La última plegaria se considera summun"
+  description:  "La última plegaria se considera summun. En rango 2, también
+                 afecta a la penúltima y en 3, a la antepenúltima."
 -
   id:           3
   nivel:        2
@@ -41,7 +45,7 @@
   requisitos:   [0]
   name:         "Aura de entusiasmo"
   type:         "pasiva"
-  description:  "+1 movimiento de todos los aliados de la S/P"
+  description:  "+1/rango movimiento de todos los aliados de la S/P"
 -
   id:           6
   nivel:        3
@@ -73,7 +77,7 @@
   requisitos:   [7]
   name:         "El Martillo de Sigmar"
   type:         "pasiva"
-  description:  "+1/rango fuerza al bendecir tu arma."
+  description:  "+1/rango fuerza a todos los dados base, al bendecir tu arma."
 -
   id:           10
   nivel:        4
@@ -85,31 +89,35 @@
                  +1 a tu potencia defensiva en todos los dados."
 -
   id:           11
-  nivel:        5
-  requisitos:   [0,6,8]
+  nivel:        4
+  requisitos:   [0, 8]
   name:         "Fuente de luz"
   type:         "única"
   description:  "Hasta tu siguiente turno, no se podrán ejecutar hechizos
-                 de sombras en la sala, los enemigos en sigilo serán revelados,
-                 y los no-muertos reciben 1 daño directo sagrado al atacarte."
+                 de tenebro en la sala, los enemigos en sigilo serán revelados,
+                 y los no-muertos reciben 1 dado de daño sagrado al atacarte.
+                 Recupera fuente de luz cuando seas sanado por un aliado."
 -
   id:           12
-  nivel:        5
+  nivel:        4
+  rangos:       2
   requisitos:   [7]
   name:         "Castigo sagrado"
   type:         "activa"
   coste:        "1 Plegaria"
   description:  "Si tu arma está bendita: podrás realizar a distancia,
-                 tu siguiente ataque de combate."
+                 tu siguiente ataque de combate a 1/rango enemigos.
+                 Además, obtienes un punto de ángelus (PA) por cada pieza."
 # nivel 5
 -
   id:           13
   nivel:        5
+  rangos:       2
   requisitos:   [4]
   name:         "Escudriñar almas"
   type:         "pasiva"
   description:  "Mientras estés bajo los efectos de una bendición:
-                 +2 para detectar enemigos emboscados."
+                 +2/rango para detectar enemigos emboscados."
 -
   id:           14
   nivel:        5
@@ -140,3 +148,42 @@
                  se considerará bajo la Gloria del Héroe.
                  La sintonía requiere 1 acción de turno."
 # nivel 6
+-
+  id:           17
+  nivel:        6
+  requisitos:   [13, 14]
+  name:         "Inspirar visión"
+  type:         "Activa"
+  coste:        "1 plegaria"
+  description:  "El aliado objetivo queda bendito, y puedes bendecir su arma.
+                 Por cada pieza que cobre recuperas zen y un punto ángelus (PA)"
+-
+  id:           18
+  nivel:        6
+  rangos:       2
+  requisitos:   [3, 11]
+  name:         "Manto de paz"
+  type:         "pasiva"
+  description:  "Si habiendo enemigos visibles no eres atacado, en tu próximo
+                 turno podrás lanzar 1/rango plegarias sin coste de acción,
+                 pudiendo además, gastar PA en lugar del coste de plegarias."
+# nivel 7
+-
+  id:           19
+  nivel:        7
+  requisitos:   [4]
+  name:         "Magia blanca"
+  type:         "Activa"
+  coste:        "1 plegaria ó PA"
+  description:  "Elimina una maldición a un aliado (no puedes ser tú)"
+-
+  id:           20
+  nivel:        7
+  requisitos:   [12]
+  name:         "Cruz púrpura"
+  type:         "Activa"
+  coste:        "1 PA"
+  description:  "Instinto: Todos los aliados obtienen +1 potencia defensiva
+                 a sus escudos blancos. Recuperas 1PM por cada escudo blanco
+                 empleado para mitigar un ataque."
+# nivel 8
