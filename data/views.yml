@@ -291,8 +291,7 @@
   ruta:  "descendientes"
   template:
     left: "personajes/razas/left/links"
-    main: "personajes/razas/center/descendientes"
-    right: "personajes/razas/right/stats"
+    main: "personajes/razas/descendientes"
 -
   ruta:  "razas"
   template:
