@@ -15,6 +15,6 @@ group :test do
   gem 'rack-test', '~> 0.8.2'
   gem 'rake',      '~> 12.3.0'
   gem 'rspec',     '~> 3.7.0'
-  gem 'simplecov', '~> 0.15.1', require: false
+  gem 'simplecov', '~> 0.16.0', require: false
   gem 'yaml-lint', '~> 0.0.9'
 end
