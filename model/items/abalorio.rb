@@ -1,3 +1,5 @@
+require_rel 'item'
+
 # Objetos que se llevan en la mochila
 class Abalorio < Item
   def name

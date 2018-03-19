@@ -1,3 +1,5 @@
+require_rel 'magia'
+
 # Todos los hechizos de tipo arena
 class Arena < Magia
   def nivel

@@ -59,12 +59,13 @@ class Hero < Hash
     total
   end
 
+  # TODO: Refactor this
   # Custom meta-methods created by each item:
-  (fields[0] + fields[1] + fields[2]).each do |f|
-    define_method(f) do
-      ((proteccions || []) + (baratijas || [])).detect { |item| item.fits == f }
-    end
-  end
+  ## (fields[0] + fields[1] + fields[2]).each do |f|
+  ##   define_method(f) do
+  ##     ((proteccions || []) + (baratijas || [])).detect { |item| item.fits == f }
+  ##   end
+  ## end
 
   # Default-ed meta-methods
   def armour

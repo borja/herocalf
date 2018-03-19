@@ -1,3 +1,5 @@
+require_rel 'util'
+
 # Materiales necesarios para las profesiones
 class Material < Util
   def name
