@@ -56,3 +56,15 @@
   type:        "Pasiva"
   description: "Puedes escoger un set de hielo en lugar de un set
                 de otra escuela."
+-
+  id:          8
+  coste:       350
+  name:        "Mago de guerra"
+  type:        "Pasiva"
+  description: "Al buscar con éxito, puedes disponer de 1 acción de magia"
+-
+  id:          9
+  coste:       200
+  name:        "Gesticular hechizos"
+  type:        "Pasiva"
+  description: "Puedes lanzar conjuros en diagonal"

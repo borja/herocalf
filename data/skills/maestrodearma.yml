@@ -110,3 +110,10 @@
   type:        "Pasiva"
   description: "(Requiere escudo) Ignora interrupciones y penalizaciones
                 por movimiento si cargas frontalmente a un enemigo."
+- 
+  id:          16
+  coste:       "100"
+  name:        "Mañas de mago"
+  type:        "Pasiva"
+  description: "Desenvainar/envainar una varita, pergamino, orbe o libro
+                no consume acción"

@@ -1,15 +1,15 @@
 -
   id:       0
   alcance:  0
-  duracion: "Escudo negro"
+  duracion: "Hasta ataque sin éxitos"
   name:     "Carámbano"
   tipo:     "Invocación"
   efecto:   "Una daga de hielo mágico que puede ser empleada como arma
              de empuñadura. Tirará 1 dado de Escarcha
              cuya potencia es el nivel del hechicero."
-  potencia: "+1 dado de hielo."
+  potencia: "+1 dado de escarcha"
   maestría: "+1 fuerza de la daga"
-  diablura: "Se puede lanzar como una daga y recuperar con 1 PM."
+  diablura: "Se puede lanzar como una daga. Volverá a la mano por 1 PM."
   ardid:    "Matar con la daga recupera una magia de agua aleatoria."
 - 
   id:       1

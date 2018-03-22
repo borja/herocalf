@@ -1,19 +1,34 @@
 <% pj = params[:param] %>
 
 <h2>El <%= pj %> como personaje</h2>
+<hr>
+
+<h3>Habilidades iniciales</h3>
 <%= slim :'personajes/clases/clase/iniciales' %>
 
 <h3>Especializaciones</h3>
 <%= erb :'personajes/clases/special_table', locals: {pj: pj} %>
 
-<p>
-	<h3>Familiares disponibles del <%= pj %></h3>
+<h3>Familiares disponibles del <%= pj %></h2>
+<% familiares_disponibles = pets.select { |p| p['personajes'].include? pj } %>
+<% if familiares_disponibles.any? %>
 	<%= erb :'personajes/clases/pets_table', locals: {pj: pj} %>
-</p>
-
+<% else %>
+	<p>No se conoce de la existencia de ningún familiar para el <%= pj %>.</p>
+<% end %>
 <p>
 	<% prof = profesions.detect {|p| p.imped == pj }%>
-	<h3>Profesión prohibida: <%= prof.name %></h3>
-	<%= slim :'personajes/clases/clase/profesión' %>
-
+	
+	<% if pj == 'monje' %>
+		<h3>La profesión del monje</h3>
+		<p>
+			Debido a que un monje dedica toda su vida a la vida monacal,
+			la naturaleza hermética del Templo de la Niebla y el enorme
+			esfuerzo al que someten su espíritu, los monjes
+			<strong>no pueden optar a profesiones</strong>.
+		</p>
+	<% else %>
+		<h3>Profesión prohibida: <%= prof.name %></h3>
+		<%= slim :'personajes/clases/clase/profesión' %>
+	<% end %>
 </p>

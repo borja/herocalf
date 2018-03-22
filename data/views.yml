@@ -94,6 +94,11 @@
     left2: "mapa/monturas"
     main: "mapa/mapa"
 -
+  ruta:  "valleniebla"
+  template:
+    left: "mapa/ciudades"
+    main: "mapa/valleniebla"
+-
   ruta:  "city"
   title: "view"
   template:

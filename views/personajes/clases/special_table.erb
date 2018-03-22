@@ -1,22 +1,24 @@
-<table>
-	<thead>
-		<tr>
-			<th width='30%'>Emblema</th>
-			<th>Nombre</th>
-			<th width='30%'>Salón</th>
-		</tr>
-	</thead>
-	<tbody>
-		<% clases[pj].each do |special| %>
+<div class="table-responsive">
+	<table class="table table-striped table-bordered table-hover table-sm">
+		<thead class="thead-dark">
 			<tr>
-				<td>
-					<a href="/habilidad/<%= special %>">
-						<img src="/images/clases/<%= special %>.png" alt=<%= special %> /, id='icon4'>
-					</a>
-				</td>
-				<td><a href='/especial/<%= special %>'><%= special.capitalize %></a></td>
-				<td><a href='/fama/<%= special %>'><%= fama(special) %></a></td>
+				<th width='30%'>Emblema</th>
+				<th>Nombre</th>
+				<th width='30%'>Salón</th>
 			</tr>
-		<% end %>
-	</tbody>
-</table>
+		</thead>
+		<tbody>
+			<% clases[pj].each do |special| %>
+				<tr>
+					<td>
+						<a href="/habilidad/<%= special %>">
+							<img src="/images/clases/<%= special %>.png" alt=<%= special %> /, id='icon4'>
+						</a>
+					</td>
+					<td><a href='/especial/<%= special %>'><%= special.capitalize %></a></td>
+					<td><a href='/fama/<%= special %>'><%= fama(special) %></a></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</div>

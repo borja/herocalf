@@ -81,3 +81,12 @@ gólem:
     description: "La armadura base será igual a los PC actuales.
                   Las piezas de armadura, confieren potencia en lugar
                   de armadura base. Solo puede usar armadura metálica"
+
+monje:
+  -
+    name:        "Sintonía"
+    description: "Permite cosechar Puntos Zen (PZ)"
+  -
+    name:        "Instrucción zen"
+    description: "Permite gastar 1 PZ a elegir: +1 dado blanco a tu
+                  siguiente ataque sin armas, sanarte 1PM ó 1PC a un aliado"
