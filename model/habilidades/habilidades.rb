@@ -1,11 +1,15 @@
 pjs = %w(
-  caminante brujo vengador hoplita beastslord bersérker
-  hechicero invocador conjurador paladín clérigo sacerdote
-  derviche arquero druida ladrón asesino nigromante
+  caminante brujo vengador
+  hoplita beastslord bersérker
+  hechicero invocador conjurador
+  paladín clérigo sacerdote
+  derviche arquero druida
+  ladrón asesino nigromante
   matador falangista ingeniero
   invicto cazadora chamán
   valquiria serafín daeva
   gárgola custodio títere
+  cervecero tejedor púgil
 )
 # TODO : This should be less redundant
 

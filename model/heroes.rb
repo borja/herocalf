@@ -29,7 +29,8 @@ def nomalize_pj(pj)
     '%C3%A1' => 'á',
     '%C3%A9' => 'é',
     '%C3%AD' => 'í',
-    '%C3%B3' => 'ó'
+    '%C3%B3' => 'ó',
+    '%C3%BA' => 'ú',
   }
-  pj.gsub(/%C3%A1|%C3%A9|%C3%AD|%C3%B3/) { |match| normalization[match] }
+  pj.gsub(/%C3%A1|%C3%A9|%C3%AD|%C3%B3|%C3%BA/) { |match| normalization[match] }
 end
