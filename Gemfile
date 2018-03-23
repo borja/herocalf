@@ -13,7 +13,7 @@ group :test do
 #  gem 'coveralls', '~> 0.8.21', require: false
   gem 'minitest',  '~> 5.11.1'
   gem 'rack-test', '~> 0.8.3'
-  gem 'rake',      '~> 12.3.0'
+  gem 'rake',      '~> 12.3.1'
   gem 'rspec',     '~> 3.7.0'
   gem 'simplecov', '~> 0.16.1', require: false
   gem 'yaml-lint', '~> 0.0.9'
