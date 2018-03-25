@@ -1,24 +1,29 @@
 <% soy = quiensoy(params[:param][1..-1]) %>
-<header>
-	<h2>Tu héroe preferente es: <%= soy.first.first %></h2>
-</header>
-<table>
-	<thead>
-		<tr>
-			<th colspan='2'>Personaje</th>
-			<th>Afinidad</th>
-		</tr>
-	<thead>
-	<tbody>
-		<% soy.each do |k,v| %>
+<h2>Tu héroe preferente es: <%= soy.first.first %></h2>
+
+<div class="table-responsive">
+	<table class="table table-striped table-bordered table-hover table-sm">
+		<thead class="thead-dark">
 			<tr>
-				<td>
-					<% img_path = "'../images/personajes/#{k}.png'"  %>
-					<img src=<%= img_path %> alt=<%= k %> , id='icon' />
-				</td>
-				<td><%= k.capitalize %></td>
-				<td><h2><%= v %></h2></td>
+				<th colspan='2'>Personaje</th>
+				<th>Afinidad</th>
 			</tr>
-		<% end %>
-	</tbody>
-</table>
+		<thead>
+		<tbody>
+			<% soy.each do |k,v| %>
+				<tr>
+					<td>
+						<% img_path = "/images/personajes/#{k}.png" %>
+						<img src=<%= img_path %> alt=<%= k %> , id='icon'>
+					</td>
+					<td>
+						<a href="/personaje/<%= k %>">
+							<%= k.capitalize %>
+						</a>
+					</td>
+					<td><h2><%= v %></h2></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</div>
