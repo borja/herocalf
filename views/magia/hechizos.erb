@@ -24,3 +24,15 @@
 		</tbody>
 	</table>
 </div>
+
+<nav aria-label="Hechizos elementales">
+	<ul class="pagination justify-content-center">
+		<% 4.times do |level| %>
+		<li class="page-item">
+			<a class="page-link" href="/<%= params[:view] %>/<%= level + 1 %>">
+				<%= level + 1 %>
+			</a>
+		</li>
+		<% end %>
+	</ul>
+</nav>

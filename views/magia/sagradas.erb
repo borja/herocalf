@@ -4,8 +4,8 @@
 </h2>
 
 <div class="table-responsive">
-	<table class='table'>
-		<thead>
+	<table class="table table-striped table-bordered table-hover table-sm">
+		<thead class="thead-dark">
 			<th>Icono</th>
 			<% unless %w(sombra arena hielo sangre).include?(params[:view]) %>
 				<th>Elemento</th>
@@ -19,3 +19,15 @@
 		</tbody>
 	</table>
 </div>
+
+<nav aria-label="Hechizos de sombras">
+	<ul class="pagination justify-content-center">
+		<% 4.times do |level| %>
+		<li class="page-item">
+			<a class="page-link" href="/<%= params[:view] %>/<%= level + 1 %>">
+				<%= level + 1 %>
+			</a>
+		</li>
+		<% end %>
+	</ul>
+</nav>
