@@ -4,14 +4,14 @@
 	<table class="table table-striped table-bordered table-hover table-sm">
 		<thead class="thead-dark">
 			<tr>
-				<th class='text-center'>#</th>
-				<th class='text-center' colspan=3>Héroe</th>
-				<th class='text-center'>Nivel</th>
-				<th class='text-center'><a href=/familiares>Familiar</a></th>
-				<th class='text-center'><a href=/profesiones>Profesión</a></th>
-				<th class='text-center'><a href=/armas>Armas</a></th>
-				<th class='text-center'><a href=/armaduras>Armadura</a></th>
-				<th class='text-center'>Reputación</th>
+				<th>#</th>
+				<th colspan=3>Héroe</th>
+				<th>Nivel</th>
+				<th><a href=/familiares>Familiar</a></th>
+				<th><a href=/profesiones>Profesión</a></th>
+				<th><a href=/armas>Armas</a></th>
+				<th><a href=/armaduras>Armadura</a></th>
+				<th>Reputación</th>
 			</tr>
 		</thead>
 
@@ -36,6 +36,5 @@
 				<%= erb :'heroes/hero', locals: { hero: hero, index: i } %>
 			<% end %>
 		</tbody>
-
 	</table>
 </div>
