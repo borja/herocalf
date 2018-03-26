@@ -135,6 +135,7 @@
   alcance:  0
   duracion: "E"
   name:     "necrullea"
+  tipo:     "Bendición - Aura"
   efecto:   "Causas miedo verdadero 6+. Además tus ataques desangran y
              no puedes ser objetivos de hechizos o efectos de sangrado"
   potencia: "+1 fuerza del sangrado"
@@ -142,3 +143,82 @@
   diablura: "Hechizar a los enemigos que huyen no consume el hechizo"
   ardid:    "Puedes ejecutar explosión sanguinolenta en los enemigos
              muertos por sangrado sin consumir hechizo ni acción"
+# Nivel 3
+-
+  id:       12
+  alcance:  "V"
+  duracion: "*"
+  name:     "Cráneo sangriento"
+  tipo:     "Maldición"
+  efecto:   "Cubres de lodo sangriento el cráneo de un único objetivo.
+             El objetivo pasa a estar bajo tu control, con un efecto
+             de sangrado. Si se pierde el sangrado, se libera."
+  potencia: "+1 efecto de sangrado"
+  maestría: "+1 máximo de objetivos que pueden estar afectados"
+  diablura: "El objetivo tiene vampirismo, con los mismos atributos que tú."
+  ardid:    "El objetivo puede lanzar hechizos de sangre como si fueras tú."
+-
+  id:       13
+  alcance:  "V"
+  duracion: 1
+  name:     "Ola de canibalismo"
+  tipo:     "Maldición"
+  efecto:   "Elige un tipo de criatura. Las criaturas del tipo elegido,
+             atacarán al objetivo de su tipo más cercano durante su turno.
+             Si no causaran daños, entrarían en locura. Pierdes 1PC por cada
+             criatura muerta."
+  potencia: "+1 tipo de criatura"
+  maestría: "+1 duración"
+  diablura: "Recupera 1PM por cada criatura canibalizada"
+  ardid:    "No pierdes PC por este efecto."
+-
+  id:       14
+  alcance:  "V"
+  duracion: 0
+  name:     "Cúpula de sangre"
+  tipo:     "Bendición"
+  efecto:   "Instinto: Añade 1 dado rojo de defensa por cada aliado herido.
+             Las águilas son éxitos de defensa de potencia 2. La calavera
+             causa un daño directo de sangre al atacante. (Interrumpe)"
+  potencia: "+1 potencia a los dados rojos"
+  maestría: "-1 al daño final recibido"
+  diablura: "Matar con la cúpula de sangre invoca un zombie a tu servicio."
+  ardid:    "+1 PC a los aliados heridos al defender con éxito."
+-
+  id:       15
+  alcance:  "V"
+  duracion: 1
+  name:     "Jardín de tumbas"
+  tipo:     "Bendición"
+  efecto:   "Los enemigos deberán atacar al objetivo. Al final del efecto,
+             por cada cadáver colindante, el objetivo recupera 2PC y tú
+             tantos hechizos de sangre cuya suma de niveles equivalga."
+  potencia: "+1 PC/víctima y +1/total de niveles"
+  maestría: "+1 objetivo"
+  diablura: "Toda la sala o pasillo será un jardín de tumbas"
+  ardid:    "Tras el efecto ejecuta explosión sanguinolenta en los cadáveres."
+-
+  id:       16
+  alcance:  "V"
+  duracion: 1
+  name:     "Desgarrar"
+  tipo:     "Bendición"
+  efecto:   "Añade un dado desangrador al ataque del objetivo de potencia
+             igual a tus hechizos de sangre disponibles."
+  potencia: "+1 potencia"
+  maestría: "+1 fuerza al dado"
+  diablura: "Puedes cambiar un efecto de sangrado para recuperar 1PC"
+  ardid:    "Matar al desgarrar ejecuta explosión sanguinolienta"
+-
+  id:       17
+  alcance:  "V"
+  duracion: 1
+  name:     "Volcán de sangre"
+  tipo:     "Evocación - Sala"
+  efecto:   "Ataca con un dado negro a todas las miniaturas de la sala por cada
+             herida que tengas. Los enemigos que defiendan con éxito obtienen
+             un efecto de sangrado. Tú obtienes 2 efectos de sangrado."
+  potencia: "+1 dado de ataque"
+  maestría: "+1 potencia al dado negro"
+  diablura: "Los enemigos que no defiendan también."
+  ardid:    "Si el volcán ha matado, ejecútalo de nuevo."
