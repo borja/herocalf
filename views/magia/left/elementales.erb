@@ -11,10 +11,21 @@
 	Recogen su poder de los vientos elementales de la magia.
 	Combinados se definen como <strong>Alta Magia</strong> en su versión armónica,
 	o bien <strong>Magia del Caos</strong>, en su versión distorsionada.
-	<div class="list-group">
-		<a class="list-group-item" href="/hechizos/1">Elementales de nivel 1</a>
-		<a class="list-group-item" href="/hechizos/2">Elementales de nivel 2</a>
-		<a class="list-group-item" href="/hechizos/3">Elementales de nivel 3</a>
-		<a class="list-group-item" href="/hechizos/4">Elementales de nivel 4</a>
-	</div>
 </p>
+
+<div class="alert alert-secondary" role="alert">
+	<h4>Lista de hechizos</h4>
+	<hr>
+	<p>Según su nivel:</p>
+	<nav aria-label="Hechizos elementales">
+		<ul class="pagination justify-content-center">
+			<% 4.times do |level| %>
+			<li class="page-item">
+				<a class="page-link" href="/hechizos/<%= level + 1 %>">
+					<%= level + 1 %>
+				</a>
+			</li>
+			<% end %>
+		</ul>
+	</nav>
+</div>
