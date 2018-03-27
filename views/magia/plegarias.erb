@@ -1,10 +1,14 @@
 <h2>
-	<%= params[:view].capitalize %> de nivel <%= params[:param].to_i %>
+	<%= params[:view].capitalize %>
+	de nivel <%= params[:param].to_i %>
 </h2>
 
+<hr>
+
 <div class="table-responsive">
-	<table class='table'>
-		<thead>
+	<table class="table table-striped table-bordered table-hover table-sm">
+		<thead class="thead-dark">
+			<th>#</th>
 			<th colspan='2'>Plegaria</th>
 			<th>Efecto</th>
 			<th>summun</th>
@@ -15,3 +19,15 @@
 		</tbody>
 	</table>
 </div>
+
+<nav aria-label="Magia sagrada">
+	<ul class="pagination justify-content-center">
+		<% 4.times do |level| %>
+		<li class="page-item">
+			<a class="page-link" href="/<%= params[:view] %>/<%= level + 1 %>">
+				<%= level + 1 %>
+			</a>
+		</li>
+		<% end %>
+	</ul>
+</nav>

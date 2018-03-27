@@ -1,8 +1,9 @@
 <% magias = send(params[:view]) %>
-<% magias.each do |s|%>
+<% magias.each_with_index do |s, i| %>
 	<% if params[:param].to_i == s.nivel %>
 		<% magic = s %>
 		<tr style=<%= s.color %>>
+			<td><%= i + 1 %></td>
 			<td><%= erb :'display/spell', locals: { spell: magic } %></td>
 			<td><%= s.name.capitalize %></td>
 			<td><%= s.efecto %></td>
