@@ -400,8 +400,7 @@
 -
   id:           79
   name:         "de luz de luna gibosa"
-  descripcion:
-                "5 cargas/reto<br>[+1 al matar no-muertos]<br>
+  descripcion:  "5 cargas/reto<br>[+1 al matar no-muertos]<br>
                 (1): +1 Ataque<br>(2): +2 PC<br>(1): Repetir una TS."
   tipo:         "sagrado"
 -

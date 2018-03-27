@@ -293,6 +293,11 @@
     main: "personajes/personajes"
     right: "personajes/razas/right/stats"
 -
+  ruta:  "clanes"
+  template:
+    main:  "personajes/clanes/clanes"
+    right: "manuales/derecha/personajes"
+-
   ruta:  "descendientes"
   template:
     left: "personajes/razas/left/links"
@@ -532,7 +537,6 @@
   ruta:  "vientos"
   title: "Poder mágico"
   template:
-    left: "magia/left/elementales"
     main: "magia/vientos"
     right: "magia/right/menu"
 -

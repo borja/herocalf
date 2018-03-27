@@ -1,0 +1,30 @@
+enanos:
+  - "La corte de Obsidiana"
+  - "Enanos de las colinas"
+  - "Eanos de las Tierras Salvajes"
+  - "Enanos de lava"
+elfos:
+  - "Altos elfos"
+  - "Elfos Oscuros"
+  - "Elfos Silvanos"
+  - "Elfos azules"
+bárbaros:
+  - "Tribu del Lobo"
+  - "Tribu del Oso"
+  - "Tribu de la Morsa"
+  - "Tribu del Águila"
+magos:
+  - "Mago colegiado"
+  - "Magisters"
+  - "Ordo Arcana"
+  - "Errantes"
+tieflings:
+  - "Baelitas"
+  - "Leviathanes"
+  - "Valari"
+  - "Patriarcas de Couronne"
+rakshasas:
+  - "Leónidos"
+  - "Tigris"
+  - "Panthera"
+  - "Leónidos negros"

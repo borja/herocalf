@@ -84,7 +84,8 @@
   requisitos:  [7, 8]
   name:        "Danza relampagueante"
   type:        "reactiva"
-  description: "Recuperas danza de la muerte al matar usando hoja relampagueante."
+  description: "Recuperas danza de la muerte al matar
+                usando hoja relampagueante."
 -
   id:          12
   nivel:       6
