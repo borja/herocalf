@@ -1,10 +1,11 @@
-<% criaturas.each do |criatura| %>
-	<div class="col-md-4 col-sm-6">
-		<h2 class='text-center'><%= criatura %></h2>	
-		<a href="/criatura/<%= criatura %>">
-			<img src="/images/criaturas/<%= criatura %>.png"
-					 alt="<%= criatura %>"
-					 class="img-fluid" />
-		</a>
-	</div>
-<% end %>
+<div class="card-columns">
+	<% criaturas.each do |criatura| %>
+		<div class="card">
+			<h2 class="card-title"><%= criatura %></h2>	
+			<a href="/criatura/<%= criatura %>">
+				<img src="/images/criaturas/<%= criatura %>.png"
+						 alt="<%= criatura %>" class="card-img-top">
+			</a>
+		</div>
+	<% end %>
+</div>

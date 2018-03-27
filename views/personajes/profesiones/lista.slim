@@ -1,6 +1,6 @@
 .table-responsive
-	table class='table'
-		thead
+	table class="table table-striped table-bordered table-hover table-sm"
+		thead class="thead-dark"
 			tr
 				th colspan="2" Profesión
 				th Hándicap
@@ -10,11 +10,11 @@
 				tr
 					td
 						a href="/profesion/#{p.name}"
-							img src="#{p.img_path}" alt="#{p.name}" id='icon2'
+							img src="#{p.img_path}" alt="#{p.name}" id='icon'
 					td
 						a href="/profesion/#{p.name}"
 							== p.name
 					td
 						a href="/personaje/#{p.imped}"
-							img src="/images/personajes/#{p.imped}.png" alt="#{p.imped}" id="icon2"
+							img src="/images/personajes/#{p.imped}.png" alt="#{p.imped}" id="icon"
 					td == p.why

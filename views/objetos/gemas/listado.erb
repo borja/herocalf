@@ -1,6 +1,7 @@
 <h2>Calibre de gemas</h2>
-<a href='/gemas' class="img-fluid">
-	<img src='/images/nav/gemas.png' alt='Gemas'/>
+<hr>
+<a href='/gemas'>
+	<img src='/images/nav/gemas.png' alt='Gemas' class="img-fluid">
 </a>
 <hr>
 <p>
@@ -9,12 +10,14 @@
 	y mejores son sus propiedades mágicas.
 </p>
 
-<h3>Listado de calibres</h3>
 <p>
-	<ul class="link-list">
+	<h3>Listado de calibres</h3>
+	<div class="list-group">
 		<% 6.times do |calibre| %>
 			<% c = gema_calidades[calibre] %>
-			<li><a href='/calibre/<%= c['calibre'] %>'><%= c['name'] %></a></li>
+			<a class="list-group-item" href='/calibre/<%= c['calibre'] %>'>
+				<%= c['name'] %>
+			</a>
 		<% end %>
-	</ul>
+	</div>
 </p>
