@@ -139,7 +139,7 @@
   id:          16
   nivel:       5
   requisitos:  [10, 12]
-  name:        "Requiem"
+  name:        "Réquiem"
   type:        "Activa"
   coste:       "1PM / turno"
   description: "Nunca terminas de morir mientras tengas Mortaja de Sombras.
