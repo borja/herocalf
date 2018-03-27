@@ -1,2 +1,11 @@
-table
-	thead
+.table-responsive
+	table class="table table-striped table-bordered table-hover table-sm"
+		thead class="thead-dark"
+			tr
+				th Personaje
+				th colspan="4" Clanes
+			- clanes.each do |pj|
+				tr
+					td == pj.first
+					- pj.last.each do |clan|
+						td == clan

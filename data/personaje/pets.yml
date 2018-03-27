@@ -282,3 +282,10 @@
   lacra:      "Comparte todas las lacras de los demás familiares torpes"
   sex:        "female"
   aumento:    "Un familiar objetivo, compartirá su bono/lacra con los demás."
+-
+  id:         36
+  name:       "carpintero"
+  personajes: ["elohim", "rakshasa"]
+  bono:       "Habiendo mobiliario de madera, las plegarias son súmmun"
+  lacra:      "Habiendo mobiliario de madera, no puedes entrar en sigilo."
+  aumento:    "+1 desactivar trampas en cofres y puertas"

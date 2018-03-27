@@ -1,12 +1,12 @@
 enanos:
-  - "La corte de Obsidiana"
   - "Enanos de las colinas"
+  - "La corte de Obsidiana"
   - "Eanos de las Tierras Salvajes"
   - "Enanos de lava"
 elfos:
+  - "Elfos Silvanos"
   - "Altos elfos"
   - "Elfos Oscuros"
-  - "Elfos Silvanos"
   - "Elfos azules"
 bárbaros:
   - "Tribu del Lobo"
