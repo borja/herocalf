@@ -1,14 +1,16 @@
-<table>
-	<thead>
-		<th>Posición</th>
-		<th>Bonificación</th>
-	</thead>
-	<tbody>
-		<% g.fits.keys.each_with_index do |posicion, i| %>
-			<tr>
-				<td><%= posicion %></td>
-				<td><%= g.fits.values[i] %></td>
-			</tr>
-		<% end %>
-	</tbody>
-</table>
+<div class="table-responsive">
+	<table class="table table-striped table-bordered table-hover table-sm">
+		<thead class="thead-dark">
+			<th>Posición</th>
+			<th>Bonificación</th>
+		</thead>
+		<tbody>
+			<% g.fits.keys.each_with_index do |posicion, i| %>
+				<tr>
+					<td><%= posicion %></td>
+					<td><%= g.fits.values[i] %></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</div>

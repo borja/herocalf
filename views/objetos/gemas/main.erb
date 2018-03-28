@@ -4,12 +4,17 @@
 <%= erb :'objetos/gemas/detalle', locals: { g: g } %>
 
 <h3>Características</h3>
-<ul>
-	<li>
-		<b>Calibre</b>: (<%= g.calidad["calibre"] %>) <%= g.calidad["name"] %>
-	</li>
-	<li><b>Color</b>: Por hacer...</li>
-</ul>
+<dl class="row">
+	<dt class="col-sm-3">Calibre</dt>
+	<dd class="col-sm-3">
+		<a href="/calibre/<%= params[:param].to_i + 1 %>">
+			(<%= g.calidad["calibre"] %>) <%= g.calidad["name"] %>
+		</a>
+	</dd>
+
+	<dt class="col-sm-3">Color</dt>
+	<dd class="col-sm-3"><%= g.color %></dd>
+</dl>
 
 <h3>Propiedades mágicas</h3>
 <p><%= erb :'objetos/gemas/propiedades', locals: { g: g } %></p>

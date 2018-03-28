@@ -1,6 +1,6 @@
 # Engarce = objetos engarzables: gemas, joyas y runas
 class Engarce < Hash
-  attr_accessor :id, :name, :fits
+  attr_accessor :id, :name, :fits, :color
 
   def initialize(args)
     args.each do |k, v|

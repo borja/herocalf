@@ -1,21 +1,23 @@
-<table>
-	<thead>
-		<tr>
-			<th colspan=2>Héroe</th>
-			<th>Jugador</th>
-			<th>Disponibles</th>
-		</tr>
-	</thead>
-	<tbody>
-		<% g.disponibles.uniq.each do |h| %>
+<div class="table-responsive">
+	<table class="table table-striped table-bordered table-hover table-sm">
+		<thead class="thead-dark">
 			<tr>
-				<td><a href='/hero/<%= h %>'>
-						<%= erb :'display/portrait', locals: { h: hero(h) } %></a>
-				</td>
-				<td><%= hero(h).name %></td>
-				<td><%= hero(h).jugador %></td>
-				<td><%= hero(h).tesoro['gemas'].count(g.id) %></td>
+				<th colspan=2>Héroe</th>
+				<th>Jugador</th>
+				<th>Disponibles</th>
 			</tr>
-		<% end %>
-	</tbody>
-</table>
+		</thead>
+		<tbody>
+			<% g.disponibles.uniq.each do |h| %>
+				<tr>
+					<td><a href='/hero/<%= h %>'>
+							<%= erb :'display/portrait', locals: { h: hero(h) } %></a>
+					</td>
+					<td><%= hero(h).name %></td>
+					<td><%= hero(h).jugador %></td>
+					<td><%= hero(h).tesoro['gemas'].count(g.id) %></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</div>
