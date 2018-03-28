@@ -1,7 +1,9 @@
-<header><h2>Bestiario</h2></header>
-<a href='/criaturas' class="feature-image">
-	<img src='/images/nav/bestiario.png' alt='Bestiario' /, id='box'>
+<h2>Bestiario</h2>
+<hr>
+<a href="/criaturas">
+	<img src="/images/nav/bestiario.png" alt='Bestiario' class="img-fluid">
 </a>
+
 <ul class="link-list">
 	<% criaturas.each do |c| %>
 		<li><a href="/criatura/<%= c %>"><%= c %></a></li>

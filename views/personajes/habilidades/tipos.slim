@@ -1,0 +1,42 @@
+.table-responsive
+	table class="table table-striped table-bordered table-hover table-sm"
+		thead class="thead-dark"
+			th Tipo
+			th Descripción
+		tbody
+			tr
+				td Pasiva
+				td 
+					| No requiere ninguna decisión por parte del jugador, 
+					| su efecto siempre está activo
+			tr
+				td Activa
+				td 
+					| Son habilidades que requieren un coste. 
+					| Si consume un tipo de puntos de determinado (ej. cuerpo) 
+					| se puede pagar tantas veces como puntos se disponga.
+			tr
+				td Disparada
+				td 
+					| Tiene efecto cuando sucede un evento, de forma inmediata. 
+					| En el caso de que se produzcan varias simultáneas, 
+					| el orden de ejecución es por iniciativa de la ronda.
+			tr
+				td Única
+				td 
+					| Solo se puede usar una vez por reto. Todas las habilidades 
+					| únicas tienen rango 6, por lo que se podrían usar más de una vez. 
+					| Además las habilidades reactivas, podrían permitir recuperarlas.
+			tr
+				td Reactiva
+				td 
+					| Similar a las disparadas, pero el efecto siempre supone 
+					| la recuperación de un punto o habilidad única.
+			tr
+				td Declarativa
+				td 
+					| Supone declarar (durante el turno del jugador) una habilidad 
+					| que tendrá bien un efecto disparado, reactivo o bien un coste.
+			tr
+				td Invocación
+				td Una habilidad que invoca un aliado para luchar junto con el personaje.

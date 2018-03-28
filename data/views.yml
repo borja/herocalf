@@ -128,7 +128,6 @@
 -
   ruta:  "habilidades"
   template:
-    left:  "personajes/principal/menu"
     main:  "personajes/habilidades/reglas"
     right: "manuales/derecha/personajes"
 -

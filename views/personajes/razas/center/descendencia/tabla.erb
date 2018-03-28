@@ -6,7 +6,10 @@
 			<% razas.each do |r| %>
 				<% next if r.last.last == 'humano' %>
 				<% next if r.last.last == 'parangón' %>
-				<th><img src=../images/personajes/<%= r.first %>.png alt="<%= r.first %>" /, id='icon'></th>
+				<th>
+					<img src="/images/personajes/<%= r.first %>.png"
+							 alt="<%= r.first %>" id="icon">
+				</th>
 			<% end %>
 		</tr>
 	</thead>
@@ -18,7 +21,8 @@
 			<td>50%</td>
 			<td>50%</td>
 			<td><i class="fas fa-ban"></i></td>
-			<td><i class="fas fa-ban"></i></td>
+			<td><i class="fas fa-neuter"></i></td>
+			<td><i class="fas fa-neuter"></i></td>
 		</tr>
 		<tr>
 			<th><h3><i class="fas fa-mars"></i></h3></th>
@@ -27,7 +31,8 @@
 			<td><i class="fas fa-ban"></i></td>
 			<td><i class="fas fa-ban"></i></td>
 			<td><i class="fas fa-ban"></i></td>
-			<td><i class="fas fa-ban"></i></td>
+			<td><i class="fas fa-neuter"></i></td>
+			<td><i class="fas fa-neuter"></i></td>
 		</tr>
 		<tr>
 			<th><img src='images/personajes/elfa.png' alt="elfa" /, id='icon'></th>
@@ -36,7 +41,8 @@
 			<td><img src='images/personajes/elfo.png' alt="elfo" /, id='icon'></td>
 			<td>50%</td>
 			<td><i class="fas fa-ban"></i></td>
-			<td><i class="fas fa-ban"></i></td>
+			<td><i class="fas fa-neuter"></i></td>
+			<td><i class="fas fa-neuter"></i></td>
 		</tr>
 		<tr>
 			<th><img src='images/personajes/tieflina.png' alt="tieflina" /, id='icon'></th>
@@ -45,7 +51,8 @@
 			<td>50%</td>
 			<td><img src='images/personajes/tiefling.png' alt="tiefling" /, id='icon'></td>
 			<td>50%</td>
-			<td><i class="fas fa-ban"></i></td>
+			<td><i class="fas fa-neuter"></i></td>
+			<td><i class="fas fa-neuter"></i></td>
 		</tr>
 		<tr>
 			<th><img src='images/personajes/rakshasi.png' alt="rakshasi" /, id='icon'></th>
@@ -54,16 +61,8 @@
 			<td><i class="fas fa-ban"></i></td>
 			<td>50%</td>
 			<td><img src='images/personajes/rakshasa.png' alt="rakshasa" /, id='icon'></td>
-			<td><i class="fas fa-ban"></i></td>
-		</tr>
-		<tr>
-			<th><img src='images/personajes/elohim.png' alt="elohim" /, id='icon'></th>
-			<td><i class="fas fa-ban"></i></td>
-			<td><i class="fas fa-ban"></i></td>
-			<td><i class="fas fa-ban"></i></td>
-			<td><i class="fas fa-ban"></i></td>
-			<td><i class="fas fa-ban"></i></td>
-			<td><i class="fas fa-ban"></i></td>
+			<td><i class="fas fa-neuter"></i></td>
+			<td><i class="fas fa-neuter"></i></td>
 		</tr>
 	</tbody>
 </table>

@@ -1,49 +1,60 @@
 <h2>Engendrando descendencia</h2>
 <hr>
 
-<h3>Usar un descendiente</h3>
 <p>
+	<h3>Usar un descendiente</h3>
 	Morir, usar al hijo, herencia, mujeres vs hombre, profesiones, familiares
 	y muchos links en este párrafo.
 </p>
 
-<h3>Amor entre personajes</h3>
 <p>
+	<h3>Amor entre personajes</h3>
 	Esto explica los corazoncitos y los gemelos
 </p>
 
-<h3>Pagar</h3>
-<%= erb :'personajes/razas/center/descendencia/pagar' %>
+<p>
+	<h3>Pagar</h3>
+	<%= erb :'personajes/razas/center/descendencia/pagar' %>
+</p>
 
-<h3>Tabla de emparejamientos</h3>
-<div class="table-responsive">
-	<%= erb :'personajes/razas/center/descendencia/tabla' %>
-</div>
-
-<div class="alert alert-dark text-left" role="alert">
-	<h4 class="alert-heading">
-		<i class="fas fa-mars"></i>
-		Descendientes enanos
-	</h4>
-	<p>
-		Los enanos solo pueden ser varones. La única enana conocida es
-		<a href='/pnj/Luria'>La reina Luria</a>. No obstante, son capaces
-		mediante un <strong>procedimiento secreto</strong>,
-		de tener descendientes sin emparejarse.
-	</p>
-	<hr>
-	<p class="mb-0">
-		A su vez, pueden tener
-		descendencia de la forma habitual con otras razas permitidas.
-	</p>
-</div>
-<div class="alert alert-dark text-left" role="alert">
-	<h4 class="alert-heading">
-		<i class="fas fa-neuter"></i>
-		Descendientes gólems
-	</h4>
-	<p>
-		Los gólems son criaturas primigenias y no pueden tener descendientes
-		de la forma habitual. Deben crear fragmentos de su núcleo.
-	</p>
-</div>
+<p>
+	<h3>Tabla de emparejamientos</h3>
+	<div class="table-responsive">
+		<%= erb :'personajes/razas/center/descendencia/tabla' %>
+	</div>
+	<div class="alert alert-dark text-left" role="alert">
+		<h4 class="alert-heading">
+			<i class="fas fa-mars"></i>
+			Descendientes enanos
+		</h4>
+		<p>
+			Los enanos solo pueden ser varones. La única enana conocida es
+			<a href='/pnj/Luria'>La reina Luria</a>. No obstante, son capaces
+			mediante un <strong>procedimiento secreto</strong>,
+			de tener descendientes sin emparejarse.
+		</p>
+		<hr>
+		<p class="mb-0">
+			A su vez, pueden tener
+			descendencia de la forma habitual con otras razas permitidas.
+		</p>
+	</div>
+	<div class="alert alert-dark text-left" role="alert">
+		<h4 class="alert-heading">
+			<i class="fas fa-neuter"></i>
+			Descendientes
+			<a href="/raza/gólem">gólems</a> y
+			<a href="/raza/elohim">elohim</a>
+		</h4>
+		<p>
+			Los gólems y los elohim son criaturas primigenias y no pueden
+			tener descendientes de la forma habitual.
+		</p>
+		<hr>
+		<p class="mb-0">
+			Los <strong>elohim</strong>
+			fueron las primeras criaturas de la creación y para reproducir un
+			<strong>gólem</strong> Es necesario fragmentos de su núcleo de poder.
+		</p>
+	</div>
+</p>
