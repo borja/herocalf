@@ -472,7 +472,7 @@
 -
   ruta:  "jugadores"
   template:
-    main: "personajes/jugadores"
+    main:  "heroes/jugadores"
     right: "heroes/sidebar"
 -
   ruta:  "heroes"

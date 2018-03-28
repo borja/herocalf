@@ -1,0 +1,24 @@
+.table-responsive
+	table class="table table-striped table-bordered table-hover table-sm"
+		thead class="thead-dark"
+			tr
+				th #
+				th Honor
+				th Jugador
+				th Personajes
+		tbody
+			- jugadores.sort_by { |j| honor(j) }.reverse.each_with_index do |j, i|
+				tr
+					td == i + 1
+					td == honor(j)
+					td == j
+					td
+						table
+							tbody
+								tr
+									- heros.each do |hero|
+										- if hero.jugador == j
+											td 
+												a href="/hero/#{hero.id}"
+													== erb :'display/portrait', locals: { h: hero }
+												== hero.nivel
