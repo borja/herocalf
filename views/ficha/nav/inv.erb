@@ -1,0 +1,27 @@
+<% h = hero(params[:param].to_i) %>
+
+<% 3.times do |i| %>
+	<div class="col-md-4">
+		<%= erb :"ficha/inventario/columna#{i+1}", locals: { heroe: h } %>
+	</div>
+<% end %>
+<% if h.abalorios && h.piezas && h.materiales %>
+	<div class="row">
+		<div class="col-md-4"><%= slim :'ficha/abalorios'  %></div>
+		<div class="col-md-4"><%= slim :'ficha/piezas'     %></div>
+		<div class="col-md-4"><%= slim :'ficha/materiales' %></div>
+	</div>
+<% end %>
+
+<% if h.pociones && h.pergaminos %>
+<div class="row">
+  <div class="col-md-6"><%= slim :'ficha/pociones'   %></div>
+  <div class="col-md-6"><%= slim :'ficha/pergaminos' %></div>
+</div>	
+<% end %>
+
+<% if h.tesoro %>
+	<div class="row">
+		<div class="col-md-12"><%= slim :'ficha/tesoros' %></div>
+	</div>
+<% end %>

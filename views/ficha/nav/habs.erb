@@ -1,0 +1,6 @@
+<% h = hero(params[:param].to_i) %>
+
+<%= slim :'ficha/habilidades', locals: { heroe: h } %>
+<% if h.master %>
+	<%= slim :'ficha/master', locals: { heroe: h } %>
+<% end %>

@@ -1,86 +1,39 @@
-<div class="row">	
-	<div class="col-sm-3">
-		<%= erb :'ficha/izquierda/izquierda' %>
-	</div>
-	<div class="col-sm-6">
-		<%= erb :'ficha/centro/jugador' %>
-		<%= erb :'ficha/centro/lore' %>
-		<%= erb :'ficha/centro/combate' %>
-		<%= erb :'ficha/centro/resistencias' %>
-	</div>
-	<div class="col-sm-3">
-		<%= erb :'ficha/derecha/derecha' %>
-	</div>
-</div>
-
 <% h = hero(params[:param].to_i) %>
 
-<div class="row">	
+<div class="row">
 	<div class="col-lg-12">
+		<%= erb :'ficha/nav/tabs' %>
+		<div class="tab-content" id="myTabContent">
 
-		<ul id="myTab" class="nav nav-tabs nav-justified">
-				<li class="nav-item">
-					<a href="#stats" class="nav-link active" data-toggle="tab">
-						<i class="fa fa-map-signs fa-fw" aria-hidden="true"></i>
-						Estadísticas
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="#equipo" class="nav-link" data-toggle="tab">
-						<i class="fas fa-shield-alt"></i>
-						Equipo
-					</a>
-				</li>
-				<li class="nav-item">
-					<a href="#habs" class="nav-link" data-toggle="tab">
-						<i class="fa fa-server fa-rotate-180 fa-fw" aria-hidden="true"></i>
-						Habilidades
-					</a>
-				</li>
-		</ul>
-
-		<div id="myTabContent" class="tab-content">
-			<div class="tab-pane fade active in" id="stats">
-				TBD
-			</div>
-			<div class="tab-pane fade" id="equipo">
-				<% 3.times do |i| %>
-					<div class="col-md-4">
-						<%= erb :"ficha/inventario/columna#{i+1}", locals: { heroe: h } %>
-					</div>
-				<% end %>
-				<% if h.abalorios && h.piezas && h.materiales %>
-					<div class="row">
-						<div class="col-md-4"><%= slim :'ficha/abalorios'  %></div>
-						<div class="col-md-4"><%= slim :'ficha/piezas'     %></div>
-						<div class="col-md-4"><%= slim :'ficha/materiales' %></div>
-					</div>
-				<% end %>
-
-				<% if h.pociones && h.pergaminos %>
+			<div class="tab-pane fade show active" id="stats" role="tabpanel" aria-labelledby="stats-tab">
 				<div class="row">
-				  <div class="col-md-6"><%= slim :'ficha/pociones'   %></div>
-				  <div class="col-md-6"><%= slim :'ficha/pergaminos' %></div>
-				</div>	
-				<% end %>
-
-				<% if h.tesoro %>
-					<div class="row">
-						<div class="col-md-12"><%= slim :'ficha/tesoros' %></div>
-					</div>
-				<% end %>
+					<%= erb :'ficha/nav/stats' %>
+				</div>
 			</div>
-			<div class="tab-pane fade" id="habs">
-				<%= slim :'ficha/habilidades', locals: { heroe: h } %>
-				<% if h.master %>
-					<div class="row">
-						<div class="col-md-12">
-							<%= slim :'ficha/master', locals: { heroe: h } %>
-						</div>
-					</div>
-				<% end %>
+
+			<div class="tab-pane fade" id="lore" role="tabpanel" aria-labelledby="lore-tab">
+				<div class="row">
+					<%= erb :'ficha/nav/lore' %>
+				</div>
+			</div>
+
+			<div class="tab-pane fade" id="inv" role="tabpanel" aria-labelledby="inv-tab">
+				<div class="row">
+					<%= erb :'ficha/nav/inv' %>
+				</div>
+			</div>
+
+			<div class="tab-pane fade" id="habs" role="tabpanel" aria-labelledby="habs-tab">
+				<div class="row">
+					<%= erb :'ficha/nav/inv' %>
+				</div>
+			</div>
+
+			<div class="tab-pane fade" id="magia" role="tabpanel" aria-labelledby="magia-tab">
+				<div class="row">
+					<%= erb :'ficha/nav/magia' %>
+				</div>
 			</div>
 		</div>
-
 	</div>
 </div>
