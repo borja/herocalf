@@ -1,17 +1,16 @@
 <% h = hero(params[:param].to_i) %>
 
-<h2><%= h.titulo %></h2>
-
-<a href="/hero/<%= h.id %>">
-	<img src=<%= h.big_path %>
-			 alt="<%= h.name %>"
-			 class="img-fluid" />
-</a>
-
-<% if h.historia %>
-	<p>
-		<a href="/historia/<%= h.id %>" %>
-			Historia de <%= h.name %>
-		</a>
-	</p>
-<% end %>
+<div class="card">
+	<a href="/hero/<%= h.id %>">
+		<img class="card-img-top" src="<%= h.big_path %>" alt="<%= h.name %>">
+	</a>
+	<div class="card-body">
+		<h5 class="card-title"><%= h.name %></h5>
+		<p class="card-text">
+			<%= h.titulo %>
+			<% if h.muerto %>
+					<small>R.I.P</small>
+			<% end %>
+		</p>
+	</div>
+</div>
