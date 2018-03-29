@@ -14,10 +14,7 @@
   ruta:  "hero"
   title: "view"
   template:
-    left:  "ficha/izquierda/izquierda"
-    main:  "ficha/centro/main"
-    right: "ficha/derecha/derecha"
-    row2:  "ficha/ficha"
+    main:  "ficha/ficha"
 -
   ruta:  "renegado"
   title: "view"

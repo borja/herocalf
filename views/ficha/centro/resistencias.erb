@@ -1,8 +1,8 @@
 <% h = hero(params[:param].to_i) %>
 
 <div class="table-responsive">
-		<table class="table">
-		<thead>
+	<table class="table table-striped table-bordered table-hover table-sm">
+		<thead class="thead-dark">
 			<tr><% resistencias.each do |r| %>	
 					<th><%= erb :'display/display', locals: {
 							title:       r['nombre'], 

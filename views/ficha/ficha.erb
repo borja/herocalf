@@ -1,10 +1,21 @@
+<div class="row">	
+	<div class="col-sm-3">
+		<%= erb :'ficha/izquierda/izquierda' %>
+	</div>
+	<div class="col-sm-6">
+		<%= erb :'ficha/centro/jugador' %>
+		<%= erb :'ficha/centro/lore' %>
+		<%= erb :'ficha/centro/combate' %>
+		<%= erb :'ficha/centro/resistencias' %>
+	</div>
+	<div class="col-sm-3">
+		<%= erb :'ficha/derecha/derecha' %>
+	</div>
+</div>
+
 <% h = hero(params[:param].to_i) %>
 
-<div class="row">
-	<div class="col-lg-12">
-			<h2 class="page-header">Ficha de personaje</h2>
-	</div>
-	
+<div class="row">	
 	<div class="col-lg-12">
 
 		<ul id="myTab" class="nav nav-tabs nav-justified">
@@ -38,40 +49,38 @@
 						<%= erb :"ficha/inventario/columna#{i+1}", locals: { heroe: h } %>
 					</div>
 				<% end %>
+				<% if h.abalorios && h.piezas && h.materiales %>
+					<div class="row">
+						<div class="col-md-4"><%= slim :'ficha/abalorios'  %></div>
+						<div class="col-md-4"><%= slim :'ficha/piezas'     %></div>
+						<div class="col-md-4"><%= slim :'ficha/materiales' %></div>
+					</div>
+				<% end %>
+
+				<% if h.pociones && h.pergaminos %>
+				<div class="row">
+				  <div class="col-md-6"><%= slim :'ficha/pociones'   %></div>
+				  <div class="col-md-6"><%= slim :'ficha/pergaminos' %></div>
+				</div>	
+				<% end %>
+
+				<% if h.tesoro %>
+					<div class="row">
+						<div class="col-md-12"><%= slim :'ficha/tesoros' %></div>
+					</div>
+				<% end %>
 			</div>
 			<div class="tab-pane fade" id="habs">
 				<%= slim :'ficha/habilidades', locals: { heroe: h } %>
+				<% if h.master %>
+					<div class="row">
+						<div class="col-md-12">
+							<%= slim :'ficha/master', locals: { heroe: h } %>
+						</div>
+					</div>
+				<% end %>
 			</div>
 		</div>
 
 	</div>
 </div>
-
-<% if h.abalorios && h.piezas && h.materiales %>
-	<div class="row">
-	  <div class="col-md-4"><%= slim :'ficha/abalorios'  %></div>
-	  <div class="col-md-4"><%= slim :'ficha/piezas'     %></div>
-	  <div class="col-md-4"><%= slim :'ficha/materiales' %></div>
-	</div>
-<% end %>
-
-<% if h.pociones && h.pergaminos %>
-<div class="row">
-  <div class="col-md-6"><%= slim :'ficha/pociones'   %></div>
-  <div class="col-md-6"><%= slim :'ficha/pergaminos' %></div>
-</div>	
-<% end %>
-
-<% if h.tesoro %>
-	<div class="row">
-		<div class="col-md-12"><%= slim :'ficha/tesoros' %></div>
-	</div>
-<% end %>
-
-<% if h.master %>
-	<div class="row">
-		<div class="col-md-12">
-			<%= slim :'ficha/master', locals: { heroe: h } %>
-		</div>
-	</div>
-<% end %>
