@@ -1,7 +1,8 @@
 <%= erb :'ficha/inventario/amuletos' %>
+
 <div class="table-responsive">
-	<table class="table">
-		<thead>
+	<table class="table table-striped table-bordered table-hover table-sm">
+		<thead class="thead-dark">
 			<tr><th colspan=2 class="text-center">Bisutería</th></tr>
 			<% fields[2].each do |field| %>
 				<%= erb :'ficha/inventario/field', locals: { fits: field } %>
