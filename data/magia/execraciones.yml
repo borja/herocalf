@@ -85,3 +85,97 @@
   efecto:   "+1 defensa. Cada turno puedes sanar 1PC a un aliado"
   summun:   "+2 vs Tenebro. +1 de ataque"
   chakra:   "1PM a cualquier aliado que defienda con éxito."
+# Nivel 2
+-
+  id:       8
+  duracion: "E"
+  potencia: 2
+  alcance:  2
+  name:     "Sentina mortis, Sentina Vitae"
+  tipo:     "Evocación"
+  efecto:   "El clérigo extiende las manos emitiendo una energía profana.
+             (Reduce su defensa a su armadura) causa 2 daños (defendibles),
+             Sanará tantos PC como daños causados finalmente."
+  summun:   "Restaura 1PM por cada enemigo destruido."
+  chakra:   "Puedes renunciar a tu movimiento para repetir el efecto."
+-
+  id:       9
+  duracion: 0
+  potencia: 3
+  alcance:  2
+  name:     "Tentáculo oscuro"
+  tipo:     "Evocación"
+  efecto:   "8 tentáculos de dos casillas atacan con 3 dados morados
+             a cada casilla (incluye aliados) de su recorrido."
+  summun:   "Si asesina a un objetivo, del objetivo brota otro tentáculo."
+  chakra:   "Los tentáculos persisten (D) en tu lado, al asesinar."
+-
+  id:       10
+  name:     "Sacrilegio"
+  tipo:     "Evocación - Sala"
+  duracion: "PC"
+  potencia: 1
+  alcance:  "V"
+  efecto:   "Quién invierta 1 turno y 1PC en adorar al Maligno,
+             recuperará 2 PM, 1 hechizo, 1 execración o 1 habilidad de reto,
+             a su elección. Rezar impide defender."
+  summun:   "Rezar permite ejecutar execraciones y no consume cuerpo."
+  chakra:   "Si todos los aliados rezan, invoca un demonio aleatorio (nivel 2)"
+-
+  id:       11
+  duracion: "E"
+  potencia: 2
+  alcance:  "V"
+  name:     "Decreto oscuro"
+  tipo:     "Maldición"
+  efecto:   "1 objetivo reduce X su armadura, (X = mente del lanzador)"
+  summun:   "El objetivo recibe X dados morados de ataque defendible."
+  chakra:   "Si estás bajo los efectos de un aura, el alcance es a todos
+             los objetivos (V)"
+-
+  id:       12
+  duracion: "E"
+  potencia: 4
+  alcance:  0
+  name:     "Archidemonio"
+  tipo:     "Invocación"
+  efecto:   "Invocas a un archidemonio para luchar a tu lado.
+             (PC= Tus PM, Ataque: 3 + 2(látigo), Defensa: 5, esc. negros)"
+  summun:   "+1 execración por cada pieza del archidemonio"
+  chakra:   "Odia y el látigo es flamígero"
+-
+  id:       13
+  duracion: 0
+  potencia: 1
+  alcance:  1
+  name:     "Latrocinio"
+  tipo:     "Maldición"
+  efecto:   "Robas una habilidad única al objetivo. Si no dispone,
+             Debe entregarte la minusmitad de sus puntos de cuerpo."
+  summun:   "Puedes jugar la habilidad instantánea y es la plusmitad."
+  chakra:   "Puedes ejecutar ambos efectos (si es posible)"
+-
+  id:       14
+  duracion: "∞"
+  potencia: 1
+  alcance:  0
+  name:     "Forma demoníaca"
+  tipo:     "Superchería"
+  efecto:   "Esta plegaria se puede lanzar solamente con los PC intactos.
+             En forma demoníaca se puede lanzar execraciones sin coste. 
+             -1d6 PM/turno. La forma retorna al original, al no causar daños."
+  summun:   "Odias en forma demoníaca. Ataque desarmado: 2 dados morados."
+  chakra:   "Bajo los efectos de himno infernal, Sacrilegio y
+             lágrimas del verdugo, un guardián/archidemonio, se puede
+             sacrificar para disponer de un ankh de resurrección este reto."
+-
+  id:       15
+  name:     "Asesinato"
+  tipo:     "Maldición"
+  duracion: 0
+  potencia: 1
+  alcance:  1
+  efecto:   "1d6 execraciones: Destruye al objetivo herido. Si consumes más
+             execraciones que las diponibles, eres destruido tú."
+  summun:   "Asesinato nunca puede matarte"
+  chakra:   "Si tú estás intacto, el objetivo puede estarlo también"
