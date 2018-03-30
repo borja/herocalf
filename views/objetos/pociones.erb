@@ -1,6 +1,9 @@
+<h2>Pociones</h2>
+<hr>
+
 <div class="table-responsive">
-	<table class="table">
-		<thead>
+	<table class="table table-striped table-bordered table-hover table-sm">
+		<thead class="thead-dark">
 			<th colspan='2'>Poción</th>
 			<th>Precio</th>
 			<th>Descripción</th>
@@ -11,7 +14,10 @@
 				<tr>
 					<td><img src=<%= p.img_path%> alt=<%=p.name%>, id='icon' /></td>
 					<td>Poción de <%= p.name %></td>
-					<td><%= p.precio %></td>
+					<td style="text-align:right;">
+						<%= p.precio %>
+						<i class="fas fa-database text-warning"></i>
+					</td>
 					<td><%= p.efecto %></td>
 				</tr>
 			<% end %>

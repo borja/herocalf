@@ -1,41 +1,44 @@
-<table>
-	<thead>
-		<th colspan='2'>Material</th>
-		<th>Disponibles</th>
-		<th>Usado en ...</th>
-	</thead>
-	<tbody>
-		<% materiales.each do |m| %>
-			<% mat = Material.new(m) %>
-			<tr>
-				<td><%= erb :'display/display', locals: {
-						title:       mat.name, 
-						path:        mat.img_path,
-						description: mat.description} %>
-				</td>
-				<td><%= mat.name %></td>
-				<td><%= erb :'display/bazar', locals: {
-						bazar:   mat.disponibles, 
-						item_id: mat.id, 
-						engarce: "materiales" } %>
-				</td>
-				<td>
-					<table>
-						<tbody>
-							<tr>
-								<% mat.usado_en.each do |uso| %>
-									<td>
-										<%= erb :'display/display', locals: {
-											title:       uso[:receta]['name'],
-											path:        "'../../images/profesiones/#{profes[uso[:prof]]}.png'",
-											description: uso[:receta]['efecto'] } %>
-									</td>
-								<% end %>
-							</tr>
-						</tbody>
-					</table>
-				</td>
-			</tr>
-		<% end %>
-	</tbody>
-</table>
+<h2>Materiarles</h2><hr>
+<div class="table-responsive">
+	<table class="table table-striped table-bordered table-hover table-sm">
+		<thead class="thead-dark">
+			<th colspan='2'>Material</th>
+			<th>Disponibles</th>
+			<th>Usado en ...</th>
+		</thead>
+		<tbody>
+			<% materiales.each do |m| %>
+				<% mat = Material.new(m) %>
+				<tr>
+					<td><%= erb :'display/display', locals: {
+							title:       mat.name, 
+							path:        mat.img_path,
+							description: mat.description} %>
+					</td>
+					<td><%= mat.name %></td>
+					<td><%= erb :'display/bazar', locals: {
+							bazar:   mat.disponibles, 
+							item_id: mat.id, 
+							engarce: "materiales" } %>
+					</td>
+					<td>
+						<table>
+							<tbody>
+								<tr>
+									<% mat.usado_en.each do |uso| %>
+										<td>
+											<%= erb :'display/display', locals: {
+												title: uso[:receta]['name'],
+												path: "/images/profesiones/#{profes[uso[:prof]]}.png",
+												description: uso[:receta]['efecto'] } %>
+										</td>
+									<% end %>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</div>

@@ -1,20 +1,28 @@
-<table>
-	<thead>
-		<tr>
-			<th colspan='2'>Abalorio</th>
-			<th>Tamaño</th>
-			<th>Uso</th>
-		</tr>	
-	</thead>
-	<tbody>
-		<% abalorios.each do |ab| %>
-		    <% a = Abalorio.new(ab) %>
+<h2>Abalorios</h2>
+<p>
+	Son objetos que se llevan en la mochila, ofreciendo bonificadores a pesar,
+	de no estar equipados.
+</p>
+
+<div class="table-responsive">
+	<table class="table table-striped table-bordered table-hover table-sm">
+		<thead class="thead-dark">
 			<tr>
-				<td><img src=<%= a.img_path%> alt=<%= a.name %>, id='icon' /></td>
-				<td><%= a.name %></td>
-				<td><%= a.size %></td>
-				<td><%= a.efecto %></td>
-			</tr>
-		<% end %>
-	</tbody>
-</table>
+				<th colspan='2'>Abalorio</th>
+				<th>Tamaño</th>
+				<th>Uso</th>
+			</tr>	
+		</thead>
+		<tbody>
+			<% abalorios.each do |ab| %>
+			    <% a = Abalorio.new(ab) %>
+				<tr>
+					<td><img src=<%= a.img_path%> alt=<%= a.name %>, id='icon' /></td>
+					<td><%= a.name %></td>
+					<td><%= a.size %></td>
+					<td><%= a.efecto %></td>
+				</tr>
+			<% end %>
+		</tbody>
+	</table>
+</div>
