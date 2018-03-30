@@ -1,26 +1,33 @@
 <% h = hero(params[:param].to_i) %>
 
-<div class="table-responsive">
-	<table class="table table-striped table-bordered table-hover table-sm">
-		<thead class="thead-dark">
-			<tr>
-				<th class="text-center">Melee</th>
-				<th class="text-center">Rango</th>
-				<th class="text-center">Defensa</th>
-				<th class="text-center">Cuerpo</th>
-				<th class="text-center">Mente</th>
-				<th class="text-center">Mov.</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td><%= h.ataque %></td>
-				<td><%= h.rango %></td>
-				<td><%= h.defensa %></td>
-				<td><%= h.cuerpo %></td>
-				<td><%= h.mente  %></td>
-				<td><%= h.movimiento %></td>
-			</tr>
-		</tbody>
-	</table>
-</div>
+<h3>Estadísticas</h3>
+<dl class="row">
+	<dt class="col-sm-8">
+		<abbr title="Puntos de Mente" class="initialism">PM</abbr>
+	</dt>
+	<dd class="col-sm-4"><%= h.mente %></dd>
+
+	<dt class="col-sm-8">
+		<abbr title="Puntos de Cuerpo" class="initialism">PC</abbr>
+	</dt>
+	<dd class="col-sm-4"><%= h.cuerpo %></dd>
+
+	<dt class="col-sm-8">
+		<abbr title="Movimiento">Mov</abbr>
+	</dt>
+	<dd class="col-sm-4"><%= h.movimiento %></dd>
+</dl>
+
+<hr>
+
+<h3>Combate</h3>
+<dl class="row">
+	<dt class="col-sm-8">Melee</dt>
+	<dd class="col-sm-4"><%= h.ataque %></dd>
+
+	<dt class="col-sm-8">Defensa</dt>
+	<dd class="col-sm-4"><%= h.defensa %></dd>
+
+	<dt class="col-sm-8">Rango</dt>
+	<dd class="col-sm-4"><%= h.rango %></dd>
+</dl>
