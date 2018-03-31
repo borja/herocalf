@@ -1,0 +1,10 @@
+name:      "Paphael"
+personaje: "serafín"
+jugador:   "JuanMa"
+nivel:     1
+cuerpo:    5
+mente:     5
+mov:       7
+armadura:  1
+armas:
+  - { id: 1 }
