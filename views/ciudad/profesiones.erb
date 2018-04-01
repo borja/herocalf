@@ -1,7 +1,50 @@
 <% profesion = profesions.find { |p| p.name == params[:param] } %>
-<% grados.each do |grado| %>
-	<h3>Recetas de <%= grado %> de <%= profesion.name %></h3>
-	<hr>
-	<%= slim :"ciudad/profesiones/gradotabla", locals: { 
-		prof: profesion, grado: grado } %>
-<% end %>
+<h2>Listas de recetas de <%= profesion.name %></h2>
+<hr>
+
+
+<ul class="nav nav-pills mb-3 justify-content-center" id="myTab" role="tablist">
+	<li class="nav-item">
+		<a class="nav-link active"
+			 id="apr-tab" data-toggle="tab" href="#apr" role="tab" aria-controls="apr"
+			 aria-selected="true">
+			Aprendizajes
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" id="art-tab" data-toggle="tab" href="#art" role="tab" aria-controls="art"
+			 aria-selected="false">
+			Artesanías
+		</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" id="mae-tab" data-toggle="tab" href="#mae" role="tab" aria-controls="mae"
+			 aria-selected="false">
+			Maestrías
+		</a>
+	</li>
+</ul>
+
+<div class="tab-content" id="myTabContent">
+	<div class="tab-pane fade show active" id="apr" role="tabpanel"
+			 aria-labelledby="apr-tab">
+		<h3>Aprendizajes de <%= profesion.name %></h3>
+		<hr>
+		<%= slim :"ciudad/profesiones/gradotabla", locals: { 
+			prof: profesion, grado: 'aprendiz' } %>
+	</div>
+	<div class="tab-pane fade" id="art" role="tabpanel"
+			 aria-labelledby="art-tab">
+		<h3>Artesanías de <%= profesion.name %></h3>
+		<hr>
+		<%= slim :"ciudad/profesiones/gradotabla", locals: { 
+			prof: profesion, grado: 'artesano' } %>
+	</div>
+	<div class="tab-pane fade" id="mae" role="tabpanel"
+			 aria-labelledby="mae-tab">
+		<h3>Maestrías de <%= profesion.name %></h3>
+		<hr>
+		<%= slim :"ciudad/profesiones/gradotabla", locals: { 
+			prof: profesion, grado: 'maestro' } %>
+	</div>
+</div>
