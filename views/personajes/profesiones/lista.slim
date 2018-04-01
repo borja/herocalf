@@ -3,7 +3,7 @@
 		thead class="thead-dark"
 			tr
 				th colspan="2" Profesión
-				th Hándicap
+				th colspan="2" Hándicap
 				th Justificación
 		tbody
 			- profesions.each do |p|
@@ -17,4 +17,17 @@
 					td
 						a href="/personaje/#{p.imped}"
 							img src="/images/personajes/#{p.imped}.png" alt="#{p.imped}" id="icon"
+					td 
+						a href="/personaje/#{p.imped}"
+							== p.imped
 					td == p.why
+			tr
+				td
+					i class="fas fa-ban"
+				td Todas
+				td
+					a href="/personaje/monje"
+						img src="/images/personajes/monje.png" alt="Monje" id="icon"
+				td 
+					a href="/personaje/monje" monje
+				td Dedican toda su vida a la vida monacal
