@@ -1,10 +1,10 @@
 .table-responsive
-	table class="table"
-		thead
-			<th colspan=2>Pericia</th>
-			th Descripción</th>
-			th Coste</th>
-		<tbody>
+	table class="table table-striped table-bordered table-hover table-sm"
+		thead class="thead-dark"
+			th colspan="2" Pericia
+			th Descripción
+			th Coste
+		tbody
 			- magisters.each do |m|
 				tr
 					td

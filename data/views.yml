@@ -294,6 +294,11 @@
     main:  "personajes/clanes/clanes"
     right: "manuales/derecha/personajes"
 -
+  ruta:  "clan"
+  template:
+    main:  "personajes/clanes/:param"
+    right: "manuales/derecha/personajes"
+-
   ruta:  "descendientes"
   template:
     left: "personajes/razas/left/links"

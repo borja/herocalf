@@ -3,9 +3,11 @@
 		thead class="thead-dark"
 			tr
 				th Personaje
-				th colspan="4" Clanes
+				th colspan="5" Clanes
 			- clanes.each do |pj|
 				tr
 					td == pj.first
 					- pj.last.each do |clan|
-						td == clan
+						td
+							a href="/clan/#{clan}"
+								== clan
