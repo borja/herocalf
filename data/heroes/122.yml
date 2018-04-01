@@ -1,0 +1,12 @@
+name:      "Shalcks Durazbrog"
+personaje: "matador"
+gender:    "female"
+jugador:   "Aitor Arranz"
+nivel:     1
+cuerpo:    7
+mente:     3
+mov:       6
+armadura:  2
+armas:
+  - { id: 11 }
+  - { id: 3 }
