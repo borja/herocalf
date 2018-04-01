@@ -1,26 +1,7 @@
 <% profesion = profesions.find { |p| p.name == params[:param] } %>
 <% grados.each do |grado| %>
-	<h3>Recetas de <%= grado.capitalize %></h3>
-	<div class="table-responsive">
-		<table class='table'>
-			<thead>
-				<tr>
-					<th>#</th>
-					<th>Nombre</th>
-					<th>Coste</th>
-					<th>Efecto</th>
-				</tr>	
-			</thead>
-			<tbody>
-				<% profesion.send(grado.to_sym).each_with_index do |tecnica, i| %>
-					<tr><td><%= i %></td>
-						<td><%= tecnica['name']   %></td>
-						<td><%= tecnica['coste']  %></td>
-						<td><%= tecnica['efecto'] %></td>
-					</tr>
-				<% end %>
-			</tbody>
-		</table>
-	</div>
-	<br/>
+	<h3>Recetas de <%= grado %> de <%= profesion.name %></h3>
+	<hr>
+	<%= slim :"ciudad/profesiones/gradotabla", locals: { 
+		prof: profesion, grado: grado } %>
 <% end %>

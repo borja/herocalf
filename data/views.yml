@@ -281,7 +281,6 @@
   template:
     main: "ciudad/profesiones"
     right: "personajes/profesiones/index"
-    right2: "manuales/derecha/personajes"
 -
   ruta:  "personajes"
   template:
