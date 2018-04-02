@@ -8,7 +8,7 @@ div class="collapse navbar-collapse" id="navbarResponsive"
 		/ Dropdown menus
 		- %w(heroes objetos magia manuales ciudad).each do |topic|
 			li class="nav-item dropdown"
-				== erb :"layout/nav/#{topic}"
+				== slim :"layout/nav/#{topic}"
 
 		/ Simple links
 		li class="nav-item"
