@@ -1,0 +1,10 @@
+base:
+  -
+    name:        "Desactivar trampas"
+    description: "+1 desactivar trampas"
+  -
+    name:        "Corpulencia"
+    description: "Ignora penalizadores por armadura"
+  -
+    name:        "Afinidad con el trueno"
+    description: "Permite poder ejecutar magias de aire"

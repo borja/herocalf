@@ -1,0 +1,10 @@
+base:
+  -
+    name:        "Desactivar trampas"
+    description: "+1 desactivar trampas"
+  -
+    name:        "Corpulencia"
+    description: "Ignora penalizadores por armadura"
+  -
+    name:        "Afinidad con las sombras"
+    description: "Permite poder ejecutar magias de sombras"
