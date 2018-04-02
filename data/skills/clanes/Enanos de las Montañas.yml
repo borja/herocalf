@@ -6,5 +6,5 @@ base:
     name:        "Corpulencia"
     description: "Ignora penalizadores por armadura"
   -
-    name:        "Afinidad con la roca"
-    description: "Permite poder ejecutar magias de tierra"
+    name:        "Afinidad con la nieve"
+    description: "Permite poder ejecutar magias de hielo"

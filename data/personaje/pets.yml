@@ -289,3 +289,10 @@
   bono:       "Habiendo mobiliario de madera, las plegarias son súmmun"
   lacra:      "Habiendo mobiliario de madera, no puedes entrar en sigilo."
   aumento:    "+1 desactivar trampas en cofres y puertas"
+-
+  id:         37
+  name:       "conejito dorado"
+  personajes: ["elohim", "elfo", "mago"]
+  bono:       "+1 Renta"
+  lacra:      "Siempre que pierdes PM, pierdes 10 de oro ó 1PM adicional"
+  aumento:    "Todos tus aliados obtienen su bono de +1 Renta"
