@@ -1,0 +1,7 @@
+base:
+  -
+    name:        "Sortilegio"
+    description: "Permite coger 1 set de magia sagrada al inicio del reto."
+  -
+    name:        "Levitar"
+    description: "1PM, instantáneo: levitas 1 casilla de foso o muro vertical"

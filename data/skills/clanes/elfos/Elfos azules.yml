@@ -1,0 +1,7 @@
+base:
+  -
+    name:        "Magia del mar"
+    description: "Permite coger 1 set de magia (arena, agua, hielo, sombras)"
+  -
+    name:        "Vigías"
+    description: "+1 buscar"

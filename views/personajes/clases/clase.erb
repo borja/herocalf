@@ -82,5 +82,23 @@
 			</div>
 		</div>
 	</div>
+
+	<% if clanes[pj + 's'] %>
+		<div class="card">
+			<div class="card-header" id="headingFive">
+				<h5 class="mb-0">
+					<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+						Clanes de <%= pj + 's' %>
+					</button>
+				</h5>
+			</div>
+			<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+				<div class="card-body">
+					<%= slim :'personajes/clases/clase/clanes', locals: { pj: pj } %>
+				</div>
+			</div>
+		</div>
+	<% end %>
+
 </div>
 <br>

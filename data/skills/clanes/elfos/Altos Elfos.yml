@@ -1,0 +1,7 @@
+base:
+  -
+    name:        "Alta Magia"
+    description: "Pueden coger hasta 3 hechizos (cualquiera) o plegarias"
+  -
+    name:        "Dominio de armas"
+    description: "Empiezan con un aprendizaje del maestro de armas: dominio"

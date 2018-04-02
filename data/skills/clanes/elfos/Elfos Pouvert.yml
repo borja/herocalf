@@ -1,0 +1,8 @@
+base:
+  -
+    name:        "Magia del desierto"
+    description: "Permite coger 1 set de magia (arena, fuego, aire, tierra)"
+  -
+    name:        "Hidrofobia"
+    description: "El agua les hace daño directo. 1PM: Desvía un efecto
+                  de hielo, gas, sangre o agua a uno de tus flancos."

@@ -25,6 +25,12 @@ enano:
   -
     name:        "Desactivar trampas"
     description: "+1 desactivar trampas"
+  -
+    name:        "Corpulencia"
+    description: "Ignora penalizadores por armadura"
+  -
+    name:        "Afinidad con la roca"
+    description: "Permite poder ejecutar magias de tierra"
 
 bárbaro:
   -
