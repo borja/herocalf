@@ -3,11 +3,12 @@
 		thead class="thead-dark"
 			tr
 				th Personaje
-				th colspan="5" Clanes
+				th Primario
+				th colspan="4" Clanes alternativos
 			- clanes.each do |pj|
 				tr
 					td == pj.first
-					- pj.last.each do |clan|
-						td
+					- pj.last.each_with_index do |clan, i|
+						td class="#{'table-secondary' if i == 0}"
 							a href="/clan/#{clan}"
 								== clan
