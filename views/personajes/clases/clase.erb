@@ -3,32 +3,84 @@
 <h2>El <%= pj %> como personaje</h2>
 <hr>
 
-<h3>Habilidades iniciales</h3>
-<%= slim :'personajes/clases/clase/iniciales' %>
+<div id="accordion">
 
-<h3>Especializaciones</h3>
-<%= erb :'personajes/clases/special_table', locals: {pj: pj} %>
+	<div class="card">
+		<div class="card-header" id="headingOne">
+			<h5 class="mb-0">
+				<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					Habilidades iniciales
+				</button>
+			</h5>
+		</div>
+		<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+			<div class="card-body">
+				<%= slim :'personajes/clases/clase/iniciales' %>
+			</div>
+		</div>
+	</div>
 
-<h3>Familiares disponibles del <%= pj %></h2>
-<% familiares_disponibles = pets.select { |p| p['personajes'].include? pj } %>
-<% if familiares_disponibles.any? %>
-	<%= erb :'personajes/clases/pets_table', locals: {pj: pj} %>
-<% else %>
-	<p>No se conoce de la existencia de ningún familiar para el <%= pj %>.</p>
-<% end %>
-<p>
-	<% prof = profesions.detect {|p| p.imped == pj }%>
-	
-	<% if pj == 'monje' %>
-		<h3>La profesión del monje</h3>
-		<p>
-			Debido a que un monje dedica toda su vida a la vida monacal,
-			la naturaleza hermética del Templo de la Niebla y el enorme
-			esfuerzo al que someten su espíritu, los monjes
-			<strong>no pueden optar a profesiones</strong>.
-		</p>
-	<% else %>
-		<h3>Profesión prohibida: <%= prof.name %></h3>
-		<%= slim :'personajes/clases/clase/profesión' %>
-	<% end %>
-</p>
+	<div class="card">
+		<div class="card-header" id="headingTwo">
+			<h5 class="mb-0">
+				<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					Especializaciones
+				</button>
+			</h5>
+		</div>
+		<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+			<div class="card-body">
+				<%= erb :'personajes/clases/special_table', locals: {pj: pj} %>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingThree">
+			<h5 class="mb-0">
+				<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					Familiares disponibles del <%= pj %>
+				</button>
+			</h5>
+		</div>
+		<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+			<div class="card-body">
+				<% familiares_disponibles = pets.select { |p| p['personajes'].include? pj } %>
+				<% if familiares_disponibles.any? %>
+					<%= erb :'personajes/clases/pets_table', locals: {pj: pj} %>
+				<% else %>
+					<p>No se conoce de la existencia de ningún familiar para el <%= pj %>.</p>
+				<% end %>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card-header" id="headingFour">
+			<h5 class="mb-0">
+				<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+					Profesiones
+				</button>
+			</h5>
+		</div>
+		<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+			<div class="card-body">
+				<% prof = profesions.detect {|p| p.imped == pj }%>
+
+				<% if pj == 'monje' %>
+					<h3>La profesión del monje</h3>
+					<p>
+						Debido a que un monje dedica toda su vida a la vida monacal,
+						la naturaleza hermética del Templo de la Niebla y el enorme
+						esfuerzo al que someten su espíritu, los monjes
+						<strong>no pueden optar a profesiones</strong>.
+					</p>
+				<% else %>
+					<h3>Profesión prohibida: <%= prof.name %></h3>
+					<%= slim :'personajes/clases/clase/profesión' %>
+				<% end %>
+			</div>
+		</div>
+	</div>
+</div>
+<br>
