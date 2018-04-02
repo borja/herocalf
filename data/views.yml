@@ -75,7 +75,7 @@
   ruta:  "personaje"
   title: "view"
   template:
-    left:  "personajes/principal/menu"
+    left:  "manuales/derecha/personajes"
     main:  "personajes/clases/clase"
     right: "personajes/principal/specific"
 -
