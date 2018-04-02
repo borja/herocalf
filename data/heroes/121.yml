@@ -1,10 +1,12 @@
 name:      "Aelthon"
 personaje: "paladín"
 jugador:   "Marcos"
+status:    "activo"
 nivel:     1
 cuerpo:    6
 mente:     3
 mov:       7
 armadura:  2
 armas:
-  - { id: 3 }
+  - { id: 13 }
+  - { id: 7 }
