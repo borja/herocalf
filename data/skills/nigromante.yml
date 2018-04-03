@@ -105,7 +105,7 @@
   requisitos:  [0]
   name:        "Vibración tétrica"
   type:        "Reactiva"
-  description: "Cunado los no-muertos cobren una pieza, puedes lanzar 2
+  description: "Cuando los no-muertos cobren una pieza, puedes lanzar 2
                 hechizos en cada acción de magia o bien no consumir hechizo.
                 En rango 2, elegir ambos beneficios consumiendo 1 solo hechizo."
 # nivel 5
@@ -143,7 +143,7 @@
   type:        "Activa"
   coste:       "1PM / turno"
   description: "Nunca terminas de morir mientras tengas Mortaja de Sombras.
-                Mueres finalmente cunado pierdas además todos tus PM.
+                Mueres finalmente cuando pierdas además todos tus PM.
                 Puedes gastar 1PM para lanzar 1 hechizo, y tus no-muertos
                 seguirán animados mientras no mueras definitivamente."
 # nivel 6
