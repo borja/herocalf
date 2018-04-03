@@ -5,12 +5,12 @@
 
 <nav aria-label="Page navigation example">
 	<ul class="pagination justify-content-center">
-		<li class="page-item">
+		<li class="page-item <%= 'active' if edition == 1 %>">
 			<a class="page-link" href="/historias/1">
 				<%= '&laquo;' if edition != 1 %> 1º certamen
 			</a>
 		</li>
-    <li class="page-item">
+		<li class="page-item <%= 'active' if edition == 2 %>">
 			<a class="page-link" href="/historias/2">
 				2º certamen <%= '&raquo;' if edition != 2 %>
 			</a>

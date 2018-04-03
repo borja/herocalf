@@ -19,7 +19,5 @@
 							== hero.name
 						- if hero.premio
 							- color = hero.premio == 1 ? 'golden' : 'silvered'
-							div class="ribbon-wrapper-#{color}"
-							div class="ribbon-#{color}"
-								== hero.premio
-								| º
+							/ == hero.premio
+							/ | º
