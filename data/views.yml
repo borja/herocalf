@@ -534,6 +534,12 @@
     main: "magia/historia"
     right: "magia/right/menu"
 -
+  ruta:  "tenebro"
+  title: "Magia Oscura"
+  template:
+    main: "magia/oscura"
+    right: "magia/right/menu"
+-
   ruta:  "vientos"
   title: "Poder mágico"
   template:
