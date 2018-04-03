@@ -1,7 +1,21 @@
-<% 2.times do |i| %>
-	<h2><%= i+1 %>º Certamen de historias HeroQuest</h2>
-	<hr>
-	<%= slim :'lore/tabla_certamen', locals: { i: i } %>
+<% edition = params[:param].to_i %>
 
-	<br/>
-<% end %>
+<h2><%= edition %>º Certamen de historias HeroQuest</h2>
+<hr>
+
+<nav aria-label="Page navigation example">
+	<ul class="pagination justify-content-center">
+		<li class="page-item">
+			<a class="page-link" href="/historias/1">
+				<%= '&laquo;' if edition != 1 %> 1º certamen
+			</a>
+		</li>
+    <li class="page-item">
+			<a class="page-link" href="/historias/2">
+				2º certamen <%= '&raquo;' if edition != 2 %>
+			</a>
+		</li>
+	</ul>
+</nav>
+
+<p><%= slim :'lore/tabla_certamen', locals: { i: edition } %></p>

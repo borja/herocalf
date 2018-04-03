@@ -2,13 +2,15 @@
 	table class="table table-striped table-bordered table-hover table-sm"
 		thead class="thead-dark"
 			tr
+				th #
 				th Autor
 				th Héroe
-				th Historia
+				th Personaje
 
 		tbody
-			- narrados(i+1).each do |hero|
+			- narrados(i).each_with_index do |hero, position|
 				tr
+					td == position +1
 					td == hero.jugador
 					td
 						== erb :'display/portrait', locals: { h: hero }

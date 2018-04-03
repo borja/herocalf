@@ -55,8 +55,7 @@
   ruta:  "historias"
   title: "Leyendas"
   template:
-    left: "personajes/razas/left/links"
-    main: "lore/centro"
+    main:  "lore/centro"
     right: "lore/derecha"
 -
   ruta:  "historia"
