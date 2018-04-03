@@ -1,48 +1,64 @@
-<!-- Pestañas de habilidad -->
 <div class="row">
-	<div class="col-lg-12">
-
-		<ul id="myTab" class="nav nav-tabs nav-justified">
-			<!-- Make first tab active, via index method (i=0) -->
-			<% clases.keys.each_with_index do |pj,i| %>
-				<li class="<%= i == 0 ? 'active' : '' %>">
-					<a href="#<%= pj %>" data-toggle="tab">
-							<img src="/images/personajes/<%= pj %>.png"
-									 alt=<%= pj %>
-									 id='icon'>
+	<div class="col-md-3 text-left">
+		<p>
+			<div class="list-group" id="list-tab" role="tablist">
+				<% clases.keys.each_with_index do |pj,i| %>
+					<a class="list-group-item list-group-item-action <%= 'active' if i == 0 %>"
+						 id="list-<%= pj %>-list" data-toggle="list" href="#list-<%= pj %>"
+						 role="tab" aria-controls="<%= pj %>">
+						<img src="/images/personajes/<%= pj %>.png" alt=<%= pj %> id='icon'>
 						<%= pj.capitalize %>
 					</a>
-				</li>
-			<% end %>
-		</ul>
+				<% end %>
+			</div>
+		</p>
+	</div>
 
-		<!-- Especializaciones -->
-		<div id="myTabContent" class="tab-content">
-			<% clases.keys.each_with_index do |pj,i| %>
-				<div class="tab-pane fade <%= i == 0 ? 'active in' : '' %>"
-						 id="<%= pj %>">
-					<div class="table-responsive">
-						<table class="table">
-							<tbody>
-								<!-- Escudo de armas -->
-								<tr>
-									<% clases[pj].each do |clase| %>
-										<td width=33%>
-											<a href="/habilidad/<%= clase %>">
-												<h3><%= clase %></h3>
-												<img src="/images/clases/<%= clase %>.png"
-														 alt=<%= clase %>
-														 id='icon4'>
+	<div class="col-md-9">
+		<p>
+			<div class="tab-content" id="nav-tabContent">
+				<% clases.keys.each_with_index do |pj,i| %>
+					<div class="tab-pane fade <%= 'show active' if i == 0 %>"
+							 id="list-<%= pj %>" role="tabpanel" aria-labelledby="list-<%= pj %>-list">
+						<div class="card-group">
+
+							<!-- Escudo de armas -->
+							<% clases[pj].each do |clase| %>
+								<div class="card">
+									<div class="card-header"><%= clase.capitalize %></div>
+									<a href="/habilidad/<%= clase %>">
+										<img src="/images/clases/<%= clase %>.png"
+												 class="card-img-top" alt="<%= clase %>">
+									</a>
+									<div class="card-body">
+										<h5 class="card-title"><%= clase.capitalize %></h5><hr>
+										<p>
+											<a href="/habilidad/<%= clase %>" class="btn btn-primary">
+												<i class="fas fa-sitemap"></i> ver habilidades
 											</a>
-										</td>
-									<% end %>
-								</tr>	
-							</tbody>
-						</table>
-					</div>
-				</div>
-			<% end %>
-		</div>
+										</p>
+										<p class="card-text font-italic text-secondary">
+											<%= slim :"personajes/habilidades/clases/#{clase}" %>
+										</p>
+									</div>
+									<div class="card-footer">
+										<p>
+											<small class="text-muted">
+												Héroes que por ser <%= clase %>
+												han alcanzado la fama:
+											</small>
+										</p>
+										<a href="/fama/<%= clase %>" class="btn btn-secondary btn-sm">
+											<%= fama(clase) %>
+										</a>
+									</div>
+								</div>
+							<% end %>
 
+						</div>
+					</div>
+				<% end %>
+			</div>
+		</p>
 	</div>
 </div>
