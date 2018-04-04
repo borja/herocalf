@@ -11,13 +11,16 @@
 </p>
 
 <p>
-	<h3>Listado de calibres</h3>
-	<div class="list-group">
+	<h3>Calibres</h3>
+	<ul class="list-group">
 		<% 6.times do |calibre| %>
 			<% c = gema_calidades[calibre] %>
-			<a class="list-group-item" href='/calibre/<%= c['calibre'] %>'>
-				<%= c['name'] %>
-			</a>
+			<li class="list-group-item d-flex justify-content-between align-items-center">
+				<span class="badge badge-secondary badge-pill"><%= calibre +1 %></span>
+				<a href='/calibre/<%= c['calibre'] %>'>
+					<%= c['name'] %>
+				</a>
+			</li>
 		<% end %>
-	</div>
+	</ul>
 </p>
