@@ -3,11 +3,11 @@ personaje: "asesino"
 jugador:   "Alberto"
 status:    "activo"
 titulo:    "Príncipe Bastardo"
-repu:      11
-nivel:     23
-cuerpo:    11
-mente:     11
-mov:       19
+repu:      12
+nivel:     24
+cuerpo:    7
+mente:     10
+mov:       10
 progenitores: 
   - "El Emperador"
   - 33
@@ -51,9 +51,10 @@ pociones:   [10]
 piezas:     [2, 3]
 master:     [0]
 skills:     [0, 1, 2, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
-shadows:    [4, 5]
+shadows:    [4, 5, 10, 11]
 blood:      [0, 1, 5]
 oro:        4241
+xp:         5
 tesoro:
   gemas: [0, 1, 1, 1, 2, 3, 3, 3, 4, 5, 5, 5, 5, 11, 13, 13, 13, 16, 17, 17, 25, 25, 26, 27, 28, 29, 29, 30, 31, 40, 40]
   joyas: [7]
