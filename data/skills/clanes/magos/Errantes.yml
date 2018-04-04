@@ -1,0 +1,4 @@
+base:
+  -
+    name:        "Hechizar"
+    description: "Comienza con el set de protección, detección y 1 elemental"

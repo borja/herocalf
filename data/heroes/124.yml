@@ -1,0 +1,12 @@
+name:      "Tael"
+personaje: "valquiria"
+jugador:   "Rocío"
+familiar:  { id: 37, name: "Sehol", torpe: true }
+nivel:     1
+cuerpo:    5
+mente:     5
+mov:       7
+armadura:  1
+armas:
+  - { id: 1 }
+  - { id: 7 }

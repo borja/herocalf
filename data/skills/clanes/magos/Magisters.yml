@@ -1,0 +1,4 @@
+base:
+  -
+    name:        "Hechizar"
+    description: "Permite coger 3 sets de magia elemental de la nueva escuela"

@@ -1,0 +1,7 @@
+ base:
+   -
+     name:        "Hechizar"
+     description: "Comienza con 1 set de magia elemental de ambas escuelas"
+   -
+     name:        "Estudio arcano"
+     description: "Comienzas el reto con 3 pergaminos de la escuela elegida"
