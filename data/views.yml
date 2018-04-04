@@ -140,9 +140,9 @@
   ruta:  "habilidad"
   title: "view"
   template:
-    left: "personajes/left/logo"
-    left2: "personajes/left/personajes"
-    main: "personajes/habilidades/listado"
+    main:   "personajes/habilidades/listado"
+    right:  "personajes/left/logo"
+    right2: "personajes/left/personajes"
 -
   ruta:  "skill"
   title: "view"
