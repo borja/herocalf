@@ -25,31 +25,39 @@
 							<!-- Escudo de armas -->
 							<% clases[pj].each do |clase| %>
 								<div class="card">
-									<div class="card-header"><%= clase.capitalize %></div>
+									<div class="card-header">
+										<h5><%= clase.capitalize %></h5>
+									</div>
 									<a href="/habilidad/<%= clase %>">
 										<img src="/images/clases/<%= clase %>.png"
 												 class="card-img-top" alt="<%= clase %>">
 									</a>
 									<div class="card-body">
-										<h5 class="card-title"><%= clase.capitalize %></h5><hr>
 										<p>
-											<a href="/habilidad/<%= clase %>" class="btn btn-primary">
+											<a href="/habilidad/<%= clase %>" class="btn btn-primary btn-block">
 												<i class="fas fa-sitemap"></i> ver habilidades
 											</a>
 										</p>
+										<hr>
 										<p class="card-text font-italic text-secondary">
 											<%= slim :"personajes/habilidades/clases/#{clase}" %>
+										</p>
+										<p class="mb-0">
+											<a href="/especial/<%= clase %>" class="btn btn-sm btn-outline-secondary">
+												<i class="fas fa-plus"></i> Leer más
+											</a>
 										</p>
 									</div>
 									<div class="card-footer">
 										<p>
 											<small class="text-muted">
-												Héroes que por ser <%= clase %>
-												han alcanzado la fama:
+												Salón de la fama del <strong><%= clase %></strong>:
 											</small>
 										</p>
-										<a href="/fama/<%= clase %>" class="btn btn-secondary btn-sm">
+										<a href="/fama/<%= clase %>" class="btn btn-warning btn-block btn-sm">
+											<i class="fas fa-star"></i>
 											<%= fama(clase) %>
+											<i class="fas fa-star"></i>
 										</a>
 									</div>
 								</div>
