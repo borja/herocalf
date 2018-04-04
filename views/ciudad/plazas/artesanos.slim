@@ -1,23 +1,21 @@
-h2
-	i class="fa fa-gavel" aria-hidden="true"
-h4 class="card-title" El gremio de artesanos
+h3 class="card-title"
+	i class="fa fa-gavel"
+	small  Artesanos
+
 p class="card-text"
-	hr
-	a href='/equipo'
-		| Herrero: 
-	a href='/armas'
-		| armas, 
-	a href='/armaduras'
-		| armaduras, 
-	a href='/protecciones'
-		| protecciones 
-	hr
-	| Orfebre: 
-	a href='/joyas' joyas, 
-	a href='/gemas' gemas, 
-	a href='/runas' runas, 
-	a href='/miscelaneas' bisutería 
-	hr
-	a href='/piezas' Ingeniero
-	hr
-	a href="/pociones" Alquimista
+	ul class="list-group list-group-flush"
+		li class="list-group-item"
+			| Herrero: 
+			a href='/armas' armas, 
+			a href='/armaduras' armaduras, 
+			a href='/protecciones' protecciones 
+		li class="list-group-item"
+			| Orfebre:
+			a href='/joyas' Joyas,
+			a href='/gemas' Gemas, 
+			a href='/runas' Runas, 
+			a href='/miscelaneas' Bisutería 
+		li class="list-group-item"
+			a href='/piezas' Ingeniero
+		li class="list-group-item"
+			a href="/pociones" Alquimista

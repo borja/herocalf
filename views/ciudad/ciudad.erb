@@ -1,19 +1,16 @@
-<div class="row">
-	<% %w(ayuntamiento biblioteca artesanos cuarteles).each do |plaza| %>
-		<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
-			<div class="card h-100">
-
+<p>
+	<div class="card-group">
+		<% %w(ayuntamiento biblioteca artesanos cuarteles).each do |plaza| %>
+			<div class="card">
+				<div class="card-header"><%= plaza.capitalize %></div>
 				<a href="/<%= plaza %>">
 					<img class="card-img-top"
-							 src="/images/ciudad/<%= plaza %>.png"
-							 alt="<%= plaza %>" >
+							 src="/images/ciudad/<%= plaza %>.png" alt="<%= plaza %>" >
 				</a>
-
 				<div class="card-body">
 					<%= slim :"ciudad/plazas/#{plaza}" %>
 				</div>
-
 			</div>
-		</div>
-	<% end %>
-</div>
+		<% end %>
+	</div>
+</p>
