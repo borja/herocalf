@@ -6,14 +6,14 @@ div class="collapse navbar-collapse" id="navbarResponsive"
 	ul class="navbar-nav ml-auto"
 		
 		/ Dropdown menus
-		- %w(heroes objetos magia manuales ciudad).each do |topic|
+		- %w(heroes objetos magia manuales lore).each do |topic|
 			li class="nav-item dropdown"
 				== slim :"layout/nav/#{topic}"
 
 		/ Simple links
 		li class="nav-item"
 			a class="nav-link" href="/habs"
-				i class="fa fa-sitemap fa-fw" aria-hidden="true"
+				i class="fa fa-sitemap fa-fw"
 				|  Habilidades
 
 	/ User contents
