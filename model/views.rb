@@ -25,7 +25,7 @@ def view(ruta)
 
   # Return the matching route ('nav') from DB
   v = views.find { |v| v['ruta'] == nav }
-  # TODO : 404 error...
+  v = v.nil? ? view('error') : v   # TODO : 404 error...
   Vista.new(v)
 end
 
@@ -47,8 +47,10 @@ end
 def breadcrumb(ruta)
   bc = []
   if view(ruta)
-    if view(ruta).template['main'].split('/').count > 1
-      bc = view(ruta).template['main'].split('/')
+    if view(ruta).template
+      if view(ruta).template['main'].split('/').count > 1
+        bc = view(ruta).template['main'].split('/')
+      end
     end
   end
   bc # empty arrays should be treated in ERB
