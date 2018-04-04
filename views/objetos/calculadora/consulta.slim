@@ -1,0 +1,82 @@
+<form action="/calculador" method="POST">
+
+	div class="form-group row"
+		label class="col-lg-5 col-form-label text-left" for="example-text-input" Propiedades mágicas
+		.col
+			select class="custom-select" name="objeto"
+				option value="0" 0
+				option value="1" 1
+				option value="2" 2
+				option value="3" 3
+				option value="4" 4
+		.col
+			button type="button" class="btn btn-link-secondary" data-toggle="collapse" data-target="#demo"
+				i class="fa fa-question-circle" aria-hidden="true"
+				|   explicación
+
+	div class="collapse" id="demo"
+		div class="alert alert-info"
+			i class="fa fa-info-circle" aria-hidden="true"
+			|   Cada propiedad mágica 
+			strong incrementa el precio del engarce
+
+	div class="form-group row"
+		label class="col-lg-5 col-form-label text-left" for="example-text-input" Ranuras vacías
+		.col
+			select class="custom-select" name="ranuras"
+				option value="0" 0
+				option value="1" 1
+				option value="2" 2
+				option value="3" 3
+				option value="4" 4
+				option value="5" 5
+				option value="6" 6
+		.col
+			button type="button" class="btn btn-link-secondary" data-toggle="collapse" data-target="#info_ranura"
+				i class="fa fa-question-circle" aria-hidden="true"
+				|   explicación
+	
+	div class="collapse" id="info_ranura"
+		div class="alert alert-info"
+			i class="fa fa-info-circle" aria-hidden="true"
+			|   Si ya tiene ranuras vacías, 
+			strong disminuye el precio de engarce
+
+	div class="form-group row"
+		label class="col-lg-5 col-form-label text-left" for="example-text-input" Reputación
+		.col-auto
+			div class="input-group mb-2"
+				.input-group-prepend
+					.input-group-text
+						i class="fa fa-star" aria-hidden="true"
+				input type="text" class="form-control" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status" name="repu"
+
+	div class="form-group row"
+		label class="col-lg-5 col-form-label text-left" for="example-text-input" Calibre de gemas
+		.col-auto
+			div class="input-group mb-2"
+				.input-group-prepend
+					.input-group-text
+						i class="fa fa-gem" aria-hidden="true"
+				input type="text" class="form-control" id="inputGroupSuccess2" aria-describedby="inputGroupSuccess2Status" name="engarces"
+
+	div class="form-group row"
+		.col
+			div class="alert alert-warning alert-dismissable"
+				a href="#" class="close" data-dismiss="alert" aria-label="close" &times;
+				i class="fas fa-exclamation-triangle" aria-hidden="true"
+				|   Escribe los calibres (números), separados por comas;
+				br
+				strong Ejemplo: "1,6,6".
+				hr
+				| Recuerda que las 
+				a href='/joyas'
+					i class="fab fa-joomla" aria-hidden="true"
+					|   joyas 
+				| y 
+				a href='/runas'
+					i class="fas fa-shekel-sign" aria-hidden="true"
+					|   runas, 
+				| equivalen a calibre 4.
+
+	input type="submit" class="btn btn-secondary"

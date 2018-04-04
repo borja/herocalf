@@ -1,21 +1,38 @@
 <h2>Calculador de engarces</h2>
 <hr>
 
-<%= erb :'objetos/calculadora/consulta' %>
+<%= slim :'objetos/calculadora/consulta' %>
 
 <% if params[:engarces] %>
-	<div class="alert alert-success">
-		Con las siguientes <strong>características</strong>:
-		<ul>
-			<li><strong>Encantamientos</strong>: <%= params[:objeto] %></li>
-			<li><strong>Ranuras</strong>: <%= params[:ranuras] %></li>
-			<li><strong>Reputación</strong>: <%= params[:repu] %></li>
-			<li><strong>Engarces</strong>: <%= params[:engarces] %></li>
-		</ul>
-		<i class="fa fa-check" aria-hidden="true"></i>
-		<strong>Coste de engarzar el objeto</strong>:
-		<%= calcular_coste(params) %>
-		<i class="fa fa-database" aria-hidden="true"></i>
-		piezas de oro
-	</div>
+	<p>
+		<div class="card border-success mb-3">
+			<div class="card-header text-success">
+				<i class="fa fa-check" aria-hidden="true"></i>
+				Coste de engarzar el objeto
+			</div>
+			<div class="card-body">
+				<h5 class="card-title">Características</h5>
+				<p class="card-text">
+					<dl class="row">
+						<dt class="col-lg-4">Encantamientos</dt>
+						<dd class="col-lg-2"><%= params[:objeto] %></dd>
+
+						<dt class="col-lg-4">Ranuras</dt>
+						<dd class="col-lg-2"><%= params[:ranuras] %></dd>
+
+						<dt class="col-lg-4">Reputación</dt>
+						<dd class="col-lg-2"><%= params[:repu] %></dd>
+
+						<dt class="col-lg-4">Engarces</dt>
+						<dd class="col-lg-2"><%= params[:engarces] %></dd>
+					</dl>
+				</p>
+			</div>
+			<div class="card-footer bg-secondary text-white">
+				<%= calcular_coste(params) %>
+				<i class="fa fa-database text-warning" aria-hidden="true"></i>
+				piezas de oro
+			</div>
+		</div>
+	</p>
 <% end %>
