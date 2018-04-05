@@ -1,0 +1,11 @@
+base:
+  -
+    name:        "Rugido"
+    description: "-2 movimeinto: Causa +1 miedo en la fase trepidante."
+  -
+    name:        "Hechizar"
+    description: "Permite coger 1 hechizo de sombras"
+  -
+    name:        "Acechar"
+    description: "Aumenta en 1 todos los efectos de causar miedo en sigilo,
+                  y todos los efectos de sigilo cuando cause miedo."

@@ -4,5 +4,5 @@ base:
     description: "-2 movimeinto: Causa +1 miedo en la fase trepidante."
   -
     name:        "Rencor"
-    description: "Permite coger 3 hechizos entre las magias de fuego
+    description: "Permite coger 3 hechizos entre las magias de sombras
                   y execraciones, al inicio del reto."

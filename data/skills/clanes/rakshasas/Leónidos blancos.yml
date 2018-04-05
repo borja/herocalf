@@ -1,0 +1,11 @@
+base:
+  -
+    name:        "Rugido"
+    description: "-2 movimeinto: Causa +1 miedo en la fase trepidante."
+  -
+    name:        "Piedad"
+    description: "Permite coger 2 plegarias"
+  -
+    name:        "Meditación"
+    description: "Al meditar en combate (turno completo), cualquier
+                  bendición de un aliado se aplica a sí mismo también."
