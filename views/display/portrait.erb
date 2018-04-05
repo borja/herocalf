@@ -1,19 +1,24 @@
 <div class="information_popup_container">
 	<div class="information">
 		<% if h.muerto %>
-			<img src=../images/personajes/dead.png	alt="muerto" /, id='icon'>
+			<img src="/images/personajes/dead.png" alt="muerto" id='icon'>
 		<% else %>
-			<img src=<%= h.img_path %> alt=<%= h.name %> , id='icon' />
+			<img src="<%= h.img_path %>" alt="<%= h.name %>" id="icon">
 		<% end %>
 	</div>
 	<div class="popup_information">
-		<center>
-			<h3><%= h.name %><br><br></h3>
-			<img src=<%= h.big_path %> alt=<%= h.name %>, id='portrait' />
-			<% if h.muerto %>
-				<br/>Muerto con honor.<br/>
-				R.I.P
-			<% end %>
-		</center>
+		<div class="container">
+			<h3><%= h.name %></h3>
+			<hr>
+			<img src="<%= h.big_path %>" alt="<%= h.name %>"
+					 class="img-thumbnail mx-auto d-block" id="portrait">
+			<p class="text-center">
+				<% if h.muerto %>
+					<small>Muerto con honor</small>
+					<br>
+					R.I.P
+				<% end %>
+			</p>
+		</div>
 	</div>
 </div>

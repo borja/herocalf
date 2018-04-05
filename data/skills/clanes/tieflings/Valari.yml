@@ -1,0 +1,9 @@
+base: 
+  -
+    name:        "Hechizar"
+    description: "Permite coger 3 hechizos entre las magias de hielo
+                  o sombras al inicio del reto."
+  -
+    name:        "Traición de Niflheim"
+    description: "Tus ataques por la espalda siempre son con odio.
+                  Matar por la espalda recupera 1 hechizo de hielo o sombra."

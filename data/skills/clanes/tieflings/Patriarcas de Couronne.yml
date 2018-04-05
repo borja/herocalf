@@ -1,0 +1,8 @@
+base: 
+  -
+    name:        "Hechizar"
+    description: "Permite coger el set de sombras"
+  -
+    name:        "Afinidad sombría"
+    description: "Comienzas el reto con 1PS (sombra), que puedes usar para
+                  ejectuar cualquiera de tus hechizos de sombra sin coste."

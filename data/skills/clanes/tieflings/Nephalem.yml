@@ -1,0 +1,7 @@
+base: 
+  -
+    name:        "Hechizar"
+    description: "Permite coger el set de fuego, la última será diablura."
+  -
+    name:        "Pueblo elegido"
+    description: "Empiezas con 3 plegarias, la última será chakra."
