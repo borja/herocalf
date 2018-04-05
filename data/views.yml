@@ -130,7 +130,7 @@
   ruta:  "habilidadesbase"
   template:
     left:  "personajes/principal/menu"
-    main:  "manuales/habilidadesbase"
+    main:  "personajes/habilidades/base"
     right: "manuales/derecha/personajes"
 -
   ruta:  "dones"

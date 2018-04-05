@@ -14,9 +14,7 @@
 				<tr>
 					<td>
 						<a href='/familiar/<%= p.bicho %>'>
-							<img src='<%= p.img_path %>'
-									 alt='<%= p.bicho %>',
-									 id='icon2' />
+							<img src='<%= p.img_path %>' alt='<%= p.bicho %>' id='icon2'>
 						</a>
 					</td>
 					<td><a href='/familiar/<%= p.bicho %>'><%= p.bicho %></a></td>
@@ -26,9 +24,8 @@
 								<tr><% p.personajes.each do |pj| %>
 									<td>
 										<a href='/personaje/<%= pj %>'>
-											<img src="../images/personajes/<%= pj %>.png",
-													 alt=<%= pj %>,
-													 id='icon' />
+											<img src="/images/personajes/<%= pj %>.png"
+													 alt="<%= pj %>" id='icon'>
 										</a>
 									</td>
 								<% end %>
