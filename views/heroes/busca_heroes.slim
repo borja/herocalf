@@ -1,14 +1,18 @@
 /! Buscador de Personajes
-.card-body
-	form action="/buscar" method="POST"
-		.input-group
 
-			/! Selector del criterio de búsqueda
-			select name="criteria"
-				option value="heroe" Héroes
-				option value="jugador" Jugadores
-				option value="raza" Raza
-				option value="mascota" Familiar
-
-			input type="text" name="nombre"
-			input type="submit" value="buscar"
+div class="bg-light rounded"
+	form action="/buscar" method="POST" class="form-inline mb-2"
+		/! Selector del criterio de búsqueda
+		select class="custom-select col-lg col-md m-2" name="criteria"
+			option value="heroe" Héroes
+			option value="jugador" Jugadores
+			option value="raza" Raza
+			option value="mascota" Familiar
+		/! texto de búsqueda
+		div class="input-group col-block  m-2"
+			div class="input-group-prepend"
+				div class="input-group-text"
+					i class="fas fa-search"
+			input class="form-control" type="text" name="nombre"
+		/! Botón
+		input class="btn btn-secondary m-2" type="submit" value="buscar"
