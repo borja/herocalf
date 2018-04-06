@@ -1,9 +1,29 @@
 name:      "Kokrán"
 personaje: "bersérker"
 jugador:   "Rubén"
+
 pareja:    { char: 74, tipo: 'pj' }
-cuerpo:    8
-mente:     2
-mov:       7
-armadura:  1
-armas:     3
+profesion: { id: 2, aprendiz: [0] }
+
+nivel:  2
+xp:     8
+repu:   3
+cuerpo: 8
+mente:  2
+mov:    7
+
+armadura:  { id: 2 }
+
+armas:
+  - { id: 2, gemas: [11, 11, 11, 53] }
+  - { id: 3 }
+protecciones:
+  - { id: 2 }
+abalorios:
+  - { id: 9 }
+
+oro: 162
+tesoro:
+  gemas: [19, 28]
+
+skills:   [0, 1]

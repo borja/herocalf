@@ -2,7 +2,7 @@ name:      "Silvara"
 personaje: "invocador"
 jugador:   "Nora"
 gender:    "female"
-status:    "reserva"
+
 pareja:    { char: 73, tipo: 'pj' }
 familiar:  { id: 8, name: "Worryto"}
 profesion: { id: 1, aprendiz: [0] }

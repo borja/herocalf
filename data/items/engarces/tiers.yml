@@ -58,3 +58,9 @@
   bono:  "+1 hechizo élfico"
   mix:   { gemas: [25, 16, 48], joyas: null, runas: null }
   color: "#1C975B"
+-
+  id:    10
+  name:  "maestra Kelviana"
+  bono:  "+1 ataque"
+  mix:   { gemas: [11, 11, 11, 53], joyas: null, runas: null }
+  color: "#7B76FC"
