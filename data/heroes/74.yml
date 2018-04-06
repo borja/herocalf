@@ -1,10 +1,32 @@
 name:      "Silvara"
-personaje: "hechicero"
+personaje: "invocador"
 jugador:   "Nora"
 gender:    "female"
 status:    "reserva"
-cuerpo:    4
-mente:     6
-mov:       7
-armadura:  1
-armas:     2
+pareja:    { char: 73, tipo: 'pj' }
+familiar:  { id: 8, name: "Peróculo"}
+profesion: { id: 1, aprendiz: [0] }
+
+nivel:  2
+xp:     8
+repu:   2
+cuerpo: 4
+mente:  6
+mov:    6
+
+armadura:  { id: 1 }
+
+armas:
+  - { id: 3 }
+  - { id: 4, enchants: [130] }
+protecciones:
+  - { id: 3, enchants: [129] }
+abalorios:
+  - { id: 9 }
+
+oro: 13
+tesoro:
+  gemas: [38]
+
+skills:   [0, 1]
+hechizos: [0, 1, 2, 6, 12, 13, 14, 18, 19, 20]

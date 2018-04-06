@@ -54,3 +54,9 @@
   precio: 200
   name:   "Libro del magistrado"
   efecto: "Rentas: +1"
+-
+  id:     9
+  size:   1
+  precio: 40
+  name:   "frasco con luciérnaga"
+  efecto: "Se usa en la mano torpe. Ilumina."

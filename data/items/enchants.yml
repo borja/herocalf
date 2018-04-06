@@ -667,3 +667,14 @@
   name:         "espinasombría"
   descripcion:  "+1 ataque en sigilo"
   tipo:         "sombras"
+-
+  id:           129
+  name:         "desgastadas y podridas"
+  descripcion:  "-1 movimiento"
+  tipo:         "ninguno"
+-
+  id:           130
+  name:         "de piel humana"
+  descripcion:  "-1 reputación. Puedes lanzar una execración en lugar de otro
+                 hechizo disponible."
+  tipo:         "tenebro"

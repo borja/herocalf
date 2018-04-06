@@ -1,6 +1,7 @@
 name:      "Kokrán"
 personaje: "bersérker"
 jugador:   "Rubén"
+pareja:    { char: 74, tipo: 'pj' }
 cuerpo:    8
 mente:     2
 mov:       7
