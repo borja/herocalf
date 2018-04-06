@@ -4,11 +4,11 @@ jugador:   "Nora"
 gender:    "female"
 status:    "reserva"
 pareja:    { char: 73, tipo: 'pj' }
-familiar:  { id: 8, name: "Peróculo"}
+familiar:  { id: 8, name: "Worryto"}
 profesion: { id: 1, aprendiz: [0] }
 
 nivel:  2
-xp:     8
+xp:     6
 repu:   2
 cuerpo: 4
 mente:  6
