@@ -206,7 +206,7 @@
   id:           24
   nivel:        9
   requisitos:   [7, 16]
-  name:         "Destino de Gloria"
+  name:         "Destino de gloria"
   type:         "Reactiva"
   description:  "Si al inicio de tu turno, tus PC están en negativo no
                  morirás hasta el final de la ronda. (Salvo que fueras sanado)
