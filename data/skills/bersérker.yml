@@ -21,7 +21,7 @@
 -
   id:           3
   nivel:        2
-  rangos:       3
+  rangos:       4
   name:         "Dos armas"
   type:         "Pasiva"
   description:  "Permite llevar 1 arma en la mano torpe de tamaño
@@ -42,14 +42,14 @@
   name:         "Zona de guerra"
   type:         "Pasiva"
   description:  "Permite atacar de frente y en diagonal.
-                 En rango 2: permite lateralmente."
+                 En rango 2: permite atacar lateralmente."
 -
   id:           6
   nivel:        3
   rangos:       2
   name:         "Hendedura"
   type:         "Activa"
-  coste:        "(1 -1/rango ataque) por cada enemigo"
+  coste:        "(-1/rango ataque) por cada enemigo"
   description:  "El exceso de ataque al primer enemigo,
                  atacará al siguiente enemigo colindante a ambos."
 -
@@ -59,13 +59,13 @@
   name:         "Grito de sangre"
   type:         "Única"
   description:  "Todos los aliados en S/P, hasta final de turno:
-                 +1 PC al matar un enemigo."
+                 +1 PM al matar un enemigo."
 -
   id:           8
   nivel:        3
   rangos:       2
   requisitos:   [0]
-  name:         "Gloria berserker"
+  name:         "Gloria bersérker"
   type:         "Pasiva"
   description:  "+1/rango potencia de ataque al ser superado en número"
 # nivel 4
@@ -80,14 +80,16 @@
   id:           10
   nivel:        4
   rangos:       2
+  requisitos:   [5]
   name:         "El oso se alza"
   type:         "Reactiva"
   coste:        "1PC ó 1PM"
   description:  "Al haber cobrado pieza: se considera en posición elevada,
-                 durante R(rango) turnos."
+                 durante 1/rango turnos."
 -
   id:           11
   nivel:        4
+  requisitos:   [2]
   name:         "Tormenta"
   type:         "Activa"
   coste:        "1PC"
@@ -96,24 +98,127 @@
   id:           12
   nivel:        4
   rangos:       4
-  requisitos:   [0,8]
+  requisitos:   [8]
   name:         "Camino furioso"
   type:         "Reactiva"
-  description:  "al matar en furia: +1 (acumulable) fuerza de ataque
-                 en sus próximos R(rango) éxitos de ataque."
+  description:  "Al matar en furia: +1 (acumulable) fuerza de ataque
+                 en sus próximos 1/rango éxitos de ataque."
 # nivel 5
 -
   id:           13
-  nivel:        4
+  nivel:        5
+  requisitos:   [5, 12]
   name:         "Insaciable"
+  type:         "Activa"
+  coste:        "Movimiento"
+  description:  "Durante la Furia: Dispones de una acción extra de ataque"
+-
+  id:           14
+  nivel:        5
+  rangos:       2
+  requisitos:   [5]
+  name:         "los cobardes caerán"
+  type:         "Reactiva"
+  description:  "Cuando un enemigo abandone tu zona de guerra, puedes
+                 con cualquier arma al alcance. En el segundo rango,
+                 puedes golpear solamente con que atraviese la zona."
+-
+  id:           15
+  nivel:        5
+  rangos:       3
+  name:         "Arma mayor"
   type:         "Pasiva"
-  description:  "Aplica los efectos"
+  description:  "Añade 1/rango de fuerza a un éxito,
+                 al golpear con armas a 2 manos."
+-
+  id:           16
+  nivel:        5
+  requisitos:   [0]
+  name:         "Furia sangrienta"
+  type:         "activa"
+  coste:        "1 PC"
+  description:  "Funciona igual que Furia, pero añade un dado desangrador"
 # nivel 6
 -
   id:           17
   nivel:        6
   rangos:       2
-  requisitos:   [3]
+  requisitos:   [3, 15]
   name:         "Brazo del héroe"
   type:         "Pasiva"
-  description:  "Permite llevar en 1/rango mano, armas a dos manos"
+  description:  "Permite llevar en 1/rango mano, armas a dos manos.
+                 Se consideran de tamaño 4."
+-
+  id:           18
+  nivel:        6
+  rangos:       2
+  name:         "Golpe vertical"
+  type:         "Pasiva"
+  description:  "+1/rango a los efectos de atacar en posición elevada.
+                 Si cobras la pieza, obtienes 1 PP (punto de poderío)"
+# nivel 7
+-
+  id:           19
+  nivel:        7
+  requisitos:   [15, 18]
+  name:         "Tajo limpio"
+  type:         "activa"
+  coste:        "1 PP"
+  description:  "+1 potencia a tu siguiente ataque"
+-
+  id:           20
+  nivel:        7
+  requisitos:   [8, 18]
+  name:         "Tajo vertical"
+  type:         "activa"
+  coste:        "1 PP"
+  description:  "Requiere ser superado en número: +1 de Fuerza. Si cobras la
+                 pieza, obtienes 1 PG (punto de Gloria)"
+# nivel 8
+-
+  id:           21
+  nivel:        8
+  name:         "Alardear"
+  type:         "Reactiva"
+  description:  "Los aliados colindantes pueden cederte piezas libremente.
+                 Siempre que un aliado a melé te ceda deliberadamente 1 pieza,
+                 recupera 1 grito cualquiera."
+-
+  id:           22
+  nivel:        8
+  requisitos:   [20]
+  name:         "Apilar cadáveres"
+  type:         "activa"
+  coste:        "1 PG"
+  description:  "+1 causar miedo, por cada enemigo derrotado desde
+                 la posición en la que te encuentras. Este miedo afecta
+                 a las criaturas inmunes si los cadáveres son del mismo tipo."
+# nivel 9
+-
+  id:           23
+  nivel:        9
+  requisitos:   [0]
+  name:         "Enemigo predilecto"
+  type:         "Pasiva"
+  description:  "Al inicio del Reto elige un tipo de enemigo. +1 de ataque
+                 contra dicho enemigo. -1 al empuje de dicho enemigo."
+-
+  id:           24
+  nivel:        9
+  requisitos:   [7, 16]
+  name:         "Destino de Gloria"
+  type:         "Reactiva"
+  description:  "Si al inicio de tu turno, tus PC están en negativo no
+                 morirás hasta el final de la ronda. (Salvo que fueras sanado)
+                 En tu turno, estarás furioso, duplicarás los bonificadores
+                 de habilidades y tendrás 2 acciones de ataque."
+# nivel 10 - Habilidades definitivas
+-
+  id:           25
+  nivel:        10
+  requisitos:   [0]
+  name:         "Cubierto de sangre"
+  type:         "Pasiva"
+  description:  "+1 protección por cada 3 heridas. Si gracias a la protección,
+                 ignoras el daño de un ataque, -1 protección (acumulable)
+                 hasta que seas sanado, y +1 fuerza."
