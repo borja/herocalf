@@ -17,7 +17,7 @@ class Camino < Array
   end
 
   def img_path
-    "'../images/caminos/#{name}.png'"
+    "/images/caminos/#{name}.png"
   end
 end
 

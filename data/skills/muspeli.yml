@@ -1,0 +1,7 @@
+-
+  id:          0
+  nivel:       2
+  rangos:      2
+  name:        "Fuego eterno"
+  type:        "pasiva"
+  description: "+1 potencia a las magias de fuego"

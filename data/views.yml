@@ -283,8 +283,8 @@
 -
   ruta:  "personajes"
   template:
-    left:  "personajes/principal/menu"
-    main: "personajes/personajes"
+    left:  "manuales/derecha/personajes"
+    main:  "personajes/personajes"
     right: "personajes/razas/right/stats"
 -
   ruta:  "clanes"

@@ -217,6 +217,7 @@ class Hero < Hash
     if skills
       skills.map do |num|
         p = personaje.gsub('señor de las bestias', 'beastslord')
+        p = p.gsub('señor del Kraken', 'krakenlord')
         Habilidad.new(send(p, num))
       end
     end
@@ -299,8 +300,8 @@ class Hero < Hash
   def genderize
     # Word dictionary male vs female
     # TODO: some words are missing
-    male   = %w(elfo mago bárbaro clérigo ladrón  rakshasa tiefling paladín  sacerdote enano)
-    female = %w(elfa maga bárbara clériga ladrona rakshasi tieflina paladina sacerdotisa enana)
+    male   = %w(elfo mago bárbaro clérigo ladrón  rakshasa tiefling paladín  sacerdote enano gigante)
+    female = %w(elfa maga bárbara clériga ladrona rakshasi tieflina paladina sacerdotisa enana giganta)
     # Returns char class, regarding the gender (only for females)
     gender == 'female' ? female[male.index(clase)] : clase
   end

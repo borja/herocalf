@@ -9,7 +9,7 @@ class Montura < Hash
   end
 
   def img_path
-    "'../../images/monturas/#{name}.png'"
+    "/images/monturas/#{name}.png"
   end
 end
 
