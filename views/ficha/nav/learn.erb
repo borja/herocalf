@@ -1,0 +1,12 @@
+<% h = hero(params[:param].to_i) %>
+
+<h3>Habilidades del maestro de armas</h3>
+
+<% if h.master %>	
+	<%= slim :'ficha/master', locals: { heroe: h } %>
+<% else %>
+	<p>
+		Aún no ha recibido entrenamiento.
+		Consulta la <a href="/maestrodearmas">tabla de habilidades disponibles</a>.
+	</p>
+<% end %>

@@ -1,11 +1,9 @@
+<% h = hero(params[:param].to_i) %>
+
 <div class="col-sm-3">
 	<%= erb :'ficha/derecha/derecha' %>
 </div>
-<div class="col-sm-9">
-<% h = hero(params[:param].to_i) %>
 
-<%= slim :'ficha/habilidades', locals: { heroe: h } %>
-<% if h.master %>
-	<%= slim :'ficha/master', locals: { heroe: h } %>
-<% end %>
+<div class="col-sm-9">
+	<%= slim :'ficha/habilidades', locals: { heroe: h } %>
 </div>

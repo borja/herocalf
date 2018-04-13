@@ -6,7 +6,7 @@
 			<tr><% resistencias.each do |r| %>	
 					<th><%= erb :'display/display', locals: {
 							title:       r['nombre'], 
-							path:        "'../images/elements/#{r['nombre']}.png'",
+							path:        "/images/elements/#{r['nombre']}.png",
 							description: r['description'] } %>
 					</th>
 				<% end %>

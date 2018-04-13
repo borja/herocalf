@@ -30,9 +30,15 @@
 				</div>
 			</div>
 
+			<div class="tab-pane fade" id="learn" role="tabpanel" aria-labelledby="learn-tab">
+				<div class="row">
+					<%= erb :'ficha/nav/learn' %>
+				</div>
+			</div>
+
 			<div class="tab-pane fade" id="magia" role="tabpanel" aria-labelledby="magia-tab">
 				<div class="row">
-					<%= erb :'ficha/hechizos' unless h.elementos.empty? %>
+					<%= erb :'ficha/hechizos' %>
 				</div>
 			</div>
 		</div>
