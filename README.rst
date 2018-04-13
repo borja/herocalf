@@ -47,8 +47,8 @@ Build Status
    :target: https://travis-ci.org/borja/herocalf
 .. |CircleCi Status| image:: https://circleci.com/gh/borja/herocalf.svg?style=shield
    :target: https://circleci.com/gh/borja/herocalf
-.. |CodeShip| image:: https://codeship.com/projects/52ab60f0-1e7d-0134-4772-3632048523f1/status?branch=master
-   :target: https://codeship.com/projects/160114
+.. |CodeShip| image:: https://app.codeship.com/projects/62d62e60-2116-0136-eafd-669e1e370d60/status?branch=master
+   :target: https://codeship.com/projects/285831
 
 Deployment Status
 -----------------
