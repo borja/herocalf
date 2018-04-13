@@ -1,33 +1,32 @@
-<h2>Un miembro más de la familia</h2>
+<h2>Familiares</h2><hr>
 
-<h3>Descripción</h3>
-<p>
-	El familiar es una pequeña mascota espiritual
-	que acompaña al héroe en sus aventuras.
-	No todos los familiares pueden ser escogidos por los personajes.
-	Los hay torpes y hábiles.	Cuestan 1px	y se pueden mejorar
+<h3>Un miembro más de la familia</h3>
+<p class="text-justify">
+	El familiar es una pequeña mascota espiritual que acompaña al héroe
+	en sus aventuras. No todos los familiares pueden ser escogidos
+	por los todos los personajes. Los hay <strong>torpes</strong> y
+	<strong>hábiles</strong>. Cuestan 1px, y se pueden mejorar ( como hábiles)
 	invirtiendo 1px adicional para eliminar el penalizador.
 	Haz click en la imagen para conocer más información sobre un familiar
 	específicamente.
 </p>
 
 <h3>Lealtad a la familia</h3>
-<p>
+<p class="text-justify">
 	Tras la muerte de su dueño, el familiar permanece fiel a la familia.
 	Por ello, los jugadores cuyos personajes hayan muerto con descendientes,
 	podrán reasignar al familiar a sus vástagos, manteniendo las bonificaciones
-	que tuvieran y todas sus características.
-	Esta es la manera habitual en la que un personaje (hijo-de, como por ejemplo
-	el ladrón), podría tener un familiar.
+	que tuvieran y todas sus características. Esta es la manera habitual
+	en la que un personaje "hijo-de" (Ej: ladrón), puede acceder a un familiar.
 </p>
 
 <h3>Familiares sabios</h3>
-<p>
-	Cada vez que un héroe suba de nivel, con un familiar junto a él,
+<p class="text-justify">
+	Cada vez que un héroe suba de nivel, con un familiar hábil junto a él,
 	tirará un dado de Sigmar. Si obtiene un resultado de un cometa,
-	podrá invertir 1px en volver "sabio" a su familiar, obteniendo
-	la característica "aumento" adicionalmente a su bonificador.
+	podrá invertir 1px en volver <strong>"sabio"</strong> a su familiar,
+	obteniendo la característica "aumento" adicionalmente a su bonificador.
 </p>
 
 <h3>Tabla de familiares</h3>
-<p><%= erb :'personajes/familiares/tabla_familiares' %></p>
+<p><%= slim :'personajes/familiares/tabla_familiares' %></p>

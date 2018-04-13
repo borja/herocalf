@@ -1,0 +1,24 @@
+.table-responsive
+	table class="table table-striped table-bordered table-hover table-sm"
+		thead class="thead-dark"
+			tr
+				th colspan='2' Familiar
+				th Dueños
+				th Bonificador
+				th Penalizador
+				th Aumento
+		tbody
+			- pets.each do |familiar|
+				- p = Pet.new(familiar)
+				tr
+					td: a href="/familiar/#{ p.bicho }"
+						img src="#{ p.img_path }" alt="#{p.bicho}" id='icon2'
+					td: a href="/familiar/#{ p.bicho }" == p.bicho
+					td
+						table: tbody: tr
+							- p.personajes.each do |pj|
+								td: a href="/personaje/#{ pj }"
+									img src="/images/personajes/#{ pj }.png" alt="#{ pj }" id='icon'
+					td == p.bono
+					td == p.lacra
+					td == p.aumento

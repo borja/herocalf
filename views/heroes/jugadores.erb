@@ -1,7 +1,5 @@
-<h2>
-	Listado de los <%= jugadores.count %> jugadores
-	y sus <%= heros.count %> personajes
-</h2>
+<h2>Jugadores</h2>
+<hr>
 <p>
 	Los jugadores han sido ordenados por su puntuación de honor.
 	Si alguno percibe que algún sumatorio es incorrecto, es posible
@@ -9,4 +7,8 @@
 	Hemos de ser conscientes que el creador del universo ha de estar
 	por encima de todos los seres. Ergo, Ignórese.
 </p>
+<h3>
+	Listado de los <%= jugadores.count %> jugadores
+	y sus <%= heros.count %> personajes
+</h3>
 <%= slim :'heroes/honor/tabla' %>
