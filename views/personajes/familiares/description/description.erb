@@ -4,26 +4,45 @@
 	<%= f.sex == 'female' ? 'La' : 'El' %> <%= f.bicho.capitalize %>
 	como familiar	
 </h2>
-
-<h3>Bonificador</h3>
-<p><%= f.bono %>.</p>
-
-<h3>Penalizador (familiares torpes)</h3>
-<p><%= f.lacra %>.</p>
+<hr>
 
 <h3>Descripción</h3>
-<p><%= erb :"personajes/familiares/description/lista/#{f.bicho}" %></p>
-
-<p>
-	<h3>Tabla de características</h3>
-	<%= erb :'personajes/familiares/description/tabla' %></p>
+<p class="text-justify">
+	<%= erb :"personajes/familiares/description/lista/#{f.bicho}" %>
 </p>
 
+<div class="alert alert-secondary">
+	<h4 class="alert-heading text-center">Características</h4><hr>
+	<dl class="row mb-0">
+		<dt class="col-sm-3">Bonificador</dt>
+		<dd class="col-sm-9"><%= f.bono %></dd>
+	
+		<dt class="col-sm-3">Penalizador</dt>
+		<dd class="col-sm-9"><%= f.lacra %></dd>
+	
+		<dt class="col-sm-3">Aumento</dt>
+		<dd class="col-sm-9"><%= f.aumento %></dd>
+	
+		<dt class="col-sm-3">Dueños</dt>
+		<dd class="col-sm-9">
+
+			<% f.personajes.each do |pj| %>
+				<a href="/personaje/<%= pj %>" class="btn btn-secondary btn-sm">
+					<img src="/images/personajes/<%= pj %>.png" alt="<%= pj %>" id='icon'>
+					<%= pj %>
+				</a>
+			<% end %>
+
+		</dd>	
+	</dl>
+</div>
+
+<h3>Hall de la fama</h3>
 <p>
-	<h3>Hall de la fama</h3>
-	<% if f.conocidos.empty? %>
-		Desgraciadamente no hay ningún espécimen conocido.
+	<% unless familiares_conocidos(f.id).empty? %>
+		<%= erb :'personajes/familiares/description/conocidos', locals:
+			{fc: familiares_conocidos(f.id)} %>
 	<% else %>
-		<%= erb :'personajes/familiares/description/conocidos' %></p>
+		Desgraciadamente no hay ningún espécimen conocido.
 	<% end %>
 </p>

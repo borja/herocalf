@@ -104,14 +104,13 @@
   title: "view"
   template:
     main: "personajes/familiares/description/description"
-    left:  "personajes/pets"
-    right: "heroes/sidebar"
+    right: "manuales/derecha/personajes"
 -
   ruta:  "familiares"
   template:
     main:   "personajes/familiares"
     right:  "personajes/pets"
-    right2: "heroes/sidebar"
+    right2: "manuales/derecha/personajes"
 -
   ruta:  "lenguas"
   template:

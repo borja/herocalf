@@ -1,5 +1,3 @@
-#!/usr/bin/ruby
-# encoding: UTF-8
 # Clase para gestionar las minimascotas familiares del heroe.
 class Pet < Hash
   attr_accessor :id, :name, :torpe, :sabio
@@ -52,7 +50,4 @@ class Pet < Hash
     "<b>Bonificador</b>: <i>#{bono}</i>#{toprpeza}"
   end
 
-  def conocidos
-    familiares_conocidos(id)
-  end
 end

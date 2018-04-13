@@ -29,3 +29,8 @@ def porcentaje_familiares_torpes
   familiares_torpes = h_familiares.count { |h| h.pet.torpe }
   ((familiares_torpes.to_f / h_familiares.count) * 100.0).round(2)
 end
+
+def familiares_conocidos(id)
+  heros_con_familiar = heros.select{ |h| h.pet }
+  heros_con_familiar.select{ |h| h.pet.id == id }
+end
