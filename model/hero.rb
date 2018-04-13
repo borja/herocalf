@@ -101,16 +101,6 @@ class Hero < Hash
     habilidad_base(clase)
   end
 
-  def lista_status(view)
-    case view
-    when 'licenciados'  then 'retirado'
-    when 'heroes'       then 'activo'
-    when 'ausentes'     then 'ausente'
-    when 'reservistas'  then 'reserva'
-    when 'extranjeros'  then 'extranjero'
-    end
-  end
-
   def elementos
     elementos = []
     elementos = magias.map(&:elemento).uniq if magias
@@ -130,6 +120,10 @@ class Hero < Hash
 
   def reputacion
     repu || 0
+  end
+  
+  def estado
+    status ||= 'ausente'
   end
 
   def movimiento

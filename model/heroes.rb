@@ -11,6 +11,32 @@ def heros
   end
 end
 
+def filter_heros(criteria, palabra)
+  filtered_heros = case criteria
+  when 'status'
+    lista_status = case palabra
+      when 'licenciados'  then 'retirado'
+      when 'heroes'       then 'activo'
+      when 'ausentes'     then 'ausente'
+      when 'reservistas'  then 'reserva'
+      when 'extranjeros'  then 'extranjero'
+    end
+
+    heros.select {|h| h.estado.downcase.include?(lista_status) }
+  when 'heroe'
+    heros.select {|h| h.name.downcase.include?(palabra) }
+  when 'jugador'
+    heros.select {|h| h.jugador.downcase.include?(palabra) } 
+  when 'raza'
+    heros.select {|h| h.raza.downcase.include?(palabra) }
+  when 'mascota'
+    con_mascota = heros.reject {|h| h.pet.nil? }
+    con_mascota.select {|h| h.pet.name.downcase.include?(palabra)}
+  end
+
+  filtered_heros.sort_by { |h| [h.nivel,h.reputacion] }.reverse
+end
+
 def hero(id)
   heros[id]
 end
