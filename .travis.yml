@@ -9,7 +9,7 @@ env:
 # Ruby configuration, using RVM
 language: ruby
 rvm:
-  - 2.5.0
+  - 2.5.1
 before_install:
   - gem install bundler --no-document -v '~> 1.16.1'
   # Sinatra gem is loaded from github, instead of rubygems:
