@@ -1,9 +1,10 @@
 <h2>Pregunta Nº <%= params[:param].length %> / <%= preguntas.count %></h2>
+<hr>
 <h3><%= preguntas[params[:param].length-1]['pregunta'] %></h3>
 
 <div class="list-group">
 	<% preguntas[params[:param].length-1]['respuestas'].each_with_index do |respuesta,num| %>
-		<a class="list-group-item" href=/test/<%= params[:param] + num.to_s %>>
+		<a class="list-group-item" href="/test/<%= params[:param] + num.to_s %>">
 			<%= num %>) <%= respuesta.first %>
 		</a>
 	<% end %>
