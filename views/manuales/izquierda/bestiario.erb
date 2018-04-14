@@ -1,11 +1,17 @@
-<h2>Bestiario</h2>
-<hr>
-<a href="/criaturas">
-	<img src="/images/nav/bestiario.png" alt='Bestiario' class="img-fluid">
-</a>
+<div class="card">
+	<div class="card-header">
+		<h4>Bestiario</h4>
+	</div>
 
-<ul class="link-list">
-	<% criaturas.each do |c| %>
-		<li><a href="/criatura/<%= c %>"><%= c %></a></li>
-	<% end %>
-</ul>
+	<a href='/combate'>
+		<img class="card-img-top" src="/images/nav/bestiario.png" alt="Bestiario">
+	</a>
+
+	<ul class="list-group list-group-flush">
+		<% criaturas.each do |c| %>
+			<li class="list-group-item">
+				<a href="/criatura/<%= c %>"><%= c %></a>
+			</li>
+		<% end %>
+	</ul>
+</div>
