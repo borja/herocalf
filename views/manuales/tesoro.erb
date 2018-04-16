@@ -1,11 +1,11 @@
 <% dado1 = dado_tesoro; dado2 = dado_tesoro; sigmar = dado_sigmar %>
 <% #dado1 = 6; dado2 = 4; #sigmar = 'eagle' %>
-<% total = (dado1 + dado2)%>
+<% total = (dado1 + dado2) %>
 <% resultado = tesoro(sigmar, dado1, dado2)%>
 
 <div class="table-responsive">
-	<table class='table'>
-		<thead>
+	<table class="table table-striped table-bordered table-hover table-sm">
+		<thead class="thead-dark">
 			<tr>
 				<th class="text-center">Repetir</th>
 				<th class="text-center">Tirada</th>
@@ -16,17 +16,16 @@
 		<tbody>
 			<tr>
 				<td>
-					<a href="/tesoro">
-						<span class="fa-stack fa-lg">
-						  <i class="fa fa-cube fa-stack-1x fa-pulse" aria-hidden="true"></i>
-						  <i class="fa fa-repeat fa-stack-2x fa-spin" aria-hidden="true"></i>
-						</span>
+					<a href="/tesoro"><div class="fa-3x">
+						<span class="fa-layers">
+							<i class="fas fa-redo fa-spin" aria-hidden="true"></i>
+							<i class="fa fa-cube fa-pulse" data-fa-transform="shrink-8" aria-hidden="true"></i>
+						</span></div>
 					</a>
 				</td>
 				<td>
 					<%= total %><% img_path  = "/images/tesoro/#{sigmar}.png" %>
-					<img style="vertical-align:middle" src="<%=img_path%>"
-							 alt="<%= sigmar %>" id='icon' />
+					<img src="<%=img_path%>" alt="<%= sigmar %>" id="icon">
 				</td>
 				<td><%= resultado %></td>
 				<td>

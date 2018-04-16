@@ -36,7 +36,7 @@
 -
   id:     8
   nombre: "paralizado"
-  efecto: "No puedes mover -2 de ataque y -2 de defensa."
+  efecto: "No puedes mover. -2 de ataque y -2 de defensa."
 -
   id:     9
   nombre: "ardiendo"

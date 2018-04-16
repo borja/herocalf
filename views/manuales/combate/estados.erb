@@ -1,18 +1,14 @@
-<div class="table-responsive">
-	<table class='table'>
-		<thead>
-			<tr>
-				<th class="text-center">Estado</th>
-				<th class="text-center">Efecto</th>
-			</tr>
-		</thead>
-		<tbody>
-			<% estados.each do |e| %>
-				<tr>
-					<td><%= e['nombre'] %></td>
-					<td><%= e['efecto'] %></td>
-				</tr>
-			<% end %>
-		</tbody>
-	</table>
-</div>
+<p class="text-justify">
+	Los estados de combate son penalizadores que afectan a los héroes,
+	por diversos lances del juego. También pueden afectar a los enemigos,
+	en caso de verse afectados por condiciones. Algunos tipos de criatura
+	son inmunes. Por ejemplo, los elementales de fuego no pueden
+	<strong>arder</strong>. Consulta la siguiente lista:
+</p>
+
+<dl class="row text-left">
+	<% estados.each do |e| %>
+		<dt class="col-lg-3"><%= e['nombre'] %></dt>
+		<dd class="col-lg-9"><%= e['efecto'] %></dd>
+	<% end %>
+</dl>
