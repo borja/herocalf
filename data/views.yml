@@ -417,7 +417,6 @@
   ruta:  "hechizos"
   template:
     left: "magia/left/elementales"
-    left2: "magia/left/especializaciones"
     main: "magia/hechizos"
 -
   ruta:  "hechizo"

@@ -1,31 +1,36 @@
-<h2>Elementales</h2>
-<hr>
-<div class="panel panel-default">
-	<a href='/escuelas'>
-		<img class="img-fluid"
-				 src='/images/nav/elementales.png'
-				 alt='Elementales'>
-	</a>
-</div>
-<p>
-	Recogen su poder de los vientos elementales de la magia.
-	Combinados se definen como <strong>Alta Magia</strong> en su versión armónica,
-	o bien <strong>Magia del Caos</strong>, en su versión distorsionada.
-</p>
+<div class="card">
+	<div class="card-header">
+		<h4>Elementales</h4>
+	</div>
 
-<div class="alert alert-secondary" role="alert">
-	<h4>Lista de hechizos</h4>
-	<hr>
-	<p>Según su nivel:</p>
-	<nav aria-label="Hechizos elementales">
-		<ul class="pagination justify-content-center">
-			<% 4.times do |level| %>
-			<li class="page-item">
-				<a class="page-link" href="/hechizos/<%= level + 1 %>">
-					<%= level + 1 %>
-				</a>
-			</li>
-			<% end %>
-		</ul>
-	</nav>
+	<a href='/escuelas'>
+		<img class="card-img-top" src="/images/nav/elementales.png" alt="Elementales">
+	</a>
+	
+	<div class="card-body">
+		<p class="card-text">
+			Recogen su poder de los vientos elementales de la magia.
+			Combinados se definen como <strong>Alta Magia</strong>
+			en su versión armónica, o bien <strong>Magia del Caos</strong>,
+			en su versión distorsionada.
+		</p>
+
+		<hr>
+
+		<h5 class="card-title mb-0">Listas de hechizos</h5>
+		<p class="card-text m-0 font-italic">Según su nivel:</p>
+
+		<nav aria-label="Hechizos elementales">
+			<ul class="pagination justify-content-center">
+				<% 4.times do |level| %>
+					<li class="page-item">
+						<a class="page-link" href="/hechizos/<%= level + 1 %>">
+							<%= level + 1 %>
+						</a>
+					</li>
+				<% end %>
+			</ul>
+		</nav>
+
+	</div>
 </div>
