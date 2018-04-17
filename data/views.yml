@@ -31,14 +31,18 @@
     right: "manuales/derecha/combate"
 -
   ruta:  "combate"
-  title: "Combate"
   template:
     main: "manuales/combate"
     right: "manuales/derecha/combate"
 -
   ruta:  "sigilo"
   template:
-    main: "manuales/combate/sigilo/main"
+    main: "manuales/combate/sigilo/reglamento"
+    right: "manuales/derecha/combate"
+-
+  ruta:  "posiciones"
+  template:
+    main: "manuales/combate/posiciones/reglamento"
     right: "manuales/derecha/combate"
 -
   ruta:  "locura"
@@ -499,13 +503,6 @@
   title: "Estados de Combate"
   template:
     main: "manuales/combate/estados"
-    right: "manuales/derecha/combate"
-    right2: "manuales/derecha/dados"
--
-  ruta:  "posiciones"
-  title: "Posiciones de Combate"
-  template:
-    main: "manuales/combate/posiciones"
     right: "manuales/derecha/combate"
     right2: "manuales/derecha/dados"
 -
