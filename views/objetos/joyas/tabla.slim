@@ -11,6 +11,6 @@
 					td = i + 1
 					td == erb :'display/joya', locals: { joya: j }
 					td 
-						a { target="_blank" href="/joya/= j.id" }
+						a target="_blank" href="/joya/#{j.id}"
 							== 'Joya ' + j.name
 					td == erb :'display/bazar', locals: {	bazar: j.disponibles, engarce: 'joyas', item_id: j.id }

@@ -1,6 +1,7 @@
 <% j = joya(params[:param].to_i) %>
 
 <h2>La joya <%= j.name %></h2>
+<hr>
 <p>
 	<%= slim :"objetos/joyas/descripciones/#{ j.name }" %>
 </p>
