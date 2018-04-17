@@ -1,9 +1,17 @@
 <% r = runa(params[:param].to_i) %>
 
-<h2>La runa <%= r.name.upcase %></h2>
+<div class="card">
+	<div class="card-header">
+		<h4>La runa <%= r.name.upcase %></h4>
+	</div>
 
-<a href='/runa/<%= r.id %>' class="img-fluid">
-	<img src=<%= r.big_img %> alt='<%= r.name.upcase %>'/>
-</a>
-<hr>
-<%= slim :"objetos/runas/lenguaje/#{ r.name }" %>
+	<a href="/runa/<%= r.id %>">
+		<img class="card-img-top" src="<%= r.big_img %>" alt="<%= r.name.upcase %>">
+	</a>
+	
+	<div class="card-body">
+		<p class="card-text">
+			<%= slim :"objetos/runas/lenguaje/#{ r.name }" %>
+		</p>
+	</div>
+</div>
