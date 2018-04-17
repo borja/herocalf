@@ -1,7 +1,7 @@
 .table-responsive
 	table class="table table-striped table-bordered table-hover table-sm"
 		thead class="thead-dark"
-			th colspan="2" Pericia
+			th colspan="2" Enseñanza
 			th Descripción
 			th Coste
 		tbody
@@ -12,4 +12,6 @@
 						img src="#{img_path}" alt="#{m['name']}" id='icon'
 					td == m['name']
 					td == m['description']
-					td == m['coste']
+					td
+						== m['coste']
+						i class="fas fa-database text-warning"

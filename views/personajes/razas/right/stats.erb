@@ -1,61 +1,73 @@
-<h2>Estadísticas</h2>
-<p>Iniciales de cada raza</p>
+<div class="card">
+	<div class="card-header">
+		<h4>Estadísticas</h4>
+	</div>
+	<div class="card-body">
+		<h5 class="card-title">Iniciales de cada raza</h5>
+		<div class="table-responsive">
+			<table class="table table-sm">
+				<thead>
+					<tr>
+						<th>Raza</th>
+						<th>PC</th>
+						<th>PM</th>
+						<th>Mov</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><a href='/raza/humanos'>humano</a></td>
+						<td>5</td>
+						<td>5</td>
+						<td>7</td>
+					</tr>
+					<% razas.each do |raza| %>
+						<% next if raza.last.last == 'parangón' %>
+						<% next if raza.last.last == 'humano' %>
+						<tr>
+							<td><a href='/raza/<%= raza.first %>s'><%= raza.first %></a></td>
+							<td><%= raza.last[0] %></td>
+							<td><%= raza.last[1] %></td>
+							<td><%= raza.last[2] %></td>
+						</tr>
+					<% end %> 
+				</tbody>
+			</table>
+		</div>
 
-<div class="table-responsive">
-	<table class='table'>
-		<thead>
-			<tr>
-				<th>Raza</th>
-				<th>PC</th>
-				<th>PM</th>
-				<th>Mov</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td><a href='/raza/humanos'>humano</a></td>
-				<td>5</td>
-				<td>5</td>
-				<td>7</td>
-			</tr>
-			<% razas.each do |raza| %>
-				<% next if raza.last.last == 'parangón' %>
-				<% next if raza.last.last == 'humano' %>
-				<tr>
-					<td><a href='/raza/<%= raza.first %>s'><%= raza.first %></a></td>
-					<td><%= raza.last[0] %></td>
-					<td><%= raza.last[1] %></td>
-					<td><%= raza.last[2] %></td>
-				</tr>
-			<% end %> 
-		</tbody>
-	</table>
+		<h5 class="card-title">Humanos sin parangón</h5>
+		<div class="table-responsive">
+			<table class="table table-sm">
+				<thead>
+					<tr>
+						<th>Clase</th>
+						<th>PC</th>
+						<th>PM</th>
+						<th>Mov</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Mago</td>
+						<td>4</td>
+						<td>6</td>
+						<td>7</td>
+					</tr>
+					<tr>
+						<td>Bárbaro</td>
+						<td>8</td>
+						<td>2</td>
+						<td>7</td>
+					</tr>
+					<tr>
+						<td>Monje</td>
+						<td>6</td>
+						<td>4</td>
+						<td>7</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
 </div>
 
-<h3>Humanos sin parangón</h3>
-<div class="table-responsive">
-	<table class='table'>
-		<thead>
-			<tr>
-				<th>Clase</th>
-				<th>PC</th>
-				<th>PM</th>
-				<th>Mov</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Mago</td>
-				<td>4</td>
-				<td>6</td>
-				<td>7</td>
-			</tr>
-			<tr>
-				<td>Bárbaro</td>
-				<td>8</td>
-				<td>2</td>
-				<td>7</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
