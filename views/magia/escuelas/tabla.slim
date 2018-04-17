@@ -1,19 +1,30 @@
-.table-responsive
-	table class="table table-hover table-sm"
-		thead class="thead-dark"
-			tr
-				th Glifo
-				th Escuela
-				th colspan=4 Listas de Hechizo
-		tbody
-			- %w(Aire Fuego Agua Tierra Sombra Hielo Arena Tenebro Sangre Luz).each do |escuela|
-				tr
-					td
-						- url = escuela.gsub('Luz','plegarias').gsub('Tenebro','execraciones').downcase
-						a href="/#{url}/1"
-							img src="/images/magia/schools/#{escuela}.png" alt="#{escuela}" id="icon3"
-					td == escuela
-					- 4.times do |n|
-						td
-							a href="/#{url}/#{n + 1}"
-								== n + 1 
+.card-group
+	- escuelas[0..4].each do |escuela|
+		div class="card"
+			- url = escuela.gsub('Luz','plegarias').gsub('Tenebro','execraciones').downcase
+			a href="/#{url}/1"
+				img src="/images/magia/schools/#{escuela}.png" alt="#{escuela}" class="card-img-top p-1"
+			.card-body
+				h5 class="card-title" == escuela
+				nav
+					ul class="pagination justify-content-center pagination-sm"
+						- 4.times do |level|
+							li class="page-item"
+								a class="page-link" href="/#{url}/#{level + 1}"
+									== level + 1
+br
+.card-group
+	- escuelas[5..9].each do |escuela|
+		div class="card"
+			- url = escuela.gsub('Luz','plegarias').gsub('Tenebro','execraciones').downcase
+			a href="/#{url}/1"
+				img src="/images/magia/schools/#{escuela}.png" alt="#{escuela}" class="card-img-top p-1"
+			.card-body
+				h5 class="card-title" == escuela
+				nav
+					ul class="pagination pagination-sm justify-content-center"
+						- 4.times do |level|
+							li class="page-item"
+								a class="page-link" href="/#{url}/#{level + 1}"
+									== level + 1
+br

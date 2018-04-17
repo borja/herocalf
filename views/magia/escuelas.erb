@@ -1,12 +1,14 @@
 <h2>Escuelas de la magia</h2>
 <hr>
-<p>
+<div class="alert alert-secondary alert-dismissible fade show" role="alert">
 	Cuando los <a href='/raza/elfos'>elfos</a> enseñaron los entresijos 
 	de la magia a los humanos primitivos,
 	al percibir la <a href="/historiamagia">complejidad de las Artes Arcanas</a>, 
 	y pronositcar los grandes desastres que ocasionarían en tan inexpertas mentes,
 	les asesoraron para la instauración de las escuelas de la Magia.
-</p>
+	<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		<span aria-hidden="true">&times;</span>
+	</button>
+</div>
 
-<h3>Listado de hechizos por escuela</h3>
 <%= slim :'magia/escuelas/tabla' %>

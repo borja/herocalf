@@ -570,8 +570,6 @@
 -
   ruta:  "escuelas"
   template:
-    left:  "magia/left/elementales"
-    left2: "magia/left/sagradas"
     main:  "magia/escuelas"
     right: "magia/right/menu"
 -

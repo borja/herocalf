@@ -60,3 +60,7 @@ end
 def spell(id)
   spells[id]
 end
+
+def escuelas
+  %w(Aire Fuego Agua Tierra Sombra Hielo Arena Tenebro Sangre Luz)
+end
