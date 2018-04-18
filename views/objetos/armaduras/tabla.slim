@@ -4,8 +4,8 @@
 			tr
 				th colspan=2 Armadura
 				th Categoría
-				th Defensa
-				th Precio
+				th: i class="fas fa-shield-alt"
+				th Coste
 		tbody
 			- armaduras.map{ |arm| Armadura.new(arm) }.each do |a|
 				tr
@@ -13,4 +13,7 @@
 					td == a.name
 					td == a.categoria
 					td == a.defensa
-					td == a.precio
+					td class="text-right pr-3"
+						== a.precio
+						|  
+						i class="fas fa-database text-warning"
