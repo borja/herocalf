@@ -296,3 +296,17 @@
   bono:       "+1 Renta"
   lacra:      "Siempre que pierdes PM, pierdes 10 de oro ó 1PM adicional"
   aumento:    "Todos tus aliados obtienen su bono de +1 Renta"
+-
+  id:         38
+  name:       "prole de fénix"
+  personajes: ["elohim", "elfo", "gigante"]
+  bono:       "+1 PM al matar con fuego de Ira"
+  lacra:      "-1 PM al fallar un fuego de Ira"
+  aumento:    "+3 vs Calor"
+-
+  id:         39
+  name:       "conejo descomunal"
+  personajes: ["gigante"]
+  bono:       "1/reto: Repite 1d6. Recupéralo al obtener 2 escudos negros."
+  lacra:      "-1 movimiento, tienes que llevarlo en brazos."
+  aumento:    "Se transforma en ESE conejo. 1/reto: Invoca 1 lobo furioso."

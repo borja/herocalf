@@ -4,4 +4,80 @@
   rangos:      2
   name:        "Océano eterno"
   type:        "pasiva"
-  description: "+1 potencia a las magias de agua"
+  description: "+1/rango potencia a las magias de agua"
+-
+  id:          2
+  nivel:       2
+  rangos:      3
+  name:        "Aplastamiento tentacular"
+  type:        "activa"
+  coste:       "1 magia de agua"
+  description: "Conjuras un tentáculo espiritual del Kraken que golpea
+                con alcance 2 +1/rango como si fuera un hechizo de tipo rayo.
+                El tentáculo causa 2 dados especiales azules de daño psiónico."
+-
+  id:          3
+  nivel:       2
+  name:        "Poder del Kraken"
+  type:        "única"
+  description: "Golpea a todas las casillas colindantes con 2 dados
+                especiales azules. Obtienes +1 protección hasta tu siguiente
+                turno, por cada pieza obtenida. Si se ejecuta antes del
+                movimiento, esta habilidad aumenta su alcance en 1."
+-
+  id:          4
+  nivel:       3
+  rangos:      2
+  name:        "Puños tortuga"
+  type:        "Pasiva"
+  description: "Se te considera armado con un escudo en el flanco que no
+                lleves armas. En el segundo rango, puede ser en ambos flancos."
+# nivel 3
+-
+  id:          5
+  nivel:       3
+  rangos:      3
+  requisitos:  [2]
+  name:        "Zarcillo del Kraken"
+  type:        "activa"
+  coste:       "2 movimiento"
+  description: "Trepidante: Coloca 1/rango tentáculo en una esquina de la sala.
+                Al obtener escudos negros con ataques sin armas, los tentáculos
+                se disparan contra la víctima (si es posible) en línea recta.
+                El golpe se considera aplastamiento tentacular."
+-
+  id:          6
+  nivel:       3
+  requisitos:  [2]
+  name:        "Alimento espiritual"
+  type:        "reactiva"
+  description: "Al matar con aplastamiento tentacular, recuperas +1PM ó
+                una magia de agua aleatoria."
+-
+  id:          7
+  nivel:       3
+  requisitos:  [2, 3]
+  name:        "Honrar al Kraken"
+  type:        "reactiva"
+  description: "Recupera: Poder del Kraken al obtener 2 águilas con cualquier
+                aplastamiento tentacular."
+-
+  id:           8
+  nivel:        3
+  name:         "Playa tranquila"
+  requisitos:   [0]
+  type:         "Activa"
+  coste:        "1 PM, renunciar a movimiento"
+  description:  "Después de ejecutar un hechizo de agua, puedes ejecutar un
+                 hechizo de arena del mismo nivel a elegir."
+# nivel 4
+-
+  id:          9
+  nivel:       3
+  rangos:      2
+  requisitos:  [2]
+  name:        "Golpe tentacular"
+  type:        "Pasiva"
+  description: "Todos los hechizos de tipo toque, son considerados
+                aplastamientos tentaculares. En rango 2, todos los
+                aplastamientos suman +1 a la fuerza."

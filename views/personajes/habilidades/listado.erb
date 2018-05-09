@@ -1,5 +1,6 @@
 <% char = nomalize_pj(request.path_info.split('/').last) %>
 <% char.gsub!('se%C3%B1or%20de%20las%20bestias', 'beastslord') %>
+<% char.gsub!('se%C3%B1or%20del%20Kraken', 'krakenlord') %>
 
 <div class="table-responsive">
 	<table class="table table-striped table-bordered table-hover table-sm">

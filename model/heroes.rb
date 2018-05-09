@@ -59,9 +59,10 @@ def nomalize_pj(personaje)
     '%C3%A9' => 'é',
     '%C3%AD' => 'í',
     '%C3%B3' => 'ó',
-    '%C3%BA' => 'ú'
+    '%C3%BA' => 'ú',
+    '%CF%B8' => 'ϸ',
   }
-  personaje.gsub(/%C3%A1|%C3%A9|%C3%AD|%C3%B3|%C3%BA/) do |match|
+  personaje.gsub(/%C3%A1|%C3%A9|%C3%AD|%C3%B3|%C3%BA|%CF%B8/) do |match|
     normalization[match]
   end
 end
