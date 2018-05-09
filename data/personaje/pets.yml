@@ -310,3 +310,10 @@
   bono:       "1/reto: Repite 1d6. Recupéralo al obtener 2 escudos negros."
   lacra:      "-1 movimiento, tienes que llevarlo en brazos."
   aumento:    "Se transforma en ESE conejo. 1/reto: Invoca 1 lobo furioso."
+-
+  id:         40
+  name:       "calamardo"
+  personajes: ["gigante", "tiefling"]
+  bono:       "Lanza una magia de agua aleatoria al ser objetivo de tenebro"
+  lacra:      "Cuando te duermes te devora el cerebro y mueres definitivamente"
+  aumento:    "Lanza una magia de sombras aleatoria al ser objetivo de tenebro"
