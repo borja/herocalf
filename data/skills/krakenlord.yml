@@ -44,7 +44,8 @@
   description: "Trepidante: Coloca 1/rango tentáculo en una esquina de la sala.
                 Al obtener escudos negros con ataques sin armas, los tentáculos
                 se disparan contra la víctima (si es posible) en línea recta.
-                El golpe se considera aplastamiento tentacular."
+                El golpe se considera aplastamiento tentacular. El tentáculo
+                tiene 1 PC y 1 de armadura."
 -
   id:          6
   nivel:       3
@@ -73,7 +74,7 @@
 # nivel 4
 -
   id:          9
-  nivel:       3
+  nivel:       4
   rangos:      2
   requisitos:  [2]
   name:        "Golpe tentacular"
@@ -81,3 +82,34 @@
   description: "Todos los hechizos de tipo toque, son considerados
                 aplastamientos tentaculares. En rango 2, todos los
                 aplastamientos suman +1 a la fuerza."
+-
+  id:          10
+  nivel:       4
+  rangos:      2
+  requisitos:  [2, 4]
+  name:        "Algas correosas"
+  type:        "Pasiva"
+  description: "Añade 1/rango dados especiales verdes de ponzoña a los
+                tentáculos y golpes sin armas. Recupera un hechizo de agua
+                cuando un enemigo muera por este envenenamiento"
+-
+  id:          11
+  nivel:       4
+  requisitos:  [0]
+  name:        "Marejada"
+  type:        "Única"
+  description: "Instinto: Cuando vayas a recibir un golpe, todas las
+                miniaturas colindantes sufren un ataque sin armas interruptor,
+                aullante y que causa silencio. Recupera marejada al ser
+                sanado con hechizos de agua."
+-
+  id:          12
+  nivel:       4
+  rangos:      2
+  requisitos:  [0]
+  name:        "La fuerza del mar"
+  type:        "activa"
+  coste:       "2 PM"
+  description: "+1/rango de potencia a los dados especiales azules y
+                hechizos de agua hasta tu próximo turno."
+# nivel 5
