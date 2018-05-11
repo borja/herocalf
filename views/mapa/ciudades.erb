@@ -1,40 +1,42 @@
-<h2>Ciudades</h2>
-<hr>
+<div class="card">
+	<div class="card-header">
+		<h4>Ciudades</h4>
+	</div>
 
-<a href="/mapa">
-	<img src="/images/nav/mapeando.png"
-			 alt="Consultando el mapa"
-			 class="img-fluid">
-</a>
-
-<div class="table-responsive">
-	<table class="table table-hover table-sm">
-		<thead>
-			<tr>
-				<th class="text-center">Ciudad</th>
-				<th class="text-center">MB</th>
-				<th class="text-center">Héroes</th>
-			</tr>
-		</thead>
-		<tbody>
-			<% cities.each do |c| %>
+	<a href='/mapa'>
+		<img class="card-img-top" src="/images/nav/mapeando.png"
+				 alt="Consultando el mapa">
+	</a>
+	<h5 class="card-title">Lista de ciudades</h5>
+	<div class="table-responsive">
+		<table class="table table-hover table-sm">
+			<thead>
 				<tr>
-					<td>
-						<a href='/city/<%= c['name'] %>'>
-							<%= c['name'] %></a>
-					</td>
-					<td>
-						<%= c['master'] %>
-					</td>
-					<td>
-							<% if c['name'] == 'Jadessvärd' %>
-								<a href='/heroes'>ver</a>
-							<% else %>
-								<a href='/extranjeros/<%= c['name'] %>'>ver</a>
-							<% end %>
-					</td>
+					<th class="text-center">Ciudad</th>
+					<th class="text-center">MB</th>
+					<th class="text-center">Héroes</th>
 				</tr>
-			<% end %>
-		</tbody>
-	</table>
+			</thead>
+			<tbody>
+				<% cities.each do |c| %>
+					<tr>
+						<td>
+							<a href='/city/<%= c['name'] %>'>
+								<%= c['name'] %></a>
+						</td>
+						<td>
+							<%= c['master'] %>
+						</td>
+						<td>
+								<% if c['name'] == 'Jadessvärd' %>
+									<a href='/heroes'>ver</a>
+								<% else %>
+									<a href='/extranjeros/<%= c['name'] %>'>ver</a>
+								<% end %>
+						</td>
+					</tr>
+				<% end %>
+			</tbody>
+		</table>
+	</div>
 </div>
