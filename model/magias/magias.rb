@@ -64,3 +64,7 @@ end
 def escuelas
   %w(Aire Fuego Agua Tierra Sombra Hielo Arena Tenebro Sangre Luz)
 end
+
+def tipos_magia
+  load_yaml('magia/tipos')
+end

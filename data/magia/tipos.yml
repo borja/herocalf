@@ -1,0 +1,33 @@
+-
+  name: "Maldición"
+  desc: "Provocan un perjuicio en la víctima."
+-
+  name: "Bendición"
+  desc: "Suponen un beneficio duradero a un objetivo cualquiera."
+-
+  name: "Aura"
+  desc: "Tipo de bendición que sólo puede ser lanzada sobre uno mismo."
+-
+  name: "Invocación"
+  desc: "Convoca a un aliado de naturaleza mágica que ayudará
+         de alguna manera."
+-
+  name: "Sanación"
+  desc: "Restablecen alguna puntuación del objetivo.
+         Salvo que se exprese lo contrario, no causan efecto en muertos."
+-
+  name: "Conjuro"
+  desc: "Destinado a provocar daños en el objetivo.
+         Puede ser de tipo Rayo, Bola, Cono o Área."
+-
+  name: "Muro"
+  desc: "Convoca un muro de algún elemento que impedirá el paso
+         de las miniaturas. Su área de efecto siempre es lineal."
+-
+  name: "Interrupción"
+  desc: "Evita las magias de otros lanzadores de hechizos.
+         Tiene efecto inmediato y se puede jugar fuera del turno
+         como acción gratuita."
+-
+  name: "Superchería"
+  desc: "Estas magias recogen todos aquellos efectos no recogidos previamente."
