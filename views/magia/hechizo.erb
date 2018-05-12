@@ -1,16 +1,25 @@
 <% h = spells.find {|s| s.name == params[:param] } %>
-
 <h2><%= h.name.capitalize %></h2>
-<p>
-	<ul>
-		<li><strong>Efecto:</strong> <%= h.efecto %></li>
-		<li>
-			<strong>Tipo:</strong> <%= h.tipo %>
-			de <%= h.elemento %> de nivel <%= h.nivel %>
-		</li>
-		<li><strong>Potencia</strong>: <%= h.potencia %></li>
-		<li><strong>Maestría</strong>: <%= h.maestría %></li>
-		<li><strong>Diablura</strong>: <%= h.diablura %></li>
-		<li><strong>Ardid</strong>: <%= h.ardid %></li>
-	</ul>
-</p>
+<hr>
+
+<dl class="row text-left">
+	<dt class="col-lg-3">Efecto</dt>
+	<dd class="col-lg-9"><%= h.efecto %></dd>
+	
+	<dt class="col-lg-3">Tipo</dt>
+	<dd class="col-lg-9">
+		<%= h.tipo %> de <%= h.elemento %> de nivel <%= h.nivel %>
+	</dd>
+	
+	<dt class="col-lg-3">Potencia</dt>
+	<dd class="col-lg-9"><%= h.potencia %></dd>
+	
+	<dt class="col-lg-3">Maestría</dt>
+	<dd class="col-lg-9"><%= h.maestría %></dd>
+
+	<dt class="col-lg-3">Diablura</dt>
+	<dd class="col-lg-9"><%= h.diablura %></dd>
+
+	<dt class="col-lg-3">Ardid</dt>
+	<dd class="col-lg-9"><%= h.ardid %></dd>
+</dl>
