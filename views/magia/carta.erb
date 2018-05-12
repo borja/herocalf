@@ -6,31 +6,30 @@
 
 <% h = spell|| sombra || hielo || arena || sangre %>
 
+<div class="card">
+	<div class="card-header">
+		<h4>Estadísticas</h4>
+	</div>
 
+	<a href="/hechizo/<%= h.name %>">
+		<img class="card-img-top"
+				 src="/images/magia/ilustraciones/<%= h.name %>.png"
+				 alt="<%= h.name %>">
+	</a>
 
-
-
-<h2>Estadísticas</h2>
-<a href="/hechizo/<%= h.name %>">
-	<img src="/images/magia/ilustraciones/<%= h.name %>.png" 
-			 alt="<%= h.name %>" class="img-fluid">
-</a>
-
-<div class="table-responsive">
-	<table class="table">
-		<tbody>
-			<tr>
-				<td>Nivel</td>
-				<td width="50%"><%= h.nivel %></td>
-			</tr>
-			<tr>
-				<td>Alcance</td>
-				<td width="50%"><%= h.alcance %></td>
-			</tr>
-			<tr>
-				<td>Duración</td>
-				<td width="50%"><%= h.duracion %></td>
-			</tr>
-		</tbody>
-	</table>
+	<ul class="list-group list-group-flush ">
+		<li class="list-group-item d-flex justify-content-between align-items-center">
+			<i class="fas fa-certificate fa-fw"></i> Nivel
+			<span class="badge badge-secondary badge-pill"><%= h.nivel %></span>
+		</li>
+		<li class="list-group-item d-flex justify-content-between align-items-center">
+			<i class="fas fa-text-height fa-fw"></i> Alcance
+			<span class="badge badge-secondary badge-pill"><%= h.alcance %></span>
+		</li>
+		<li class="list-group-item d-flex justify-content-between align-items-center">
+			<i class="fas fa-hourglass-half fa-fw"></i> Duración
+			<span class="badge badge-secondary badge-pill"><%= h.duracion %></span>
+		</li>
+	</ul>
 </div>
+<br>
