@@ -1,6 +1,6 @@
 # Todos los hechizos disponibles en el juego
 class Magia < Hash
-  attr_accessor :id, :name, :efecto, :potencia, :tipo, :subtipo
+  attr_accessor :id, :name, :efecto, :potencia, :tipo, :subtipo,
                 :diablura, :duracion, :alcance, :maestría, :ardid,
                 :summun, :chakra # Only in plegarias
 
