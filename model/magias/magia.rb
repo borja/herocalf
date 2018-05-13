@@ -1,7 +1,7 @@
 # Todos los hechizos disponibles en el juego
 class Magia < Hash
-  attr_accessor :id, :name, :efecto, :potencia,
-                :diablura, :duracion, :alcance, :tipo, :maestría, :ardid,
+  attr_accessor :id, :name, :efecto, :potencia, :tipo, :subtipo
+                :diablura, :duracion, :alcance, :maestría, :ardid,
                 :summun, :chakra # Only in plegarias
 
   def initialize(args)
@@ -11,7 +11,7 @@ class Magia < Hash
   end
 
   def img_path
-    "'../../images/magia/#{elemento}s#{nivel}/#{name}.png'"
+    "/images/magia/#{elemento}s#{nivel}/#{name}.png"
   end
 
   def color # Returns color code by position in colors array

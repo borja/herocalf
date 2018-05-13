@@ -4,7 +4,8 @@
   alcance:  "M"
   duracion: 0
   name:     "bola de fuego"
-  tipo:     "Conjuro - Bola"
+  tipo:     "Conjuro"
+  subtipo:  "Bola"
   efecto:   "Causa 2 dados de ataque por fuego."
   potencia: "+1 dado de ataque."
   maestría: "+1 efecto de área."
@@ -49,17 +50,18 @@
   duracion: "E"
   name:     "prender arma"
   tipo:     "Bendición"
-  efecto:   "El arma objetivo añade un dado de fuego al atacar."
-  potencia: "+1 dado de fuego al atacar."
-  maestría: "+1 fuerza en daños ígneos"
-  diablura: "El arma puede quemar puertas."
-  ardid:    "Las calaveras en los dados de fuego recuperan este hechizo."
+  efecto:   "+1 dado de fuego al ataque del arma objetivo"
+  potencia: "+1 dado de fuego"
+  maestría: "+1 fuerza al daños ígneo"
+  diablura: "El arma puede quemar puertas"
+  ardid:    "Las calaveras en los dados de fuego recuperan este hechizo"
 -
   id:       5
   alcance:  0
   duracion: 0
   name:     "aliento dragón"
-  tipo:     "Conjuro - Cono"
+  tipo:     "Conjuro"
+  subtipo:  "Cono"
   efecto:   "La casilla frontal recibe un daño de 3 dados de combate."
   potencia: "+1 dado de daño."
   maestría: "+1 área de efecto (cono)"
@@ -72,14 +74,12 @@
   duracion: 0
   name:     "genio"
   tipo:     "Invocación"
-  efecto:
-            "Causa 4 dados de ataque por aire o
+  efecto:   "Causa 4 dados de ataque por aire o
              abre una puerta revelando la sala."
   potencia: "+1 potencia de ataque del genio"
   maestría: "+1 turno de invocación."
   diablura: "Si el genio mata tu siguiente magia será diablura."
-  ardid:
-            "Al utilizarse para abrir puertas se recupera con X+
+  ardid:    "Al utilizarse para abrir puertas se recupera con X+
              (X son los enemigos tras la puerta)"
 -
   id:       7
@@ -91,8 +91,7 @@
   potencia: "+1 turno aturdido"
   maestría: "+1 objetivo (debe ser colindante)"
   diablura: "Cada turno del efecto causa un dado de daño eléctrico."
-  ardid:
-            "Cada turno del efecto causa un dado de daño eléctrico
+  ardid:    "Cada turno del efecto causa un dado de daño eléctrico
              a las miniaturas adyacentes."
 -
   id:       8
@@ -116,8 +115,7 @@
   potencia: "El lanzador puede sumar/restar 1 a la tirada de locura."
   maestría: "+1 objetivo."
   diablura: "Todos los aliados recuperan 1PM."
-  ardid:
-            "Si el resultado de la locura es 7 puedes elegir
+  ardid:    "Si el resultado de la locura es 7 puedes elegir
              que la víctima ejecute flauta mágica silbando."
 -
   id:       10
@@ -252,7 +250,8 @@
   alcance:  1
   duracion: 0
   name:     "choque de agua"
-  tipo:     "Evocación - Toque"
+  tipo:     "Evocación"
+  subtipo:  "Toque"
   efecto:   "Un golpe de agua proyecta 1d6 casillas hacia atrás a un enemigo.
              Si el objetivo no colisiona, pasará a estar tumbado"
   potencia: "+1 casilla, +1 alcance"
@@ -289,7 +288,8 @@
   alcance:  "1-3-5"
   duracion: 0
   name:     "cono de llamas"
-  tipo:     "Conjuro - Cono"
+  tipo:     "Conjuro"
+  subtipo:  "Cono"
   efecto:   "2 dados rojos de ataque."
   potencia: "+1 potencia"
   maestría: "+1 alcance y fuerza"
@@ -300,7 +300,8 @@
   alcance:  "m"
   duracion: 0
   name:     "rayo ígneo"
-  tipo:     "Conjuro - Rayo"
+  tipo:     "Conjuro"
+  subtipo:  "Rayo"
   efecto:   "3 dados de ataque. El objetivo defiende con 2 dados por cada éxito.
              Al matar, ataca al siguiente objetivo que defenderá con +1 dado"
   potencia: "+1 potencia de ataque."
@@ -312,7 +313,8 @@
   alcance:  1
   duracion: "D"
   name:     "aura de calor"
-  tipo:     "Bendición - Aura"
+  tipo:     "Bendición"
+  subtipo:  "Aura"
   efecto:   "Miniaturas a melee al inicio de su turno: arden. +3 vs Calor"
   potencia: "+1 efecto de llamas a las miniaturas colindantes."
   maestría: "+1 alcance (melee)"
@@ -323,7 +325,8 @@
   alcance:  "M"
   duracion: 4
   name:     "muro de fuego"
-  tipo:     "Evocación - Muro"
+  tipo:     "Evocación
+  subtipo:  "Muro"
   efecto:   "En 5 casillas lineales brota un muro de llamas.
              Si se atraviesan atacará con 3 dados de fuego.
              1PM: Se pueden reducir N casillas aumentando el ataque en N"
@@ -336,7 +339,8 @@
   alcance:  "V"
   duracion: 0
   name:     "lluvia de fuego"
-  tipo:     "Evocación - Sala"
+  tipo:     "Evocación"
+  subtipo:  "Sala"
   efecto:   "Ataque de 1 dado de fuego. Todo objeto mundano es destruido.
              Los enemigos se defienden con 1 solo dado."
   potencia: "+1 fuerza del ataque."
@@ -348,7 +352,8 @@
   alcance:  "V"
   duracion: 0
   name:     "infierno"
-  tipo:     "Conjuro - Área"
+  tipo:     "Conjuro"
+  subtipo:  "Área"
   efecto:   "En 1 casilla: ataque ígneo de la minusmitad de la mente y
              2 dados a las casillas contiguas.
              +1 casilla de área contigua por cada magia elemental sacrificada."
@@ -362,7 +367,8 @@
   alcance:  "M"
   duracion: 0
   name:     "rayo destructor"
-  tipo:     "Conjuro - Rayo"
+  tipo:     "Conjuro"
+  subtipo:  "Rayo"
   efecto:   "1 dado de ataque eléctrico en su recorrido."
   potencia: "+1 fuerza del ataque."
   maestría: "+1 dado adicional"
@@ -373,7 +379,8 @@
   alcance:  "M"
   duracion: 0
   name:     "rayo prismático"
-  tipo:     "Conjuro - Rayo"
+  tipo:     "Conjuro"
+  subtipo:  "Rayo"
   efecto:   "3 dados de ataque de un primer rayo.
              Después brotan rayos adicionales a objetivos diferentes
              disminuyendo el ataque en 1. Cesa al llegar a 0."
@@ -386,7 +393,8 @@
   alcance:  "V"
   duracion: "D/Mov/R"
   name:     "tornado"
-  tipo:     "Conjuro - Área"
+  tipo:     "Evocación"
+  subtipo:  "Área"
   efecto:   "PM/2 (minusmitad) dados de ataque en una casilla. Tira 1d6:<br/>
              (1-4): Se desplazará otra casilla contigua a eleccion del mago<br/>
              (5-6): A elección del Malvado Brujo<br/>
@@ -401,7 +409,8 @@
   alcance:  "M"
   duracion: 0
   name:     "relámpago"
-  tipo:     "Conjuro - Área"
+  tipo:     "Evocación"
+  subtipo:  "Área"
   efecto:   "3 dados de daño. El objetivo defenderá con 3 dados
              salvando 2 daños por cada éxito de su categoría"
   potencia: "+1 Fuerza del daño."
@@ -413,7 +422,8 @@
   alcance:  1
   duracion: "D"
   name:     "aura de la tormenta"
-  tipo:     "Bendición - Aura"
+  tipo:     "Bendición"
+  subtipo:  "Aura"
   efecto:   "Defensa: +1. Las miniaturas que se acerquen a melee
              sufren 1 ataque electrico. Al final de su turno
              deben retroceder una casilla hacia atras pudiendo sufrir colisión."
@@ -425,7 +435,8 @@
   id:       35
   alcance:  "V"
   duracion: "C"
-  tipo:     "Conjuro - Área"
+  tipo:     "Evocación"
+  subtipo:  "Área"
   name:     "área de vacío"
   efecto:   "El mago elige 3 casillas contiguas y no lineales.
              Cualquier objetivo dentro de esas casillas sufre 1 dado de ataque.
@@ -455,7 +466,8 @@
   alcance:  "V"
   duracion: "M"
   name:     "muro de piedra"
-  tipo:     "Evocación - Muro"
+  tipo:     "Evocación"
+  subtipo:  "Muro"
   efecto:   "1-5 casillas (a elección del lanzador) lineales desocupadas
              se convertiran en bloques de piedra."
   potencia: "+1 casilla"
@@ -467,7 +479,8 @@
   id:       38
   alcance:  "V"
   duracion: 0
-  tipo:     "Evocación - Sala"
+  tipo:     "Evocación"
+  subtipo:  "Sala"
   name:     "tromba de meteoros"
   efecto:   "Las miniaturas sufren un ataque de 2 dados que podran defender."
   potencia: "+1 dado de ataque."
@@ -480,6 +493,7 @@
   duracion: 0
   name:     "hecatombe"
   tipo:     "Evocación"
+  subtipo:  "Área"
   efecto:   "Se invoca una roca cuyo ataque es la mente del lanzador."
   potencia: "+1 potencia de ataque."
   maestría: "+1 radio de efecto"
@@ -503,7 +517,8 @@
   alcance:  1
   duracion: "D"
   name:     "escudo torreón"
-  tipo:     "Evocación - Fetiche"
+  tipo:     "Evocación"
+  subtipo:  "Fetiche"
   efecto:   "Un escudo de granito surge en la casilla frontal del mago.
             Se mueve con él, ocupando una casilla adyacente a eleccion.
             Si no puedes desplazar el escudo, cesa el efecto. +2 defensa"
@@ -531,7 +546,8 @@
   alcance:  "V"
   duracion: "M"
   name:     "nube venenosa"
-  tipo:     "Conjuro - Área"
+  tipo:     "Evocación"
+  subtipo:  "Área"
   efecto:   "No afecta a no-muertos. Ocupa 4 casillas elegidas no lineales.
             Al atravesar la nube: -1 PM de daño defendible.
             Se puede desplazar la nube."
@@ -544,7 +560,8 @@
   alcance:  "1-3-5"
   duracion: 0
   name:     "cono ácido"
-  tipo:     "Conjuro - Cono"
+  tipo:     "Conjuro"
+  subtipo:  "Cono"
   efecto:   "Ataque por cono de acido de 3-2-1 dados"
   potencia: "+1 fuerza del ácido."
   maestría: "+1 alcance"
@@ -555,7 +572,8 @@
   alcance:  "∞"
   duracion: 0
   name:     "borbotón"
-  tipo:     "Conjuro - Área"
+  tipo:     "Evocación"
+  subtipo:  "Área"
   efecto:   "Proyecta a un enemigo en el aire y en el impacto de la caida
              sufre un ataque de 3 por agua y otros 4 por combate."
   potencia: "+1 potencia del ataque de agua y +1 fuerza de la caída."
@@ -579,7 +597,8 @@
   alcance:  "∞"
   duracion: 0
   name:     "tsunami"
-  tipo:     "Conjuro - Sala"
+  tipo:     "Evocación"
+  subtipo:  "Sala"
   efecto:   "Se inunda una habitacion ya revelada.
              Todos los muebles y artefactos mundanos son destruidos.
              Todas las criaturas/muebles sufren 1 daño que podrán
@@ -594,7 +613,8 @@
   alcance:  1
   duracion: 0
   name:     "deflagración"
-  tipo:     "Conjuro - Explosión"
+  tipo:     "Conjuro"
+  subtipo:  "Explosión"
   efecto:   "Todas las casillas adyacentes al lanzador sufren un Fuego de Ira.
              <br/>2 PC: +1 duracion"
   potencia: "+1 alcance"
@@ -619,7 +639,8 @@
   alcance:  "M"
   duracion: 0
   name:     "gran bola de fuego"
-  tipo:     "Conjuro - bola"
+  tipo:     "Conjuro"
+  subtipo:  "Bola"
   efecto:   "Causa 6 daños de fuego, defendibles con 5 dados de combate."
   potencia: "+2 daños de fuego extra."
   maestría: "+1 de área"
@@ -631,7 +652,8 @@
   duracion: "1d6"
   alcance:  "V"
   name:     "recinto ígneo"
-  tipo:     "Conjuro - Área"
+  tipo:     "Evocación"
+  subtipo:  "Área"
   efecto:   "El mago elige 4 casillas no contiguas y paralelas entre sí.
              De ellas brotarán 4 rayos ígneos."
   potencia: "+1 turno extra."
@@ -669,7 +691,8 @@
   alcance:  "V"
   duracion: 0
   name:     "relámpago rístico"
-  tipo:     "Conjuro"
+  tipo:     "Evocación"
+  subtipo:  "Área"
   efecto:   "Causa 6 daños eléctricos al objetivo. Defensa: 4 dados de combate
              de potencia 2 con escudos de su categoría.
              Si el conjurador se descarta de un hechizo
@@ -683,7 +706,8 @@
   alcance:  1
   duracion: 0
   name:     "choque de viento"
-  tipo:     "Conjuro - Impacto"
+  tipo:     "Conjuro"
+  subtipo:  "Toque"
   efecto:   "El objetivo retrocede 1d6 casillas, pudiendo colisiionar.
              Si el mago se descarta de un hechizo tira 1d6 adicional."
   potencia: "+2 a la tirada."
@@ -695,7 +719,8 @@
   alcance:  0
   duracion: "D"
   name:     "levitar"
-  tipo:     "Bendición - Aura"
+  tipo:     "Bendición"
+  subtipo:  "Aura"
   efecto:   "Te elevas, quedando inmune a trampas foso y
              considerándose posición elevada."
   potencia: "+1 daño necesario para el cese de levitar."
@@ -721,7 +746,7 @@
   alcance:  "V"
   name:     "puntería"
   tipo:     "Bendición"
-  efecto:   "El lanzador encanta un arma de proyectiles con: Odio"
+  efecto:   "Encanta un arma de proyectiles con: Odio"
   potencia: "+1 duracion"
   maestría: "+1 potencia del arma"
   diablura: "Los dados repetidos exigen defensa verdadera"
@@ -731,7 +756,8 @@
   duracion: "1d6"
   alcance:  "V"
   name:     "tormenta desatada"
-  tipo:     "Conjuro - Sala"
+  tipo:     "Evocación"
+  subtipo:  "Sala"
   efecto:   "Ejecuta sobre 1d6 objetivos el hechizo Tempestad.
              Si coincide con la duracion, sufrirán 1 ataque de aire/turno."
   potencia: "+1 repetición a cualquiera de las dos tiradas"
@@ -766,7 +792,8 @@
   alcance:  "∞"
   duracion: 0
   name:     "terremoto"
-  tipo:     "Conjuro - Sala"
+  tipo:     "Evocación"
+  subtipo:  "Sala"
   efecto:   "Sala desvelada: Todos los muebles son destruidos
              Ataca con M (mente) dados repartiendolos entre las miniaturas.
              Los hechizos posteriores de Tierra serán potenciados en +1."
@@ -802,7 +829,8 @@
   alcance:  0
   duracion: "∞"
   name:     "maza de piedra rúnica"
-  tipo:     "Evocación - Fetiche"
+  tipo:     "Evocación"
+  subtipo:  "Fetiche"
   efecto:   "La maza golpea con magia térrea y disipa efectos beneficiosos.
              Ataque: 2 dados blancos, cuya fuerza es igual a tus magias
              de tierra disponibles. Duplica su daño contra no-muertos."
@@ -816,7 +844,8 @@
   alcance:  "V"
   duracion: "Muerte"
   name:     "glifo de agua"
-  tipo:     "Bendición - Glifo"
+  tipo:     "Bendición"
+  subtipo:  "Glifo"
   efecto:   "Sigue al objetivo hasta que muera, resucitándolo,
             en estado de dormido. Sus PC serán igualados a sus PM."
   potencia: "+1 PM y +1 PC al objetivo cuando resucita."
@@ -839,7 +868,8 @@
   alcance:  "V"
   duracion: "D"
   name:     "escudo de agua"
-  tipo:     "Evocación - Fetiche"
+  tipo:     "Evocación"
+  subtipo:  "Fetiche"
   efecto:   "+4 vs Calor. Desviará hechizos de tipo Rayo. +1 defensa"
   potencia: "+1 de defensa y +1 al daño necesario para cesar el efecto."
   maestría: "+1 objetivo adyacente"
@@ -862,7 +892,8 @@
   alcance:  "V"
   duracion: 0
   name:     "tormenta de nieve"
-  tipo:     "Conjuro - Sala"
+  tipo:     "Evocación"
+  subtipo:  "Sala"
   efecto:   "Todos: Ataque de 3 dados y se pierde la plusmitad de movimiento."
   potencia: "+1 fuerza del ataque."
   maestría: "+1 duración"
@@ -916,7 +947,8 @@
   alcance:  "M"
   duracion: 0
   name:     "bola de fuego descomunal"
-  tipo:     "Conjuro - Bola"
+  tipo:     "Conjuro"
+  subtipo:  "Bola"
   efecto:   "El objetivo defenderá con 8 dados un ataque de 10 dados.
              Todas las casillas colindantes reciben una bola de fuego (1)"
   potencia: "+1 fuerza de la bola."
@@ -939,7 +971,8 @@
   alcance:  0
   duracion: "D"
   name:     "aura de llamas"
-  tipo:     "Aura"
+  tipo:     "Bendición"
+  subtipo:  "Aura"
   efecto:   "Al inicio del turno de cada miniatura adyacente al lanzador
              recibe un ataque de Fuego de Ira (1).
              Cualquier proyectil mundano es destruido antes de provocar daños.
@@ -969,7 +1002,8 @@
   alcance:  "M"
   duracion: 0
   name:     "rayo dracónico"
-  tipo:     "Conjuro - Rayo"
+  tipo:     "Conjuro"
+  subtipo:  "Rayo"
   efecto:   "Un relámpago brota del hechicero causando un ataque de 3 dados
              a todas las miniaturas. En la última casilla, el objetivo sufrirá
              el impacto de una Gran Bola de Fuego (3)."
@@ -982,7 +1016,8 @@
   alcance:  0
   duracion: "D"
   name:     "volar"
-  tipo:     "Bendición - Aura"
+  tipo:     "Bendición"
+  subtipo:  "Aura"
   efecto:   "Ignora las penalizaciones por movimiento y fosos trampa.
              x3 de bonificador por posición elevada. Todas las criaturas
              en posición inferior deberán obtener 3+ para impactarle
@@ -1022,7 +1057,8 @@
   alcance:  1
   duracion: "*"
   name:     "espada mágica inestable"
-  tipo:     "Evocación - Fetiche"
+  tipo:     "Evocación"
+  subtipo:  "Fetiche"
   efecto:   "La espada ancha encantada ocupará la casilla contigua del mago.
              (*) Cesa si no existiera alguna casilla donde colocarla o
              Con 1 al inicio de su turno al tirar 1d6.
@@ -1038,7 +1074,8 @@
   alcance:  "V"
   duracion: 0
   name:     "ojo de la tormenta"
-  tipo:     "Conjuro - Sala"
+  tipo:     "Evocación"
+  subtipo:  "Sala"
   efecto:   "Mueve a las miniaturas hasta la pared más cercana.
              Inflinge un ataque igual a la distancia recorrida.
              El lanzador elige el recorrido. 1PM, acción: +1 duración"
@@ -1052,7 +1089,8 @@
   alcance:  "V"
   duracion: "∞"
   name:     "fisura"
-  tipo:     "Conjuro - Área"
+  tipo:     "Evocación"
+  subtipo:  "Área"
   efecto:   "En una casilla surge un pozo mágico. Caer en el foso:
              tira la plusmitad de los PC actuales como daño directo.
              Para salir, realiza una TS de movimiento (2d6).
@@ -1068,7 +1106,8 @@
   alcance:  "V"
   duracion: 0
   name:     "la boca del lobo"
-  tipo:     "Conjuro - Área"
+  tipo:     "Evocación"
+  subtipo:  "Área"
   efecto:   "Estalactitas y estalagmitas surgen del techo y del suelo,
              atrapando a las miniaturas en 5 casillas contiguas.
              Perderán su próximo turno. Inflinge un daño de 2 dados"
@@ -1108,7 +1147,8 @@
   alcance:  "V"
   duracion: "1d6"
   name:     "cuerno de guerra"
-  tipo:     "Evocación - Fetiche"
+  tipo:     "Evocación"
+  subtipo:  "Fetiche"
   efecto:   "Acción de ataque: Soplar el cuerno, lanzando un hechizo al azar
              de aire de nivel 3. Último turno, 1d6 PM: +1 duración/PM"
   potencia: "+1 potencia en el hechizo de aire"
@@ -1133,7 +1173,8 @@
   alcance:  "1-3-5"
   duracion: 0
   name:     "cono de frío"
-  tipo:     "Conjuro - Cono"
+  tipo:     "Conjuro"
+  subtipo:  "Cono"
   efecto:   "Daño directo por frío de 5-3-2 dados.
              Todas las miniaturas que sufran daños perderán su movimiento.
              Si mueren su miniatura no se retirará hasta que alguien la rompa"
@@ -1172,7 +1213,8 @@
   alcance:  0
   duracion: "-2PM"
   name:     "globo de agua"
-  tipo:     "Bendición - Glifo"
+  tipo:     "Bendición"
+  subtipo:  "Glifo"
   efecto:   "Seguirá al mago sin ocupar espacio. +1 PC a un aliado adyacente.
              Cesará cuando el mago reduzca 2PM o más, en el mismo turno.
              1PM: a partir de ahora, sana PM en lugar de PC, o viceversa."
@@ -1198,11 +1240,13 @@
   alcance:  "V"
   duracion: "D y 1PM"
   name:     "bruma mística"
-  tipo:     "Conjuro - Sala"
+  tipo:     "Evocación"
+  subtipo:  "Sala"
   efecto:   "Solo se podrá combatir cuerpo a cuerpo y las miniaturas
              defenderán con la plusmitad de su defensa.
              Cualquier magia deberá superar una TS de mente.
-             El efecto dura mientras el mago invierta 1PM al inicio de su turno              y no reciba daño."
+             El efecto dura mientras el mago invierta 1PM al inicio de su turno
+             y no reciba daño."
   potencia: "+1 al duración (daño)"
   maestría: "+1 aliado inmune a la bruma"
   diablura: "1PM: 1 proyectil de un aliado, ignorará la bruma."
