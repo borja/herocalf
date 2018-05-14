@@ -1,0 +1,323 @@
+# Aire nivel 1
+-
+  id:       0
+  alcance:  "V"
+  duracion: 0
+  name:     "Genio"
+  tipo:     "Invocación"
+  efecto:   "Causa 4 dados de ataque por aire o
+             abre una puerta revelando la sala."
+  potencia: "+1 potencia de ataque del genio"
+  maestría: "+1 turno de invocación."
+  diablura: "Si el genio mata tu siguiente magia será diablura."
+  ardid:    "Al utilizarse para abrir puertas se recupera con X+
+             (X son los enemigos tras la puerta)"
+-
+  id:       1
+  alcance:  "V"
+  duracion: 1
+  name:     "Tempestad"
+  tipo:     "Maldición"
+  efecto:   "Aturde a un enemigo un turno."
+  potencia: "+1 turno aturdido"
+  maestría: "+1 objetivo (debe ser colindante)"
+  diablura: "Cada turno del efecto causa un dado de daño eléctrico."
+  ardid:    "Cada turno del efecto causa un dado de daño eléctrico
+             a las miniaturas adyacentes."
+-
+  id:       2
+  alcance:  "V"
+  duracion: 1
+  name:     "Ráfaga"
+  tipo:     "Bendición"
+  efecto:   "+5 puntos de movimiento. Aura: no consume acción de ataque."
+  potencia: "+2 puntos de movimiento"
+  maestría: "+1 turno de efecto."
+  diablura: "Además el objetivo podrá volar."
+  ardid:    "Si el movimiento es linear, las miniaturas adyacentes
+             son empujadas perpendicularmente 1 casilla."
+-
+  id:       3
+  alcance:  "V"
+  duracion: 1
+  name:     "Flauta mágica"
+  tipo:     "Maldición"
+  efecto:   "Un objetivo entra un turno en locura"
+  potencia: "El lanzador puede sumar/restar 1 a la tirada de locura."
+  maestría: "+1 objetivo."
+  diablura: "Todos los aliados recuperan 1PM."
+  ardid:    "Si el resultado de la locura es 7 puedes elegir
+             que la víctima ejecute flauta mágica silbando."
+-
+  id:       4
+  alcance:  "V"
+  duracion: 1
+  name:     "Viento en popa"
+  tipo:     "Superchería"
+  efecto:   "+3 movimiento de todos los aliados"
+  potencia: "+1 al modificador de movimiento"
+  maestría: "+1 turno de efecto."
+  diablura: "En su lugar puedes reducir en 3 el movimiento enemigo."
+  ardid:    "Los aliados no pueden ser empujados."
+-
+  id:       5
+  alcance:  "V"
+  duracion: "A"
+  name:     "Disparo certero"
+  tipo:     "Bendición"
+  efecto:   "+2 de potencia al siguiente ataque de proyectil del objetivo."
+  potencia: "+1 potencia"
+  maestría: "+1 duracion"
+  diablura: "+1 dado eléctrico al ataque."
+  ardid:    "El disparo es aullante."
+# Aire nivel 2
+-
+  id:       6
+  alcance:  "M"
+  duracion: 0
+  name:     "Rayo destructor"
+  tipo:     "Conjuro"
+  subtipo:  "Rayo"
+  efecto:   "1 dado de ataque eléctrico en su recorrido."
+  potencia: "+1 fuerza del ataque."
+  maestría: "+1 dado adicional"
+  diablura: "Al morir las criaturas adyacentes se ven afectadas por el efecto"
+  ardid:    "El daño (martillos) es directo"
+-
+  id:       7
+  alcance:  "M"
+  duracion: 0
+  name:     "Rayo prismático"
+  tipo:     "Conjuro"
+  subtipo:  "Rayo"
+  efecto:   "3 dados de ataque de un primer rayo.
+             Después brotan rayos adicionales a objetivos diferentes
+             disminuyendo el ataque en 1. Cesa al llegar a 0."
+  potencia: "+1 dado de ataque"
+  maestría: "+1 potencia de ataque"
+  diablura: "Si los objetivos son colindantes, los rayos atacan en conjunto"
+  ardid:    "E = exceso de rayos no usados. Se recupera con E-"
+-
+  id:       8
+  alcance:  "V"
+  duracion: "D/Mov/R"
+  name:     "Tornado"
+  tipo:     "Evocación"
+  subtipo:  "Área"
+  efecto:   "PM/2 (minusmitad) dados de ataque en una casilla. Tira 1d6:<br/>
+             (1-4): Se desplazará otra casilla contigua a eleccion del mago<br/>
+             (5-6): A elección del Malvado Brujo<br/>
+             Cesa el efecto, si el hechicero se mueve, sufre una herida o
+             el tornado repite la casilla. Afecta a todo su recorrido."
+  potencia: "+1 potencia del ataque."
+  maestría: "+1 casilla de tornado"
+  diablura: "1PM: Libra a un aliado del efecto"
+  ardid:    "El efecto no cesa al repetir casillas"
+-
+  id:       9
+  alcance:  "M"
+  duracion: 0
+  name:     "Relámpago"
+  tipo:     "Evocación"
+  subtipo:  "Área"
+  efecto:   "3 dados de daño. El objetivo defenderá con 3 dados
+             salvando 2 daños por cada éxito de su categoría"
+  potencia: "+1 Fuerza del daño."
+  maestría: "+2 dados de ataque y defensa"
+  diablura: "Odio"
+  ardid:    "El objetivo solo salva 1 daño por éxito"
+-
+  id:       10
+  alcance:  1
+  duracion: "D"
+  name:     "Aura de la tormenta"
+  tipo:     "Bendición"
+  subtipo:  "Aura"
+  efecto:   "Defensa: +1. Las miniaturas que se acerquen a melee
+             sufren 1 ataque electrico. Al final de su turno
+             deben retroceder una casilla hacia atras pudiendo sufrir colisión."
+  potencia: "+1 de defensa +1 dado de ataque eléctrico y +1 casilla desplazada."
+  maestría: "+1 alcance"
+  diablura: "Al defender con éxito recupera 1 hechizo de aire de nivel 1"
+  ardid:    "Los aliados son inmunes"
+-
+  id:       11
+  alcance:  "V"
+  duracion: "C"
+  tipo:     "Evocación"
+  subtipo:  "Área"
+  name:     "Área de vacío"
+  efecto:   "El mago elige 3 casillas contiguas y no lineales.
+             Cualquier objetivo dentro de esas casillas sufre 1 dado de ataque.
+             Cualquiera que las abandonelas sufre 3 dados de ataque desactivando
+             el efecto (C) en esa casilla"
+  potencia: "+1 casilla o +1 ataque en todas las tiradas del efecto."
+  maestría: "+1 potencia y fuerza de ataque"
+  diablura: "Si matas no cesa el efecto al abandonar"
+  ardid:    "Añade 1 dado especial blanco a las tiradas de ataque"
+# Aire nivel 3
+-
+  id:       12
+  alcance:  "V"
+  duracion: 0
+  name:     "Relámpago rístico"
+  tipo:     "Evocación"
+  subtipo:  "Área"
+  efecto:   "Causa 6 daños eléctricos al objetivo. Defensa: 4 dados de combate
+             de potencia 2 con escudos de su categoría.
+             Si el conjurador se descarta de un hechizo
+             se suman 2 daños adicionales."
+  potencia: "+1 daño eléctrico."
+  maestría: "+1 objetivo colindante"
+  diablura: "Recupera relámpago rístico cuando falle"
+  ardid:    "Si usas esta magia para pagar un efecto, ejecútala."
+-
+  id:       13
+  alcance:  1
+  duracion: 0
+  name:     "Choque de viento"
+  tipo:     "Conjuro"
+  subtipo:  "Toque"
+  efecto:   "El objetivo retrocede 1d6 casillas, pudiendo colisiionar.
+             Si el mago se descarta de un hechizo tira 1d6 adicional."
+  potencia: "+2 a la tirada."
+  maestría: "+1 fuerza de colisión"
+  diablura: "Puedes elegir no causar daño"
+  ardid:    "Puedes elegir la dirección del choque"
+-
+  id:       14
+  alcance:  0
+  duracion: "D"
+  name:     "Levitar"
+  tipo:     "Bendición"
+  subtipo:  "Aura"
+  efecto:   "Te elevas, quedando inmune a trampas foso y
+             considerándose posición elevada."
+  potencia: "+1 daño necesario para el cese de levitar."
+  maestría: "+1 potencia de aire"
+  diablura: "Puedes dar pasos de combate."
+  ardid:    "Puedes situarte encima de otras miniaturas.
+             Los hechizos de aire son gratuitos hacia ellos."
+-
+  id:       15
+  alcance:  0
+  duracion: 0
+  name:     "Desvío"
+  tipo:     "Interrupción"
+  efecto:   "Cualquier proyectil o trampa flecha queda anulada.
+             2 PM: Recupera desvío (una única vez)."
+  potencia: "+1 recuperación/reto."
+  maestría: "+3 alcance"
+  diablura: "No es necesario pagar puntos de mente."
+  ardid:    "Funciona contra conjuros y evocaciones."
+-
+  id:       16
+  duracion: 3
+  alcance:  "V"
+  name:     "Puntería"
+  tipo:     "Bendición"
+  efecto:   "Encanta un arma de proyectiles con: Odio"
+  potencia: "+1 duracion"
+  maestría: "+1 potencia del arma"
+  diablura: "Los dados repetidos exigen defensa verdadera"
+  ardid:    "El disparo tiene hendedura en línea recta gratuita."
+-
+  id:       17
+  duracion: "1d6"
+  alcance:  "V"
+  name:     "Tormenta desatada"
+  tipo:     "Evocación"
+  subtipo:  "Sala"
+  efecto:   "Ejecuta sobre 1d6 objetivos el hechizo Tempestad.
+             Si coincide con la duracion, sufrirán 1 ataque de aire/turno."
+  potencia: "+1 repetición a cualquiera de las dos tiradas"
+  maestría: "Puedes sumar +1 a cualquiera de las dos tiradas"
+  diablura: "-X vs Rayo de los objetivos (X = duración restante)"
+  ardid:    "Si debes elegir un aliado por el exceso, en su lugar: +1PM"
+# Aire nivel 4
+-
+  id:       18
+  alcance:  "M"
+  duracion: 0
+  name:     "Rayo dracónico"
+  tipo:     "Conjuro"
+  subtipo:  "Rayo"
+  efecto:   "Un relámpago brota del hechicero causando un ataque de 3 dados
+             a todas las miniaturas. En la última casilla, el objetivo sufrirá
+             el impacto de una Gran Bola de Fuego (3)."
+  potencia: "+1 dado de ataque."
+  maestría: "+1 fuerza en el ataque. +1 potencia a la Gran Bola"
+  diablura: "Permite girar el rayo en cada miniatura dañada"
+  ardid:    "Daño directo si la trazada se une con otro conjuro de tipo rayo"
+-
+  id:       19
+  alcance:  0
+  duracion: "D"
+  name:     "Volar"
+  tipo:     "Bendición"
+  subtipo:  "Aura"
+  efecto:   "Ignora las penalizaciones por movimiento y fosos trampa.
+             x3 de bonificador por posición elevada. Todas las criaturas
+             en posición inferior deberán obtener 3+ para impactarle
+             con golpes cuerpo a cuerpo y las criaturas de pequeño tamaño                    no le alcanzarán."
+  potencia: "+1d6 de movimiento"
+  maestría: "+1 multiplicador"
+  diablura: "Puedes coger aliados y volar la minusmitad de tu movimiento"
+  ardid:    "Siempre que tenga sentido, podrás huir del Reto"
+-
+  id:       20
+  alcance:  0
+  duracion: "A"
+  name:     "Invisibilidad mágica"
+  tipo:     "Bendición - Aura"
+  efecto:   "Sigilo 4. No podrá estar 2 turnos en la misma casilla.
+             Puede atacar (sin hechizar) pero si no matas, cesa el efecto."
+  potencia: "+1 para ser detectado"
+  maestría: "+1 al número de hechizos antes del cese del hechizo."
+  diablura: "Los hechizos no dañinos no cesan el efecto"
+  ardid:    "Puedes usar el hechizo como instinto,
+             si estás bajo una bendición de aire"
+-
+  id:       21
+  alcance:  0
+  duracion: "*"
+  name:     "Esfera de relámpagos"
+  tipo:     "Invocación"
+  efecto:   "El conjurador invocará un orbe. El orbe ataca con conjuros
+             de aire de nivel 2. (*) La esfera tiene 3 PC y 2 dados de defensa.
+             Cualquiera que la ataque recibe 2d6 dados de ataque por rayo."
+  potencia: "+1 conjuro/turno."
+  maestría: "+1 potencia de los conjuros"
+  diablura: "[Instinto]: La esfera provoca a los enemigos de mente inferior"
+  ardid:    "Añade diablura a los conjuros ejecutados"
+-
+  id:       22
+  alcance:  1
+  duracion: "*"
+  name:     "Espada mágica inestable"
+  tipo:     "Evocación"
+  subtipo:  "Fetiche"
+  efecto:   "La espada ancha encantada ocupará la casilla contigua del mago.
+             (*) Cesa si no existiera alguna casilla donde colocarla o
+             Con 1 al inicio de su turno al tirar 1d6.
+             Desaparece estallando e infligiendo 2d6 daños defendibles
+             a todas las miniaturas colindantes.
+             Destruir 1 espada ancha al invocar: Recupera el hechizo."
+  potencia: "+1 potencia del ataque del arma invocada."
+  maestría: "+1 fuerza del arma"
+  diablura: "La espada ataca en diagonal, con dados negros"
+  ardid:    "Añade un dado eléctrico a la espada e ignora defensa verdadera"
+-
+  id:       23
+  alcance:  "V"
+  duracion: 0
+  name:     "Ojo de la tormenta"
+  tipo:     "Evocación"
+  subtipo:  "Sala"
+  efecto:   "Mueve a las miniaturas hasta la pared más cercana.
+             Inflinge un ataque igual a la distancia recorrida.
+             El lanzador elige el recorrido. 1PM, acción: +1 duración"
+  potencia: "+1 potencia del ataque sufrido."
+  maestría: "+1 fuerza del ataque"
+  diablura: "Los enemigos que colisionen, reciben un daño directo eléctrico."
+  ardid:    "Los aliados no sufren daños si están en casillas centrales"

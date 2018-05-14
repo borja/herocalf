@@ -1,0 +1,312 @@
+# Agua nivel 1"
+-
+  id:       0
+  alcance:  "V"
+  duracion: 1
+  name:     "Niebla"
+  tipo:     "Bendición"
+  efecto:   "Permite moverse sin ser visto."
+  potencia: "+1 duracion"
+  maestría: "+1 objetivo (colindante)"
+  diablura: "Los enemigos colindantes reciben un ataque de frío en su turno"
+  ardid:    "+P vs Magia Veneno y Peste (P = potencia de agua)"
+-
+  id:       1
+  alcance:  "V"
+  duracion: 0
+  name:     "Agua que cura"
+  tipo:     "Sanación"
+  efecto:   "+4 PC."
+  potencia: "+1 PC"
+  maestría: "+1 duracion"
+  diablura: "La sanación se puede repartir entre objetivos"
+  ardid:    "El objetivo es inmune a veneno y peste"
+-
+  id:       2
+  alcance:  "V"
+  duracion: 0
+  name:     "Dormir"
+  tipo:     "Maldición"
+  efecto:   "Duerme al objetivo. Despertará con un 1 al inicio de su turno."
+  potencia: "-1 resistencia del objetivo"
+  maestría: "+1 objetivo"
+  diablura: "El objetivo queda envenenado. (No despertará por este daño)"
+  ardid:    "En caso de despertar el objetivo despertará en locura."
+-
+  id:       3
+  alcance:  1
+  duracion: 0
+  name:     "Choque de agua"
+  tipo:     "Evocación"
+  subtipo:  "Toque"
+  efecto:   "Un golpe de agua proyecta 1d6 casillas hacia atrás a un enemigo.
+             Si el objetivo no colisiona, pasará a estar tumbado"
+  potencia: "+1 casilla, +1 alcance"
+  maestría: "+1 dado de daño sin armas (no defendible)"
+  diablura: "Desarma al objetivo. Si muere, recupera choque de agua."
+  ardid:    "+1 fuerza al daño por cada hechizo de agua disponible"
+-
+  id:       4
+  alcance:  "V"
+  duracion: 0
+  name:     "Trance calmado"
+  tipo:     "Sanación"
+  efecto:   "El objetivo amistoso pierde su próximo turno y recupera 4PM"
+  potencia: "+1 PM"
+  maestría: "-1 daño recibido por el objetivo mientras dure el efecto"
+  diablura: "El objetivo podrá recuperar un hechizo en lugar de PM,
+             si no hay enemigos visibles."
+  ardid:    "Mientras estén relajados el lanzador y el objetivo,
+             éste no morirá."
+-
+  id:       5
+  alcance:  "∞"
+  duracion: 0
+  name:     "Esperanza"
+  tipo:     "Sanación"
+  efecto:   "+1PC o +1PM a todos aliados"
+  potencia: "+1 punto del mismo tipo"
+  maestría: "+1 duracion"
+  diablura: "Se recuperan ambos puntos."
+  ardid:    "Se eliminan además, venenos, peste y enfermedades."
+# Agua nivel 2
+-
+  id:       6
+  alcance:  "V"
+  duracion: 0
+  name:     "Contrarrestar"
+  tipo:     "Interrupción"
+  efecto:   "El hechizo objetivo es anulado. Tira 1d6:
+             si se obtiene una tirada igual o menor
+             a la mente del adversario se descarta la carta.
+             Si no, se recupera."
+  potencia: "-1 a la tirada"
+  maestría: "+1 hechizo para anular"
+  diablura: "Si el hechizo es descartado, róbaselo en tu siguiente turno."
+  ardid:    "Si el hechizo es descartado, redirígeselo al objetivo."
+-
+  id:       7
+  alcance:  "V"
+  duracion: "M"
+  name:     "Nube venenosa"
+  tipo:     "Evocación"
+  subtipo:  "Área"
+  efecto:   "No afecta a no-muertos. Ocupa 4 casillas elegidas no lineales.
+            Al atravesar la nube: -1 PM de daño defendible.
+            Se puede desplazar la nube."
+  potencia: "+1 casilla"
+  maestría: "+1 nube"
+  diablura: "Eres inmune a tu nube. Al entrar en ella, ejecutas niebla sobre ti"
+  ardid:    "1PM: Controlas a los enemigos en locura por la nube."
+-
+  id:       8
+  alcance:  "1-3-5"
+  duracion: 0
+  name:     "Cono ácido"
+  tipo:     "Conjuro"
+  subtipo:  "Cono"
+  efecto:   "Ataque por cono de acido de 3-2-1 dados"
+  potencia: "+1 fuerza del ácido."
+  maestría: "+1 alcance"
+  diablura: "El daño de ácido requiere 2 puntos de sanación por daño"
+  ardid:    "+1 dado de ataque por cada víctima previa en las tiradas."
+-
+  id:       9
+  alcance:  "∞"
+  duracion: 0
+  name:     "Borbotón"
+  tipo:     "Evocación"
+  subtipo:  "Área"
+  efecto:   "Proyecta a un enemigo en el aire y en el impacto de la caida
+             sufre un ataque de 3 por agua y otros 4 por combate."
+  potencia: "+1 potencia del ataque de agua y +1 fuerza de la caída."
+  maestría: "+1 objetivo colindante"
+  diablura: "Si el objetivo muere por el daño del agua, recupera borbotón"
+  ardid:    "Si el objetivo es visible (S/P) los ataques son con Odio"
+-
+  id:       10
+  alcance:  "V"
+  duracion: "1d6"
+  name:     "La Fuente de la vida"
+  tipo:     "Sanación"
+  efecto:   "Sana 2 puntos de vida a cada personaje que beba de ella (acción)
+             y atacará con 2 dados a muertes vivientes (en alcance)."
+  potencia: "+1 a la sanación y al ataque"
+  maestría: "+1 fuente"
+  diablura: "Los personajes en locura siempre querrán beber de la fuente"
+  ardid:    "+1 duración por cada no-muerto destruido"
+-
+  id:       11
+  alcance:  "∞"
+  duracion: 0
+  name:     "Tsunami"
+  tipo:     "Evocación"
+  subtipo:  "Sala"
+  efecto:   "Se inunda una habitacion ya revelada.
+             Todos los muebles y artefactos mundanos son destruidos.
+             Todas las criaturas/muebles sufren 1 daño que podrán
+             defender; sacando un escudo con 2 dados de combate"
+  potencia: "tsunami extra en una sala contigua o en la misma sala"
+  maestría: "+1 daño"
+  diablura: "+1 daño por cada mueble destruido"
+  ardid:    "Durante el efecto: +1 maestría en magia de agua en la sala"
+# Agua nivel 3
+-
+  id:       12
+  alcance:  "V"
+  duracion: "Muerte"
+  name:     "Glifo de agua"
+  tipo:     "Bendición"
+  subtipo:  "Glifo"
+  efecto:   "Sigue al objetivo hasta que muera, resucitándolo,
+            en estado de dormido. Sus PC serán igualados a sus PM."
+  potencia: "+1 PM y +1 PC al objetivo cuando resucita."
+  maestría: "+1 objetivo. Al resucitar, rompe todos los glifos activos."
+  diablura: "Recupera 1d6 PM al objetivo, si murió loco"
+  ardid:    "Si el objetivo murió con todos su PM, elige un nuevo objetivo."
+-
+  id:       13
+  alcance:  3
+  duracion: "M"
+  name:     "Cáliz sagrado"
+  tipo:     "Sanación"
+  efecto:   "+1PC y +1PM por turno a los que beban (acción gratuita)"
+  potencia: "+1 al alcance"
+  maestría: "+1PC y +1PM"
+  diablura: "Lavar heridas (1 acción): Purga 1 veneno/enfermedad"
+  ardid:    "Si se ejecuta en combate, puedes cambiar la duracion a: M"
+-
+  id:       14
+  alcance:  "V"
+  duracion: "D"
+  name:     "Escudo de agua"
+  tipo:     "Evocación"
+  subtipo:  "Fetiche"
+  efecto:   "+4 vs Calor. Desviará hechizos de tipo Rayo. +1 defensa"
+  potencia: "+1 de defensa y +1 al daño necesario para cesar el efecto."
+  maestría: "+1 objetivo adyacente"
+  diablura: "Los hechizos absorbidos/desviados son redireccionados a voluntad"
+  ardid:    "El dado de defensa es azul, y su potencia será los PM del objetivo"
+-
+  id:       15
+  alcance:  "V"
+  duracion: "M"
+  name:     "Helar"
+  tipo:     "Maldición"
+  efecto:   "Elige puerta o miniatura. La minatura ésta solo moverá 1.
+             La puerta solo se abrirá a voluntad del lanzador"
+  potencia: "+1 objetivo a elegir."
+  maestría: "Las miniaturas heladas, sufren +1 dado de daño por hielo"
+  diablura: "Puedes elegir ambos efectos si los objetivos son colindantes"
+  ardid:    "Todos los objetivos colindantes válidos, propagan el efecto"
+-
+  id:       16
+  alcance:  "V"
+  duracion: 0
+  name:     "Tormenta de nieve"
+  tipo:     "Evocación"
+  subtipo:  "Sala"
+  efecto:   "Todos: Ataque de 3 dados y se pierde la plusmitad de movimiento."
+  potencia: "+1 fuerza del ataque."
+  maestría: "+1 duración"
+  diablura: "Puedes ejecutar la tormenta en cualquier sala desvelada"
+  ardid:    "Los dados de ataque son especiales azules.
+             La congelación no defendida, causa el doble de daño"
+-
+  id:       17
+  alcance:  1
+  duracion: 0
+  name:     "Reposición mental"
+  tipo:     "Sanación"
+  efecto:   "Recupera todos los PM del objetivo.
+             Recupera el hechizo si renuncias a un efecto beneficioso.
+             (Solo 1 recuperación por hechizo)"
+  potencia: "+1 recuperación/hechizo"
+  maestría: "+1 objetivo"
+  diablura: "El exceso de sanación lo recupera el lanzador del hechizo"
+  ardid:    "Si el objetivo no estaba loco, puedes limpiar efectos dañinos."
+# Agua nivel 4
+-
+  id:       18
+  alcance:  "1-3-5"
+  duracion: 0
+  name:     "cono de frío"
+  tipo:     "Conjuro"
+  subtipo:  "Cono"
+  efecto:   "Daño directo por frío de 5-3-2 dados.
+             Todas las miniaturas que sufran daños perderán su movimiento.
+             Si mueren su miniatura no se retirará hasta que alguien la rompa"
+  potencia: "+1 fuerza a los dados de frío"
+  maestría: "+1 alcance de 1 dado"
+  diablura: "Las miniaturas congeladas sufren daño verdadero"
+  ardid:    "Odias al atacar"
+-
+  id:       19
+  alcance:  "V"
+  duracion: 1
+  name:     "maestro genio"
+  tipo:     "Invocación"
+  efecto:   "Ataque: 10, pudiendo repartirlo a 3 enemigos distintos.<br/>
+             2PM: En lugar de atacar, puedes absorber la energía del genio,
+             recuperando 2d6 PC, el hechizo Genio y ganando +2 vs Rayo"
+  potencia: "+1 potencia de ataque, +1 enemigo atacable, +1d6 PC"
+  maestría: "+1 duracion"
+  diablura: "Puedes recuperar/atacar mente, en lugar de cuerpo"
+  ardid:    "1d6 (elegibles entre PC y PM): Puedes ejecutarlo como instinto"
+-
+  id:       20
+  alcance:  "V"
+  duracion: 0
+  name:     "reposición"
+  tipo:     "Sanación"
+  efecto:   "El objetivo recupera sus PM y PC totales.<br/>
+             3PM del objetivo: El lanzador recupera este hechizo.
+             No se puede usar 2 veces sobre la misma miniatura"
+  potencia: "+1 repetición posible sobre el mismo objetivo."
+  maestría: "+1 objetivo. (Todos deben pagar el coste para recuperar)"
+  diablura: "El objetivo pierde una maldición"
+  ardid:    "El objetivo pierde todos los efectos perjudiciales"
+-
+  id:       21
+  alcance:  0
+  duracion: "-2PM"
+  name:     "globo de agua"
+  tipo:     "Bendición"
+  subtipo:  "Glifo"
+  efecto:   "Seguirá al mago sin ocupar espacio. +1 PC a un aliado adyacente.
+             Cesará cuando el mago reduzca 2PM o más, en el mismo turno.
+             1PM: a partir de ahora, sana PM en lugar de PC, o viceversa."
+  potencia: "+1 sanación"
+  maestría: "+1 aliado y +1 alcance de sanación"
+  diablura: "Explotar el globo: lanzaa aleatoriamente un hechizo de agua
+             de nivel 1 a ti y todas las miniaturas adyacentes."
+  ardid:    "Podrá absorber la primera maldición que recibas, desapareciendo."
+-
+  id:       22
+  alcance:  "V"
+  duracion: 0
+  name:     "deshidratación abrasiva"
+  tipo:     "Maldición"
+  efecto:   "La víctima sufre 2d6 dados de combate de daño no defendible,
+             aunque sólo le harán efecto los escudos negros."
+  potencia: "+1 dado de ataque y +1 fuerza."
+  maestría: "+1 duracion, +1 fuerza"
+  diablura: "Elimina los efectos beneficiosos de agua/hielo de la víctima"
+  ardid:    "Si sufre daños, la víctima entrará en locura"
+-
+  id:       23
+  alcance:  "V"
+  duracion: "D y 1PM"
+  name:     "bruma mística"
+  tipo:     "Evocación"
+  subtipo:  "Sala"
+  efecto:   "Solo se podrá combatir cuerpo a cuerpo y las miniaturas
+             defenderán con la plusmitad de su defensa.
+             Cualquier magia deberá superar una TS de mente.
+             El efecto dura mientras el mago invierta 1PM al inicio de su turno
+             y no reciba daño."
+  potencia: "+1 al duración (daño)"
+  maestría: "+1 aliado inmune a la bruma"
+  diablura: "1PM: 1 proyectil de un aliado, ignorará la bruma."
+  ardid:    "Las magias de efecto previas al hechizo,
+             afectarán solo a los objetivos elegidos por el conjurador"

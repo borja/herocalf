@@ -9,6 +9,10 @@ class Magia < Hash
       instance_variable_set("@#{k}".to_sym, v) unless v.nil?
     end
   end
+  
+  def nivel
+    ((id / 6) + 1).to_i
+  end
 
   def img_path
     "/images/magia/#{elemento}s#{nivel}/#{name}.png"
@@ -23,5 +27,10 @@ class Magia < Hash
                 execración)
 
     'background-color:#' + colors[elems.find_index(elemento)]
+  end
+  
+  def kind
+    elems = %w(fuego aire tierra agua)
+    elems.include?(elemento) ? 'elemental' : 'sagrada'
   end
 end

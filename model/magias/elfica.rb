@@ -1,3 +1,5 @@
+require_rel 'magia'
+
 # Todos los hechizos silvanos
 # TODO: Nuevos hechizos de tipo elfico
 class Elfica < Magia

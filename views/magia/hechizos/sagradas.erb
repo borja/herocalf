@@ -1,14 +1,15 @@
 <% magias = send(params[:view]+'s') %>
+
 <% magias.each do |s|%>
 	<% if params[:param].to_i == s.nivel %>
 		<% magic = s %>
-		<tr style=<%= magic.color %>>
+		<tr style="<%= magic.color %>">
 			<td><%= erb :'display/spell', locals: { spell: magic } %></td>
 			<% if params[:view] == 'hechizos' %>
 				<td><%= magic.elemento.capitalize %></td>
 			<% end %>
 			<td>
-				<a href="/sagrada/<%= magic.name %>" target="_blank">
+				<a href="/hechizo/<%= magic.name %>" target="_blank">
 					<%= magic.name.capitalize %>
 				</a>
 			</td>

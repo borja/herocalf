@@ -1,14 +1,18 @@
 <% h = spells.find {|s| s.name == params[:param] } %>
-<h2><%= h.name.capitalize %></h2>
+
+<h2><%= h.name %></h2>
 <hr>
 
+<div class="alert alert-secondary">
+	<h4 class="alert-heading">Efecto</h4>
+	<p class="mb-0"><%= h.efecto %></p>
+</div>
+
 <dl class="row text-left">
-	<dt class="col-lg-3">Efecto</dt>
-	<dd class="col-lg-9"><%= h.efecto %></dd>
-	
 	<dt class="col-lg-3">Tipo</dt>
 	<dd class="col-lg-9">
-		<%= h.tipo %> de <%= h.elemento %> de nivel <%= h.nivel %>
+		<a href="/tipodemagia/<%= h.tipo %>"><%= h.tipo %></a>
+		de <%= h.elemento %> de <strong>nivel <%= h.nivel %></strong>
 	</dd>
 	
 	<dt class="col-lg-3">Potencia</dt>

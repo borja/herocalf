@@ -430,11 +430,11 @@
     main:  "magia/hechizo"
     right: "magia/carta"
 -
-  ruta:  "sagrada"
+  ruta:  "plegaria"
   title: "view"
   template:
     left:  "magia/left/sagradas"
-    main:  "magia/sagrada"
+    main:  "magia/plegaria"
     right: "magia/carta"
 -
   ruta:  "sagradas"
@@ -544,6 +544,11 @@
   template:
     left: "magia/left/elementales"
     main: "magia/tipos"
+    right: "magia/right/menu"
+-
+  ruta:  "tipodemagia"
+  template:
+    main:  "magia/tipodemagia"
     right: "magia/right/menu"
 -
   ruta:  "magisters"

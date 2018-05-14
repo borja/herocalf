@@ -1,0 +1,24 @@
+<% h = plegarias.find {|s| s.name == params[:param] } %>
+
+<h2><%= h.name %></h2>
+<hr>
+
+<div class="alert">
+	<%= h.efecto %>
+</div>
+
+<dl class="row text-left">
+	<dt class="col-lg-3">Tipo</dt>
+	<dd class="col-lg-9">
+		<%= h.tipo %> de <%= h.elemento %> de nivel <%= h.nivel %>
+	</dd>
+	
+	<dt class="col-lg-3">Potencia</dt>
+	<dd class="col-lg-9"><%= h.potencia %></dd>
+	
+	<dt class="col-lg-3">Súmmun</dt>
+	<dd class="col-lg-9"><%= h.summun %></dd>
+	
+	<dt class="col-lg-3">Chakra</dt>
+	<dd class="col-lg-9"><%= h.chakra %></dd>
+</dl>

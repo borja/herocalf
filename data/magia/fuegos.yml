@@ -1,0 +1,309 @@
+# Fuego nivel 1
+-
+  id:       0
+  alcance:  "M"
+  duracion: 0
+  name:     "Bola de fuego"
+  tipo:     "Conjuro"
+  subtipo:  "Bola"
+  efecto:   "Causa 2 dados de ataque por fuego."
+  potencia: "+1 dado de ataque."
+  maestría: "+1 efecto de área."
+  diablura: "Dados de ataque negros."
+  ardid:    "Miniaturas colindantes a las víctimas sufren Fuego de Ira."
+-
+  id:       1
+  alcance:  "∞"
+  duracion: 0
+  name:     "Fuego de ira"
+  tipo:     "Maldición"
+  efecto:   "Causa 1 dado de ataque directo a un enemigo del tablero."
+  potencia: "+1 Fuerza de ataque"
+  maestría: "+1 objetivo de efecto"
+  diablura: "Se recupera si falla."
+  ardid:    "Si el objetivo está en línea de visión el daño es físico y mental."
+-
+  id:       2
+  alcance:  "V"
+  duracion: "E"
+  name:     "Valentía"
+  tipo:     "Bendición"
+  efecto:   "+1 ataque de un aliado."
+  potencia: "+1 dado de bonificador."
+  maestría: "+1 objetivo aliado"
+  diablura: "Resistencia al miedo 2+"
+  ardid:    "Si se lanza como aura los dados de ataque son negros."
+-
+  id:       3
+  alcance:  "V"
+  duracion: "∞"
+  name:     "Maldición de fuego"
+  tipo:     "Maldición"
+  efecto:   "El objetivo queda envuelto en llamas."
+  potencia: "+1 penetración mágica."
+  maestría: "+1 dado de fuego"
+  diablura: "El objetivo pierde su resistencia al fuego."
+  ardid:    "Duplica el daño de efectos de fuego sobre el objetivo."
+-
+  id:       4
+  alcance:  0
+  duracion: "E"
+  name:     "Prender arma"
+  tipo:     "Bendición"
+  efecto:   "+1 dado de fuego al ataque del arma objetivo"
+  potencia: "+1 dado de fuego"
+  maestría: "+1 fuerza al daños ígneo"
+  diablura: "El arma puede quemar puertas"
+  ardid:    "Las calaveras en los dados de fuego recuperan este hechizo"
+-
+  id:       5
+  alcance:  0
+  duracion: 0
+  name:     "Aliento dragón"
+  tipo:     "Conjuro"
+  subtipo:  "Cono"
+  efecto:   "La casilla frontal recibe un daño de 3 dados de combate."
+  potencia: "+1 dado de daño."
+  maestría: "+1 área de efecto (cono)"
+  diablura: "El lanzador causa miedo dracónico 6+ durante el efecto."
+  ardid:    "Si no ha habido víctimas por el efecto persiste un turno extra."
+# Fuego nivel 2
+-
+  id:       6
+  alcance:  "1-3-5"
+  duracion: 0
+  name:     "Cono de llamas"
+  tipo:     "Conjuro"
+  subtipo:  "Cono"
+  efecto:   "2 dados rojos de ataque."
+  potencia: "+1 potencia"
+  maestría: "+1 alcance y fuerza"
+  diablura: "Calaveras directas: +1 alcance de esa casilla"
+  ardid:    "Aullante. Además, los efectos de arder se propagan al colisionar."
+-
+  id:       7
+  alcance:  "m"
+  duracion: 0
+  name:     "Rayo ígneo"
+  tipo:     "Conjuro"
+  subtipo:  "Rayo"
+  efecto:   "3 dados de ataque. El objetivo defiende con 2 dados por cada éxito.
+             Al matar, ataca al siguiente objetivo que defenderá con +1 dado"
+  potencia: "+1 potencia de ataque."
+  maestría: "+1 fuerza"
+  diablura: "Los objetivos dañados pierden su escudo. (Ataque flanqueando)"
+  ardid:    "Las objetivos en llamas tirarán resistencia al miedo: 1/efecto"
+-
+  id:       8
+  alcance:  1
+  duracion: "D"
+  name:     "Aura de calor"
+  tipo:     "Bendición"
+  subtipo:  "Aura"
+  efecto:   "Miniaturas a melee al inicio de su turno: arden. +3 vs Calor"
+  potencia: "+1 efecto de llamas a las miniaturas colindantes."
+  maestría: "+1 alcance (melee)"
+  diablura: "El daño es interruptor"
+  ardid:    "Los aliados son inmunes"
+-
+  id:       9
+  alcance:  "M"
+  duracion: 4
+  name:     "Muro de fuego"
+  tipo:     "Evocación"
+  subtipo:  "Muro"
+  efecto:   "En 5 casillas lineales brota un muro de llamas.
+             Si se atraviesan atacará con 3 dados de fuego.
+             1PM: Se pueden reducir N casillas aumentando el ataque en N"
+  potencia: "+1 ataque"
+  maestría: "+1 casilla"
+  diablura: "Ejecuta el ataque también al ejecutar el hechizo"
+  ardid:    "Los enemigos que mueren al arder, depositan una antracita"
+-
+  id:       10
+  alcance:  "V"
+  duracion: 0
+  name:     "Lluvia de fuego"
+  tipo:     "Evocación"
+  subtipo:  "Sala"
+  efecto:   "Ataque de 1 dado de fuego. Todo objeto mundano es destruido.
+             Los enemigos se defienden con 1 solo dado."
+  potencia: "+1 fuerza del ataque."
+  maestría: "+1 dado de fuego"
+  diablura: "Odias durante los ataques"
+  ardid:    "Causas miedo N+ por cada enemigo ardiendo"
+-
+  id:       11
+  alcance:  "V"
+  duracion: 0
+  name:     "Infierno"
+  tipo:     "Conjuro"
+  subtipo:  "Área"
+  efecto:   "En 1 casilla: ataque ígneo de la minusmitad de la mente y
+             2 dados a las casillas contiguas.
+             +1 casilla de área contigua por cada magia elemental sacrificada."
+  potencia: "+1 potencia"
+  maestría: "+1 casilla contigua"
+  diablura: "Si la casilla central muere, puedes ocupar su posición"
+  ardid:    "N piezas: Invoca un elemental de fuego de nivel N en la casilla"
+# Fuego nivel 3
+-
+  id:       12
+  alcance:  1
+  duracion: 0
+  name:     "Deflagración"
+  tipo:     "Conjuro"
+  subtipo:  "Explosión"
+  efecto:   "Todas las casillas adyacentes al lanzador sufren un Fuego de Ira.
+             <br/>2 PC: +1 duracion"
+  potencia: "+1 alcance"
+  maestría: "+1 fuerza al daño"
+  diablura: "Al dañar a aliados ejecuta un Fuego de Ira gratuito"
+  ardid:    "Consumir Fuego de Ira: Lanza deflagración como instinto"
+-
+  id:       13
+  alcance:  "V"
+  duracion: 0
+  name:     "Bailar con las llamas"
+  tipo:     "Superchería"
+  efecto:   "El mago creará una llama en su posición (P) y otra en una casilla
+             en su línea de visión (T). Lanza un hechizo gratuito de fuego en P.
+             Si muere el objetivo, puedes teletransportarte a T."
+  potencia: "+1 casilla"
+  maestría: "+1 potencia de fuego"
+  diablura: "Puedes arder, a cambio de ejecutarlo como instinto"
+  ardid:    "Puedes teletransportarte a T, siempre que mates con fuego"
+-
+  id:       14
+  alcance:  "M"
+  duracion: 0
+  name:     "Gran bola de fuego"
+  tipo:     "Conjuro"
+  subtipo:  "Bola"
+  efecto:   "Causa 6 daños de fuego, defendibles con 5 dados de combate."
+  potencia: "+2 daños de fuego extra."
+  maestría: "+1 de área"
+  diablura: "Aullante"
+  ardid:    "Al impactar, causa el hechizo deflagración."
+-
+  id:       15
+  alcance:  "V"
+  duracion: "1d6"
+  alcance:  "V"
+  name:     "Recinto ígneo"
+  tipo:     "Evocación"
+  subtipo:  "Área"
+  efecto:   "El mago elige 4 casillas no contiguas y paralelas entre sí.
+             De ellas brotarán 4 rayos ígneos."
+  potencia: "+1 turno extra."
+  maestría: "+2 casillas (paralelas)"
+  diablura: "Dentro del recinto, no se consume Fuego de Ira"
+  ardid:    "Los rayos ígneos tienen ardid"
+-
+  id:       16
+  alcance:  "V"
+  duracion: 1
+  name:     "Ifrit"
+  tipo:     "Invocación"
+  efecto:   "(2) Ataque: 5 dados de fuego, repartibles.<br/>
+             1PC: ataque +1 (sacrificio)"
+  potencia: "+1 enemigo/turno +1 dado de ataque"
+  maestría: "+1 duracion"
+  diablura: "El ifrit tiene: Odio"
+  ardid:    "El invocador puede sacrificar mente"
+-
+  id:       17
+  alcance:  "V"
+  duracion: "E"
+  name:     "Valor desmesurado"
+  tipo:     "Bendición"
+  efecto:   "El objetivo incrementa en 3 dados su ataque y su movimiento.
+             Si un aliado adyacente recibe daño el objetivo puede sufrirlos
+             por él siendo el doble de daño."
+  potencia: "+1 ataque, +1 movimiento."
+  maestría: "+1 objetivo"
+  diablura: "Los dados de ataque serán negros"
+  ardid:    "La potencia será igual a la menor de sus potencias de ataque"
+# Fuego nivel 4
+-
+  id:       18
+  alcance:  "V"
+  duracion: "∞"
+  name:     "Foco de abrasión vengativa"
+  tipo:     "Maldición"
+  efecto:   "El objetivo pierde su resistencia al fuego y sufre
+             +2 fuerza a todo el daño por fuego que le inflinjan.
+             1d6 PM: Permite recuperar Fuego de Ira y lanzarlo sin coste
+             sobre el objetivo cada casilla que mueva, hasta que muera."
+  potencia: "+1 de fuerza"
+  maestría: "+1 potencia de los hechizos de fuego contra el objetivo"
+  diablura: "Si el objetivo está ardiendo, no se pierde mente"
+  ardid:    "El objetivo debe moverse 1d6 casillas por turno como mínimo"
+-
+  id:       19
+  alcance:  "V"
+  duracion: 0
+  name:     "Espiritismo ígneo"
+  tipo:     "Invocación"
+  efecto:   "Invoca 2d6 de ánimas de fuego. Comenzando por el lanzador,
+             cada aliado elige un objetivo para que reciba el ataque
+             de 2 espíritus. Los espíritus atacan con 2 dados de fuego y
+             pueden realizar ataques en conjunto."
+  potencia: "+1 a la potencia del ataque"
+  maestría: "+1 espíritu/aliado"
+  diablura: "Los espíritus sobrantes atacan a tu objetivo"
+  ardid:    "Las calaveras directas en objetivos prendidos, matan"
+-
+  id:       20
+  alcance:  "M"
+  duracion: 0
+  name:     "Bola de fuego descomunal"
+  tipo:     "Conjuro"
+  subtipo:  "Bola"
+  efecto:   "El objetivo defenderá con 8 dados un ataque de 10 dados.
+             Todas las casillas colindantes reciben una bola de fuego (1)"
+  potencia: "+1 fuerza de la bola."
+  maestría: "+1 alcance de colindantes. -1 dado de defensa"
+  diablura: "Se puede lanzar cuerpo a cuerpo, pero te impacta el efecto."
+  ardid:    "Añade 2 dados rojos al ataque"
+-
+  id:       21
+  alcance:  1
+  duracion: 0
+  name:     "Derretir la piedra"
+  tipo:     "Superchería"
+  efecto:   "Creas una puerta en una pared (válida)"
+  potencia: "Permite: +1 ancho/puerta"
+  maestría: "Permite: crear +1 puerta"
+  diablura: "Puedes inflingir 1 daño directo de fuego al primero que atraviese"
+  ardid:    "Puedes ejecutar este hechizo sin acción en el turno de un aliado"
+-
+  id:       22
+  alcance:  0
+  duracion: "D"
+  name:     "Aura de llamas"
+  tipo:     "Bendición"
+  subtipo:  "Aura"
+  efecto:   "Al inicio del turno de cada miniatura adyacente al lanzador
+             recibe un ataque de Fuego de Ira (1).
+             Cualquier proyectil mundano es destruido antes de provocar daños.
+             +2 vs Escarcha"
+  potencia: "+1 vs Escarcha, +1 área de efecto (a elección del lanzador)"
+  maestría: "+1 Fuego de Ira a todos (a elección del lanzador)"
+  diablura: "Los Fuegos de Ira se ejecutan con ardid"
+  ardid:    "Tira dados de fuego en los Fuegos de Ira"
+-
+  id:       23
+  alcance:  "V"
+  duracion: "*"
+  name:     "Sangre ígnea"
+  tipo:     "Bendición"
+  efecto:   "El objetivo perderá 1 PM si no obtiene escudo negro con 1 dado.
+             Atacará con 3 dados adicionales y siempre que sufra daños
+             tirará un daño de 2 dados por fuego a las casillas contiguas.
+             [Instintos] * Si no invierte 2 PC: el efecto cesará
+             y le provocará 1 daño por fuego si no obtiene escudo negro."
+  potencia: "+1 a todos los valores citados en la descripción."
+  maestría: "+1 potencia con el ataque extra"
+  diablura: "Se puede usar como maldición"
+  ardid:    "El objetivo estará furioso"

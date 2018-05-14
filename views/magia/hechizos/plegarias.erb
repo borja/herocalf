@@ -2,13 +2,15 @@
 <% magias.each_with_index do |s, i| %>
 	<% if params[:param].to_i == s.nivel %>
 		<% magic = s %>
-		<tr style=<%= s.color %>>
+		<tr style="<%= s.color %>">
 			<td><%= i + 1 %></td>
 			<td><%= erb :'display/spell', locals: { spell: magic } %></td>
-			<td><%= s.name.capitalize %></td>
+			<td>
+				<a href="/plegaria/<%= magic.name %>">
+					<%= s.name.capitalize %>
+				</a>
+			</td>
 			<td><%= s.efecto %></td>
-			<td><%= s.summun %></td>
-			<td><%= s.chakra %></td>
 		</tr>
 	<% end %>
 <% end %>

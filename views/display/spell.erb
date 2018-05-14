@@ -1,8 +1,6 @@
 <div class="information_popup_container" >
 	<div class="information">
-		<img src=<%= spell.img_path %>
-				 alt=<%= spell.name %>
-				 id="icon" />
+		<img src="<%= spell.img_path %>" alt="<%= spell.name %>" id="icon">
 	</div>
 	<div class="popup_information">
 		<center>
@@ -14,7 +12,8 @@
 					<%= spell.tipo %> de <%= spell.elemento %>
 				<% end %>  de nivel <%= spell.nivel %><br/>
 			</p>
-			<img src=<%= spell.img_path %> alt=<%= spell.name %>, id='icon3' /><br/>
+			<img src="<%= spell.img_path %>" alt="<%= spell.name %>" id='icon3'>
+			<br>
 			<p><%= spell.efecto %></p>
 			<table>
 				<tr>

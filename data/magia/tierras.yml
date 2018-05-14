@@ -1,0 +1,310 @@
+# Tierra nivel 1
+-
+  id:       0
+  alcance:  "V"
+  duracion: "D"
+  name:     "Piel de piedra"
+  tipo:     "Bendición"
+  efecto:   "+1 defensa."
+  potencia: "+1 defensa"
+  maestría: "+1 duracion"
+  diablura: "Permite defender con un escudo negro por dado adicional."
+  ardid:    "Los dados son azules."
+-
+  id:       1
+  alcance:  1
+  duracion: 1
+  name:     "Atravesar muros"
+  tipo:     "Bendición"
+  efecto:   "Permite atravesar muros."
+  potencia: "+1 turno de duracion"
+  maestría: "+1 objetivo"
+  diablura: "Permite atravesar enemigos también"
+  ardid:    "Daño (sin armas) igual a la potencia al atravesar enemigos."
+-
+  id:       2
+  alcance:  0
+  duracion: 0
+  name:     "Cura corporal"
+  tipo:     "Sanación"
+  efecto:   "+4 PC"
+  potencia: "+1 PC"
+  maestría: "+1 objetivo"
+  diablura: "Permite curar PM"
+  ardid:    "Se recupera con X+ (X es la sanación sobrante)"
+-
+  id:       3
+  alcance:  "V"
+  duracion: 1
+  name:     "Manos de piedra"
+  tipo:     "Maldición"
+  efecto:   "El objetivo es inmovilizado por dos grandes manos de piedra
+             que surgen del suelo. Se puede resistir si obtiene
+             menos de su movimiento con 2d6."
+  potencia: "+1d6"
+  maestría: "+1 duracion"
+  diablura: "Si falla la tirada recibe el exceso como daño defendible."
+  ardid:    "Si el objetivo obtiene el mismo número (N) con algún dado,
+             la potencia de hechizos de piedra contra él, aumenta en N."
+-
+  id:       4
+  alcance:  "V"
+  duracion: "A"
+  name:     "Obelisco"
+  tipo:     "Bendición - Dádiva"
+  efecto:   "Convierte al objetivo en un obelisco. No podrá combatir ni moverse.
+             Su defensa será la mente total del conjurador."
+  potencia: "+1 potencia defensiva del objetivo (opcional)"
+  maestría: "+1 muro de piedra alrededor del objetivo durante el efecto."
+  diablura: "Puede ser lanzado como maldición."
+  ardid:    "5+: Puedes redireccionar los hechizos contra el objetivo"
+-
+  id:       5
+  alcance:  0
+  duracion: "X"
+  name:     "Restituir"
+  tipo:     "Sanación"
+  efecto:   "El objetivo restaura 1PC por turno
+             hasta quedar totalmente curado (X)."
+  potencia: "+1 duracion"
+  maestría: "+1PC"
+  diablura: "-1 al efecto de empuje de los enemigos"
+  ardid:    "Al cesar el efecto, ejecutas Piel de Piedra sobre el objetivo."
+# Tierra nivel 2
+-
+  id:       6
+  alcance:  "V"
+  duracion: "N"
+  name:     "Maldición de piedra"
+  tipo:     "Maldición"
+  efecto:   "El objetivo se convierte en una estatua de piedra (+5 defensa).
+             Cualquier daño recibido es mortal. El efecto cesa cuando el
+             objetivo obtenga 1 escudo negro al defender, o muera."
+  potencia: "El objetivo necesita 1 escudo negro extra."
+  maestría: "-1 defensa del objetivo"
+  diablura: "Recuperas 1 hechizo de tierra de nivel 1 cuando el objetivo
+             defiende con éxito"
+  ardid:    "Si se lanza sobre un aliado el daño no es mortal"
+-
+  id:       7
+  alcance:  "V"
+  duracion: "M"
+  name:     "Muro de piedra"
+  tipo:     "Evocación"
+  subtipo:  "Muro"
+  efecto:   "1-5 casillas (a elección del lanzador) lineales desocupadas
+             se convertiran en bloques de piedra."
+  potencia: "+1 casilla"
+  maestría: "+1 grosor"
+  diablura: "Puedes crear una puerta mágica en una casilla. Tú decides
+             cuándo se abre y cuándo se cierra"
+  ardid:    "Puedes atravesar el muro, siempre que termines fuera de él"
+-
+  id:       8
+  alcance:  "V"
+  duracion: 0
+  tipo:     "Evocación"
+  subtipo:  "Sala"
+  name:     "Tromba de meteoros"
+  efecto:   "Las miniaturas sufren un ataque de 2 dados que podran defender."
+  potencia: "+1 dado de ataque."
+  maestría: "+1 radio de efecto"
+  diablura: "Tira dados especiales blancos. Las águilas son daño directo"
+  ardid:    "Recupera hecatombe si has masacrado a las criaturas de la sala"
+-
+  id:       9
+  alcance:  "V"
+  duracion: 0
+  name:     "Hecatombe"
+  tipo:     "Evocación"
+  subtipo:  "Área"
+  efecto:   "Se invoca una roca cuyo ataque es la mente del lanzador."
+  potencia: "+1 potencia de ataque."
+  maestría: "+1 radio de efecto"
+  diablura: "Las miniaturas colindantes se desplazan 1 casilla, alejándose"
+  ardid:    "+1 fuerza por cada escudo negro"
+-
+  id:       10
+  alcance:  "V"
+  duracion: "M - X"
+  name:     "Prisión pétrea"
+  tipo:     "Maldición"
+  efecto:   "X casilla libre adyacente al objetivo queda ocupada
+             por X bloque de piedra. Reduce 1 la duracion
+             por cada bloque conjurado. (Nunca será 0)"
+  potencia: "+1 bloque o +1 duracion"
+  maestría: "+1 objetivo y +1 bloque"
+  diablura: "Si el objetivo queda completamente bloqueado, entra en locura"
+  ardid:    "Daña al objetivo con 1 dado blanco por cada bloque"
+-
+  id:       11
+  alcance:  1
+  duracion: "D"
+  name:     "Escudo torreón"
+  tipo:     "Evocación"
+  subtipo:  "Fetiche"
+  efecto:   "Un escudo de granito surge en la casilla frontal del mago.
+            Se mueve con él, ocupando una casilla adyacente a eleccion.
+            Si no puedes desplazar el escudo, cesa el efecto. +2 defensa"
+  potencia: "+1 potencia defensiva del escudo."
+  maestría: "+1 escudo"
+  diablura: "Usa dados azules con el escudo"
+  ardid:    "Puedes desplazar el escudo al matar. Además, tienes represalias."
+# Tierra nivel 3
+-
+  id:       12
+  duracion: "D"
+  alcance:  2
+  name:     "Piel de adamantita"
+  tipo:     "Bendición"
+  efecto:   +4 defensa"
+  potencia: "+1 a la potencia defensiva"
+  maestría: "+1 vs Magia"
+  diablura: "El objetivo recupera 1PM al defender con éxito"
+  ardid:    "4 calaveras al defender, hacen inmune al objetivo"
+-
+  id:       13
+  duracion: "M"
+  alcance:  "V"
+  name:     "Soterrar"
+  tipo:     "Maldición"
+  efecto:   "Retira al objetivo del tablero. Ataque de 1 dados/turno"
+  potencia: "+1 fuerza/potencia de los dados de ataque."
+  maestría: "+1 dado de ataque"
+  diablura: "Si el objetivo es amistoso, puedes atacarle sin armas"
+  ardid:    "Al matar, 2d6: Si obtienes menos que la duración: se recupera"
+-
+  id:       14
+  alcance:  "∞"
+  duracion: 0
+  name:     "Terremoto"
+  tipo:     "Evocación"
+  subtipo:  "Sala"
+  efecto:   "Sala desvelada: Todos los muebles son destruidos
+             Ataca con M (mente) dados repartiendolos entre las miniaturas.
+             Los hechizos posteriores de Tierra serán potenciados en +1."
+  potencia: "+1 potencia del ataque y +1 potencia de tierra en la sala."
+  maestría: "+1 fuerza del ataque y +1 maestría de tierra en la sala."
+  diablura: "Coloca aleatoriamente 1d6 fosos. (Los fosos causan 3 daños)"
+  ardid:    "Si te encuentras en la sala, terremoto es una acción gratuita"
+-
+  id:       15
+  alcance:  1
+  duracion: 0
+  name:     "Restitución corporal"
+  tipo:     "Sanación"
+  efecto:   "Recupera todos los PC"
+  potencia: "-1 efecto de estado"
+  maestría: "+1 S/P de alcance"
+  diablura: "Si es el siguiente jugador, tendrá una acción de ataque adicional"
+  ardid:    "1 hechizo: Puedes lanzártelo a ti mismo al final del turno del MB"
+-
+  id:       16
+  alcance:  1
+  duracion: "1d6"
+  name:     "Atravesar muros"
+  tipo:     "Bendición"
+  efecto:   "El objetivo atraversará muros e ignorará ataques físicos,
+             si supera una tirada de mente de dificultad igual al ataque."
+  potencia: "+1 turno."
+  maestría: "-1 dificultad"
+  diablura: "Aura: +1PM al ignorar un ataque físico"
+  ardid:    "1PM, al atravesar un muro: puedes elegir dejar una puerta."
+-
+  id:       17
+  alcance:  0
+  duracion: "∞"
+  name:     "Maza de piedra rúnica"
+  tipo:     "Evocación"
+  subtipo:  "Fetiche"
+  efecto:   "La maza golpea con magia térrea y disipa efectos beneficiosos.
+             Ataque: 2 dados blancos, cuya fuerza es igual a tus magias
+             de tierra disponibles. Duplica su daño contra no-muertos."
+  potencia: "+1 potencia / fuerza de la maza."
+  maestría: "+2 blancos de ataque"
+  diablura: "Si rompe una bendición, la absorbes"
+  ardid:    "Tus esbirros/seguidores pueden esgrimir este arma"
+# Tierra nivel 4
+-
+  id:       18
+  alcance:  "V"
+  duracion: "∞"
+  name:     "Fisura"
+  tipo:     "Evocación"
+  subtipo:  "Área"
+  efecto:   "En una casilla surge un pozo mágico. Caer en el foso:
+             tira la plusmitad de los PC actuales como daño directo.
+             Para salir, realiza una TS de movimiento (2d6).
+             Si falla, las paredes se estrecharán: volverá a sufrir
+             un ataque idéntico y aumentará 1d6 la dificultad de la TS
+             El foso al matar desaparece, engullendo a su víctima"
+  potencia: "+1 casilla en línea recta"
+  maestría: "+1d6 y +1 dado de daño"
+  diablura: "Al engullir a la víctima, un elemental te entrega el botín"
+  ardid:    "Puedes ensanchar el pozo para unidades de caballería y grandes"
+-
+  id:       19
+  alcance:  "V"
+  duracion: 0
+  name:     "La boca del lobo"
+  tipo:     "Evocación"
+  subtipo:  "Área"
+  efecto:   "Estalactitas y estalagmitas surgen del techo y del suelo,
+             atrapando a las miniaturas en 5 casillas contiguas.
+             Perderán su próximo turno. Inflinge un daño de 2 dados"
+  potencia: "+1 fuerza del ataque."
+  maestría: "+2 dados"
+  diablura: "Al matar un enemigo, puedes dejar un muro en su posición"
+  ardid:    "+4 fuerza por cada escudos negro al tirar el daño"
+-
+  id:       20
+  alcance:  1
+  duracion: 0
+  name:     "Cura definitiva"
+  tipo:     "Sanación"
+  efecto:   "Tu objetivo y tú, recuperáis todos los PC.
+             Si la cantidad total no excede tus PM actuales,
+             podrás sanar a un tercer objetivo contiguo a ambos."
+  potencia: "+1 objetivo siempre que se cumpla el requisito de PM."
+  maestría: "Te sanas +1d6 PM adicionales. Tira antes de calcular la sanación"
+  diablura: "El alcance pasa a ser: V"
+  ardid:    "Si hay enemigos visibles, no consume acción de hechizo"
+-
+  id:       21
+  alcance:  "V"
+  duracion: 1
+  name:     "Campana de batalla"
+  tipo:     "Bendición"
+  efecto:   "Se manifiesta en torno al objetivo aumentando su defensa en 3
+             y haciéndolo inmune al daño físico. Cualquier daño absorbido,
+             se convertirá en estruendo (ataque mental) a todas las miniaturas.
+             Después cesa y el objetivo pierde XPM. (X= daño total realizado)."
+  potencia: "Elegir: +1 potencia de defensa o de potencia del estruendo"
+  maestría: "+1 duración y -1 daño mental sufrido"
+  diablura: "Permite lanzarlo como maldición"
+  ardid:    "1 hechizo: Los aliados recuperan mente en lugar de perderla"
+-
+  id:       22
+  alcance:  "V"
+  duracion: "1d6"
+  name:     "Cuerno de guerra"
+  tipo:     "Evocación"
+  subtipo:  "Fetiche"
+  efecto:   "Acción de ataque: Soplar el cuerno, lanzando un hechizo al azar
+             de aire de nivel 3. Último turno, 1d6 PM: +1 duración/PM"
+  potencia: "+1 potencia en el hechizo de aire"
+  maestría: "+1 hechizo/turno al soplar el cuerno."
+  diablura: "Los hechizos de aire se ejecutan con diablura"
+  ardid:    "Los hechizos de aire se ejecutan con ardid"
+-
+  id:       23
+  alcance:  1
+  duracion: "Muerte"
+  name:     "Invocar gárgola"
+  tipo:     "Invocación"
+  efecto:   "2XPC: la gárgola obtendrá +x regeneración.
+             Al ser destruida debes descartar 1 magia o perder tus PM"
+  potencia: "+1 regeneración y fuerza de la gárgola"
+  maestría: "+1 ataque de la gárgola, +1 PC"
+  diablura: "Ataque extra: la gárgola tiene un látigo prendido en llamas"
+  ardid:    "La gárgola dispone de 2 hechizo de tierra de nivel 1 a elegir"

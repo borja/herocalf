@@ -3,8 +3,9 @@
 <% arena =  arenas.find  {|s| s.name == params[:param] } %>
 <% sangre = sangres.find {|s| s.name == params[:param] } %>
 <% spell =  spells.find  {|s| s.name == params[:param] } %>
+<% plegaria =  plegarias.find  {|s| s.name == params[:param] } %>
 
-<% h = spell|| sombra || hielo || arena || sangre %>
+<% h = spell|| sombra || hielo || arena || sangre || plegaria %>
 
 <div class="card">
 	<div class="card-header">

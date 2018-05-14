@@ -12,23 +12,39 @@ def execraciones
 end
 
 def sangres
-  load_yaml('magia/sangres').map   { |s|    Sangre.new(s) }
+  load_yaml('magia/sangres').map   { |s| Sangre.new(s) }
 end
 
 def sombras
-  load_yaml('magia/sombras').map   { |s|    Sombra.new(s) }
+  load_yaml('magia/sombras').map   { |s| Sombra.new(s) }
 end
 
 def arenas
-  load_yaml('magia/arenas').map   { |s|    Arena.new(s) }
+  load_yaml('magia/arenas').map   { |s| Arena.new(s) }
 end
 
 def hielos
-  load_yaml('magia/hielos').map   { |s|    Hielo.new(s) }
+  load_yaml('magia/hielos').map   { |s| Hielo.new(s) }
+end
+
+def aguas
+  load_yaml('magia/aguas').map   { |s| Agua.new(s) }
+end
+
+def fuegos
+  load_yaml('magia/fuegos').map   { |s| Fuego.new(s) }
+end
+
+def aires
+  load_yaml('magia/aires').map   { |s| Aire.new(s) }
+end
+
+def tierras
+  load_yaml('magia/tierras').map   { |s| Tierra.new(s) }
 end
 
 def spells
-  load_yaml('magia/spells').map { |s| Elemental.new(s) }
+  aires + fuegos + aguas + tierras + hielos + arenas + sangres + sombras
 end
 
 # TODO: tune up this!
@@ -57,8 +73,24 @@ def arena(id)
   arenas[id]
 end
 
-def spell(id)
-  spells[id]
+def fuego(id)
+  fuegos[id]
+end
+
+def aire(id)
+  aires[id]
+end
+
+def agua(id)
+  aguas[id]
+end
+
+def tierra(id)
+  tierras[id]
+end
+
+def spell(id, elem)
+  spells.find {|s| ( s.id == id && s.elemento == elem) }
 end
 
 def escuelas
