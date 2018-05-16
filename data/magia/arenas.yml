@@ -3,46 +3,48 @@
   alcance:  "V"
   duracion: 1
   name:     "Tormenta de arena"
-  tipo:     "Evocación - Sala"
-  efecto:   "Ciega y silencia a las miniaturas de la sala."
+  tipo:     "Evocación"
+  subitpo:  "Sala"
+  efecto:   "Ciega y silencia a todas las miniaturas"
   potencia: "+1 duración"
   maestría: "+1 dado de daño directo amarillo"
   diablura: "Desplázalas 2 casillas hacia una misma dirección a tu elección"
-  ardid:    "Solo afectará a los enemigos."
+  ardid:    "Solo afectará a enemigos"
 -
   id:       1
   alcance:  0
   duracion: 0
   name:     "Golpe de arena"
-  tipo:     "Evocación - Toque"
+  tipo:     "Evocación"
+  subtipo:  "Toque"
   efecto:   "Golpea con 3 dados de combate a una miniatura. (Aullante)"
   potencia: "+1 potencia al ataque"
   maestría: "+1 objetivo (adyacente)"
-  diablura: "El golpe de arena puede ser ejecutado en conjunto"
-  ardid:    "Si provoca daños, el objetivo quedará cegado"
+  diablura: "Permite ataques en conjunto"
+  ardid:    "Ciega al objetivo al causarle daños"
 -
   id:       2
   alcance:  2
   duracion: "E"
   name:     "Forma de arena"
   tipo:     "Bendición"
-  efecto:   "El objetivo puede pasar por puertas cerradas,
-             no es empujado y puede elegir defensa verdadera al defender."
+  efecto:   "Ignora empujes, permite atravesar puertas cerradas y
+             elegir defensa verdadera al defender."
   potencia: "+1 duración"
-  maestría: "+1 sigilo al objetivo"
-  diablura: "El objetivo es inmune a los hechizos dañinos de arena y tierra"
-  ardid:    "Durante el sprint, el objetivo podrá lanzar magias de arena."
+  maestría: "+1 sigilo"
+  diablura: "Inmuniza a los hechizos dañinos de arena y tierra"
+  ardid:    "Permite lanzar magias de arena al sprintar"
 -
   id:       3
   alcance:  0
   duracion: 0
   name:     "Arenas del tiempo"
-  tipo:     "Bendición - Aura"
-  efecto:   "Puedes usar esta magia como instinto.
-             Dispones de un turno adicional.
+  tipo:     "Bendición"
+  subtipo:  "Aura"
+  efecto:   "Puedes usar esta magia como instinto. +1 turno adicional.
              Si en este turno vuelves a modificar el tiempo,
              la entropía te lanzará al olvido eterno."
-  potencia: "+1 acción durante tu turno extra."
+  potencia: "+1 acción durante el turno extra"
   maestría: "+1 límite de este hechizo, por entropía"
   diablura: "Al inicio de tu turno puedes regresar del olvido eterno con 5+"
   ardid:    "Puedes lanzar magias desde el olvido eterno,
@@ -53,8 +55,8 @@
   duracion: "∞"
   name:     "Arenas movedizas"
   tipo:     "Evocación"
-  efecto:   "Elige 3 casillas de la sala pudiendo anotarlas
-             en secreto al MB. Las miniaturas que caigan, quedarán atrapadas
+  efecto:   "Elige 3 casillas de la sala pudiendo anotarlas en secreto al MB.
+             Las miniaturas que caigan, quedarán atrapadas
              si no superan una TS de movimiento (2d6). Al inicio del turno
              sufrirán 3 dados de combate de daño mental.
              Si no disponen, cuerpo."
@@ -81,7 +83,8 @@
   alcance:  "V"
   duracion: 1
   name:     "Arma del desierto"
-  tipo:     "Bendición - Encantamiento"
+  tipo:     "Bendición"
+  subtipo:  "Encantamiento"
   efecto:   "El siguiente golpe del arma requiere defensa verdadera"
   potencia: "+1 duración"
   maestría: "+1 golpe de efecto"
@@ -92,10 +95,11 @@
   alcance:  "V"
   duracion: 0
   name:     "Erradicar"
-  tipo:     "Evocación - Sala"
-  efecto:   "Las miniaturas de la sala reciben 2 dados de ataque"
+  tipo:     "Evocación"
+  subtipo:  "Sala"
+  efecto:   "2 dados de ataque a todas las miniaturas"
   potencia: "+1 potencia"
-  maestría: "-1 defensa de los objetivos (mínimo 0)"
+  maestría: "-1 defensa de los objetivos"
   diablura: "Usa dados negros al atacar"
   ardid:    "El daño es verdadero"
 -
@@ -103,7 +107,8 @@
   alcance:  0
   duracion: "M"
   name:     "Escudo de arena"
-  tipo:     "Bendición - Aura"
+  tipo:     "Bendición"
+  subtipo:  "Aura"
   efecto:   "+2 dados amarillos a tu defensa"
   potencia: "+1 dado amarillo"
   maestría: "+1 potencia en todos los dados"
@@ -125,7 +130,8 @@
   alcance:  "V"
   duracion: "A"
   name:     "Glifo de Arena"
-  tipo:     "Bendición - Glifo"
+  tipo:     "Bendición"
+  subtipo:  "Glifo"
   efecto:   "Sigue al objetivo hasta que cause daños. En ese momento,
             recuperarás una magia de arena y tantos PM como daños causó"
   potencia: "+1 magia recuperada"
@@ -137,10 +143,41 @@
   alcance:  "1-3"
   duracion: 0
   name:     "Sepultar"
-  tipo:     "Conjuro - Cono"
+  tipo:     "Conjuro"
+  subtipo:  "Cono"
   efecto:   "Una cantidad descomunal de lodo y arena sepulta un área.
              Ataca con la plusmitad de dados igual a tus PM a los objetivos."
   potencia: "+1 potencia"
   maestría: "+1 alcance, +1 fuerza"
   diablura: "1PM: +1 fuerza"
   ardid:    "Las miniaturas colindantes estarán cegadas y silenciadas"
+# Nivel 3
+-
+  id:       12
+  alcance:  "V"
+  duracion: 0
+  name:     "Ciclón de las dunas"
+  tipo:     "Evocación"
+  subtipo:  "Área"
+  efecto:   "Ejecuta golpe de arena contra todas las casillas colindantes.
+             por cada pieza, puedes desplazar 1 casilla el ciclón y reiniciar
+             el efecto. Aplica todos los bonificadores, diabluras y ardides."
+  potencia: "+1 potencia al golpe de arena"
+  maestría: "+1 al rango del ciclón para golpear"
+  diablura: "Ignoras el daño de tu cilón, y a cambio recuperas 1 magia de arena"
+  ardid:    "Puedes sumar +1 duración en lugar de desplazar 1 casilla."
+-
+  id:       13
+  alcance:  0
+  duracion: "Muerte"
+  name:     "Arenas de la Eternidad"
+  tipo:     "Bendición"
+  subtipo:  "Glifo"
+  efecto:   "+1 turno adicional al inicio del turno que debieras morir.
+             En su lugar, morirás al final (si no ha cambiado la situación)
+             Si en este turno vuelves a modificar el tiempo,
+             la entropía te lanzará al olvido eterno."
+  potencia: "+1 acción durante el turno extra"
+  maestría: "+1 objetivo aparte de ti"
+  diablura: "Forma de arena regresa del olvido eterno si se descarta"
+  ardid:    "Si regresas del olvido eterno, puedes resucitar a un aliado"

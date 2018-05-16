@@ -21,4 +21,7 @@
 						- if a.diagonal
 							i class="fas fa-location-arrow" aria-hidden="true"
 					td == armas[a.id]['ranuras']
-					td == a.precio
+					td class="text-right pr-3"
+						== a.precio
+						|  
+						i class="fas fa-database text-warning"
