@@ -119,7 +119,7 @@
   alcance:  0
   duracion: 4
   name:     "Puñal de arena"
-  tipo:     "Evocación - Arma"
+  tipo:     "Evocación - Fetiche"
   efecto:   "Invoca una daga intransferible de fuerza igual a tus PM actuales."
   potencia: "+1 potencia"
   maestría: "+1 dado de ataque"
@@ -181,3 +181,62 @@
   maestría: "+1 objetivo aparte de ti"
   diablura: "Forma de arena regresa del olvido eterno si se descarta"
   ardid:    "Si regresas del olvido eterno, puedes resucitar a un aliado"
+-
+  id:       14
+  alcance:  "V"
+  duracion: 0
+  name:     "Erosionar"
+  tipo:     "Maldición"
+  efecto:   "1 equipamiento mundano del objetivo se deshace en arena fina.
+             Los atributos de potencia, armadura y protección, se eliminan."
+  potencia: "+1 equipo es afectado"
+  maestría: "+1 objetivo"
+  diablura: "El objeto abrasa al portador al deshacerse con 1 dado de fuego"
+  ardid:    "Los objetos se materializarán tras la muerte y se pueden saquear"
+-
+  id:       15
+  alcance:  0
+  duracion: 4
+  name:     "Espada de arena"
+  tipo:     "Evocación - Fetiche"
+  efecto:   "Invoca una espada transferible de fuerza igual a tus PM actuales,
+             que otorga una acción al lanzador cuando el portador mata.
+             Al realizar 2 acciones extra seguidas, el lanzador entrará en el
+             Olvido Eterno. Esta espada, tiene todas los modificadores por
+             habilidad del puñal de arena de nivel 2, y del portador."
+  potencia: "+1 potencia"
+  maestría: "+1 dado de ataque"
+  diablura: "La espada no desaparece en el Olvido Eterno"
+  ardid:    "Las magias realizadas en las acciones extra no consumen el hechizo"
+-
+  id:       16
+  alcance:  1
+  duracion: "D"
+  name:     "Tótem del desierto"
+  tipo:     "Evocación"
+  subtipo:  "Muro"
+  efecto:   "Un tótem de arena compacta que debe ser colocado en una casilla
+             libre. Del tótem emana una magia antigua que confiere +2 de
+             movimiento a los aliados, -2 de mov. a los enemigos, y ciega
+             a los lanzadores de magia que no superen una tirada enfrentada
+             con el lanzador. Además cualquier fetiche de arena en la sala,
+             tiene duración ilimitada mientras el tótem permanezca"
+  potencia: "+1 a los modificadores de movimiento"
+  maestría: "+1 a la potencia de magias de arena en la sala"
+  diablura: "Los enemigos pierden la capacidad de empujar"
+  ardid:    "Los aliados pueden atravesar a los enemigos libremente"
+-
+  id:       17
+  alcance:  "V"
+  duracion: 0
+  name:     "Djinn eremita"
+  tipo:     "Invocación"
+  efecto:   "El djinn es un alma neutral que tranquiliza a los nómadas
+             del desierto. Cualquiera que entregue 10 piezas de oro,
+             recuperará todos sus PM (cuenta como acción) También se puede
+             mandar a atacar (funciona como un genio de aire) o a desactivar
+             una trampa visible del escenario"
+  potencia: "+1 acción para el djinn"
+  maestría: "+1 turno"
+  diablura: "+1 para recuperar por cada donación de oro"
+  ardid:    "Donar no cuenta como acción"
