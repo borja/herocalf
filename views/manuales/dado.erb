@@ -24,10 +24,12 @@
 			<tr>
 				<td>
 					<a href="/dado/<%= params[:param] %>">
-						<span class="fa-stack fa-lg">
-						  <i class="fa fa-cube fa-stack-1x fa-pulse" aria-hidden="true"></i>
-						  <i class="fa fa-repeat fa-stack-2x fa-spin" aria-hidden="true"></i>
+						<div class="fa-2x">
+						<span class="fa-layers fa-fw">
+						  <i class="fa fa-cube fa-pulse" data-fa-transform="shrink-6"></i>
+						  <i class="fas fa-redo fa-spin"></i>
 						</span>
+						</div>
 					</a>
 				</td>
 				<td><%= params[:param] %> dados</td>
