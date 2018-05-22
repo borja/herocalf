@@ -9,12 +9,13 @@
 	<% resultados << resultado %>
 <% end %>
 
+<h2><%= params[:param] %> dados</h2>
+
 <div class="table-responsive">
 	<table class='table'>
 		<thead>
 			<tr>
 				<th class="text-center">Repite</th>
-				<th class="text-center">Tirada</th>
 				<th class="text-center">Calaveras</th>
 				<th class="text-center">Defensas</th>
 				<th class="text-center">Negros</th>
@@ -32,7 +33,6 @@
 						</div>
 					</a>
 				</td>
-				<td><%= params[:param] %> dados</td>
 				<td><%= calaveras %></td>
 				<td><%= defensas  %></td>
 				<td><%= negros    %></td>
