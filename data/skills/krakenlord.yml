@@ -6,6 +6,14 @@
   type:        "pasiva"
   description: "+1/rango potencia a las magias de agua"
 -
+  id:          1
+  nivel:       2
+  rangos:      5
+  name:        "Espíritu alegre"
+  type:        "reactiva"
+  description: "Si durante la ronda has sido sanado, obtienes +1/rango,
+                a tus dados de combate."
+-
   id:          2
   nivel:       2
   rangos:      3
@@ -26,7 +34,7 @@
                 movimiento, esta habilidad aumenta su alcance en 1."
 -
   id:          4
-  nivel:       3
+  nivel:       2
   rangos:      2
   name:        "Puños tortuga"
   type:        "Pasiva"

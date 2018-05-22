@@ -5,3 +5,39 @@
   name:        "Fuego eterno"
   type:        "pasiva"
   description: "+1 potencia a las magias de fuego"
+-
+  id:          1
+  nivel:       2
+  rangos:      3
+  name:        "Llamas voraces"
+  type:        "activa"
+  coste:       "1 PM"
+  description: "Solamente puedes ejecutar llamas voraces tras cobrar
+                una pieza mediante daño por fuego. Recuperas 1 magia de nivel
+                igual o inferior al rango."
+-
+  id:          2
+  nivel:       2
+  name:        "Fisura del Muspelheim"
+  type:        "única"
+  description: "Ejecuta 2 conjuros de fuego gratuitamente (sin coste de acción
+                ni coste de hechizo) con ardid. Puedes consumir ambos hechizos
+                para recuperar esta habilidad."
+-
+  id:          3
+  nivel:       2
+  rangos:      4
+  name:        "Adalid destructor"
+  type:        "pasiva"
+  description: "Permite +1/rango acción adicional de magia de fuego, siempre que
+                la secuencia de turno sea movimiento-ataque, y se haya
+                conseguido al menos una pieza."
+-
+  id:          4
+  nivel:       2
+  name:        "Esquirla de fragua"
+  type:        "reactiva"
+  description: "El exceso de daño causado por dados de combate normales,
+                recupera 1 PM o bien ejecuta un Fuego de Ira a una casilla
+                colindante a ambos. (a tu elección)"
+# nivel 3
