@@ -3,13 +3,12 @@
 		thead class="thead-dark"
 			th #
 			th PJ
-			th  Habilidades
-			th Descripción
+			th Habilidades
 		tbody
 		- razas.each do |pj|
 			tr
 				td: img src="/images/personajes/#{pj.first}.png" alt="#{pj.first}" id="icon"
 				td: a href="/personaje/#{pj.first}" == pj.first
 				td
-					
-				td desc
+					- habilidad_base(pj.first).each do |hab|
+						== erb :'display/skillbase', locals: { skill: hab }
