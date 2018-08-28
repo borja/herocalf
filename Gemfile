@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 # Production requirements
 gem 'require_all', '~> 2.0.0'
 gem 'sinatra', github: 'sinatra/sinatra'
-gem 'slim', '~> 3.0.9'
+gem 'slim', '~> 4.0.0'
 gem 'tilt', '~> 2.0.7'
 
 # Testing and metrics (not necessary in production)
