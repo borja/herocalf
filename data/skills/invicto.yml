@@ -4,16 +4,16 @@
   nivel:        2
   name:         "Golpe feroz"
   type:         "Única"
-  description:  "+1/rango de potencia a tu siguiente ataque"
+  description:  "+1 de potencia a tu siguiente ataque. Este ataque no puede ser interrumpido."
 -
   id:           1
   nivel:        2
   rangos:       3
   name:         "Corazón de león"
   type:         "Reactiva"
-  description:  "-1/rango daño sufrido por golpes físicos
-                 si has matado en tu turno. Si esto reduce el daño a 0,
-                 el ataque se considera defendido con éxito."
+  description:  "-1 al daño físico recibido por cada enemigo matado durante 1/rango turnos.
+                 El rango también determina el valor máximo de reducción de daño.
+                 Si esto reduce el daño a 0, el ataque se considera defendido con éxito."
 -
   id:           2
   nivel:        2
@@ -41,8 +41,8 @@
   requisitos:   [0]
   name:         "Ferocidad"
   type:         "Reactiva"
-  description:  "Recupera golpe feroz al matar frontalmente
-                 en combate cuerpo a cuerpo"
+  description:  "Recupera todo el golpe feroz invertido en el ataque al matar frontalmente
+                 en combate cuerpo a cuerpo. Siempre recupera mínimo 1."
 -
   id:           6
   nivel:        3
@@ -79,7 +79,7 @@
   type:         "Activa"
   coste:        "1/rango PC"
   description:  "El corazón de león se aplica al coste de Ariel. Se puede usar
-                 Ariel para que 1 próxima plegaria tenga 1/rango propiedad:<br/>
+                 Ariel para que tu próxima plegaria tenga 1/rango propiedad:<br/>
                  <li>Cueste 1PC en lugar de 1 plegaria</li>
                  <li>No consuma acción</li>
                  <li>Sea súmmun</li>"
@@ -107,16 +107,16 @@
   name:         "Señor del viento"
   type:         "Pasiva"
   description:  "Si tu turno termina tras cobrar una pieza, puedes ejecutar
-                 inmediatamente un hechizo de aire. En rango 2, no consume
-                 el hechizo."
+                 inmediatamente un hechizo de aire. Además, obtienes una carta de hechizo de aire de nivel 1/rango 
+                 al hacer huir a un enemigo."
 # nivel 5
 -
   id:           13
   nivel:        5
-  requisitos:   [10]
-  name:         "Mordisco belicoso"
-  type:         "Reactiva"
-  description:  "Recupera aplastar al matar sin armas"
+  requisitos:   [2, 3]
+  name:         "Elegido de Maahes"
+  type:         "Activa"
+  description:  "+1 PV (Punto de Victoria) cada vez que mates por colisión. Instinto: 1PV= +1POT defensiva."
 -
   id:           14
   nivel:        5
@@ -165,3 +165,78 @@
                  tirar miedo contra tus aliados colindantes. Los enemigos
                  que te ataquen frontalmente, deben tirar miedo contra tu
                  armadura base y los enemigos de tipo bestia, contra tu mente."
+# nivel 7 
+-
+  id:           19
+  nivel:        7
+  rangos:       2
+  requisitos:   [12]
+  name:         "Visir de la tormenta"
+  type:         "Pasiva"
+  description:  "Siempre que estés bajo los efectos de una bendición, tus hechizos de aire tendrán diablura.
+                 En rango 2, además, tendrán ardid."
+-
+  id:           20
+  nivel:        7
+  requisitos:   [13]
+  name:         "Fuerza devastadora"
+  type:         "Pasiva"
+  description:  "+1 Fuerza en los ataques por colisión por cada PV."
+# nivel 8
+-
+  id:           21
+  nivel:        8
+  name:         "Desafiar rugiendo"
+  type:         "Activa"
+  description:  "Al rugir puedes provocar a un objetivo(psicología) que resistirá contra una dificultad igual
+                 al miedo que le causas en lugar del efecto habitual."
+-                 
+  id:           22
+  nivel:        8
+  requisitos:   [11]
+  name:         "Cubrirse de sangre"
+  type:         "Pasiva"
+  description:  "Los enemigos afectados por tu sangrado reducen en 1 su ataque por cada sangrado."
+# nivel 9
+-
+  id:           23
+  nivel:        9
+  requisitos:   [1]
+  name:         "Sangre por sangre"
+  type:         "Pasiva"
+  description:  "Tu potencia sin armas es igual a tus heridas. Si estás intacto, tus golpes sin armas son aullantes."
+-
+  id:           24
+  nivel:        9
+  requisitos:   [19]
+  name:         "Aeromante indemne"
+  type:         "Pasiva"
+  description:  "+1 Potencia de aire a los aliados en S/P si eres el jugador con menos heridas. Se te considera bendecido."
+# nivel 10
+-
+  id:           25
+  nivel:        10
+  name:         "Alas de Sigmar"
+  type:         "Definitiva"
+  description:  "Cada vez que ejecutas una plegaria o una magia de aire, brotan unas alas de luz del invicto durante 1 turno.
+                 Vuelas, se considera que tus flancos estan escudados y le añades el dado de sigmar a todos tus ataques.
+                 Tus ángeles y genios atacarán con +1 Fuerza."
+-
+  id:           26
+  nivel:        10
+  requisitos:   [17]
+  name:         "Trance de Sekhmet"
+  type:         "Definitiva"
+  description:  "Si matas estando furioso, dispondrás de una acción de ataque adicional el próximo turno(Bendición de Guerra).
+                 Cuando una plegaria gratuita sane, eliminarás 1 efecto negativo de cada aliado en S/P(Bendición de PAZ).
+                 Si estás bajo los efectos de ambas bendiciones, entrarás en éxtasis ganando +1 Potencia de ATQ, DEF,
+                 hechizos y +1 Fuerza ATQ."
+-
+  id:           27
+  nivel:        10
+  name:         "Enlazar Ib"
+  type:         "Definitiva"
+  description:  " Al inicio del reto compartes el corazón con el aliado objetivo: 
+                (instinto) podrás redirigir hacia ti el daño del objetivo(se puede aplicar corazón de león a este daño).
+                Os podéis intercambiar hechizos y efectos entre vosotros. El objetivo suma tu bonificador a causar miedo.
+                -1PM cada vez que el objetivo ejecute un hechizo de sombra o sangre. Si el objetivo muere, tú también."
