@@ -2,35 +2,40 @@
 -
   id:           0
   nivel:        2
-  rangos:       4
+  rangos:       2
   name:         "Hechicería"
   type:         "Reactiva"
-  description:  "N+: Recupera una magia (N = 7-rango)"
+  description:  "N+: Recupera una magia (N = 6+nivel del hechizo-rango)"
 
 -
   id:           1
   nivel:        2
+  rangos:       6
   name:         "Chistera mágica"
   type:         "única"
   coste:        "acción"
   description:  "Permite almacenar una magia en (rangos) 'chisteras':
-                 el hechizo se recuperará. No se podrán ejecutar
-                 los demás no-enchisterados"
+                 el hechizo no se consumirá. No se podrán ejecutar
+                 los demás no-enchisterados. Necesitas N chisteras para
+                 albergar hechizos de nivel N."
 -
   id:           2
   nivel:        2
   name:         "Resaca Arcana"
   type:         "activa"
   coste:        "1 hechizo de nivel N"
-  description:  "Recupera 1d6 x N puntos de mente."
+  description:  "Recupera Nd6 PM."
 -
   id:           3
   nivel:        2
   rangos:       3
   name:         "Velocidad arcana"
   type:         "pasiva"
-  description:  "+1/rango movimiento durante el sprint por cada escuela
-                 entre tus hechizos disponibles."
+  description:  "Siempre que ejecutes un hechizo, obtienes +X de MOV hasta
+                 el final del turno(X=escuelas mágicas disponibles).
+                 En rango 2, puedes declarar antes de hechizar con el 
+                 bonificador a coste 1PM por cada casilla desplazada en 
+                 caso de no conseguir ejecutar el hechizo."
 -
   id:           4
   nivel:        2
@@ -55,23 +60,30 @@
   requisitos:   [0]
   name:         "Diabolismo arcano"
   type:         "Disparada"
-  description:  "al recuperar con hechicería el hechizo ejecutado
-                 se lanza con diablura."
+  description:  "Siempre que consumas una carta de hechizo, este se lanza
+                 con diablura. Siempre que ejecutes un hechizo con diablura,
+                 obtienes 1 punto de diabolismo(PD)."
 -
   id:           6
   nivel:        3
+  rangos:       2
   requisitos:   [1]
   name:         "Magia intrépida"
   type:         "pasiva"
-  description:  "Enchisterar es una acción gratuita."
+  description:  "Enchisterar es una acción gratuita. En rango 2, el
+                 hechicero puede declarar como acción de turno completo
+                 hechizar 2 veces siempre y cuando solo 1 de ambos
+                 hechizos esté enchisterado."
 -
   id:           7
   nivel:        3
-  rangos:       3
+  rangos:       6
   name:         "Armadura de mago"
   type:         "activa"
   coste:        "N PM"
-  description:  "Instinto: +1 dado azul por rango de potencia defensiva N"
+  description:  "Instinto: +1 dado azul por rango de potencia defensiva N.
+                 El daño recibido este turno se pierde en PM."
+# nivel 4
 -
   id:           8
   nivel:        4
@@ -80,8 +92,7 @@
   name:         "Réplica"
   type:         "reactiva"
   description:  "En lugar de recuperar una magia  puedes lanzar una copia
-                 de la misma por rango. En caso de ser posible ha de ser
-                 a un objetivo diferente."
+                 de la misma por rango. Puedes elegir un nuevo objetivo."
 -
   id:           9
   nivel:        4
@@ -92,48 +103,102 @@
   description:  "Puedes elegir no recuperar una chistera para dejar 1 marca
                  (por rango) de trazado mágico en tu posición.
                  En tu próximo hechizo recuperado podrás teletransportarte
-                 al trazado, consumiéndolo."
+                 al trazado, consumiéndolo. Siempre que ejecutes un hechizo
+                 estando sobre un trazado, se ejecuta con ardid."
 -
   id:           10
   nivel:        4
   rangos:       2
   requisitos:   [0]
-  name:         "Ecos"
+  name:         "Eco burlón"
   type:         "reactiva"
-  coste:        "2PM"
-  description:  "Replica 1/rango hechizos al ser recuperado con hechicería"
+  coste:        "1PD"
+  description:  "Replica 1 hechizo ejecutado sin diablura. En rango 2,
+                 puedes beneficiarte de hechicería para recuperar unicamente
+                 el PD, pudiendo replicar varias veces el hechizo."
 -
   id:           11
   nivel:        4
+  rangos:       4
   requisitos:   [0,1,5]
   name:         "Hechicería elemental"
   type:         "reactiva"
-  coste:        "Consumir hechizo enchisterado"
-  description:  "Recupera un hechizo de la misma escuela
+  coste:        "Consumir hechizo de nivel N/rango enchisterado"
+  description:  "Recupera un hechizo de la misma escuela de nivel N/rango.
                  (No recupera la chistera)"
+# nivel 5
 -
   id:           12
-  name:         "Masa arcana"
-  description:  "+1 de potencia a tu siguiente magia elemental"
+  nivel:        5
+  name:         "Masa arcana
   type:         "única"
   requisitos:   [2]
-  nivel:        5
+  description:  "+1 de maestria a tu siguiente magia elemental."
+
 -
   id:           13
-  nivel:        6
-  rangos:       3
-  requisitos:   [0,1,6]
+  nivel:        5
+  rangos:       4
+  requisitos:   []
   name:         "Polarizar hechizos"
-  type:         "activa"
-  coste:        "1PM por hechizo extra"
-  description:  "Puedes lanzar como la misma acción N(rango) hechizo/s
-                 adicionales de escuelas distinta. (Se recuperan por separado)"
+  type:         "reactiva"
+  description:  "Siempre que ejecutes un hechizo de la escuela opuesta 
+                 al hechizo anterior, obtienes +1POT mágica. Este efecto se
+                 acumula tantas veces como el rango."
 -
   id:           14
-  nivel:        7
-  requisitos:   [0, 8, 10, 12]
-  name:         "Estruendo"
+  nivel:        5
+  requisitos:   []
+  name:         "Resonancia"
   type:         "reactiva"
-  description:  "Puedes lanzar la siguiente magia de este turno
-                 con +1 maestría si en el mismo turno
-                 has recuperado otro hechizo previamente."
+  description:  "Siempre que ejecutes un hechizo distinto dentro de la misma
+                 escuela obtienes 1 punto de resonancia(PR). Con 6 PR entrarás
+                 en locura. Obtienes +1 resistencia mágica a la escuela resonante
+                 por cada PR. Al ejecutar un hechizo de una escuela distinta
+                 perderás todos los PR."
+-                 
+  id:           15
+  nivel:        5
+  requisitos:   []
+  name:         "Hadouken"
+  type:         "Activa"
+  coste:        "4MOV"
+  description:  "+1POT al ataque de orbes."
+# nivel 6
+-
+  id:           16
+  nivel:        6
+  rangos:       3
+  requisitos:   []
+  name:         "Ascenso"
+  type:         "Pasiva"
+  description:  "Puedes aprender hechizos de nivel rango +1."
+-
+  id:           17
+  nivel:        6
+  rangos:       2
+  requisitos:   []
+  name:         "Baúl mágico"
+  type:         "Activa"
+  coste:        "N PR"
+  description:  "Ejecuta un hechizo consumido de nivel N. En rango 2 podrás
+                 emplear el baúl 2 veces por turno."
+# nivel 7
+-
+  id:           18
+  nivel:        7
+  requisitos:   []
+  name:         "Estruendo"
+  type:         "Reactiva"
+  description:  "Recupera masa crítica siempre que en un turno ejecutes
+                 3 veces o más el mismo hechizo.
+-
+  id:           19
+  nivel:        7
+  rangos:       2
+  requisitos:   []
+  name:         "Legado de Cringrís"
+  type:         "Activa"
+  coste:        "3PM-1/rango y acción de hechizar"
+  description:  "Este turno puedes lanzar un hechizo (sin consumirlo)
+                 que hayas lanzado en otros turnos.
