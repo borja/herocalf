@@ -1,13 +1,13 @@
 GIT
-  remote: https://github.com/sinatra/sinatra.git
-  revision: 5149dc9e0b0e281231b91223c6a414c905ad3a96
+  remote: git://github.com/sinatra/sinatra.git
+  revision: e0aa37dce6f25700131ced4a09e10dda67250b36
   specs:
-    rack-protection (2.0.1)
+    rack-protection (2.0.4)
       rack
-    sinatra (2.0.1)
+    sinatra (2.0.4)
       mustermann (~> 1.0)
       rack (~> 2.0)
-      rack-protection (= 2.0.1)
+      rack-protection (= 2.0.4)
       tilt (~> 2.0)
 
 GEM
@@ -21,7 +21,7 @@ GEM
     docile (1.3.1)
     json (2.1.0)
     minitest (5.11.3)
-    mustermann (1.0.2)
+    mustermann (1.0.3)
     rack (2.0.5)
     rack-test (1.0.0)
       rack (>= 1.0, < 3)
@@ -45,9 +45,9 @@ GEM
       json (>= 1.8, < 3)
       simplecov-html (~> 0.10.0)
     simplecov-html (0.10.2)
-    slim (3.0.9)
+    slim (4.0.1)
       temple (>= 0.7.6, < 0.9)
-      tilt (>= 1.3.3, < 2.1)
+      tilt (>= 2.0.6, < 2.1)
     temple (0.8.0)
     tilt (2.0.8)
     url (0.3.2)
@@ -65,7 +65,7 @@ DEPENDENCIES
   rspec (~> 3.7.0)
   simplecov (~> 0.16.1)
   sinatra!
-  slim (~> 3.0.9)
+  slim (~> 4.0.1)
   tilt (~> 2.0.7)
   yaml-lint (~> 0.0.10)
 
