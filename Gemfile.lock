@@ -1,5 +1,6 @@
 GIT
   remote: git://github.com/sinatra/sinatra.git
+<<<<<<< HEAD
   revision: e0aa37dce6f25700131ced4a09e10dda67250b36
   specs:
     rack-protection (2.0.4)
@@ -8,6 +9,16 @@ GIT
       mustermann (~> 1.0)
       rack (~> 2.0)
       rack-protection (= 2.0.4)
+=======
+  revision: 180158b725b8a964711ef8bdb3c8cbaf53d2e6a3
+  specs:
+    rack-protection (2.0.3)
+      rack
+    sinatra (2.0.3)
+      mustermann (~> 1.0)
+      rack (~> 2.0)
+      rack-protection (= 2.0.3)
+>>>>>>> xou/master
       tilt (~> 2.0)
 
 GEM
@@ -23,7 +34,7 @@ GEM
     minitest (5.11.3)
     mustermann (1.0.3)
     rack (2.0.5)
-    rack-test (1.0.0)
+    rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rake (12.3.1)
     require_all (2.0.0)
@@ -59,7 +70,7 @@ PLATFORMS
 DEPENDENCIES
   codecov (~> 0.1.10)
   minitest (~> 5.11.1)
-  rack-test (~> 1.0.0)
+  rack-test (~> 1.1.0)
   rake (~> 12.3.1)
   require_all (~> 2.0.0)
   rspec (~> 3.8.0)
