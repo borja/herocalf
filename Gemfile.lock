@@ -1,13 +1,13 @@
 GIT
-  remote: https://github.com/sinatra/sinatra.git
-  revision: 5149dc9e0b0e281231b91223c6a414c905ad3a96
+  remote: git://github.com/sinatra/sinatra.git
+  revision: 180158b725b8a964711ef8bdb3c8cbaf53d2e6a3
   specs:
-    rack-protection (2.0.1)
+    rack-protection (2.0.3)
       rack
-    sinatra (2.0.1)
+    sinatra (2.0.3)
       mustermann (~> 1.0)
       rack (~> 2.0)
-      rack-protection (= 2.0.1)
+      rack-protection (= 2.0.3)
       tilt (~> 2.0)
 
 GEM
@@ -23,7 +23,7 @@ GEM
     minitest (5.11.3)
     mustermann (1.0.2)
     rack (2.0.5)
-    rack-test (1.0.0)
+    rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rake (12.3.1)
     require_all (2.0.0)
@@ -59,7 +59,7 @@ PLATFORMS
 DEPENDENCIES
   codecov (~> 0.1.10)
   minitest (~> 5.11.1)
-  rack-test (~> 1.0.0)
+  rack-test (~> 1.1.0)
   rake (~> 12.3.1)
   require_all (~> 2.0.0)
   rspec (~> 3.7.0)
