@@ -9,7 +9,7 @@
 				th Coste
 		tbody
 			- proteccions.sort_by {|p| p['categoria']}.each do |prot|
-		  - p = Proteccion.new(prot.tap{ |i| i.delete('ranuras') } )
+		  	- p = Proteccion.new(prot.tap{ |i| i.delete('ranuras') } )
 				tr
 					td == erb :'display/item', locals: { item: p }
 					td == p.name
