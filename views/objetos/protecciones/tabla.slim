@@ -1,0 +1,22 @@
+.table-responsive
+	table class="table table-striped table-bordered table-hover table-sm"
+		thead class="thead-dark"
+			tr
+				th colspan=2 Protección
+				th Categoría
+				th: i class="fas fa-shield-alt"
+				th Ranuras
+				th Coste
+		tbody
+			- proteccions.sort_by {|p| p['categoria']}.each do |prot|
+		  - p = Proteccion.new(prot.tap{ |i| i.delete('ranuras') } )
+				tr
+					td == erb :'display/item', locals: { item: p }
+					td == p.name
+					td == p.categoria
+					td == p.defensa
+					td == proteccions[p.id]['ranuras']
+					td class="text-right pr-3"
+						== p.precio
+						|
+						i class="fas fa-database text-warning"
