@@ -1,4 +1,4 @@
-ruby '2.5.1' # Release date: 2018-03-28
+ruby '2.5.3' # Release date: 2018-10-18
 source 'https://rubygems.org'
 
 # Production requirements
