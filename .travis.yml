@@ -12,13 +12,14 @@ cache: bundler
 rvm:
   - 2.5.3
 before_install:
-  #- gem install bundler --no-document -v '~> 1.16.6'
+  - gem update --system
+  - gem install bundler --no-document -v '~> 1.16.6'
   # Sinatra gem is loaded from github, instead of rubygems:
   - bundle config github.https true
 
 # Main test usging bundler (not working)
 script:
-  #- bundle install #--path vendor/bundle
+  - bundle install #--path vendor/bundle
   - bundle exec rspec test.rb
 
 after_script:
