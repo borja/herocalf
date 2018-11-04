@@ -1,7 +1,6 @@
 GIT
   remote: git://github.com/sinatra/sinatra.git
-<<<<<<< HEAD
-  revision: e0aa37dce6f25700131ced4a09e10dda67250b36
+  revision: d90318a57efe56688efb83b3287a811f2c30faf9
   specs:
     rack-protection (2.0.4)
       rack
@@ -9,22 +8,12 @@ GIT
       mustermann (~> 1.0)
       rack (~> 2.0)
       rack-protection (= 2.0.4)
-=======
-  revision: 180158b725b8a964711ef8bdb3c8cbaf53d2e6a3
-  specs:
-    rack-protection (2.0.3)
-      rack
-    sinatra (2.0.3)
-      mustermann (~> 1.0)
-      rack (~> 2.0)
-      rack-protection (= 2.0.3)
->>>>>>> xou/master
       tilt (~> 2.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    codecov (0.1.10)
+    codecov (0.1.13)
       json
       simplecov
       url
