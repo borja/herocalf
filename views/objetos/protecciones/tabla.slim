@@ -5,7 +5,7 @@
 				th colspan=2 Protección
 				th Categoría
 				th: i class="fas fa-shield-alt"
-				th Ranuras
+				th: i class="far fa-square"
 				th Coste
 		tbody
 			- proteccions.map {|pr| Proteccion.new(pr) }.each do |p|
@@ -17,5 +17,5 @@
 					td == proteccions[p.id]['ranuras']
 					td class="text-right pr-3"
 						== p.precio
-						|  
+						|
 						i class="fas fa-database text-warning"
