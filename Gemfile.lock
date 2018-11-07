@@ -22,7 +22,7 @@ GEM
     json (2.1.0)
     minitest (5.11.3)
     mustermann (1.0.3)
-    rack (2.0.5)
+    rack (2.0.6)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rake (12.3.1)
