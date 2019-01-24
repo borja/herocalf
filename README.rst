@@ -42,6 +42,8 @@ Build Status
 +--------------+-------------------+
 | CodeShip     | |CodeShip|        |
 +--------------+-------------------+
+| Appveyor     | |Appveyor|        |
++-------------+------------+-------+
 
 .. |Travis Status| image:: https://travis-ci.org/borja/herocalf.svg?branch=master
    :target: https://travis-ci.org/borja/herocalf
@@ -49,6 +51,8 @@ Build Status
    :target: https://circleci.com/gh/borja/herocalf
 .. |CodeShip| image:: https://app.codeship.com/projects/62d62e60-2116-0136-eafd-669e1e370d60/status?branch=master
    :target: https://codeship.com/projects/285831
+.. |Appveyor| image:: https://ci.appveyor.com/api/projects/status/1idf8cg04yjmowgx?svg=true
+   :target: https://ci.appveyor.com/project/borja/herocalf
 
 Deployment Status
 -----------------
@@ -124,15 +128,11 @@ Non-supported building platforms
 +-------------+------------+-----------------------------+
 | Platform    | Badge      | Issue                       |
 +=============+============+=============================+ 
-| Appveyor    | |Appveyor| | *Ruby >2.3.3 not supported* |
-+-------------+------------+-----------------------------+
 | Scrutinizer | |Scrut|    | *Ruby >2.4.2 not supported* |
 +-------------+------------+-----------------------------+
 | Semaphore   | |Semaphore|| *Ruby 2.4.3 not supported*  |
 +-------------+------------+-----------------------------+
 
-.. |Appveyor| image:: https://ci.appveyor.com/api/projects/status/1idf8cg04yjmowgx?svg=true
-   :target: https://ci.appveyor.com/project/borja/herocalf
 .. |Scrut| image:: https://scrutinizer-ci.com/g/borja/herocalf/badges/build.png?b=master
    :target: https://scrutinizer-ci.com/g/borja/herocalf
 .. |Semaphore| image:: https://semaphoreci.com/api/v1/borja/herocalf/branches/master/shields_badge.svg
