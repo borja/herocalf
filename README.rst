@@ -131,8 +131,8 @@ Non-supported building platforms
 | Semaphore   | |Semaphore|| *Ruby 2.4.3 not supported*  |
 +-------------+------------+-----------------------------+
 
-.. |Appveyor| image:: https://ci.appveyor.com/api/projects/status/7lm7txpwnr0cxj6x?svg=true
-   :target: https://ci.appveyor.com/project/borja/herocalf/branch/master
+.. |Appveyor| image:: https://ci.appveyor.com/api/projects/status/1idf8cg04yjmowgx?svg=true
+   :target: https://ci.appveyor.com/project/borja/herocalf
 .. |Scrut| image:: https://scrutinizer-ci.com/g/borja/herocalf/badges/build.png?b=master
    :target: https://scrutinizer-ci.com/g/borja/herocalf
 .. |Semaphore| image:: https://semaphoreci.com/api/v1/borja/herocalf/branches/master/shields_badge.svg
