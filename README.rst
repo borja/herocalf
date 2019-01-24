@@ -43,7 +43,7 @@ Build Status
 | CodeShip     | |CodeShip|        |
 +--------------+-------------------+
 | Appveyor     | |Appveyor|        |
-+-------------+------------+-------+
++--------------+-------------------+
 
 .. |Travis Status| image:: https://travis-ci.org/borja/herocalf.svg?branch=master
    :target: https://travis-ci.org/borja/herocalf
