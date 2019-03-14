@@ -1,6 +1,6 @@
 build:
     environment:
-        ruby: '2.5.0'
+        ruby: '2.6.2'
 filter:
   excluded_paths:
     - coverage/*
