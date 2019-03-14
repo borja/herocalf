@@ -1,31 +1,31 @@
 GIT
   remote: git://github.com/sinatra/sinatra.git
-  revision: d90318a57efe56688efb83b3287a811f2c30faf9
+  revision: 6f15fba2790ebdf4d1215cebf425dea2ea3130ea
   specs:
-    rack-protection (2.0.4)
+    rack-protection (2.0.5)
       rack
-    sinatra (2.0.4)
+    sinatra (2.0.5)
       mustermann (~> 1.0)
       rack (~> 2.0)
-      rack-protection (= 2.0.4)
+      rack-protection (= 2.0.5)
       tilt (~> 2.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    codecov (0.1.13)
+    codecov (0.1.14)
       json
       simplecov
       url
     diff-lcs (1.3)
     docile (1.3.1)
-    json (2.1.0)
+    json (2.2.0)
     minitest (5.11.3)
     mustermann (1.0.3)
-    rack (2.0.5)
+    rack (2.0.6)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
-    rake (12.3.1)
+    rake (12.3.2)
     require_all (2.0.0)
     rspec (3.8.0)
       rspec-core (~> 3.8.0)
@@ -48,8 +48,8 @@ GEM
     slim (4.0.1)
       temple (>= 0.7.6, < 0.9)
       tilt (>= 2.0.6, < 2.1)
-    temple (0.8.0)
-    tilt (2.0.8)
+    temple (0.8.1)
+    tilt (2.0.9)
     url (0.3.2)
     yaml-lint (0.0.10)
 
@@ -57,16 +57,16 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  codecov (~> 0.1.10)
+  codecov (~> 0.1.14)
   minitest (~> 5.11.1)
   rack-test (~> 1.1.0)
-  rake (~> 12.3.1)
+  rake (~> 12.3.2)
   require_all (~> 2.0.0)
   rspec (~> 3.8.0)
   simplecov (~> 0.16.1)
   sinatra!
   slim (~> 4.0.1)
-  tilt (~> 2.0.7)
+  tilt (~> 2.0.9)
   yaml-lint (~> 0.0.10)
 
 RUBY VERSION
