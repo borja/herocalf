@@ -19,7 +19,8 @@ jobs:
         key: sinatra-demo-{{ checksum "Gemfile.lock" }}
 
       # Bundle install dependencies
-      - run: bundle update --bundler #--path vendor/bundle
+      - run: bundle update --bundler
+      - run: bundle install --path vendor/bundle
 
       # Store bundle cache
       - type: cache-save
