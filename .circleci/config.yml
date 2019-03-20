@@ -1,0 +1,46 @@
+
+version: 2.1
+jobs:
+  build:
+    working_directory: ~/circleci-demo-ruby-sinatra
+    docker:
+      - image: circleci/ruby:2.6.2
+        environment:
+          CC_TEST_REPORTER_ID: 0d489bf5520c78ac08ce9c7925f6c5f477047967bf42ec4fe84fcf2a02be53f4
+          TESTOPTS: "--ci-dir=/tmp/test-results"
+          APP_ENV: test
+    steps:
+      # CodeClimate Metrics
+      - type: shell
+        command: curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+      - type: shell
+        command: chmod +x ./cc-test-reporter
+
+      - checkout
+
+      # Restore bundle cache
+      - type: cache-restore
+        key: sinatra-demo-{{ checksum "Gemfile.lock" }}
+
+      # Bundle install dependencies
+      - run: bundle install --path vendor/bundle
+
+      # Store bundle cache
+      - type: cache-save
+        key: sinatra-demo-{{ checksum "Gemfile.lock" }}
+        paths:
+          - vendor/bundle
+
+      # YAML Lint
+      - type: shell
+        command: bundle show yaml-lint
+      - type: shell
+        command: $(bundle show yaml-lint)/bin/yaml-lint data/
+
+      # Run tests
+      - type: shell
+        command: bundle exec rspec test.rb
+
+      # Save artifacts
+      - type: store_test_results
+        path: /tmp/test-results
