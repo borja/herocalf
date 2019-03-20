@@ -1,33 +1,17 @@
-
 # New version 2.1 was released
 # https://circleci.com/docs/2.0/configuration-reference/
-version: 2.1
 
-executors:
-  ruby:
+version: 2
+jobs:
+  build:
+    working_directory: ~/circleci-demo-ruby-sinatra
     docker:
       - image: circleci/ruby:2.6.2
-    environment:
-      CC_TEST_REPORTER_ID: 0d489bf5520c78ac08ce9c7925f6c5f477047967bf42ec4fe84fcf2a02be53f4
-      TESTOPTS: "--ci-dir=/tmp/test-results"
-    shell: /bin/bash
-    working_directory: ~/circleci-demo-ruby-sinatra
-
-jobs:
-
-  # YAML Lint
-  check-yaml:
-    executor: ruby
+        environment:
+          CC_TEST_REPORTER_ID: 0d489bf5520c78ac08ce9c7925f6c5f477047967bf42ec4fe84fcf2a02be53f4
+          TESTOPTS: "--ci-dir=/tmp/test-results"
+          APP_ENV: test
     steps:
-      - run: bundle show yaml-lint
-      - run: $(bundle show yaml-lint)/bin/yaml-lint data/
-
-  build:
-    steps:
-      # CodeClimate Metrics
-      - run: curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-      - run: chmod +x ./cc-test-reporter
-
       - checkout
 
       # Restore bundle cache
@@ -43,8 +27,19 @@ jobs:
         paths:
           - vendor/bundle
 
-      # Run tests
-      - run: bundle exec rspec test.rb
+      # YAML Lint
+      - type: shell
+        command: bundle show yaml-lint
+      - type: shell
+        command: $(bundle show yaml-lint)/bin/yaml-lint data/
+
+      # CodeClimate Metrics configuration
+      - run: curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+      - run: chmod +x ./cc-test-reporter
+
+      # Run minitest
+      - type: shell
+        command: bundle exec rspec test.rb
 
       # Save artifacts
       - type: store_test_results
