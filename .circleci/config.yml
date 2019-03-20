@@ -35,8 +35,11 @@ jobs:
 
       # YAML Lint
       - type: shell
+        name: Check YAML inspector gem
         command: bundle show yaml-lint
+
       - type: shell
+        name: Inspect YAML files with Lint
         command: $(bundle show yaml-lint)/bin/yaml-lint data/
 
       # CodeClimate Metrics configuration
