@@ -8,6 +8,8 @@ jobs:
     docker:
       - image: circleci/ruby:2.6.2
         environment:
+          BUNDLER_VERSION: 2.0.1
+          BUNDLE_PATH: vendor/bundle
           CC_TEST_REPORTER_ID: 0d489bf5520c78ac08ce9c7925f6c5f477047967bf42ec4fe84fcf2a02be53f4
           TESTOPTS: "--ci-dir=/tmp/test-results"
           APP_ENV: test
@@ -15,8 +17,8 @@ jobs:
       - checkout
 
       # Bundle install dependencies
+      - run: bundle install
       - run: bundle update --bundler
-      - run: bundle install --path vendor/bundle
 
       # Restore bundle cache
       - type: cache-restore
