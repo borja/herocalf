@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # DB Loader
 def views
   load_yaml('views') # /data/views.yml
@@ -25,15 +27,15 @@ def view(ruta)
 
   # Return the matching route ('nav') from DB
   v = views.find { |v| v['ruta'] == nav }
-  v = v.nil? ? view('error') : v   # TODO : 404 error...
+  v = v.nil? ? view('error') : v # TODO : 404 error...
   Vista.new(v)
 end
 
 # View meta info for component and layouts
 def viewinfo(ruta)
   {
-    title:  view(ruta)['ruta'],
-    bc:     breadcrumb(ruta),
+    title: view(ruta)['ruta'],
+    bc: breadcrumb(ruta),
     layout: view(ruta).template
   }
 end
