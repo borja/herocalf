@@ -19,16 +19,31 @@
   desc:       ""
 -
   id:         3
-  name:       "daevanagari"
-  personajes: ["daeva","rakshasa"]
+  name:       "elohimnagari"
+  personajes: ["elohim","rakshasa"]
   desc:       ""
 -
   id:         4
   name:       "belítico"
-  personajes: ["clérigo","rakshasa", "serafín"]
+  personajes: ["clérigo","rakshasa", "elohim"]
   desc:       ""
 -
   id:         5
   name:       "Lengua Negra"
-  personajes: ["daeva","tiefling"]
+  personajes: ["elohim","tiefling"]
+  desc:       ""
+-
+  id:         6
+  name:       "Lengua arcana"
+  personajes: ["elohim","tiefling"]
+  desc:       ""
+-
+  id:         7
+  name:       "Lengua primigenia"
+  personajes: ["elohim","tiefling"]
+  desc:       ""
+-
+  id:         8
+  name:       "dracónico"
+  personajes: ["elohim","tiefling"]
   desc:       ""
