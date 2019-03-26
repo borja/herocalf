@@ -1,0 +1,82 @@
+h3 Tabla de emparejamientos
+.table-responsive
+
+  table class="table table-striped table-bordered table-hover table-sm"
+    thead class="thead-dark"
+      tr
+        th colspan="2" Personaje
+        th: img src="/images/personajes/humano.png" alt="humano" id="icon"
+        - razas.each do |r|
+          - next if r.last.last == "humano"
+          - next if r.last.last == "parangón"
+          th: img src="/images/personajes/#{r.first}.png" alt="#{r.first}" id="icon"
+    tbody
+      tr
+        th: img src="/images/personajes/maga.png" alt="humana" id="icon"
+        th Humanos
+        td: img src="/images/personajes/humano.png" alt="humano" id="icon"
+        td: img src="/images/personajes/enano.png" alt="enano" id="icon"
+        td 50%
+        td 50%
+        td: i class="fas fa-ban"
+        td: i class="fas fa-neuter"
+        td: img src="/images/personajes/gigante.png" alt="gigante" id="icon"
+        td: i class="fas fa-neuter"
+      tr
+        th: h3: i class="fas fa-mars"
+        th Enanos
+        td: i class="fas fa-ban"
+        td: img src="/images/personajes/enano.png" alt="enano" id="icon"
+        td: i class="fas fa-ban"
+        td: i class="fas fa-ban"
+        td: i class="fas fa-ban"
+        td: i class="fas fa-neuter"
+        td: i class="fas fa-ban"
+        td: i class="fas fa-neuter"
+
+      tr
+        th: img src="/images/personajes/elfa.png" alt="elfa" id="icon"
+        th Elfos
+        td 50%
+        td: img src="/images/personajes/enano.png" alt="enano" id="icon"
+        td: img src="/images/personajes/elfo.png" alt="elfo" id="icon"
+        td 50%
+        td: i class="fas fa-ban"
+        td: i class="fas fa-neuter"
+        td: i class="fas fa-ban"
+        td: i class="fas fa-neuter"
+
+      tr
+        th: img src="/images/personajes/tieflina.png" alt="tieflina" id="icon"
+        th Tieflings
+        td 50%
+        td: img src="/images/personajes/enano.png" alt="enano" id="icon"
+        td 50%
+        td: img src="/images/personajes/tiefling.png" alt="tiefling" id="icon"
+        td 50%
+        td: i class="text-danger fas fa-neuter"
+        td 50%
+        td: i class="fas fa-neuter"
+
+      tr
+        th: img src="/images/personajes/rakshasi.png" alt="rakshasi" id="icon"
+        th Rakshasas
+        td: i class="fas fa-ban"
+        td: i class="fas fa-ban"
+        td: i class="fas fa-ban"
+        td 50%
+        td: img src="/images/personajes/rakshasa.png" alt="rakshasa" id="icon"
+        td: i class="fas fa-neuter"
+        td: i class="fas fa-ban"
+        td: i class="fas fa-neuter"
+      tr
+        th: img src="/images/personajes/giganta.png" alt="giganta" id="icon"
+        th Gigantes
+        th: img src="/images/personajes/gigante.png" alt="gigante" id="icon"
+        td: i class="fas fa-ban"
+        td: i class="fas fa-ban"
+        td 50%
+        td: i class="fas fa-ban"
+        td: i class="fas fa-neuter"
+        td: img src="/images/personajes/gigante.png" alt="gigante" id="icon"
+        td: i class="fas fa-neuter"
