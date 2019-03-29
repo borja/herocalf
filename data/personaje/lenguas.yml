@@ -2,12 +2,16 @@
   id:         0
   name:       "viejomundano"
   personajes: "todos"
-  desc:       ""
+  desc:       "El idioma predilecto del Viejo Mundo. Es hablado por casi todos
+               los habitantes del Imperio. En gran medida, los humanos,
+               las criaturas más prolíferas, han extendido su uso a
+               prácticamente todos los demás habitantes."
 -
   id:         1
   name:       "élfico"
   personajes: ["elfo"]
-  desc:       ""
+  desc:       "Considerado el lenguaje más hermoso, el élfico es hablado
+               por todas las razas de elfos."
 -
   id:         2
   name:       "khuzdul"
@@ -15,11 +19,31 @@
   desc:       ""
 -
   id:         3
-  name:       "daevanagari"
-  personajes: ["daeva","rakshasa"]
+  name:       "elohimnagari"
+  personajes: ["elohim","rakshasa"]
   desc:       ""
 -
   id:         4
-  name:       "daevanagari"
-  personajes: ["daeva","rakshasa"]
+  name:       "belítico"
+  personajes: ["clérigo","rakshasa", "elohim"]
+  desc:       ""
+-
+  id:         5
+  name:       "Lengua Negra"
+  personajes: ["elohim","tiefling"]
+  desc:       ""
+-
+  id:         6
+  name:       "Lengua arcana"
+  personajes: ["elohim","tiefling"]
+  desc:       ""
+-
+  id:         7
+  name:       "Lengua primigenia"
+  personajes: ["elohim","tiefling"]
+  desc:       ""
+-
+  id:         8
+  name:       "dracónico"
+  personajes: ["elohim","tiefling"]
   desc:       ""

@@ -1,0 +1,23 @@
+.table-responsive
+	table class="table table-striped table-bordered table-hover table-sm"
+		thead class="thead-dark"
+			tr
+				th Lengua
+				th Personajes
+				th Descripción
+
+		tbody
+			- lenguas.each do |lengua|
+				- l = Lengua.new(lengua)
+				tr
+					td == l.name
+					td
+						table: tbody: tr
+							- if l.personajes == 'todos'
+								td todos
+							- else
+								- l.personajes.each do |pj|
+									td: a href="/personaje/#{ pj }"
+										img src="/images/personajes/#{ pj }.png" alt="#{ pj }" id='icon'
+
+					td == l.desc

@@ -1,0 +1,22 @@
+h3 Tabla de bisutería
+hr
+.table-responsive
+	table class="table table-striped table-bordered table-hover table-sm"
+		thead class="thead-dark"
+			tr
+				th colspan=2 Bisutería
+				th Pieza
+				th Ranuras
+				th Precio
+		tbody
+			- miscelaneas.sort_by {|m| m['fits']}.each do |misc|
+				- m = Miscelanea.new(misc)
+				tr
+					td == erb :'display/item', locals: { item: m }
+					td == m.name
+					td == m.fits
+					td == m.max
+					td class="text-right pr-3"
+						== m.precio
+						|  
+						i class="fas fa-database text-warning"
