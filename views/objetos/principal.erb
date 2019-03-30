@@ -1,69 +1,72 @@
-<div class="row">
-	<h2>Sobre los objetos</h2>
+<h2>Sobre los objetos</h2>
+<p>
+  El conjunto de objetos de un personaje se denomina
+  <strong>inventario</strong> y se guarda tras cada Reto.
+  Algunos artículos son recompensas de Reto, otros se pueden
+  fabricar gracias a las <a href="/profesiones">profesiones</a>.
+</p>
+  Además, algunos objetos se pueden comprar en la
+  <a href="/city/Jadessvard">ciudad</a>.
+</p>
 
-	<div class="col-lg-12">
+<ul id="myTab" class="nav nav-tabs nav-justified">
+		<li class="active">
+			<a href="#buy" data-toggle="tab">
+				<i class="fa fa-handshake fa-fw" aria-hidden="true"></i>
+				Compraventa
+			</a>
+		</li>
+		<li class="">
+			<a href="#repu" data-toggle="tab">
+				<i class="fa fa-star fa-fw" aria-hidden="true"></i>
+				Reputación
+			</a>
+		</li>
+		<li class="">
+			<a href="#inv" data-toggle="tab">
+				<i class="fa fa-shopping-basket fa-fw" aria-hidden="true"></i>
+				Inventario
+			</a>
+		</li>
+		<li class="">
+			<a href="#banco" data-toggle="tab">
+				<i class="fa fa-university fa-fw" aria-hidden="true"></i>
+				Banco
+			</a>
+		</li>
+</ul>
 
-		<ul id="myTab" class="nav nav-tabs nav-justified">
-				<li class="active">
-					<a href="#buy" data-toggle="tab">
-						<i class="fa fa-handshake-o fa-fw" aria-hidden="true"></i>
-						Compraventa
-					</a>
-				</li>
-				<li class="">
-					<a href="#repu" data-toggle="tab">
-						<i class="fa fa-star fa-fw" aria-hidden="true"></i>
-						Reputación
-					</a>
-				</li>
-				<li class="">
-					<a href="#inv" data-toggle="tab">
-						<i class="fa fa-shopping-basket fa-fw" aria-hidden="true"></i>
-						Inventario
-					</a>
-				</li>
-				<li class="">
-					<a href="#banco" data-toggle="tab">
-						<i class="fa fa-university fa-fw" aria-hidden="true"></i>
-						Banco
-					</a>
-				</li>
-		</ul>
-
-		<div id="myTabContent" class="tab-content">
-			<div class="tab-pane fade active in" id="buy">
-				<h4>Comprar y vender</h4>
-				<p>
-					Los jugadores podrán comprar todos los objetos siempre que hayan desbloqueado mediante
-					misiones al personaje que los venda. El precio de compra es el indicado en la tabla,
-					mientras que el precio de venta es la mitad. ¡los mercaderes necesitan hacer negocio!
-				</p>
-			</div>
-			<div class="tab-pane fade" id="repu">
-				<h4>La reputación</h4>
-				<p>
-					La reputación permite a los héroes aumentar el precio de venta y disminuir el precio de compra,
-					de los objetos frente a los mercaderes. Aunque no todos los gremios aceptan la fama de un héroe,
-					algunos, como los herreros y forjadores, sienten un orgullo especial en ver a los héroes
-					reputados portando sus artesanías. ¡Y ese orgullo se traduce en descuentos y comisiones!
-				</p>
-			</div>
-			<div class="tab-pane fade" id="inv">
-				<h4>Inventario: La ley del 3x3</h4>
-				<p>
-					Los héroes pueden llevar un número limitado de objetos en el inventario,
-					según su nivel de héroe. El número de objetos máximo es 3 y se incrementa
-					en uno cada 3 niveles.
-				</p>
-			</div>
-			<div class="tab-pane fade" id="banco">
-				<h4>El Banco de la ciudad</h4>
-				<p>
-					En la ciudad hay un banco en el que los personajes pueden almacenar objetos.
-					Para intercambiar objetos del banco, los personajes deben jugar juntos al menos un reto.
-				</p>
-			</div>
-		</div>
-
+<div id="myTabContent" class="tab-content">
+	<div class="tab-pane fade active in" id="buy">
+		<h4>Comprar y vender</h4>
+		<p>
+			Los jugadores podrán comprar todos los objetos siempre que hayan desbloqueado mediante
+			misiones al personaje que los venda. El precio de compra es el indicado en la tabla,
+			mientras que el precio de venta es la mitad. ¡los mercaderes necesitan hacer negocio!
+		</p>
+	</div>
+	<div class="tab-pane fade" id="repu">
+		<h4>La reputación</h4>
+		<p>
+			La reputación permite a los héroes aumentar el precio de venta y disminuir el precio de compra,
+			de los objetos frente a los mercaderes. Aunque no todos los gremios aceptan la fama de un héroe,
+			algunos, como los herreros y forjadores, sienten un orgullo especial en ver a los héroes
+			reputados portando sus artesanías. ¡Y ese orgullo se traduce en descuentos y comisiones!
+		</p>
+	</div>
+	<div class="tab-pane fade" id="inv">
+		<h4>Inventario: La ley del 3x3</h4>
+		<p>
+			Los héroes pueden llevar un número limitado de objetos en el inventario,
+			según su nivel de héroe. El número de objetos máximo es 3 y se incrementa
+			en uno cada 3 niveles.
+		</p>
+	</div>
+	<div class="tab-pane fade" id="banco">
+		<h4>El Banco de la ciudad</h4>
+		<p>
+			En la ciudad hay un banco en el que los personajes pueden almacenar objetos.
+			Para intercambiar objetos del banco, los personajes deben jugar juntos al menos un reto.
+		</p>
 	</div>
 </div>
