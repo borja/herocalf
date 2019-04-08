@@ -9,6 +9,7 @@
   <a href="/city/Jadessvard">ciudad</a>.
 </p>
 
+<h3>Reglas adicionales</h3>
 <ul id="myTab" class="nav nav-tabs nav-justified">
 		<li class="active">
 			<a href="#buy" data-toggle="tab">
@@ -36,14 +37,64 @@
 		</li>
 </ul>
 
+<nav>
+	<div class="nav nav-tabs nav-justified" id="nav-tab" role="tablist">
+		<a class="nav-item nav-link active"
+			 href="#comp"
+			 role="tab" aria-controls="comp" aria-selected="true"
+			 data-toggle="tab">
+				<i class="fa fa-handshake fa-fw" aria-hidden="true"></i><br>
+				Compraventa
+		</a>
+		<a class="nav-item nav-link"
+			 id="nav-profile-tab"
+			 href="#repu"
+			 role="tab" aria-controls="repu" aria-selected="false"
+			 data-toggle="tab">
+			<i class="fa fa-star fa-fw" aria-hidden="true"></i><br>
+			Reputación
+		</a>
+		<a class="nav-item nav-link"
+			 id="nav-profile-tab"
+			 href="#inve"
+			 role="tab" aria-controls="inve" aria-selected="false"
+			 data-toggle="tab">
+			<i class="fa fa-shopping-basket fa-fw" aria-hidden="true"></i><br>
+			Inventario
+		</a>
+		<a class="nav-item nav-link"
+			 id="nav-profile-tab"
+			 href="#bank"
+			 role="tab" aria-controls="bank" aria-selected="false"
+			 data-toggle="tab">
+			<i class="fa fa-university fa-fw" aria-hidden="true"></i><br>
+			Banco
+		</a>
+	</div>
+</nav>
+
+<div id="myTabContent" class="tab-content">
+	<div id="comp" class="tab-pane fade show active"
+			 role="tabpanel" aria-labelledby="comp">
+		<p><%= slim :'objetos/reglas/compraventa' %></p>
+	</div>
+	<div id="repu" class="tab-pane fade"
+			 role="tabpanel" aria-labelledby="repu">
+		<p><%= slim :'objetos/reglas/reputacion' %></p>
+	</div>
+	<div id="inve" class="tab-pane fade"
+			 role="tabpanel" aria-labelledby="inve">
+		<p><%= slim :'objetos/reglas/inventario' %></p>
+	</div>
+	<div id="bank" class="tab-pane fade"
+			 role="tabpanel" aria-labelledby="bank">
+		<p><%= slim :'objetos/reglas/banco' %></p>
+	</div>
+
+</div>
+
 <div id="myTabContent" class="tab-content">
 	<div class="tab-pane fade active in" id="buy">
-		<h4>Comprar y vender</h4>
-		<p>
-			Los jugadores podrán comprar todos los objetos siempre que hayan desbloqueado mediante
-			misiones al personaje que los venda. El precio de compra es el indicado en la tabla,
-			mientras que el precio de venta es la mitad. ¡los mercaderes necesitan hacer negocio!
-		</p>
 	</div>
 	<div class="tab-pane fade" id="repu">
 		<h4>La reputación</h4>

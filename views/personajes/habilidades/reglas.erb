@@ -10,7 +10,7 @@
 	que los héroes esgrimen durante la partida para obtener ventaja en el juego.
 	Las tablas de habilidades corresponden a las diferentes especializaciones
 	que los héroes pueden elegir. Un héroe, recién creado tendrá únicamente
-	las habilidades inciales de su personaje. Sin embargo, en nivel 2, 
+	las habilidades inciales de su personaje. Sin embargo, en nivel 2,
 	debe elegir su especialización "desbloqueando" las habilidades
 	que le correspondan, según su especialización.
 	<a href='/personajes'>Pulsa aquí</a> para obtener
@@ -18,41 +18,39 @@
 </p>
 
 <!-- Skill Tabs -->
+<h3>Tipos de habilidades</h3>
 <p>
-	<h3>Tipos de habilidades</h3>
-	<p>
-		Existen dos criterios para clasificar las habilidades, dependiendo
-		si atendemos a la mecánica de uso durante el juego, o al momento
-		en el que se pueden elegir, cuando subimos de nivel:
-	</p>
-	<nav>
-		<div class="nav nav-tabs nav-justified" id="nav-tab" role="tablist">
-			<a class="nav-item nav-link active"
-				 href="#mec"
-				 role="tab" aria-controls="mec" aria-selected="true"
-				 data-toggle="tab">
-					<i class="fa fa-cogs fa-fw" aria-hidden="true"></i>
-					Por Mecánica
-			</a>
-			<a class="nav-item nav-link"
-				 id="nav-profile-tab"
-				 href="#adq"
-				 role="tab" aria-controls="adq" aria-selected="false"
-				 data-toggle="tab">
-				<i class="fa fa-sitemap fa-fw" aria-hidden="true"></i>
-				Por Adquisición
-			</a>
-		</div>
-	</nav>
-
-	<div id="myTabContent" class="tab-content">
-		<div id="mec" class="tab-pane fade show active"
-				 role="tabpanel" aria-labelledby="mec">
-			<p><%= slim :'personajes/habilidades/tipos' %></p>
-		</div>
-		<div id="adq" class="tab-pane fade"
-				 role="tabpanel" aria-labelledby="adq">
-			<p><%= slim :'personajes/habilidades/clases' %></p>
-		</div>
-	</div>
+	Existen dos criterios para clasificar las habilidades, dependiendo
+	si atendemos a la mecánica de uso durante el juego, o al momento
+	en el que se pueden elegir, cuando subimos de nivel:
 </p>
+<nav>
+	<div class="nav nav-tabs nav-justified" id="nav-tab" role="tablist">
+		<a class="nav-item nav-link active"
+			 href="#mec"
+			 role="tab" aria-controls="mec" aria-selected="true"
+			 data-toggle="tab">
+				<i class="fa fa-cogs fa-fw" aria-hidden="true"></i>
+				Por Mecánica
+		</a>
+		<a class="nav-item nav-link"
+			 id="nav-profile-tab"
+			 href="#adq"
+			 role="tab" aria-controls="adq" aria-selected="false"
+			 data-toggle="tab">
+			<i class="fa fa-sitemap fa-fw" aria-hidden="true"></i>
+			Por Adquisición
+		</a>
+	</div>
+</nav>
+
+<div id="myTabContent" class="tab-content">
+	<div id="mec" class="tab-pane fade show active"
+			 role="tabpanel" aria-labelledby="mec">
+		<p><%= slim :'personajes/habilidades/tipos' %></p>
+	</div>
+	<div id="adq" class="tab-pane fade"
+			 role="tabpanel" aria-labelledby="adq">
+		<p><%= slim :'personajes/habilidades/clases' %></p>
+	</div>
+</div>
