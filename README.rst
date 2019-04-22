@@ -2,19 +2,19 @@ Herosheet Project
 ===================
 Definition
 ----------
-This project was created as an amateur idea, a group of friends 
-willing to gather information from their HeroQuest games on an 
+This project was created as an amateur idea, a group of friends
+willing to gather information from their HeroQuest games on an
 non-official, non-profit web.
 
 Technology
 ----------
-The Herosheet website is written in Ruby on Sinatra_ with a fake-DB in YAML_, 
+The Herosheet website is written in Ruby on Sinatra_ with a fake-DB in YAML_,
 using Bootstrap_ as HTML web framework with Slim_ (lightweight template engine).
 
-.. _Sinatra: http://www.sinatrarb.com/ 
-.. _Bootstrap: http://getbootstrap.com/ 
-.. _YAML: http://yaml.org/ 
-.. _Slim: http://slim-lang.com/ 
+.. _Sinatra: http://www.sinatrarb.com/
+.. _Bootstrap: http://getbootstrap.com/
+.. _YAML: http://yaml.org/
+.. _Slim: http://slim-lang.com/
 
 QA Dashboard
 ============
@@ -76,6 +76,8 @@ Quality Grades
 +--------------+----------------+-------------------+
 | Codacy       | |Codacy Badge| | |Codacy Coverage| |
 +--------------+----------------+-------------------+
+| CodeBeat     | |CodeBeat|     |  Not set yet      |
++--------------+----------------+-------------------+
 | Coveralls    |                | |Coveralls|       |
 +--------------+----------------+-------------------+
 | CodeCov      |                | |CodeCov|         |
@@ -99,6 +101,8 @@ Quality Grades
   :target: https://scrutinizer-ci.com/g/borja/herocalf/
 .. |ScrutCov| image:: https://scrutinizer-ci.com/g/borja/herocalf/badges/coverage.png?b=master
   :target: https://scrutinizer-ci.com/g/borja/herocalf/
+.. |CodeBeat| image:: https://codebeat.co/badges/92dcb70d-4a69-4d0f-a39b-5043b1fd4b56
+  :target: https://codebeat.co/projects/github-com-borja-herocalf-master
 
 Documentation
 -------------
@@ -123,7 +127,7 @@ Non-supported building platforms
 --------------------------------
 +-------------+------------+-----------------------------+
 | Platform    | Badge      | Issue                       |
-+=============+============+=============================+ 
++=============+============+=============================+
 | Scrutinizer | |Scrut|    | *Ruby >2.4.2 not supported* |
 +-------------+------------+-----------------------------+
 | Semaphore   | |Semaphore|| *Ruby 2.4.3 not supported*  |
