@@ -1,0 +1,7 @@
+# nivel 2
+-
+  id:           0
+  nivel:        2
+  name:         "represalias"
+  type:         "reactiva"
+  description:  "Devuelve como ataque el exceso de defensa"
