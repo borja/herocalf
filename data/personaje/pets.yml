@@ -52,7 +52,7 @@
 -
   id:         7
   name:       "culebra"
-  personajes: ["mago","rakshasa"]
+  personajes: ["mago","rakshasa","náyade"]
   bono:       "dagas/cuchillos: envenenan"
   lacra:      "-1 Movimiento"
   sex:        "female"
@@ -153,7 +153,7 @@
 -
   id:         20
   name:       "diablillo chillón"
-  personajes: ["tiefling"]
+  personajes: ["tiefling", "náyade"]
   bono:       "+1 Punto de Sombra"
   lacra:      "1/reto: el Malvado Brujo podra hacer repetir
                la tirada de locura que le interese"
@@ -207,7 +207,7 @@
 -
   id:         27
   name:       "gusiluz"
-  personajes: ["mago","enano"]
+  personajes: ["mago","enano", "náyade"]
   bono:       "Se puede llevar como objeto a 1 mano: Ilumina"
   lacra:      "Eres más apetecible para las arañas: Te odian"
   aumento:    "Todas tus sanaciones tienen ardid, siempre que
@@ -313,7 +313,7 @@
 -
   id:         40
   name:       "calamardo"
-  personajes: ["gigante", "tiefling"]
+  personajes: ["gigante", "tiefling", "náyade"]
   bono:       "Lanza una magia de agua aleatoria al ser objetivo de tenebro"
   lacra:      "Cuando te duermes te devora el cerebro y mueres definitivamente"
   aumento:    "Lanza una magia de sombras aleatoria al ser objetivo de tenebro"

@@ -47,3 +47,8 @@
   name:       "dracónico"
   personajes: ["elohim","tiefling"]
   desc:       ""
+-
+  id:         8
+  name:       "oceánico"
+  personajes: ["náyade"]
+  desc:       ""

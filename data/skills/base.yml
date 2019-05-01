@@ -12,7 +12,7 @@ elfo:
     name:        "Salto liviano"
     description: "+1 Saltar fosos"
 
-tiefling: 
+tiefling:
   -
     name:        "Hechizar"
     description: "Permite coger 3 hechizos entre las magias de fuego
@@ -74,7 +74,7 @@ elohim:
     name:        "Vínculo místico"
     description: "1PM: +1 hasta final del turno contra cualquier resistencia"
 
-gólem: 
+gólem:
   -
     name:        "Hechizar"
     description: "Permite coger 3 hechizos entre las magias de tierra
@@ -106,3 +106,16 @@ gigante:
   -
     name:        "Hechizar"
     description: "Permite coger 1 set de magia de hielo, fuego o agua."
+náyade:
+  -
+    name:        "Hechizar"
+    description: "Permite coger 3 hechizos entre las magias de agua
+                  o sombras al inicio del reto."
+  -
+    name:        "Voz abismal"
+    description: "Cualquier criatura viva afectada por un efecto de pérdida
+                  total o parcial de control, sufre daño mental en los ataques
+                  de voz. (Ataque sin armas, de rango S/P)"
+  -
+    name:        "Mente ctónica"
+    description: "+2 resistencia a psiónica y a magias de agua"

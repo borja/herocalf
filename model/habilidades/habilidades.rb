@@ -11,6 +11,7 @@ pjs = %w(
   gárgola custodio títere
   cervecero tejedor púgil
   muspeli hrímϸursar krakenlord
+  mirmidón gorgona sirena
 )
 # TODO : This should be less redundant
 
