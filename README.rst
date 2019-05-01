@@ -44,6 +44,8 @@ Build Status
 +--------------+-------------------+
 | Appveyor     | |Appveyor|        |
 +--------------+-------------------+
+| Scrutinizer  | |ScrutCI|         |
++--------------+-------------------+
 
 .. |Travis Status| image:: https://travis-ci.org/borja/herocalf.svg?branch=master
    :target: https://travis-ci.org/borja/herocalf
@@ -53,6 +55,8 @@ Build Status
    :target: https://codeship.com/projects/285831
 .. |Appveyor| image:: https://ci.appveyor.com/api/projects/status/1idf8cg04yjmowgx?svg=true
    :target: https://ci.appveyor.com/project/borja/herocalf
+.. |ScrutCI| image:: https://scrutinizer-ci.com/g/borja/herocalf/badges/build.png?b=master
+   :target: https://scrutinizer-ci.com/g/borja/herocalf/build-status/master
 
 Deployment Status
 -----------------
