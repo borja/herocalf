@@ -9,7 +9,7 @@
   id:           1
   nivel:        2
   name:         "Puñalada trapera"
-  type:         "única"
+  type:         "Única"
   description:  "Requiere daga. Si tras haber declarado un ataque
                  contra un aliado el enemigo se desplaza por la zona
                  de combate del asesino, se podrá realizar un ataque.
@@ -165,7 +165,7 @@
   nivel:        6
   requisitos:   [2]
   name:         "Golpe a la carótida"
-  type:         "única"
+  type:         "Única"
   description:  "Requiere dagas. No utilizable en ciertos enemigos.
                  El objetivo debe defenderse con defensa verdadera."
 # nivel 7

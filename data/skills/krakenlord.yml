@@ -27,7 +27,7 @@
   id:          3
   nivel:       2
   name:        "Poder del Kraken"
-  type:        "única"
+  type:        "Única"
   description: "Golpea a todas las casillas colindantes con 2 dados
                 especiales azules. Obtienes +1 protección hasta tu siguiente
                 turno, por cada pieza obtenida. Si se ejecuta antes del

@@ -4,7 +4,7 @@
   nivel:        2
   rangos:       2
   name:         "Zen"
-  type:         "única"
+  type:         "Única"
   description:  "Permite repetir una tirada de plegaria. En rango 2, puedes
                  conservar la plegaria original y desechar la segunda."
 -
@@ -92,7 +92,7 @@
   nivel:        4
   requisitos:   [0, 8]
   name:         "Fuente de luz"
-  type:         "única"
+  type:         "Única"
   description:  "Hasta tu siguiente turno, no se podrán ejecutar hechizos
                  de tenebro en la sala, los enemigos en sigilo serán revelados,
                  y los no-muertos reciben 1 dado de daño sagrado al atacarte.

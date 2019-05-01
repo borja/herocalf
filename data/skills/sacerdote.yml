@@ -9,7 +9,7 @@
   id:          1
   nivel:       2
   name:        "Plegaria santa"
-  type:        "única"
+  type:        "Única"
   description: "Puedes elegir el resultado de tu próxima plegaria"
 -
   id:          2

@@ -89,7 +89,7 @@
   nivel:        4
   requisitos:   [2] 
   name:         "Teleportarse"
-  type:         "única"
+  type:         "Única"
   description:  "El conjurador se teletransporta tantas casillas
                  como su mente, sin atravesar muros."
 -
@@ -122,7 +122,7 @@
   nivel:        5
   requisitos:   [11,12]
   name:         "Perseverancia"
-  type:         "única"
+  type:         "Única"
   description:  "Reduce en X el daño sufrido, siendo X tus PM actuales"
 -
   id:           15
@@ -130,7 +130,7 @@
   rangos:       3
   requisitos:   [0]
   name:         "Conjuro magistral"
-  type:         "única"
+  type:         "Única"
   description:  "+1 maestría al siguiente hechizo de tipo conjuro."
 -
   id:           16

@@ -17,7 +17,7 @@
   id:          2
   nivel:       2
   name:        "Sello de Valor"
-  type:        "única"
+  type:        "Única"
   description: "Mientras tenga este sello activo: -1 el daño recibido,
                 por cada enemigo en el conjunto del ataque.
                 (Solo se puede tener 1 único sello activo)"
@@ -25,7 +25,7 @@
   id:          3
   nivel:       2
   name:        "Sello de Justicia"
-  type:        "única"
+  type:        "Única"
   description: "Mientras tenga el sello activo,: permite realizar
                 golpes santificados sin coste, a enemigos que hayan causado
                 daños. (Solo se puede tener un único sello activo)"
@@ -33,7 +33,7 @@
   id:          4
   nivel:       2
   name:        "Sello de Santidad"
-  type:        "única"
+  type:        "Única"
   description: "Mientras tenga el sello activo: 1PM: redirige hacia ti mismo
                 un golpe de un aliado en S/P. (Solo se puede tener un
                 único sello activo)"
@@ -56,7 +56,7 @@
   id:          6
   nivel:       3
   name:        "Escudo divino"
-  type:        "única"
+  type:        "Única"
   description: "Anula la siguiente fuente de daño.
                 No se puede usar esta habilidad si hay enemigos visibles."
 -
@@ -101,7 +101,7 @@
   nivel:       5
   requisitos:  [0]
   name:        "Golpe definitivo"
-  type:        "única"
+  type:        "Única"
   description: "+1 de potencia en tu siguiente ataque
                 por cada PC de tu objetivo."
 # nivel 6

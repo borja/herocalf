@@ -38,7 +38,7 @@
   id:          5
   nivel:       3
   name:        "Aunar ruegos"
-  type:        "única"
+  type:        "Única"
   description: "Cualquier aliado puede pagar 1 acción: Todos recuperarán 1PM,
                 y tú recuperarás 1 plegaria por cada 3 acciones invertidas."
 -
@@ -53,7 +53,7 @@
   nivel:       3
   requisitos:  [0]
   name:        "Manantial en reposo"
-  type:        "única"
+  type:        "Única"
   description: "Lanza el hechizo de agua dormir a X objetivos visibles.
                 (X = tus heridas actuales)"
 -
@@ -61,7 +61,7 @@
   nivel:       3
   requisitos:  [0]
   name:        "Grito de esperanza"
-  type:        "única"
+  type:        "Única"
   description: "Instinto: La siguiente vez que fueras a recibir X daño,
                 sana X PC ó X PM en su lugar a un aliado"
 -

@@ -10,11 +10,16 @@ class Habilidad < Hash
     end
   end
 
+  # Las habilidades únicas tienen 6 rangos máximo.
   def ranks
     if rangos
-      type == 'única' ? 6 : rangos
+      rangos
     else
-      1
+      if type == 'Única'
+        (nivel * 6) <= 25 ? 6 : ( 25 / nivel )
+      else
+        1
+      end
     end
   end
 

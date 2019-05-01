@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Honor calculator, based on char lvl owned by player.
 def honor(jugador)
   honor = 0 # Initialize by 0

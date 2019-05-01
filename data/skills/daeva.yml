@@ -38,7 +38,7 @@
   id:          5
   nivel:       3
   name:        "Cosechar pecados"
-  type:        "única"
+  type:        "Única"
   description: "Cualquier aliado puede pagar 1PM: Recuperas tantos PC como
                 puntos pagados, y 1 hechizo de sangre por cada 3PM pagados."
 -
@@ -53,7 +53,7 @@
   nivel:       3
   requisitos:  [0]
   name:        "Manantial de sangre"
-  type:        "única"
+  type:        "Única"
   description: "Ataca con X dados desangradores a las miniaturas colindantes.
                 (X = tus heridas)"
 -
@@ -61,7 +61,7 @@
   nivel:       3
   requisitos:  [0]
   name:        "Grito desgarrador"
-  type:        "única"
+  type:        "Única"
   description: "Instinto: La siguiente vez que fueras a recibir X daño,
                 inflinge en su lugar XdC de daño mental a tu agresor"
 # nivel 4

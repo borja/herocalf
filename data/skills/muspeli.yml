@@ -19,7 +19,7 @@
   id:          2
   nivel:       2
   name:        "Fisura del Muspelheim"
-  type:        "única"
+  type:        "Única"
   description: "Ejecuta 2 conjuros de fuego gratuitamente (sin coste de acción
                 ni coste de hechizo) con ardid. Puedes consumir ambos hechizos
                 para recuperar esta habilidad."

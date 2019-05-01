@@ -39,7 +39,7 @@
   id:          5
   nivel:       3
   name:        "acrobacias"
-  type:        "única"
+  type:        "Única"
   description: "Puedes pasar a través de un enemigo aún sin su consentimiento"
 -
   id:          6
@@ -54,7 +54,7 @@
   nivel:       4
   requisitos:  [3]
   name:        "danza de la muerte"
-  type:        "única"
+  type:        "Única"
   description: "Ataque con tu arma principal a todas las miniaturas de tu alrededor"
 -
   id:          8
@@ -69,14 +69,14 @@
   nivel:       5
   requisitos:  [0,2]
   name:        "Crepúsculo"
-  type:        "única"
+  type:        "Única"
   description: "Puedes renunciar a un ataque con un arma para sumar sus dados de ataque a la fuerza de tu siguiente ataque este turno."
 -
   id:          10
   nivel:       5
   requisitos:  [0,2]
   name:        "Amanecer"
-  type:        "única"
+  type:        "Única"
   description: "Puedes renunciar a un ataque con un arma para sumar su potencia y fuerza a tu siguiente ataque este turno."
 -
   id:          11

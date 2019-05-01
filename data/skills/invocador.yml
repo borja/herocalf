@@ -26,7 +26,7 @@
   id:           4
   nivel:        2
   name:         "persistencia"
-  type:         "única"
+  type:         "Única"
   description:  "Evita la muerte de un elemental invocado"
 -
   id:           5
