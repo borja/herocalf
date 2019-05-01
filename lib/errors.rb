@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Errors helpers
 # TODO: Error must be ERB (as posible)
 def print_error(texto)
