@@ -135,8 +135,9 @@
   name:         "Ego"
   type:         "Activa"
   coste:        "1 PO"
-  description:  "Puedes tirar 1/rango defensa por separado
-                 en un ataque en conjunto"
+  description:  "Permite repetir una tirada de desactivar trampas o cambiar
+                hacia el falangista cualquier perjuicio obtenido en tiradas
+                de tesoro."
 # nivel 6
 -
   id:           17
@@ -149,9 +150,10 @@
 -
   id:           18
   nivel:        6
-  name:         "Habilidad-6"
-  type:         ""
-  description:  ""
+  name:         "Orgullo"
+  type:         "Activa"
+  coste:        "2PM"
+  description:  "Puedes realizar una tirada de tesoro"
 # nivel 7
 -
   id:           19
