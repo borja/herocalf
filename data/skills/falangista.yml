@@ -24,7 +24,7 @@
   nivel:        2
   name:         "¡A salvo!"
   type:         "Activa"
-  coste:        "Su próximo movimiento" 
+  coste:        "Su próximo movimiento"
   description:  "Instinto: otorga tu defensa a un aliado adyacente."
 -
   id:           4
@@ -132,9 +132,31 @@
   description:  "Puedes tirar 1/rango defensa por separado
                  en un ataque en conjunto"
 # nivel 6
-# TBD
+-
+  id:           17
+  nivel:        6
+  name:         "Habilidad-6"
+  type:         ""
+  description:  ""
+-
+  id:           18
+  nivel:        6
+  name:         "Habilidad-6"
+  type:         ""
+  description:  ""
 # nivel 7
-# TBD
+-
+  id:           19
+  nivel:        7
+  name:         "Habilidad-7"
+  type:         ""
+  description:  ""
+-
+  id:           20
+  nivel:        7
+  name:         "Habilidad-7"
+  type:         ""
+  description:  ""
 # nivel 8
 -
   id:           21
@@ -145,6 +167,25 @@
   coste:        "1 acción"
   description:  "Porta sobre 1/rango escudo a un aliado otorgándole tu defensa,
                  pero moverás la minus-mitad."
+-
+  id:           22
+  nivel:        8
+  name:         "Habilidad-8"
+  type:         ""
+  description:  ""
+# nivel 9
+-
+  id:           23
+  nivel:        9
+  name:         "Habilidad-9"
+  type:         ""
+  description:  ""
+-
+  id:           24
+  nivel:        9
+  name:         "Habilidad-9"
+  type:         ""
+  description:  ""
 # nivel 10 - Habilidades definitivas
 -
   id:           25
