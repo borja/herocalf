@@ -63,7 +63,7 @@
   id:           6
   nivel:        3
   name:         "Canción del bosque"
-  type:         "única"
+  type:         "Única"
   requisitos:   [1]
   description:  "Hechizo, a todos los aliados (V): +1 PM y +1PC por eclipse.
                  Se recupera al sanar a un aliado dañado durante el eclipse."
@@ -99,7 +99,7 @@
   nivel:        4
   requisitos:   [0]
   name:         "Fuerza de Taal"
-  type:         "única"
+  type:         "Única"
   description:  "+1 a todos los atributos de los espíritus este turno."
 -
   id:           11
@@ -145,7 +145,7 @@
   nivel:        5
   requisitos:   [0]
   name:         "Torsión Espiritual"
-  type:         "única"
+  type:         "Única"
   description:  "Intercambia tu posición con tu espíritu."
 -
   id:           16
@@ -199,7 +199,7 @@
   nivel:        8
   requisitos:   [0,3]
   name:         "Armadura de roble"
-  type:         "única"
+  type:         "Única"
   description:  "Instinto: Tira dados verdes en la defensa base y del espíritu.
                  Recupera al sufrir daño si estás en eclipse.
                  +1 potencia en los dados verdes que tuvieras de antemano."

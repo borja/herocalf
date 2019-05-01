@@ -35,7 +35,7 @@
   id:          4
   nivel:       2
   name:        "Maldecir"
-  type:        "única"
+  type:        "Única"
   coste:       "1PC"
   description: "Maldice al objetivo (acción de hechizo).
                 Todos los hechizos dañinos contra el objetivo, se recuperan.
@@ -87,7 +87,7 @@
   nivel:       4
   requisitos:  [5]
   name:        "Consumir lacayo"
-  type:        "única"
+  type:        "Única"
   description: "Acción de hechizo: Destruye a un demonio invocado y recupera
                 tantos PC como su vida actual. Si gracias a esto sanas
                 por completo, recupera 1 hechizo."
@@ -106,7 +106,7 @@
   nivel:       4
   requisitos:  [4]
   name:        "Atormentar"
-  type:        "única"
+  type:        "Única"
   description: "Maldice a un objetivo. Al principio de su turno y
                 hasta que muera ejecutarás (sin coste) sobre él un hechizo
                 disponible aleatorio. Recupera atormentar cuando ejecutes

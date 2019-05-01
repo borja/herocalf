@@ -3,22 +3,25 @@
   id:           0
   nivel:        2
   rangos:       2
-  name:         "empujar"
+  name:         "Empujar"
   type:         "Pasiva"
   description:  "+1/rango empujar"
 -
   id:           1
   nivel:        2
-  name:         "doble escudo"
+  name:         "Doble escudo"
   type:         "Pasiva"
   description:  "Permite llevar dos escudos a la vez; para atacar y defender"
 -
   id:           2
   nivel:        2
-  name:         "tortuga"
+  rangos:       3
+  name:         "Tortuga"
   type:         "Pasiva"
   description:  "+1 potencia defensiva por cada aliado colindante.
-                 (Expcepto las 3 casillas de la espalda)."
+                (Expcepto las 3 casillas de la espalda). En rango 2,
+                añade +1 potencia por cada escudo que porten los aliados.
+                En rango 3, añade además +1 reducción de daño."
 -
   id:           3
   nivel:        2
@@ -39,14 +42,14 @@
   id:           5
   nivel:        3
   rangos:       3
-  name:         "represalias"
+  name:         "Represalias"
   type:         "Reactiva"
   description:  "Devuelve a tu atacante (potencia 1/rango)
                  un ataque con el exceso de tu defensa"
 -
   id:           6
   nivel:        3
-  name:         "honorable"
+  name:         "Honorable"
   type:         "Reactiva"
   description:  "+1 punto de honor (PH) al recibir daño"
 -
@@ -54,7 +57,7 @@
   nivel:        3
   rangos:       3
   requisitos:   [6]
-  name:         "bastión"
+  name:         "Bastión"
   type:         "Activa"
   coste:        "1 PH"
   description:  "Instinto: +1/rango potencia en un dado de defensa"
@@ -63,7 +66,7 @@
   id:           8
   nivel:        3
   requisitos:   [1]
-  name:         "zona de combate"
+  name:         "Zona de combate"
   type:         "Pasiva"
   description:  "permite golpear a cualquier enemigo en 180º con escudos."
 # nivel 4
@@ -71,7 +74,7 @@
   id:           9
   nivel:        4
   rangos:       2
-  name:         "provocar"
+  name:         "Provocar"
   type:         "Declarativa"
   foco:         "1 enemigo"
   description:  "Incita a un enemigo/rango en concreto a atacarle. (psicología)"
@@ -80,7 +83,7 @@
   nivel:        4
   rangos:       2
   requisitos:   [8]
-  name:         "rompedientes"
+  name:         "Rompedientes"
   type:         "Pasiva"
   description:  "+1/rango fuerza al atacar con escudos"
 -
@@ -88,7 +91,7 @@
   nivel:        4
   rangos:       2
   requisitos:   [6]
-  name:         "sangramos todos"
+  name:         "Sangramos todos"
   type:         "Activa"
   coste:        "1PH"
   description:  "Instinto: Redirige hacia el falangista,
@@ -113,10 +116,13 @@
 -
   id:           14
   nivel:        5
+  rangos:       3
   name:         "Empecinado"
   type:         "Activa"
   coste:        "1PM"
-  description:  "+1 vs Miedo por cada PM actual."
+  description:  "+1 vs Miedo por cada PM actual. En rango 2, súmale el
+                bonificador a tus aliados en S/P. En rango 3, si un aliado
+                huyera, puede usar tu espalda como «zona segura»"
 -
   id:           15
   nivel:        5
@@ -135,9 +141,11 @@
 -
   id:           17
   nivel:        6
-  name:         "Habilidad-6"
-  type:         ""
-  description:  ""
+  name:         "Atronar"
+  type:         "Única"
+  description:  "Todos los enemigos colindantes reciben un ataque de 1 dado
+                eléctrico de potencia igual al movimiento restante.
+                El enano se vuelve inmune al aire este turno."
 -
   id:           18
   nivel:        6
@@ -148,21 +156,26 @@
 -
   id:           19
   nivel:        7
-  name:         "Habilidad-7"
-  type:         ""
-  description:  ""
+  name:         "Choque de escudos"
+  type:         "Pasiva"
+  description:  "Los golpes a enemigos por el lado del escudo se consideran
+                 flancos"
 -
   id:           20
   nivel:        7
-  name:         "Habilidad-7"
-  type:         ""
-  description:  ""
+  rangos:       2
+  name:         "Piel pétrea"
+  type:         "Pasiva"
+  description:  "Puedes sumar o restar 1 a la potencia de las magias
+                de tierra que te elijan como objetivo. En rango 2, obtienes
+                +1 vs Magia por cada aliado colindante, mientras estés bajo
+                una bendición de tierra."
 # nivel 8
 -
   id:           21
   nivel:        8
   rangos:       2
-  name:         "bandeja"
+  name:         "Bandeja"
   type:         "activa"
   coste:        "1 acción"
   description:  "Porta sobre 1/rango escudo a un aliado otorgándole tu defensa,
@@ -170,22 +183,24 @@
 -
   id:           22
   nivel:        8
-  name:         "Habilidad-8"
-  type:         ""
-  description:  ""
+  name:         "Embate"
+  type:         "Única"
+  description:  "Por definir"
 # nivel 9
 -
   id:           23
   nivel:        9
-  name:         "Habilidad-9"
-  type:         ""
-  description:  ""
+  name:         "Retribución de agravios"
+  type:         "Reactiva"
+  description:  "Recupera atronar al matar a un enemigo que te haya atacado
+                previamente. En el rango 2, puedes atronar como acción
+                gratuita en el turno del MB. La potencia de atronar será 1."
 -
   id:           24
   nivel:        9
   name:         "Habilidad-9"
   type:         ""
-  description:  ""
+  description:  "Por definir"
 # nivel 10 - Habilidades definitivas
 -
   id:           25

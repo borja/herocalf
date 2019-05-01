@@ -12,7 +12,7 @@
   nivel:        2
   rangos:       6
   name:         "Chistera mágica"
-  type:         "única"
+  type:         "Única"
   coste:        "acción"
   description:  "Permite almacenar una magia en (rangos) 'chisteras':
                  el hechizo no se consumirá. No se podrán ejecutar
@@ -131,7 +131,7 @@
   nivel:        5
   rangos:       6
   name:         "Masa arcana"
-  type:         "única"
+  type:         "Única"
   description:  "+1 de maestria a tu siguiente magia elemental."
 
 -

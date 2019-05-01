@@ -9,7 +9,7 @@
   id:           1
   nivel:        2
   name:         "Endurecerse"
-  type:         "única"
+  type:         "Única"
   description:  "Hasta tu próximo turno, considera que posees todos tus PCs"
 -
   id:           2

@@ -37,7 +37,7 @@
   id:          5
   nivel:       3
   name:        "Segar almas"
-  type:        "única"
+  type:        "Única"
   description: "Cualquier aliado puede pagar 1 pieza: Recuperas tantos PM
                 como puntos pagados, y 1 hechizo de aire por cada 3 piezas."
 -
@@ -52,7 +52,7 @@
   nivel:       3
   requisitos:  [0]
   name:        "Erupción de relámpagos"
-  type:        "única"
+  type:        "Única"
   description: "Ataca con X dados eléctricos a las miniaturas colindantes.
                 (X = los enemigos derrotados en la S/P precedente)"
 -
@@ -60,7 +60,7 @@
   nivel:       3
   requisitos:  [0]
   name:        "Grito atronador"
-  type:        "única"
+  type:        "Única"
   description: "Instinto: La siguiente vez que fueras a recibir X daño,
                 desplaza en su lugar X casillas a tus agresores hacia atrás"
 # nivel 4

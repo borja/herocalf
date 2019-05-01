@@ -2,7 +2,7 @@
   id:           0
   nivel:        2
   name:         "Tiro de misericordia"
-  type:         "única"
+  type:         "Única"
   description:  "+1 fuerza contra objetivos con más heridas que PC. Al matar con tiro de misericordia recupéralo."
 -
   id:           1

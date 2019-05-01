@@ -11,7 +11,7 @@
   id:          1
   nivel:       2
   name:        "Ataque combinado"
-  type:        "única"
+  type:        "Única"
   requisitos:  [0]
   description: "Permite usar dos armas simultáneamente como ataque conjunto."
 -
@@ -59,7 +59,7 @@
   id:          7
   nivel:       3
   name:        "Himno de la montaña"
-  type:        "única"
+  type:        "Única"
   description: "+1 potencia a todos los aliados que golpean a melé este turno.
                 (Se usa solamente durante la fase trepidante)"
 -
@@ -102,7 +102,7 @@
   nivel:       4
   requisitos:  [5,9]
   name:        "Rajar"
-  type:        "única"
+  type:        "Única"
   description: "Golpea con tu arma principal a las 3 casillas frontales."
 # nivel 5
 -
@@ -174,7 +174,7 @@
   nivel:        7
   requisitos:   [2]
   name:         "Arrojar el alma"
-  type:         "única"
+  type:         "Única"
   description:  "+1 potencia al arrojar el arma. Si el objetivo está más
                  cerca que tus heridas actuales, imprime +1 Fuerza.
                  Esta habilidad se recupera al matar a 2 enemigos con el mismo
