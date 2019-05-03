@@ -2,6 +2,17 @@
 -
   id:           0
   nivel:        2
-  name:         "represalias"
-  type:         "reactiva"
-  description:  "Devuelve como ataque el exceso de defensa"
+  rangos:       2
+  name:         "Reciario"
+  type:         "Pasiva"
+  description:  "Puedes llevar una red lastrada como arma adicional
+                al utilizar armas de asta a 2 manos. En rango 2,
+                los ataques a objetivos atrapados exigen defensa verdadera."
+-
+  id:           1
+  nivel:        2
+  name:         "Señor del Mar"
+  type:         "Reactiva"
+  description:  "Recupera 1 PM al ser objetivo de un hechizo de agua.
+                Además obtienes el rasgo: bendición del océano;
+                +1 potencia defensiva a tu próxima tirada de ataque."
