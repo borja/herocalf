@@ -129,16 +129,12 @@ Documentation
 
 Non-supported building platforms
 --------------------------------
-+-------------+------------+-----------------------------+
-| Platform    | Badge      | Issue                       |
-+=============+============+=============================+
-| Scrutinizer | |Scrut|    | *Ruby >2.4.2 not supported* |
-+-------------+------------+-----------------------------+
-| Semaphore   | |Semaphore|| *Ruby 2.4.3 not supported*  |
-+-------------+------------+-----------------------------+
++-------------+------------+-------------------------------+
+| Platform    | Badge      | Issue                         |
++=============+============+===============================+
+| Semaphore   | |Semaphore|| *Ruby >v.2.6.1 not supported* |
++-------------+------------+-------------------------------+
 
-.. |Scrut| image:: https://scrutinizer-ci.com/g/borja/herocalf/badges/build.png?b=master
-   :target: https://scrutinizer-ci.com/g/borja/herocalf
 .. |Semaphore| image:: https://semaphoreci.com/api/v1/borja/herocalf/branches/master/shields_badge.svg
    :target: https://semaphoreci.com/borja/herocalf
 

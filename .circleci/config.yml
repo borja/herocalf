@@ -6,7 +6,7 @@ jobs:
   build:
     working_directory: ~/circleci-demo-ruby-sinatra
     docker:
-      - image: circleci/ruby:2.6.2
+      - image: circleci/ruby:2.6.3
         environment:
           BUNDLE_PATH: vendor/bundle
           CC_TEST_REPORTER_ID: 0d489bf5520c78ac08ce9c7925f6c5f477047967bf42ec4fe84fcf2a02be53f4

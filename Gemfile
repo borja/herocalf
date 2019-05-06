@@ -1,4 +1,5 @@
-ruby '2.6.2' # Release date: 2018-10-18
+ruby '2.6.3' # Release date: 2019-04-17
+# https://www.ruby-lang.org/en/news/2019/04/17/ruby-2-6-3-released/
 source 'https://rubygems.org'
 
 # Production requirements
@@ -10,6 +11,7 @@ gem 'tilt', '~> 2.0.9'
 # Testing and metrics (not necessary in production)
 group :test do
   gem 'codecov',   '~> 0.1.14', require: false
+  gem 'coveralls', '~> 0.8.23', require: false
   gem 'minitest',  '~> 5.11.1'
   gem 'rack-test', '~> 1.1.0'
   gem 'rake',      '~> 12.3.2'
