@@ -19,8 +19,19 @@ using Bootstrap_ as HTML web framework with Slim_ (lightweight template engine).
 QA Dashboard
 ============
 
-Vulnerabilities Report
+Architecture
 ------------
++----------------+------------------+
+| **Technology** | **Release date** |
++==============+====================+
+| |ruby|         | 2019/04/17       |
++----------------+------------------+
+
+.. |ruby| image:: https://img.shields.io/static/v1.svg?logo=ruby&label=ruby&message=v.2.6.3&color=red
+   :target: https://www.ruby-lang.org/en/news/2019/04/17/ruby-2-6-3-released/
+
+Vulnerabilities Report
+----------------------
 +--------------+-------------------+
 | **Platform** | **Badge**         |
 +==============+===================+
