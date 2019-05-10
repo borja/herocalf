@@ -49,8 +49,8 @@ ladrón:
                   o sangre al inicio del reto."
   -
     name:         "Sigilo"
-    description:  "Si no hay objetivos visibles el asesino entra en sigilo.
-                   El efecto cesa al realizar una acción distinta a movimiento."
+    description:  "Entras en sigilo al no haber objetivos visibles. El efecto
+                  cesa al realizar una acción distinta a movimiento."
 
 clérigo:
   -
@@ -60,7 +60,7 @@ clérigo:
 rakshasa:
   -
     name:        "Rugido"
-    description: "-2 movimeinto: Causa +1 miedo en la fase trepidante."
+    description: "-2 movimiento: Causa +1 miedo en la fase trepidante."
   -
     name:        "Destino"
     description: "Permite coger 3 hechizos entre las magias de viento
