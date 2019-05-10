@@ -2,6 +2,54 @@
 -
   id:           0
   nivel:        2
-  name:         "represalias"
-  type:         "reactiva"
-  description:  "Devuelve como ataque el exceso de defensa"
+  name:         "Sombra oceánica"
+  type:         "Pasiva"
+  description:  "En tu hechizo juego de sombras, tus hechizos de toque y
+                Habilidades de Voz abismal, no se consideran ataques.
+                Si durante el hechizo niebla realizas una búsqueda, obtienes
+                +1 duración. Eres inmune a tu propio hechizo manto de oscuridad
+                y bajo el aura de pesadillas puedes hacer 2 hechizos por turno."
+-
+  id:           1
+  nivel:        2
+  rangos:       3
+  name:         "Mar oscuro"
+  type:         "Disparada"
+  description:  "Coge 1 +1/rango monedas de Mar oscuro. Cuando ejecutes 1 magia
+                de agua o sombras después de ejecutar una de otro elemento,
+                voltea una moneda a tu elección. Puedes pagar una moneda
+                para añadir +1 potencia por cada moneda activa a la siguiente
+                magia de agua o sombras. Puedes coger una moneda siempre
+                que inviertas PM en habilidades o hechizos, hasta tu máximo
+                permitido."
+-
+  id:           2
+  nivel:        2
+  rangos:       2
+  name:         "Toque de las profundidades"
+  type:         "Activa"
+  coste:        "2PM"
+  description:  "Puedes ejecutar sin consumir, el hechizo de sombras: Caricia
+                de Nagash. Si matara, recuperas el hechizo de agua: Trance
+                Calmado. En rango 2, puedes usar ambas manos, por lo que
+                cualquier combinación de estos hechizos se considera 1
+                única acción."
+-
+  id:           3
+  nivel:        2
+  rangos:       4
+  name:         "Envoltura de agua sombría"
+  type:         "Reactiva"
+  description:  "Al ejecutar un hechizo de agua obtienes +1 dado azul de
+                defensa de potencia igual al rango hasta tu siguiente turno.
+                Al ejecutar un hechizo de sombras, obtienes +1 potencia a los
+                hechizos de agua de nivel igual o inferior al rango."
+-
+  id:           4
+  nivel:        2
+  rangos:       3
+  name:         "Visión de la marisma"
+  type:         "Pasiva"
+  description:  "+1/rango a las tiradas de búsqueda bajo efectos de sombras
+                o de hechizos de agua. Si fallas la tirada, pierdes 1PM."
+# nivel 3

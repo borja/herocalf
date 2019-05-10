@@ -47,7 +47,7 @@
   ardid:    "+1 fuerza al daño por cada hechizo de agua disponible"
 -
   id:       4
-  alcance:  "V"
+  alcance:  1
   duracion: 0
   name:     "Trance calmado"
   tipo:     "Sanación"
