@@ -19,8 +19,19 @@ using Bootstrap_ as HTML web framework with Slim_ (lightweight template engine).
 QA Dashboard
 ============
 
-Vulnerabilities Report
+Architecture
 ------------
++----------------+------------------+
+| **Technology** | **Release date** |
++================+==================+
+| |ruby|         | 2019/04/17       |
++----------------+------------------+
+
+.. |ruby| image:: https://img.shields.io/static/v1.svg?logo=ruby&label=ruby&message=v.2.6.3&color=red
+   :target: https://www.ruby-lang.org/en/news/2019/04/17/ruby-2-6-3-released/
+
+Vulnerabilities Report
+----------------------
 +--------------+-------------------+
 | **Platform** | **Badge**         |
 +==============+===================+
@@ -129,16 +140,12 @@ Documentation
 
 Non-supported building platforms
 --------------------------------
-+-------------+------------+-----------------------------+
-| Platform    | Badge      | Issue                       |
-+=============+============+=============================+
-| Scrutinizer | |Scrut|    | *Ruby >2.4.2 not supported* |
-+-------------+------------+-----------------------------+
-| Semaphore   | |Semaphore|| *Ruby 2.4.3 not supported*  |
-+-------------+------------+-----------------------------+
++-------------+------------+-------------------------------+
+| Platform    | Badge      | Issue                         |
++=============+============+===============================+
+| Semaphore   | |Semaphore|| *Ruby >v.2.6.1 not supported* |
++-------------+------------+-------------------------------+
 
-.. |Scrut| image:: https://scrutinizer-ci.com/g/borja/herocalf/badges/build.png?b=master
-   :target: https://scrutinizer-ci.com/g/borja/herocalf
 .. |Semaphore| image:: https://semaphoreci.com/api/v1/borja/herocalf/branches/master/shields_badge.svg
    :target: https://semaphoreci.com/borja/herocalf
 
