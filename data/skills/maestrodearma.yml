@@ -5,21 +5,21 @@
   name:        "Empujar"
   description: "Los enemigos suman un punto al multiplicador de proximidad
                 del personaje cuando se desplacen a su alrededor."
-- 
+-
   id:          1
   coste:       "100"
   name:        "Dominio de la lanza"
   type:        "Pasiva"
   description: "Permite llevar lanzas en una mano y permite atacar
                 en +1 casilla de distancia de manera frontal"
-- 
+-
   id:          2
   coste:       "250"
   name:        "Muro de lanzas"
   type:        "Pasiva"
   description: "Permite atacar en +1 casilla de distancia y atacar
                 a los enemigos a través de sus compañeros sin dañarles."
-- 
+-
   id:          3
   coste:       "250"
   name:        "Anticiparse"
@@ -72,45 +72,45 @@
   name:        "Pértiga"
   type:        "Pasiva"
   description: "+1 saltar fosos al estar equipado con un bastón."
-- 
+-
   id:          11
   coste:       "100"
   name:        "Dominio del bastón"
   type:        "Pasiva"
   description: "Permite llevar 1 bastón en la mano principal."
-- 
+-
   id:          12
   coste:       "250"
   name:        "Dominio del arco"
   type:        "Pasiva"
   description: "Permite añadir un disparo de arco en conjunto
                 con otros ataques."
-- 
+-
   id:          13
   coste:       "450"
   name:        "Refugiarse en el escudo"
   type:        "Pasiva"
   description: "Requiere escudos: -1 daño recibido de conjuros."
-- 
+-
   id:          14
   coste:       "500"
   name:        "Vigor de combate"
   type:        "Pasiva"
   description: "+1 de fuerza en armas a 2 manos."
-- 
+-
   id:          15
   coste:       "350"
   name:        "Combate furioso"
   type:        "Pasiva"
   description: "+1 potencia si el turno anterior recibiste daño"
-- 
+-
   id:          16
   coste:       "150"
   name:        "Escudo de vanguardia"
   type:        "Pasiva"
   description: "(Requiere escudo) Ignora interrupciones y penalizaciones
                 por movimiento si cargas frontalmente a un enemigo."
-- 
+-
   id:          16
   coste:       "100"
   name:        "Mañas de mago"

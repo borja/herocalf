@@ -31,7 +31,7 @@
 -
   id:           6
   name:         "del bienestar"
-  descripcion:  "recupera +1PC 1 vez por reto "
+  descripcion:  "1/reto: +1PC"
   tipo:         "bendicion"
 -
   id:           7
@@ -678,3 +678,29 @@
   descripcion:  "-1 reputación. Puedes lanzar una execración en lugar de otro
                  hechizo disponible."
   tipo:         "tenebro"
+-
+  id:           131
+  name:         "de aventurero"
+  descripcion:  "+1 buscar puertas secretas"
+  tipo:         "tierra"
+-
+  id:           132
+  name:         "purgante"
+  descripcion:  "1/reto: Elimina un veneno"
+  tipo:         "agua"
+-
+  id:           133
+  name:         "de buena lid"
+  descripcion:  "+1 causar miedo al ser atacado por la espalda"
+  tipo:         "honor"
+-
+  id:           134
+  name:         "de la codicia"
+  descripcion:  "Al fallar tesoros, tira 2 veces tesoros en su lugar"
+  tipo:         "aire"
+-
+  id:           135
+  name:         "contra emboscadas"
+  descripcion:  "Empiezas con 2/3 cargas. +1 carga al obtener monstruo Errante.
+                1 carga: +1PM, 3 cargas: +3PC"
+  tipo:         "aire"
