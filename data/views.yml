@@ -582,3 +582,7 @@
   template:
     right: "manuales/derecha/combate"
     main:  "manuales/mazmorra"
+-
+  ruta:  "terms"
+  template:
+    main:  "layout/footer/terms"
