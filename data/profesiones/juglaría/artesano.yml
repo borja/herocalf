@@ -1,0 +1,9 @@
+-
+      name:   "Artesano juglar"
+      coste:  500
+      efecto: "Sin definir"
+-
+      name:   "Sin definir"
+      coste:  100
+      efecto: "Sin definir"
+      crear:  200

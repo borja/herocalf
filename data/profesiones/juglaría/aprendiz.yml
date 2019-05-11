@@ -1,0 +1,16 @@
+-
+  name:   "Aprendiz de juglar"
+  coste:  100
+  efecto: "Permite intercambiar objetos en la mano como acción gratuita"
+-
+  name:   "Canción relajante"
+  coste:  10
+  efecto: "Todos los objetivos en S/P pueden cambiar 1 único dado de su tirada
+          de locura a 1, siempre que les suponga sumar 7. (Acción de hechizo)"
+-
+  name:   "Disfraz de polichinela"
+  coste:  200
+  efecto: "Al inicio de la partida elige un tipo de criatura. Si tus PM
+          actuales son mayores que el doble de los PM del objetivo,
+          el objetivo siempre te atacará a ti en primer lugar. (Psicología)
+          El disfraz no es compatible con armaduras de malla/placas."
