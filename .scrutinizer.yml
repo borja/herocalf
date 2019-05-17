@@ -1,6 +1,16 @@
 build:
-    environment:
-        ruby: '2.6.3'
+  environment:
+    ruby: '2.6.3'
+  nodes:
+    tests-with-coverage:
+      tests:
+        override:
+          - command: bundle exec rspec test.rb
+            environment:
+              'SCRUTINIZER_CC_FILE': 'my-coverage'
+            coverage:
+              file: 'my-coverage'
+              format: 'rb-cc'
 filter:
   excluded_paths:
     - coverage/*
