@@ -5,56 +5,72 @@
   rangos:       3
   name:         "Conjurar en letargo"
   type:         "Pasiva"
-  description:  "Permite lanzar 1/rango hechizos de tipo conjuro durante la fase
-                 trepidante  antes del combate."
+  description:  ""
 -
   id:           1
   nivel:        2
+  rangos:       4
   name:         "Biblioteca"
   type:         "Pasiva"
-  description:  "+1 hechizo elemental (del nivel permitido) al subir de nivel."
+  description:  "Sustituye tu habilidad de hechizar por Biblioteca.
+                Comienzas el reto con 8 +1/nivel de mago, puntos de biblioteca,
+                para poder confeccionar una lista de hechizos permitidos
+                por tu dominio (escuelas de magia conocidas). Los hechizos
+                cuestan N puntos (según el nivel de hechizo) y están permitidos
+                los hechizos de nivel igual o inferior al rango de biblioteca."
 -
   id:           2
   nivel:        2
   name:         "Levitar"
   type:         "Activa"
   coste:        "1PM" 
-  description:  "Levitas por encima de 1 casilla (puede ser un foso)"
+  description:  "Levitas por encima de 1 casilla (puede ser un foso).
+                Se te considera en posición elevada y tu movimiento será: 1.
+                Puedes prolongar 1 turno el efecto al inicio de tu turno"
 -
   id:           3
   nivel:        2
-  name:         "Tutor"
-  type:         "Activa"
-  coste:        "1 hechizo"
-  description:  "Lanza aleatoriamente un hechizo de 1 nivel superior
-                 de la misma escuela."
+  name:         "Secreto rístico"
+  type:         "Única"
+  description:  "Elige un hechizo disponible de tu biblioteca. Busca entre
+                los hechizos de tu dominio un hechizo de la misma escuela,
+                de un nivel superior y añádelo a tu biblioteca. Si además,
+                el hechizo elegido lo descartas, puedes ejecutar el secreto
+                con diablura inmediatamente."
 -
   id:           4
   nivel:        2
+  rangos:       4
   name:         "Sadismo arcano"
   type:         "Reactiva"
-  description:  "Recupera 1 PM al matar con magia"
+  description:  "La mente del conjurador se somete al influjo de magia.
+                Recuperas 1PM al matar con hechizos. Sin embargo, cuando
+                fueras a recuperar PM por algún efecto, por encima
+                de tu límite, tirarás 1/rango de entropía arcana.
+                Los resultados de tormenta te causarán un daño al cuerpo,
+                las espirales activarán/almacenarán una moneda de Sadismo
+                arcano, y los críticos causarán una Explosión arcana de X
+                dados de entropía. (X= monedas de Sadismo Activas)"
 # Nivel 3
 -
   id:           5
   nivel:        3
   rangos:       3
-  requisitos:   [1,3] 
-  name:         "Secreto rístico"
+  name:         "Tutor"
   type:         "declarativa"
   foco:         "un aliado"
   description:  "Puedes hechizar gratuitamente cuando tu foco mate.
-                 Debes indicar la escuela y se lanzará un hechizo aleatorio
-                 de la misma escuela y de nivel 0 + 1/rango muertes logradas.
+                 Debes indicar la escuela y se lanzará 1 único hechizo aleatorio
+                 de dicha escuela y de nivel 0 + 1/rango muertes logradas.
                  El hechizo se ejecutará desde el foco establecido."
 -
   id:           6
   nivel:        3
-  requisitos:   [3] 
   name:         "Insuflar maná"
   type:         "Activa"
   coste:        "X PM"
-  description:  "El conjurador le puede ceder X-1 PM a un aliado."
+  description:  "Hechizo, toque: Puedes ceder ceder X-1 PM a un aliado.
+                Tiras 1 dado de entropía"
 -
   id:           7
   nivel:        3
@@ -62,9 +78,10 @@
   requisitos:   [4]
   name:         "Explosión arcana"
   type:         "Activa"
-  coste:        "X PM"
-  description:  "Ataca con X daños psiónicos (defendibles) de 1 fuerza/rango,
-                divididos equitativamente entre todas las miniaturas adyacentes"
+  coste:        "X Monedas activas de Sadismo arcano"
+  description:  "Hechizo: Ataca con X dados de entropía de 1 fuerza/rango,
+                divididos equitativamente entre todas las miniaturas adyacentes
+                Las monedas se desactivan después de la explosión."
 -
   id:           8
   nivel:        3
@@ -73,33 +90,36 @@
   name:         "Simetría arcana"
   type:         "Activa"
   coste:        "Movimiento"
-  description:  "+1/rango potencia al siguiente hechizo de tipo conjuro."
+  description:  "+1/rango potencia al siguiente hechizo de tipo conjuro.
+                Siempre que tires entropía, puedes repetir los críticos 1 vez."
 # Nivel 4
 -
   id:           9
   nivel:        4
-  rangos:       3
   requisitos:   [3] 
   name:         "Conjuro deseado"
-  type:         "Activa"
-  coste:        "3 PM"
+  type:         "Única"
   description:  "Acción: Añade un conjuro a elegir de nivel 1/rango"
 -
   id:           10
   nivel:        4
   requisitos:   [2] 
-  name:         "Teleportarse"
+  name:         "Réplica ilusoria"
   type:         "Única"
   description:  "El conjurador se teletransporta tantas casillas
-                 como su mente, sin atravesar muros."
+                 como sus PM actuales, pudiendo atravesar muros,
+                 siempre que la casilla de destino esté revelada."
 -
   id:           11
   nivel:        4
-  requisitos:   [6] 
+  requisitos:   [4] 
   name:         "Meditar"
   type:         "Activa"
-  coste:        "1 hechizo"
-  description:  "Requiere enemigos a la vista. Recupera 1d6+2 PM."
+  coste:        "Ver descripción"
+  description:  "El personaje se sienta en posición de loto y se concentra.
+                Puede desactivar 1 moneda de Sadismo Arcano por 1PM,
+                Puede recuperar 1 PM desactivando 1 moneda de Sadismo Arcano,
+                o puede girar una moneda cualquiera por 3PM."
 -
   id:           12
   nivel:        4
@@ -113,17 +133,25 @@
 -
   id:           13
   nivel:        5
+  rangos:       4
   requisitos:   [10] 
-  name:         "Falla"
+  name:         "Tutor místico"
   type:         "Reactiva"
-  description:  "Recuperas Teleportarse al fallar un hechizo"
+  description:  "Obtienes/Activas una moneda de Forja Mística al ejecutar
+                una magia que inicialmente no estuviera en tu biblioteca.
+                Cuando ejecutas un hechizo inicial de tu bilioteca desactivas
+                una moneda o tiras un dado de entropía. Puedes entregar N+2
+                monedas activas para buscar en tu dominio un hechizo de nivel N"
 -
   id:           14
   nivel:        5
-  requisitos:   [11,12]
-  name:         "Perseverancia"
-  type:         "Única"
-  description:  "Reduce en X el daño sufrido, siendo X tus PM actuales"
+  rangos:       2
+  requisitos:   [10]
+  name:         "Teleportarse"
+  type:         "Activa"
+  coste:        "3PM"
+  description:  "Acción: tu miniatura sustituye a la réplica ilusoria, y ésta es
+                destruida. En rango 2, teleportarse no supone una acción."
 -
   id:           15
   nivel:        7
