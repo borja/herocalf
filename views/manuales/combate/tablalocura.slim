@@ -1,0 +1,13 @@
+.table-responsive
+	table class="table table-striped table-bordered table-hover table-sm"
+		thead class="thead-dark"
+			tr
+				th 2d6
+				th Resultado
+				th Efecto
+		tbody
+			- locura.each_with_index do |loc, i | 
+				tr
+					td == i+2
+					td == loc['nombre']
+					td == loc['efecto']
