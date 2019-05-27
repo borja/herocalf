@@ -20,5 +20,3 @@ filter:
     - coverage/*
     - data/*
     - public/*
-checks:
-    ruby: true
