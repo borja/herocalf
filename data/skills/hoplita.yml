@@ -2,18 +2,22 @@
 -
   id:           0
   nivel:        2
+  rangos:       3
   name:         "represalias"
   type:         "reactiva"
-  description:  "Devuelve como ataque el exceso de defensa"
+  description:  "Devuelve como ataque el exceso de defensa de 1/rango
+                ataques recibidos."
 -
   id:           1
   nivel:        2
-  rangos:       2
+  rangos:       3
   name:         "cargar"
   type:         "Activa"
   coste:        "3+ movimiento"
   description:  "Invirtiendo 3 de movimiento como mínimo y en línea recta:
-                 +1 potencia en tu siguiente ataque por cada casilla recorrida"
+                 +1 potencia en tu siguiente ataque por cada casilla recorrida
+                 a partir de la tercera. Cada rango extra, permite un giro
+                 de 90º"
 -
   id:           2
   nivel:        2
@@ -38,10 +42,10 @@
 -
   id:           5
   nivel:        3
-  rangos:       2
+  rangos:       3
   name:         "competencia con escudo"
   type:         "Pasiva"
-  description:  "+1 potencia defensiva del escudo"
+  description:  "+1/rango de potencia defensiva del escudo"
 -
   id:           6
   nivel:        3
@@ -53,10 +57,10 @@
 -
   id:           7
   nivel:        3
-  requisitos:   [2]
-  name:         "arrojar escudo"
-  type:         "Pasiva"
-  description:  "Permite arrojar el escudo como un arma arrojadiza"
+  rangos:       3
+  name:         "experto en asta"
+  type:         "pasiva"
+  description:  "[Lanzas] +1 potencia en el ataque"
 -
   id:           8
   nivel:        3
@@ -68,11 +72,13 @@
 -
   id:           9
   nivel:        4
-  rangos:       3
-  name:         "experto en asta"
-  type:         "pasiva"
-  description:  "[Lanzas] +1 potencia en el ataque"
-
+  rangos:       2
+  requisitos:   [0]
+  name:         "arrojar escudo"
+  type:         "Pasiva"
+  description:  "Permite arrojar el escudo como un arma arrojadiza.
+                Los enemigos dañados por el escudo deberán atacar al hoplita.
+                El escudo rebotará a un enemigo adicional por rango."
 -
   id:           10
   nivel:        4
@@ -96,3 +102,145 @@
   type:         "Pasiva"
   description:  "+1 movimiento por cada (4-1/rango) heridas"
 # nivel 5
+-
+  id:           13
+  nivel:        5
+  rangos:       2
+  requisitos:   [0]
+  name:         ""
+  type:         ""
+  coste:        ""
+  description:  ""
+-
+  id:           14
+  nivel:        5
+  rangos:       2
+  requisitos:   [0]
+  name:         ""
+  type:         ""
+  coste:        ""
+  description:  ""
+-
+  id:           15
+  nivel:        5
+  rangos:       2
+  requisitos:   [0]
+  name:         ""
+  type:         ""
+  coste:        ""
+  description:  ""
+-
+  id:           16
+  nivel:        5
+  rangos:       2
+  requisitos:   [0]
+  name:         ""
+  type:         ""
+  coste:        ""
+  description:  ""
+# nivel 6
+-
+  id:           17
+  nivel:        6
+  rangos:       3
+  name:         "Elegido por Krom"
+  type:         "pasiva"
+  description:  "La lanza del hoplita es sagrada y toda la magia sobre ella
+                se intensifica gracias al poder del dios de la guerra.
+                Duplica los efectos de 1/rango hechizos y 1/rango engarces."
+-
+  id:           18
+  nivel:        6
+  rangos:       2
+  requisitos:   [0]
+  name:         ""
+  type:         ""
+  coste:        ""
+  description:  ""
+# nivel 7-
+  id:           19
+  nivel:        7
+  rangos:       2
+  requisitos:   [0]
+  name:         ""
+  type:         ""
+  coste:        ""
+  description:  ""
+-
+  id:           20
+  nivel:        7
+  rangos:       2
+  requisitos:   [7]
+  name:         "Púa vertical"
+  type:         "Activa"
+  coste:        "3 movimiento"
+  description:  "Si durante tu turno has efectuado daños frontalmente con tu
+                arma de asta, puedes arrojarla al final de turno como acción
+                adicional. Al matar con este ataque, recibes una moneda
+                de guerra."
+# nivel 8
+-
+  id:           21
+  nivel:        8
+  rangos:       2
+  requisitos:   [0]
+  name:         ""
+  type:         ""
+  coste:        ""
+  description:  ""
+-
+  id:           22
+  nivel:        8
+  rangos:       2
+  requisitos:   [0]
+  name:         ""
+  type:         ""
+  coste:        ""
+  description:  ""
+# nivel 9
+-
+  id:           23
+  nivel:        9
+  rangos:       2
+  requisitos:   [0]
+  name:         ""
+  type:         ""
+  coste:        ""
+  description:  ""
+-
+  id:           24
+  nivel:        9
+  rangos:       2
+  requisitos:   [0]
+  name:         ""
+  type:         ""
+  coste:        ""
+  description:  ""
+# nivel 10 - Habilidades definitivas
+-
+  id:           25
+  nivel:        10
+  rangos:       2
+  requisitos:   [0]
+  name:         ""
+  type:         "Definitiva"
+  coste:        ""
+  description:  ""
+-
+  id:           26
+  nivel:        10
+  rangos:       2
+  requisitos:   [0]
+  name:         ""
+  type:         "Definitiva"
+  coste:        ""
+  description:  ""
+-
+  id:           27
+  nivel:        10
+  rangos:       2
+  requisitos:   [0]
+  name:         ""
+  type:         "Definitiva"
+  coste:        ""
+  description:  ""
