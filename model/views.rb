@@ -2,31 +2,32 @@
 
 # DB Loader
 def views
-  load_yaml('views') # /data/views.yml
+   # /data/views.yml
+  load_yaml('views')
+end
+
+def navigate(ruta)
+  # Redirected view collection
+  redirected_views = {
+    hechizos: %w[aire agua fuego tierra],
+    sagradas: %w[arena hielo sombra sangre],
+    plegarias: %w[plegarias execraciones],
+    heroes: %w[reservistas ausentes licenciados]
+  }
+
+  # Detects if ruta exists as key in redirected_views (returns nil if not)
+  new_route = redirected_views.detect do |key, values|
+    break key.to_s if Array(values).include?(ruta)
+  end
+
+  # Route preview loader
+  new_route || ruta
 end
 
 # Behaviour if defined, or from DB-views by default.
 def view(ruta)
-  # Routes List
-
-  # Spell routes
-  es_element  = %w[aire agua fuego tierra].include?(ruta)
-  es_sagrada  = %w[arena hielo sombra sangre].include?(ruta)
-  es_plegaria = %w[plegarias execraciones].include?(ruta)
-  # Heroes routes
-  campeones   = %w[reservistas ausentes licenciados].include?(ruta)
-
-  # TODO: Refactor, reorder: v['ruta] first, and else goes to 404error site.
-  # Route preview loader
-  nav = if es_element then 'hechizos'
-        elsif es_sagrada  then 'sagradas'
-        elsif es_plegaria then 'plegarias'
-        elsif campeones   then 'heroes'
-        else ruta # Usual rooting
-        end
-
-  # Return the matching route ('nav') from DB
-  v = views.find { |v| v['ruta'] == nav }
+  # Return the matching route ('navigate') from DB
+  v = views.find { |vista| vista['ruta'] == navigate(ruta) }
   v = v.nil? ? view('error') : v # TODO : 404 error...
   Vista.new(v)
 end
