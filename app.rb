@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 require 'sinatra'
 
 class App < Sinatra::Base
-# TODO: Configure and helpers to a folder. Clean up!
+  # TODO: Configure and helpers to a folder. Clean up!
   configure do
     enable :sessions
   end
@@ -21,9 +23,9 @@ class App < Sinatra::Base
     end
   end
 
-# GET methods
+  # GET methods
 
-  get('/') {redirect '/inicio' } # Home website
+  get('/') { redirect '/inicio' } # Home website
 
   # Private Zone
   get('/secure/place') { erb :'private/secreto' }
@@ -34,7 +36,7 @@ class App < Sinatra::Base
   end
 
   # Templates with double-routing
-  get '/:view/:param' do |view, param|
+  get '/:view/:param' do |view, _param|
     preview(view)
   end
 
@@ -43,7 +45,7 @@ class App < Sinatra::Base
     preview(view)
   end
 
-# POST methods
+  # POST methods
 
   post('/calculador') { preview('calculador') }
   post('/buscar')     { preview('heroes') }
