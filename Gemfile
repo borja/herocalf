@@ -14,7 +14,7 @@ group :test do
   gem 'rack-test', '~> 1.1.0'
   gem 'rake',      '~> 12.3.2'
   gem 'rspec',     '~> 3.8.0'
-  gem 'simplecov', '~> 0.16.1', require: false
+  gem 'simplecov', '~> 0.17.0', require: false
 
   # YAML files in data/* syntax validator
   gem 'yaml-lint', '~> 0.0.10'
