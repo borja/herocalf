@@ -2,46 +2,51 @@
 -
   id:          0
   nivel:       2
-  rangos:      2
   name:        "Chatarrero"
   type:        "disparada"
-  description:
-               "+1 pieza al desactivar satisfactoriamente una trampa.
-                Puedes gastar una pieza para añadir +1 desactivar trampas."
+  description: "+1 pieza al desactivar satisfactoriamente una trampa.
+                Puedes gastar una pieza para añadir +1 desactivar trampas.
+                Además, puedes saquear piezas de los constructos."
 -
   id:          1
   nivel:       2
+  rangos:      2
   name:        "Artillería"
   type:        "activa"
   coste:       "1 pieza"
-  description: "Disparo a distancia con el arma equipada. (Puede ser melee)"
+  description: "Disparo a distancia con el arma equipada. (Puede ser melee)
+                Rango 2: Permite disparar a través de aliados sin dañarlos."
 -
   id:          2
   nivel:       2
-  name:        "Fuego amigo"
-  type:        "pasiva"
-  description: "Permite disparar a través de aliados sin dañarlos."
+  rangos:      2
+  name:        "Desvalijar"
+  type:        "activa"
+  description: "Permite desmontar una puerta para obtener 1 pieza.
+                En rango 2, permite gastar N piezas para intentar abrir una
+                cerradura de dificultad N. (Tirada de desactivar trampas)"
 -
   id:          3
   nivel:       2
   rangos:      4
-  requisitos:  [0]
   name:        "Cachivache"
   type:        "pasiva"
-  invocacion:
-               "droide con forma de araña y un depósito líquido con 3 PE.
-               A cambio de 2 piezas puedes regenerarlo.
-               Puede hacer las siguientes funciones:<br/> 
-               * autodestrucción (dado de fuego),<br/>
-               * +1 a buscar si se coloca en el casco<br/>
-               * permite disparo oblicuo, si se coloca en la mirilla."
-  description: "Comienzas el reto con rango/cachivaches (PcV)"
+  invocacion:  "droide con forma de araña y un depósito líquido con 3 PE.
+                A cambio de 2 piezas puedes regenerarlo.
+                Puede hacer las siguientes funciones:<br/> 
+                * autodestrucción (dado de fuego),<br/>
+                * +1 a buscar si se coloca en el casco<br/>
+                * permite disparo oblicuo, si se coloca en la mirilla."
+  description: "Comienzas el reto con 1/rango cachivaches"
 -
   id:          4
-  nivel:       3
-  name:        "Desvalijar"
-  type:        "activa"
-  description: "Permite desmontar una puerta para obtener 1 pieza"
+  nivel:       2
+  name:        "Armadura de chatarra"
+  type:        "Pasiva"
+  description: "+1 de potencia defensiva por cada pieza. Si un ataque es
+                defendido gracias a esta potencia extra, la pieza se pierde.
+                El ingeniero puede decidir sufrir el daño y conservar la pieza.
+                Además cada pieza aporta un espacio extra de inventario."
 # nivel 3
 -
   id:          5
@@ -49,17 +54,18 @@
   requisitos:  [1]
   name:        "Retroceso"
   type:        "disparada"
-  description: 
-               "El exceso de potencia de disparo hará que el ingeniero
-               pueda elegir retroceder pudiendo golpear al posible enemigo
-               con el que se choque. (Nunca recibirá daño élñ)"
-
+  description: "El exceso de potencia de disparo hará que el ingeniero
+                pueda elegir retroceder pudiendo incluso golpear a la
+                miniatura con la que chocara. (El ingeniero nunca sufrirá
+                daños por esta colisión) La distancia es igual al número
+                de dados de la tirada de ataque"
 -
   id:          6
   nivel:       3
   name:        "Éter"
   type:        "pasiva"
-  description: "+3 puntos de éter (PE) al inicio del juego."
+  description: "+3 puntos de éter (PE) al inicio del juego. El éter se 
+                considera una poción de fuego arrojable (1 dado de fuego)"
 -
   id:          7
   nivel:       3
@@ -70,7 +76,7 @@
                 fuerza +1 en el disparo"
 -
   id:          8
-  nivel:       4
+  nivel:       3
   rangos:      3
   requisitos:  [1]
   name:        "Disparo perforante"
@@ -142,7 +148,7 @@
                 el ingeniero se mueve."
 -
   id:          16
-  nivel:       7  
+  nivel:       5 
   requisitos:  [6,14]
   name:        "Lanzallamas"
   type:        "activa"
