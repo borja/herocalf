@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 
 # Production requirements
 gem 'require_all', '~> 2.0.0'
-gem 'sinatra', '~> 2.0.5'
+gem 'sinatra', '~> 2.0.6'
 gem 'slim', '~> 4.0.1'
 gem 'tilt', '~> 2.0.9'
 
