@@ -1,4 +1,4 @@
-ruby '2.6.3' # Release date: 2019-04-17
+ruby '2.6.5' # Release date: 2019-10-01
 # https://www.ruby-lang.org/en/news/2019/04/17/ruby-2-6-3-released/
 source 'https://rubygems.org'
 
