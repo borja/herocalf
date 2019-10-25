@@ -13,7 +13,7 @@ group :test do
   gem 'minitest',  '~> 5.11.1'
   gem 'rack-test', '~> 1.1.0'
   gem 'rake',      '~> 12.3.2'
-  gem 'rspec',     '~> 3.8.0'
+  gem 'rspec',     '~> 3.9.0'
   gem 'simplecov', '~> 0.16.1', require: false
 
   # YAML files in data/* syntax validator
