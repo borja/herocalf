@@ -44,7 +44,7 @@ GEM
       temple (>= 0.7.6, < 0.9)
       tilt (>= 2.0.6, < 2.1)
     temple (0.8.1)
-    tilt (2.0.9)
+    tilt (2.0.10)
     url (0.3.2)
     yaml-lint (0.0.10)
 
@@ -61,7 +61,7 @@ DEPENDENCIES
   simplecov (~> 0.16.1)
   sinatra (~> 2.0.7)
   slim (~> 4.0.1)
-  tilt (~> 2.0.9)
+  tilt (~> 2.0.10)
   yaml-lint (~> 0.0.10)
 
 RUBY VERSION

@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 gem 'require_all', '~> 2.0.0'
 gem 'sinatra', '~> 2.0.7'
 gem 'slim', '~> 4.0.1'
-gem 'tilt', '~> 2.0.9'
+gem 'tilt', '~> 2.0.10'
 
 # Testing and metrics (not necessary in production)
 group :test do
