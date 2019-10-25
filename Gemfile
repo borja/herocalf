@@ -2,7 +2,7 @@ ruby '2.6.2' # Release date: 2018-10-18
 source 'https://rubygems.org'
 
 # Production requirements
-gem 'require_all', '~> 2.0.0'
+gem 'require_all', '~> 3.0.0'
 gem 'sinatra', '~> 2.0.7'
 gem 'slim', '~> 4.0.1'
 gem 'tilt', '~> 2.0.9'
