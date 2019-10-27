@@ -1,6 +1,6 @@
 build:
   environment:
-    ruby: '2.6.3'
+    ruby: '2.6.5'
   nodes:
     analysis:
       tests:
