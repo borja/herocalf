@@ -16,3 +16,34 @@
   description:  "Recupera 1 PM al ser objetivo de un hechizo de agua.
                 Además obtienes el rasgo: bendición del océano;
                 +1 potencia defensiva a tu próxima tirada de ataque."
+-
+  id:           2
+  nivel:        2
+  rangos:       2
+  name:         "Arpón tsunami"
+  type:         "Activa"
+  coste:        "1 PM"
+  description:  "(requiere asta) +1/rango potencia al siguiente ataque.
+                Además, bajo la bendición del océano, al matar, puedes realizar
+                una acción de magia de aguainmediatamente después."
+-
+  id:           3
+  nivel:        2
+  name:         "Golpe de oleaje"
+  type:         "Única"
+  description:  "Efectúa una acción de ataque con tu arma principal.
+                 Puedes desplazar a cada minitatura de la sala tantas casillas
+                 en la misma dirección (incluso diagonal) como daños causados.
+                 Las miniaturas que terminen cuerpo a cuerpo contigo, en lugar
+                 de daño por colisión, se defenderán de este ataque."
+-
+  id:           4
+  nivel:        2
+  rangos:       3
+  name:         "Resguardo sombrío"
+  type:         "Pasiva"
+  description:  "-1/rango al daño sufrido por enemigos cuyo grupo ha fallado
+                 previamente ataques contra ti. Si el daño íntegro es anulado,
+                 obtienes la bendición del abismo: puedes ejecutar tu próxima
+                 magia de sombras sin coste de hechizo."
+# nivel 3
