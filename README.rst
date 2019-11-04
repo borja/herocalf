@@ -101,7 +101,7 @@ Quality Grades
 +--------------+----------------+-------------------+
 | SonarCloud   | |Sonarcloud|   |                   |
 +--------------+----------------+-------------------+
-| Inspecode   | |inspecode|    |  |inspereport|     |
+| Inspecode    | |inspereport|  | |inspecode|       |
 +--------------+----------------+-------------------+
 
 .. |Code Climate| image:: https://codeclimate.com/github/borja/herocalf/badges/gpa.svg
