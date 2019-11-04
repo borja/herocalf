@@ -27,8 +27,8 @@ Architecture
 | |ruby|         | 2019/04/17       |
 +----------------+------------------+
 
-.. |ruby| image:: https://img.shields.io/static/v1.svg?logo=ruby&label=ruby&message=v.2.6.3&color=red
-   :target: https://www.ruby-lang.org/en/news/2019/04/17/ruby-2-6-3-released/
+.. |ruby| image:: https://img.shields.io/static/v1.svg?logo=ruby&label=ruby&message=v.2.6.5&color=red
+   :target: https://www.ruby-lang.org/en/news/2019/10/01/ruby-2-6-5-released/
 
 Vulnerabilities Report
 ----------------------
@@ -99,6 +99,8 @@ Quality Grades
 +--------------+----------------+-------------------+
 | Scrutinizer  | |Scrutinizer|  | |ScrutCov|        |
 +--------------+----------------+-------------------+
+| SonarCloud   | |Sonarcloud|   |                   |
++--------------+----------------+-------------------+
 
 .. |Code Climate| image:: https://codeclimate.com/github/borja/herocalf/badges/gpa.svg
    :target: https://codeclimate.com/github/borja/herocalf
@@ -118,6 +120,8 @@ Quality Grades
   :target: https://scrutinizer-ci.com/g/borja/herocalf/
 .. |CodeBeat| image:: https://codebeat.co/badges/92dcb70d-4a69-4d0f-a39b-5043b1fd4b56
   :target: https://codebeat.co/projects/github-com-borja-herocalf-master
+.. |Sonarcloud| image:: https://sonarcloud.io/api/project_badges/measure?project=borja_herocalf&metric=alert_status
+  :target: https://sonarcloud.io/dashboard?id=borja_herocalf
 
 Documentation
 -------------
