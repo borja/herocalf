@@ -101,6 +101,8 @@ Quality Grades
 +--------------+----------------+-------------------+
 | SonarCloud   | |Sonarcloud|   |                   |
 +--------------+----------------+-------------------+
+| Inspecode   | |inspecode|    |  |inspereport|     |
++--------------+----------------+-------------------+
 
 .. |Code Climate| image:: https://codeclimate.com/github/borja/herocalf/badges/gpa.svg
    :target: https://codeclimate.com/github/borja/herocalf
@@ -122,8 +124,11 @@ Quality Grades
   :target: https://codebeat.co/projects/github-com-borja-herocalf-master
 .. |Sonarcloud| image:: https://sonarcloud.io/api/project_badges/measure?project=borja_herocalf&metric=alert_status
   :target: https://sonarcloud.io/dashboard?id=borja_herocalf
+.. |inspecode| image:: https://inspecode.rocro.com/badges/github.com/borja/herocalf/status?token=zaQUMtOXU-1_814HQ6gjToDorw3sKFaIktUcZpx_V7c
+  :target: https://inspecode.rocro.com/jobs/github.com/borja/herocalf/latest?completed=true
+.. |inspereport| image:: https://inspecode.rocro.com/badges/github.com/borja/herocalf/report?token=zaQUMtOXU-1_814HQ6gjToDorw3sKFaIktUcZpx_V7c&branch=master
+  :target: https://inspecode.rocro.com/reports/github.com/borja/herocalf/branch/master/summary
 
-Documentation
 -------------
 +------------------------+------------------+-----------------------------------------------------+
 | Platform               | Badge            | Description                                         |
