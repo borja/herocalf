@@ -129,6 +129,7 @@ Quality Grades
 .. |inspereport| image:: https://inspecode.rocro.com/badges/github.com/borja/herocalf/report?token=zaQUMtOXU-1_814HQ6gjToDorw3sKFaIktUcZpx_V7c&branch=master
   :target: https://inspecode.rocro.com/reports/github.com/borja/herocalf/branch/master/summary
 
+Documentation
 -------------
 +------------------------+------------------+-----------------------------------------------------+
 | Platform               | Badge            | Description                                         |
