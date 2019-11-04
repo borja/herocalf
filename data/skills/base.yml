@@ -3,7 +3,6 @@ mago:
     name:        "Hechizar"
     description: "Permite coger 3 sets de magia elemental
                   al inicio del reto."
-
 elfo:
   -
     name:        "Hechizar"
@@ -11,7 +10,6 @@ elfo:
   -
     name:        "Salto liviano"
     description: "+1 Saltar fosos"
-
 tiefling:
   -
     name:        "Hechizar"
@@ -20,7 +18,6 @@ tiefling:
   -
     name:        "Pacto demoníaco"
     description: "1PM: +1 dado azul de defensa hasta final del turno."
-
 enano:
   -
     name:        "Desactivar trampas"
@@ -31,13 +28,11 @@ enano:
   -
     name:        "Afinidad con la roca"
     description: "Permite poder ejecutar magias de tierra"
-
 bárbaro:
   -
     name:        "Furia"
     description: "1PM: +1 de ataque hasta final del turno.
                   Además eres inmune a psicología."
-
 ladrón:
   -
     name:        "Robar"
@@ -51,12 +46,10 @@ ladrón:
     name:         "Sigilo"
     description:  "Entras en sigilo al no haber objetivos visibles. El efecto
                   cesa al realizar una acción distinta a movimiento."
-
 clérigo:
   -
     name:        "Rezar"
     description: "+6 plegarias sagradas al iniciar el Reto."
-
 rakshasa:
   -
     name:        "Rugido"
@@ -65,7 +58,6 @@ rakshasa:
     name:        "Destino"
     description: "Permite coger 3 hechizos entre las magias de viento
                   y plegarias, al inicio del reto."
-
 elohim:
   -
     name:        "Esencia de creación"
@@ -73,7 +65,6 @@ elohim:
   -
     name:        "Vínculo místico"
     description: "1PM: +1 hasta final del turno contra cualquier resistencia"
-
 gólem:
   -
     name:        "Hechizar"
@@ -87,7 +78,6 @@ gólem:
     description: "La armadura base será igual a los PC actuales.
                   Las piezas de armadura, confieren potencia en lugar
                   de armadura base. Solo puede usar armadura metálica"
-
 monje:
   -
     name:        "Sintonía"
@@ -96,7 +86,6 @@ monje:
     name:        "Instrucción zen"
     description: "Permite gastar 1 PZ a elegir: +1 dado blanco a tu
                   siguiente ataque sin armas, sanarte 1PM ó 1PC a un aliado"
-
 gigante:
   -
     name:        "Gigantesco"

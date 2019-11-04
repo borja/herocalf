@@ -1,0 +1,5 @@
+before_script:
+  - gem install bundler
+script:
+  - bundle exec rspec test.rb
+  - bundle exec rubocop
