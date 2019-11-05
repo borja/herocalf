@@ -57,6 +57,8 @@ Build Status
 +--------------+-------------------+
 | Scrutinizer  | |ScrutCI|         |
 +--------------+-------------------+
+| SourceLevel  | |SourceLevel|     |
++--------------+-------------------+
 
 .. |Travis Status| image:: https://travis-ci.org/borja/herocalf.svg?branch=master
    :target: https://travis-ci.org/borja/herocalf
@@ -68,6 +70,8 @@ Build Status
    :target: https://ci.appveyor.com/project/borja/herocalf
 .. |ScrutCI| image:: https://scrutinizer-ci.com/g/borja/herocalf/badges/build.png?b=master
    :target: https://scrutinizer-ci.com/g/borja/herocalf/build-status/master
+.. |SourceLevel| image:: https://app.sourcelevel.io/github/borja/herocalf.svg
+   :target: https://app.sourcelevel.io/github/borja/herocalf
 
 Deployment Status
 -----------------
