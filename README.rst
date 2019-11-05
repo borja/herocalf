@@ -1,3 +1,5 @@
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fborja%2Fherocalf.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fborja%2Fherocalf?ref=badge_shield)
+
 Herosheet Project
 ===================
 Definition
@@ -187,3 +189,7 @@ To run this application locally, run:
 
     bundle install
     bundle exec ruby -S rackup -w config.ru
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fborja%2Fherocalf.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fborja%2Fherocalf?ref=badge_large)
