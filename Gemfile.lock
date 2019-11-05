@@ -1,7 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    codecov (0.1.15)
+    codecov (0.1.16)
       json
       simplecov
       url
@@ -62,7 +62,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  codecov (~> 0.1.15)
+  codecov (~> 0.1.16)
   coveralls (~> 0.8.23)
   minitest (~> 5.13.0)
   rack-test (~> 1.1.0)
