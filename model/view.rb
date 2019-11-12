@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Main view class
 # Used for Bootstrap components management
 # Documentation for v.4 https://getbootstrap.com/docs/4.0/examples
