@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Define las lenguas que existen en el viejo mundo
 class Lengua < Hash
   attr_accessor :id, :name, :personajes, :desc

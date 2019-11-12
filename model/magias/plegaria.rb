@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Todos los hechizos de plegaria
 class Plegaria < Magia
   def nivel

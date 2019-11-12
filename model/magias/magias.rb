@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # YAML DB Loader
 def elficas
   load_yaml('magia/elficas').map   { |s| Elfica.new(s) }
@@ -28,15 +30,15 @@ def hielos
 end
 
 def aguas
-  load_yaml('magia/aguas').map   { |s| Agua.new(s) }
+  load_yaml('magia/aguas').map { |s| Agua.new(s) }
 end
 
 def fuegos
-  load_yaml('magia/fuegos').map   { |s| Fuego.new(s) }
+  load_yaml('magia/fuegos').map { |s| Fuego.new(s) }
 end
 
 def aires
-  load_yaml('magia/aires').map   { |s| Aire.new(s) }
+  load_yaml('magia/aires').map { |s| Aire.new(s) }
 end
 
 def tierras
@@ -90,11 +92,11 @@ def tierra(id)
 end
 
 def spell(id, elem)
-  spells.find {|s| ( s.id == id && s.elemento == elem) }
+  spells.find { |s| (s.id == id && s.elemento == elem) }
 end
 
 def escuelas
-  %w(Aire Fuego Agua Tierra Sombra Hielo Arena Tenebro Sangre Luz)
+  %w[Aire Fuego Agua Tierra Sombra Hielo Arena Tenebro Sangre Luz]
 end
 
 def tipos_magia

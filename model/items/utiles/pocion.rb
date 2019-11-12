@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Pociones de todo tipo
 class Pocion < Util
   def name

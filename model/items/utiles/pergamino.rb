@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Tipos de pergamino
 # TODO: Mapear los hechizos
 class Pergamino < Util
@@ -9,7 +11,8 @@ class Pergamino < Util
     pergamino(id)['precio']
   end
 
-  def max # Max num. permitido
+  # Max num. permitido
+  def max
     pergamino(id)['hechizos']
   end
 

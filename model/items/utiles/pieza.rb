@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Objetos raros como llaves, setas o mapas.
 class Pieza < Util
   def name
