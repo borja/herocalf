@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Armas y escudos
 class Arma < Item
   def name
