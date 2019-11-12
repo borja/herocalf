@@ -1,0 +1,18 @@
+name:      "Shark"
+personaje: "asesino"
+jugador:   "Aitor Arranz"
+status:    "reserva"
+nivel:     1
+xp:        4
+cuerpo:    5
+mente:     5
+mov:       7
+oro:       135
+armadura:  2
+armas:
+  - { id: 3 }
+  - { id: 3 }
+protecciones:
+  - { id: 2 }
+tesoro:
+  gemas: [28]

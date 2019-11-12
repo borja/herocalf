@@ -1,6 +1,7 @@
 name:      "Obscuro"
 personaje: "vengador"
 jugador:   "Rubén"
+status:    "reserva"
 nivel:     1
 xp:        4
 cuerpo:    6

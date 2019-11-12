@@ -282,3 +282,11 @@
   ranuras:     4
   diagonal:    true
   precio:      300
+-
+  id:          35
+  name:        "látigo"
+  categoria:   "flexible"
+  ataque:      2
+  ranuras:     1
+  diagonal:    false
+  precio:      125
