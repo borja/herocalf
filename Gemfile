@@ -1,10 +1,10 @@
-ruby '2.6.5' # Release date: 2019-10-01
-# https://www.ruby-lang.org/en/news/2019/04/17/ruby-2-6-3-released/
+ruby '2.7.0' # Release date: 2019-12-25
+# https://www.ruby-lang.org/en/news/2019/12/25/ruby-2-7-0-released/
 source 'https://rubygems.org'
 
 # Production requirements
 gem 'require_all', '~> 3.0.0'
-gem 'sinatra', '~> 2.0.7'
+gem 'sinatra', '~> 2.0.8'
 gem 'slim', '~> 4.0.1'
 gem 'tilt', '~> 2.0.9'
 
