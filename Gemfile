@@ -10,7 +10,7 @@ gem 'tilt', '~> 2.0.9'
 
 # Testing and metrics (not necessary in production)
 group :test do
-  gem 'codecov',   '~> 0.1.16', require: false
+  gem 'codecov',   '~> 0.2.15', require: false
   gem 'coveralls', '~> 0.8.23', require: false
   gem 'minitest',  '~> 5.14.0'
   gem 'rack-test', '~> 1.1.0'
