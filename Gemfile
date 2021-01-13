@@ -12,7 +12,7 @@ gem 'tilt', '~> 2.0.9'
 group :test do
   gem 'codecov',   '~> 0.2.15', require: false
   gem 'coveralls', '~> 0.8.23', require: false
-  gem 'minitest',  '~> 5.14.0'
+  gem 'minitest',  '~> 5.14.3'
   gem 'rack-test', '~> 1.1.0'
   gem 'rake',      '~> 13.0.1'
   gem 'rspec',     '~> 3.9.0'
