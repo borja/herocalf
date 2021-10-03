@@ -1,5 +1,6 @@
 Herosheet Project
 ===================
+
 Definition
 ----------
 This project was created as an amateur idea, a group of friends
@@ -8,17 +9,18 @@ non-official, non-profit web.
 
 Technology
 ----------
-The Herosheet website is written in Ruby on Sinatra_ with a fake-DB in YAML_,
-using Bootstrap_ as HTML web framework with Slim_ (lightweight template engine).
++-----------------+------------------+
+| **Description** | **License**      |
++=================+==================+
+| |Description|   | |FOSSA-DESC|     |
++-----------------+------------------+
 
+.. |Description| text:: The Herosheet website is written in Ruby on Sinatra_ with a fake-DB in YAML_, using Bootstrap_ as HTML web framework with Slim_ (lightweight template engine).
 .. _Sinatra: http://www.sinatrarb.com/
 .. _Bootstrap: http://getbootstrap.com/
 .. _YAML: http://yaml.org/
 .. _Slim: http://slim-lang.com/
-
-License
--------
-.. image:: https://app.fossa.io/api/projects/git%2Bgithub.com%2Fborja%2Fherocalf.svg?type=large
+.. |FOSSA-DESC| image:: https://app.fossa.io/api/projects/git%2Bgithub.com%2Fborja%2Fherocalf.svg?type=large
    :target: https://app.fossa.io/projects/git%2Bgithub.com%2Fborja%2Fherocalf?ref=badge_large
 
 QA Dashboard
