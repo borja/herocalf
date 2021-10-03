@@ -57,11 +57,9 @@ Build Status
 +--------------+-------------------+
 | Scrutinizer  | |ScrutCI|         |
 +--------------+-------------------+
-| SourceLevel  | |SourceLevel|     |
-+--------------+-------------------+
 
-.. |Travis Status| image:: https://travis-ci.org/borja/herocalf.svg?branch=master
-   :target: https://travis-ci.org/borja/herocalf
+.. |Travis Status| image:: https://app.travis-ci.com/borja/herocalf.svg?branch=master
+   :target: https://app.travis-ci.com/borja/herocalf
 .. |CircleCi Status| image:: https://circleci.com/gh/borja/herocalf.svg?style=shield
    :target: https://circleci.com/gh/borja/herocalf
 .. |CodeShip| image:: https://app.codeship.com/projects/62d62e60-2116-0136-eafd-669e1e370d60/status?branch=master
@@ -70,8 +68,6 @@ Build Status
    :target: https://ci.appveyor.com/project/borja/herocalf
 .. |ScrutCI| image:: https://scrutinizer-ci.com/g/borja/herocalf/badges/build.png?b=master
    :target: https://scrutinizer-ci.com/g/borja/herocalf/build-status/master
-.. |SourceLevel| image:: https://app.sourcelevel.io/github/borja/herocalf.svg
-   :target: https://app.sourcelevel.io/github/borja/herocalf
 
 Deployment Status
 -----------------
@@ -107,11 +103,13 @@ Quality Grades
 +--------------+----------------+-------------------+
 | Inspecode    | |inspereport|  | |inspecode|       |
 +--------------+----------------+-------------------+
+| SourceLevel  | |SourceLevel|  |                   |
++--------------+----------------+-------------------+
 
 .. |Code Climate| image:: https://codeclimate.com/github/borja/herocalf/badges/gpa.svg
    :target: https://codeclimate.com/github/borja/herocalf
-.. |Codacy Badge| image:: https://api.codacy.com/project/badge/Grade/f2559f1e733d4a4c854fdcc84804c047
-   :target: https://www.codacy.com/app/borja/herocalf?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=borja/herocalf&amp;utm_campaign=Badge_Grade
+.. |Codacy Badge| image:: https://app.codacy.com/project/badge/Grade/2b3fa3631d8e43e38d589d56e950c275
+   :target: https://www.codacy.com/gh/borja/herocalf/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=borja/herocalf&amp;utm_campaign=Badge_Grade
 .. |CC Coverage| image:: https://codeclimate.com/github/borja/herocalf/badges/coverage.svg
    :target: https://codeclimate.com/github/borja/herocalf/coverage
 .. |Codacy Coverage| image:: https://api.codacy.com/project/badge/Coverage/f2559f1e733d4a4c854fdcc84804c047
@@ -132,6 +130,8 @@ Quality Grades
   :target: https://inspecode.rocro.com/jobs/github.com/borja/herocalf/latest?completed=true
 .. |inspereport| image:: https://inspecode.rocro.com/badges/github.com/borja/herocalf/report?token=zaQUMtOXU-1_814HQ6gjToDorw3sKFaIktUcZpx_V7c&branch=master
   :target: https://inspecode.rocro.com/reports/github.com/borja/herocalf/branch/master/summary
+.. |SourceLevel| image:: https://app.sourcelevel.io/github/borja/-/herocalf.svg
+  :target: https://app.sourcelevel.io/github/borja/-/herocalf
 
 Documentation
 -------------
