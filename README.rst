@@ -18,7 +18,7 @@ using Bootstrap_ as HTML web framework with Slim_ (lightweight template engine).
 
 License
 -------
-.. _LICENSEINFO image:: https://app.fossa.io/api/projects/git%2Bgithub.com%2Fborja%2Fherocalf.svg?type=large
+.. image:: https://app.fossa.io/api/projects/git%2Bgithub.com%2Fborja%2Fherocalf.svg?type=large
    :target: https://app.fossa.io/projects/git%2Bgithub.com%2Fborja%2Fherocalf?ref=badge_large
 
 QA Dashboard
