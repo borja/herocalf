@@ -57,8 +57,6 @@ Build Status
 +--------------+-------------------+
 | Scrutinizer  | |ScrutCI|         |
 +--------------+-------------------+
-| SourceLevel  | |SourceLevel|     |
-+--------------+-------------------+
 
 .. |Travis Status| image:: https://travis-ci.org/borja/herocalf.svg?branch=master
    :target: https://travis-ci.org/borja/herocalf
@@ -70,8 +68,6 @@ Build Status
    :target: https://ci.appveyor.com/project/borja/herocalf
 .. |ScrutCI| image:: https://scrutinizer-ci.com/g/borja/herocalf/badges/build.png?b=master
    :target: https://scrutinizer-ci.com/g/borja/herocalf/build-status/master
-.. |SourceLevel| image:: https://app.sourcelevel.io/github/borja/herocalf.svg
-   :target: https://app.sourcelevel.io/github/borja/herocalf
 
 Deployment Status
 -----------------
@@ -107,6 +103,8 @@ Quality Grades
 +--------------+----------------+-------------------+
 | Inspecode    | |inspereport|  | |inspecode|       |
 +--------------+----------------+-------------------+
+| SourceLevel  | |SourceLevel|  |                   |
++--------------+----------------+-------------------+
 
 .. |Code Climate| image:: https://codeclimate.com/github/borja/herocalf/badges/gpa.svg
    :target: https://codeclimate.com/github/borja/herocalf
@@ -132,6 +130,8 @@ Quality Grades
   :target: https://inspecode.rocro.com/jobs/github.com/borja/herocalf/latest?completed=true
 .. |inspereport| image:: https://inspecode.rocro.com/badges/github.com/borja/herocalf/report?token=zaQUMtOXU-1_814HQ6gjToDorw3sKFaIktUcZpx_V7c&branch=master
   :target: https://inspecode.rocro.com/reports/github.com/borja/herocalf/branch/master/summary
+.. |SourceLevel| image:: https://app.sourcelevel.io/github/borja/-/herocalf.svg
+  :target: https://app.sourcelevel.io/github/borja/-/herocalf
 
 Documentation
 -------------
