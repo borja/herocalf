@@ -6,14 +6,4 @@ updates:
     interval: daily
     time: "02:00"
   open-pull-requests-limit: 10
-  target-branch: develop
-  ignore:
-  - dependency-name: codecov
-    versions:
-    - 0.4.2
-    - 0.4.3
-    - 0.5.0
-    - 0.5.1
-  - dependency-name: minitest
-    versions:
-    - 5.14.3
+  target-branch: master
