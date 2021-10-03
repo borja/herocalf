@@ -58,8 +58,8 @@ Build Status
 | Scrutinizer  | |ScrutCI|         |
 +--------------+-------------------+
 
-.. |Travis Status| image:: https://travis-ci.org/borja/herocalf.svg?branch=master
-   :target: https://travis-ci.org/borja/herocalf
+.. |Travis Status| image:: https://app.travis-ci.com/borja/herocalf.svg?branch=master
+   :target: https://app.travis-ci.com/borja/herocalf
 .. |CircleCi Status| image:: https://circleci.com/gh/borja/herocalf.svg?style=shield
    :target: https://circleci.com/gh/borja/herocalf
 .. |CodeShip| image:: https://app.codeship.com/projects/62d62e60-2116-0136-eafd-669e1e370d60/status?branch=master
