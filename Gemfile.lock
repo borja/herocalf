@@ -57,6 +57,7 @@ GEM
     tilt (2.0.10)
     tins (1.29.1)
       sync
+    webrick (1.7.0)
     yaml-lint (0.0.10)
 
 PLATFORMS
@@ -73,6 +74,7 @@ DEPENDENCIES
   sinatra (~> 2.0.8)
   slim (~> 4.0.1)
   tilt (~> 2.0.9)
+  webrick (~> 1.7)
   yaml-lint (~> 0.0.10)
 
 RUBY VERSION
