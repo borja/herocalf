@@ -15,7 +15,7 @@ Technology
 | |Description|   | |FOSSA-DESC|     |
 +-----------------+------------------+
 
-.. |Description|: The Herosheet website is written in Ruby on Sinatra_ with a fake-DB in YAML_, using Bootstrap_ as HTML web framework with Slim_ (lightweight template engine).
+.. |Description| replace:: The Herosheet website is written in Ruby on Sinatra_ with a fake-DB in YAML_, using Bootstrap_ as HTML web framework with Slim_ (lightweight template engine).
 .. _Sinatra: http://www.sinatrarb.com/
 .. _Bootstrap: http://getbootstrap.com/
 .. _YAML: http://yaml.org/
