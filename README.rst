@@ -144,6 +144,8 @@ Documentation
 +------------------------+------------------+-----------------------------------------------------+
 | **CII Best Practices** | |Best Practices| | *FLOSS Best practices of this project*              |
 +------------------------+------------------+-----------------------------------------------------+
+| **FOSSA**              | |FOSSA Status|   | *Open Source Issue Management*                      |
++------------------------+------------------+-----------------------------------------------------+
 
 .. |Inline docs| image:: http://inch-ci.org/github/borja/herocalf.svg
    :target: http://inch-ci.org/github/borja/herocalf
@@ -151,6 +153,8 @@ Documentation
    :target: http://herocalf.readthedocs.io/es/latest/?badge=latest
 .. |Best Practices| image:: https://bestpractices.coreinfrastructure.org/projects/1637/badge
    :target: https://bestpractices.coreinfrastructure.org/projects/1637
+.. |FOSSA Status| image:: https://app.fossa.com/api/projects/git%2Bgithub.com%2Fborja%2Fherocalf.svg?type=shield
+   :target: https://app.fossa.com/projects/git%2Bgithub.com%2Fborja%2Fherocalf?ref=badge_shield
 
 Non-supported building platforms
 --------------------------------
