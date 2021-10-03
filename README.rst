@@ -108,8 +108,8 @@ Quality Grades
 
 .. |Code Climate| image:: https://codeclimate.com/github/borja/herocalf/badges/gpa.svg
    :target: https://codeclimate.com/github/borja/herocalf
-.. |Codacy Badge| image:: https://api.codacy.com/project/badge/Grade/f2559f1e733d4a4c854fdcc84804c047
-   :target: https://www.codacy.com/app/borja/herocalf?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=borja/herocalf&amp;utm_campaign=Badge_Grade
+.. |Codacy Badge| image:: https://app.codacy.com/project/badge/Grade/2b3fa3631d8e43e38d589d56e950c275
+   :target: https://www.codacy.com/gh/borja/herocalf/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=borja/herocalf&amp;utm_campaign=Badge_Grade
 .. |CC Coverage| image:: https://codeclimate.com/github/borja/herocalf/badges/coverage.svg
    :target: https://codeclimate.com/github/borja/herocalf/coverage
 .. |Codacy Coverage| image:: https://api.codacy.com/project/badge/Coverage/f2559f1e733d4a4c854fdcc84804c047
