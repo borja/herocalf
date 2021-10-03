@@ -3,7 +3,7 @@ Herosheet Project
 
 Definition
 ----------
-This project was created as an amateur idea, a group of friends
+> This project was created as an amateur idea, a group of friends
 willing to gather information from their HeroQuest games on an
 non-official, non-profit web.
 
@@ -15,7 +15,7 @@ Technology
 | |Description|   | |FOSSA-DESC|     |
 +-----------------+------------------+
 
-.. |Description| text:: The Herosheet website is written in Ruby on Sinatra_ with a fake-DB in YAML_, using Bootstrap_ as HTML web framework with Slim_ (lightweight template engine).
+.. |Description| > The Herosheet website is written in Ruby on Sinatra_ with a fake-DB in YAML_, using Bootstrap_ as HTML web framework with Slim_ (lightweight template engine).
 .. _Sinatra: http://www.sinatrarb.com/
 .. _Bootstrap: http://getbootstrap.com/
 .. _YAML: http://yaml.org/
