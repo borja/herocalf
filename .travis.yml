@@ -10,12 +10,12 @@ env:
 language: ruby
 cache: bundler
 rvm:
-  - 2.6.5
+  - 3.0.2
 before_install:
   - gem update --system
-  - gem install bundler --no-document -v '~> 2.0.2'
+  - gem install bundler --no-document -v '~> 2.2.28'
   # Main test usging bundler (not working)
-  - bundle install --path vendor/bundle
+  - bundle install
 
 script:
   - bundle exec rspec test.rb
@@ -30,14 +30,8 @@ addons:
 
 # Git properties
 git:
-  depth: 2
+  depth: 1
 
-# Whitelisted (Safe)
 branches:
   only:
     - master
-
-# Excluded (Block)
-branches:
-  except:
-    - gh-pages

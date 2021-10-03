@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_rel 'util'
 
 # Materiales necesarios para las profesiones
@@ -16,6 +18,7 @@ class Material < Util
     total = []
     heros.each do |h|
       next unless h.materiales
+
       h.materiales.each do |matt|
         total << h.id if matt == id
       end
@@ -26,10 +29,11 @@ class Material < Util
   def usado_en
     usado = []
     profesions.each do |prof|
-      %w(aprendiz artesano maestro).each do |grado|
+      %w[aprendiz artesano maestro].each do |grado|
         prof.send(grado).each do |receta|
           next unless receta['matts']
           next unless receta['matts'].include?(id)
+
           usado << { prof: id, grado: grado, receta: receta }
         end
       end

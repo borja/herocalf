@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Armadura principal
 class Armadura < Item
   def name

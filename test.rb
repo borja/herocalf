@@ -21,7 +21,7 @@ SimpleCov.formatter = SimpleCov::Formatter::Codecov
 
 ENV['RACK_ENV'] = 'test'
 require 'minitest/autorun'
-require 'rack/test'
+#require 'rack/test'
 require_relative 'app.rb'
 require 'require_all'
 require 'rspec'

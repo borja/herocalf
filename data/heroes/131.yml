@@ -1,0 +1,14 @@
+name:      "Obscuro"
+personaje: "vengador"
+jugador:   "Rubén"
+status:    "reserva"
+nivel:     1
+xp:        4
+cuerpo:    6
+mente:     4
+mov:       7
+oro:       136
+armadura:  3
+armas:
+  - { id: 11 }
+  - { id: 7 }

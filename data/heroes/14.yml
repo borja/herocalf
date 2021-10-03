@@ -1,7 +1,6 @@
 name:      "Lindele"
 personaje: "derviche"
 jugador:   "Cristina"
-status:    "activo"
 gender:    "female"
 pareja:    { char: 15, tipo: "pj" }
 familiar:  { id: 19, name: "Limoncito" }

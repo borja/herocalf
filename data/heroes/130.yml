@@ -1,0 +1,15 @@
+name:      "Dragdaoin"
+personaje: "druida"
+jugador:   "Alberto"
+status:    "reserva"
+titulo:    "Capitán"
+nivel:     2
+xp:        5
+cuerpo:    6
+mente:     4
+mov:       8
+oro:       178
+armadura:  2
+skills:    [0, 2]
+armas:
+  - { id: 14 }

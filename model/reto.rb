@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Clase para aventuras
 class Reto < Hash
   attr_accessor :id, :name, :pjs, :pnjs, :desc, :reward, :target, :type

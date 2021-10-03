@@ -45,7 +45,7 @@
   coste:        "1 PM"
   description:  "Puedes realizar ataques como si estuvieras equipado
                  con un orbe. 1 ataque por rango. Se considera hechizar.
-                 Este daño que puede apilar con el daño de un orbe equipado."
+                 Este daño se puede apilar con el daño de un orbe equipado."
 # nivel 3
 -
   id:           5

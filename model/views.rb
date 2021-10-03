@@ -2,7 +2,7 @@
 
 # DB Loader
 def views
-   # /data/views.yml
+  # /data/views.yml
   load_yaml('views')
 end
 

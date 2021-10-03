@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Clase para gestionar las profesiones y sus grados.
 # TODO necesita refactor segun la nueva forma de organizar los datos
 class Profesion < Hash
