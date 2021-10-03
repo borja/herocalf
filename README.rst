@@ -24,11 +24,11 @@ Architecture
 +----------------+------------------+
 | **Technology** | **Release date** |
 +================+==================+
-| |ruby|         | 2019/04/17       |
+| |ruby|         | 2021/07/07       |
 +----------------+------------------+
 
-.. |ruby| image:: https://img.shields.io/static/v1.svg?logo=ruby&label=ruby&message=v.2.6.5&color=red
-   :target: https://www.ruby-lang.org/en/news/2019/10/01/ruby-2-6-5-released/
+.. |ruby| image:: https://img.shields.io/static/v1.svg?logo=ruby&label=ruby&message=v.3.0.2&color=red
+   :target: https://www.ruby-lang.org/en/news/2021/07/07/ruby-3-0-2-released/
 
 Vulnerabilities Report
 ----------------------
