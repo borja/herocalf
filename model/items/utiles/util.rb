@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Conjunto de items varidos: pociones, pergaminos, etc..
 class Util < Item
   attr_accessor :id, :name

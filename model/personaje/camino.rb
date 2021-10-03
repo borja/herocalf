@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Los caminos de un heroe.
 class Camino < Array
   def name

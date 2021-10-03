@@ -1,0 +1,15 @@
+name:      "Lupercal"
+personaje: "hechicero"
+jugador:   "Javier Galindo"
+status:    "reserva"
+familiar:  { id: 8, name: "Malaquías" }
+nivel:     2
+xp:        2
+cuerpo:    4
+mente:     6
+mov:       7
+armadura:  1
+oro:       280
+skills:     [0, 1, 4]
+armas:
+  - { id: 3 }

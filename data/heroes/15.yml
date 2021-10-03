@@ -1,7 +1,6 @@
 name:      'Tim el mago'
 personaje: 'hechicero'
 jugador:   'Luis'
-status:    'activo'
 pareja:    { char: 14, tipo: 'pj' }
 familiar:  { id: 2, name: 'Naussyca'}
 profesion: { id: 1, aprendiz: [0, 3] }

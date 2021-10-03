@@ -1,0 +1,11 @@
+name:      "Rem"
+personaje: "druida"
+jugador:   "Leo"
+gender:    "female"
+nivel:     1
+cuerpo:    6
+mente:     4
+mov:       8
+armadura:  2
+armas:
+  - { id: 1 }

@@ -1,0 +1,15 @@
+name:      "Vhalkeda"
+personaje: "sirena"
+jugador:   "Daniel Cabañas"
+gender:    "female"
+status:    "reserva"
+profesion: { id: 3, aprendiz: [5] }
+nivel:     1
+xp:        4
+cuerpo:    5
+mente:     5
+mov:       6
+armadura:  1
+armas:
+  - { id: 35 }
+  - { id: 35 }

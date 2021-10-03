@@ -1,5 +1,6 @@
 #!/usr/bin/ruby
-# encoding: UTF-8
+# frozen_string_literal: true
+
 # Main searching methods
 
 # DB Loader
@@ -31,6 +32,6 @@ def porcentaje_familiares_torpes
 end
 
 def familiares_conocidos(id)
-  heros_con_familiar = heros.select{ |h| h.pet }
-  heros_con_familiar.select{ |h| h.pet.id == id }
+  heros_con_familiar = heros.select(&:pet)
+  heros_con_familiar.select { |h| h.pet.id == id }
 end

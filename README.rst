@@ -24,11 +24,11 @@ Architecture
 +----------------+------------------+
 | **Technology** | **Release date** |
 +================+==================+
-| |ruby|         | 2019/04/17       |
+| |ruby|         | 2021/07/07       |
 +----------------+------------------+
 
-.. |ruby| image:: https://img.shields.io/static/v1.svg?logo=ruby&label=ruby&message=v.2.6.5&color=red
-   :target: https://www.ruby-lang.org/en/news/2019/10/01/ruby-2-6-5-released/
+.. |ruby| image:: https://img.shields.io/static/v1.svg?logo=ruby&label=ruby&message=v.3.0.2&color=red
+   :target: https://www.ruby-lang.org/en/news/2021/07/07/ruby-3-0-2-released/
 
 Vulnerabilities Report
 ----------------------
@@ -57,6 +57,8 @@ Build Status
 +--------------+-------------------+
 | Scrutinizer  | |ScrutCI|         |
 +--------------+-------------------+
+| SourceLevel  | |SourceLevel|     |
++--------------+-------------------+
 
 .. |Travis Status| image:: https://travis-ci.org/borja/herocalf.svg?branch=master
    :target: https://travis-ci.org/borja/herocalf
@@ -68,6 +70,8 @@ Build Status
    :target: https://ci.appveyor.com/project/borja/herocalf
 .. |ScrutCI| image:: https://scrutinizer-ci.com/g/borja/herocalf/badges/build.png?b=master
    :target: https://scrutinizer-ci.com/g/borja/herocalf/build-status/master
+.. |SourceLevel| image:: https://app.sourcelevel.io/github/borja/herocalf.svg
+   :target: https://app.sourcelevel.io/github/borja/herocalf
 
 Deployment Status
 -----------------
@@ -101,6 +105,8 @@ Quality Grades
 +--------------+----------------+-------------------+
 | SonarCloud   | |Sonarcloud|   |                   |
 +--------------+----------------+-------------------+
+| Inspecode    | |inspereport|  | |inspecode|       |
++--------------+----------------+-------------------+
 
 .. |Code Climate| image:: https://codeclimate.com/github/borja/herocalf/badges/gpa.svg
    :target: https://codeclimate.com/github/borja/herocalf
@@ -122,6 +128,10 @@ Quality Grades
   :target: https://codebeat.co/projects/github-com-borja-herocalf-master
 .. |Sonarcloud| image:: https://sonarcloud.io/api/project_badges/measure?project=borja_herocalf&metric=alert_status
   :target: https://sonarcloud.io/dashboard?id=borja_herocalf
+.. |inspecode| image:: https://inspecode.rocro.com/badges/github.com/borja/herocalf/status?token=zaQUMtOXU-1_814HQ6gjToDorw3sKFaIktUcZpx_V7c
+  :target: https://inspecode.rocro.com/jobs/github.com/borja/herocalf/latest?completed=true
+.. |inspereport| image:: https://inspecode.rocro.com/badges/github.com/borja/herocalf/report?token=zaQUMtOXU-1_814HQ6gjToDorw3sKFaIktUcZpx_V7c&branch=master
+  :target: https://inspecode.rocro.com/reports/github.com/borja/herocalf/branch/master/summary
 
 Documentation
 -------------

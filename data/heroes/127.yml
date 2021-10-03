@@ -1,0 +1,13 @@
+name:      "Jennefer"
+personaje: "druida"
+jugador:   "Jessica"
+gender:    "female"
+familiar:  { id: 14, name: "Wintermute" }
+nivel:     1
+xp:        2
+cuerpo:    6
+mente:     4
+mov:       8
+armadura:  2
+armas:
+  - { id: 5 }

@@ -1,13 +1,16 @@
+# frozen_string_literal: true
+
 # Item diccionaries
-%w(armas armaduras miscelaneas proteccions abalorios enchants).each do |item|
+%w[armas armaduras miscelaneas proteccions abalorios enchants].each do |item|
   define_method(item.to_sym) { load_yaml("items/#{item}") }
 end
 
-%w(piezas pociones pergaminos materiales).each do |util|
+%w[piezas pociones pergaminos materiales].each do |util|
   define_method(util) { load_yaml("items/utiles/#{util}") }
 end
 
-def categorías # Armas
+def categorías
+  # TODO: Revisar si es exclusivo de Armas, y colocarlo ahí
   armas.map { |a| a['categoria'] }.uniq
 end
 

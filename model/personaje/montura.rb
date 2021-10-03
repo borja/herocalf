@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Define la montura de un heroe. Le permite entrar sin problemas al dungeon.
 class Montura < Hash
   attr_accessor :id, :name, :recorrido, :distancia, :bono, :precio

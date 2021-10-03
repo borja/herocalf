@@ -1,23 +1,23 @@
-# encoding: UTF-8
+# frozen_string_literal: true
 
 def grados
-  %w(aprendiz artesano maestro)
+  %w[aprendiz artesano maestro]
 end
 
 def profes
-  %w(alquimia inscripción taxidermia táctica
+  %w[alquimia inscripción taxidermia táctica
      encantamiento orfebrería carpintería
      política cetrería medicina ritualismo
-     juglaría)
+     juglaría]
 end
 
 def load_recetas(id, prof)
   {
-    id:       id,
-    name:     prof,
+    id: id,
+    name: prof,
     aprendiz: load_yaml("profesiones/#{prof}/aprendiz"),
     artesano: load_yaml("profesiones/#{prof}/artesano"),
-    maestro:  load_yaml("profesiones/#{prof}/maestro")
+    maestro: load_yaml("profesiones/#{prof}/maestro")
   }
 end
 
