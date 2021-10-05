@@ -1,6 +1,3 @@
-# Default permission
-sudo: false
-
 env:
   # Code Coverage
   global:
