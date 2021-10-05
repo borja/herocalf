@@ -8,14 +8,6 @@ env:
 
 # Ruby configuration, using RVM
 language: ruby
-cache: bundler
-rvm:
-  - 3.0.2
-before_install:
-  - gem update --system
-  - gem install bundler --no-document -v '~> 2.2.28'
-  # Main test usging bundler (not working)
-  - bundle install
 
 script:
   - bundle exec rspec test.rb
