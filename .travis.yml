@@ -1,7 +1,10 @@
 language: ruby
+cache: bundler
+os:
+  - linux
 
-cache:
-  bundler: true
+rvm:
+  - "3.0.2"
 
 env:
   # Code Coverage
