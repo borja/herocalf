@@ -79,7 +79,7 @@ DEPENDENCIES
   yaml-lint (~> 0.0.10)
 
 RUBY VERSION
-   ruby 3.0.2p107
+   ruby 3.0.3p157
 
 BUNDLED WITH
-   2.2.28
+   2.2.32
