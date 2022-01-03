@@ -1,5 +1,6 @@
-ruby '3.0.3' # Release date: 2021-11-24
-# https://www.ruby-lang.org/en/news/2021/11/24/ruby-3-0-3-released/
+ruby '3.1.0' # Release date: 2021-12-25
+# https://www.ruby-lang.org/en/news/2021/12/25/ruby-3-1-0-released/
+
 source 'https://rubygems.org'
 
 # Production requirements
