@@ -31,11 +31,11 @@ Architecture
 +----------------+------------------+
 | **Technology** | **Release date** |
 +================+==================+
-| |ruby|         | 2021/07/07       |
+| |ruby|         | 2022/04/12       |
 +----------------+------------------+
 
 .. |ruby| image:: https://img.shields.io/static/v1.svg?logo=ruby&label=ruby&message=v.3.0.3&color=red
-   :target: https://www.ruby-lang.org/en/news/2021/11/24/ruby-3-0-3-released/
+   :target: https://www.ruby-lang.org/en/news/2022/04/12/ruby-3-1-2-released/
 
 Vulnerabilities Report
 ----------------------
@@ -54,8 +54,6 @@ Build Status
 +--------------+-------------------+
 | **Platform** | **Badge**         |
 +==============+===================+
-| Travis CI    | |Travis Status|   |
-+--------------+-------------------+
 | Circle CI    | |CircleCi Status| |
 +--------------+-------------------+
 | CodeShip     | |CodeShip|        |
@@ -65,8 +63,6 @@ Build Status
 | Scrutinizer  | |ScrutCI|         |
 +--------------+-------------------+
 
-.. |Travis Status| image:: https://app.travis-ci.com/borja/herocalf.svg?branch=master
-   :target: https://app.travis-ci.com/borja/herocalf
 .. |CircleCi Status| image:: https://circleci.com/gh/borja/herocalf.svg?style=shield
    :target: https://circleci.com/gh/borja/herocalf
 .. |CodeShip| image:: https://app.codeship.com/projects/62d62e60-2116-0136-eafd-669e1e370d60/status?branch=master

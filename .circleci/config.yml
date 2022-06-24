@@ -1,9 +1,12 @@
 version: 2.1
+
+orbs:
+  ruby: circleci/ruby@1.0
+
 jobs:
   build:
-    working_directory: ~/circleci-demo-ruby-sinatra
     docker:
-      - image: circleci/ruby:3.0.2
+      - image: cimg/ruby:3.1.2
         environment:
           BUNDLE_PATH: vendor/bundle
           CC_TEST_REPORTER_ID: 0d489bf5520c78ac08ce9c7925f6c5f477047967bf42ec4fe84fcf2a02be53f4
@@ -11,43 +14,8 @@ jobs:
           APP_ENV: test
     steps:
       - checkout
-
-      # Bundle install dependencies
-      - type: shell
-        name: Configure Bundler
-        command: |
-          echo 'export BUNDLER_VERSION=$(cat Gemfile.lock | tail -1 | tr -d " ")' >> $BASH_ENV
-          source $BASH_ENV
-          gem install bundler
-          bundle install
-
-      # Restore bundle cache
-      - type: cache-restore
-        key: sinatra-demo-{{ checksum "Gemfile.lock" }}
-
-      # Store bundle cache
-      - type: cache-save
-        key: sinatra-demo-{{ checksum "Gemfile.lock" }}
-        paths:
-          - vendor/bundle
-
-      # YAML Lint
-      - type: shell
-        name: Check YAML inspector gem
-        command: bundle show yaml-lint
-
-      - type: shell
-        name: Inspect YAML files with Lint
-        command: $(bundle show yaml-lint)/bin/yaml-lint data/
-
-      # CodeClimate Metrics configuration
-      - run: curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-      - run: chmod +x ./cc-test-reporter
-
-      # Run minitest
-      - type: shell
-        command: bundle exec rspec test.rb
-
-      # Save artifacts
-      - type: store_test_results
-        path: /tmp/test-results
+      - run: ruby --version
+      - ruby/install-deps
+      - run: "bundle show yaml-lint"
+      - run: "$(bundle show yaml-lint)/bin/yaml-lint data/"
+      - run: "bundle exec rspec test.rb"

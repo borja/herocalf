@@ -1,7 +1,7 @@
 # CI Engines requirements:
 
-require 'coveralls'
-Coveralls.wear!
+#require 'coveralls'
+#Coveralls.wear!
 
 # https://github.com/codeclimate/ruby-test-reporter/blob/master/README.md
 # 'codeclimate-test-reporter' was replaced
@@ -21,7 +21,7 @@ SimpleCov.formatter = SimpleCov::Formatter::Codecov
 
 ENV['RACK_ENV'] = 'test'
 require 'minitest/autorun'
-#require 'rack/test'
+require 'rack/test'
 require_relative 'app.rb'
 require 'require_all'
 require 'rspec'

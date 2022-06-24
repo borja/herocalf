@@ -2,6 +2,7 @@
   "name": "HerosQuest Amateur Project",
   "description": "Ruby on Sinatra app for HeroQuest charsheets",
   "image": "heroku/ruby",
+  "stack": "heroku-22",
   "repository": "https://github.com/borja/herocalf",
   "keywords": ["ruby", "sinatra", "bootstrap", "slim"]
 }
