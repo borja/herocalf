@@ -5,10 +5,10 @@ GEM
       simplecov (>= 0.15, < 0.22)
     diff-lcs (1.5.0)
     docile (1.4.0)
-    minitest (5.15.0)
+    minitest (5.16.1)
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
-    rack (2.2.3)
+    rack (2.2.3.1)
     rack-protection (2.2.0)
       rack
     rack-test (1.1.0)
@@ -53,7 +53,7 @@ PLATFORMS
 
 DEPENDENCIES
   codecov (~> 0.6.0)
-  minitest (~> 5.15.0)
+  minitest (~> 5.16.1)
   rack-test (~> 1.1.0)
   rake (~> 13.0.6)
   require_all (~> 3.0.0)
@@ -61,7 +61,7 @@ DEPENDENCIES
   simplecov (~> 0.21.2)
   sinatra (~> 2.2.0)
   slim (~> 4.1.0)
-  tilt (~> 2.0.9)
+  tilt (~> 2.0.10)
   webrick (~> 1.7)
   yaml-lint (~> 0.0.10)
 
