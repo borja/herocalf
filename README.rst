@@ -192,5 +192,8 @@ To run this application locally, run:
 
 .. code:: console
 
+    # Install dependencies:
     bundle install
-    bundle exec ruby -S rackup -w config.ru
+    # Run locall# Run locally
+    # DEPRECATED bundle exec ruby -S rackup -w config.ru
+    bundle exec rackup config.ru 
