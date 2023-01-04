@@ -13,7 +13,7 @@ gem 'tilt', '~> 2.0.10'
 group :test do
   gem 'codecov',   '~> 0.6.0',  require: false
   gem 'minitest',  '~> 5.16.1'
-  gem 'rack-test', '~> 1.1.0'
+  gem 'rack-test', '~> 2.0.2'
   gem 'rake',      '~> 13.0.6'
   gem 'rspec',     '~> 3.11.0'
   gem 'simplecov', '~> 0.21.2'
