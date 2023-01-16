@@ -19,7 +19,7 @@ group :test do
   gem 'simplecov', '~> 0.21.2'
 
   # YAML files in data/* syntax validator
-  gem 'yaml-lint', '~> 0.0.10'
+  gem 'yaml-lint', '~> 0.1.1'
 end
 
 gem "webrick", "~> 1.7"
