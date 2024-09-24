@@ -45,7 +45,7 @@ GEM
       tilt (>= 2.0.6, < 2.1)
     temple (0.8.2)
     tilt (2.0.11)
-    webrick (1.8.1)
+    webrick (1.8.2)
     yaml-lint (0.0.10)
 
 PLATFORMS
@@ -62,11 +62,11 @@ DEPENDENCIES
   sinatra (~> 3.0.5)
   slim (~> 4.1.0)
   tilt (~> 2.0.10)
-  webrick (~> 1.7)
+  webrick (~> 1.8, >= 1.8.2)
   yaml-lint (~> 0.0.10)
 
 RUBY VERSION
    ruby 3.2.2p53
 
 BUNDLED WITH
-   2.4.13
+   2.4.6
