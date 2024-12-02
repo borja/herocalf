@@ -22,4 +22,4 @@ group :test do
   gem 'yaml-lint', '~> 0.0.10'
 end
 
-gem "webrick", "~> 1.7"
+gem "webrick", "~> 1.8"
